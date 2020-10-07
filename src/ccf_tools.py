@@ -15,7 +15,6 @@ def parse_CCF_tsv(path):
     bar = fu.merge(lookup, left_on=['slabel'], right_on='Label (indented)').drop(columns=['Label (indented)']).rename(columns={'ID': 's'})
     return bar
 
-
 def get_ccf_owl():
     g = rdflib.Graph()
     g.parse('http://purl.org/ccf/latest/ccf.owl')
