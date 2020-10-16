@@ -19,8 +19,13 @@ $ make all
   - [ind_template_Kidney_partonomy.tsv](https://github.com/obophenotype/CCF_tools/blob/master/src/ind_template_Kidney_partonomy.tsv)
   - [ccf_spleen_ind.owl](https://github.com/obophenotype/CCF_tools/blob/master/src/ccf_spleen_ind.owl)
   
+#### Example heirarchy in OWL (classes)
 ![image](https://user-images.githubusercontent.com/112839/96257807-f1304580-0fb2-11eb-8f94-90ca0891bfc7.png)
+
+#### Example axiom in OWL
 ![image](https://user-images.githubusercontent.com/112839/96257876-0ad18d00-0fb3-11eb-8062-8449cb2c7dc7.png)
+
+#### Example annotation of OWL axiom - showing confirmed status as valid in Uberon
 ![image](https://user-images.githubusercontent.com/112839/96257915-19b83f80-0fb3-11eb-9c0d-dcd97e50eb4d.png)
 
 
