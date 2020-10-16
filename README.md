@@ -8,17 +8,23 @@ Some simple wrapper code for testing the part/is_a relationships implicit in ASC
 
 To run, you will need [ROBOT](http://robot.obolibrary.org/) installed + a python 3.8 environment with the contents of requirements.txt installed.  From the command line run:
 
+```sh
 $ cd src 
-
 $ make all
+```
 
-Example output files:
+### Example output files:
   - [class_template_Kidney_partonomy.tsv](https://github.com/obophenotype/CCF_tools/blob/master/src/class_template_Kidney_partonomy.tsv)
   - [ccf_spleen_classes.owl](https://github.com/obophenotype/CCF_tools/blob/master/src/ccf_spleen_classes.owl)
   - [ind_template_Kidney_partonomy.tsv](https://github.com/obophenotype/CCF_tools/blob/master/src/ind_template_Kidney_partonomy.tsv)
   - [ccf_spleen_ind.owl](https://github.com/obophenotype/CCF_tools/blob/master/src/ccf_spleen_ind.owl)
+  
+![image](https://user-images.githubusercontent.com/112839/96257807-f1304580-0fb2-11eb-8f94-90ca0891bfc7.png)
+![image](https://user-images.githubusercontent.com/112839/96257876-0ad18d00-0fb3-11eb-8062-8449cb2c7dc7.png)
+![image](https://user-images.githubusercontent.com/112839/96257915-19b83f80-0fb3-11eb-9c0d-dcd97e50eb4d.png)
 
-Example report
+
+### Example report
 
 
 ```
