@@ -1,4 +1,4 @@
-ROBOT = /Users/davidos/bin/robot
+ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
 all: ccf_Kidney_classes.owl ccf_kidney_ind.owl
 
