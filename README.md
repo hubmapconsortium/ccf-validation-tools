@@ -1,6 +1,6 @@
 # CCF_tools [![Build Status](https://travis-ci.com/obophenotype/CCF_tools.svg?branch=master)](https://travis-ci.com/obophenotype/CCF_tools)
 
-Some simple wrapper code for testing the part/is_a relationships implicit in ASCT-b tables for validity against Uberon and CL and using these to produce OWL via [ROBOT templates](http://robot.obolibrary.org/template).  Two OWL files are produced - one OWL file following OBO standards, and one simple RDF representation with 
+Some simple wrapper code for testing the part/is_a relationships implicit in ASCT-b tables for validity against Uberon and CL and using these to produce OWL via [ROBOT templates](http://robot.obolibrary.org/template).  Two OWL files are produced - one OWL file following OBO standards, and one simple RDF representation with CCF_part_of triples. 
 
 
 ![image](https://user-images.githubusercontent.com/112839/95355967-0ecc2380-08be-11eb-85ab-6dea787e43a5.png)
