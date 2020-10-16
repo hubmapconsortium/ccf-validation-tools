@@ -26,6 +26,7 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
     { %s rdfs:subClassOf %s }"""
 
     def ask_uberon(self, r, q, urls=True):
+        """"""
         start = ''
         end = ''
         if urls:
