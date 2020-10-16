@@ -9,6 +9,7 @@ Some simple wrapper code for integrating HubMap CCF outputs with Uberon
 To run, you will need [ROBOT](http://robot.obolibrary.org/) installed + a python 3.8 environment with the contents of requirements.txt installed.  From the command line run:
 
 $ cd src 
+
 $ make all
 
 
