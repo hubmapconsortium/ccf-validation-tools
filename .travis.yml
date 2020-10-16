@@ -7,4 +7,8 @@ install:
   - pip install -r requirements.txt
   
 script:
-  - python ./src/uber_check.py
+  - wget https://github.com/ontodev/robot/releases/download/v1.7.0/robot.jar
+  - wget https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
+  - export PATH=$PATH:`pwd`
+  - cd src
+  - make all
