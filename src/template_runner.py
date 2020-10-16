@@ -5,11 +5,8 @@ import os
 print(os.getcwd())
 parser = argparse.ArgumentParser()
 parser.add_argument('--test', help='Run in test mode.',
-                    action="store_true")
+                    action="store_true") # Not doing anything with this yet.
 parser.add_argument("target_file")
-
-#parser.add_argument("target_type")
-#parser.add_argument("output path")
 
 args = parser.parse_args()
 
