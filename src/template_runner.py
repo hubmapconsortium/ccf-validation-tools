@@ -1,5 +1,5 @@
 from template_generation_tools import generate_class_graph_template, generate_ind_graph_template
-from ccf_tools import parse_CCF_tsv
+from ccf_tools import parse_ASCTb
 import argparse
 import os
 print(os.getcwd())
@@ -10,9 +10,9 @@ parser.add_argument("target_file")
 
 args = parser.parse_args()
 
-generate_class_graph_template(parse_CCF_tsv(args.target_file)).to_csv(
+generate_class_graph_template(parse_ASCTb(args.target_file)).to_csv(
     "class_template_" + args.target_file.split('/')[-1], sep='\t', index=False)
-generate_ind_graph_template(parse_CCF_tsv(args.target_file)).to_csv(
+generate_ind_graph_template(parse_ASCTb(args.target_file)).to_csv(
     "ind_template_" + args.target_file.split('/')[-1], sep='\t', index=False)
 
 
