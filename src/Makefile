@@ -2,10 +2,11 @@ ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
 jobs = Heart
 
+# TODO - add simple patsub to run this from jobs.
 
-all: ccf_Kidney_classes.owl ccf_kidney_ind.owl
+all: ccf_Heart_classes.owl ccf_Heart_ind.owl
 
-class_template_class_template_Heart.tsv: ../resources/ASCT-b_tables/Heart.tsv
+class_template_Heart.tsv: ../resources/ASCT-b_tables/Heart.tsv
 	python template_runner.py $<
 
 ccf_Heart_classes.owl: class_template_Heart.tsv
