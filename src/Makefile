@@ -1,5 +1,8 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
+jobs = Heart
+
+
 all: ccf_Kidney_classes.owl ccf_kidney_ind.owl
 
 class_template_Kidney_partonomy.tsv: ../resources/Kidney_partonomy.tsv
@@ -17,3 +20,4 @@ ccf_kidney_ind.owl: ind_template_Kidney_partonomy.tsv
 		--add-prefix "ccf: https://purl.org/ccf/latest/ccf.owl" \
 		--input helper.owl --template $< \
 		--output $@
+

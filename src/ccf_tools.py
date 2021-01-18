@@ -1,5 +1,6 @@
 import pandas as pd
 import rdflib
+import re
 
 def parse_CCF_tsv(path):
     ccf_tsv = pd.read_csv(path, sep='\t', skipinitialspace=True)
@@ -14,6 +15,69 @@ def parse_CCF_tsv(path):
     fu = out.merge(lookup, left_on=['olabel'], right_on='Label (indented)').drop(columns=['Label (indented)']).rename(columns={'ID': 'o'})
     bar = fu.merge(lookup, left_on=['slabel'], right_on='Label (indented)').drop(columns=['Label (indented)']).rename(columns={'ID': 's'})
     return bar
+
+def chunks(lst, n):
+    """Yield successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
+
+def parse_ASCTb(path):
+
+    """Takes ASCT-b TSV table as input;
+    Processes only AS (anatomy) and CT (cell type) columns.
+    RETURN pandas dataframe of with columns ['o', 's', 'olabel', 'slabel', user_olabel, user_slabel]
+    where each pair of adjacent columns => a subject-object pair for testing"""
+
+
+    ### Make a processed table with only ID columns - use this to generate tuples
+
+
+    asct_b_tab = pd.read_csv(path, sep='\t')
+    ### Drop all columns that do not have match regex .+/._+/ID$
+    columns_to_drop = [c for c in asct_b_tab.columns if re.match(c, "(CT|AS/._+/ID$")]
+    asct_IDs_only = pd.drop(columns_to_drop)
+    ### Make lookup of ID -> label and user_label
+    # dict[ID] = { label: label, user_label: user_label }
+    relevant_columns = [c for c in asct_b_tab.columns if re.match(c, "(CT|AS.+")]
+    relevant_columns_chunked = chunks(relevant_columns, 3)
+    lookup = dict()
+    for i,r in asct_b_tab.itterows():
+        for chunk in relevant_columns_chunked:
+            for c in chunk:
+                components = c.split('/')
+                if len(components) == 2:
+                    ul = r[c]
+                if len(components) == 3:
+                    if components[3] == 'label':
+                        l = r[c]
+                    elif components[3] == 'ID':
+                        ID = r[c]
+        lookup[ID] = {"label": l, "user_label": ul}
+
+#   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
+    dl = []
+
+    for i,r in asct_b_tab.itterows():
+        d = {}
+        for current, nekst in zip(r, r[1:]):
+            d['s'] = nekst
+            d['slabel'] = lookup[nekst]['label']
+            d['user_slabel'] = lookup[nekst]["user_label"]
+            d['s'] = current
+            d['slabel'] = lookup[current]['label']
+            d['user_slabel'] = lookup[current]["user_label"]
+        dl.append(d)
+    return pd.DataFrame.from_records(dl)
+
+
+
+
+
+
+
+
+
+
 
 def get_ccf_owl():
     g = rdflib.Graph()
