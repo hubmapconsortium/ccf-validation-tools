@@ -1,6 +1,7 @@
 import pandas as pd
 import rdflib
 import re
+import warnings
 
 
 def parse_CCF_tsv(path):
@@ -27,21 +28,30 @@ def chunks(lst, n):
         yield lst[i:i + n]
 
 
+
 def parse_ASCTb(path):
     """Takes ASCT-b TSV table as input;
     Processes only AS (anatomy) and CT (cell type) columns.
     RETURN pandas dataframe of with columns ['o', 's', 'olabel', 'slabel', user_olabel, user_slabel]
     where each pair of adjacent columns => a subject-object pair for testing"""
 
+    def is_valid_id(content):
+        if re.match("(CL|UBERON)\:[0-9]+", content):
+            return content
+        else:
+            warnings.warn("Unrecognised cell content '%s'" % content)
+            return False
+
     asct_b_tab = pd.read_csv(path, sep='\t')
+    asct_b_tab.fillna('', inplace=True)
     ### Make a processed table with only ID columns - use this to generate tuples
     ### Drop all columns that do not have match regex .+/._+/ID$
-    columns_to_drop = [c for c in asct_b_tab.columns if not (re.match("(AS)/.+/ID$", c))]  # Excluding cell types for now
+    columns_to_drop = [c for c in asct_b_tab.columns if not (re.match("(AS)/.+/ID$", c))] # Excluding cell types for now
     asct_IDs_only = asct_b_tab.drop(columns=columns_to_drop)
 
     ### Make lookup of ID -> label and user_label
     # dict[ID] = { label: label, user_label: user_label }
-    relevant_columns = [c for c in asct_b_tab.columns if re.match("(AS)/.+", c)] # Excluding cell types for now
+    relevant_columns = [c for c in asct_b_tab.columns if re.match("(AS)/.+", c)]  # Excluding cell types for now
 
     lookup = dict()
     for i, r in asct_b_tab.iterrows():
@@ -55,7 +65,8 @@ def parse_ASCTb(path):
                         l = r[c]
                     if components[2] == 'ID':
                         ID = r[c]
-            lookup[ID] = {"label": l, "user_label": ul}
+            if is_valid_id(ID):
+                lookup[ID] = {"label": l, "user_label": ul}
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
     dl = []
@@ -63,15 +74,15 @@ def parse_ASCTb(path):
     for i, r in asct_IDs_only.iterrows():
         d = {}
         for current, nekst in zip(r, r[1:]):
-            if not nekst:
-                continue
-            d['s'] = nekst
-            d['slabel'] = lookup[nekst]['label']
-            d['user_slabel'] = lookup[nekst]["user_label"]
-            d['o'] = current
-            d['olabel'] = lookup[current]['label']
-            d['user_olabel'] = lookup[current]["user_label"]
-        dl.append(d)
+            if is_valid_id(current) and is_valid_id(nekst):
+                d['s'] = nekst
+                d['slabel'] = lookup[nekst]['label']
+                d['user_slabel'] = lookup[nekst]["user_label"]
+                d['o'] = current
+                d['olabel'] = lookup[current]['label']
+                d['user_olabel'] = lookup[current]["user_label"]
+        if d:
+            dl.append(d)
     out = pd.DataFrame.from_records(dl)
     return out.drop_duplicates()
 
