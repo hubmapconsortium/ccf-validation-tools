@@ -8,6 +8,7 @@ class UberonGraph():
 PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.obolibrary.org/obo/FMA_>
 ASK
 FROM <http://reasoner.renci.org/ontology>
 FROM <http://reasoner.renci.org/redundant>
@@ -16,6 +17,7 @@ FROM <http://reasoner.renci.org/redundant>
 PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131> 
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.obolibrary.org/obo/FMA_>
 ASK
 FROM <http://reasoner.renci.org/ontology>
 FROM <http://reasoner.renci.org/redundant>
@@ -25,6 +27,7 @@ FROM <http://reasoner.renci.org/redundant>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
 PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.obolibrary.org/obo/FMA_>
 ASK FROM <http://reasoner.renci.org/ontology/closure>
     { %s rdfs:subClassOf %s }"""
 
