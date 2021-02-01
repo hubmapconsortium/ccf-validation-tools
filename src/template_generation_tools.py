@@ -1,5 +1,6 @@
 import pandas as pd
 from uberongraph_tools import UberonGraph
+from ccf_tools import invalid_relationship_report
 from datetime import datetime
 import warnings
 
@@ -20,16 +21,17 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
         rec = dict()
         rec['ID'] = r['s']
         rec['Label'] = r['slabel']
-        if ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
-            rec['part_of'] = r['o']
-            rec['OBO_Validated'] = True
-            rec['validation_date'] = datetime.now().isoformat()
-        elif ug.ask_uberon(r, ug.ask_uberon_subclassof, urls=False):
+        if ug.ask_uberon(r, ug.ask_uberon_subclassof, urls=False):
             rec['Parent_class'] = r['o']
             rec['OBO_Validated'] = True
             rec['validation_date'] = datetime.now().isoformat()
+        elif ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
+            rec['part_of'] = r['o']
+            rec['OBO_Validated'] = True
+            rec['validation_date'] = datetime.now().isoformat()
+        # TODO - add overlaps
         else:
-            warnings.warn("Not adding %s - relationship not valid in Uberon/CL" % str(r))
+            warnings.warn(invalid_relationship_report(r, ['is_a', 'part_of']))
         records.append(rec)
     return pd.DataFrame.from_records(records)
 

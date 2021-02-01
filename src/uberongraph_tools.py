@@ -36,3 +36,4 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
         self.sparql.setQuery(q)
         results = self.sparql.query().convert()
         return results['boolean']
+

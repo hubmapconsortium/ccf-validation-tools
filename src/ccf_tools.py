@@ -33,3 +33,8 @@ SELECT DISTINCT ?o ?s ?olabel ?slabel
        FILTER(STRSTARTS(STR(?s), "http://purl.obolibrary.org/obo/UBERON_")) 
     }"""
     return g.query(ccf_po_query)
+
+
+def invalid_relationship_report(row, relations):
+    return "No valid relationshp between %s ; %s and %s %s (checked for: %s) " \
+          "" % (row['slabel'], row['s'], row['olabel'], row['o'], str(relations))
