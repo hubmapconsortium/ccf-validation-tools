@@ -6,22 +6,28 @@ class UberonGraph():
         self.sparql.setReturnFormat(JSON)
         self.ask_uberon_po = """
 PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
-prefix UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.obolibrary.org/obo/FMA_>
 ASK
 FROM <http://reasoner.renci.org/ontology>
 FROM <http://reasoner.renci.org/redundant>
 { %s part_of: %s }"""
         self.ask_uberon_overlaps = """
 PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131> 
-prefix UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.obolibrary.org/obo/FMA_>
 ASK
 FROM <http://reasoner.renci.org/ontology>
 FROM <http://reasoner.renci.org/redundant>
  { %s overlaps: %s }"""
 
         self.ask_uberon_subclassof = """
-prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+PREFIX FMA: <http://purl.obolibrary.org/obo/FMA_>
 ASK FROM <http://reasoner.renci.org/ontology/closure>
     { %s rdfs:subClassOf %s }"""
 
