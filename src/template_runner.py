@@ -11,9 +11,9 @@ parser.add_argument("target_file")
 args = parser.parse_args()
 
 generate_class_graph_template(parse_ASCTb(args.target_file)).to_csv(
-    "class_template_" + args.target_file.split('/')[-1], sep='\t', index=False)
+    "../templates/class_template_" + args.target_file.split('/')[-1], sep='\t', index=False)
 generate_ind_graph_template(parse_ASCTb(args.target_file)).to_csv(
-    "ind_template_" + args.target_file.split('/')[-1], sep='\t', index=False)
+    "../templates/ind_template_" + args.target_file.split('/')[-1], sep='\t', index=False)
 
 
 

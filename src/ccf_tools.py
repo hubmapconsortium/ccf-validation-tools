@@ -109,5 +109,5 @@ SELECT DISTINCT ?o ?s ?olabel ?slabel
 
 
 def invalid_relationship_report(row, relations):
-    return "No valid relationshp between %s ; %s and %s %s (checked for: %s) " \
+    return "No valid relationshp between '%s ; %s' and '%s ; %s' (checked for: %s) " \
           "" % (row['slabel'], row['s'], row['olabel'], row['o'], str(relations))
