@@ -1,4 +1,4 @@
-ROBOT = robot # Set this to your local path (Need to switch this to take input!)
+ROBOT = /Users/davidos/bin//robot # Set this to your local path (Need to switch this to take input!)
 
 JOBS = Heart Liver Skin Kidney Thymus Spleen Lymph_node Large_intestine
 

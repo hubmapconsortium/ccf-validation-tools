@@ -49,3 +49,15 @@ def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
         records.append(rec)
     return pd.DataFrame.from_records(records)
 
+def generate_vasculature_template(ccf_tools_df: pd.DataFrame):
+    seed = {'SUBJECT': 'ID', 'OBJECT': "SC 'connected to' some %"}  # Work needed on relation
+    records = [seed]
+    for i, r in ccf_tools_df.iterrows():
+        rec = dict()
+        rec['SUBJECT'] = r['s']
+        rec['OBJECT'] = r['o']
+        records.append(rec)
+    return pd.DataFrame.from_records(records)
+
+
+
