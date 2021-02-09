@@ -72,8 +72,8 @@ def parse_ASCTb(path):
     dl = []
 
     for i, r in asct_IDs_only.iterrows():
-        d = {}
         for current, nekst in zip(r, r[1:]):
+            d = {}
             if is_valid_id(current) and is_valid_id(nekst):
                 d['s'] = nekst
                 d['slabel'] = lookup[nekst]['label']
