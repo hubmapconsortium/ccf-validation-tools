@@ -12,23 +12,29 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     Validates relationships against OBO;
     Adds relationships to template, tagged with OBO status"""
     seed = {'ID': 'ID', 'Label': 'LABEL',
-            'Parent_class': 'SC %', 'part_of': 'SC part_of some %',
-            'OBO_Validated': '>A CCFH:IN_OBO',
-            'validation_date': '>A dc:date'}
+            'Parent_class': 'SC %',
+            'OBO_Validated_isa': '>A CCFH:IN_OBO',
+            'validation_date_isa': '>A dc:date',
+            'part_of': 'SC part_of some %',
+            'OBO_Validated_po': '>A CCFH:IN_OBO',
+            'validation_date_po': '>A dc:date'}
     ug = UberonGraph()
     records = [seed]
+    # Add declarations and labels for entity
+    for i, r in ccf_tools_df.iterrows():
+        records.append({'ID': r['s'], 'Label': r['slabel']})
+        records.append({'ID': r['o'], 'Label': r['olabel']})
     for i, r in ccf_tools_df.iterrows():
         rec = dict()
         rec['ID'] = r['s']
-        rec['Label'] = r['slabel']
-        if ug.ask_uberon(r, ug.ask_uberon_subclassof, urls=False):
-            rec['Parent_class'] = r['o']
-            rec['OBO_Validated'] = True
-            rec['validation_date'] = datetime.now().isoformat()
-        elif ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
+        if ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
             rec['part_of'] = r['o']
-            rec['OBO_Validated'] = True
-            rec['validation_date'] = datetime.now().isoformat()
+            rec['OBO_Validated_po'] = True
+            rec['validation_date_po'] = datetime.now().isoformat()
+        elif ug.ask_uberon(r, ug.ask_uberon_subclassof, urls=False):
+            rec['Parent_class'] = r['o']
+            rec['OBO_Validated_isa'] = True
+            rec['validation_date_isa'] = datetime.now().isoformat()
         # TODO - add overlaps
         else:
             warnings.warn(invalid_relationship_report(r, ['is_a', 'part_of']))

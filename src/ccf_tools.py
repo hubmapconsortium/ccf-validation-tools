@@ -81,8 +81,8 @@ def parse_ASCTb(path):
                 d['o'] = current
                 d['olabel'] = lookup[current]['label']
                 d['user_olabel'] = lookup[current]["user_label"]
-        if d:
-            dl.append(d)
+            if d:
+                dl.append(d)
     out = pd.DataFrame.from_records(dl)
     return out.drop_duplicates()
 

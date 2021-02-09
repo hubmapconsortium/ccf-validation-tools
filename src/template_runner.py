@@ -5,15 +5,23 @@ import os
 print(os.getcwd())
 parser = argparse.ArgumentParser()
 parser.add_argument('--test', help='Run in test mode.',
-                    action="store_true") # Not doing anything with this yet.
-parser.add_argument("target_file")
+                    action="store_true")  # Not doing anything with this yet.
+parser.add_argument("target_file", help='input file path')
+parser.add_argument("output_file", help='output file path')
+parser.add_argument("--ind", help='write ind template',
+                    action="store_true", default=False)
+
 
 args = parser.parse_args()
 
-generate_class_graph_template(parse_ASCTb(args.target_file)).to_csv(
-    "../templates/class_template_" + args.target_file.split('/')[-1], sep='\t', index=False)
-generate_ind_graph_template(parse_ASCTb(args.target_file)).to_csv(
-    "../templates/ind_template_" + args.target_file.split('/')[-1], sep='\t', index=False)
+if args.ind:
+    generate_ind_graph_template(parse_ASCTb(args.target_file)).to_csv(args.output_file,
+                                                                      sep='\t',
+                                                                      index=False)
+else:
+    generate_class_graph_template(parse_ASCTb(args.target_file)).to_csv(args.output_file,
+                                                                        sep='\t',
+                                                                        index=False)
 
 
 

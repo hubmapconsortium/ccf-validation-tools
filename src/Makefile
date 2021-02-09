@@ -9,7 +9,12 @@ OWL_IND_FILES = $(patsubst %, ../owl/ccf_%_ind.owl, $(JOBS))
 all: ../owl/ccf_classes.owl ../owl/ccf_ind.owl
 
 ../templates/class_template_%.tsv: ../resources/ASCT-b_tables/%.tsv
-	python template_runner.py $<
+	python template_runner.py $< $@
+
+../templates/ind_template_%.tsv: ../resources/ASCT-b_tables/%.tsv
+	python template_runner.py --ind $< $@
+
+.PRECIOUS: ../class_template_%.tsv
 
 ../owl/ccf_%_classes.owl: ../templates/class_template_%.tsv
 	echo ; echo "*** Building "$@" ***" ; echo ;
