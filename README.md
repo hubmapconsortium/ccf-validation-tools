@@ -45,5 +45,15 @@ UBERON:0001232	| collecting duct of renal tubule |	Collecting Duct (Medulla) |	U
 Translation: There is no valid (part_of or is_a) relationship between 'renal column' and 'renal tubule' or between 'collecting duct of renal tubule' and 'renal tubule'.  
 
 
+### Updating tables/adding new ones:
+
+Input tables live in https://github.com/obophenotype/CCF_tools/tree/master/resources/ASCT-b_tables in tsv format.
+
+It is sufficient to copy and paste from originals.
+
+To add a new job, edit the [Makefile](https://github.com/obophenotype/CCF_tools/blob/master/src/Makefile#L3) to add the name of the source file (minus the .tsv file extension) to the JOBS variable:
+
+![image](https://user-images.githubusercontent.com/112839/107493392-743e6280-6b85-11eb-88df-ccbc69214389.png)]
+
 
 
