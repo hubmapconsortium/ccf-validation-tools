@@ -19,9 +19,14 @@ if args.ind:
                                                                       sep='\t',
                                                                       index=False)
 else:
-    generate_class_graph_template(parse_ASCTb(args.target_file)).to_csv(args.output_file,
-                                                                        sep='\t',
-                                                                        index=False)
+    class_graph_template_dfs = generate_class_graph_template(parse_ASCTb(args.target_file))
+    class_graph_template_dfs[0].to_csv(args.output_file,
+                                       sep='\t',
+                                       index=False)
+
+    class_graph_template_dfs[1].to_csv(args.output_file + ".log",
+                                       sep='\t',
+                                       index=False)
 
 
 

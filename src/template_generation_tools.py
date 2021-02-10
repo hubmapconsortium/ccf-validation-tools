@@ -11,6 +11,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     """Takes a ccf tools dataframe as input;
     Validates relationships against OBO;
     Adds relationships to template, tagged with OBO status"""
+    error_log = pd.DataFrame(columns=ccf_tools_df.columns)
     seed = {'ID': 'ID', 'Label': 'LABEL',
             'Parent_class': 'SC %',
             'OBO_Validated_isa': '>A CCFH:IN_OBO',
@@ -38,8 +39,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
         # TODO - add overlaps
         else:
             warnings.warn(invalid_relationship_report(r, ['is_a', 'part_of']))
+            error_log = error_log.append(r)
         records.append(rec)
-    return pd.DataFrame.from_records(records)
+    return (pd.DataFrame.from_records(records), error_log)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
