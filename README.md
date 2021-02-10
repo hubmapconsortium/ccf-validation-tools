@@ -14,10 +14,10 @@ $ make all
 ```
 
 ### Example output files:
-  - [class_template_Kidney_partonomy.tsv](https://github.com/obophenotype/CCF_tools/blob/master/src/class_template_Kidney_partonomy.tsv)
-  - [ccf_spleen_classes.owl](https://github.com/obophenotype/CCF_tools/blob/master/src/ccf_spleen_classes.owl)
-  - [ind_template_Kidney_partonomy.tsv](https://github.com/obophenotype/CCF_tools/blob/master/src/ind_template_Kidney_partonomy.tsv)
-  - [ccf_spleen_ind.owl](https://github.com/obophenotype/CCF_tools/blob/master/src/ccf_spleen_ind.owl)
+  - [class_template_Kidney_partonomy.tsv](https://github.com/obophenotype/CCF_tools/blob/master/src/templates/class_template_Kidney_partonomy.tsv)
+  - [ccf_spleen_classes.owl](https://github.com/obophenotype/CCF_tools/blob/master/src/owl/ccf_spleen_classes.owl)
+  - [ind_template_Kidney_partonomy.tsv](https://github.com/obophenotype/CCF_tools/blob/master/src/templates/ind_template_Kidney_partonomy.tsv)
+  - [ccf_spleen_ind.owl](https://github.com/obophenotype/CCF_tools/blob/master/src/owl/ccf_spleen_ind.owl)
   
 #### Example heirarchy in OWL (classes)
 ![image](https://user-images.githubusercontent.com/112839/96257807-f1304580-0fb2-11eb-8f94-90ca0891bfc7.png)
@@ -29,39 +29,20 @@ $ make all
 ![image](https://user-images.githubusercontent.com/112839/96257915-19b83f80-0fb3-11eb-9c0d-dcd97e50eb4d.png)
 
 
-### Example report
+### [Reports](https://github.com/obophenotype/CCF_tools/blob/master/templates/)
 
 
-```
-template_generation_tools.py:32: UserWarning: Not adding olabel            kidney
-slabel            ureter
-o         UBERON:0002113
-s         UBERON:0000056
-Name: 9, dtype: object - relationship not valid in Uberon/CL
-  warnings.warn("Not adding %s - relationship not valid in Uberon/CL" % str(r))
-  
-/template_generation_tools.py:32: UserWarning: Not adding olabel            kidney
-slabel      renal tubule
-o         UBERON:0002113
-s         UBERON:0009773
+Example 
+https://github.com/obophenotype/CCF_tools/blob/master/templates/class_template_Kidney.tsv.log
 
-Name: 13, dtype: object - relationship not valid in Uberon/CL
-  warnings.warn("Not adding %s - relationship not valid in Uberon/CL" % str(r))
 
-template_generation_tools.py:32: UserWarning: Not adding olabel                       renal tubule
-slabel    collecting duct of renal tubule
-o                          UBERON:0009773
-s                          UBERON:0001232
-Name: 22, dtype: object - relationship not valid in Uberon/CL
-  warnings.warn("Not adding %s - relationship not valid in Uberon/CL" % str(r))
-```
+s	| slabel	| user_slabel	| o	| olabel	| user_olabel
+--|--|--|--|--|--
+UBERON:0001284	| renal column (column of Bertin)	| renal column	| UBERON:0000362	| renal medulla	| renal medulla
+UBERON:0001232	| collecting duct of renal tubule |	Collecting Duct (Medulla) |	UBERON:0001231	 |nephron tubule	| Tubules
 
-Translation: There is no valid (part_of or is_a) relationship between ureter and kidney, between 'renal tubule' and kidney or between 'collecting duct of renal tubule' and 'renal tubule'.  The first one makes obvious sense - not all parts of the ureter are part of the kidney.  We could request that uberon includes this  overlaps relationship.  The second 2 are odd, but a quick look at Uberon makes the reason clear: 
 
-![image](https://user-images.githubusercontent.com/112839/96254209-d4910f00-0fac-11eb-9faa-8aa07c121423.png)
-
-renal tubule is too general (used for species with no kidney!).  This can be fixed instead by mapping to 'nephron tubule'
-
+Translation: There is no valid (part_of or is_a) relationship between 'renal column' and 'renal tubule' or between 'collecting duct of renal tubule' and 'renal tubule'.  
 
 
 
