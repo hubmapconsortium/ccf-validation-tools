@@ -30,7 +30,7 @@ def chunks(lst, n):
 
 
 def parse_ASCTb(path):
-    """Takes ASCT-b TSV table as input;
+    """Takes ASCT-b CSV table as input;
     Processes only AS (anatomy) and CT (cell type) columns.
     RETURN pandas dataframe of with columns ['o', 's', 'olabel', 'slabel', user_olabel, user_slabel]
     where each pair of adjacent columns => a subject-object pair for testing"""
@@ -42,7 +42,7 @@ def parse_ASCTb(path):
             warnings.warn("Unrecognised cell content '%s'" % content)
             return False
 
-    asct_b_tab = pd.read_csv(path, sep='\t')
+    asct_b_tab = pd.read_csv(path, sep=',', header=10)
     asct_b_tab.fillna('', inplace=True)
     ### Make a processed table with only ID columns - use this to generate tuples
     ### Drop all columns that do not have match regex .+/._+/ID$
