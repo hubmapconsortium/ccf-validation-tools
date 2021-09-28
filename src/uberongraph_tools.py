@@ -1,9 +1,9 @@
-from SPARQLWrapper import SPARQLWrapper, JSON
+from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
 
 class UberonGraph():
     def __init__(self):
         self.sparql = SPARQLWrapper('https://stars-app.renci.org/uberongraph/sparql')
-        self.sparql.setReturnFormat(JSON)
+        #self.sparql.setReturnFormat(JSON)
         self.ask_uberon_po = """
 PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
@@ -39,7 +39,33 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
             start = '<'
             end = '>'
         q = q % (start + r['s'] + end, start + r['o'] + end)
+        self.sparql.setReturnFormat(JSON)
         self.sparql.setQuery(q)
         results = self.sparql.query().convert()
         return results['boolean']
 
+    def construct_annotation(self, term, element):
+        construct_query = """
+              PREFIX owl: <http://www.w3.org/2002/07/owl#>
+              PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+              CONSTRUCT 
+              {{ 
+                {term} a owl:Class .
+                ?AP a owl:AnnotationProperty; ?APP ?APPV .
+                {term} ?AP ?APV .
+                ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource {term}; owl:annotatedTarget ?APV; ?p ?o .
+              }}
+              WHERE {{
+                GRAPH <http://reasoner.renci.org/ontology> 
+                  {{
+                  ?AP a owl:AnnotationProperty; ?APP ?APPV .
+                  {term} ?AP ?APV .
+                  ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource {term}; owl:annotatedTarget ?APV; ?p ?o .
+                  ?AP ?APP ?APPV .
+                }}
+              }}
+            """.format(term = term)
+        self.sparql.setQuery(construct_query)
+        self.sparql.setReturnFormat(RDFXML)
+        results = self.sparql.query().convert()
+        results.serialize(f'../owl/ccf_{element}_annotation_{term}.owl', format='xml')

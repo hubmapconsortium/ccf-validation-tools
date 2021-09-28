@@ -7,7 +7,7 @@ import warnings
 #    olabel            slabel               o               s
 # 0  kidney      right kidney  UBERON:0002113  UBERON:0004539
 
-def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
+def generate_class_graph_template(ccf_tools_df :pd.DataFrame, element):
     """Takes a ccf tools dataframe as input;
     Validates relationships against OBO;
     Adds relationships to template, tagged with OBO status"""
@@ -28,6 +28,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     for i, r in ccf_tools_df.iterrows():
         rec = dict()
         rec['ID'] = r['s']
+        ug.construct_annotation(r['s'], element)
+        ug.construct_annotation(r['o'], element)
         if ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
             rec['part_of'] = r['o']
             rec['OBO_Validated_po'] = True
