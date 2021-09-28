@@ -1,18 +1,18 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Lung
+JOBS = Liver Lung
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_IND_FILES = $(patsubst %, ../owl/ccf_%_ind.owl, $(JOBS))
-
+#OWL_ANNOTATION_FILES = $(patsubst %, ../owl/ccf_%_annotations.owl, $(JOBS))
 
 all: ../owl/ccf_classes.owl ../owl/ccf_ind.owl
 
 ../templates/class_template_%.tsv: ../resources/ASCT-b_tables/%.tsv
-	python template_runner.py $< $@
+	python3 template_runner.py $* $< $@
 
 ../templates/ind_template_%.tsv: ../resources/ASCT-b_tables/%.tsv
-	python template_runner.py --ind $< $@
+	python3 template_runner.py --ind $* $< $@
 
 .PRECIOUS: ../class_template_%.tsv
 

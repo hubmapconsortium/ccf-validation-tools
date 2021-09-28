@@ -44,28 +44,33 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
         results = self.sparql.query().convert()
         return results['boolean']
 
-    def construct_annotation(self, term, element):
+    def construct_annotation(self, terms, element):
         construct_query = """
               PREFIX owl: <http://www.w3.org/2002/07/owl#>
+              PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
               PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
               CONSTRUCT 
-              {{ 
-                {term} a owl:Class .
-                ?AP a owl:AnnotationProperty; ?APP ?APPV .
-                {term} ?AP ?APV .
-                ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource {term}; owl:annotatedTarget ?APV; ?p ?o .
+              {{
+                ?term rdf:type owl:Class; ?APT ?APVT .
+                ?APT rdf:type owl:AnnotationProperty .
+                ?AP rdf:type owl:AnnotationProperty; ?APP ?APPV .
+                ?APP rdf:type owl:AnnotationProperty .
+                ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource ?term; owl:annotatedTarget ?APV; ?p ?o .
+                ?p rdf:type owl:AnnotationProperty .
               }}
-              WHERE {{
-                GRAPH <http://reasoner.renci.org/ontology> 
-                  {{
-                  ?AP a owl:AnnotationProperty; ?APP ?APPV .
-                  {term} ?AP ?APV .
-                  ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource {term}; owl:annotatedTarget ?APV; ?p ?o .
-                  ?AP ?APP ?APPV .
+                WHERE {{
+                VALUES (?term) {{
+                   {terms}    
+                }}
+                ?AP a owl:AnnotationProperty; ?APP ?APPV .
+                ?term ?APT ?APVT .
+                ?APT a owl:AnnotationProperty .
+                OPTIONAL {{
+                  ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource ?term; owl:annotatedTarget ?APV; ?p ?o .
                 }}
               }}
-            """.format(term = term)
+            """.format(terms = terms)
         self.sparql.setQuery(construct_query)
         self.sparql.setReturnFormat(RDFXML)
         results = self.sparql.query().convert()
-        results.serialize(f'../owl/ccf_{element}_annotation_{term}.owl', format='xml')
+        results.serialize(f'../owl/ccf_{element}_annotation.owl', format='xml')
