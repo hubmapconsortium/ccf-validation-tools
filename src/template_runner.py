@@ -24,8 +24,8 @@ else:
                                        sep=',',
                                        index=False)
 
-    class_graph_template_dfs[1].to_csv(args.output_file[:-4] + ".log",
-                                       sep=',',
+    class_graph_template_dfs[1].to_csv(args.output_file[:-4] + "_log.tsv",
+                                       sep='\t',
                                        index=False)
 
 
