@@ -44,7 +44,7 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
         results = self.sparql.query().convert()
         return results['boolean']
 
-    def construct_annotation(self, terms, element):
+    def construct_annotation(self, terms):
         construct_query = """
               PREFIX owl: <http://www.w3.org/2002/07/owl#>
               PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -59,18 +59,20 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
                 ?p rdf:type owl:AnnotationProperty .
               }}
                 WHERE {{
-                VALUES (?term) {{
-                   {terms}    
-                }}
-                ?AP a owl:AnnotationProperty; ?APP ?APPV .
-                ?term ?APT ?APVT .
-                ?APT a owl:AnnotationProperty .
-                OPTIONAL {{
-                  ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource ?term; owl:annotatedTarget ?APV; ?p ?o .
+                  VALUES (?term) {{
+                    {terms}    
+                  }}
+                  ?term rdf:type owl:Class; ?APT ?APVT .
+                  ?APT rdf:type owl:AnnotationProperty .
+                  ?AP rdf:type owl:AnnotationProperty; ?APP ?APPV .
+                  ?APP rdf:type owl:AnnotationProperty .
+                  OPTIONAL {{
+                    ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource ?term; owl:annotatedTarget ?APV; ?p ?o .
+                    ?p rdf:type owl:AnnotationProperty .
                 }}
               }}
             """.format(terms = terms)
         self.sparql.setQuery(construct_query)
         self.sparql.setReturnFormat(RDFXML)
-        results = self.sparql.query().convert()
-        results.serialize(f'../owl/ccf_{element}_annotation.owl', format='xml')
+        result = self.sparql.query().convert()
+        return result

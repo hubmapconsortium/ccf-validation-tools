@@ -6,7 +6,6 @@ print(os.getcwd())
 parser = argparse.ArgumentParser()
 parser.add_argument('--test', help='Run in test mode.',
                     action="store_true")  # Not doing anything with this yet.
-parser.add_argument("element", help='element to verify')
 parser.add_argument("target_file", help='input file path')
 parser.add_argument("output_file", help='output file path')
 parser.add_argument("--ind", help='write ind template',
@@ -20,14 +19,17 @@ if args.ind:
                                                                       sep=',',
                                                                       index=False)
 else:
-    class_graph_template_dfs = generate_class_graph_template(parse_ASCTb(args.target_file), args.element)
+    filename = args.output_file[:-4]
+    class_graph_template_dfs = generate_class_graph_template(parse_ASCTb(args.target_file))
     class_graph_template_dfs[0].to_csv(args.output_file,
                                        sep=',',
                                        index=False)
 
-    class_graph_template_dfs[1].to_csv(args.output_file[:-4] + ".log",
+    class_graph_template_dfs[1].to_csv(filename + ".log",
                                        sep=',',
                                        index=False)
+
+    class_graph_template_dfs[2].serialize(filename + "_annotations.owl", format='xml')                 
 
 
 

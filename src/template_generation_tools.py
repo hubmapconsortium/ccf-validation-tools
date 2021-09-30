@@ -1,13 +1,15 @@
 import pandas as pd
+from rdflib import Graph
+from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import invalid_relationship_report
+from ccf_tools import invalid_relationship_report, transform_term
 from datetime import datetime
 import warnings
 
 #    olabel            slabel               o               s
 # 0  kidney      right kidney  UBERON:0002113  UBERON:0004539
 
-def generate_class_graph_template(ccf_tools_df :pd.DataFrame, element):
+def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     """Takes a ccf tools dataframe as input;
     Validates relationships against OBO;
     Adds relationships to template, tagged with OBO status"""
@@ -21,6 +23,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, element):
             'validation_date_po': '>A dc:date'}
     ug = UberonGraph()
     records = [seed]
+    annotations = []
+    terms = set()
     # Add declarations and labels for entity
     for i, r in ccf_tools_df.iterrows():
         records.append({'ID': r['s'], 'Label': r['slabel']})
@@ -28,12 +32,13 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, element):
     for i, r in ccf_tools_df.iterrows():
         rec = dict()
         rec['ID'] = r['s']
-        ug.construct_annotation(r['s'], element)
-        ug.construct_annotation(r['o'], element)
         if ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
             rec['part_of'] = r['o']
             rec['OBO_Validated_po'] = True
             rec['validation_date_po'] = datetime.now().isoformat()
+            if r['s'] != '' or r['o'] != '':
+              terms.add(r['s'])
+              terms.add(r['o'])
         elif ug.ask_uberon(r, ug.ask_uberon_subclassof, urls=False):
             rec['Parent_class'] = r['o']
             rec['OBO_Validated_isa'] = True
@@ -43,7 +48,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, element):
             warnings.warn(invalid_relationship_report(r, ['is_a', 'part_of']))
             error_log = error_log.append(r)
         records.append(rec)
-    return (pd.DataFrame.from_records(records), error_log)
+    terms = "\n".join(list(map(transform_term, terms)))
+    annotations = ug.construct_annotation(terms)
+    return (pd.DataFrame.from_records(records), error_log, annotations)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
