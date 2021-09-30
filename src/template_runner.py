@@ -17,16 +17,16 @@ args = parser.parse_args()
 
 if args.ind:
     generate_ind_graph_template(parse_ASCTb(args.target_file)).to_csv(args.output_file,
-                                                                      sep='\t',
+                                                                      sep=',',
                                                                       index=False)
 else:
     class_graph_template_dfs = generate_class_graph_template(parse_ASCTb(args.target_file), args.element)
     class_graph_template_dfs[0].to_csv(args.output_file,
-                                       sep='\t',
+                                       sep=',',
                                        index=False)
 
-    class_graph_template_dfs[1].to_csv(args.output_file + ".log",
-                                       sep='\t',
+    class_graph_template_dfs[1].to_csv(args.output_file[:-4] + ".log",
+                                       sep=',',
                                        index=False)
 
 
