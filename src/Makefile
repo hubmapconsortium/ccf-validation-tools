@@ -38,6 +38,7 @@ FORCE:
 
 ../owl/ccf_classes.owl: ${OWL_CLASS_FILES} ${OWL_ANNOTATION_FILES}
 	${ROBOT} merge $(patsubst %, -i %, $^)  -o $@
+	rm ${OWL_ANNOTATION_FILES}
 
 ../owl/ccf_ind.owl: ${OWL_IND_FILES}
 	${ROBOT} merge $(patsubst %, -i %, $^)  -o $@

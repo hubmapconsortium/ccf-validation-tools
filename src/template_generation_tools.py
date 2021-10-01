@@ -23,7 +23,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             'validation_date_po': '>A dc:date'}
     ug = UberonGraph()
     records = [seed]
-    annotations = []
     terms = set()
     # Add declarations and labels for entity
     for i, r in ccf_tools_df.iterrows():
