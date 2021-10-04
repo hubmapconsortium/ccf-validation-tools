@@ -13,10 +13,10 @@ FORCE:
 	python download_resource.py $* $@
 
 ../templates/class_template_%.csv: ../resources/ASCT-b_tables/%.csv
-	python template_runner.py $< $@
+	python template_runner.py $* $< $@ 2> ../logs/error_class_$*.log
 
 ../templates/ind_template_%.csv: ../resources/ASCT-b_tables/%.csv
-	python template_runner.py --ind $< $@
+	python template_runner.py --ind $* $< $@ 2> ../logs/error_ind_$*.log
 
 .PRECIOUS: ../class_template_%.tsv
 

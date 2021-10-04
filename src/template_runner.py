@@ -6,6 +6,7 @@ print(os.getcwd())
 parser = argparse.ArgumentParser()
 parser.add_argument('--test', help='Run in test mode.',
                     action="store_true")  # Not doing anything with this yet.
+parser.add_argument("job", help="job name")
 parser.add_argument("target_file", help='input file path')
 parser.add_argument("output_file", help='output file path')
 parser.add_argument("--ind", help='write ind template',
@@ -24,10 +25,8 @@ else:
                                        sep=',',
                                        index=False)
 
-    class_graph_template_dfs[1].to_csv(args.output_file[:-4] + "_log.tsv",
+    class_graph_template_dfs[1].to_csv("../logs/class_" + args.job + "_log.tsv",
                                        sep='\t',
                                        index=False)
-
-
 
 
