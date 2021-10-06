@@ -1,6 +1,6 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Brain Heart
+JOBS = Brain Bone-Marrow_Blood Heart Kidney Large_intestine Lung Skin Spleen Thymus
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_IND_FILES = $(patsubst %, ../owl/ccf_%_ind.owl, $(JOBS))
@@ -14,12 +14,12 @@ FORCE:
 	python download_resource.py $* $@
 
 ../templates/class_template_%.csv: ../resources/ASCT-b_tables/%.csv
-	python template_runner.py $< $@
+	python template_runner.py $* $< $@ 2> ../logs/error_class_$*.log
 
 ../templates/ind_template_%.csv: ../resources/ASCT-b_tables/%.csv
-	python template_runner.py --ind $< $@
+	python template_runner.py --ind $* $< $@ 2> ../logs/error_ind_$*.log
 
-.PRECIOUS: ../owl/ccf_%_classes.owl ../owl/ccf_%_ind.owl ../resources/ASCT-b_tables/%.csv 
+.PRECIOUS: ../class_template_%.tsv
 
 ../owl/ccf_%_classes.owl: ../templates/class_template_%.csv
 	echo ; echo "*** Building "$@" ***" ; echo ;
