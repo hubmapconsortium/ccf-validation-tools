@@ -3,7 +3,6 @@ from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
 class UberonGraph():
     def __init__(self):
         self.sparql = SPARQLWrapper('https://stars-app.renci.org/uberongraph/sparql')
-        #self.sparql.setReturnFormat(JSON)
         self.ask_uberon_po = """
 PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
@@ -59,7 +58,7 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
                 ?p rdf:type owl:AnnotationProperty .
               }}
                 WHERE {{
-                  VALUES (?term) {{
+                  VALUES ?term {{
                     {terms}    
                   }}
                   ?term rdf:type owl:Class; ?APT ?APVT .

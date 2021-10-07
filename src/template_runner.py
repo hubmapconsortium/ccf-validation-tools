@@ -30,6 +30,6 @@ else:
                                        sep='\t',
                                        index=False)
 
-    class_graph_template_dfs[2].serialize(filename + "_annotations.owl", format='xml')                 
+    class_graph_template_dfs[2].serialize("../owl/" + args.job + "_annotations.owl", format='xml')                 
 
 
