@@ -2,7 +2,7 @@ import pandas as pd
 from uberongraph_tools import UberonGraph
 from ccf_tools import invalid_relationship_report
 from datetime import datetime
-import warnings
+import logging
 
 #    olabel            slabel               o               s
 # 0  kidney      right kidney  UBERON:0002113  UBERON:0004539
@@ -38,7 +38,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             rec['validation_date_isa'] = datetime.now().isoformat()
         # TODO - add overlaps
         else:
-            warnings.warn(invalid_relationship_report(r, ['is_a', 'part_of']))
             error_log = error_log.append(r)
         records.append(rec)
     return (pd.DataFrame.from_records(records), error_log)
