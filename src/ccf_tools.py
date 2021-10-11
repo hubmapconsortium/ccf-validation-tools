@@ -2,10 +2,28 @@ import pandas as pd
 import rdflib
 import re
 import logging
+import sys
 
 from uberongraph_tools import UberonGraph
 
-logging.basicConfig(format='%(levelname)s - %(message)s')
+class DuplicateFilter(logging.Filter):
+    def filter(self, record):
+        # add other fields if you need more granular comparison, depends on your app
+        current_log = record.msg
+        if current_log != getattr(self, "last_log", None):
+            self.last_log = current_log
+            return True
+        return False
+
+#logging.basicConfig(format='%(levelname)s - %(message)s')
+logger = logging.getLogger('ASCT-b Tables Log')
+logger.setLevel(logging.WARN)  
+formatter = logging.Formatter('%(levelname)s - %(message)s')
+handler = logging.StreamHandler(sys.stderr)
+handler.setLevel(logging.WARN)  
+handler.setFormatter(formatter) 
+handler.addFilter(DuplicateFilter())             
+logger.addHandler(handler) 
 
 def parse_CCF_tsv(path):
     ccf_tsv = pd.read_csv(path, sep='\t', skipinitialspace=True)
@@ -42,14 +60,14 @@ def parse_ASCTb(path):
         if re.match("(CL|UBERON)\:[0-9]+", content):
             return content
         else:
-            logging.warning("Unrecognised cell content '%s'" % content)
+            logger.warning("Unrecognised cell content '%s'" % content)
             return False
 
     def is_valid_class(ug, entity):
         if ug.is_valid_class(ug.ask_uberon_class, entity):
             return True
         else:
-            logging.warning("Unrecognised UBERON entity '%s'" % entity)
+            logger.warning("Unrecognised UBERON entity '%s'" % entity)
 
 
     asct_b_tab = pd.read_csv(path, sep=',', header=10)
