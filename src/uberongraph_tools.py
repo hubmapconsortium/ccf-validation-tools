@@ -1,9 +1,8 @@
-from SPARQLWrapper import SPARQLWrapper, JSON
+from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
 
 class UberonGraph():
     def __init__(self):
         self.sparql = SPARQLWrapper('https://stars-app.renci.org/uberongraph/sparql')
-        self.sparql.setReturnFormat(JSON)
         self.ask_uberon_po = """
 PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
 PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
@@ -47,6 +46,7 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
             start = '<'
             end = '>'
         q = q % (start + r['s'] + end, start + r['o'] + end)
+        self.sparql.setReturnFormat(JSON)
         self.sparql.setQuery(q)
         results = self.sparql.query().convert()
         return results['boolean']
@@ -57,3 +57,35 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
         results = self.sparql.query().convert()
         return results['boolean']
 
+    def construct_annotation(self, terms):
+        construct_query = """
+              PREFIX owl: <http://www.w3.org/2002/07/owl#>
+              PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+              PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+              CONSTRUCT 
+              {{
+                ?term rdf:type owl:Class; ?APT ?APVT .
+                ?APT rdf:type owl:AnnotationProperty .
+                ?AP rdf:type owl:AnnotationProperty; ?APP ?APPV .
+                ?APP rdf:type owl:AnnotationProperty .
+                ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource ?term; owl:annotatedTarget ?APV; ?p ?o .
+                ?p rdf:type owl:AnnotationProperty .
+              }}
+                WHERE {{
+                  VALUES ?term {{
+                    {terms}    
+                  }}
+                  ?term rdf:type owl:Class; ?APT ?APVT .
+                  ?APT rdf:type owl:AnnotationProperty .
+                  ?AP rdf:type owl:AnnotationProperty; ?APP ?APPV .
+                  ?APP rdf:type owl:AnnotationProperty .
+                  OPTIONAL {{
+                    ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource ?term; owl:annotatedTarget ?APV; ?p ?o .
+                    ?p rdf:type owl:AnnotationProperty .
+                }}
+              }}
+            """.format(terms = terms)
+        self.sparql.setQuery(construct_query)
+        self.sparql.setReturnFormat(RDFXML)
+        result = self.sparql.query().convert()
+        return result
