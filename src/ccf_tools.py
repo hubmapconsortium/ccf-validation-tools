@@ -8,14 +8,12 @@ from uberongraph_tools import UberonGraph
 
 class DuplicateFilter(logging.Filter):
     def filter(self, record):
-        # add other fields if you need more granular comparison, depends on your app
         current_log = record.msg
         if current_log != getattr(self, "last_log", None):
             self.last_log = current_log
             return True
         return False
 
-#logging.basicConfig(format='%(levelname)s - %(message)s')
 logger = logging.getLogger('ASCT-b Tables Log')
 logger.setLevel(logging.WARN)  
 formatter = logging.Formatter('%(levelname)s - %(message)s')
@@ -68,6 +66,7 @@ def parse_ASCTb(path):
             return True
         else:
             logger.warning("Unrecognised UBERON entity '%s'" % entity)
+            return False
 
 
     asct_b_tab = pd.read_csv(path, sep=',', header=10)
@@ -94,7 +93,7 @@ def parse_ASCTb(path):
                         l = r[c]
                     if components[2] == 'ID':
                         ID = r[c]
-            if is_valid_id(ID):
+            if is_valid_id(ID) and is_valid_class(ug, ID):
                 lookup[ID] = {"label": l, "user_label": ul}
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
