@@ -20,6 +20,7 @@ if args.ind:
                                                                       sep=',',
                                                                       index=False)
 else:
+    filename = args.output_file[:-4]
     class_graph_template_dfs = generate_class_graph_template(parse_ASCTb(args.target_file))
     class_graph_template_dfs[0].to_csv(args.output_file,
                                        sep=',',
@@ -28,5 +29,7 @@ else:
     class_graph_template_dfs[1].to_csv("../logs/class_" + args.job + "_log.tsv",
                                        sep='\t',
                                        index=False)
+
+    class_graph_template_dfs[2].serialize("../owl/" + args.job + "_annotations.owl", format='xml')                 
 
 

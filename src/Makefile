@@ -1,9 +1,10 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Brain Bone-Marrow_Blood Heart Kidney Large_intestine Lung Skin Spleen Thymus
+JOBS = Brain Bone-Marrow_Blood Heart Kidney Large_intestine Lung Skin Lymph_node Spleen Thymus
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_IND_FILES = $(patsubst %, ../owl/ccf_%_ind.owl, $(JOBS))
+OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
 
 all: ../owl/ccf_classes.owl ../owl/ccf_ind.owl
 
@@ -35,8 +36,9 @@ FORCE:
 		--input helper.owl --template $< \
 		--output $@
 
-../owl/ccf_classes.owl: ${OWL_CLASS_FILES}
+../owl/ccf_classes.owl: ${OWL_CLASS_FILES} ${OWL_ANNOTATION_FILES}
 	${ROBOT} merge $(patsubst %, -i %, $^)  -o $@
+	rm ${OWL_ANNOTATION_FILES}
 
 ../owl/ccf_ind.owl: ${OWL_IND_FILES}
 	${ROBOT} merge $(patsubst %, -i %, $^)  -o $@
