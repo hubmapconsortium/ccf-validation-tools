@@ -53,6 +53,7 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
 
     def is_valid_class(self, query, entity):
         query = query % (entity)
+        self.sparql.setReturnFormat(JSON)
         self.sparql.setQuery(query)
         results = self.sparql.query().convert()
         return results['boolean']
