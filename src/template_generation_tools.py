@@ -1,6 +1,7 @@
 import pandas as pd
+from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import invalid_relationship_report
+from ccf_tools import invalid_relationship_report, chunks
 from datetime import datetime
 import warnings
 
@@ -24,6 +25,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             'validation_date_overlaps': '>A dc:date'}
     ug = UberonGraph()
     records = [seed]
+    terms = set()
     # Add declarations and labels for entity
     for i, r in ccf_tools_df.iterrows():
         records.append({'ID': r['s'], 'Label': r['slabel']})
@@ -31,6 +33,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     for i, r in ccf_tools_df.iterrows():
         rec = dict()
         rec['ID'] = r['s']
+        terms.add(r['s'])
+        terms.add(r['o'])
         if ug.ask_uberon(r, ug.ask_uberon_subclassof, urls=False):
             rec['Parent_class'] = r['o']
             rec['OBO_Validated_isa'] = True
@@ -47,7 +51,15 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             warnings.warn(invalid_relationship_report(r, ['is_a', 'part_of', 'overlaps']))
             error_log = error_log.append(r)
         records.append(rec)
-    return (pd.DataFrame.from_records(records), error_log)
+    annotations = ConjunctiveGraph()
+    terms = list(terms)
+    if len(terms) > 90:
+      for chunk in chunks(terms, 90):
+        annotations += ug.construct_annotation("\n".join(chunk))
+    else:
+      terms = "\n".join(terms)
+      annotations = ug.construct_annotation(terms)
+    return (pd.DataFrame.from_records(records), error_log, annotations)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
