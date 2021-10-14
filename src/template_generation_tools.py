@@ -1,7 +1,7 @@
 import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import invalid_relationship_report, chunks
+from ccf_tools import invalid_relationship_report, chunks, get_logger
 from datetime import datetime
 import logging
 
@@ -13,7 +13,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     Validates relationships against OBO;
     Adds relationships to template, tagged with OBO status"""
     error_log = pd.DataFrame(columns=ccf_tools_df.columns)
-    seed = {'ID': 'ID', 'Label': 'LABEL',
+    seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
             'Parent_class': 'SC %',
             'OBO_Validated_isa': '>A CCFH:IN_OBO',
             'validation_date_isa': '>A dc:date',
@@ -28,8 +28,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     terms = set()
     # Add declarations and labels for entity
     for i, r in ccf_tools_df.iterrows():
-        records.append({'ID': r['s'], 'Label': r['slabel']})
-        records.append({'ID': r['o'], 'Label': r['olabel']})
+        records.append({'ID': r['s'], 'Label': r['slabel'], 'User_label': r['user_slabel']})
+        records.append({'ID': r['o'], 'Label': r['olabel'], 'User_label': r['user_olabel']})
     for i, r in ccf_tools_df.iterrows():
         rec = dict()
         rec['ID'] = r['s']
@@ -48,7 +48,19 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             rec['OBO_Validated_overlaps'] = True
             rec['validation_date_overlaps'] = datetime.now().isoformat()
         else:
+            uberon_slabel = ug.get_label_from_uberon(r['s'])
+            uberon_olabel = ug.get_label_from_uberon(r['o'])
+
+            if uberon_slabel != r['slabel']:
+              get_logger().warning(f"Different labels found for {r['s']}. Uberongraph: {uberon_slabel} ; ASCT+b table: {r['slabel']}")
+
+            if uberon_olabel != r['olabel']:
+              get_logger().warning(f"Different labels found for {r['o']}. Uberongraph: {uberon_olabel} ; ASCT+b table: {r['olabel']}")
+
+            r['slabel'] = uberon_slabel
+            r['olabel'] = uberon_olabel
             error_log = error_log.append(r)
+
         records.append(rec)
     annotations = ConjunctiveGraph()
     terms = list(terms)

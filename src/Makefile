@@ -1,6 +1,8 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Brain Bone-Marrow_Blood Heart Kidney Large_intestine Lung Skin Lymph_node Spleen Thymus
+JOBS = Thymus
+
+#Brain Bone-Marrow_Blood Heart Kidney Large_intestine Lung Skin Lymph_node Spleen 
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_IND_FILES = $(patsubst %, ../owl/ccf_%_ind.owl, $(JOBS))
@@ -25,6 +27,7 @@ FORCE:
 	echo ; echo "*** Building "$@" ***" ; echo ;
 	${ROBOT} template --add-prefix "CCFH: http://ccf_tools_helpers/class_helper.owl#" \
 		--add-prefix "dc: http://purl.org/dc/elements/1.1/" \
+		--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
 		--input helper.owl --template $< \
 		--output $@
 
