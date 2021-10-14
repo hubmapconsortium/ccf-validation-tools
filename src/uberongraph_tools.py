@@ -30,6 +30,14 @@ PREFIX FMA: <http://purl.obolibrary.org/obo/FMA_>
 ASK FROM <http://reasoner.renci.org/ontology/closure>
     { %s rdfs:subClassOf %s }"""
 
+        self.ask_uberon_class = """
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          ASK 
+          FROM <http://reasoner.renci.org/ontology>
+          { %s a owl:Class . }
+        """
+
     def ask_uberon(self, r, q, urls=True):
         """"""
         start = ''
@@ -40,6 +48,13 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
         q = q % (start + r['s'] + end, start + r['o'] + end)
         self.sparql.setReturnFormat(JSON)
         self.sparql.setQuery(q)
+        results = self.sparql.query().convert()
+        return results['boolean']
+
+    def is_valid_class(self, query, entity):
+        query = query % (entity)
+        self.sparql.setReturnFormat(JSON)
+        self.sparql.setQuery(query)
         results = self.sparql.query().convert()
         return results['boolean']
 

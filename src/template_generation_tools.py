@@ -3,7 +3,7 @@ from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
 from ccf_tools import invalid_relationship_report, chunks
 from datetime import datetime
-import warnings
+import logging
 
 #    olabel            slabel               o               s
 # 0  kidney      right kidney  UBERON:0002113  UBERON:0004539
@@ -48,7 +48,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             rec['OBO_Validated_overlaps'] = True
             rec['validation_date_overlaps'] = datetime.now().isoformat()
         else:
-            warnings.warn(invalid_relationship_report(r, ['is_a', 'part_of', 'overlaps']))
             error_log = error_log.append(r)
         records.append(rec)
     annotations = ConjunctiveGraph()
