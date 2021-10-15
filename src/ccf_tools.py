@@ -21,7 +21,8 @@ handler = logging.StreamHandler(sys.stderr)
 handler.setLevel(logging.WARN)  
 handler.setFormatter(formatter) 
 handler.addFilter(DuplicateFilter())             
-logger.addHandler(handler) 
+logger.addHandler(handler)
+  
 
 def parse_CCF_tsv(path):
     ccf_tsv = pd.read_csv(path, sep='\t', skipinitialspace=True)

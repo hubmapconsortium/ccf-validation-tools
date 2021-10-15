@@ -25,6 +25,7 @@ FORCE:
 	echo ; echo "*** Building "$@" ***" ; echo ;
 	${ROBOT} template --add-prefix "CCFH: http://ccf_tools_helpers/class_helper.owl#" \
 		--add-prefix "dc: http://purl.org/dc/elements/1.1/" \
+		--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
 		--input helper.owl --template $< \
 		--output $@
 
