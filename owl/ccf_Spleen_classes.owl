@@ -7,7 +7,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:CCFH="http://ccf_tools_helpers/class_helper.owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <Ontology/>
     
 
@@ -32,6 +33,12 @@
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     
 
 
@@ -63,10 +70,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001021 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001021">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve</skos:prefLabel>
+    </Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001194 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001194">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic artery</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Splenic Artery</skos:prefLabel>
     </Class>
     
 
@@ -81,6 +98,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hilum of spleen</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hilum</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001248"/>
@@ -92,7 +110,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:42.534333</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:31.790714</dc:date>
     </Axiom>
     
 
@@ -102,13 +120,14 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red pulp of spleen</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Pulp</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001250"/>
         <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:34.800196</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:21.735902</dc:date>
     </Axiom>
     
 
@@ -117,6 +136,7 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001265">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trabecula of spleen</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trabeculae</skos:prefLabel>
     </Class>
     
 
@@ -131,6 +151,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic cord</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Splenic Cord</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001266"/>
@@ -142,7 +163,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:38.694683</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:25.408675</dc:date>
     </Axiom>
     
 
@@ -151,14 +172,7 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001473">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphatic vessel</rdfs:label>
-    </Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001638 -->
-
-    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001638">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Splenic vein</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphatic Vessels</skos:prefLabel>
     </Class>
     
 
@@ -168,13 +182,14 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001959">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">white pulp of spleen</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White Pulp</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001959"/>
         <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:39.567640</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:25.810419</dc:date>
     </Axiom>
     
 
@@ -189,6 +204,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">periarterial lymphatic sheath</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Periarteriolar Lymphoid Sheath (PALS)</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001960"/>
@@ -200,7 +216,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:42.137231</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:30.961058</dc:date>
     </Axiom>
     
 
@@ -209,6 +225,7 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002106">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen</skos:prefLabel>
     </Class>
     
 
@@ -217,6 +234,7 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003713">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic vein</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Splenic Vein</skos:prefLabel>
     </Class>
     
 
@@ -231,6 +249,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen primary B follicle</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary Follicle</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004041"/>
@@ -242,7 +261,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:39.967925</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:26.660523</dc:date>
     </Axiom>
     
 
@@ -257,6 +276,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen secondary B follicle</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondary Follicle</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004042"/>
@@ -268,7 +288,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:40.399055</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:27.505963</dc:date>
     </Axiom>
     
 
@@ -283,6 +303,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen capsule</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capsule</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004641"/>
@@ -294,7 +315,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:45.831433</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:39.461058</dc:date>
     </Axiom>
     
 
@@ -309,6 +330,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen germinal center</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Germinal Center</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005196"/>
@@ -320,7 +342,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:40.791009</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:28.332780</dc:date>
     </Axiom>
     
 
@@ -335,6 +357,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic sinusoid</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Splenic Sinusoid</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009967"/>
@@ -346,7 +369,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:37.385368</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:22.564233</dc:date>
     </Axiom>
     
 
@@ -361,6 +384,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spleen Trabecular Artery</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spleen Trabecular Artery</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010399"/>
@@ -372,7 +396,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:48.181472</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:44.891576</dc:date>
     </Axiom>
     
 
@@ -387,6 +411,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spleen Trabecular Vein</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spleen Trabecular Vein</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010400"/>
@@ -398,7 +423,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:48.582612</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:45.889986</dc:date>
     </Axiom>
     
 
@@ -412,7 +437,14 @@
                 <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001959"/>
             </Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
+            </Restriction>
+        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen central arteriole</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Periarteriolar Lymphoid Sheath (PALS)</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010401"/>
@@ -424,7 +456,19 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:41.729999</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:30.142237</dc:date>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010401"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
+            </Restriction>
+        </annotatedTarget>
+        <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:20.507835</dc:date>
     </Axiom>
     
 
@@ -439,6 +483,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen B cell corona</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mantle Zone</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010421"/>
@@ -450,7 +495,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:41.218381</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:29.134846</dc:date>
     </Axiom>
     
 
@@ -465,6 +510,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penicillar Arteriole</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penicillar Arteriole</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013132"/>
@@ -476,7 +522,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:36.981050</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:21.315864</dc:date>
     </Axiom>
     
 
@@ -491,6 +537,7 @@
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen pulp</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Splenic Pulp</skos:prefLabel>
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
@@ -502,7 +549,7 @@
             </Restriction>
         </annotatedTarget>
         <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-29T15:04:33.988341</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-15T18:33:17.335854</dc:date>
     </Axiom>
 </rdf:RDF>
 
