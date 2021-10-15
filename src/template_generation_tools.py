@@ -24,7 +24,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             'validation_date_po': '>A dc:date',
             'overlaps': 'SC overlaps some %',
             'OBO_Validated_overlaps': '>A CCFH:IN_OBO',
-            'validation_date_overlaps': '>A dc:date'}
+            'validation_date_overlaps': '>A dc:date',
+            'connected_to': 'SC connected_to some %',
+            'OBO_Validated_ct': '>A CCFH:IN_OBO',
+            'validation_date_ct': '>A dc:date'}
     ug = UberonGraph()
     records = [seed]
     terms = set()
@@ -49,15 +52,19 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             rec['overlaps'] = r['o']
             rec['OBO_Validated_overlaps'] = True
             rec['validation_date_overlaps'] = datetime.now().isoformat()
+        elif ug.ask_uberon(r, ug.ask_uberon_ct, urls=False):
+            rec['connected_to'] = r['o']
+            rec['OBO_Validated_ct'] = True
+            rec['validation_date_ct'] = datetime.now().isoformat()
         else:
             uberon_slabel = ug.get_label_from_uberon(r['s'])
             uberon_olabel = ug.get_label_from_uberon(r['o'])
 
             if uberon_slabel != r['slabel']:
-              logger.warning(f"Different labels for {r['s']}. Uberongraph: {uberon_slabel} ; ASCT+b table: {r['slabel']}")
+              logger.warning(f"Different labels found for {r['s']}. Uberongraph: {uberon_slabel} ; ASCT+b table: {r['slabel']}")
 
             if uberon_olabel != r['olabel']:
-              logger.warning(f"Different labels for {r['o']}. Uberongraph: {uberon_olabel} ; ASCT+b table: {r['olabel']}")
+              logger.warning(f"Different labels found for {r['o']}. Uberongraph: {uberon_olabel} ; ASCT+b table: {r['olabel']}")
 
             r['slabel'] = uberon_slabel
             r['olabel'] = uberon_olabel
