@@ -1,9 +1,11 @@
 import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import invalid_relationship_report, chunks, get_logger
+from ccf_tools import invalid_relationship_report, chunks
 from datetime import datetime
 import logging
+
+logger = logging.getLogger('ASCT-b Tables Log')
 
 #    olabel            slabel               o               s
 # 0  kidney      right kidney  UBERON:0002113  UBERON:0004539
@@ -52,10 +54,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             uberon_olabel = ug.get_label_from_uberon(r['o'])
 
             if uberon_slabel != r['slabel']:
-              get_logger().warning(f"Different labels found for {r['s']}. Uberongraph: {uberon_slabel} ; ASCT+b table: {r['slabel']}")
+              logger.warning(f"Different labels for {r['s']}. Uberongraph: {uberon_slabel} ; ASCT+b table: {r['slabel']}")
 
             if uberon_olabel != r['olabel']:
-              get_logger().warning(f"Different labels found for {r['o']}. Uberongraph: {uberon_olabel} ; ASCT+b table: {r['olabel']}")
+              logger.warning(f"Different labels for {r['o']}. Uberongraph: {uberon_olabel} ; ASCT+b table: {r['olabel']}")
 
             r['slabel'] = uberon_slabel
             r['olabel'] = uberon_olabel

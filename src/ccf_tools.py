@@ -13,16 +13,16 @@ class DuplicateFilter(logging.Filter):
             self.last_log = current_log
             return True
         return False
-def get_logger():
-    logger = logging.getLogger('ASCT-b Tables Log')
-    logger.setLevel(logging.WARN)  
-    formatter = logging.Formatter('%(levelname)s - %(message)s')
-    handler = logging.StreamHandler(sys.stderr)
-    handler.setLevel(logging.WARN)  
-    handler.setFormatter(formatter) 
-    handler.addFilter(DuplicateFilter())             
-    logger.addHandler(handler)
-    return logger 
+
+logger = logging.getLogger('ASCT-b Tables Log')
+logger.setLevel(logging.WARN)  
+formatter = logging.Formatter('%(levelname)s - %(message)s')
+handler = logging.StreamHandler(sys.stderr)
+handler.setLevel(logging.WARN)  
+handler.setFormatter(formatter) 
+handler.addFilter(DuplicateFilter())             
+logger.addHandler(handler)
+  
 
 def parse_CCF_tsv(path):
     ccf_tsv = pd.read_csv(path, sep='\t', skipinitialspace=True)
@@ -59,14 +59,14 @@ def parse_ASCTb(path):
         if re.match("(CL|UBERON)\:[0-9]+", content):
             return content
         else:
-            get_logger().warning("Unrecognised cell content '%s'" % content)
+            logger.warning("Unrecognised cell content '%s'" % content)
             return False
 
     def is_valid_class(ug, entity):
         if ug.is_valid_class(ug.ask_uberon_class, entity):
             return True
         else:
-            get_logger().warning("Unrecognised UBERON entity '%s'" % entity)
+            logger.warning("Unrecognised UBERON entity '%s'" % entity)
             return False
 
 
@@ -94,8 +94,7 @@ def parse_ASCTb(path):
                         l = r[c]
                     if components[2] == 'ID':
                         ID = r[c]
-            #if is_valid_id(ID) and is_valid_class(ug, ID):
-            if is_valid_id(ID):
+            if is_valid_id(ID) and is_valid_class(ug, ID):
                 lookup[ID] = {"label": l, "user_label": ul}
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
@@ -104,8 +103,7 @@ def parse_ASCTb(path):
     for i, r in asct_IDs_only.iterrows():
         for current, nekst in zip(r, r[1:]):
             d = {}
-            # if (is_valid_id(current) and is_valid_class(ug, current)) and (is_valid_id(nekst) and is_valid_class(ug, nekst)):
-            if is_valid_id(current) and is_valid_id(nekst):
+            if (is_valid_id(current) and is_valid_class(ug, current)) and (is_valid_id(nekst) and is_valid_class(ug, nekst)):
                 d['s'] = nekst
                 d['slabel'] = lookup[nekst]['label']
                 d['user_slabel'] = lookup[nekst]["user_label"]

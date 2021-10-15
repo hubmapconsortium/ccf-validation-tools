@@ -1,8 +1,6 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Thymus
-
-#Brain Bone-Marrow_Blood Heart Kidney Large_intestine Lung Skin Lymph_node Spleen 
+JOBS = Brain Bone-Marrow_Blood Heart Kidney Large_intestine Lung Skin Lymph_node Spleen Thymus
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_IND_FILES = $(patsubst %, ../owl/ccf_%_ind.owl, $(JOBS))
