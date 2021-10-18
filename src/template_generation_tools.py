@@ -34,36 +34,41 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
         records.append({'ID': r['o'], 'Label': r['olabel'], 'User_label': r['user_olabel']})
     for i, r in ccf_tools_df.iterrows():
         rec = dict()
-        rec['ID'] = r['s']
-        terms.add(r['s'])
-        terms.add(r['o'])
-        if ug.ask_uberon(r, ug.ask_uberon_subclassof, urls=False):
-            rec['Parent_class'] = r['o']
-            rec['OBO_Validated_isa'] = True
-            rec['validation_date_isa'] = datetime.now().isoformat()
-        elif ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
-            rec['part_of'] = r['o']
-            rec['OBO_Validated_po'] = True
-            rec['validation_date_po'] = datetime.now().isoformat()
-        elif ug.ask_uberon(r, ug.ask_uberon_overlaps, urls=False):
-            rec['overlaps'] = r['o']
-            rec['OBO_Validated_overlaps'] = True
-            rec['validation_date_overlaps'] = datetime.now().isoformat()
+
+        is_class = ug.is_valid_class(ug.ask_uberon_class, r['s'])
+        if not is_class:
+            logger.warning("Unrecognised UBERON/CL entity '%s'" % r['s'])
         else:
-            uberon_slabel = ug.get_label_from_uberon(r['s'])
-            uberon_olabel = ug.get_label_from_uberon(r['o'])
+            rec['ID'] = r['s']
+            terms.add(r['s'])
+            terms.add(r['o'])
+            if ug.ask_uberon(r, ug.ask_uberon_subclassof, urls=False):
+                rec['Parent_class'] = r['o']
+                rec['OBO_Validated_isa'] = True
+                rec['validation_date_isa'] = datetime.now().isoformat()
+            elif ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
+                rec['part_of'] = r['o']
+                rec['OBO_Validated_po'] = True
+                rec['validation_date_po'] = datetime.now().isoformat()
+            elif ug.ask_uberon(r, ug.ask_uberon_overlaps, urls=False):
+                rec['overlaps'] = r['o']
+                rec['OBO_Validated_overlaps'] = True
+                rec['validation_date_overlaps'] = datetime.now().isoformat()
+            else:
+                uberon_slabel = ug.get_label_from_uberon(r['s'])
+                uberon_olabel = ug.get_label_from_uberon(r['o'])
 
-            if uberon_slabel != r['slabel']:
-              logger.warning(f"Different labels for {r['s']}. Uberongraph: {uberon_slabel} ; ASCT+b table: {r['slabel']}")
+                if uberon_slabel != r['slabel']:
+                  logger.warning(f"Different labels for {r['s']}. Uberongraph: {uberon_slabel} ; ASCT+b table: {r['slabel']}")
 
-            if uberon_olabel != r['olabel']:
-              logger.warning(f"Different labels for {r['o']}. Uberongraph: {uberon_olabel} ; ASCT+b table: {r['olabel']}")
+                if uberon_olabel != r['olabel']:
+                  logger.warning(f"Different labels for {r['o']}. Uberongraph: {uberon_olabel} ; ASCT+b table: {r['olabel']}")
 
-            r['slabel'] = uberon_slabel
-            r['olabel'] = uberon_olabel
-            error_log = error_log.append(r)
+                r['slabel'] = uberon_slabel
+                r['olabel'] = uberon_olabel
+                error_log = error_log.append(r)
 
-        records.append(rec)
+            records.append(rec)
     annotations = ConjunctiveGraph()
     terms = list(terms)
     if len(terms) > 90:

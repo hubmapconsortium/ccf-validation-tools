@@ -62,24 +62,16 @@ def parse_ASCTb(path):
             logger.warning("Unrecognised cell content '%s'" % content)
             return False
 
-    def is_valid_class(ug, entity):
-        if ug.is_valid_class(ug.ask_uberon_class, entity):
-            return True
-        else:
-            logger.warning("Unrecognised UBERON entity '%s'" % entity)
-            return False
-
-
     asct_b_tab = pd.read_csv(path, sep=',', header=10)
     asct_b_tab.fillna('', inplace=True)
     ### Make a processed table with only ID columns - use this to generate tuples
     ### Drop all columns that do not have match regex .+/._+/ID$
-    columns_to_drop = [c for c in asct_b_tab.columns if not (re.match("(AS)/.+/ID$", c))] # Excluding cell types for now
+    columns_to_drop = [c for c in asct_b_tab.columns if not (re.match("(AS|CT)/.+/ID$", c))]
     asct_IDs_only = asct_b_tab.drop(columns=columns_to_drop)
 
     ### Make lookup of ID -> label and user_label
     # dict[ID] = { label: label, user_label: user_label }
-    relevant_columns = [c for c in asct_b_tab.columns if re.match("(AS)/.+", c)]  # Excluding cell types for now
+    relevant_columns = [c for c in asct_b_tab.columns if re.match("(AS|CT)/.+", c)]
     
     ug = UberonGraph()
     lookup = dict()
@@ -94,7 +86,7 @@ def parse_ASCTb(path):
                         l = r[c]
                     if components[2] == 'ID':
                         ID = r[c]
-            if is_valid_id(ID) and is_valid_class(ug, ID):
+            if is_valid_id(ID):
                 lookup[ID] = {"label": l, "user_label": ul}
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
@@ -103,7 +95,7 @@ def parse_ASCTb(path):
     for i, r in asct_IDs_only.iterrows():
         for current, nekst in zip(r, r[1:]):
             d = {}
-            if (is_valid_id(current) and is_valid_class(ug, current)) and (is_valid_id(nekst) and is_valid_class(ug, nekst)):
+            if is_valid_id(current) and is_valid_id(nekst):
                 d['s'] = nekst
                 d['slabel'] = lookup[nekst]['label']
                 d['user_slabel'] = lookup[nekst]["user_label"]

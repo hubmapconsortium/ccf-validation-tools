@@ -33,6 +33,7 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
         self.ask_uberon_class = """
           PREFIX owl: <http://www.w3.org/2002/07/owl#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           ASK 
           FROM <http://reasoner.renci.org/ontology>
           { %s a owl:Class . }
@@ -63,6 +64,7 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
               PREFIX owl: <http://www.w3.org/2002/07/owl#>
               PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
               PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+              PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
               CONSTRUCT 
               {{
                 ?term rdf:type owl:Class; ?APT ?APVT .
@@ -96,6 +98,7 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
             PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             PREFIX owl: <http://www.w3.org/2002/07/owl#>
             PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+            PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
             SELECT ?label 
             WHERE {{ {term} rdfs:label ?label . }}
         """.format(term = term)
@@ -103,5 +106,9 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
         self.sparql.setQuery(query)
         self.sparql.setReturnFormat(JSON)
         result = self.sparql.query().convert()
-        return result["results"]["bindings"][0]["label"]["value"]
+
+        if len(result["results"]["bindings"]) > 0:
+            return result["results"]["bindings"][0]["label"]["value"]
+        else:
+            return "Label not found"
 
