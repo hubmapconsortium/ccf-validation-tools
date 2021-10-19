@@ -48,6 +48,33 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
           { %s connected_to: %s }
         """
 
+        self.ask_uberon_po_nonredundant = """
+          PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          ASK
+          FROM <http://reasoner.renci.org/nonredundant>
+          { %s part_of: %s }
+        """
+
+        self.ask_uberon_overlaps_nonredundant = """
+          PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131> 
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          ASK
+          FROM <http://reasoner.renci.org/nonredundant>
+          { %s overlaps: %s }
+        """
+
+        self.ask_uberon_subclass_ontology = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          ASK
+          FROM <http://reasoner.renci.org/ontology>
+          { %s rdfs:subClassOf %s }
+        """
+
     def ask_uberon(self, r, q, urls=True):
         """"""
         start = ''
