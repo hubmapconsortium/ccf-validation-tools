@@ -24,7 +24,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             'validation_date_po': '>A dc:date',
             'overlaps': 'SC overlaps some %',
             'OBO_Validated_overlaps': '>A CCFH:IN_OBO',
-            'validation_date_overlaps': '>A dc:date'}
+            'validation_date_overlaps': '>A dc:date',
+            'connected_to': 'SC connected_to some %',
+            'OBO_Validated_ct': '>A CCFH:IN_OBO',
+            'validation_date_ct': '>A dc:date'}
     ug = UberonGraph()
     records = [seed]
     terms = set()
@@ -34,7 +37,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
         records.append({'ID': r['o'], 'Label': r['olabel'], 'User_label': r['user_olabel']})
     for i, r in ccf_tools_df.iterrows():
         rec = dict()
-
+        
         is_class = ug.is_valid_class(ug.ask_uberon_class, r['s'])
         if not is_class:
             logger.warning("Unrecognised UBERON/CL entity '%s'" % r['s'])
@@ -54,6 +57,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
                 rec['overlaps'] = r['o']
                 rec['OBO_Validated_overlaps'] = True
                 rec['validation_date_overlaps'] = datetime.now().isoformat()
+            elif ug.ask_uberon(r, ug.ask_uberon_ct, urls=False):
+                rec['connected_to'] = r['o']
+                rec['OBO_Validated_ct'] = True
+                rec['validation_date_ct'] = datetime.now().isoformat()
             else:
                 uberon_slabel = ug.get_label_from_uberon(r['s'])
                 uberon_olabel = ug.get_label_from_uberon(r['o'])
