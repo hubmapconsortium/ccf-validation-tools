@@ -38,6 +38,16 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
           { %s a owl:Class . }
         """
 
+        self.ask_uberon_ct = """
+          PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          ASK
+          FROM <http://reasoner.renci.org/ontology>
+          FROM <http://reasoner.renci.org/redundant> 
+          { %s connected_to: %s }
+        """
+
     def ask_uberon(self, r, q, urls=True):
         """"""
         start = ''
