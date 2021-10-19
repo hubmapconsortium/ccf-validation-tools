@@ -73,7 +73,6 @@ def parse_ASCTb(path):
     # dict[ID] = { label: label, user_label: user_label }
     relevant_columns = [c for c in asct_b_tab.columns if re.match("(AS|CT)/.+", c)]
     
-    ug = UberonGraph()
     lookup = dict()
     for i, r in asct_b_tab.iterrows():
         for chunk in chunks(relevant_columns, 3):
@@ -94,14 +93,17 @@ def parse_ASCTb(path):
 
     for i, r in asct_IDs_only.iterrows():
         for current, nekst in zip(r, r[1:]):
-            d = {}
-            if is_valid_id(current) and is_valid_id(nekst):
-                d['s'] = nekst
-                d['slabel'] = lookup[nekst]['label']
-                d['user_slabel'] = lookup[nekst]["user_label"]
-                d['o'] = current
-                d['olabel'] = lookup[current]['label']
-                d['user_olabel'] = lookup[current]["user_label"]
+            if 'CL' in nekst and 'UBERON' in current:
+              pass
+            else:       
+              d = {}
+              if is_valid_id(current) and is_valid_id(nekst):
+                  d['s'] = nekst
+                  d['slabel'] = lookup[nekst]['label']
+                  d['user_slabel'] = lookup[nekst]["user_label"]
+                  d['o'] = current
+                  d['olabel'] = lookup[current]['label']
+                  d['user_olabel'] = lookup[current]["user_label"]
             if d:
                 dl.append(d)
     out = pd.DataFrame.from_records(dl)
