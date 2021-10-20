@@ -1,7 +1,7 @@
 import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import invalid_relationship_report, chunks
+from ccf_tools import invalid_relationship_report, chunks, transform_results
 from datetime import datetime
 import logging
 
@@ -31,46 +31,81 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     ug = UberonGraph()
     records = [seed]
     terms = set()
+    terms_pairs = set()
     # Add declarations and labels for entity
     for i, r in ccf_tools_df.iterrows():
         records.append({'ID': r['s'], 'Label': r['slabel'], 'User_label': r['user_slabel']})
         records.append({'ID': r['o'], 'Label': r['olabel'], 'User_label': r['user_olabel']})
-    for i, r in ccf_tools_df.iterrows():
-        rec = dict()
-        rec['ID'] = r['s']
+        terms_pairs.add(f"({r['s']} {r['o']})")
         terms.add(r['s'])
         terms.add(r['o'])
-        if ug.ask_uberon(r, ug.ask_uberon_subclassof, urls=False):
-            rec['Parent_class'] = r['o']
-            rec['OBO_Validated_isa'] = True
-            rec['validation_date_isa'] = datetime.now().isoformat()
-        elif ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
-            rec['part_of'] = r['o']
-            rec['OBO_Validated_po'] = True
-            rec['validation_date_po'] = datetime.now().isoformat()
-        elif ug.ask_uberon(r, ug.ask_uberon_overlaps, urls=False):
-            rec['overlaps'] = r['o']
-            rec['OBO_Validated_overlaps'] = True
-            rec['validation_date_overlaps'] = datetime.now().isoformat()
-        elif ug.ask_uberon(r, ug.ask_uberon_ct, urls=False):
-            rec['connected_to'] = r['o']
-            rec['OBO_Validated_ct'] = True
-            rec['validation_date_ct'] = datetime.now().isoformat()
-        else:
-            uberon_slabel = ug.get_label_from_uberon(r['s'])
-            uberon_olabel = ug.get_label_from_uberon(r['o'])
+    # TODO: get results with namespace and split in two values
+    valid_subclass = transform_results(ug.query_uberon(" ".join(list(terms_pairs)), ug.select_subclass))
 
-            if uberon_slabel != r['slabel']:
-              logger.warning(f"Different labels found for {r['s']}. Uberongraph: {uberon_slabel} ; ASCT+b table: {r['slabel']}")
+    for s, o in valid_subclass:
+      rec = dict()
+      rec['ID'] = s
+      rec['Parent_class'] = o
+      rec['OBO_Validated_isa'] = True
+      rec['validation_date_isa'] = datetime.now().isoformat()
+      records.append(rec)
 
-            if uberon_olabel != r['olabel']:
-              logger.warning(f"Different labels found for {r['o']}. Uberongraph: {uberon_olabel} ; ASCT+b table: {r['olabel']}")
+    terms_pairs = terms_pairs - valid_subclass
 
-            r['slabel'] = uberon_slabel
-            r['olabel'] = uberon_olabel
-            error_log = error_log.append(r)
+    valid_po = transform_results(ug.query_uberon(" ".join(list(terms_pairs)), ug.select_po))
 
-        records.append(rec)
+    for s, o in valid_po:
+      rec = dict()
+      rec['ID'] = s
+      rec['part_of'] = o
+      rec['OBO_Validated_po'] = True
+      rec['validation_date_po'] = datetime.now().isoformat()
+      records.append(rec)
+
+    terms_pairs = terms_pairs - valid_po
+
+    valid_overlaps = transform_results(ug.query_uberon(" ".join(list(terms_pairs)), ug.select_overlaps))
+
+    for s, o in valid_overlaps:
+      rec = dict()
+      rec['ID'] = s
+      rec['overlaps'] = o
+      rec['OBO_Validated_overlaps'] = True
+      rec['validation_date_overlaps'] = datetime.now().isoformat()
+      records.append(rec)
+
+    terms_pairs = terms_pairs - valid_overlaps
+
+    valid_ct = transform_results(ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct))
+
+    for s, o in valid_ct:
+      rec = dict()
+      rec['ID'] = s
+      rec['connected_to'] = r['o']
+      rec['OBO_Validated_ct'] = True
+      rec['validation_date_ct'] = datetime.now().isoformat()
+      records.append(rec)
+
+    # TODO: split string to 2 values
+    terms_pairs = terms_pairs - valid_ct
+
+    no_valid_relation = ccf_tools_df[ccf_tools_df['s'].isin(list(terms_pairs))]
+
+    for _, r in no_valid_relation.iterrows():
+      uberon_slabel = ug.get_label_from_uberon(r['s'])
+      uberon_olabel = ug.get_label_from_uberon(r['o'])
+
+      if uberon_slabel != r['slabel']:
+        logger.warning(f"Different labels found for {r['s']}. Uberongraph: {uberon_slabel} ; ASCT+b table: {r['slabel']}")
+
+      if uberon_olabel != r['olabel']:
+        logger.warning(f"Different labels found for {r['o']}. Uberongraph: {uberon_olabel} ; ASCT+b table: {r['olabel']}")
+
+      r['slabel'] = uberon_slabel
+      r['olabel'] = uberon_olabel
+      error_log = error_log.append(r)
+
+      
     annotations = ConjunctiveGraph()
     terms = list(terms)
     if len(terms) > 90:
