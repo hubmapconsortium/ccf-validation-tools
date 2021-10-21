@@ -62,14 +62,6 @@ def parse_ASCTb(path):
             logger.warning("Unrecognised cell content '%s'" % content)
             return False
 
-    def is_valid_class(ug, entity):
-        if ug.is_valid_class(ug.ask_uberon_class, entity):
-            return True
-        else:
-            logger.warning("Unrecognised UBERON entity '%s'" % entity)
-            return False
-
-
     asct_b_tab = pd.read_csv(path, sep=',', header=10)
     asct_b_tab.fillna('', inplace=True)
     ### Make a processed table with only ID columns - use this to generate tuples
@@ -81,7 +73,6 @@ def parse_ASCTb(path):
     # dict[ID] = { label: label, user_label: user_label }
     relevant_columns = [c for c in asct_b_tab.columns if re.match("(AS)/.+", c)]  # Excluding cell types for now
     
-    ug = UberonGraph()
     lookup = dict()
     for i, r in asct_b_tab.iterrows():
         for chunk in chunks(relevant_columns, 3):
@@ -94,7 +85,7 @@ def parse_ASCTb(path):
                         l = r[c]
                     if components[2] == 'ID':
                         ID = r[c]
-            if is_valid_id(ID) and is_valid_class(ug, ID):
+            if is_valid_id(ID):
                 lookup[ID] = {"label": l, "user_label": ul}
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
@@ -103,7 +94,7 @@ def parse_ASCTb(path):
     for i, r in asct_IDs_only.iterrows():
         for current, nekst in zip(r, r[1:]):
             d = {}
-            if (is_valid_id(current) and is_valid_class(ug, current)) and (is_valid_id(nekst) and is_valid_class(ug, nekst)):
+            if is_valid_id(current) and is_valid_id(nekst):
                 d['s'] = nekst
                 d['slabel'] = lookup[nekst]['label']
                 d['user_slabel'] = lookup[nekst]["user_label"]
@@ -141,11 +132,20 @@ def invalid_relationship_report(row, relations):
     return "No valid relationshp between '%s ; %s' and '%s ; %s' (checked for: %s) " \
           "" % (row['slabel'], row['s'], row['olabel'], row['o'], str(relations))
 
-def transform_results(list):
-  if not list:
-    return list
-  else:
+def transform_to_str(list):
     terms_pairs = set()
-    for r in list:
-      terms_pairs.add(f"({r['subject']['value']} {r['object']['value']})")
+
+    for s, o in list:
+      terms_pairs.add(f"({s} {o})")
     return terms_pairs
+
+def split_terms(list):
+    terms_s = []
+    terms_o = []
+
+    for pairs in list:
+      s, o = pairs.split(" ")
+      terms_s.append(s[1:])
+      terms_o.append(o[:-1])
+
+    return terms_s, terms_o

@@ -1,7 +1,7 @@
 import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import invalid_relationship_report, chunks, transform_results
+from ccf_tools import chunks, split_terms, transform_to_str
 from datetime import datetime
 import logging
 
@@ -30,6 +30,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             'validation_date_ct': '>A dc:date'}
     ug = UberonGraph()
     records = [seed]
+    if ccf_tools_df.empty:
+      return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph())
+
     terms = set()
     terms_pairs = set()
     # Add declarations and labels for entity
@@ -39,8 +42,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
         terms_pairs.add(f"({r['s']} {r['o']})")
         terms.add(r['s'])
         terms.add(r['o'])
-    # TODO: get results with namespace and split in two values
-    valid_subclass = transform_results(ug.query_uberon(" ".join(list(terms_pairs)), ug.select_subclass))
+  
+    valid_subclass = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_subclass)
 
     for s, o in valid_subclass:
       rec = dict()
@@ -50,9 +53,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       rec['validation_date_isa'] = datetime.now().isoformat()
       records.append(rec)
 
-    terms_pairs = terms_pairs - valid_subclass
+    terms_pairs = terms_pairs - transform_to_str(valid_subclass)
 
-    valid_po = transform_results(ug.query_uberon(" ".join(list(terms_pairs)), ug.select_po))
+    valid_po = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_po)
 
     for s, o in valid_po:
       rec = dict()
@@ -62,9 +65,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       rec['validation_date_po'] = datetime.now().isoformat()
       records.append(rec)
 
-    terms_pairs = terms_pairs - valid_po
+    terms_pairs = terms_pairs - transform_to_str(valid_po)
 
-    valid_overlaps = transform_results(ug.query_uberon(" ".join(list(terms_pairs)), ug.select_overlaps))
+    valid_overlaps = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_overlaps)
 
     for s, o in valid_overlaps:
       rec = dict()
@@ -74,9 +77,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       rec['validation_date_overlaps'] = datetime.now().isoformat()
       records.append(rec)
 
-    terms_pairs = terms_pairs - valid_overlaps
+    terms_pairs = terms_pairs - transform_to_str(valid_overlaps)
 
-    valid_ct = transform_results(ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct))
+    valid_ct = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct)
 
     for s, o in valid_ct:
       rec = dict()
@@ -86,10 +89,23 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       rec['validation_date_ct'] = datetime.now().isoformat()
       records.append(rec)
 
-    # TODO: split string to 2 values
-    terms_pairs = terms_pairs - valid_ct
+    terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_ct))
 
-    no_valid_relation = ccf_tools_df[ccf_tools_df['s'].isin(list(terms_pairs))]
+    no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
+
+    terms_s = set(terms_s) - no_valid_class_s
+
+    for t in no_valid_class_s:
+      logger.warning(f"Unrecognised cell content '{t}'")
+
+    no_valid_class_o = ug.query_uberon(" ".join(terms_o), ug.select_class)
+
+    terms_o = set(terms_o) - no_valid_class_o
+
+    for t in no_valid_class_o:
+      logger.warning(f"Unrecognised cell content '{t}'")
+
+    no_valid_relation = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
 
     for _, r in no_valid_relation.iterrows():
       uberon_slabel = ug.get_label_from_uberon(r['s'])
