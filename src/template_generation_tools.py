@@ -15,6 +15,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     Validates relationships against OBO;
     Adds relationships to template, tagged with OBO status"""
     error_log = pd.DataFrame(columns=ccf_tools_df.columns)
+    valid_log = pd.DataFrame(columns=ccf_tools_df.columns)
     seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
             'Parent_class': 'SC %',
             'OBO_Validated_isa': '>A CCFH:IN_OBO',
@@ -45,22 +46,22 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             rec['OBO_Validated_isa'] = True
             rec['validation_date_isa'] = datetime.now().isoformat()
 
-            if not ug.ask_uberon(r, ug.ask_uberon_subclass_ontology, urls=False):
-              logger.warning(f"SubClassOf not in closure graph: {r}")
+            if not ug.ask_uberon(r, ug.select_subclass_ontology, urls=False):
+              valid_log = valid_log.append(r)
         elif ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
             rec['part_of'] = r['o']
             rec['OBO_Validated_po'] = True
             rec['validation_date_po'] = datetime.now().isoformat()
 
-            if not ug.ask_uberon(r, ug.ask_uberon_po_nonredundant, urls=False):
-              logger.warning(f"Part of not in nonredundant graph: {r}")
+            if not ug.ask_uberon(r, ug.select_po_nonredundant, urls=False):
+              valid_log = valid_log.append(r)
         elif ug.ask_uberon(r, ug.ask_uberon_overlaps, urls=False):
             rec['overlaps'] = r['o']
             rec['OBO_Validated_overlaps'] = True
             rec['validation_date_overlaps'] = datetime.now().isoformat()
 
-            if not ug.ask_uberon(r, ug.ask_uberon_overlaps_nonredundant, urls=False):
-              logger.warning(f"Overlaps not in nonredundant graph: {r}")
+            if not ug.ask_uberon(r, ug.select_overlaps_nonredundant, urls=False):
+              valid_log = valid_log.append(r)
         elif ug.ask_uberon(r, ug.ask_uberon_ct, urls=False):
             rec['connected_to'] = r['o']
             rec['OBO_Validated_ct'] = True
@@ -88,7 +89,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     else:
       terms = "\n".join(terms)
       annotations = ug.construct_annotation(terms)
-    return (pd.DataFrame.from_records(records), error_log, annotations)
+    return (pd.DataFrame.from_records(records), error_log, annotations, valid_log)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
