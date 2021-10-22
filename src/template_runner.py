@@ -32,7 +32,7 @@ else:
 
     class_graph_template_dfs[2].serialize("../owl/" + args.job + "_annotations.owl", format='xml')
 
-    class_graph_template_dfs[3].to_csv("../logs/class_" + args.job + "_valid_log.tsv",
+    class_graph_template_dfs[3].to_csv("../logs/class_" + args.job + "_indirect_log.tsv",
                                        sep='\t',
                                        index=False)                 
 
