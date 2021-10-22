@@ -3,49 +3,87 @@ from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
 class UberonGraph():
     def __init__(self):
         self.sparql = SPARQLWrapper('https://stars-app.renci.org/uberongraph/sparql')
-        self.ask_uberon_po = """
-PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
-PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
-PREFIX FMA: <http://purl.obolibrary.org/obo/FMA_>
-ASK
-FROM <http://reasoner.renci.org/ontology>
-FROM <http://reasoner.renci.org/redundant>
-{ %s part_of: %s }"""
-        self.ask_uberon_overlaps = """
-PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131> 
-PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
-PREFIX FMA: <http://purl.obolibrary.org/obo/FMA_>
-ASK
-FROM <http://reasoner.renci.org/ontology>
-FROM <http://reasoner.renci.org/redundant>
- { %s overlaps: %s }"""
-
-        self.ask_uberon_subclassof = """
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
-PREFIX FMA: <http://purl.obolibrary.org/obo/FMA_>
-ASK FROM <http://reasoner.renci.org/ontology/closure>
-    { %s rdfs:subClassOf %s }"""
-
-        self.ask_uberon_class = """
-          PREFIX owl: <http://www.w3.org/2002/07/owl#>
-          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-          ASK 
-          FROM <http://reasoner.renci.org/ontology>
-          { %s a owl:Class . }
-        """
-
-        self.ask_uberon_ct = """
-          PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170>
+        self.select_po = """
+          PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
-          ASK
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/ontology>
+          FROM <http://reasoner.renci.org/redundant>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject part_of: ?object .
+          }
+        """
+
+        self.select_overlaps = """
+          PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131> 
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/ontology>
+          FROM <http://reasoner.renci.org/redundant>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject overlaps: ?object .
+          }"""
+
+        self.select_subclass = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/ontology/closure>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject rdfs:subClassOf ?object .
+          }"""
+
+        self.select_class = """
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject
+          FROM <http://reasoner.renci.org/ontology>
+          { 
+            VALUES ?subject {
+              %s
+            }
+            FILTER NOT EXISTS { ?subject a owl:Class . }
+          }"""
+
+        self.select_ct = """
+          PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170> 
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
           FROM <http://reasoner.renci.org/redundant> 
-          { %s connected_to: %s }
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject connected_to: ?object .
+          }"""
+        
+        self.select_label = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object 
+          {
+            VALUES ?subject {
+              %s
+            }
+            ?subject rdfs:label ?object . 
+          }
         """
 
         self.select_po_nonredundant = """
@@ -101,14 +139,18 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
         self.sparql.setReturnFormat(JSON)
         self.sparql.setQuery(q)
         results = self.sparql.query().convert()
-        return results['boolean']
+        return results["boolean"]
 
-    def is_valid_class(self, query, entity):
-        query = query % (entity)
-        self.sparql.setReturnFormat(JSON)
-        self.sparql.setQuery(query)
-        results = self.sparql.query().convert()
-        return results['boolean']
+    def query_uberon(self, terms, query):
+      query = query % terms
+      self.sparql.setReturnFormat(JSON)
+      self.sparql.setQuery(query)
+      
+      results = self.sparql.query().convert()
+      if results["results"]["bindings"]:
+        return self.extract_results(results["results"]["bindings"])
+      else:
+        return set()
 
     def construct_annotation(self, terms):
         construct_query = """
@@ -143,17 +185,15 @@ ASK FROM <http://reasoner.renci.org/ontology/closure>
         result = self.sparql.query().convert()
         return result
 
-    def get_label_from_uberon(self, term):
-        query = """
-            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-            PREFIX owl: <http://www.w3.org/2002/07/owl#>
-            PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-            SELECT ?label 
-            WHERE {{ {term} rdfs:label ?label . }}
-        """.format(term = term)
+    def extract_results(self, list):
+      results = set()
+      for r in list:
+        if r.get("object"):
+          results.add((self.add_prefix(r["subject"]["value"]), self.add_prefix(r["object"]["value"])))
+        else:
+          results.add(self.add_prefix(r["subject"]["value"]))
+      return results
 
-        self.sparql.setQuery(query)
-        self.sparql.setReturnFormat(JSON)
-        result = self.sparql.query().convert()
-        return result["results"]["bindings"][0]["label"]["value"]
+    def add_prefix(self, term):
+      return term.replace("http://purl.obolibrary.org/obo/UBERON_", "UBERON:").replace("http://purl.obolibrary.org/obo/CL_", "CL:")
 
