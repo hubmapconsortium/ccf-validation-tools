@@ -134,3 +134,21 @@ SELECT DISTINCT ?o ?s ?olabel ?slabel
 def invalid_relationship_report(row, relations):
     return "No valid relationshp between '%s ; %s' and '%s ; %s' (checked for: %s) " \
           "" % (row['slabel'], row['s'], row['olabel'], row['o'], str(relations))
+
+def transform_to_str(list):
+    terms_pairs = set()
+
+    for s, o in list:
+      terms_pairs.add(f"({s} {o})")
+    return terms_pairs
+
+def split_terms(list):
+    terms_s = []
+    terms_o = []
+
+    for pairs in list:
+      s, o = pairs.split(" ")
+      terms_s.append(s[1:])
+      terms_o.append(o[:-1])
+
+    return terms_s, terms_o

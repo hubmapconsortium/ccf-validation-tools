@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:CCFH="http://ccf_tools_helpers/class_helper.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ccf_tools_helpers/class_helper.owl#IN_OBO -->
+
+    <AnnotationProperty rdf:about="http://ccf_tools_helpers/class_helper.owl#IN_OBO"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001013 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001013">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adipose tissue</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001021 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001021">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001591 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001591">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymic vein</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002122 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002122">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002370"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capsule of thymus</skos:prefLabel>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002122"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002370"/>
+            </Restriction>
+        </annotatedTarget>
+        <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-22T17:12:12.667305</dc:date>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002123 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002123">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cortex of thymus</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002124 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002124">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medulla of thymus</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002125 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002125">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymus lobule</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002370 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002370">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thoracic thymus</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002384 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002384">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003483 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003483">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymus epithelium</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003846 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003846">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymus epithelium</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003987 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003987">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hassall&apos;s corpuscle</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003988 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003988">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002125"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corticomedullary boundary of thymus</skos:prefLabel>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003988"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002125"/>
+            </Restriction>
+        </annotatedTarget>
+        <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-22T17:12:12.667311</dc:date>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004791 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004791">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymus trabecula</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005483 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005483">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002370"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymus lobe</skos:prefLabel>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005483"/>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <annotatedTarget>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002370"/>
+            </Restriction>
+        </annotatedTarget>
+        <CCFH:IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</CCFH:IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-22T17:12:12.667268</dc:date>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006936 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006936">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymus subcapsular epithelium</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010397 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0010397">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">efferent lymphatic</skos:prefLabel>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0018243 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0018243">
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymic artery</skos:prefLabel>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

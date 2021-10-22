@@ -1,7 +1,7 @@
 import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import invalid_relationship_report, chunks
+from ccf_tools import chunks, split_terms, transform_to_str
 from datetime import datetime
 import logging
 
@@ -11,80 +11,129 @@ logger = logging.getLogger('ASCT-b Tables Log')
 # 0  kidney      right kidney  UBERON:0002113  UBERON:0004539
 
 def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
-    """Takes a ccf tools dataframe as input;
-    Validates relationships against OBO;
-    Adds relationships to template, tagged with OBO status"""
-    error_log = pd.DataFrame(columns=ccf_tools_df.columns)
-    seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
-            'Parent_class': 'SC %',
-            'OBO_Validated_isa': '>A CCFH:IN_OBO',
-            'validation_date_isa': '>A dc:date',
-            'part_of': 'SC part_of some %',
-            'OBO_Validated_po': '>A CCFH:IN_OBO',
-            'validation_date_po': '>A dc:date',
-            'overlaps': 'SC overlaps some %',
-            'OBO_Validated_overlaps': '>A CCFH:IN_OBO',
-            'validation_date_overlaps': '>A dc:date',
-            'connected_to': 'SC connected_to some %',
-            'OBO_Validated_ct': '>A CCFH:IN_OBO',
-            'validation_date_ct': '>A dc:date'}
-    ug = UberonGraph()
-    records = [seed]
-    terms = set()
-    # Add declarations and labels for entity
-    for i, r in ccf_tools_df.iterrows():
-        records.append({'ID': r['s'], 'Label': r['slabel'], 'User_label': r['user_slabel']})
-        records.append({'ID': r['o'], 'Label': r['olabel'], 'User_label': r['user_olabel']})
-    for i, r in ccf_tools_df.iterrows():
-        rec = dict()
+  """Takes a ccf tools dataframe as input;
+  Validates relationships against OBO;
+  Adds relationships to template, tagged with OBO status"""
+  error_log = pd.DataFrame(columns=ccf_tools_df.columns)
+  seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
+          'Parent_class': 'SC %',
+          'OBO_Validated_isa': '>A CCFH:IN_OBO',
+          'validation_date_isa': '>A dc:date',
+          'part_of': 'SC part_of some %',
+          'OBO_Validated_po': '>A CCFH:IN_OBO',
+          'validation_date_po': '>A dc:date',
+          'overlaps': 'SC overlaps some %',
+          'OBO_Validated_overlaps': '>A CCFH:IN_OBO',
+          'validation_date_overlaps': '>A dc:date',
+          'connected_to': 'SC connected_to some %',
+          'OBO_Validated_ct': '>A CCFH:IN_OBO',
+          'validation_date_ct': '>A dc:date'}
+  ug = UberonGraph()
+  records = [seed]
+  if ccf_tools_df.empty:
+    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph())
+
+  terms = set()
+  terms_pairs = set()
+  # Add declarations and labels for entity
+  for i, r in ccf_tools_df.iterrows():
+    records.append({'ID': r['s'], 'User_label': r['user_slabel']})
+    records.append({'ID': r['o'], 'User_label': r['user_olabel']})
+    terms_pairs.add(f"({r['s']} {r['o']})")
+    terms.add(r['s'])
+    terms.add(r['o'])
+
+  terms_labels = ug.query_uberon(" ".join(list(terms)), ug.select_label)
+
+  for term, label in terms_labels:
+    row = ccf_tools_df[(ccf_tools_df['s'] == term) | (ccf_tools_df['o'] == term)].iloc[0]
+    if row['s'] == term and row['slabel'] != label:
+      logger.warning(f"Different labels found for {term}. Uberongraph: {label} ; ASCT+b table: {row['slabel']}")
+      ccf_tools_df.loc[(ccf_tools_df['s'] == term), 'slabel'] = label
+      ccf_tools_df.loc[(ccf_tools_df['o'] == term), 'olabel'] = label
         
-        is_class = ug.is_valid_class(ug.ask_uberon_class, r['s'])
-        if not is_class:
-            logger.warning("Unrecognised UBERON/CL entity '%s'" % r['s'])
-        else:
-            rec['ID'] = r['s']
-            terms.add(r['s'])
-            terms.add(r['o'])
-            if ug.ask_uberon(r, ug.ask_uberon_subclassof, urls=False):
-                rec['Parent_class'] = r['o']
-                rec['OBO_Validated_isa'] = True
-                rec['validation_date_isa'] = datetime.now().isoformat()
-            elif ug.ask_uberon(r, ug.ask_uberon_po, urls=False):
-                rec['part_of'] = r['o']
-                rec['OBO_Validated_po'] = True
-                rec['validation_date_po'] = datetime.now().isoformat()
-            elif ug.ask_uberon(r, ug.ask_uberon_overlaps, urls=False):
-                rec['overlaps'] = r['o']
-                rec['OBO_Validated_overlaps'] = True
-                rec['validation_date_overlaps'] = datetime.now().isoformat()
-            elif ug.ask_uberon(r, ug.ask_uberon_ct, urls=False):
-                rec['connected_to'] = r['o']
-                rec['OBO_Validated_ct'] = True
-                rec['validation_date_ct'] = datetime.now().isoformat()
-            else:
-                uberon_slabel = ug.get_label_from_uberon(r['s'])
-                uberon_olabel = ug.get_label_from_uberon(r['o'])
+    if row['o'] == term and row['olabel'] != label:
+      logger.warning(f"Different labels found for {term}. Uberongraph: {label} ; ASCT+b table: {row['olabel']}")
+      ccf_tools_df.loc[(ccf_tools_df['o'] == term), 'olabel'] = label
+      ccf_tools_df.loc[(ccf_tools_df['s'] == term), 'slabel'] = label
+      
+  valid_subclass = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_subclass)
 
-                if uberon_slabel != r['slabel']:
-                  logger.warning(f"Different labels for {r['s']}. Uberongraph: {uberon_slabel} ; ASCT+b table: {r['slabel']}")
+  for s, o in valid_subclass:
+    rec = dict()
+    rec['ID'] = s
+    rec['Parent_class'] = o
+    rec['OBO_Validated_isa'] = True
+    rec['validation_date_isa'] = datetime.now().isoformat()
+    records.append(rec)
 
-                if uberon_olabel != r['olabel']:
-                  logger.warning(f"Different labels for {r['o']}. Uberongraph: {uberon_olabel} ; ASCT+b table: {r['olabel']}")
+  terms_pairs = terms_pairs - transform_to_str(valid_subclass)
 
-                r['slabel'] = uberon_slabel
-                r['olabel'] = uberon_olabel
-                error_log = error_log.append(r)
+  valid_po = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_po)
 
-            records.append(rec)
-    annotations = ConjunctiveGraph()
-    terms = list(terms)
-    if len(terms) > 90:
-      for chunk in chunks(terms, 90):
-        annotations += ug.construct_annotation("\n".join(chunk))
-    else:
-      terms = "\n".join(terms)
-      annotations = ug.construct_annotation(terms)
-    return (pd.DataFrame.from_records(records), error_log, annotations)
+  for s, o in valid_po:
+    rec = dict()
+    rec['ID'] = s
+    rec['part_of'] = o
+    rec['OBO_Validated_po'] = True
+    rec['validation_date_po'] = datetime.now().isoformat()
+    records.append(rec)
+
+  terms_pairs = terms_pairs - transform_to_str(valid_po)
+
+  valid_overlaps = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_overlaps)
+
+  for s, o in valid_overlaps:
+    rec = dict()
+    rec['ID'] = s
+    rec['overlaps'] = o
+    rec['OBO_Validated_overlaps'] = True
+    rec['validation_date_overlaps'] = datetime.now().isoformat()
+    records.append(rec)
+
+  terms_pairs = terms_pairs - transform_to_str(valid_overlaps)
+
+  valid_ct = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct)
+
+  for s, o in valid_ct:
+    rec = dict()
+    rec['ID'] = s
+    rec['connected_to'] = o
+    rec['OBO_Validated_ct'] = True
+    rec['validation_date_ct'] = datetime.now().isoformat()
+    records.append(rec)
+
+  terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_ct))
+
+  no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
+
+  terms_s = set(terms_s) - no_valid_class_s
+
+  for t in no_valid_class_s:
+    logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
+
+  no_valid_class_o = ug.query_uberon(" ".join(terms_o), ug.select_class)
+
+  terms_o = set(terms_o) - no_valid_class_o
+
+  for t in no_valid_class_o:
+    logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
+
+  no_valid_relation = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
+
+  for _, r in no_valid_relation.iterrows():
+    error_log = error_log.append(r)
+
+    
+  annotations = ConjunctiveGraph()
+  terms = list(terms)
+  if len(terms) > 90:
+    for chunk in chunks(terms, 90):
+      annotations += ug.construct_annotation("\n".join(chunk))
+  else:
+    terms = "\n".join(terms)
+    annotations = ug.construct_annotation(terms)
+  return (pd.DataFrame.from_records(records), error_log, annotations)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
