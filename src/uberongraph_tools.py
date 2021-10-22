@@ -71,6 +71,20 @@ class UberonGraph():
             }
             ?subject connected_to: ?object .
           }"""
+        
+        self.select_label = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object 
+          {
+            VALUES ?subject {
+              %s
+            }
+            ?subject rdfs:label ?object . 
+          }
+        """
 
     def ask_uberon(self, r, q, urls=True):
         """"""
@@ -128,20 +142,6 @@ class UberonGraph():
         self.sparql.setReturnFormat(RDFXML)
         result = self.sparql.query().convert()
         return result
-
-    def get_label_from_uberon(self, term):
-        query = """
-            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-            PREFIX owl: <http://www.w3.org/2002/07/owl#>
-            PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-            SELECT ?label 
-            WHERE {{ {term} rdfs:label ?label . }}
-        """.format(term = term)
-
-        self.sparql.setQuery(query)
-        self.sparql.setReturnFormat(JSON)
-        result = self.sparql.query().convert()
-        return result["results"]["bindings"][0]["label"]["value"]
 
     def extract_results(self, list):
       results = set()
