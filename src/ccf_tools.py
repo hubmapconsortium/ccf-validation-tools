@@ -74,6 +74,9 @@ def parse_ASCTb(path):
     relevant_columns = [c for c in asct_b_tab.columns if re.match("(AS)/.+", c)]  # Excluding cell types for now
     
     lookup = dict()
+    count_invalid = 0
+    count_not_empty = set()
+    label_missing = set()
     for i, r in asct_b_tab.iterrows():
         for chunk in chunks(relevant_columns, 3):
             for c in chunk:
@@ -87,6 +90,19 @@ def parse_ASCTb(path):
                         ID = r[c]
             if is_valid_id(ID):
                 lookup[ID] = {"label": l, "user_label": ul}
+                if l == '':
+                  label_missing.add(ID)
+                  logger.warning(f"{ID} missing label ; user_label: {ul}")
+
+            else:
+              count_invalid += 1
+              if ID != '':
+                count_not_empty.add(ID)
+                logger.warning(f"{ID} ; label: {l} ; user_label: {ul}")
+
+    logger.warning(f"{count_invalid} cells not valid")
+    logger.warning(f"{len(count_not_empty)} cells lack a valid CL/UBERON term")
+    logger.warning(f"{len(label_missing)} classes missing label")
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
     dl = []

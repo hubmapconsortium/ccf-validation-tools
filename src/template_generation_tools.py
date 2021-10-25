@@ -36,6 +36,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms = set()
   terms_pairs = set()
+  nb_indirect = 0
   # Add declarations and labels for entity
   for i, r in ccf_tools_df.iterrows():
     records.append({'ID': r['s'], 'User_label': r['user_slabel']})
@@ -43,6 +44,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     terms_pairs.add(f"({r['s']} {r['o']})")
     terms.add(r['s'])
     terms.add(r['o'])
+
+  terms_pairs_start = len(terms_pairs)
 
   terms_labels = ug.query_uberon(" ".join(list(terms)), ug.select_label)
 
@@ -74,6 +77,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_s, terms_o = split_terms(transform_to_str(valid_subclass - valid_subclass_onto))
 
+  nb_indirect += len(terms_s)
+
   rows_nvso = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
 
   for _, r in rows_nvso.iterrows():
@@ -96,6 +101,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   valid_po_nr = ug.query_uberon(" ".join(list(terms_valid_po)), ug.select_po_nonredundant)
 
   terms_s, terms_o = split_terms(transform_to_str(valid_po - valid_po_nr))
+
+  nb_indirect += len(terms_s)
 
   rows_nvponr = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
 
@@ -120,6 +127,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_s, terms_o = split_terms(transform_to_str(valid_overlaps - valid_o_nr))
 
+  nb_indirect += len(terms_s)
+
   rows_nvonr = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
 
   for _, r in rows_nvonr.iterrows():
@@ -138,6 +147,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     records.append(rec)
 
   terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_ct))
+
+  logger.warning(f"{terms_pairs_start} triples derived from the table")
+  logger.warning(f"{len(terms_s)} triples fail to validate")
+  logger.warning(f"{nb_indirect} triples are indirect")
 
   no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
 
