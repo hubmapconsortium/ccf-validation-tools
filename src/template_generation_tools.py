@@ -27,7 +27,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
           'validation_date_overlaps': '>A dc:date',
           'connected_to': 'SC connected_to some %',
           'OBO_Validated_ct': '>A CCFH:IN_OBO',
-          'validation_date_ct': '>A dc:date'}
+          'validation_date_ct': '>A dc:date',
+          'develops_from': 'SC develops_from some %',
+          'OBO_Validated_df': '>A CCFH:IN_OBO',
+          'validation_date_df': '>A dc:date'}
   ug = UberonGraph()
   records = [seed]
   if ccf_tools_df.empty:
@@ -103,7 +106,19 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     rec['validation_date_ct'] = datetime.now().isoformat()
     records.append(rec)
 
-  terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_ct))
+  terms_pairs = terms_pairs - transform_to_str(valid_ct)
+
+  valid_df = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_develops_from)
+
+  for s, o in valid_df:
+    rec = dict()
+    rec['ID'] = s
+    rec['develops_from'] = o
+    rec['OBO_Validated_df'] = True
+    rec['validation_date_df'] = datetime.now().isoformat()
+    records.append(rec)
+
+  terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_df))
 
   no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
 
