@@ -15,6 +15,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   Validates relationships against OBO;
   Adds relationships to template, tagged with OBO status"""
   error_log = pd.DataFrame(columns=ccf_tools_df.columns)
+  valid_error_log = pd.DataFrame(columns=ccf_tools_df.columns)
   seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
           'Parent_class': 'SC %',
           'OBO_Validated_isa': '>A CCFH:IN_OBO',
@@ -31,7 +32,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   ug = UberonGraph()
   records = [seed]
   if ccf_tools_df.empty:
-    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph())
+    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log)
 
   terms = set()
   terms_pairs = set()
@@ -67,7 +68,18 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     rec['validation_date_isa'] = datetime.now().isoformat()
     records.append(rec)
 
-  terms_pairs = terms_pairs - transform_to_str(valid_subclass)
+  terms_valid_subclass = transform_to_str(valid_subclass)
+
+  valid_subclass_onto = ug.query_uberon(" ".join(list(terms_valid_subclass)), ug.select_subclass_ontology)
+
+  terms_s, terms_o = split_terms(transform_to_str(valid_subclass - valid_subclass_onto))
+
+  rows_nvso = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
+
+  for _, r in rows_nvso.iterrows():
+    valid_error_log = valid_error_log.append(r)
+  
+  terms_pairs = terms_pairs - terms_valid_subclass
 
   valid_po = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_po)
 
@@ -79,7 +91,18 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     rec['validation_date_po'] = datetime.now().isoformat()
     records.append(rec)
 
-  terms_pairs = terms_pairs - transform_to_str(valid_po)
+  terms_valid_po = transform_to_str(valid_po)
+
+  valid_po_nr = ug.query_uberon(" ".join(list(terms_valid_po)), ug.select_po_nonredundant)
+
+  terms_s, terms_o = split_terms(transform_to_str(valid_po - valid_po_nr))
+
+  rows_nvponr = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
+
+  for _, r in rows_nvponr.iterrows():
+    valid_error_log = valid_error_log.append(r)
+
+  terms_pairs = terms_pairs - terms_valid_po
 
   valid_overlaps = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_overlaps)
 
@@ -90,6 +113,17 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     rec['OBO_Validated_overlaps'] = True
     rec['validation_date_overlaps'] = datetime.now().isoformat()
     records.append(rec)
+  
+  terms_valid_overlaps = transform_to_str(valid_overlaps)
+
+  valid_o_nr = ug.query_uberon(" ".join(list(terms_valid_overlaps)), ug.select_overlaps_nonredundant)
+
+  terms_s, terms_o = split_terms(transform_to_str(valid_overlaps - valid_o_nr))
+
+  rows_nvonr = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
+
+  for _, r in rows_nvonr.iterrows():
+    valid_error_log = valid_error_log.append(r)
 
   terms_pairs = terms_pairs - transform_to_str(valid_overlaps)
 
@@ -133,7 +167,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   else:
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
-  return (pd.DataFrame.from_records(records), error_log, annotations)
+  return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
