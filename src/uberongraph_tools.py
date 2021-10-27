@@ -96,7 +96,49 @@ class UberonGraph():
             VALUES (?subject ?object) {
               %s
             }
-            ?subject develops_from: ?object . 
+            ?subject develops_from: ?object .
+          }
+        """
+         
+        self.select_po_nonredundant = """
+          PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/nonredundant>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject part_of: ?object .
+          }
+        """
+
+        self.select_overlaps_nonredundant = """
+          PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131> 
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/nonredundant>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject overlaps: ?object .
+          }
+        """
+
+        self.select_subclass_ontology = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/ontology>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject rdfs:subClassOf ?object .
           }
         """
 
@@ -129,6 +171,7 @@ class UberonGraph():
               PREFIX owl: <http://www.w3.org/2002/07/owl#>
               PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
               PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+              PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
               CONSTRUCT 
               {{
                 ?term rdf:type owl:Class; ?APT ?APVT .
