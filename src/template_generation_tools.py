@@ -37,6 +37,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   terms = set()
   terms_pairs = set()
   nb_indirect = 0
+  nb_validate = 0
+  
   # Add declarations and labels for entity
   for i, r in ccf_tools_df.iterrows():
     records.append({'ID': r['s'], 'User_label': r['user_slabel']})
@@ -148,10 +150,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_ct))
 
-  logger.warning(f"{terms_pairs_start} triples derived from the table")
-  logger.warning(f"{len(terms_s)} triples fail to validate")
-  logger.warning(f"{nb_indirect} triples are indirect")
-
   no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
 
   terms_s = set(terms_s) - no_valid_class_s
@@ -171,7 +169,15 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for _, r in no_valid_relation.iterrows():
     error_log = error_log.append(r)
 
-    
+  nb_validate = len(valid_subclass) + len(valid_po) + len(valid_overlaps) + len(valid_ct)
+
+  report_relationship = {
+    'Table': '', 
+    'number_of_relationships': [terms_pairs_start], 
+    'percent_invalid_relationship': [round((len(terms_s)*100)/terms_pairs_start, 2)],
+    'percent_indirect_relationship': [round((nb_indirect*100)/nb_validate, 2)]
+  }
+
   annotations = ConjunctiveGraph()
   terms = list(terms)
   if len(terms) > 90:
@@ -180,7 +186,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   else:
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
-  return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log)
+  return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):

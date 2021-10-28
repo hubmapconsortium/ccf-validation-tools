@@ -74,9 +74,8 @@ def parse_ASCTb(path):
     relevant_columns = [c for c in asct_b_tab.columns if re.match("(AS|CT)/.+", c)]
     
     lookup = dict()
-    count_invalid = 0
-    count_not_empty = set()
-    label_missing = set()
+    invalid_terms = set()
+    unique_terms = set()
     for i, r in asct_b_tab.iterrows():
         for chunk in chunks(relevant_columns, 3):
             for c in chunk:
@@ -90,19 +89,13 @@ def parse_ASCTb(path):
                         ID = r[c]
             if is_valid_id(ID):
                 lookup[ID] = {"label": l, "user_label": ul}
-                if l == '':
-                  label_missing.add(ID)
-                  logger.warning(f"{ID} missing label ; user_label: {ul}")
+                unique_terms.add(ID)
+            elif ul != '':
+              invalid_terms.add(ul)
+              unique_terms.add(ul)
 
-            else:
-              count_invalid += 1
-              if ID != '':
-                count_not_empty.add(ID)
-                logger.warning(f"{ID} ; label: {l} ; user_label: {ul}")
-
-    logger.warning(f"{count_invalid} cells not valid")
-    logger.warning(f"{len(count_not_empty)} cells lack a valid CL/UBERON term")
-    logger.warning(f"{len(label_missing)} classes missing label")
+    invalid_term_percent = round((len(invalid_terms)*100)/len(unique_terms), 2)
+    report_terms = {'Table': '', 'invalid_term_number': [len(invalid_terms)], 'invalid_term_percent': [invalid_term_percent]}
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
     dl = []
@@ -122,8 +115,8 @@ def parse_ASCTb(path):
                   d['user_olabel'] = lookup[current]["user_label"]
             if d:
                 dl.append(d)
-    out = pd.DataFrame.from_records(dl)
-    return out.drop_duplicates()
+    out = pd.DataFrame.from_records(dl).drop_duplicates()
+    return out, report_terms
 
 
 def get_ccf_owl():
