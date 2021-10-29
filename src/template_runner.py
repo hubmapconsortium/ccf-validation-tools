@@ -9,31 +9,22 @@ parser.add_argument('--test', help='Run in test mode.',
 parser.add_argument("job", help="job name")
 parser.add_argument("target_file", help='input file path')
 parser.add_argument("output_file", help='output file path')
-parser.add_argument("--ind", help='write ind template',
-                    action="store_true", default=False)
-
 
 args = parser.parse_args()
 
-if args.ind:
-    generate_ind_graph_template(parse_ASCTb(args.target_file)).to_csv(args.output_file,
-                                                                      sep=',',
-                                                                      index=False)
-else:
-    filename = args.output_file[:-4]
-    class_graph_template_dfs = generate_class_graph_template(parse_ASCTb(args.target_file))
-    class_graph_template_dfs[0].to_csv(args.output_file,
-                                       sep=',',
-                                       index=False)
+class_graph_template_dfs = generate_class_graph_template(parse_ASCTb(args.target_file))
+class_graph_template_dfs[0].to_csv(args.output_file,
+                                    sep=',',
+                                    index=False)
 
-    class_graph_template_dfs[1].to_csv("../logs/class_" + args.job + "_log.tsv",
-                                       sep='\t',
-                                       index=False)
+class_graph_template_dfs[1].to_csv("../logs/class_" + args.job + "_log.tsv",
+                                    sep='\t',
+                                    index=False)
 
-    class_graph_template_dfs[2].serialize("../owl/" + args.job + "_annotations.owl", format='xml')
+class_graph_template_dfs[2].serialize("../owl/" + args.job + "_annotations.owl", format='xml')
 
-    class_graph_template_dfs[3].to_csv("../logs/class_" + args.job + "_indirect_log.tsv",
-                                       sep='\t',
-                                       index=False)                 
+class_graph_template_dfs[3].to_csv("../logs/class_" + args.job + "_indirect_log.tsv",
+                                    sep='\t',
+                                    index=False)                 
 
 
