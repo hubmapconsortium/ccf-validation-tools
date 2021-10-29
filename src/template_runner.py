@@ -11,53 +11,45 @@ parser.add_argument('--test', help='Run in test mode.',
 parser.add_argument("job", help="job name")
 parser.add_argument("target_file", help='input file path')
 parser.add_argument("output_file", help='output file path')
-parser.add_argument("--ind", help='write ind template',
-                    action="store_true", default=False)
 
 TODAY = date.today().strftime("%Y%m%d")
 args = parser.parse_args()
 
-if args.ind:
-    ccf_tools_df, report_terms = parse_ASCTb(args.target_file)
-    generate_ind_graph_template(ccf_tools_df).to_csv(args.output_file,
-                                                      sep=',',
+ccf_tools_df, report_t = parse_ASCTb(args.target_file)
+
+report_t['Table'] = args.job
+report_t = pd.DataFrame.from_dict(report_t)
+report_t_path = f'../reports/report_terms_{TODAY}.tsv'
+
+class_template, error_log, annotations, indirect_error_log, report_r = generate_class_graph_template(ccf_tools_df)
+
+report_r['Table'] = args.job
+report_r = pd.DataFrame.from_dict(report_r)
+report_r_path = f'../reports/report_relationship_{TODAY}.tsv'
+
+class_template.to_csv(args.output_file, sep=',',
+                                        index=False)
+
+error_log.to_csv(f'../logs/class_{args.job}_log.tsv', sep='\t',
                                                       index=False)
+
+annotations.serialize(f'../owl/{args.job}_annotations.owl', format='xml')
+
+indirect_error_log.to_csv(f'../logs/class_{args.job}_indirect_log.tsv', sep='\t',
+                                                                        index=False)
+if os.path.isfile(report_t_path):
+  report_t.to_csv(report_t_path, sep='\t', index=False,
+                                        mode='a', 
+                                        header=False)
 else:
-    ccf_tools_df, report_t = parse_ASCTb(args.target_file)
+  report_t.to_csv(report_t_path, sep='\t', index=False)
 
-    report_t['Table'] = args.job
-    report_t = pd.DataFrame.from_dict(report_t)
-    report_t_path = f'../reports/report_terms_{TODAY}.tsv'
-    
-    class_template, error_log, annotations, indirect_error_log, report_r = generate_class_graph_template(ccf_tools_df)
-    
-    report_r['Table'] = args.job
-    report_r = pd.DataFrame.from_dict(report_r)
-    report_r_path = f'../reports/report_relationship_{TODAY}.tsv'
-
-    class_template.to_csv(args.output_file, sep=',',
-                                            index=False)
-
-    error_log.to_csv(f'../logs/class_{args.job}_log.tsv', sep='\t',
-                                                          index=False)
-
-    annotations.serialize(f'../owl/{args.job}_annotations.owl', format='xml')
-
-    indirect_error_log.to_csv(f'../logs/class_{args.job}_indirect_log.tsv', sep='\t',
-                                                                            index=False)
-    if os.path.isfile(report_t_path):
-      report_t.to_csv(report_t_path, sep='\t', index=False,
-                                            mode='a', 
-                                            header=False)
-    else:
-      report_t.to_csv(report_t_path, sep='\t', index=False)
-
-    if os.path.isfile(report_r_path):
-      report_r.to_csv(report_r_path, sep='\t', index=False,
-                                            mode='a', 
-                                            header=False)
-    else:
-      report_r.to_csv(report_r_path, sep='\t', index=False)
+if os.path.isfile(report_r_path):
+  report_r.to_csv(report_r_path, sep='\t', index=False,
+                                        mode='a', 
+                                        header=False)
+else:
+  report_r.to_csv(report_r_path, sep='\t', index=False)
     
 
                        
