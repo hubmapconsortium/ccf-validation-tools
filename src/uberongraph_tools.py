@@ -43,6 +43,7 @@ class UberonGraph():
               %s
             }
             ?subject rdfs:subClassOf ?object .
+            FILTER (?subject != ?object)
           }"""
 
         self.select_class = """
@@ -139,6 +140,7 @@ class UberonGraph():
               %s
             }
             ?subject rdfs:subClassOf ?object .
+            FILTER (?subject != ?object)
           }
         """
 
