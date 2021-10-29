@@ -43,6 +43,7 @@ class UberonGraph():
               %s
             }
             ?subject rdfs:subClassOf ?object .
+            FILTER (?subject != ?object)
           }"""
 
         self.select_class = """
@@ -86,6 +87,20 @@ class UberonGraph():
           }
         """
 
+        self.select_develops_from = """
+          PREFIX develops_from: <http://purl.obolibrary.org/obo/RO_0002202>
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object 
+          {
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject develops_from: ?object .
+          }
+        """
+         
         self.select_po_nonredundant = """
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
@@ -125,6 +140,7 @@ class UberonGraph():
               %s
             }
             ?subject rdfs:subClassOf ?object .
+            FILTER (?subject != ?object)
           }
         """
 
