@@ -5,7 +5,7 @@ JOBS = Kidney
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
 
-all: ../owl/ccf_classes.owl
+all: ../owl/CCF_AS_CT.owl
 
 FORCE:
 
@@ -25,7 +25,7 @@ FORCE:
 		--input helper.owl --template $< \
 		--output $@
 
-../owl/ccf_classes.owl: ${OWL_CLASS_FILES} ${OWL_ANNOTATION_FILES}
+../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} ${OWL_ANNOTATION_FILES}
 	${ROBOT} merge $(patsubst %, -i %, $^)  -o $@
 	rm ${OWL_ANNOTATION_FILES}
 
