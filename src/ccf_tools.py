@@ -74,7 +74,8 @@ def parse_ASCTb(path):
     relevant_columns = [c for c in asct_b_tab.columns if re.match("(AS|CT)/.+", c)]
     
     lookup = dict()
-    invalid_terms = set()
+    as_invalid_terms = set()
+    ct_invalid_terms = set()
     unique_terms = set()
     for i, r in asct_b_tab.iterrows():
         for chunk in chunks(relevant_columns, 3):
@@ -91,11 +92,21 @@ def parse_ASCTb(path):
                 lookup[ID] = {"label": l, "user_label": ul}
                 unique_terms.add(ID)
             elif ul != '':
-              invalid_terms.add(ul)
               unique_terms.add(ul)
-
-    invalid_term_percent = round((len(invalid_terms)*100)/len(unique_terms), 2)
-    report_terms = {'Table': '', 'invalid_term_number': [len(invalid_terms)], 'invalid_term_percent': [invalid_term_percent]}
+              if components[0] == 'AS':
+                as_invalid_terms.add(ul)
+              elif components[0] == 'CT':
+                ct_invalid_terms.add(ul)
+              
+    as_invalid_term_percent = round((len(as_invalid_terms)*100)/len(unique_terms), 2)
+    ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/len(unique_terms), 2)
+    report_terms = {
+      'Table': '', 
+      'AS_invalid_term_number': [len(as_invalid_terms)], 
+      'AS_invalid_term_percent': [as_invalid_term_percent],
+      'CT_invalid_term_number': [len(ct_invalid_terms)],
+      'CT_invalid_term_percent': [ct_invalid_terms_percent]    
+    }
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
     dl = []

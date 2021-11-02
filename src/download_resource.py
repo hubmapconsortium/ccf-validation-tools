@@ -4,8 +4,9 @@ import urllib.request
 SHEET_ID = "1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0"
 
 JOB_SHEET_GID_MAPPING = {
+    'Bone-Marrow': '1845311048', # Bone Marrow_v1.1
+    'Blood': '1315753355', # Blood_v1.1
     'Brain': '1379088218', # Brain_v1.1
-    'Bone-Marrow_Blood': '1845311048', # Bone Marrow_Blood_v1.1 
     'Heart': '2133445058', # Heart_v1.1
     'Kidney': '2137043090', # Kidney_v1.1
     'Large_intestine': '512613979', # Large_Intestine_v1.1 
