@@ -39,6 +39,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms = set()
   terms_pairs = set()
+  terms_cl_as = set()
   nb_indirect = 0
   nb_validate = 0
   
@@ -46,7 +47,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for i, r in ccf_tools_df.iterrows():
     records.append({'ID': r['s'], 'User_label': r['user_slabel']})
     records.append({'ID': r['o'], 'User_label': r['user_olabel']})
-    terms_pairs.add(f"({r['s']} {r['o']})")
+    if 'CL' in r['s'] and 'UBERON' in r['o']:
+      terms_cl_as.add(f"({r['s']} {r['o']})")
+    else:
+      terms_pairs.add(f"({r['s']} {r['o']})")
+
     terms.add(r['s'])
     terms.add(r['o'])
 
