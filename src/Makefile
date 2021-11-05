@@ -4,6 +4,7 @@ JOBS = Bone-Marrow Brain Blood Eye Fallopian_tube Heart Kidney Large_intestine L
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
+GRAPH_FILES = $(patsubst %, ../graphs/ccf_%_graph.pdf, $(JOBS))
 
 all: ../owl/CCF_AS_CT.owl
 
@@ -25,7 +26,15 @@ FORCE:
 		--input helper.owl --template $< \
 		--output $@
 
+%.obograph.json: ../owl/ccf_%_classes.owl
+	${ROBOT} convert --input $< --format json --output $@
+
+%.dot: %.obograph.json ../style/ubergraph-style.json
+	og2dot.js -s ../style/ubergraph-style.json $< >$@
+
+../graphs/ccf_%_graph.pdf: %.dot
+	dot $< -Tpdf -Grankdir=BT >$@
+
 ../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} ${OWL_ANNOTATION_FILES}
 	${ROBOT} merge $(patsubst %, -i %, $^)  -o $@
 	rm ${OWL_ANNOTATION_FILES}
-
