@@ -1,10 +1,9 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Bone-Marrow Brain Blood Eye Fallopian_tube Heart Kidney Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus
+JOBS = Bone-Marrow Brain Blood Eye Fallopian_tube Heart Kidney Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Skin Small_intestine Thymus Ureter Urinary_bladder Uterus
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
-GRAPH_FILES = $(patsubst %, ../graphs/ccf_%_graph.pdf, $(JOBS))
 
 all: ../owl/CCF_AS_CT.owl
 
@@ -13,12 +12,12 @@ FORCE:
 ../resources/ASCT-b_tables/%.csv: FORCE
 	python download_resource.py $* $@
 
-../templates/class_template_%.csv: ../resources/ASCT-b_tables/%.csv
-	python template_runner.py $* $< $@ 2> ../logs/error_class_$*.log
+../owl/%_annotations.owl ../templates/class_template_%.csv: ../resources/ASCT-b_tables/%.csv
+	python template_runner.py $* $< ../templates/class_template_$*.csv 2> ../logs/error_class_$*.log
 
 .PRECIOUS: ../class_template_%.tsv
 
-../owl/ccf_%_classes.owl: ../templates/class_template_%.csv
+../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv
 	echo ; echo "*** Building "$@" ***" ; echo ;
 	${ROBOT} template --add-prefix "CCFH: http://ccf_tools_helpers/class_helper.owl#" \
 		--add-prefix "dc: http://purl.org/dc/elements/1.1/" \
@@ -26,15 +25,14 @@ FORCE:
 		--input helper.owl --template $< \
 		--output $@
 
-%.obograph.json: ../owl/ccf_%_classes.owl
-	${ROBOT} convert --input $< --format json --output $@
-
-%.dot: %.obograph.json ../style/ubergraph-style.json
-	og2dot.js -s ../style/ubergraph-style.json $< >$@
-
-../graphs/ccf_%_graph.pdf: %.dot
-	dot $< -Tpdf -Grankdir=BT >$@
-
-../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} ${OWL_ANNOTATION_FILES}
+../owl/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl
+	${ROBOT} merge --input helper.owl $(patsubst %, -i %, $^) -o $@ \
+					convert --format json -o $*.json
+	og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot 
+	dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png
+	rm $*.json
+	rm $*.dot
+	
+../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES}
 	${ROBOT} merge $(patsubst %, -i %, $^)  -o $@
 	rm ${OWL_ANNOTATION_FILES}
