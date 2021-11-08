@@ -17,6 +17,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   error_log = pd.DataFrame(columns=ccf_tools_df.columns)
   valid_error_log = pd.DataFrame(columns=ccf_tools_df.columns)
   strict_log = pd.DataFrame(columns=ccf_tools_df.columns)
+  has_part_log = pd.DataFrame(columns=ccf_tools_df.columns)
   seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
           'Parent_class': 'SC %',
           'OBO_Validated_isa': '>A CCFH:IN_OBO',
@@ -32,11 +33,14 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
           'validation_date_ct': '>A dc:date',
           'develops_from': 'SC develops_from some %',
           'OBO_Validated_df': '>A CCFH:IN_OBO',
-          'validation_date_df': '>A dc:date'}
+          'validation_date_df': '>A dc:date',
+          'has_part': 'SC has_part some %',
+          'OBO_Validated_hp': '>A CCFH:IN_OBO',
+          'validation_date_hp': '>A dc:date'}
   ug = UberonGraph()
   records = [seed]
   if ccf_tools_df.empty:
-    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, strict_log)
+    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, has_part_log)
 
   terms = set()
   terms_pairs = set()
@@ -49,6 +53,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   nb_valid_ct = 0
   nb_invalid_as = 0
   nb_invalid_ct = 0
+  nb_invalid_ct_as = 0
+  terms_ct_as_start = 0
  
   # Add declarations and labels for entity
   for i, r in ccf_tools_df.iterrows():
@@ -66,7 +72,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       relation_as.add(f"({r['s']} {r['o']})")
     elif 'CL' in r['s'] and 'CL' in r['o']:
       relation_ct.add(f"({r['s']} {r['o']})")
-    
+
+  terms_ct_as_start = len(terms_ct_as)    
 
   terms_labels = ug.query_uberon(" ".join(list(terms)), ug.select_label)
 
@@ -98,6 +105,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     elif 'CL' in s and 'CL' in o:
       nb_valid_ct += 1
 
+  # INDIRECT SUBCLASS CHECK
   terms_valid_subclass = transform_to_str(valid_subclass)
 
   valid_subclass_onto = ug.query_uberon(" ".join(list(terms_valid_subclass)), ug.select_subclass_ontology)
@@ -120,7 +128,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   valid_po = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_po)
 
   valid_ct_as_po = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_po)
-  print(len(valid_ct_as_po))
 
   for s, o in valid_po.union(valid_ct_as_po):
     rec = dict()
@@ -135,6 +142,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     elif 'CL' in s and 'CL' in o:
       nb_valid_ct += 1
 
+  # INDIRECT PART OF CHECK
   terms_valid_po = transform_to_str(valid_po)
 
   valid_po_nr = ug.query_uberon(" ".join(list(terms_valid_po)), ug.select_po_nonredundant)
@@ -159,7 +167,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   valid_overlaps = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_overlaps)
 
   valid_ct_as_overlaps = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_overlaps)
-  print(len(valid_ct_as_overlaps))
 
   for s, o in valid_overlaps.union(valid_ct_as_overlaps):
     rec = dict()
@@ -174,6 +181,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     elif 'CL' in s and 'CL' in o:
       nb_valid_ct += 1
   
+  # INDIRECT OVERLAPS CHECK
   terms_valid_overlaps = transform_to_str(valid_overlaps)
 
   valid_o_nr = ug.query_uberon(" ".join(list(terms_valid_overlaps)), ug.select_overlaps_nonredundant)
@@ -193,6 +201,14 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   terms_pairs = terms_pairs - transform_to_str(valid_overlaps)
 
   terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_overlaps)
+
+  # STRICT CT-AS REPORT
+  terms_ct, terms_as = split_terms(terms_ct_as)
+
+  no_valid_ct_as = ccf_tools_df[ccf_tools_df['s'].isin(terms_ct) & ccf_tools_df['o'].isin(terms_as)]
+
+  for _, r in no_valid_ct_as.iterrows():
+    strict_log = strict_log.append(r)
 
   # CONNECTED TO CHECK
   valid_ct = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct)
@@ -228,31 +244,75 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     elif 'CL' in s and 'CL' in o:
       nb_valid_ct += 1
 
+  # CT-AS SUBCLASS PART OF
+  valid_subclass_ct_po = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_subclass_po)
+
+  for s, o in valid_subclass_ct_po:
+    rec = dict()
+    rec['ID'] = s
+    rec['part_of'] = o
+    rec['OBO_Validated_po'] = True
+    rec['validation_date_po'] = datetime.now().isoformat()
+    records.append(rec)
+
+  terms_ct_as = terms_ct_as - transform_to_str(valid_subclass_ct_po)
+
+  # CT-AS SUBCLASS OVERLAPS
+  valid_subclass_ct_o = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_subclass_o)
+
+  for s, o in valid_subclass_ct_o:
+    rec = dict()
+    rec['ID'] = s
+    rec['overlaps'] = o
+    rec['OBO_Validated_overlaps'] = True
+    rec['validation_date_overlaps'] = datetime.now().isoformat()
+    records.append(rec)
+
+  terms_ct_as = terms_ct_as - transform_to_str(valid_subclass_ct_o)
+
+  # AS-CT HAS PART
+  valid_has_part = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_has_part)
+
+  for s, o in valid_has_part:
+    rec = dict()
+    rec['ID'] = o
+    rec['has_part'] = s
+    rec['OBO_Validated_hp'] = True
+    rec['validation_date_hp'] = datetime.now().isoformat()
+    records.append(rec)
+
+  terms_ct, terms_as = split_terms(transform_to_str(valid_has_part))
+
+  has_part_report = ccf_tools_df[ccf_tools_df['s'].isin(terms_ct) & ccf_tools_df['o'].isin(terms_as)]
+
+  for _, r in has_part_report.iterrows():
+    has_part_log = has_part_log.append(r)
+
+  terms_ct, terms_as = split_terms(terms_ct_as - transform_to_str(valid_has_part))
+
   terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_df))
 
   # ENTITY CHECK
   no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
+  no_valid_class_ct = ug.query_uberon(" ".join(terms_ct), ug.select_class)
 
   terms_s = set(terms_s) - no_valid_class_s
+  terms_ct = set(terms_ct) - no_valid_class_ct
 
-  for t in no_valid_class_s:
+  for t in no_valid_class_s.union(no_valid_class_ct):
     logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
 
   no_valid_class_o = ug.query_uberon(" ".join(terms_o), ug.select_class)
+  no_valid_class_as = ug.query_uberon(" ".join(terms_as), ug.select_class)
 
   terms_o = set(terms_o) - no_valid_class_o
+  terms_as = set(terms_as) - no_valid_class_as
 
-  for t in no_valid_class_o:
+  for t in no_valid_class_o.union(no_valid_class_as):
     logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
 
-  no_valid_relation = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
+  no_valid_relation = ccf_tools_df[ccf_tools_df['s'].isin([*terms_s, *terms_ct]) & ccf_tools_df['o'].isin([*terms_o, *terms_as])]
 
-  terms_ct, terms_as = split_terms(terms_ct_as)
-
-  no_valid_ct_as = ccf_tools_df[ccf_tools_df['s'].isin(terms_ct) & ccf_tools_df['o'].isin(terms_as)]
-
-  for _, r in no_valid_ct_as.iterrows():
-    strict_log = strict_log.append(r)
 
   for _, r in no_valid_relation.iterrows():
     error_log = error_log.append(r)
@@ -261,6 +321,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       nb_invalid_as += 1
     elif 'CL' in r['s'] and 'CL' in r['o']:
       nb_invalid_ct += 1
+    elif 'CL' in r['s'] and 'UBERON' in r['o']:
+      nb_invalid_ct_as += 1
+
+  nb_invalid_ct_as += len(no_valid_ct_as)
 
   nb_relation_as = 0
   perc_inv_as = 0
@@ -278,7 +342,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     perc_inv_ct = round((nb_invalid_ct*100)/nb_relation_ct, 2)
   
   perc_ind_ct = 0
-  if nb_valid_ct != 0: perc_ind_ct = round((nb_indirect_ct*100)/nb_valid_ct, 2)  
+  if nb_valid_ct != 0: perc_ind_ct = round((nb_indirect_ct*100)/nb_valid_ct, 2)
+
+  perc_inv_ct_as = 0
+  if terms_ct_as_start != 0 and nb_invalid_ct_as != 0:
+    perc_inv_ct_as = round((nb_invalid_ct_as*100)/terms_ct_as_start, 2)
 
   report_relationship = {
     'Table': '', 
@@ -287,7 +355,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     'percent_indirect_AS-AS_relationship': [perc_ind_as],
     'number_of_CT-CT_relationships': [nb_relation_ct],
     'percent_invalid_CT-CT_relationship': [perc_inv_ct],
-    'percent_indirect_CT-CT_relationship': [perc_ind_ct]
+    'percent_indirect_CT-CT_relationship': [perc_ind_ct],
+    'number_of_CT-AS_relationships': [terms_ct_as_start],
+    'percent_invalid_CT-AS_relationship': [perc_inv_ct_as]
   }
 
   annotations = ConjunctiveGraph()
@@ -298,7 +368,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   else:
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
-  return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship, strict_log)
+  return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship, strict_log, has_part_report)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
