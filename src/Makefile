@@ -1,6 +1,9 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
 JOBS = Bone-Marrow Brain Blood Eye Fallopian_tube Heart Kidney Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Skin Small_intestine Thymus Ureter Urinary_bladder Uterus
+TODAY ?= $(shell date +%Y-%m-%d)
+VERSION = $(TODAY)
+
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
@@ -34,5 +37,8 @@ FORCE:
 	rm $*.dot
 	
 ../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES}
-	${ROBOT} merge $(patsubst %, -i %, $^)  -o $@
+	${ROBOT} merge $(patsubst %, -i %, $^) \
+					 annotate --ontology-iri "http://purl.org/ccf/latest/CCF_AS_CT.owl" \
+					 					--version-iri "http://purl.org/ccf/releases/$(VERSION)/CCF_AS_CT.owl" \
+										--output $@
 	rm ${OWL_ANNOTATION_FILES}
