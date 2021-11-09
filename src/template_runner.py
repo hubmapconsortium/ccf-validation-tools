@@ -38,10 +38,10 @@ annotations.serialize(f'../owl/{args.job}_annotations.owl', format='xml')
 indirect_error_log.to_csv(f'../logs/class_{args.job}_indirect_log.tsv', sep='\t',
                                                                         index=False)
 
-strict_log.to_csv(f'../logs/class_{args.job}_AS_CT_strict_log.tsv', sep='\t',
+strict_log.to_csv(f'../logs/{args.job}_AS_CT_strict_log.tsv', sep='\t',
                                                       index=False)
 
-has_part_log.to_csv(f'../logs/class_{args.job}_AS_has_part_CT_log.tsv', sep='\t',
+has_part_log.to_csv(f'../logs/{args.job}_AS_has_part_CT_log.tsv', sep='\t',
                                                       index=False)
 
 if os.path.isfile(report_t_path):

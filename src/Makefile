@@ -1,6 +1,6 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Bone-Marrow Brain Blood Eye Fallopian_tube Heart Kidney Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus
+JOBS = Bone-Marrow Brain Blood Eye Fallopian_tube Heart Kidney Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Skin Small_intestine Thymus Ureter Urinary_bladder Uterus
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
