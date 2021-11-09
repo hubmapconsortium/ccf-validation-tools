@@ -144,6 +144,55 @@ class UberonGraph():
           }
         """
 
+        self.select_subclass_po = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050>
+          PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/ontology>
+          FROM <http://reasoner.renci.org/nonredundant>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?sub rdfs:subClassOf+ ?subject .
+            ?sub part_of: ?object .
+          }
+        """
+
+        self.select_subclass_o = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/ontology>
+          FROM <http://reasoner.renci.org/nonredundant>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?sub rdfs:subClassOf+ ?subject .
+            ?sub overlaps: ?object .
+          }
+        """
+
+        self.select_has_part = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX has_part: <http://purl.obolibrary.org/obo/BFO_0000051>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/nonredundant>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?object has_part: ?subject .
+          }
+        """         
     def ask_uberon(self, r, q, urls=True):
         """"""
         start = ''
