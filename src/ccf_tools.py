@@ -87,7 +87,7 @@ def parse_ASCTb(path):
                     if components[2] == 'LABEL':
                         l = r[c]
                     if components[2] == 'ID':
-                        ID = r[c]
+                        ID = r[c].strip()
             if is_valid_id(ID):
                 lookup[ID] = {"label": l, "user_label": ul}
                 unique_terms.add(ID)
@@ -97,9 +97,10 @@ def parse_ASCTb(path):
                 as_invalid_terms.add(ul)
               elif components[0] == 'CT':
                 ct_invalid_terms.add(ul)
-              
+    
     as_invalid_term_percent = round((len(as_invalid_terms)*100)/len(unique_terms), 2)
     ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/len(unique_terms), 2)
+
     report_terms = {
       'Table': '', 
       'AS_invalid_term_number': [len(as_invalid_terms)], 
@@ -112,20 +113,45 @@ def parse_ASCTb(path):
     dl = []
 
     for i, r in asct_IDs_only.iterrows():
-        for current, nekst in zip(r, r[1:]):
-            if 'CL' in nekst and 'UBERON' in current:
-              pass
-            else:       
-              d = {}
-              if is_valid_id(current) and is_valid_id(nekst):
-                  d['s'] = nekst
-                  d['slabel'] = lookup[nekst]['label']
-                  d['user_slabel'] = lookup[nekst]["user_label"]
-                  d['o'] = current
-                  d['olabel'] = lookup[current]['label']
-                  d['user_olabel'] = lookup[current]["user_label"]
-            if d:
-                dl.append(d)
+      last_as = last_cl = ''
+      for current, nekst in zip(r, r[1:]):
+        current = current.strip()
+        nekst = nekst.strip()
+
+        if 'CL' in nekst and 'CL' in current:
+          last_cl = nekst
+        elif 'CL' in current and '' in nekst:
+          last_cl = current
+        elif '' in current and 'CL' in nekst:
+          last_cl = nekst
+
+        if 'UBERON' in current and '' in nekst:
+          last_as = current
+        elif '' in current and 'UBERON' in nekst:
+          last_as = nekst
+
+        if 'CL' in nekst and 'UBERON' in current:
+          last_as = current
+        elif is_valid_id(current) and is_valid_id(nekst):
+          d = {}
+          d['s'] = nekst
+          d['slabel'] = lookup[nekst]['label']
+          d['user_slabel'] = lookup[nekst]["user_label"]
+          d['o'] = current
+          d['olabel'] = lookup[current]['label']
+          d['user_olabel'] = lookup[current]["user_label"]
+          dl.append(d)
+      if is_valid_id(last_as) and is_valid_id(last_cl):
+        d = {}
+        d['s'] = last_cl
+        d['slabel'] = lookup[last_cl]['label']
+        d['user_slabel'] = lookup[last_cl]["user_label"]
+        d['o'] = last_as
+        d['olabel'] = lookup[last_as]['label']
+        d['user_olabel'] = lookup[last_as]["user_label"]
+        dl.append(d)
+
+
     out = pd.DataFrame.from_records(dl).drop_duplicates()
     return out, report_terms
 
