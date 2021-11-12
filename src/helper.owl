@@ -16,6 +16,11 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002202>))
 Declaration(ObjectProperty(<https://purl.org/ccf/latest/ccf.owl#ccf_part_of>))
 Declaration(AnnotationProperty(:IN_OBO))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
+Declaration(AnnotationProperty(<http://purl.org/ccf/ccf.owl#HubMAP_ASCT>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002175>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 
 ############################
 #   Object Properties
@@ -41,6 +46,31 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002170> "conn
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002202> "develops_from")
 
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/RO_0002175> (present_in_taxon)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002175> "present_in_taxon")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#inSubset> (in_subset)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#inSubset> "in_subset")
+
+# Annotation Property: <http://purl.org/ccf/ccf.owl#HubMAP_ASCT> (HubMAP_ASCT)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/ccf.owl#HubMAP_ASCT> "HubMAP_ASCT")
+
+SubAnnotationPropertyOf(<http://purl.org/ccf/ccf.owl#HubMAP_ASCT> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+###########################
+#   Class
+###########################
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 
 
 )

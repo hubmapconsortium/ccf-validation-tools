@@ -19,6 +19,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   strict_log = pd.DataFrame(columns=ccf_tools_df.columns)
   has_part_log = pd.DataFrame(columns=ccf_tools_df.columns)
   seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
+          'in_subset': '>A in_subset',
+          'present_in_taxon': '>A present_in_taxon',
           'Parent_class': 'SC %',
           'OBO_Validated_isa': '>A CCFH:IN_OBO',
           'validation_date_isa': '>A dc:date',
@@ -58,8 +60,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
  
   # Add declarations and labels for entity
   for i, r in ccf_tools_df.iterrows():
-    records.append({'ID': r['s'], 'User_label': r['user_slabel']})
-    records.append({'ID': r['o'], 'User_label': r['user_olabel']})
+    records.append({'ID': r['s'], 'User_label': r['user_slabel'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+    records.append({'ID': r['o'], 'User_label': r['user_olabel'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
     if 'CL' in r['s'] and 'UBERON' in r['o']:
       terms_ct_as.add(f"({r['s']} {r['o']})")
     elif 'UBERON' in r['s'] and 'UBERON' in r['o']:
