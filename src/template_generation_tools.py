@@ -43,7 +43,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   records = [seed]
   records_sub = [seed_sub]
   if ccf_tools_df.empty:
-    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, has_part_log, records_sub)
+    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, has_part_log, pd.DataFrame.from_records(records_sub))
 
   terms = set()
   terms_pairs = set()
