@@ -7,15 +7,16 @@ VERSION = $(TODAY)
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
+OWL_SUBSET_FILES = $(patsubst %, ../owl/%_ASCTB_subset.owl, $(JOBS))
 
-all: ../owl/CCF_AS_CT.owl
+all: ../owl/CCF_AS_CT.owl ../owl/ASCTB_subset.owl
 
 FORCE:
 
 ../resources/ASCT-b_tables/%.csv: FORCE
 	python download_resource.py $* $@
 
-../owl/%_annotations.owl ../templates/class_template_%.csv: ../resources/ASCT-b_tables/%.csv
+../owl/%_annotations.owl ../templates/class_template_%.csv ../templates/template_%_ASCTB_subset.csv: ../resources/ASCT-b_tables/%.csv
 	python template_runner.py $* $< ../templates/class_template_$*.csv 2> ../logs/error_class_$*.log
 
 .PRECIOUS: ../class_template_%.tsv
@@ -27,6 +28,9 @@ FORCE:
 		--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
 		--input helper.owl --template $< \
 		--output $@
+
+../owl/%_ASCTB_subset.owl: ../templates/template_%_ASCTB_subset.csv
+	${ROBOT} template --input helper.owl --template $< --output $@
 
 ../owl/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl
 	${ROBOT} merge --input helper.owl $(patsubst %, -i %, $^) -o $@ \
@@ -42,3 +46,8 @@ FORCE:
 					 					--version-iri "http://purl.org/ccf/releases/$(VERSION)/CCF_AS_CT.owl" \
 										--output $@
 	rm ${OWL_ANNOTATION_FILES}
+
+../owl/ASCTB_subset.owl: ${OWL_SUBSET_FILES}
+	${ROBOT} merge $(patsubst %, -i %, $^) --output $@ \
+					 convert --format json -o $(patsubst %.owl, %.json, $@)
+	rm ${OWL_SUBSET_FILES}
