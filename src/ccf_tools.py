@@ -77,6 +77,8 @@ def parse_ASCTb(path):
     as_invalid_terms = set()
     ct_invalid_terms = set()
     unique_terms = set()
+    as_valid_terms = set()
+    ct_valid_terms = set()
     for i, r in asct_b_tab.iterrows():
         for chunk in chunks(relevant_columns, 3):
             for c in chunk:
@@ -91,6 +93,10 @@ def parse_ASCTb(path):
             if is_valid_id(ID):
                 lookup[ID] = {"label": l, "user_label": ul}
                 unique_terms.add(ID)
+                if components[0] == 'AS':
+                  as_valid_terms.add(ul)
+                elif components[0] == 'CT':
+                  ct_valid_terms.add(ul)
             elif ul != '':
               unique_terms.add(ul)
               if components[0] == 'AS':
@@ -102,9 +108,11 @@ def parse_ASCTb(path):
     ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/len(unique_terms), 2)
 
     report_terms = {
-      'Table': '', 
+      'Table': '',
+      'AS_valid_term_number': [len(as_valid_terms)], 
       'AS_invalid_term_number': [len(as_invalid_terms)], 
       'AS_invalid_term_percent': [as_invalid_term_percent],
+      'CT_valid_term_number': [len(ct_valid_terms)],
       'CT_invalid_term_number': [len(ct_invalid_terms)],
       'CT_invalid_term_percent': [ct_invalid_terms_percent]    
     }
