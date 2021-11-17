@@ -41,9 +41,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
   ug = UberonGraph()
   records = [seed]
-  records_sub = [seed_sub]
+  records_ub_sub = [seed_sub]
+  records_cl_sub = [seed_sub]
   if ccf_tools_df.empty:
-    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, has_part_log, pd.DataFrame.from_records(records_sub))
+    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, 
+            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub))
 
   terms = set()
   terms_pairs = set()
@@ -63,8 +65,15 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for i, r in ccf_tools_df.iterrows():
     records.append({'ID': r['s'], 'User_label': r['user_slabel']})
     records.append({'ID': r['o'], 'User_label': r['user_olabel']})
-    records_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
-    records_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+
+    if 'UBERON' in r['s']:
+      records_ub_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+    elif 'UBERON' in r['o']:
+      records_ub_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+    elif 'CL' in r['s']:
+      records_cl_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+    elif 'CL' in r['o']:
+      records_cl_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
 
     if 'CL' in r['s'] and 'UBERON' in r['o']:
       terms_ct_as.add(f"({r['s']} {r['o']})")
@@ -343,7 +352,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   if nb_valid_ct != 0: perc_ind_ct = round((nb_indirect_ct*100)/nb_valid_ct, 2)
 
   perc_inv_ct_as = 0
-  print(terms_ct_as_start, nb_invalid_ct_as)
   if terms_ct_as_start != 0: perc_inv_ct_as = round((nb_invalid_ct_as*100)/terms_ct_as_start, 2)
 
   report_relationship = {
@@ -360,13 +368,14 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   annotations = ConjunctiveGraph()
   terms = list(terms)
-  if len(terms) > 90:
-    for chunk in chunks(terms, 90):
+  if len(terms) > 30:
+    for chunk in chunks(terms, 30):
       annotations += ug.construct_annotation("\n".join(chunk))
   else:
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
-  return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship, strict_log, has_part_report, pd.DataFrame.from_records(records_sub))
+  return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
+          has_part_report, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub))
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):

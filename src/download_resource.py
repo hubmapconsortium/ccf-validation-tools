@@ -11,6 +11,7 @@ JOB_SHEET_GID_MAPPING = {
     'Fallopian_tube': '1417514103', # Fallopian_Tube_v1.0
     'Heart': '2133445058', # Heart_v1.1
     'Kidney': '2137043090', # Kidney_v1.1
+    'Knee': '1572314003', # Knee_v1.0
     'Large_intestine': '512613979', # Large_Intestine_v1.1
     'Liver': '2079993346', # Liver_v1.0
     'Lung': '1824552484', # Lung_v1.1
