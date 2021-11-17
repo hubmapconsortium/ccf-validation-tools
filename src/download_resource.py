@@ -1,5 +1,5 @@
-import argparse
-import urllib.request
+import argparse, requests, ast, json
+from urllib.parse import quote_plus
 
 SHEET_ID = "1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0"
 
@@ -11,6 +11,7 @@ JOB_SHEET_GID_MAPPING = {
     'Fallopian_tube': '1417514103', # Fallopian_Tube_v1.0
     'Heart': '2133445058', # Heart_v1.1
     'Kidney': '2137043090', # Kidney_v1.1
+    'Knee': '1572314003', # Knee_v1.0
     'Large_intestine': '512613979', # Large_Intestine_v1.1
     'Liver': '2079993346', # Liver_v1.0
     'Lung': '1824552484', # Lung_v1.1
@@ -36,9 +37,13 @@ parser.add_argument('output_file', help='output file path')
 
 args = parser.parse_args()
 
-file = urllib.request.urlopen(f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={JOB_SHEET_GID_MAPPING[args.job]}')
+API_URL = 'https://asctb-api.herokuapp.com/v2/csv?output=json&expanded=true&subclasses=false&csvUrl={0}'
+GOOGLE_SHEET = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={JOB_SHEET_GID_MAPPING[args.job]}'
 
-content = file.read()
-f = open(args.output_file, 'wb')
-f.write(content)
-f.close()
+DATA_URL=API_URL.format(quote_plus(GOOGLE_SHEET))
+
+data = requests.get(DATA_URL).text
+data = ast.literal_eval(data) # transform text dict to dict
+
+with open(args.output_file, 'w', encoding='utf-8') as f:
+  json.dump(data['data'], f, ensure_ascii=False, indent=2)

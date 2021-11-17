@@ -1,6 +1,6 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Bone-Marrow Brain Blood Eye Fallopian_tube Heart Kidney Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Skin Small_intestine Thymus Ureter Urinary_bladder Uterus
+JOBS = Bone-Marrow Blood Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
 TODAY ?= $(shell date +%Y-%m-%d)
 VERSION = $(TODAY)
 
@@ -12,10 +12,10 @@ all: ../owl/CCF_AS_CT.owl
 
 FORCE:
 
-../resources/ASCT-b_tables/%.csv: FORCE
+../resources/ASCT-b_tables/%.json: FORCE
 	python download_resource.py $* $@
 
-../owl/%_annotations.owl ../templates/class_template_%.csv: ../resources/ASCT-b_tables/%.csv
+../owl/%_annotations.owl ../templates/class_template_%.csv: ../resources/ASCT-b_tables/%.json
 	python template_runner.py $* $< ../templates/class_template_$*.csv 2> ../logs/error_class_$*.log
 
 .PRECIOUS: ../class_template_%.tsv
