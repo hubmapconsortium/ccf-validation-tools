@@ -69,7 +69,8 @@ def parse_asctb(path):
     as_invalid_terms = set()
     ct_invalid_terms = set()
     unique_terms = set()
-
+    as_valid_terms = set()
+    ct_valid_terms = set()
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
     dl = []
 
@@ -130,9 +131,11 @@ def parse_asctb(path):
     ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/len(unique_terms), 2)
 
     report_terms = {
-      'Table': '', 
+      'Table': '',
+      'AS_valid_term_number': [len(as_valid_terms)], 
       'AS_invalid_term_number': [len(as_invalid_terms)], 
       'AS_invalid_term_percent': [as_invalid_term_percent],
+      'CT_valid_term_number': [len(ct_valid_terms)],
       'CT_invalid_term_number': [len(ct_invalid_terms)],
       'CT_invalid_term_percent': [ct_invalid_terms_percent]    
     }
