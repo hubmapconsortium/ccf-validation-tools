@@ -18,6 +18,17 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   valid_error_log = pd.DataFrame(columns=ccf_tools_df.columns)
   strict_log = pd.DataFrame(columns=ccf_tools_df.columns)
   has_part_log = pd.DataFrame(columns=ccf_tools_df.columns)
+  report_relationship = {
+    'Table': '', 
+    'number_of_AS-AS_relationships': [0], 
+    'percent_invalid_AS-AS_relationship': [0],
+    'percent_indirect_AS-AS_relationship': [0],
+    'number_of_CT-CT_relationships': [0],
+    'percent_invalid_CT-CT_relationship': [0],
+    'percent_indirect_CT-CT_relationship': [0],
+    'number_of_CT-AS_relationships': [0],
+    'percent_invalid_CT-AS_relationship': [0]
+  }
   seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
           'Parent_class': 'SC %',
           'OBO_Validated_isa': '>A CCFH:IN_OBO',
@@ -40,7 +51,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   ug = UberonGraph()
   records = [seed]
   if ccf_tools_df.empty:
-    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, has_part_log)
+    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, report_relationship, strict_log, has_part_log)
 
   terms = set()
   terms_pairs = set()
