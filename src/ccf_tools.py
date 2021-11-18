@@ -71,6 +71,7 @@ def parse_asctb(path):
     unique_terms = set()
     as_valid_terms = set()
     ct_valid_terms = set()
+
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
     dl = []
 
