@@ -90,6 +90,8 @@ def parse_asctb(path):
           d['olabel'] = current['name']
           d['user_olabel'] = current['rdfs_label']
           dl.append(d)
+          as_valid_terms.add(current['id'])
+          as_valid_terms.add(next['id'])
         elif not check_id(current['id']):
           as_invalid_terms.add(current['rdfs_label'])
         elif not check_id(next['id']):
@@ -109,6 +111,8 @@ def parse_asctb(path):
           d['olabel'] = current['name']
           d['user_olabel'] = current['rdfs_label']
           dl.append(d)
+          ct_valid_terms.add(current['id'])
+          ct_valid_terms.add(next['id'])
         elif not check_id(current['id']):
           ct_invalid_terms.add(current['rdfs_label'])
         elif not check_id(next['id']):
@@ -127,6 +131,12 @@ def parse_asctb(path):
           d['olabel'] = last_as['name']
           d['user_olabel'] = last_as['rdfs_label']
           dl.append(d)
+          as_valid_terms.add(last_as['id'])
+          ct_valid_terms.add(last_ct['id'])
+        elif not check_id(last_as['id']):
+          as_invalid_terms.add(last_as['rdfs_label'])
+        elif not check_id(last_ct['id']):
+          ct_invalid_terms.add(last_ct['rdfs_label'])
 
     as_invalid_term_percent = round((len(as_invalid_terms)*100)/len(unique_terms), 2)
     ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/len(unique_terms), 2)

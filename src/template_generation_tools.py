@@ -94,12 +94,12 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   for term, label in terms_labels:
     row = ccf_tools_df[(ccf_tools_df['s'] == term) | (ccf_tools_df['o'] == term)].iloc[0]
-    if row['s'] == term and row['slabel'] != label:
+    if row['s'] == term and row['slabel'].lower() != label.lower():
       logger.warning(f"Different labels found for {term}. Uberongraph: {label} ; ASCT+b table: {row['slabel']}")
       ccf_tools_df.loc[(ccf_tools_df['s'] == term), 'slabel'] = label
       ccf_tools_df.loc[(ccf_tools_df['o'] == term), 'olabel'] = label
         
-    if row['o'] == term and row['olabel'] != label:
+    if row['o'] == term and row['olabel'].lower() != label.lower():
       logger.warning(f"Different labels found for {term}. Uberongraph: {label} ; ASCT+b table: {row['olabel']}")
       ccf_tools_df.loc[(ccf_tools_df['o'] == term), 'olabel'] = label
       ccf_tools_df.loc[(ccf_tools_df['s'] == term), 'slabel'] = label
@@ -355,19 +355,23 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for t in no_valid_class_s.union(no_valid_class_ct):
     logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
 
-  terms_s = set(terms_s) - no_valid_class_s
-  terms_ct = set(terms_ct) - no_valid_class_ct
-
   no_valid_class_o = ug.query_uberon(" ".join(terms_o), ug.select_class)
   no_valid_class_as = ug.query_uberon(" ".join(terms_as), ug.select_class)
 
   for t in no_valid_class_o.union(no_valid_class_as):
     logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
 
+  terms_s = set(terms_s) - no_valid_class_s
+  terms_ct = set(terms_ct) - no_valid_class_ct
+
+  terms_s = list(terms_s.union(terms_ct))
+
   terms_o = set(terms_o) - no_valid_class_o
   terms_as = set(terms_as) - no_valid_class_as
 
-  no_valid_relation = ccf_tools_df[ccf_tools_df['s'].isin([*terms_s, *terms_ct]) & ccf_tools_df['o'].isin([*terms_o, *terms_as])]
+  terms_o = terms_o.union(terms_as)
+
+  no_valid_relation = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)].drop_duplicates()
 
   for _, r in no_valid_relation.iterrows():
     error_log = error_log.append(r)
@@ -394,7 +398,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   if nb_valid_ct != 0: perc_ind_ct = round((nb_indirect_ct*100)/nb_valid_ct, 2)
 
   perc_inv_ct_as = 0
-  print(terms_ct_as_start, nb_invalid_ct_as)
   if terms_ct_as_start != 0: perc_inv_ct_as = round((nb_invalid_ct_as*100)/terms_ct_as_start, 2)
 
   report_relationship = {
@@ -411,8 +414,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   annotations = ConjunctiveGraph()
   terms = list(terms)
-  if len(terms) > 90:
-    for chunk in chunks(terms, 90):
+  if len(terms) > 30:
+    for chunk in chunks(terms, 30):
       annotations += ug.construct_annotation("\n".join(chunk))
   else:
     terms = "\n".join(terms)
