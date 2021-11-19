@@ -68,11 +68,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
     if 'UBERON' in r['s']:
       records_ub_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
-    elif 'UBERON' in r['o']:
+    if 'UBERON' in r['o']:
       records_ub_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
-    elif 'CL' in r['s']:
+    if 'CL' in r['s']:
       records_cl_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
-    elif 'CL' in r['o']:
+    if 'CL' in r['o']:
       records_cl_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
 
     if 'CL' in r['s'] and 'UBERON' in r['o']:
@@ -375,7 +375,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
   return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
-          has_part_report, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub))
+          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates())
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
