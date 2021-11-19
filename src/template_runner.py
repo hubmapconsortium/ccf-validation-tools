@@ -21,7 +21,7 @@ report_t['Table'] = args.job
 report_t = pd.DataFrame.from_dict(report_t)
 report_t_path = f'../reports/report_terms_{TODAY}.tsv'
 
-class_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log = generate_class_graph_template(ccf_tools_df)
+class_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t = generate_class_graph_template(ccf_tools_df)
 
 report_r['Table'] = args.job
 report_r = pd.DataFrame.from_dict(report_r)
@@ -43,6 +43,10 @@ strict_log.to_csv(f'../logs/{args.job}_AS_CT_strict_log.tsv', sep='\t',
 
 has_part_log.to_csv(f'../logs/{args.job}_AS_has_part_CT_log.tsv', sep='\t',
                                                       index=False)
+
+ub_subs_t.to_csv(f'../templates/temp_ub_{args.job}_ASCTB_subset.csv', sep=',', index=False)
+
+cl_subs_t.to_csv(f'../templates/temp_cl_{args.job}_ASCTB_subset.csv', sep=',', index=False)
 
 if os.path.isfile(report_t_path):
   report_t.to_csv(report_t_path, sep='\t', index=False,
