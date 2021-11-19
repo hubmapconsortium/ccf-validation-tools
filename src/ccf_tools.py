@@ -51,16 +51,16 @@ def chunks(lst, n):
 
 
 def parse_asctb(path):
-    """Takes ASCT-b CSV table as input;
+    """Takes ASCT-b JSON as input;
     Processes only AS (anatomy) and CT (cell type) columns.
     RETURN pandas dataframe of with columns ['o', 's', 'olabel', 'slabel', user_olabel, user_slabel]
     where each pair of adjacent columns => a subject-object pair for testing"""
 
     def is_valid_id(content):
-        if re.match("(CL|UBERON)\:[0-9]+", content):
+        if re.match("(CL|UBERON)\:[0-9]+", content['id']):
             return content
         else:
-            logger.warning("Unrecognised cell content '%s'" % content)
+            logger.warning(f"No valid ID provided for '{content['id']}', label: {content['name']}, user_label: {content['rdfs_label']}")
             return False
     def check_id(id):
       return re.match("(CL|UBERON)\:[0-9]+", id)
@@ -81,7 +81,7 @@ def parse_asctb(path):
       for current, next in zip(anatomical_structures, anatomical_structures[1:]):
         unique_terms.add(current['id'])
         unique_terms.add(next['id'])
-        if is_valid_id(current['id']) and is_valid_id(next['id']):
+        if is_valid_id(current) and is_valid_id(next):
           d = {}
           d['s'] = next['id']
           d['slabel'] = next['name']
@@ -92,17 +92,22 @@ def parse_asctb(path):
           dl.append(d)
           as_valid_terms.add(current['id'])
           as_valid_terms.add(next['id'])
-        elif not check_id(current['id']):
-          as_invalid_terms.add(current['rdfs_label'])
-        elif not check_id(next['id']):
-          as_invalid_terms.add(next['rdfs_label'])
+        else:
+          if not check_id(current['id']) and current['rdfs_label'] != '':
+            as_invalid_terms.add(current['rdfs_label'])
+          elif not check_id(current['id']) and current['name']:
+            as_invalid_terms.add(current['name'])
+          elif not check_id(next['id']) and next['rdfs_label'] != '':
+            as_invalid_terms.add(next['rdfs_label'])
+          elif not check_id(next['id']) and next['name'] != '':
+            as_invalid_terms.add(next['name'])
       
       # CT-CT RELATIONSHIP
       cell_types = row['cell_types']
       for current, next in zip(cell_types, cell_types[1:]):
         unique_terms.add(current['id'])
         unique_terms.add(next['id'])
-        if is_valid_id(current['id']) and is_valid_id(next['id']):
+        if is_valid_id(current) and is_valid_id(next):
           d = {}
           d['s'] = next['id']
           d['slabel'] = next['name']
@@ -113,16 +118,25 @@ def parse_asctb(path):
           dl.append(d)
           ct_valid_terms.add(current['id'])
           ct_valid_terms.add(next['id'])
-        elif not check_id(current['id']):
-          ct_invalid_terms.add(current['rdfs_label'])
-        elif not check_id(next['id']):
-          ct_invalid_terms.add(next['rdfs_label'])
+        else:
+          if not check_id(current['id']) and current['rdfs_label'] != '':
+            ct_invalid_terms.add(current['rdfs_label'])
+          elif not check_id(current['id']) and current['name']:
+            ct_invalid_terms.add(current['name'])
+          elif not check_id(next['id']) and next['rdfs_label'] != '':
+            ct_invalid_terms.add(next['rdfs_label'])
+          elif not check_id(next['id']) and next['name'] != '':
+            ct_invalid_terms.add(next['name'])
 
       # CT-AS RELATIONSHIP
       if len(cell_types) > 0:
         last_as = anatomical_structures[-1]
+        if not check_id(last_as['id']) and len(anatomical_structures) > 1:
+          last_as = anatomical_structures[-2]
         last_ct = cell_types[-1]
-        if is_valid_id(last_as['id']) and is_valid_id(last_ct['id']):
+        if not check_id(last_ct['id']) and len(cell_types) > 1:
+          last_ct = cell_types[-2]
+        if is_valid_id(last_as) and is_valid_id(last_ct):
           d = {}
           d['s'] = last_ct['id']
           d['slabel'] = last_ct['name']
@@ -133,10 +147,18 @@ def parse_asctb(path):
           dl.append(d)
           as_valid_terms.add(last_as['id'])
           ct_valid_terms.add(last_ct['id'])
-        elif not check_id(last_as['id']):
-          as_invalid_terms.add(last_as['rdfs_label'])
-        elif not check_id(last_ct['id']):
-          ct_invalid_terms.add(last_ct['rdfs_label'])
+        else:
+          if not check_id(last_as['id']) and last_as['rdfs_label'] != '':
+            as_invalid_terms.add(last_as['rdfs_label'])
+            unique_terms.add(last_as['rdfs_label'])
+          elif not check_id(last_as['id']) and last_as['name'] != '':
+            as_invalid_terms.add(last_as['name'])
+          elif not check_id(last_ct['id']) and last_ct['rdfs_label'] != '':
+            ct_invalid_terms.add(last_ct['rdfs_label'])
+            unique_terms.add(last_ct['rdfs_label'])
+          elif not check_id(last_ct['id']) and last_ct['name'] != '':
+            ct_invalid_terms.add(last_ct['name'])
+            unique_terms.add(last_ct['name'])
 
     as_invalid_term_percent = round((len(as_invalid_terms)*100)/len(unique_terms), 2)
     ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/len(unique_terms), 2)
