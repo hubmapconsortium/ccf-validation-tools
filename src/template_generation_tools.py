@@ -48,10 +48,15 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
           'has_part': 'SC has_part some %',
           'OBO_Validated_hp': '>A CCFH:IN_OBO',
           'validation_date_hp': '>A dc:date'}
+
+  seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
   ug = UberonGraph()
   records = [seed]
+  records_ub_sub = [seed_sub]
+  records_cl_sub = [seed_sub]
   if ccf_tools_df.empty:
-    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, report_relationship, strict_log, has_part_log)
+    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, 
+            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub))
 
   terms = set()
   terms_pairs = set()
@@ -71,6 +76,16 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for i, r in ccf_tools_df.iterrows():
     records.append({'ID': r['s'], 'User_label': r['user_slabel']})
     records.append({'ID': r['o'], 'User_label': r['user_olabel']})
+
+    if 'UBERON' in r['s']:
+      records_ub_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+    if 'UBERON' in r['o']:
+      records_ub_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+    if 'CL' in r['s']:
+      records_cl_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+    if 'CL' in r['o']:
+      records_cl_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+
     if 'CL' in r['s'] and 'UBERON' in r['o']:
       terms_ct_as.add(f"({r['s']} {r['o']})")
     elif 'UBERON' in r['s'] and 'UBERON' in r['o']:
@@ -420,7 +435,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   else:
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
-  return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship, strict_log, has_part_report)
+  return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
+          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates())
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
