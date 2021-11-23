@@ -1,6 +1,6 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Bone-Marrow Brain Blood Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus
+JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
 TODAY ?= $(shell date +%Y-%m-%d)
 VERSION = $(TODAY)
 
@@ -14,10 +14,10 @@ all: ../owl/CCF_AS_CT.owl ../owl/UB_ASCTB_subset.owl ../owl/CL_ASCTB_subset.owl
 
 FORCE:
 
-../resources/ASCT-b_tables/%.csv: FORCE
+../resources/ASCT-b_tables/%.json: FORCE
 	python download_resource.py $* $@
 
-../owl/%_annotations.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv: ../resources/ASCT-b_tables/%.csv
+../owl/%_annotations.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv: ../resources/ASCT-b_tables/%.json
 	python template_runner.py $* $< ../templates/class_template_$*.csv 2> ../logs/error_class_$*.log
 
 ../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv

@@ -3,6 +3,7 @@ import rdflib
 import re
 import logging
 import sys
+import json
 
 from uberongraph_tools import UberonGraph
 
@@ -49,61 +50,116 @@ def chunks(lst, n):
 
 
 
-def parse_ASCTb(path):
-    """Takes ASCT-b CSV table as input;
+def parse_asctb(path):
+    """Takes ASCT-b JSON as input;
     Processes only AS (anatomy) and CT (cell type) columns.
     RETURN pandas dataframe of with columns ['o', 's', 'olabel', 'slabel', user_olabel, user_slabel]
     where each pair of adjacent columns => a subject-object pair for testing"""
 
     def is_valid_id(content):
-        if re.match("(CL|UBERON)\:[0-9]+", content):
+        if re.match("(CL|UBERON)\:[0-9]+", content['id']):
             return content
         else:
-            logger.warning("Unrecognised cell content '%s'" % content)
+            logger.warning(f"No valid ID provided for '{content['id']}', label: {content['name']}, user_label: {content['rdfs_label']}")
             return False
+    def check_id(id):
+      return re.match("(CL|UBERON)\:[0-9]+", id)
 
-    asct_b_tab = pd.read_csv(path, sep=',', header=10)
-    asct_b_tab.fillna('', inplace=True)
-    ### Make a processed table with only ID columns - use this to generate tuples
-    ### Drop all columns that do not have match regex .+/._+/ID$
-    columns_to_drop = [c for c in asct_b_tab.columns if not (re.match("(AS|CT)/.+/ID$", c))]
-    asct_IDs_only = asct_b_tab.drop(columns=columns_to_drop)
-
-    ### Make lookup of ID -> label and user_label
-    # dict[ID] = { label: label, user_label: user_label }
-    relevant_columns = [c for c in asct_b_tab.columns if re.match("(AS|CT)/.+", c)]
-    
-    lookup = dict()
+    asct_b_tab = json.load(open(path))
     as_invalid_terms = set()
     ct_invalid_terms = set()
     unique_terms = set()
     as_valid_terms = set()
     ct_valid_terms = set()
-    for i, r in asct_b_tab.iterrows():
-        for chunk in chunks(relevant_columns, 3):
-            for c in chunk:
-                components = c.split('/')
-                if len(components) == 2:
-                    ul = r[c]
-                if len(components) == 3:
-                    if components[2] == 'LABEL':
-                        l = r[c]
-                    if components[2] == 'ID':
-                        ID = r[c].strip()
-            if is_valid_id(ID):
-                lookup[ID] = {"label": l, "user_label": ul}
-                unique_terms.add(ID)
-                if components[0] == 'AS':
-                  as_valid_terms.add(ul)
-                elif components[0] == 'CT':
-                  ct_valid_terms.add(ul)
-            elif ul != '':
-              unique_terms.add(ul)
-              if components[0] == 'AS':
-                as_invalid_terms.add(ul)
-              elif components[0] == 'CT':
-                ct_invalid_terms.add(ul)
-    
+
+    #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
+    dl = []
+
+    for row in asct_b_tab:
+      # AS-AS RELATIONSHIP
+      anatomical_structures = row['anatomical_structures']
+      for current, next in zip(anatomical_structures, anatomical_structures[1:]):
+        unique_terms.add(current['id'])
+        unique_terms.add(next['id'])
+        if is_valid_id(current) and is_valid_id(next):
+          d = {}
+          d['s'] = next['id']
+          d['slabel'] = next['name']
+          d['user_slabel'] = next['rdfs_label']
+          d['o'] = current['id']
+          d['olabel'] = current['name']
+          d['user_olabel'] = current['rdfs_label']
+          dl.append(d)
+          as_valid_terms.add(current['id'])
+          as_valid_terms.add(next['id'])
+        else:
+          if not check_id(current['id']) and current['rdfs_label'] != '':
+            as_invalid_terms.add(current['rdfs_label'])
+          elif not check_id(current['id']) and current['name']:
+            as_invalid_terms.add(current['name'])
+          elif not check_id(next['id']) and next['rdfs_label'] != '':
+            as_invalid_terms.add(next['rdfs_label'])
+          elif not check_id(next['id']) and next['name'] != '':
+            as_invalid_terms.add(next['name'])
+      
+      # CT-CT RELATIONSHIP
+      cell_types = row['cell_types']
+      for current, next in zip(cell_types, cell_types[1:]):
+        unique_terms.add(current['id'])
+        unique_terms.add(next['id'])
+        if is_valid_id(current) and is_valid_id(next):
+          d = {}
+          d['s'] = next['id']
+          d['slabel'] = next['name']
+          d['user_slabel'] = next['rdfs_label']
+          d['o'] = current['id']
+          d['olabel'] = current['name']
+          d['user_olabel'] = current['rdfs_label']
+          dl.append(d)
+          ct_valid_terms.add(current['id'])
+          ct_valid_terms.add(next['id'])
+        else:
+          if not check_id(current['id']) and current['rdfs_label'] != '':
+            ct_invalid_terms.add(current['rdfs_label'])
+          elif not check_id(current['id']) and current['name']:
+            ct_invalid_terms.add(current['name'])
+          elif not check_id(next['id']) and next['rdfs_label'] != '':
+            ct_invalid_terms.add(next['rdfs_label'])
+          elif not check_id(next['id']) and next['name'] != '':
+            ct_invalid_terms.add(next['name'])
+
+      # CT-AS RELATIONSHIP
+      if len(cell_types) > 0:
+        last_as = anatomical_structures[-1]
+        if not check_id(last_as['id']) and len(anatomical_structures) > 1:
+          last_as = anatomical_structures[-2]
+        last_ct = cell_types[-1]
+        if not check_id(last_ct['id']) and len(cell_types) > 1:
+          last_ct = cell_types[-2]
+        if is_valid_id(last_as) and is_valid_id(last_ct):
+          d = {}
+          d['s'] = last_ct['id']
+          d['slabel'] = last_ct['name']
+          d['user_slabel'] = last_ct['rdfs_label']
+          d['o'] = last_as['id']
+          d['olabel'] = last_as['name']
+          d['user_olabel'] = last_as['rdfs_label']
+          dl.append(d)
+          as_valid_terms.add(last_as['id'])
+          ct_valid_terms.add(last_ct['id'])
+        else:
+          if not check_id(last_as['id']) and last_as['rdfs_label'] != '':
+            as_invalid_terms.add(last_as['rdfs_label'])
+            unique_terms.add(last_as['rdfs_label'])
+          elif not check_id(last_as['id']) and last_as['name'] != '':
+            as_invalid_terms.add(last_as['name'])
+          elif not check_id(last_ct['id']) and last_ct['rdfs_label'] != '':
+            ct_invalid_terms.add(last_ct['rdfs_label'])
+            unique_terms.add(last_ct['rdfs_label'])
+          elif not check_id(last_ct['id']) and last_ct['name'] != '':
+            ct_invalid_terms.add(last_ct['name'])
+            unique_terms.add(last_ct['name'])
+
     as_invalid_term_percent = round((len(as_invalid_terms)*100)/len(unique_terms), 2)
     ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/len(unique_terms), 2)
 
@@ -116,48 +172,6 @@ def parse_ASCTb(path):
       'CT_invalid_term_number': [len(ct_invalid_terms)],
       'CT_invalid_term_percent': [ct_invalid_terms_percent]    
     }
-
-    #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
-    dl = []
-
-    for i, r in asct_IDs_only.iterrows():
-      last_as = last_cl = ''
-      for current, nekst in zip(r, r[1:]):
-        current = current.strip()
-        nekst = nekst.strip()
-
-        if 'CL' in nekst and 'CL' in current:
-          last_cl = nekst
-        elif 'CL' in current and '' in nekst:
-          last_cl = current
-        elif '' in current and 'CL' in nekst:
-          last_cl = nekst
-
-        if 'UBERON' in current and '' in nekst:
-          last_as = current
-        elif '' in current and 'UBERON' in nekst:
-          last_as = nekst
-
-        if 'CL' in nekst and 'UBERON' in current:
-          last_as = current
-        elif is_valid_id(current) and is_valid_id(nekst):
-          d = {}
-          d['s'] = nekst
-          d['slabel'] = lookup[nekst]['label']
-          d['user_slabel'] = lookup[nekst]["user_label"]
-          d['o'] = current
-          d['olabel'] = lookup[current]['label']
-          d['user_olabel'] = lookup[current]["user_label"]
-          dl.append(d)
-      if is_valid_id(last_as) and is_valid_id(last_cl):
-        d = {}
-        d['s'] = last_cl
-        d['slabel'] = lookup[last_cl]['label']
-        d['user_slabel'] = lookup[last_cl]["user_label"]
-        d['o'] = last_as
-        d['olabel'] = lookup[last_as]['label']
-        d['user_olabel'] = lookup[last_as]["user_label"]
-        dl.append(d)
 
 
     out = pd.DataFrame.from_records(dl).drop_duplicates()
