@@ -45,10 +45,16 @@ FORCE:
 ../owl/ccf_%_classes.owl: ../owl/%_ASCTB_subset.json ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl
 	${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
 					convert --format json -o $*.json
+	${ROBOT} reduce --reasoner ELK -i ../owl/$*_all_edges.owl -o ../owl/$*_edges_reduced.owl \
+	         convert --format json -o $*_all_edges.json
 	og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot 
 	dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png
 	rm $*.json
 	rm $*.dot
+	og2dot.js -s ../style/ubergraph-style.json $*_all_edges.json > $*_all_edges.dot
+	dot $*_all_edges.dot -Tpng -Grankdir=LR > ../graphs/$*_all_edges.png
+	rm $*_all_edges.json
+	rm $*_all_edges.dot
 	
 ../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES}
 	${ROBOT} merge $(patsubst %, -i %, $^) \

@@ -100,6 +100,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_ct_as_start = len(terms_ct_as)    
 
+  all_edges = ug.construct_uberon(" ".join(list(terms_pairs.union(terms_ct_as))), ug.construct_all_edges)
+
   terms_labels = set()
   if len(terms) > 90:
     for chunk in chunks(list(terms), 90):
@@ -436,7 +438,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
   return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
-          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates())
+          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(),
+          all_edges)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):

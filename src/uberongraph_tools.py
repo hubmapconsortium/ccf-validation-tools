@@ -192,6 +192,43 @@ class UberonGraph():
             }
             ?object has_part: ?subject .
           }
+        """
+
+        self.construct_all_edges = """
+          PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050>
+          PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131>
+          PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170>
+          CONSTRUCT
+          {
+            ?subject rdf:type owl:Class; rdfs:subClassOf _:v; rdfs:label ?s_label .
+            _:v rdf:type owl:Restriction; 
+              owl:onProperty ?prop ;
+              owl:someValuesFrom ?object .
+            ?object rdf:type owl:Class; rdfs:label ?o_label .
+            ?prop rdf:type owl:TransitiveProperty .
+            ?prop rdfs:label ?p_label .
+            rdfs:subClassOf rdfs:label "subClassOf" .
+          }
+          WHERE {
+            GRAPH <http://reasoner.renci.org/redundant> {
+              VALUES (?subject ?object) {
+                %s
+              }
+              VALUES ?prop {
+                part_of: connected_to: rdfs:subClassOf
+              }
+              ?subject ?prop ?object .
+              OPTIONAL { ?prop a owl:TransitiveProperty . }
+            }
+            ?subject rdfs:label ?s_label .
+            ?object rdfs:label ?o_label .
+            OPTIONAL { ?prop rdfs:label ?p_label . }
+          } 
         """         
     def ask_uberon(self, r, q, urls=True):
         """"""
@@ -216,6 +253,13 @@ class UberonGraph():
         return self.extract_results(results["results"]["bindings"])
       else:
         return set()
+
+    def construct_uberon(self, terms, query):
+      query = query % terms
+      self.sparql.setQuery(query)
+      self.sparql.setReturnFormat(RDFXML)
+      result = self.sparql.query().convert()
+      return result
 
     def construct_annotation(self, terms):
         construct_query = """
