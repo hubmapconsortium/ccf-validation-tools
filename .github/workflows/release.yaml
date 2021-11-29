@@ -2,9 +2,9 @@ name: Report Release
 
 # Controls when the action will run.
 on:
-  # Triggers the workflow weekly on Mondays at 6:54 am
+  # Triggers the workflow weekly on Sundays at 6:54 am
   schedule:
-    - cron: '54 6 * * 1'
+    - cron: '54 6 * * 0'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -12,10 +12,13 @@ jobs:
   report-release:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    container: obolibrary/odkfull:v1.2.23
+    container: anitacaron/ccf-tools-dep
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+       - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
@@ -26,3 +29,19 @@ jobs:
           pip install -r requirements.txt
       - name: verify and build
         run: mkdir resources/ASCT-b_tables && cd src && make all
+      -name: Commit report
+        run: |
+          git config --global user.name 'Anita Caron'
+          git config --global user.email 'anitacaron@users.noreply.github.com'
+          git commit -am "Automated report"
+          git push
+      - name: Release
+        id: release-snapshot
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.date.outputs.date }}
+          release_name: ${{ steps.date.outputs.date }}
+          draft: false
+          prerelease: false
