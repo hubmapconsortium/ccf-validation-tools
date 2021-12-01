@@ -210,9 +210,8 @@ class UberonGraph():
               owl:onProperty ?prop ;
               owl:someValuesFrom ?object .
             ?object rdf:type owl:Class; rdfs:label ?o_label .
-            ?prop rdf:type owl:TransitiveProperty .
+            ?prop rdf:type ?prop_type .
             ?prop rdfs:label ?p_label .
-            rdfs:subClassOf rdfs:label "subClassOf" .
           }}
           WHERE {{
             GRAPH <http://reasoner.renci.org/redundant> {{
@@ -223,14 +222,42 @@ class UberonGraph():
                 {terms}
               }}
               VALUES ?prop {{
-                part_of: connected_to: rdfs:subClassOf
+                part_of: connected_to:
               }}
               ?subject ?prop ?object .
-              OPTIONAL {{ ?prop a owl:TransitiveProperty . }}
             }}
             ?subject rdfs:label ?s_label .
             ?object rdfs:label ?o_label .
-            OPTIONAL {{ ?prop rdfs:label ?p_label . }}
+            ?prop rdf:type ?prop_type; rdfs:label ?p_label .
+            FILTER (?subject != ?object)
+          }} 
+        """ 
+
+        self.construct_subclass_all_edges = """
+          PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          CONSTRUCT
+          {{
+            ?subject rdf:type owl:Class; rdfs:label ?s_label .
+            ?object rdf:type owl:Class; rdfs:label ?o_label .
+            ?subject rdfs:subClassOf ?object .
+            rdfs:subClassOf rdfs:label "subClassOf" .
+          }}
+          WHERE {{
+            GRAPH <http://reasoner.renci.org/redundant> {{
+              VALUES ?subject {{
+                {terms}
+              }}
+              VALUES ?object {{
+                {terms}
+              }}
+              ?subject rdfs:subClassOf ?object .
+            }}
+            ?subject rdfs:label ?s_label .
+            ?object rdfs:label ?o_label .
             FILTER (?subject != ?object)
           }} 
         """         

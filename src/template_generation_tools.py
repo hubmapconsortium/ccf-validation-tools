@@ -100,7 +100,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_ct_as_start = len(terms_ct_as)    
 
-  all_edges = ug.construct_uberon(" ".join(list(terms)), ug.construct_all_edges)
+  all_edges = ConjunctiveGraph()
+  
+  all_edges += ug.construct_uberon(" ".join(list(terms)), ug.construct_all_edges)
+  all_edges += ug.construct_uberon(" ".join(list(terms)), ug.construct_subclass_all_edges)
 
   terms_labels = set()
   if len(terms) > 90:
