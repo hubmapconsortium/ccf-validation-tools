@@ -204,7 +204,7 @@ class UberonGraph():
           PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131>
           PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170>
           CONSTRUCT
-          {
+          {{
             ?subject rdf:type owl:Class; rdfs:subClassOf _:v; rdfs:label ?s_label .
             _:v rdf:type owl:Restriction; 
               owl:onProperty ?prop ;
@@ -213,22 +213,26 @@ class UberonGraph():
             ?prop rdf:type owl:TransitiveProperty .
             ?prop rdfs:label ?p_label .
             rdfs:subClassOf rdfs:label "subClassOf" .
-          }
-          WHERE {
-            GRAPH <http://reasoner.renci.org/redundant> {
-              VALUES (?subject ?object) {
-                %s
-              }
-              VALUES ?prop {
+          }}
+          WHERE {{
+            GRAPH <http://reasoner.renci.org/redundant> {{
+              VALUES ?subject {{
+                {terms}
+              }}
+              VALUES ?object {{
+                {terms}
+              }}
+              VALUES ?prop {{
                 part_of: connected_to: rdfs:subClassOf
-              }
+              }}
               ?subject ?prop ?object .
-              OPTIONAL { ?prop a owl:TransitiveProperty . }
-            }
+              OPTIONAL {{ ?prop a owl:TransitiveProperty . }}
+            }}
             ?subject rdfs:label ?s_label .
             ?object rdfs:label ?o_label .
-            OPTIONAL { ?prop rdfs:label ?p_label . }
-          } 
+            OPTIONAL {{ ?prop rdfs:label ?p_label . }}
+            FILTER (?subject != ?object)
+          }} 
         """         
     def ask_uberon(self, r, q, urls=True):
         """"""
@@ -255,7 +259,7 @@ class UberonGraph():
         return set()
 
     def construct_uberon(self, terms, query):
-      query = query % terms
+      query = query.format(terms=terms)
       self.sparql.setQuery(query)
       self.sparql.setReturnFormat(RDFXML)
       result = self.sparql.query().convert()
