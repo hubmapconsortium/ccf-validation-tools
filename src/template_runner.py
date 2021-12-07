@@ -1,5 +1,5 @@
 from datetime import date
-from template_generation_tools import generate_class_graph_template, generate_ind_graph_template
+from template_generation_tools import generate_class_graph_template
 from ccf_tools import parse_asctb
 import argparse
 import os

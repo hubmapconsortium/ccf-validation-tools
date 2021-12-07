@@ -437,30 +437,3 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     annotations = ug.construct_annotation(terms)
   return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
           has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates())
-
-
-def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
-    seed = {'ID': 'ID', 'LABEL': 'A rdfs:label', 'TYPE': 'TYPE',
-            'Parent': 'I ccf_part_of'}
-    records = [seed]
-    for i, r in ccf_tools_df.iterrows():
-        rec = dict()
-        rec['TYPE'] = 'owl:NamedIndividual'
-        rec['ID'] = r['s']
-        rec['LABEL'] = r['slabel']
-        rec['Parent'] = r['o']
-        records.append(rec)
-    return pd.DataFrame.from_records(records)
-
-def generate_vasculature_template(ccf_tools_df: pd.DataFrame):
-    seed = {'SUBJECT': 'ID', 'OBJECT': "SC 'connected to' some %"}  # Work needed on relation
-    records = [seed]
-    for i, r in ccf_tools_df.iterrows():
-        rec = dict()
-        rec['SUBJECT'] = r['s']
-        rec['OBJECT'] = r['o']
-        records.append(rec)
-    return pd.DataFrame.from_records(records)
-
-
-
