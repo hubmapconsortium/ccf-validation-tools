@@ -18,7 +18,7 @@ FORCE:
 	if [ $(DOWNLOAD) = true ]; then python download_resource.py $* $@; fi
 
 ../owl/%_annotations.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv: ../resources/ASCT-b_tables/%.json
-	python template_runner.py $* $< ../templates/class_template_$*.csv 2> ../logs/error_class_$*.log
+	if [ $(DOWNLOAD) = true ]; then python template_runner.py $* $< ../templates/class_template_$*.csv 2> ../logs/error_class_$*.log; else python template_runner.py $* ../resources/ASCT-b_tables/test/$*.json ../templates/class_template_$*.csv 2> ../logs/error_class_$*.log; fi
 
 ../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv
 	echo ; echo "*** Building "$@" ***" ; echo ;
