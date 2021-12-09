@@ -15,11 +15,14 @@ parser.add_argument("output_file", help='output file path')
 TODAY = date.today().strftime("%Y%m%d")
 args = parser.parse_args()
 
-ccf_tools_df, report_t = parse_asctb(args.target_file)
+ccf_tools_df, report_t, new_terms_report = parse_asctb(args.target_file)
 
 report_t['Table'] = args.job
 report_t = pd.DataFrame.from_dict(report_t)
 report_t_path = f'../reports/report_terms_{TODAY}.tsv'
+
+new_terms_report.to_csv(f'../logs/new_cl_terms_{args.job}.tsv', sep='\t',
+                                                             index=False)
 
 class_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t = generate_class_graph_template(ccf_tools_df)
 
