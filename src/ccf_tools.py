@@ -163,7 +163,7 @@ def parse_asctb(path):
       
         # REPORT OF NEW CL TERMS
         for cl in cell_types:
-          if not check_id(cl['id']) and cl['rdfs_label'] != '':
+          if cl['id'] == '' and cl['name'] != '':
             r = {}
             r['Terminal AS/ID'] = last_as['id']
             r['Terminal AS/label'] = last_as['name']
