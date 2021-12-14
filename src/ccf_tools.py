@@ -5,8 +5,6 @@ import logging
 import sys
 import json
 
-from uberongraph_tools import UberonGraph
-
 class DuplicateFilter(logging.Filter):
     def filter(self, record):
         current_log = record.msg

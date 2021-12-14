@@ -452,15 +452,31 @@ def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
         records.append(rec)
     return pd.DataFrame.from_records(records)
 
-def generate_vasculature_template(ccf_tools_df: pd.DataFrame):
-    seed = {'SUBJECT': 'ID', 'OBJECT': "SC 'connected to' some %"}  # Work needed on relation
-    records = [seed]
-    for i, r in ccf_tools_df.iterrows():
-        rec = dict()
-        rec['SUBJECT'] = r['s']
-        rec['OBJECT'] = r['o']
-        records.append(rec)
-    return pd.DataFrame.from_records(records)
+def generate_vasculature_template(ccf_tools_df):
+  seed = {'SUBJECT': 'ID', 'OBJECT': "SC 'connected to' some %"} 
+  records = [seed]
+  ug = UberonGraph()
+
+  as_as = ccf_tools_df[ccf_tools_df['s'].str.startswith('UBERON') & ccf_tools_df['o'].str.startswith('UBERON')]
+  terms_pairs = set(f"({r['s']} {r['o']})" for _, r in as_as.iterrows())
+
+  _, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_subclass)
+  
+  _, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_po)
+
+  _, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_overlaps)
+
+  _, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_ct)
+
+  terms_as_sub, terms_as_obj = split_terms(terms_pairs)
+
+  for i, sub in enumerate(terms_as_sub):
+    rec = dict()
+    rec['SUBJECT'] = sub
+    rec['OBJECT'] = terms_as_obj[i]
+    records.append(rec)
+    
+  return pd.DataFrame.from_records(records)
 
 
 
