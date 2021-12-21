@@ -19,7 +19,7 @@ ccf_tools_df, report_t, new_terms_report = parse_asctb(args.target_file)
 
 report_t['Table'] = args.job
 report_t = pd.DataFrame.from_dict(report_t)
-report_t_path = f'../reports/report_terms_{TODAY}.tsv'
+report_t_path = f"../reports/report_terms_{TODAY}.tsv"
 
 new_terms_report.to_csv(f'../logs/new_cl_terms_{args.job}.tsv', sep='\t',
                                                              index=False)
@@ -28,7 +28,7 @@ class_template, error_log, annotations, indirect_error_log, report_r, strict_log
 
 report_r['Table'] = args.job
 report_r = pd.DataFrame.from_dict(report_r)
-report_r_path = f'report_relationship_{TODAY}.tsv'
+report_r_path = f"report_relationship_{TODAY}.tsv"
 
 class_template.to_csv(args.output_file, sep=',',
                                         index=False)
@@ -52,17 +52,21 @@ ub_subs_t.to_csv(f'../templates/temp_ub_{args.job}_ASCTB_subset.csv', sep=',', i
 cl_subs_t.to_csv(f'../templates/temp_cl_{args.job}_ASCTB_subset.csv', sep=',', index=False)
 
 if os.path.isfile(report_t_path):
+  print("append ", report_t_path)
   report_t.to_csv(report_t_path, sep='\t', index=False,
                                         mode='a', 
                                         header=False)
 else:
+  print("new ", report_t_path)
   report_t.to_csv(report_t_path, sep='\t', index=False)
 
 if os.path.isfile(report_r_path):
+  print("append ", report_r_path)
   report_r.to_csv(report_r_path, sep='\t', index=False,
                                         mode='a', 
                                         header=False)
 else:
+  print("new ", report_r_path)
   report_r.to_csv(report_r_path, sep='\t', index=False)
     
 
