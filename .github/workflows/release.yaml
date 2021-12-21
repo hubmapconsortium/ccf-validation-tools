@@ -35,15 +35,15 @@ jobs:
           git config --global user.name 'Anita Caron'
           git config --global user.email 'anitacaron@users.noreply.github.com'
           git commit -am "Automated report"
-          git push
-      - name: Release
-        id: release-snapshot
-        uses: actions/create-release@latest
-        env:
-          DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v${{ steps.date.outputs.date }}
-          release_name: ${{ steps.date.outputs.date }}
-          draft: false
-          prerelease: false
+          git push origin master
+      # - name: Release
+      #   id: release-snapshot
+      #   uses: actions/create-release@latest
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: v${{ steps.date.outputs.date }}
+      #     release_name: ${{ steps.date.outputs.date }}
+      #     body: ASCT+b tables validation
+      #     draft: false
+      #     prerelease: false

@@ -28,7 +28,7 @@ class_template, error_log, annotations, indirect_error_log, report_r, strict_log
 
 report_r['Table'] = args.job
 report_r = pd.DataFrame.from_dict(report_r)
-report_r_path = f'../reports/report_relationship_{TODAY}.tsv'
+report_r_path = f'report_relationship_{TODAY}.tsv'
 
 class_template.to_csv(args.output_file, sep=',',
                                         index=False)
