@@ -93,6 +93,7 @@ class UberonGraph():
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           SELECT ?subject ?object 
+          FROM <http://reasoner.renci.org/redundant> 
           {
             VALUES (?subject ?object) {
               %s
@@ -152,7 +153,7 @@ class UberonGraph():
           PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
-          FROM <http://reasoner.renci.org/nonredundant>
+          FROM <http://reasoner.renci.org/redundant>
           { 
             VALUES (?subject ?object) {
               %s
@@ -169,7 +170,7 @@ class UberonGraph():
           PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
-          FROM <http://reasoner.renci.org/nonredundant>
+          FROM <http://reasoner.renci.org/redundant>
           { 
             VALUES (?subject ?object) {
               %s
@@ -185,7 +186,7 @@ class UberonGraph():
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           PREFIX has_part: <http://purl.obolibrary.org/obo/BFO_0000051>
           SELECT ?subject ?object
-          FROM <http://reasoner.renci.org/nonredundant>
+          FROM <http://reasoner.renci.org/redundant>
           { 
             VALUES (?subject ?object) {
               %s
