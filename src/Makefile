@@ -17,7 +17,7 @@ FORCE:
 ../resources/ASCT-b_tables/%.json: FORCE
 	python download_resource.py $* $@
 
-../owl/%_annotations.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv: ../resources/ASCT-b_tables/%.json
+../owl/%_annotations.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv: ../resources/ASCT-b_tables/%.json
 	python template_runner.py $* $< ../templates/class_template_$*.csv 2> ../logs/error_class_$*.log
 
 ../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv
@@ -36,15 +36,20 @@ FORCE:
 	${ROBOT} template --input helper.owl --template $< --output $@
 	rm $<
 
+../owl/%_no-valid.owl: ../templates/%_no-valid.csv
+	${ROBOT} template --input helper.owl --template $< --output $@
+	rm $<
+
 ../owl/%_ASCTB_subset.json: ../owl/ub_%_ASCTB_subset.owl ../owl/cl_%_ASCTB_subset.owl
 	${ROBOT} merge $(patsubst %, -i %, $^) \
 					 convert --format json -o $@
 
 .PRECIOUS: ../owl/%_ASCTB_subset.json
 
-../owl/ccf_%_classes.owl: ../owl/%_ASCTB_subset.json ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl
+../owl/ccf_%_classes.owl: ../owl/%_ASCTB_subset.json ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl ../owl/%_no-valid.owl
 	${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
-					convert --format json -o $*.json
+					 merge --input ../owl/$*_no-valid.owl \
+					 convert --format json -o $*.json
 	og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot 
 	dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png
 	rm $*.json
