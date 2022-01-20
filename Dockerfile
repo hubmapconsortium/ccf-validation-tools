@@ -3,7 +3,7 @@ LABEL maintainer="anitac@ebi.ac.uk"
 
 WORKDIR /tools
 
-ENV ROBOT v1.8.1
+ENV ROBOT v1.8.2
 ARG ROBOT_JAR=https://github.com/ontodev/robot/releases/download/$ROBOT/robot.jar
 ENV ROBOT_JAR ${ROBOT_JAR}
 
@@ -36,3 +36,10 @@ RUN cd /tools \
 && git checkout b0d8f64517d4ae0085072866aaadb7602f41acf7 \
 && make install
 ENV PATH "/tools/obographviz/bin:$PATH"
+
+##### ontobio ######
+RUN cd /tools \
+&& git clone 'https://github.com/biolink/ontobio.git' \
+&& cd ontobio \
+&& pip install -e .[dev,test]
+ENV PATH "/tools/ontobio/bin:$PATH"

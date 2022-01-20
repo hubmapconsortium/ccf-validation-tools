@@ -50,12 +50,14 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
           'validation_date_hp': '>A dc:date'}
 
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
+  seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
   ug = UberonGraph()
   records = [seed]
   records_ub_sub = [seed_sub]
   records_cl_sub = [seed_sub]
+  no_valid_records = [seed_no_valid]
   if ccf_tools_df.empty:
-    return (pd.DataFrame.from_records(records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, 
+    return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, 
             has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub))
 
   terms = set()
@@ -398,10 +400,23 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       nb_invalid_as += 1
+      no_v_rec = dict()
+      no_v_rec['ID'] = r['s']
+      no_v_rec['ccf_part_of'] = r['o']
+      no_valid_records.append(no_v_rec)
     elif 'CL' in r['s'] and 'CL' in r['o']:
       nb_invalid_ct += 1
+      no_v_rec = dict()
+      no_v_rec['ID'] = r['s']
+      no_v_rec['ccf_part_of'] = r['o']
+      no_valid_records.append(no_v_rec)
     elif 'CL' in r['s'] and 'UBERON' in r['o']:
       nb_invalid_ct_as += 1
+      no_v_rec = dict()
+      no_v_rec['ID'] = r['s']
+      no_v_rec['ccf_located_in'] = r['o']
+      no_valid_records.append(no_v_rec)
+
 
   nb_relation_as = len(relation_as)
   perc_inv_as = 0
@@ -440,9 +455,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   else:
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
-  return (pd.DataFrame.from_records(records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
-          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(),
-          all_edges)
+  return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
+          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), all_edges)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
