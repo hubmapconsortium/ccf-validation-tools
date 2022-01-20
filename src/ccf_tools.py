@@ -48,6 +48,7 @@ def parse_asctb(path):
     unique_terms = set()
     as_valid_terms = set()
     ct_valid_terms = set()
+    rt = []
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
     dl = []
@@ -98,7 +99,7 @@ def parse_asctb(path):
         else:
           if not check_id(current['id']) and current['rdfs_label'] != '':
             ct_invalid_terms.add(current['rdfs_label'])
-          elif not check_id(current['id']) and current['name']:
+          elif not check_id(current['id']) and current['name'] != '':
             ct_invalid_terms.add(current['name'])
           elif not check_id(next['id']) and next['rdfs_label'] != '':
             ct_invalid_terms.add(next['rdfs_label'])
@@ -136,6 +137,21 @@ def parse_asctb(path):
           elif not check_id(last_ct['id']) and last_ct['name'] != '':
             ct_invalid_terms.add(last_ct['name'])
             unique_terms.add(last_ct['name'])
+      
+        # REPORT OF NEW CL TERMS
+        for cl in cell_types:
+          if cl['id'] == '' and cl['name'] != '':
+            r = {}
+            r['Terminal AS/ID'] = last_as['id']
+            r['Terminal AS/label'] = last_as['name']
+            r['Terminal AS/user_label'] = last_as['rdfs_label']
+            r['CL Name'] = cl['name']
+
+            refs_id = [ref['id'] for ref in row['references']]
+            refs_doi = [ref['doi'] for ref in row['references'] if ref.get('doi')]
+            r['References/ID'] = " ; ".join(refs_id)
+            r['References/DOI'] = " ; ".join(refs_doi)
+            rt.append(r)
 
     as_invalid_term_percent = round((len(as_invalid_terms)*100)/len(unique_terms), 2)
     ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/len(unique_terms), 2)
@@ -152,7 +168,8 @@ def parse_asctb(path):
 
 
     out = pd.DataFrame.from_records(dl).drop_duplicates()
-    return out, report_terms
+    new_terms = pd.DataFrame.from_records(rt).drop_duplicates()
+    return out, report_terms, new_terms
 
 def transform_to_str(list):
     terms_pairs = set()
