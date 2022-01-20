@@ -23,19 +23,21 @@ if args.job == 'Blood_vasculature':
 
 report_t['Table'] = args.job
 report_t = pd.DataFrame.from_dict(report_t)
-report_t_path = f'../reports/report_terms_{TODAY}.tsv'
+report_t_path = f"../reports/report_terms_{TODAY}.tsv"
 
 new_terms_report.to_csv(f'../logs/new_cl_terms_{args.job}.tsv', sep='\t',
                                                              index=False)
 
-class_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t = generate_class_graph_template(ccf_tools_df)
+class_template, no_valid_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t = generate_class_graph_template(ccf_tools_df)
 
 report_r['Table'] = args.job
 report_r = pd.DataFrame.from_dict(report_r)
-report_r_path = f'../reports/report_relationship_{TODAY}.tsv'
+report_r_path = f"../reports/report_relationship_{TODAY}.tsv"
 
 class_template.to_csv(args.output_file, sep=',',
                                         index=False)
+
+no_valid_template.to_csv(f'../templates/{args.job}_no-valid.csv', sep=',', index=False)
 
 error_log.to_csv(f'../logs/class_{args.job}_log.tsv', sep='\t',
                                                       index=False)
@@ -56,17 +58,21 @@ ub_subs_t.to_csv(f'../templates/temp_ub_{args.job}_ASCTB_subset.csv', sep=',', i
 cl_subs_t.to_csv(f'../templates/temp_cl_{args.job}_ASCTB_subset.csv', sep=',', index=False)
 
 if os.path.isfile(report_t_path):
+  print("append ", report_t_path)
   report_t.to_csv(report_t_path, sep='\t', index=False,
                                         mode='a', 
                                         header=False)
 else:
+  print("new ", report_t_path)
   report_t.to_csv(report_t_path, sep='\t', index=False)
 
 if os.path.isfile(report_r_path):
+  print("append ", report_r_path)
   report_r.to_csv(report_r_path, sep='\t', index=False,
                                         mode='a', 
                                         header=False)
 else:
+  print("new ", report_r_path)
   report_r.to_csv(report_r_path, sep='\t', index=False)
     
 
