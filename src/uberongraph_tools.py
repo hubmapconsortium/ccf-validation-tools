@@ -2,7 +2,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
 
 class UberonGraph():
     def __init__(self):
-        self.sparql = SPARQLWrapper('https://stars-app.renci.org/uberongraph/sparql')
+        self.sparql = SPARQLWrapper('https://ubergraph.apps.renci.org/sparql')
         self.select_po = """
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
