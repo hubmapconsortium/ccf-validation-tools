@@ -193,6 +193,19 @@ class UberonGraph():
             ?object has_part: ?subject .
           }
         """         
+
+        self.select_image = """
+          PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object
+          { 
+            VALUES ?subject {
+              %s
+            }
+            ?subject foaf:depicted_by ?object .
+          }
+        """         
     def ask_uberon(self, r, q, urls=True):
         """"""
         start = ''
