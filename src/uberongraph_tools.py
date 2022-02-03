@@ -184,7 +184,6 @@ class UberonGraph():
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           SELECT ?subject ?object
-          FROM <http://reasoner.renci.org/redundant>
           { 
             VALUES ?subject {
               %s
