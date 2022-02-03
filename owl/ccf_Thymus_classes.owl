@@ -2407,8 +2407,8 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
         <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/17921072"/>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20973947"/>
-        <obo:IAO_0000425 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">?X DisjointWith RO_0002162 some ?Y </obo:IAO_0000425>
         <obo:IAO_0000425 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: ?X and (RO_0002162 some ?Y)</obo:IAO_0000425>
+        <obo:IAO_0000425 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class: ?X DisjointWith: RO_0002162 some ?Y </obo:IAO_0000425>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002161</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">never_in_taxon</oboInOwl:id>
@@ -3032,6 +3032,17 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0004036 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0004036">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true if the two properties are disjoint, according to OWL semantics. This should only be used if using a logical axiom introduces a non-simple property violation.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:label xml:lang="en">nominally disjoint with</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0004048 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0004048">
@@ -3344,6 +3355,22 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000102 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000102">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property used to indicate the position of an element where that element is of a type that is serially repeated linearly along some axis for which a total ordering exists. The ordering may represent an ancestral condition.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBPROP:0000102</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">repeated_element_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">repeated_element_number</oboInOwl:shorthand>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The range is currently non-negative integer</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ubprop.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">repeated element number</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBPROP_0000103 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000103">
@@ -3451,6 +3478,41 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000109 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000109">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x paired_appendage_number N if and only if (i) x is a paired_appendage, and (ii) x is paired_appendage number N in a series of paired_appendages repeated along an anterior-posterior axis, with paired_appendage_number 1 being the anteriormost paired_appendage. In vertebrates, this is the pectoral appendage.</obo:IAO_0000115>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000026"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000096"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBPROP:0000109</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paired_appendage_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paired_appendage_number</oboInOwl:shorthand>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ubprop.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paired_appendage number</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000110 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000110">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x appendage_segment_number N if and only if (i) x is a appendage_segment, and (ii) x is appendage_segment number N in a series of appendage_segments repeated along an proximo-distal axis, with appendage_segment_number 1 being the proximalmost appendage_segment (in tetrapods this would be the stylopod, as we do not classify girdles as appendage segments).</obo:IAO_0000115>
+        <obo:UBPROP_0000100 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010758"/>
+        <obo:UBPROP_0000101 rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000100"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBPROP:0000110</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appendage_segment_number</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appendage_segment_number</oboInOwl:shorthand>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples: in dropsphila coxa=1, trochanter=2, femur=3, tibia=4, tarsal segments 1-5=5-9, pretarsus=10</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ubprop.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appendage segment number</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBPROP_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000111">
@@ -3482,6 +3544,21 @@ Where we have an annotation assertion
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ubprop.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tooth number</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000113"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000113 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000113">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Syntax: upper/lower = I.C.P.M / I.C.P.M. When used with generic tooth class applies to both deciduous and primary. Should also be used with a taxon property.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBPROP:0000113</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dental_formula</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dental_formula</oboInOwl:shorthand>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ubprop.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dental formula</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -3713,22 +3790,6 @@ Where we have an annotation assertion
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#added_for_HCA">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl#added_for.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cl#location_grouping -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#location_grouping">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl#location.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/cl#ro-eco -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#ro-eco">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl#ro-eco.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -4779,6 +4840,14 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/mondo#relatedMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#relatedMatch">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#relatedmatch.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/mondo#should_conform_to -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#should_conform_to">
@@ -5397,6 +5466,19 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/uberon/core#homologous_in -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#homologous_in">
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homologous_in</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Status: experimental</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon/core#homologous.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homologous_in</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/uberon/core#homology_grouping -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#homology_grouping">
@@ -5773,6 +5855,19 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://usefulinc.com/ns/doap#mailing-list -->
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#mailing-list">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://usefulinc.com/ns/doap#mailing-list</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doap-mailing-list</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doap-mailing-list</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mailing list</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://usefulinc.com/ns/doap#wiki -->
 
     <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#wiki">
@@ -6065,6 +6160,38 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-equivalent -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-equivalent">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">treat-xrefs-as-equivalent</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-has-subclass -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-has-subclass">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">treat-xrefs-as-has-subclass</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-is_a -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-is_a">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">treat-xrefs-as-is_a</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-reverse-genus-differentia -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-reverse-genus-differentia">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">treat-xrefs-as-reverse-genus-differentia</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
@@ -6241,7 +6368,6 @@ Where we have an annotation assertion
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endothelial cell that lines the vasculature.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cuboidal endothelial cell of vascular tree</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000071</oboInOwl:id>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood vessel endothelial cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood vessel endothelial cell</skos:prefLabel>
@@ -6373,7 +6499,6 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83516</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erythropoietic cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000764</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that in FMA erythropoietic cells are types of nucleated erythrocytes and thus don&apos;t include erythrocytes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erythroid lineage cell</rdfs:label>
@@ -6590,7 +6715,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-24T07:15:44.922772</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03T20:44:59.188533</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000882"/>
@@ -6939,7 +7064,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-24T07:15:44.922765</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03T20:44:59.188547</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001070"/>
@@ -7271,7 +7396,6 @@ Where we have an annotation assertion
     <!-- http://purl.obolibrary.org/obo/UBERON_0001013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001013">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portion of connective tissue composed of adipocytes enmeshed in areolar tissue</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portion of connective tissue composed of adipocytes enmeshed in areolar tissue.</obo:IAO_0000115>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connective tissue in which fat is stored.[TAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue that contains adipocytes, used for cushioning, thermal insulation, lubrication (primarily in the pericardium) and energy storage.[AAO]</obo:UBPROP_0000001>
@@ -7320,16 +7444,6 @@ Where we have an annotation assertion
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adipose tissue</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adipose tissue</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portion of connective tissue composed of adipocytes enmeshed in areolar tissue</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:A10.165.114</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGI:cwg</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MP:0000003</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Adipose_tissue</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -7518,6 +7632,12 @@ Where we have an annotation assertion
     <!-- http://purl.obolibrary.org/obo/UBERON_0001591 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001591">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vein that drains blood from the thymus.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:36325</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:4747</oboInOwl:hasDbXref>
@@ -7535,6 +7655,18 @@ Where we have an annotation assertion
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymic vein</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymic vein</skos:prefLabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001591"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03T20:45:03.964628</dc:date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001591"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -7599,7 +7731,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-24T07:15:44.922768</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03T20:44:59.188545</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002122"/>
@@ -7734,6 +7866,12 @@ Where we have an annotation assertion
     <!-- http://purl.obolibrary.org/obo/UBERON_0002125 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002125">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005483"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lobule that is part of a thymus. Divided into an outer cortex and inner medulla and separated from each other by connective tissue septa, but with the medullary tissue continuous from lobule to lobule.[ncit,modified].</obo:IAO_0000115>
         <obo:UBPROP_0000008 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in the mouse, the lobes of the thymus are not subdivided into lobules but only in the central medulla and a peripheral cortex (i.e. there is no distinct sublobulation). In humans, the two thymus lobes are composed of many lobules of various sizes which contain follicles, each comprising a medulla and a cortex. in the rat, the thymus is partially subdivided into lobules separated by thin bands of connective tissue which are continuous with the thin connective tissue capsule.[MP]</obo:UBPROP_0000008>
         <obo:UBPROP_0000010 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocytes, reticular cells and macrophages are found in the lobules</obo:UBPROP_0000010>
@@ -7752,6 +7890,18 @@ Where we have an annotation assertion
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymus lobule</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymus lobule</skos:prefLabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002125"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005483"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03T20:44:59.188543</dc:date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002125"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -7869,8 +8019,6 @@ Where we have an annotation assertion
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portion of tissue that consists of mesodermally derived cells and intercellular matrix comprised of protein fibers and carbohydrates, which supports, ensheathes and binds together other tissues.[TAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue with cells that deposit non-polarized extracellular matrix including connective tissue fibers and ground substance.[VSAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000012 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA also has set of connective tissues</obo:UBPROP_0000012>
-        <dc:contributor rdf:resource="https://github.com/cmungall"/>
-        <dc:contributor rdf:resource="https://github.com/wdahdul"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000098</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000421</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-2009</oboInOwl:hasDbXref>
@@ -7905,6 +8053,34 @@ Where we have an annotation assertion
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue with cells that deposit non-polarized extracellular matrix including connective tissue fibers and ground substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000034</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSPUB:0000170</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dx.plos.org/10.1371/journal.pone.0051070</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/obophenotype/uberon/issues/23</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the four types of tissue in traditional classifications. It is largely a category of exclusion rather than one with a precise definition, but there are certain characteristics shared by all or most tissues in this category, such as involvement in structure and support, derived from mesoderm, and characterized largely by the traits of non-living tissue.[AAO]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000098</oboInOwl:external_class>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:LAP</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portion of tissue that consists of mesodermally derived cells and intercellular matrix comprised of protein fibers and carbohydrates, which supports, ensheathes and binds together other tissues.[TAO]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-08-14</oboInOwl:date_retrieved>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0001641</oboInOwl:external_class>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO</oboInOwl:ontology>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:wd</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue with cells that deposit non-polarized extracellular matrix including connective tissue fibers and ground substance.[VSAO]</owl:annotatedTarget>
         <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-08-14</oboInOwl:date_retrieved>
@@ -7937,40 +8113,18 @@ Where we have an annotation assertion
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bindegewebe</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000421</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue with cells that deposit non-polarized extracellular matrix including connective tissue fibers and ground substance.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000034</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSPUB:0000170</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000017</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dx.plos.org/10.1371/journal.pone.0051070</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/obophenotype/uberon/issues/23</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the four types of tissue in traditional classifications. It is largely a category of exclusion rather than one with a precise definition, but there are certain characteristics shared by all or most tissues in this category, such as involvement in structure and support, derived from mesoderm, and characterized largely by the traits of non-living tissue.[AAO]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
-        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000098</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:LAP</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portion of tissue that consists of mesodermally derived cells and intercellular matrix comprised of protein fibers and carbohydrates, which supports, ensheathes and binds together other tissues.[TAO]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-08-14</oboInOwl:date_retrieved>
-        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0001641</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO</oboInOwl:ontology>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:wd</oboInOwl:source>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0003846 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003846">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0002364"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An epithelium that is part of a thymus, forming a supporting framework[MP,modified].</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001836</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-1040</oboInOwl:hasDbXref>
@@ -7997,6 +8151,18 @@ Where we have an annotation assertion
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymus epithelium</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymus epithelium</skos:prefLabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003846"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0002364"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03T20:45:04.684091</dc:date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003846"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -8095,7 +8261,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-24T07:15:44.922770</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03T20:44:59.188548</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003987"/>
@@ -8154,7 +8320,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-24T07:15:44.922776</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03T20:44:59.188546</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003988"/>
@@ -8309,7 +8475,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-24T07:15:44.922738</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03T20:44:59.188541</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005483"/>
@@ -8395,6 +8561,12 @@ Where we have an annotation assertion
     <!-- http://purl.obolibrary.org/obo/UBERON_0018243 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0018243">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vein that supplies blood to the thymus.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:10647</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:76543001</oboInOwl:hasDbXref>
@@ -8408,6 +8580,18 @@ Where we have an annotation assertion
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymic artery</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thymic artery</skos:prefLabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0018243"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03T20:45:03.964657</dc:date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0018243"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
