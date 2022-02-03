@@ -1,5 +1,5 @@
 from datetime import date
-from template_generation_tools import generate_class_graph_template, generate_ind_graph_template
+from template_generation_tools import generate_class_graph_template, generate_vasculature_template
 from ccf_tools import parse_asctb
 import argparse
 import os
@@ -16,6 +16,10 @@ TODAY = date.today().strftime("%Y%m%d")
 args = parser.parse_args()
 
 ccf_tools_df, report_t, new_terms_report = parse_asctb(args.target_file)
+
+if args.job == 'Blood_vasculature':
+  vasculature_template = generate_vasculature_template(ccf_tools_df)
+  vasculature_template.to_csv(f'../templates/vasculature_class.tsv', sep='\t', index=False)
 
 report_t['Table'] = args.job
 report_t = pd.DataFrame.from_dict(report_t)

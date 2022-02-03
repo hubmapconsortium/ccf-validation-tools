@@ -1,4 +1,5 @@
 from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
+from ccf_tools import chunks, transform_to_str
 
 class UberonGraph():
     def __init__(self):
@@ -276,3 +277,14 @@ class UberonGraph():
     def add_prefix(self, term):
       return term.replace("http://purl.obolibrary.org/obo/UBERON_", "UBERON:").replace("http://purl.obolibrary.org/obo/CL_", "CL:")
 
+    def verify_relationship(self, terms_pairs, relationship):
+      valid_relationship = set()
+      if len(terms_pairs) > 90:
+        for chunk in chunks(list(terms_pairs), 90):
+          valid_relationship = valid_relationship.union(self.query_uberon(" ".join(chunk), relationship))
+      else:
+        valid_relationship = self.query_uberon(" ".join(list(terms_pairs)), relationship)
+      
+      non_valid_relationship = terms_pairs - transform_to_str(valid_relationship)
+
+      return valid_relationship, non_valid_relationship
