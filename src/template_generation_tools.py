@@ -138,9 +138,15 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       valid_subclass = valid_subclass.union(ug.query_uberon(" ".join(chunk), ug.select_subclass))
   else:
     valid_subclass = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_subclass)
-  
 
-  for s, o in valid_subclass:
+  valid_ct_as_subclass = set()
+  if len(terms_ct_as) > 90:
+    for chunk in chunks(list(terms_ct_as), 90):
+      valid_ct_as_subclass = valid_ct_as_subclass.union(ug.query_uberon(" ".join(chunk), ug.select_subclass))
+  else:
+    valid_ct_as_subclass = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_subclass)
+  
+  for s, o in valid_subclass.union(valid_ct_as_subclass):
     rec = dict()
     rec['ID'] = s
     rec['Parent_class'] = o
@@ -152,6 +158,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       nb_valid_as += 1
     elif 'CL' in s and 'CL' in o:
       nb_valid_ct += 1
+  
 
   # INDIRECT SUBCLASS CHECK
   terms_valid_subclass = transform_to_str(valid_subclass)
@@ -171,10 +178,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       nb_indirect_ct += 1
   
   terms_pairs = terms_pairs - terms_valid_subclass
+  terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_subclass)
 
   # PART OF CHECK
   valid_po = set()
-  if len(terms_pairs) > 90:
+  if len(terms_pairs.union(terms_ct_as)) > 90:
     for chunk in chunks(list(terms_pairs), 90):
       valid_po = valid_po.union(ug.query_uberon(" ".join(chunk), ug.select_po))
   else:
@@ -270,18 +278,17 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_overlaps)
 
-  # STRICT CT-AS REPORT
-  terms_ct, terms_as = split_terms(terms_ct_as)
-
-  no_valid_ct_as = ccf_tools_df[ccf_tools_df['s'].isin(terms_ct) & ccf_tools_df['o'].isin(terms_as)]
-
-  for _, r in no_valid_ct_as.iterrows():
-    strict_log = strict_log.append(r)
-
   # CONNECTED TO CHECK
   valid_conn_to = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct)
 
-  for s, o in valid_conn_to:
+  valid_ct_as_conn_to = set()
+  if len(terms_ct_as) > 90:
+    for chunk in chunks(list(terms_ct_as), 90):
+      valid_ct_as_conn_to = valid_ct_as_conn_to.union(ug.query_uberon(" ".join(chunk), ug.select_ct))
+  else:
+    valid_ct_as_conn_to = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_ct)
+
+  for s, o in valid_conn_to.union(valid_ct_as_conn_to):
     rec = dict()
     rec['ID'] = s
     rec['connected_to'] = o
@@ -295,6 +302,15 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       nb_valid_ct += 1
 
   terms_pairs = terms_pairs - transform_to_str(valid_conn_to)
+  terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_conn_to)
+
+  # STRICT CT-AS REPORT
+  terms_ct, terms_as = split_terms(terms_ct_as)
+
+  no_valid_ct_as = ccf_tools_df[ccf_tools_df['s'].isin(terms_ct) & ccf_tools_df['o'].isin(terms_as)]
+
+  for _, r in no_valid_ct_as.iterrows():
+    strict_log = strict_log.append(r)
 
   # DEVELOPS FROM CHECK
   valid_dev_from = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_develops_from)
@@ -312,42 +328,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     elif 'CL' in s and 'CL' in o:
       nb_valid_ct += 1
 
-  # CT-AS SUBCLASS PART OF
-  valid_subclass_ct_as_po = set()
-  if len(terms_ct_as) > 90:
-    for chunk in chunks(list(terms_ct_as), 90):
-      valid_subclass_ct_as_po = valid_subclass_ct_as_po.union(ug.query_uberon(" ".join(chunk), ug.select_subclass_po))
-  else:
-    valid_subclass_ct_as_po = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_subclass_po)
-
-  for s, o in valid_subclass_ct_as_po:
-    rec = dict()
-    rec['ID'] = s
-    rec['part_of'] = o
-    rec['OBO_Validated_po'] = True
-    rec['validation_date_po'] = datetime.now().isoformat()
-    records.append(rec)
-
-  terms_ct_as = terms_ct_as - transform_to_str(valid_subclass_ct_as_po)
-
-  # CT-AS SUBCLASS OVERLAPS
-  valid_subclass_ct_as_o = set()
-  if len(terms_ct_as) > 90:
-    for chunk in chunks(list(terms_ct_as), 90):
-      valid_subclass_ct_as_o = valid_subclass_ct_as_o.union(ug.query_uberon(" ".join(chunk), ug.select_subclass_o))
-  else:
-    valid_subclass_ct_as_o = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_subclass_o)
-
-  for s, o in valid_subclass_ct_as_o:
-    rec = dict()
-    rec['ID'] = s
-    rec['overlaps'] = o
-    rec['OBO_Validated_overlaps'] = True
-    rec['validation_date_overlaps'] = datetime.now().isoformat()
-    records.append(rec)
-
-  terms_ct_as = terms_ct_as - transform_to_str(valid_subclass_ct_as_o)
-
   # AS-CT HAS PART
   valid_has_part = set()
   if len(terms_ct_as) > 90:
@@ -364,14 +344,34 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     rec['validation_date_hp'] = datetime.now().isoformat()
     records.append(rec)
 
-  terms_ct, terms_as = split_terms(transform_to_str(valid_has_part))
+  terms_ct_as = terms_ct_as - transform_to_str(valid_has_part)
+
+  # CT-AS SUBCLASS PART OF
+  valid_subclass_ct_as_po = set()
+  if len(terms_ct_as) > 90:
+    for chunk in chunks(list(terms_ct_as), 90):
+      valid_subclass_ct_as_po = valid_subclass_ct_as_po.union(ug.query_uberon(" ".join(chunk), ug.select_subclass_po))
+  else:
+    valid_subclass_ct_as_po = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_subclass_po)
+
+  for s, o in valid_subclass_ct_as_po:
+    rec = dict()
+    rec['ID'] = o
+    rec['has_part'] = s
+    rec['OBO_Validated_hp'] = True
+    rec['validation_date_hp'] = datetime.now().isoformat()
+    records.append(rec)
+
+  terms_ct_as = terms_ct_as - transform_to_str(valid_subclass_ct_as_po)
+
+  terms_ct, terms_as = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
 
   has_part_report = ccf_tools_df[ccf_tools_df['s'].isin(terms_ct) & ccf_tools_df['o'].isin(terms_as)]
 
   for _, r in has_part_report.iterrows():
     has_part_log = has_part_log.append(r)
 
-  terms_ct, terms_as = split_terms(terms_ct_as - transform_to_str(valid_has_part))
+  terms_ct, terms_as = split_terms(terms_ct_as)
 
   terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_dev_from))
 
