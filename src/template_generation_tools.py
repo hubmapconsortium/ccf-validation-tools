@@ -375,6 +375,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_dev_from))
 
+  terms_set = zip(terms_ct + terms_s, terms_as + terms_o)
+
   # ENTITY CHECK
   no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
   no_valid_class_ct = ug.query_uberon(" ".join(terms_ct), ug.select_class)
@@ -388,17 +390,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for t in no_valid_class_o.union(no_valid_class_as):
     logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
 
-  terms_s = set(terms_s) - no_valid_class_s
-  terms_ct = set(terms_ct) - no_valid_class_ct
-
-  terms_s = list(terms_s.union(terms_ct))
-
-  terms_o = set(terms_o) - no_valid_class_o
-  terms_as = set(terms_as) - no_valid_class_as
-
-  terms_o = terms_o.union(terms_as)
-
-  no_valid_relation = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)].drop_duplicates()
+  no_valid_relation = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(terms_set)]
 
   for _, r in no_valid_relation.iterrows():
     error_log = error_log.append(r)
