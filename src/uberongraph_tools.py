@@ -1,8 +1,9 @@
 from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
+from ccf_tools import chunks, transform_to_str
 
 class UberonGraph():
     def __init__(self):
-        self.sparql = SPARQLWrapper('https://stars-app.renci.org/uberongraph/sparql')
+        self.sparql = SPARQLWrapper('https://ubergraph.apps.renci.org/sparql')
         self.select_po = """
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
@@ -93,6 +94,7 @@ class UberonGraph():
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           SELECT ?subject ?object 
+          FROM <http://reasoner.renci.org/redundant> 
           {
             VALUES (?subject ?object) {
               %s
@@ -149,10 +151,9 @@ class UberonGraph():
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050>
-          PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
-          FROM <http://reasoner.renci.org/nonredundant>
+          FROM <http://reasoner.renci.org/redundant>
           { 
             VALUES (?subject ?object) {
               %s
@@ -161,36 +162,33 @@ class UberonGraph():
             ?sub part_of: ?object .
           }
         """
-
-        self.select_subclass_o = """
-          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
-          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
-          PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131>
-          SELECT ?subject ?object
-          FROM <http://reasoner.renci.org/ontology>
-          FROM <http://reasoner.renci.org/nonredundant>
-          { 
-            VALUES (?subject ?object) {
-              %s
-            }
-            ?sub rdfs:subClassOf+ ?subject .
-            ?sub overlaps: ?object .
-          }
-        """
-
+        
         self.select_has_part = """
           PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           PREFIX has_part: <http://purl.obolibrary.org/obo/BFO_0000051>
           SELECT ?subject ?object
-          FROM <http://reasoner.renci.org/nonredundant>
+          FROM <http://reasoner.renci.org/ontology>
+          FROM <http://reasoner.renci.org/redundant>
           { 
             VALUES (?subject ?object) {
               %s
             }
             ?object has_part: ?subject .
+          }
+        """         
+
+        self.select_image = """
+          PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          SELECT ?subject ?object
+          { 
+            VALUES ?subject {
+              %s
+            }
+            ?subject foaf:depicted_by ?object .
           }
         """         
     def ask_uberon(self, r, q, urls=True):
@@ -263,3 +261,14 @@ class UberonGraph():
     def add_prefix(self, term):
       return term.replace("http://purl.obolibrary.org/obo/UBERON_", "UBERON:").replace("http://purl.obolibrary.org/obo/CL_", "CL:")
 
+    def verify_relationship(self, terms_pairs, relationship):
+      valid_relationship = set()
+      if len(terms_pairs) > 90:
+        for chunk in chunks(list(terms_pairs), 90):
+          valid_relationship = valid_relationship.union(self.query_uberon(" ".join(chunk), relationship))
+      else:
+        valid_relationship = self.query_uberon(" ".join(list(terms_pairs)), relationship)
+      
+      non_valid_relationship = terms_pairs - transform_to_str(valid_relationship)
+
+      return valid_relationship, non_valid_relationship
