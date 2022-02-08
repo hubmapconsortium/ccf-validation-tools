@@ -235,7 +235,13 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_po)
 
   # OVERLAPS CHECK
-  valid_overlaps = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_overlaps)
+  valid_overlaps = set()
+  if len(terms_pairs) > 90:
+    for chunk in chunks(list(terms_pairs), 90):
+      valid_overlaps = valid_overlaps.union(ug.query_uberon(" ".join(chunk), ug.select_overlaps))
+  else:
+    valid_overlaps = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_overlaps)
+  
 
   valid_ct_as_overlaps = set()
   if len(terms_ct_as) > 90:
@@ -279,7 +285,12 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_overlaps)
 
   # CONNECTED TO CHECK
-  valid_conn_to = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct)
+  valid_conn_to = set()
+  if len(terms_pairs) > 90:
+    for chunk in chunks(list(terms_pairs), 90):
+      valid_conn_to = valid_conn_to.union(ug.query_uberon(" ".join(chunk), ug.select_ct))
+  else:
+    valid_conn_to = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct)
 
   valid_ct_as_conn_to = set()
   if len(terms_ct_as) > 90:
@@ -313,7 +324,12 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     strict_log = strict_log.append(r)
 
   # DEVELOPS FROM CHECK
-  valid_dev_from = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_develops_from)
+  valid_dev_from = set()
+  if len(terms_pairs) > 90:
+    for chunk in chunks(list(terms_pairs), 90):
+      valid_dev_from = valid_dev_from.union(ug.query_uberon(" ".join(chunk), ug.select_develops_from))
+  else:
+    valid_dev_from = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_develops_from)
 
   for s, o in valid_dev_from:
     rec = dict()
