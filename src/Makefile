@@ -56,7 +56,7 @@ FORCE:
 	rm $*.dot
 
 release_notes:
-	python3 release_notes_generation.py
+	python release_notes_generation.py
 	rm tables_version.txt
 	
 ../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} release_notes
