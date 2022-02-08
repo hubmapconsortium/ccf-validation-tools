@@ -190,7 +190,19 @@ class UberonGraph():
             }
             ?subject foaf:depicted_by ?object .
           }
-        """         
+        """
+
+        self.select_ontology_version = """
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/uberon/uberon-base.owl>
+          PREFIX CL: <http://purl.obolibrary.org/obo/cl/cl-base.owl>
+          SELECT ?subject ?object
+          WHERE {
+            VALUES ?subject { UBERON: CL: }
+            ?subject owl:versionInfo ?object
+          }
+        """     
+
     def ask_uberon(self, r, q, urls=True):
         """"""
         start = ''
@@ -260,6 +272,13 @@ class UberonGraph():
 
     def add_prefix(self, term):
       return term.replace("http://purl.obolibrary.org/obo/UBERON_", "UBERON:").replace("http://purl.obolibrary.org/obo/CL_", "CL:")
+
+    def add_prefix_ont(self, list_ontology):
+      results = []
+      for ont, version in list_ontology:
+        ont = ont.replace("http://purl.obolibrary.org/obo/uberon/uberon-base.owl", "UBERON").replace("http://purl.obolibrary.org/obo/cl/cl-base.owl", "CL")
+        results.extend([ont, version])
+      return results
 
     def verify_relationship(self, terms_pairs, relationship):
       valid_relationship = set()
