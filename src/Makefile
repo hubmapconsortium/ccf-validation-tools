@@ -54,9 +54,13 @@ FORCE:
 	dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png
 	rm $*.json
 	rm $*.dot
+
+release_notes:
+	python3 release_notes_generation.py
+	rm tables_version.txt
 	
-../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES}
-	${ROBOT} merge $(patsubst %, -i %, $^) \
+../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} release_notes
+	${ROBOT} merge $(patsubst %, -i %, $<) \
 					 annotate --ontology-iri "http://purl.org/ccf/latest/CCF_AS_CT.owl" \
 					 					--version-iri "http://purl.org/ccf/releases/$(VERSION)/CCF_AS_CT.owl" \
 										--output $@

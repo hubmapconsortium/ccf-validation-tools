@@ -1,4 +1,4 @@
-import argparse, requests, json
+import argparse, requests, json, datetime
 from urllib.parse import quote_plus
 
 SHEET_ID = "1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0"
@@ -31,19 +31,32 @@ JOB_SHEET_GID_MAPPING = {
     'Blood_vasculature': '361657182' # Blood_Vasculature_v1.1
 }
 
-parser = argparse.ArgumentParser()
-parser.add_argument('job', help='job to download')
-parser.add_argument('output_file', help='output file path')
+def main(args):
+  API_URL = 'https://asctb-api.herokuapp.com/v2/csv?output=json&expanded=true&subclasses=false&csvUrl={0}'
+  GOOGLE_SHEET = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={JOB_SHEET_GID_MAPPING[args.job]}'
 
-args = parser.parse_args()
+  DATA_URL=API_URL.format(quote_plus(GOOGLE_SHEET))
 
-API_URL = 'https://asctb-api.herokuapp.com/v2/csv?output=json&expanded=true&subclasses=false&csvUrl={0}'
-GOOGLE_SHEET = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={JOB_SHEET_GID_MAPPING[args.job]}'
+  data = requests.get(DATA_URL).text
+  data = json.loads(data)
 
-DATA_URL=API_URL.format(quote_plus(GOOGLE_SHEET))
+  try:
+    table_date = datetime.datetime.strptime(data["parsed"][6][1], '%m/%d/%Y').strftime('%Y-%m-%d')
+    table_version = data["parsed"][7][1]
+  except:
+    table_date = datetime.datetime.strptime(data["parsed"][7][1], '%m/%d/%Y').strftime('%Y-%m-%d')
+    table_version = data["parsed"][8][1]
+    
+  with open('tables_version.txt', 'a+', encoding='utf-8') as t:
+    t.write(args.job + "," + table_version + "," + table_date + "\n")
 
-data = requests.get(DATA_URL).text
-data = json.loads(data)
+  with open(args.output_file, 'w', encoding='utf-8') as f:
+    json.dump(data['data'], f, ensure_ascii=False, indent=2)
 
-with open(args.output_file, 'w', encoding='utf-8') as f:
-  json.dump(data['data'], f, ensure_ascii=False, indent=2)
+if __name__ == '__main__':
+  parser = argparse.ArgumentParser()
+  parser.add_argument('job', help='job to download')
+  parser.add_argument('output_file', help='output file path')
+
+  args = parser.parse_args()
+  main(args)
