@@ -60,7 +60,7 @@ release_notes:
 	rm tables_version.txt
 	
 ../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} release_notes
-	${ROBOT} merge $(patsubst %, -i %, $<) \
+	${ROBOT} merge $(patsubst %, -i %, ${OWL_CLASS_FILES}) \
 					 annotate --ontology-iri "http://purl.org/ccf/latest/CCF_AS_CT.owl" \
 					 					--version-iri "http://purl.org/ccf/releases/$(VERSION)/CCF_AS_CT.owl" \
 										--output $@
