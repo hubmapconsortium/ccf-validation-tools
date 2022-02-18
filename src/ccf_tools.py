@@ -57,8 +57,10 @@ def parse_asctb(path):
       # AS-AS RELATIONSHIP
       anatomical_structures = row['anatomical_structures']
       for current, next in zip(anatomical_structures, anatomical_structures[1:]):
-        unique_terms.add(current['id'])
-        unique_terms.add(next['id'])
+        if current['id'] != '':
+          unique_terms.add(current['id'])
+        if next['id'] != '':
+          unique_terms.add(next['id'])
         if is_valid_id(current) and is_valid_id(next):
           d = {}
           d['s'] = next['id']
@@ -73,18 +75,25 @@ def parse_asctb(path):
         else:
           if not check_id(current['id']) and current['rdfs_label'] != '':
             as_invalid_terms.add(current['rdfs_label'])
+            unique_terms.add(current['rdfs_label'])
           elif not check_id(current['id']) and current['name']:
             as_invalid_terms.add(current['name'])
-          elif not check_id(next['id']) and next['rdfs_label'] != '':
+            unique_terms.add(current['name'])
+
+          if not check_id(next['id']) and next['rdfs_label'] != '':
             as_invalid_terms.add(next['rdfs_label'])
+            unique_terms.add(next['rdfs_label'])
           elif not check_id(next['id']) and next['name'] != '':
             as_invalid_terms.add(next['name'])
+            unique_terms.add(next['name'])
       
       # CT-CT RELATIONSHIP
       cell_types = row['cell_types']
       for current, next in zip(cell_types, cell_types[1:]):
-        unique_terms.add(current['id'])
-        unique_terms.add(next['id'])
+        if current['id'] != '':
+          unique_terms.add(current['id'])
+        if next['id'] != '':
+          unique_terms.add(next['id'])
         if is_valid_id(current) and is_valid_id(next):
           d = {}
           d['s'] = next['id']
@@ -99,12 +108,17 @@ def parse_asctb(path):
         else:
           if not check_id(current['id']) and current['rdfs_label'] != '':
             ct_invalid_terms.add(current['rdfs_label'])
+            unique_terms.add(current['rdfs_label'])
           elif not check_id(current['id']) and current['name'] != '':
             ct_invalid_terms.add(current['name'])
-          elif not check_id(next['id']) and next['rdfs_label'] != '':
+            unique_terms.add(current['name'])
+          
+          if not check_id(next['id']) and next['rdfs_label'] != '':
             ct_invalid_terms.add(next['rdfs_label'])
+            unique_terms.add(next['rdfs_label'])
           elif not check_id(next['id']) and next['name'] != '':
             ct_invalid_terms.add(next['name'])
+            unique_terms.add(next['name'])
 
       # CT-AS RELATIONSHIP
       if len(cell_types) > 0:
@@ -125,13 +139,17 @@ def parse_asctb(path):
           dl.append(d)
           as_valid_terms.add(last_as['id'])
           ct_valid_terms.add(last_ct['id'])
+          unique_terms.add(last_as['id'])
+          unique_terms.add(last_ct['id'])
         else:
           if not check_id(last_as['id']) and last_as['rdfs_label'] != '':
             as_invalid_terms.add(last_as['rdfs_label'])
             unique_terms.add(last_as['rdfs_label'])
           elif not check_id(last_as['id']) and last_as['name'] != '':
             as_invalid_terms.add(last_as['name'])
-          elif not check_id(last_ct['id']) and last_ct['rdfs_label'] != '':
+            unique_terms.add(last_as['name'])
+          
+          if not check_id(last_ct['id']) and last_ct['rdfs_label'] != '':
             ct_invalid_terms.add(last_ct['rdfs_label'])
             unique_terms.add(last_ct['rdfs_label'])
           elif not check_id(last_ct['id']) and last_ct['name'] != '':
