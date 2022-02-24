@@ -3,6 +3,7 @@ ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
 TODAY ?= $(shell date +%Y-%m-%d)
 VERSION = $(TODAY)
+ONTBASE = http://ccf_tools_helpers/class_helper/
 
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
@@ -73,3 +74,14 @@ release_notes:
 ../owl/CL_ASCTB_subset.owl: ${OWL_CL_SUBSET_FILES}
 	${ROBOT} merge $(patsubst %, -i %, $^) --output $@
 	rm ${OWL_CL_SUBSET_FILES}
+
+
+### Import ODK standard
+
+mirror/ro.owl:
+	curl -L http://purl.obolibrary.org/obo/ro.owl --create-dirs -o mirror/ro.owl --retry 4 --max-time 200 && $(ROBOT) convert -i mirror/ro.owl -o $@.tmp.owl && mv $@.tmp.owl $@
+.PRECIOUS: mirror/ro.owl
+
+imports/ro_import.owl: mirror/ro.owl imports/ro_terms.txt
+	$(ROBOT) extract -i $< -T imports/ro_terms.txt --force true --copy-ontology-annotations true --individuals include --method BOT --output $@.tmp.owl && mv $@.tmp.owl $@
+
