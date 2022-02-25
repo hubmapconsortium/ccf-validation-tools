@@ -3,8 +3,7 @@ ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
 TODAY ?= $(shell date +%Y-%m-%d)
 VERSION = $(TODAY)
-ONTBASE = http://ccf_tools_helpers/class_helper/
-
+CATALOG = --catalog catalog-v001.xml
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
@@ -48,7 +47,7 @@ FORCE:
 .PRECIOUS: ../owl/%_ASCTB_subset.json
 
 ../owl/ccf_%_classes.owl: ../owl/%_ASCTB_subset.json ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl ../owl/%_no-valid.owl
-	${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
+	${ROBOT} $(CATALOG) merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
 					 merge --input ../owl/$*_no-valid.owl \
 					 convert --format json -o $*.json
 	og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot 
@@ -61,18 +60,18 @@ release_notes:
 	rm tables_version.txt
 	
 ../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} release_notes
-	${ROBOT} merge $(patsubst %, -i %, ${OWL_CLASS_FILES}) \
+	${ROBOT} $(CATALOG) merge $(patsubst %, -i %, ${OWL_CLASS_FILES}) \
 					 annotate --ontology-iri "http://purl.org/ccf/latest/CCF_AS_CT.owl" \
 					 					--version-iri "http://purl.org/ccf/releases/$(VERSION)/CCF_AS_CT.owl" \
 										--output $@
 	rm ${OWL_ANNOTATION_FILES}
 
 ../owl/UB_ASCTB_subset.owl: ${OWL_UB_SUBSET_FILES}
-	${ROBOT} merge $(patsubst %, -i %, $^) --output $@
+	${ROBOT} $(CATALOG) merge $(patsubst %, -i %, $^) --output $@
 	rm ${OWL_UB_SUBSET_FILES}
 
 ../owl/CL_ASCTB_subset.owl: ${OWL_CL_SUBSET_FILES}
-	${ROBOT} merge $(patsubst %, -i %, $^) --output $@
+	${ROBOT} $(CATALOG) merge $(patsubst %, -i %, $^) --output $@
 	rm ${OWL_CL_SUBSET_FILES}
 
 
@@ -83,5 +82,5 @@ mirror/ro.owl:
 .PRECIOUS: mirror/ro.owl
 
 imports/ro_import.owl: mirror/ro.owl imports/ro_terms.txt
-	$(ROBOT) extract -i $< -T imports/ro_terms.txt --force true --copy-ontology-annotations true --individuals include --method BOT --output $@.tmp.owl && mv $@.tmp.owl $@
-
+	$(ROBOT) extract --input $< --term-file imports/ro_terms.txt --method BOT --output $@.tmp.owl && mv $@.tmp.owl $@
+.PHONY: imports/ro_import.owl
