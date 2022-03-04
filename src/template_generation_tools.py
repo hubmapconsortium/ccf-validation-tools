@@ -62,6 +62,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame.from_records(image_report))
 
   terms = set()
+  all_as = set()
+  all_ct = set()
   terms_pairs = set()
   terms_ct_as = set()  
   relation_as = set()
@@ -91,12 +93,18 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
     if 'CL' in r['s'] and 'UBERON' in r['o']:
       terms_ct_as.add(f"({r['s']} {r['o']})")
+      all_ct.add(r['s'])
+      all_as.add(r['o'])
     elif 'UBERON' in r['s'] and 'UBERON' in r['o']:
       relation_as.add(f"({r['s']} {r['o']})")
       terms_pairs.add(f"({r['s']} {r['o']})")
+      all_as.add(r['s'])
+      all_as.add(r['o'])
     elif 'CL' in r['s'] and 'CL' in r['o']:
       relation_ct.add(f"({r['s']} {r['o']})")
       terms_pairs.add(f"({r['s']} {r['o']})")
+      all_ct.add(r['s'])
+      all_ct.add(r['o'])
 
     terms.add(r['s'])
     terms.add(r['o'])
@@ -391,6 +399,17 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_dev_from))
 
+  sec_graph = ConjunctiveGraph()
+  sec_terms = list(terms_s + terms_ct)
+  if len(sec_terms) > 30:
+    for chunk in chunks(sec_terms, 30):
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as.union(all_ct))), property="part_of:")
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as.union(all_ct))), property="rdfs:subClassOf")
+  else:
+    sec_terms = "\n".join(sec_terms)
+    sec_graph += ug.construct_relation(subject=sec_terms, objects="\n".join(list(all_as.union(all_ct))), property="part_of:")
+    sec_graph += ug.construct_relation(subject=sec_terms, objects="\n".join(list(all_as.union(all_ct))), property="rdfs:subClassOf")
+
   terms_set = zip(terms_ct + terms_s, terms_as + terms_o)
 
   # ENTITY CHECK
@@ -469,7 +488,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
   return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
-          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report))
+          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report), sec_graph)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):

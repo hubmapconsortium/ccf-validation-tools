@@ -28,7 +28,7 @@ report_t_path = f"../reports/report_terms_{TODAY}.tsv"
 new_terms_report.to_csv(f'../logs/new_cl_terms_{args.job}.tsv', sep='\t',
                                                              index=False)
 
-class_template, no_valid_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t, image_report = generate_class_graph_template(ccf_tools_df)
+class_template, no_valid_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t, image_report, sec_graph = generate_class_graph_template(ccf_tools_df)
 
 report_r['Table'] = args.job
 report_r = pd.DataFrame.from_dict(report_r)
@@ -43,6 +43,8 @@ error_log.to_csv(f'../logs/class_{args.job}_log.tsv', sep='\t',
                                                       index=False)
 
 annotations.serialize(f'../owl/{args.job}_annotations.owl', format='xml')
+
+sec_graph.serialize(f'../owl/{args.job}_poss.owl', format='xml')
 
 indirect_error_log.to_csv(f'../logs/class_{args.job}_indirect_log.tsv', sep='\t',
                                                                         index=False)

@@ -48,7 +48,8 @@ FORCE:
 
 ../owl/ccf_%_classes.owl: ../owl/%_ASCTB_subset.json ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl ../owl/%_no-valid.owl
 	${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
-					 merge --input ../owl/$*_no-valid.owl \
+					 merge --input ../owl/$*_no-valid.owl -i ../owl/$*_poss.owl \
+					 reduce --reasoner ELK \
 					 convert --format json -o $*.json
 	og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot 
 	dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png
