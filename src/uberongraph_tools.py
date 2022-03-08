@@ -247,6 +247,9 @@ class UberonGraph():
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
+          PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170>
+          PREFIX develops_from: <http://purl.obolibrary.org/obo/RO_0002202>
+          PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131> 
           CONSTRUCT 
           {{
             ?subject rdf:type owl:Class; 
@@ -267,7 +270,6 @@ class UberonGraph():
       """.format(subject = subject, objects = objects, relationship = subclass_rel if property == "rdfs:subClassOf" else extential_rel, property = property)
 
       self.sparql.setQuery(construct_query)
-      print(construct_query)
       self.sparql.setReturnFormat(RDFXML)
       result = self.sparql.query().convert()
 

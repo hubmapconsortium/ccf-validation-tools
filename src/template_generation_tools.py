@@ -252,8 +252,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   
 
   valid_ct_as_overlaps = set()
-  if len(terms_ct_as) > 90:
-    for chunk in chunks(list(terms_ct_as), 90):
+  if len(terms_ct_as) > 50:
+    for chunk in chunks(list(terms_ct_as), 50):
       valid_ct_as_overlaps = valid_ct_as_overlaps.union(ug.query_uberon(" ".join(chunk), ug.select_overlaps))
   else:
     valid_ct_as_overlaps = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_overlaps)
@@ -399,16 +399,37 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_dev_from))
 
+  terms_as_d = set(t for t in terms_s if "UBERON" in t)
+  terms_ct_d = set(t for t in terms_s if "CL" in t)
+
   sec_graph = ConjunctiveGraph()
-  sec_terms = list(terms_s + terms_ct)
-  if len(sec_terms) > 30:
-    for chunk in chunks(sec_terms, 30):
-      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as.union(all_ct))), property="part_of:")
-      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as.union(all_ct))), property="rdfs:subClassOf")
+
+  if len(terms_as_d) > 30:
+    for chunk in chunks(list(terms_as_d), 30):
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="connected_to:")
   else:
-    sec_terms = "\n".join(sec_terms)
-    sec_graph += ug.construct_relation(subject=sec_terms, objects="\n".join(list(all_as.union(all_ct))), property="part_of:")
-    sec_graph += ug.construct_relation(subject=sec_terms, objects="\n".join(list(all_as.union(all_ct))), property="rdfs:subClassOf")
+    sec_graph += ug.construct_relation(subject="\n".join(terms_as_d), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
+    sec_graph += ug.construct_relation(subject="\n".join(terms_as_d), objects="\n".join(list(all_as)), property="part_of:")
+    sec_graph += ug.construct_relation(subject="\n".join(terms_as_d), objects="\n".join(list(all_as)), property="connected_to:")
+
+  if len(terms_ct_d) > 30:
+    for chunk in chunks(list(terms_ct_d), 30):
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_ct)), property="develops_from:")
+  else:
+    sec_graph += ug.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
+    sec_graph += ug.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(all_ct)), property="develops_from:")
+
+  if len(terms_ct) > 30:
+    for chunk in chunks(list(terms_ct), 30):
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="overlaps:")
+  else:
+    sec_graph += ug.construct_relation(subject="\n".join(terms_ct), objects="\n".join(list(all_as)), property="part_of:")
+    sec_graph += ug.construct_relation(subject="\n".join(terms_ct), objects="\n".join(list(all_as)), property="overlaps:")
+  
 
   terms_set = zip(terms_ct + terms_s, terms_as + terms_o)
 

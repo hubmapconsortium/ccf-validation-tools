@@ -44,7 +44,7 @@ error_log.to_csv(f'../logs/class_{args.job}_log.tsv', sep='\t',
 
 annotations.serialize(f'../owl/{args.job}_annotations.owl', format='xml')
 
-sec_graph.serialize(f'../owl/{args.job}_poss.owl', format='xml')
+sec_graph.serialize(f'../owl/{args.job}_sec.owl', format='xml')
 
 indirect_error_log.to_csv(f'../logs/class_{args.job}_indirect_log.tsv', sep='\t',
                                                                         index=False)
