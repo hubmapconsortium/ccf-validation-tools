@@ -425,12 +425,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   if len(terms_ct) > 30:
     for chunk in chunks(list(terms_ct), 30):
       sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
-      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="overlaps:")
   else:
     sec_graph += ug.construct_relation(subject="\n".join(terms_ct), objects="\n".join(list(all_as)), property="part_of:")
-    sec_graph += ug.construct_relation(subject="\n".join(terms_ct), objects="\n".join(list(all_as)), property="overlaps:")
   
-
   terms_set = zip(terms_ct + terms_s, terms_as + terms_o)
 
   # ENTITY CHECK
