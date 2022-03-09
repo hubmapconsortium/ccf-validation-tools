@@ -1,6 +1,6 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
+JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skin Small_intestine Spleen Spinal_Cord Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
 TODAY ?= $(shell date +%Y-%m-%d)
 VERSION = $(TODAY)
 
