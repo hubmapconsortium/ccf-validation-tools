@@ -165,7 +165,7 @@ def parse_asctb(path):
             r['Terminal AS/user_label'] = last_as['rdfs_label']
             r['CL Name'] = cl['name']
 
-            refs_id = [ref['id'] for ref in row['references']]
+            refs_id = [ref['id'] for ref in row['references'] if ref.get('id')]
             refs_doi = [ref['doi'] for ref in row['references'] if ref.get('doi')]
             r['References/ID'] = " ; ".join(refs_id)
             r['References/DOI'] = " ; ".join(refs_doi)
