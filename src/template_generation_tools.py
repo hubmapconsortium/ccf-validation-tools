@@ -412,15 +412,12 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   else:
     sec_graph += ug.construct_relation(subject="\n".join(terms_as_d), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
     sec_graph += ug.construct_relation(subject="\n".join(terms_as_d), objects="\n".join(list(all_as)), property="part_of:")
-    sec_graph += ug.construct_relation(subject="\n".join(terms_as_d), objects="\n".join(list(all_as)), property="connected_to:")
 
   if len(terms_ct_d) > 30:
     for chunk in chunks(list(terms_ct_d), 30):
       sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
-      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_ct)), property="develops_from:")
   else:
     sec_graph += ug.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
-    sec_graph += ug.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(all_ct)), property="develops_from:")
 
   if len(terms_ct) > 30:
     for chunk in chunks(list(terms_ct), 30):
