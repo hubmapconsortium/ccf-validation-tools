@@ -13,6 +13,7 @@ OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
 OWL_UB_SUBSET_FILES = $(patsubst %, ../owl/ub_%_ASCTB_subset.owl, $(JOBS))
 OWL_CL_SUBSET_FILES = $(patsubst %, ../owl/cl_%_ASCTB_subset.owl, $(JOBS))
+JSON_CLASSES_SUBSET = $(patsubst %, ../owl/%_ASCTB_subset.json, $(JOBS))
 
 all: ../owl/CCF_AS_CT.owl ../owl/last_official_ASCTB_release/CCF_AS_CT.owl ../owl/UB_ASCTB_subset.owl ../owl/CL_ASCTB_subset.owl
 
@@ -70,7 +71,7 @@ release_notes:
 	python release_notes_generation.py
 	rm tables_version.txt
 	
-../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} ../owl/%_ASCTB_subset.json release_notes
+../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} release_notes
 	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge $(patsubst %, -i %, ${OWL_CLASS_FILES}) \
 					 annotate --ontology-iri "http://purl.org/ccf/latest/CCF_AS_CT.owl" \
 					 					--version-iri "http://purl.org/ccf/releases/$(VERSION)/CCF_AS_CT.owl" \
@@ -84,8 +85,8 @@ release_notes:
 											--output $@; fi
 					rm ${OWL_ANNOTATION_FILES_OLD}
 
-../owl/UB_ASCTB_subset.owl: ${OWL_UB_SUBSET_FILES}
-	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge $(patsubst %, -i %, $^) --output $@; fi
+../owl/UB_ASCTB_subset.owl: ${OWL_UB_SUBSET_FILES} ${JSON_CLASSES_SUBSET}
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge $(patsubst %, -i %, ${OWL_UB_SUBSET_FILES}) --output $@; fi
 		rm ${OWL_UB_SUBSET_FILES}
 
 ../owl/CL_ASCTB_subset.owl: ${OWL_CL_SUBSET_FILES}
