@@ -227,6 +227,54 @@ class UberonGraph():
       else:
         return set()
 
+    def construct_relation(self, subject, objects, property):
+      extential_rel = """
+        rdfs:subClassOf [
+            rdf:type owl:Restriction;
+            owl:onProperty {property} ;
+            owl:someValuesFrom ?object
+          ]
+      """.format(property=property)
+
+      subclass_rel = """
+        rdfs:subClassOf ?object .
+      """
+
+      construct_query = """
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
+          PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170>
+          PREFIX develops_from: <http://purl.obolibrary.org/obo/RO_0002202>
+          PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131> 
+          CONSTRUCT 
+          {{
+            ?subject rdf:type owl:Class; 
+              {relationship}
+          }}
+            WHERE {{
+              GRAPH <http://reasoner.renci.org/redundant> {{ 
+                VALUES ?subject {{
+                  {subject}    
+                }}
+                VALUES ?object {{
+                  {objects}
+                }}
+                ?subject {property} ?object .
+              }}
+              FILTER(?subject != ?object)
+            }}
+      """.format(subject = subject, objects = objects, relationship = subclass_rel if property == "rdfs:subClassOf" else extential_rel, property = property)
+
+      self.sparql.setQuery(construct_query)
+      self.sparql.setReturnFormat(RDFXML)
+      result = self.sparql.query().convert()
+
+      return result
+
     def construct_annotation(self, terms):
         construct_query = """
               PREFIX owl: <http://www.w3.org/2002/07/owl#>
