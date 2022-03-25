@@ -62,6 +62,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
             has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame.from_records(image_report))
 
   terms = set()
+  all_as = set()
+  all_ct = set()
   terms_pairs = set()
   terms_ct_as = set()  
   relation_as = set()
@@ -91,12 +93,18 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
     if 'CL' in r['s'] and 'UBERON' in r['o']:
       terms_ct_as.add(f"({r['s']} {r['o']})")
+      all_ct.add(r['s'])
+      all_as.add(r['o'])
     elif 'UBERON' in r['s'] and 'UBERON' in r['o']:
       relation_as.add(f"({r['s']} {r['o']})")
       terms_pairs.add(f"({r['s']} {r['o']})")
+      all_as.add(r['s'])
+      all_as.add(r['o'])
     elif 'CL' in r['s'] and 'CL' in r['o']:
       relation_ct.add(f"({r['s']} {r['o']})")
       terms_pairs.add(f"({r['s']} {r['o']})")
+      all_ct.add(r['s'])
+      all_ct.add(r['o'])
 
     terms.add(r['s'])
     terms.add(r['o'])
@@ -244,8 +252,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   
 
   valid_ct_as_overlaps = set()
-  if len(terms_ct_as) > 90:
-    for chunk in chunks(list(terms_ct_as), 90):
+  if len(terms_ct_as) > 50:
+    for chunk in chunks(list(terms_ct_as), 50):
       valid_ct_as_overlaps = valid_ct_as_overlaps.union(ug.query_uberon(" ".join(chunk), ug.select_overlaps))
   else:
     valid_ct_as_overlaps = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_overlaps)
@@ -391,6 +399,32 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_dev_from))
 
+  terms_as_d = set(t for t in terms_s if "UBERON" in t)
+  terms_ct_d = set(t for t in terms_s if "CL" in t)
+
+  sec_graph = ConjunctiveGraph()
+
+  if len(terms_as_d) > 30:
+    for chunk in chunks(list(terms_as_d), 30):
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="connected_to:")
+  else:
+    sec_graph += ug.construct_relation(subject="\n".join(terms_as_d), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
+    sec_graph += ug.construct_relation(subject="\n".join(terms_as_d), objects="\n".join(list(all_as)), property="part_of:")
+
+  if len(terms_ct_d) > 30:
+    for chunk in chunks(list(terms_ct_d), 30):
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
+  else:
+    sec_graph += ug.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
+
+  if len(terms_ct) > 30:
+    for chunk in chunks(list(terms_ct), 30):
+      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
+  else:
+    sec_graph += ug.construct_relation(subject="\n".join(terms_ct), objects="\n".join(list(all_as)), property="part_of:")
+  
   terms_set = zip(terms_ct + terms_s, terms_as + terms_o)
 
   # ENTITY CHECK
@@ -469,7 +503,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
   return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
-          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report))
+          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report), sec_graph)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):

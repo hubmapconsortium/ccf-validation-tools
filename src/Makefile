@@ -1,11 +1,12 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
+JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus
 TODAY ?= $(shell date +%Y-%m-%d)
 VERSION = $(TODAY)
 
 
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
+OWL_CLASS_SEC_FILES = $(patsubst %, ../owl/%_sec.owl, $(JOBS))
 OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
 OWL_UB_SUBSET_FILES = $(patsubst %, ../owl/ub_%_ASCTB_subset.owl, $(JOBS))
 OWL_CL_SUBSET_FILES = $(patsubst %, ../owl/cl_%_ASCTB_subset.owl, $(JOBS))
@@ -17,7 +18,7 @@ FORCE:
 ../resources/ASCT-b_tables/%.json: FORCE
 	python download_resource.py $* $@
 
-../owl/%_annotations.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv: ../resources/ASCT-b_tables/%.json
+../owl/%_annotations.owl ../owl/%_sec.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv: ../resources/ASCT-b_tables/%.json
 	python template_runner.py $* $< ../templates/class_template_$*.csv 2> ../logs/error_class_$*.log
 
 ../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv
@@ -46,25 +47,36 @@ FORCE:
 
 .PRECIOUS: ../owl/%_ASCTB_subset.json
 
-../owl/ccf_%_classes.owl: ../owl/%_ASCTB_subset.json ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl ../owl/%_no-valid.owl
+../owl/ccf_%_classes.owl: ../owl/%_ASCTB_subset.json ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl ../owl/%_no-valid.owl ../owl/%_sec.owl
 	${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
+					 merge --input ../owl/$*_sec.owl \
+					 reduce --reasoner ELK -o ../owl/$*_extended.owl \
 					 merge --input ../owl/$*_no-valid.owl \
 					 convert --format json -o $*.json
-	og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot 
+
+	${ROBOT} convert --input ../owl/$*_sec.owl -o $*_sec.json
+
+	python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green"
+	og2dot.js -s ../style/ubergraph-style.json $*_f.json > $*.dot 
 	dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png
 	rm $*.json
+	rm $*_sec.json
+	rm $*_f.json
 	rm $*.dot
 
 release_notes:
 	python release_notes_generation.py
 	rm tables_version.txt
 	
-../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} release_notes
+../owl/CCF_AS_CT.owl: ${OWL_CLASS_FILES} ${OWL_CLASS_SEC_FILES} release_notes
 	${ROBOT} merge $(patsubst %, -i %, ${OWL_CLASS_FILES}) \
+					 merge $(patsubst %, -i %, ${OWL_CLASS_SEC_FILES}) \
+					 reduce --reasoner ELK \
 					 annotate --ontology-iri "http://purl.org/ccf/latest/CCF_AS_CT.owl" \
 					 					--version-iri "http://purl.org/ccf/releases/$(VERSION)/CCF_AS_CT.owl" \
 										--output $@
 	rm ${OWL_ANNOTATION_FILES}
+	rm ${OWL_CLASS_SEC_FILES}
 
 ../owl/UB_ASCTB_subset.owl: ${OWL_UB_SUBSET_FILES}
 	${ROBOT} merge $(patsubst %, -i %, $^) --output $@
