@@ -83,13 +83,13 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     records.append({'ID': r['o'], 'User_label': r['user_olabel']})
 
     if 'UBERON' in r['s']:
-      records_ub_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+      records_ub_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
     if 'UBERON' in r['o']:
-      records_ub_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+      records_ub_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
     if 'CL' in r['s']:
-      records_cl_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+      records_cl_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
     if 'CL' in r['o']:
-      records_cl_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'HubMAP_ASCT'})
+      records_cl_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
 
     if 'CL' in r['s'] and 'UBERON' in r['o']:
       terms_ct_as.add(f"({r['s']} {r['o']})")
