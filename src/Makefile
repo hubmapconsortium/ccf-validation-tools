@@ -32,16 +32,16 @@ all: ../owl/CCF_AS_CT.owl ../owl/last_official_ASCTB_release/CCF_AS_CT.owl ../ow
 			--output $@
 
 ../owl/ub_%_ASCTB_subset.owl: ../templates/temp_ub_%_ASCTB_subset.csv
-	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@; fi
-		rm $<
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@ && \
+		rm $<; fi
 
 ../owl/cl_%_ASCTB_subset.owl: ../templates/temp_cl_%_ASCTB_subset.csv
-	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@; fi
-		rm $<
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@ && \
+		rm $<; fi
 
 ../owl/%_no-valid.owl: ../templates/%_no-valid.csv
-	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@; fi
-		rm $<
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@ && \
+		rm $<; fi
 
 ../owl/%_ASCTB_subset.json: ../owl/ub_%_ASCTB_subset.owl ../owl/cl_%_ASCTB_subset.owl
 	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge $(patsubst %, -i %, $^) \
@@ -50,30 +50,28 @@ all: ../owl/CCF_AS_CT.owl ../owl/last_official_ASCTB_release/CCF_AS_CT.owl ../ow
 .PRECIOUS: ../owl/%_ASCTB_subset.json
 
 ../owl/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl ../owl/%_no-valid.owl ../owl/%_sec.owl
-	if [ $(OLD_VERSION) = False ]; then 	${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
 					 merge --input ../owl/$*_sec.owl \
 					 reduce --reasoner ELK -o ../owl/$*_extended.owl \
 					 merge --input ../owl/$*_no-valid.owl \
-					 convert --format json -o $*.json
-
-		${ROBOT} convert --input ../owl/$*_sec.owl -o $*_sec.json
-
-		python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green"
-		og2dot.js -s ../style/ubergraph-style.json $*_f.json > $*.dot 
-		dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png
-		rm $*.json
-		rm $*_sec.json
-		rm $*_f.json
-		rm $*.dot
+					 convert --format json -o $*.json && \
+		${ROBOT} convert --input ../owl/$*_sec.owl -o $*_sec.json && \
+		python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green" && \
+		og2dot.js -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
+		dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png && \
+		rm $*.json && \
+		rm $*_sec.json && \
+		rm $*_f.json && \
+		rm $*.dot; fi
 
 ../owl/last_official_ASCTB_release/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl
 	if [ $(OLD_VERSION) = True ]; then ${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
-					 convert --format json -o $*.json; fi
-					og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot 
-					dot $*.dot -Tpng -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.png
-					dot $*.dot -Tpdf -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.pdf
-					rm $*.json
-					rm $*.dot
+					 convert --format json -o $*.json && \
+		og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot &&\
+		dot $*.dot -Tpng -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.png && \
+		dot $*.dot -Tpdf -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.pdf && \
+		rm $*.json && \
+		rm $*.dot; fi
 
 release_notes:
 	python release_notes_generation.py
@@ -85,24 +83,24 @@ release_notes:
 					 reduce --reasoner ELK \
 					 annotate --ontology-iri "http://purl.org/ccf/latest/CCF_AS_CT.owl" \
 					 					--version-iri "http://purl.org/ccf/releases/$(VERSION)/CCF_AS_CT.owl" \
-										--output $@; fi
-					rm ${OWL_ANNOTATION_FILES}
-					rm ${OWL_CLASS_SEC_FILES}
+										--output $@ && \
+		rm ${OWL_ANNOTATION_FILES} && \
+		rm ${OWL_CLASS_SEC_FILES}; fi
 
 ../owl/last_official_ASCTB_release/CCF_AS_CT.owl: ${OWL_CLASS_FILES_OLD}
 	if [ $(OLD_VERSION) = True ]; then ${ROBOT} merge $(patsubst %, -i %, $^) \
 						annotate --ontology-iri "http://purl.org/ccf/latest/CCF_AS_CT.owl" \
 											--version-iri "http://purl.org/ccf/releases/$(VERSION)/CCF_AS_CT.owl" \
-											--output $@; fi
-					rm ${OWL_ANNOTATION_FILES_OLD}
+											--output $@ && \
+		rm ${OWL_ANNOTATION_FILES_OLD}; fi
 
 ../owl/UB_ASCTB_subset.owl: ${OWL_UB_SUBSET_FILES} ${JSON_CLASSES_SUBSET}
-	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge $(patsubst %, -i %, ${OWL_UB_SUBSET_FILES}) --output $@; fi
-		rm ${OWL_UB_SUBSET_FILES}
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge $(patsubst %, -i %, ${OWL_UB_SUBSET_FILES}) --output $@ && \
+		rm ${OWL_UB_SUBSET_FILES}; fi
 
 ../owl/CL_ASCTB_subset.owl: ${OWL_CL_SUBSET_FILES}
-	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge $(patsubst %, -i %, $^) --output $@; fi
-		rm ${OWL_CL_SUBSET_FILES}
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge $(patsubst %, -i %, $^) --output $@ && \
+		rm ${OWL_CL_SUBSET_FILES}; fi
 
 official_release:
 	make ../owl/CCF_AS_CT.owl ../owl/UB_ASCTB_subset.owl ../owl/CL_ASCTB_subset.owl -B

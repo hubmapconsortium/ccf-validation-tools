@@ -8,7 +8,7 @@ JOB_SHEET_GID_MAPPING = {
         'gid': '543201897',
       },
       'old': {
-        'sheetId': '1ZYcSWnFHmzR9XKy_002f_oA4PfzokiW4IxkaZZOusvg',
+        'sheetId': '1ZYcSWnFHmzR9XKy_002f_oA4PfzokiW4IxkaZZOusvg', # Blood_v1.1
         'gid': '360436225'
       } 
     },
@@ -279,9 +279,8 @@ def main(args):
   else:
     version = JOB_SHEET_GID_MAPPING[args.job]["new"]
 
-  API_URL = 'https://asctb-api.herokuapp.com/v2/csv?output=json&expanded=true&subclasses=false&csvUrl={0}'
-  GOOGLE_SHEET = f'https://docs.google.com/spreadsheets/d/{version["sheetId"]}/export?format=csv&gid={version["gid"]}'
-  DATA_URL=API_URL.format(quote_plus(GOOGLE_SHEET))
+  API_URL = f'https://asctb-api.herokuapp.com/v2/{version["sheetId"]}/{version["gid"]}'
+  DATA_URL=API_URL.format(API_URL)
 
   data = requests.get(DATA_URL).text
   data = json.loads(data)
