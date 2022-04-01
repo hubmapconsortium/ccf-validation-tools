@@ -280,9 +280,8 @@ def main(args):
     version = JOB_SHEET_GID_MAPPING[args.job]["new"]
 
   API_URL = f'https://asctb-api.herokuapp.com/v2/{version["sheetId"]}/{version["gid"]}'
-  DATA_URL=API_URL.format(API_URL)
 
-  data = requests.get(DATA_URL).text
+  data = requests.get(API_URL).text
   data = json.loads(data)
 
   table_date = data["parsed"][6][1]
