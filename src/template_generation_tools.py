@@ -140,19 +140,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     image_report.append(rep_im)
       
   # SUBCLASS CHECK
-  valid_subclass = set()
-  if len(terms_pairs) > 90:
-    for chunk in chunks(list(terms_pairs), 90):
-      valid_subclass = valid_subclass.union(ug.query_uberon(" ".join(chunk), ug.select_subclass))
-  else:
-    valid_subclass = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_subclass)
-
-  valid_ct_as_subclass = set()
-  if len(terms_ct_as) > 90:
-    for chunk in chunks(list(terms_ct_as), 90):
-      valid_ct_as_subclass = valid_ct_as_subclass.union(ug.query_uberon(" ".join(chunk), ug.select_subclass))
-  else:
-    valid_ct_as_subclass = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_subclass)
+  valid_subclass, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_subclass)
+  valid_ct_as_subclass, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_subclass)
   
   for s, o in valid_subclass.union(valid_ct_as_subclass):
     rec = dict()
@@ -175,7 +164,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_s, terms_o = split_terms(transform_to_str(valid_subclass - valid_subclass_onto))
 
-  rows_nvso = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
+  rows_nvso = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
   for _, r in rows_nvso.iterrows():
     valid_error_log = valid_error_log.append(r)
@@ -184,24 +173,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       indirect_as.add((r['s'], r['o']))
     elif 'CL' in r['s'] and 'CL' in r['o']:
       indirect_ct.add((r['s'], r['o']))
-  
-  terms_pairs = terms_pairs - terms_valid_subclass
-  terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_subclass)
 
   # PART OF CHECK
-  valid_po = set()
-  if len(terms_pairs.union(terms_ct_as)) > 90:
-    for chunk in chunks(list(terms_pairs), 90):
-      valid_po = valid_po.union(ug.query_uberon(" ".join(chunk), ug.select_po))
-  else:
-    valid_po = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_po)
-
-  valid_ct_as_po = set()
-  if len(terms_ct_as) > 90:
-    for chunk in chunks(list(terms_ct_as), 90):
-      valid_ct_as_po = valid_ct_as_po.union(ug.query_uberon(" ".join(chunk), ug.select_po))
-  else:
-    valid_ct_as_po = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_po)
+  valid_po, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_po)
+  valid_ct_as_po, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_po)
 
   for s, o in valid_po.union(valid_ct_as_po):
     rec = dict()
@@ -219,16 +194,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   # INDIRECT PART OF CHECK
   terms_valid_po = transform_to_str(valid_po)
 
-  valid_po_nr = set()
-  if len(terms_valid_po) > 90:
-    for chunk in chunks(list(terms_valid_po), 90):
-      valid_po_nr = valid_po_nr.union(ug.query_uberon(" ".join(chunk), ug.select_po_nonredundant))
-  else:
-    valid_po_nr = ug.query_uberon(" ".join(list(terms_valid_po)), ug.select_po_nonredundant)
-
+  valid_po_nr, _ = ug.verify_relationship(terms_valid_po, ug.select_po_nonredundant)
+  
   terms_s, terms_o = split_terms(transform_to_str(valid_po - valid_po_nr))
 
-  rows_nvponr = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
+  rows_nvponr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
   for _, r in rows_nvponr.iterrows():
     valid_error_log = valid_error_log.append(r)
@@ -238,25 +208,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     elif 'CL' in r['s'] and 'CL' in r['o']:
       indirect_ct.add((r['s'], r['o']))
 
-  terms_pairs = terms_pairs - terms_valid_po
-
-  terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_po)
-
   # OVERLAPS CHECK
-  valid_overlaps = set()
-  if len(terms_pairs) > 90:
-    for chunk in chunks(list(terms_pairs), 90):
-      valid_overlaps = valid_overlaps.union(ug.query_uberon(" ".join(chunk), ug.select_overlaps))
-  else:
-    valid_overlaps = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_overlaps)
-  
-
-  valid_ct_as_overlaps = set()
-  if len(terms_ct_as) > 50:
-    for chunk in chunks(list(terms_ct_as), 50):
-      valid_ct_as_overlaps = valid_ct_as_overlaps.union(ug.query_uberon(" ".join(chunk), ug.select_overlaps))
-  else:
-    valid_ct_as_overlaps = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_overlaps)
+  valid_overlaps, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_overlaps)
+  valid_ct_as_overlaps, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_overlaps)
 
   for s, o in valid_overlaps.union(valid_ct_as_overlaps):
     rec = dict()
@@ -278,7 +232,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_s, terms_o = split_terms(transform_to_str(valid_overlaps - valid_o_nr))
 
-  rows_nvonr = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
+  rows_nvonr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
   for _, r in rows_nvonr.iterrows():
     valid_error_log = valid_error_log.append(r)
@@ -288,24 +242,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     elif 'CL' in r['s'] and 'CL' in r['o']:
       indirect_ct.add((r['s'], r['o']))
 
-  terms_pairs = terms_pairs - transform_to_str(valid_overlaps)
-
-  terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_overlaps)
-
   # CONNECTED TO CHECK
-  valid_conn_to = set()
-  if len(terms_pairs) > 90:
-    for chunk in chunks(list(terms_pairs), 90):
-      valid_conn_to = valid_conn_to.union(ug.query_uberon(" ".join(chunk), ug.select_ct))
-  else:
-    valid_conn_to = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct)
-
-  valid_ct_as_conn_to = set()
-  if len(terms_ct_as) > 90:
-    for chunk in chunks(list(terms_ct_as), 90):
-      valid_ct_as_conn_to = valid_ct_as_conn_to.union(ug.query_uberon(" ".join(chunk), ug.select_ct))
-  else:
-    valid_ct_as_conn_to = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_ct)
+  valid_conn_to, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_ct)
+  valid_ct_as_conn_to, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_ct)
 
   for s, o in valid_conn_to.union(valid_ct_as_conn_to):
     rec = dict()
@@ -320,24 +259,16 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     elif 'CL' in s and 'CL' in o:
       valid_ct.add((s,o))
 
-  terms_pairs = terms_pairs - transform_to_str(valid_conn_to)
-  terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_conn_to)
-
   # STRICT CT-AS REPORT
-  terms_ct, terms_as = split_terms(terms_ct_as)
-
-  no_valid_ct_as = ccf_tools_df[ccf_tools_df['s'].isin(terms_ct) & ccf_tools_df['o'].isin(terms_as)]
+  terms_s, terms_o = split_terms(terms_ct_as)
+  
+  no_valid_ct_as = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
   for _, r in no_valid_ct_as.iterrows():
     strict_log = strict_log.append(r)
 
   # DEVELOPS FROM CHECK
-  valid_dev_from = set()
-  if len(terms_pairs) > 90:
-    for chunk in chunks(list(terms_pairs), 90):
-      valid_dev_from = valid_dev_from.union(ug.query_uberon(" ".join(chunk), ug.select_develops_from))
-  else:
-    valid_dev_from = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_develops_from)
+  valid_dev_from, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_develops_from)
 
   for s, o in valid_dev_from:
     rec = dict()
@@ -353,12 +284,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       valid_ct.add((s,o))
 
   # AS-CT HAS PART
-  valid_has_part = set()
-  if len(terms_ct_as) > 90:
-    for chunk in chunks(list(terms_ct_as), 90):
-      valid_has_part = valid_has_part.union(ug.query_uberon(" ".join(chunk), ug.select_has_part))
-  else:
-    valid_has_part = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_has_part)
+  valid_has_part, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_has_part)
 
   for s, o in valid_has_part:
     rec = dict()
@@ -368,15 +294,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     rec['validation_date_hp'] = datetime.now().isoformat()
     records.append(rec)
 
-  terms_ct_as = terms_ct_as - transform_to_str(valid_has_part)
-
   # CT-AS SUBCLASS PART OF
-  valid_subclass_ct_as_po = set()
-  if len(terms_ct_as) > 90:
-    for chunk in chunks(list(terms_ct_as), 90):
-      valid_subclass_ct_as_po = valid_subclass_ct_as_po.union(ug.query_uberon(" ".join(chunk), ug.select_subclass_po))
-  else:
-    valid_subclass_ct_as_po = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_subclass_po)
+  valid_subclass_ct_as_po, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_subclass_po)
 
   for s, o in valid_subclass_ct_as_po:
     rec = dict()
@@ -386,11 +305,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     rec['validation_date_hp'] = datetime.now().isoformat()
     records.append(rec)
 
-  terms_ct_as = terms_ct_as - transform_to_str(valid_subclass_ct_as_po)
+  terms_s, terms_o = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
 
-  terms_ct, terms_as = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
-
-  has_part_report = ccf_tools_df[ccf_tools_df['s'].isin(terms_ct) & ccf_tools_df['o'].isin(terms_as)]
+  has_part_report = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
   for _, r in has_part_report.iterrows():
     has_part_log = has_part_log.append(r)
@@ -566,6 +483,3 @@ def generate_vasculature_template(ccf_tools_df):
     records.append(rec)
     
   return pd.DataFrame.from_records(records)
-
-
-
