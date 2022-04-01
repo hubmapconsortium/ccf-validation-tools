@@ -32,12 +32,9 @@ JOB_SHEET_GID_MAPPING = {
 }
 
 def main(args):
-  API_URL = 'https://asctb-api.herokuapp.com/v2/csv?output=json&expanded=true&subclasses=false&csvUrl={0}'
-  GOOGLE_SHEET = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={JOB_SHEET_GID_MAPPING[args.job]}'
+  API_URL = f'https://asctb-api.herokuapp.com/v2/{SHEET_ID}/{JOB_SHEET_GID_MAPPING[args.job]}'
 
-  DATA_URL=API_URL.format(quote_plus(GOOGLE_SHEET))
-
-  data = requests.get(DATA_URL).text
+  data = requests.get(API_URL).text
   data = json.loads(data)
 
   try:
