@@ -16,7 +16,7 @@ OWL_UB_SUBSET_FILES = $(patsubst %, ../owl/ub_%_ASCTB_subset.owl, $(JOBS))
 OWL_CL_SUBSET_FILES = $(patsubst %, ../owl/cl_%_ASCTB_subset.owl, $(JOBS))
 JSON_CLASSES_SUBSET = $(patsubst %, ../owl/%_ASCTB_subset.json, $(JOBS))
 
-all: ../owl/CCF_AS_CT.owl ../owl/last_official_ASCTB_release/CCF_AS_CT.owl ../owl/UB_ASCTB_subset.owl ../owl/CL_ASCTB_subset.owl
+all: last_official_release official_release
 
 ../resources/ASCT-b_tables/%.json:
 	python download_resource.py $* $@ $(OLD_VERSION)
