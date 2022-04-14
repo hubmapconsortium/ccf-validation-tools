@@ -59,6 +59,7 @@ FORCE:
 	python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green"
 	og2dot.js -s ../style/ubergraph-style.json $*_f.json > $*.dot 
 	dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png
+	dot $*.dot -Tpdf -Grankdir=LR > ../graphs/ccf_$*_graph.pdf
 	rm $*.json
 	rm $*_sec.json
 	rm $*_f.json
