@@ -1,8 +1,7 @@
 import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import chunks, split_terms, transform_to_str
-from datetime import datetime
+from ccf_tools import chunks, split_terms, transform_to_str, get_suggestion_graph, add_rows
 import logging
 
 logger = logging.getLogger('ASCT-b Tables Log')
@@ -30,24 +29,24 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     'percent_invalid_CT-AS_relationship': [0]
   }
   seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
-          'Parent_class': 'SC %',
+          'isa': 'SC %',
           'OBO_Validated_isa': '>A CCFH:IN_OBO',
           'validation_date_isa': '>A dc:date',
           'part_of': 'SC part_of some %',
-          'OBO_Validated_po': '>A CCFH:IN_OBO',
-          'validation_date_po': '>A dc:date',
+          'OBO_Validated_part_of': '>A CCFH:IN_OBO',
+          'validation_date_part_of': '>A dc:date',
           'overlaps': 'SC overlaps some %',
           'OBO_Validated_overlaps': '>A CCFH:IN_OBO',
           'validation_date_overlaps': '>A dc:date',
           'connected_to': 'SC connected_to some %',
-          'OBO_Validated_ct': '>A CCFH:IN_OBO',
-          'validation_date_ct': '>A dc:date',
+          'OBO_Validated_connected_to': '>A CCFH:IN_OBO',
+          'validation_date_connected_to': '>A dc:date',
           'develops_from': 'SC develops_from some %',
-          'OBO_Validated_df': '>A CCFH:IN_OBO',
-          'validation_date_df': '>A dc:date',
+          'OBO_Validated_develops_from': '>A CCFH:IN_OBO',
+          'validation_date_develops_from': '>A dc:date',
           'has_part': 'SC has_part some %',
-          'OBO_Validated_hp': '>A CCFH:IN_OBO',
-          'validation_date_hp': '>A dc:date'}
+          'OBO_Validated_has_part': '>A CCFH:IN_OBO',
+          'validation_date_has_part': '>A dc:date'}
 
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
   seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
@@ -111,6 +110,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   terms_ct_as_start = len(terms_ct_as)    
 
+  # LABEL CHECK AND GET IMAGES ATTACHED TO EACH TERM
   terms_labels = set()
   terms_images = set()
   if len(terms) > 90:
@@ -133,6 +133,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       ccf_tools_df.loc[(ccf_tools_df['o'] == term), 'olabel'] = label
       ccf_tools_df.loc[(ccf_tools_df['s'] == term), 'slabel'] = label
 
+  # CREATE IMAGE REPORT
   for term, image in terms_images:
     rep_im = dict()
     rep_im['term'] = term
@@ -143,19 +144,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   valid_subclass, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_subclass)
   valid_ct_as_subclass, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_subclass)
   
-  for s, o in valid_subclass.union(valid_ct_as_subclass):
-    rec = dict()
-    rec['ID'] = s
-    rec['Parent_class'] = o
-    rec['OBO_Validated_isa'] = True
-    rec['validation_date_isa'] = datetime.now().isoformat()
-    records.append(rec)
-
-    if 'UBERON' in s and 'UBERON' in o:
-      valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
-      valid_ct.add((s,o))
-  
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_subclass.union(valid_ct_as_subclass), 'isa')
 
   # INDIRECT SUBCLASS CHECK
   terms_valid_subclass = transform_to_str(valid_subclass)
@@ -166,6 +155,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   rows_nvso = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
+  # ADD RESULTS TO INDIRECT LOG
   for _, r in rows_nvso.iterrows():
     valid_error_log = valid_error_log.append(r)
 
@@ -178,18 +168,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   valid_po, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_po)
   valid_ct_as_po, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_po)
 
-  for s, o in valid_po.union(valid_ct_as_po):
-    rec = dict()
-    rec['ID'] = s
-    rec['part_of'] = o
-    rec['OBO_Validated_po'] = True
-    rec['validation_date_po'] = datetime.now().isoformat()
-    records.append(rec)
-
-    if 'UBERON' in s and 'UBERON' in o:
-      valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
-      valid_ct.add((s,o))
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_po.union(valid_ct_as_po), 'part_of')
 
   # INDIRECT PART OF CHECK
   terms_valid_po = transform_to_str(valid_po)
@@ -200,6 +179,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   rows_nvponr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
+  # ADD RESULTS TO INDIRECT LOG
   for _, r in rows_nvponr.iterrows():
     valid_error_log = valid_error_log.append(r)
 
@@ -212,18 +192,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   valid_overlaps, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_overlaps)
   valid_ct_as_overlaps, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_overlaps)
 
-  for s, o in valid_overlaps.union(valid_ct_as_overlaps):
-    rec = dict()
-    rec['ID'] = s
-    rec['overlaps'] = o
-    rec['OBO_Validated_overlaps'] = True
-    rec['validation_date_overlaps'] = datetime.now().isoformat()
-    records.append(rec)
-
-    if 'UBERON' in s and 'UBERON' in o:
-      valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
-      valid_ct.add((s,o))
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_overlaps.union(valid_ct_as_overlaps), 'overlaps')
   
   # INDIRECT OVERLAPS CHECK
   terms_valid_overlaps = transform_to_str(valid_overlaps)
@@ -234,6 +203,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   rows_nvonr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
+  # ADD RESULTS TO INDIRECT LOG
   for _, r in rows_nvonr.iterrows():
     valid_error_log = valid_error_log.append(r)
 
@@ -246,18 +216,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   valid_conn_to, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_ct)
   valid_ct_as_conn_to, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_ct)
 
-  for s, o in valid_conn_to.union(valid_ct_as_conn_to):
-    rec = dict()
-    rec['ID'] = s
-    rec['connected_to'] = o
-    rec['OBO_Validated_ct'] = True
-    rec['validation_date_ct'] = datetime.now().isoformat()
-    records.append(rec)
-
-    if 'UBERON' in s and 'UBERON' in o:
-      valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
-      valid_ct.add((s,o))
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_conn_to.union(valid_ct_as_conn_to), 'connected_to')
 
   # STRICT CT-AS REPORT
   terms_s, terms_o = split_terms(terms_ct_as)
@@ -270,40 +229,17 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   # DEVELOPS FROM CHECK
   valid_dev_from, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_develops_from)
 
-  for s, o in valid_dev_from:
-    rec = dict()
-    rec['ID'] = s
-    rec['develops_from'] = o
-    rec['OBO_Validated_df'] = True
-    rec['validation_date_df'] = datetime.now().isoformat()
-    records.append(rec)
-
-    if 'UBERON' in s and 'UBERON' in o:
-      valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
-      valid_ct.add((s,o))
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_dev_from, 'develops_from')
 
   # AS-CT HAS PART
   valid_has_part, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_has_part)
 
-  for s, o in valid_has_part:
-    rec = dict()
-    rec['ID'] = o
-    rec['has_part'] = s
-    rec['OBO_Validated_hp'] = True
-    rec['validation_date_hp'] = datetime.now().isoformat()
-    records.append(rec)
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_has_part, 'has_part', True)
 
   # CT-AS SUBCLASS PART OF
   valid_subclass_ct_as_po, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_subclass_po)
 
-  for s, o in valid_subclass_ct_as_po:
-    rec = dict()
-    rec['ID'] = o
-    rec['has_part'] = s
-    rec['OBO_Validated_hp'] = True
-    rec['validation_date_hp'] = datetime.now().isoformat()
-    records.append(rec)
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_subclass_ct_as_po, 'has_part', True)
 
   terms_s, terms_o = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
 
@@ -320,49 +256,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   terms_ct_d = set(t for t in terms_s if "CL" in t)
 
   sec_graph = ConjunctiveGraph()
+  sec_graph = get_suggestion_graph(sec_graph, ug, all_as, terms_as_d, all_ct, terms_ct, terms_ct_d)
 
-  if len(all_as) > 30:
-    for chunk_all in chunks(list(all_as), 30):
-      if len(terms_as_d) > 30:
-        for chunk in chunks(list(terms_as_d), 30):
-          sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="rdfs:subClassOf")
-          sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="part_of:")
-          sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="connected_to:")
-      else:
-        sec_graph += ug.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(chunk_all), property="rdfs:subClassOf")
-        sec_graph += ug.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(chunk_all), property="part_of:")
-        sec_graph += ug.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(chunk_all), property="connected_to:")
-
-      if len(terms_ct) > 30:
-        for chunk in chunks(list(terms_ct), 30):
-          sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="part_of:")
-      else:
-        sec_graph += ug.construct_relation(subject="\n".join(terms_ct), objects="\n".join(chunk_all), property="part_of:")
-  else:
-    if len(terms_as_d) > 30:
-      for chunk in chunks(list(terms_as_d), 30):
-        sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
-        sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
-        sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="connected_to:")
-    else:
-      sec_graph += ug.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
-      sec_graph += ug.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(list(all_as)), property="part_of:")
-      sec_graph += ug.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(list(all_as)), property="connected_to:")
-    
-    if len(terms_ct) > 30:
-      for chunk in chunks(list(terms_ct), 30):
-        sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
-    else:
-      sec_graph += ug.construct_relation(subject="\n".join(terms_ct), objects="\n".join(list(all_as)), property="part_of:")
-    
-
-  if len(terms_ct_d) > 20:
-    for chunk in chunks(list(terms_ct_d), 30):
-      sec_graph += ug.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
-  else:
-    sec_graph += ug.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
-
-  
   terms_set = zip(terms_ct + terms_s, terms_as + terms_o)
 
   # ENTITY CHECK
@@ -378,6 +273,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for t in no_valid_class_o.union(no_valid_class_as):
     logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
 
+  # NOT VALID LOG
   no_valid_relation = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(terms_set)]
 
   for _, r in no_valid_relation.iterrows():
@@ -402,7 +298,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       no_v_rec['ccf_located_in'] = r['o']
       no_valid_records.append(no_v_rec)
 
-
+  # RELATIONSHIP REPORT
   nb_relation_as = len(relation_as)
   perc_inv_as = 0
   if nb_relation_as != 0: perc_inv_as = round((len(invalid_as)*100)/nb_relation_as, 2)
@@ -432,6 +328,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     'percent_invalid_CT-AS_relationship': [perc_inv_ct_as]
   }
 
+  # ANNOTATION 
   annotations = ConjunctiveGraph()
   terms = list(terms)
   if len(terms) > 30:
@@ -440,6 +337,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   else:
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
+
   return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
           has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report), sec_graph)
 
