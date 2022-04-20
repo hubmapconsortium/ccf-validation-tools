@@ -203,6 +203,36 @@ class UberonGraph():
           }
         """     
 
+        self.select_capable_of = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX capable_of: <http://purl.obolibrary.org/obo/RO_0002215>
+          PREFIX capable_of_part_of: <http://purl.obolibrary.org/obo/RO_0002216>
+          PREFIX occurs_in: <http://purl.obolibrary.org/obo/BFO_0000066>
+          
+          SELECT DISTINCT ?subject ?subject_label ?object ?object_label
+          FROM <http://reasoner.renci.org/ontology>
+          FROM <http://reasoner.renci.org/redundant>
+          WHERE {
+            VALUES ?subject {
+              %s
+            }
+            {
+              ?subject capable_of: ?object .
+            }
+            UNION {
+              ?subject capable_of_part_of: ?object . 
+            }
+  			    UNION {
+    			    ?object occurs_in: ?subject .
+            }
+            ?subject rdfs:label ?subject_label .
+            ?object rdfs:label ?object_label .
+            ?object rdfs:isDefinedBy <http://purl.obolibrary.org/obo/go.owl> .
+          }
+        """     
+
     def ask_uberon(self, r, q, urls=True):
         """"""
         start = ''
@@ -312,14 +342,16 @@ class UberonGraph():
     def extract_results(self, list):
       results = set()
       for r in list:
-        if r.get("object"):
+        if r.get("subject_label") and r.get("object_label"):
+          results.add((self.add_prefix(r["subject"]["value"]), self.add_prefix(r["subject_label"]["value"]), self.add_prefix(r["object"]["value"]), r["object_label"]["value"]))
+        elif r.get("object"):
           results.add((self.add_prefix(r["subject"]["value"]), self.add_prefix(r["object"]["value"])))
         else:
           results.add(self.add_prefix(r["subject"]["value"]))
       return results
 
     def add_prefix(self, term):
-      return term.replace("http://purl.obolibrary.org/obo/UBERON_", "UBERON:").replace("http://purl.obolibrary.org/obo/CL_", "CL:")
+      return term.replace("http://purl.obolibrary.org/obo/UBERON_", "UBERON:").replace("http://purl.obolibrary.org/obo/CL_", "CL:").replace("http://purl.obolibrary.org/obo/GO_", "GO:")
 
     def add_prefix_ont(self, list_ontology):
       results = []

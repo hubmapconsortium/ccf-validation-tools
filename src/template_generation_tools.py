@@ -52,6 +52,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
   seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
   image_report = []
+  cl_behavior_report = []
   ug = UberonGraph()
   records = [seed]
   records_ub_sub = [seed_sub]
@@ -59,7 +60,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   no_valid_records = [seed_no_valid]
   if ccf_tools_df.empty:
     return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, 
-            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame.from_records(image_report))
+            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame.from_records(image_report), pd.DataFrame.from_records(cl_behavior_report))
 
   terms = set()
   all_as = set()
@@ -448,6 +449,23 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   
   terms_set = zip(terms_ct + terms_s, terms_as + terms_o)
 
+  # CL BEHAVIOR REPORT
+  cl_behavior = set()
+  if len(all_ct) > 20:
+    for chunk in chunks(list(all_ct), 20):
+      cl_behavior = cl_behavior.union(ug.query_uberon(" ".join(chunk), ug.select_capable_of))
+  else:
+    cl_behavior = ug.query_uberon(" ".join(list(all_ct)), ug.select_capable_of)
+
+  for s, s_label, o, o_label in cl_behavior:
+    beh = dict()
+    beh['Cell type'] = s
+    beh['Cell type label'] = s_label
+    beh['Behavior'] = o
+    beh['Behavior label'] = o_label
+    
+    cl_behavior_report.append(beh)
+
   # ENTITY CHECK
   no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
   no_valid_class_ct = ug.query_uberon(" ".join(terms_ct), ug.select_class)
@@ -524,7 +542,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
   return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
-          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report), sec_graph)
+          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report), sec_graph,
+          pd.DataFrame.from_records(cl_behavior_report))
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
