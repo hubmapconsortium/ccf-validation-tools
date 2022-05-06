@@ -450,13 +450,25 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   # ENTITY CHECK
   no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
-  no_valid_class_ct = ug.query_uberon(" ".join(terms_ct), ug.select_class)
+
+  no_valid_class_ct = set()
+  if len(terms_ct) > 90:
+    for chunk in chunks(list(terms_ct), 90):
+      no_valid_class_ct = no_valid_class_ct.union(ug.query_uberon(" ".join(chunk), ug.select_class))
+  else:
+    no_valid_class_ct = ug.query_uberon(" ".join(list(terms_ct)), ug.select_class)
 
   for t in no_valid_class_s.union(no_valid_class_ct):
     logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
 
   no_valid_class_o = ug.query_uberon(" ".join(terms_o), ug.select_class)
-  no_valid_class_as = ug.query_uberon(" ".join(terms_as), ug.select_class)
+
+  no_valid_class_as = set()
+  if len(terms_as) > 90:
+    for chunk in chunks(list(terms_as), 90):
+      no_valid_class_as = no_valid_class_as.union(ug.query_uberon(" ".join(chunk), ug.select_class))
+  else:
+    no_valid_class_as = ug.query_uberon(" ".join(list(terms_as)), ug.select_class)
 
   for t in no_valid_class_o.union(no_valid_class_as):
     logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
