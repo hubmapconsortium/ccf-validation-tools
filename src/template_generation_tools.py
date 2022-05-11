@@ -1,4 +1,5 @@
 import pandas as pd
+from pkg_resources import UnknownExtra
 from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
 from ccf_tools import chunks, split_terms, transform_to_str
@@ -57,8 +58,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   records_ub_sub = [seed_sub]
   records_cl_sub = [seed_sub]
   no_valid_records = [seed_no_valid]
+  unknown_terms = []
   if ccf_tools_df.empty:
-    return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, 
+    return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, unknown_terms,
             has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame.from_records(image_report))
 
   terms = set()
@@ -460,6 +462,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   for t in no_valid_class_s.union(no_valid_class_ct):
     logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
+    unknown_terms.append(t)
+
 
   no_valid_class_o = ug.query_uberon(" ".join(terms_o), ug.select_class)
 
@@ -472,6 +476,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   for t in no_valid_class_o.union(no_valid_class_as):
     logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
+    unknown_terms.append(t)
 
   no_valid_relation = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(terms_set)]
 
@@ -535,7 +540,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   else:
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
-  return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
+  return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, annotations, valid_error_log, report_relationship, strict_log, unknown_terms,
           has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report), sec_graph)
 
 

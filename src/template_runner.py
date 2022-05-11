@@ -18,7 +18,7 @@ args = parser.parse_args()
 
 ccf_tools_df, report_t, new_terms_report = parse_asctb(args.target_file)
 
-class_template, no_valid_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t, image_report, sec_graph = generate_class_graph_template(ccf_tools_df)
+class_template, no_valid_template, error_log, annotations, indirect_error_log, report_r, strict_log, unknown_terms, has_part_log, ub_subs_t, cl_subs_t, image_report, sec_graph = generate_class_graph_template(ccf_tools_df)
 
 class_template.to_csv(args.output_file, sep=',', index=False)
 
@@ -56,6 +56,10 @@ if not eval(args.old_version):
   cl_subs_t.to_csv(f'../templates/temp_cl_{args.job}_ASCTB_subset.csv', sep=',', index=False)
 
   image_report.to_csv(f'../logs/report_images_{args.job}.tsv', sep='\t', index=False)
+
+  with open('unknown_terms.txt', 'a+', encoding='utf-8') as t:
+    for term in unknown_terms:
+      t.write(term + "\n")
 
   if os.path.isfile(report_t_path):
     report_t.to_csv(report_t_path, sep='\t', index=False, mode='a', header=False)
