@@ -201,6 +201,22 @@ class UberonGraph():
             VALUES ?subject { UBERON: CL: }
             ?subject owl:versionInfo ?object
           }
+        """
+
+        self.select_located_in = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX located_in: <http://purl.obolibrary.org/obo/RO_0001025>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/ontology>
+          FROM <http://reasoner.renci.org/redundant>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject located_in: ?object .
+          }
         """     
 
     def ask_uberon(self, r, q, urls=True):

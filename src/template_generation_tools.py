@@ -47,7 +47,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
           'validation_date_df': '>A dc:date',
           'has_part': 'SC has_part some %',
           'OBO_Validated_hp': '>A CCFH:IN_OBO',
-          'validation_date_hp': '>A dc:date'}
+          'validation_date_hp': '>A dc:date',
+          'located_in': 'SC located_in some %',
+          'OBO_Validated_located_in': '>A CCFH:IN_OBO',
+          'validation_date_located_in': '>A dc:date'}
 
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
   seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
@@ -291,6 +294,29 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   terms_pairs = terms_pairs - transform_to_str(valid_overlaps)
 
   terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_overlaps)
+
+  # LOCATED IN CHECK
+  valid_ct_as_locatedin = set()
+  if len(terms_ct_as) > 50:
+    for chunk in chunks(list(terms_ct_as), 50):
+      valid_ct_as_locatedin = valid_ct_as_locatedin.union(ug.query_uberon(" ".join(chunk), ug.select_located_in))
+  else:
+    valid_ct_as_locatedin = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_located_in)
+
+  for s, o in valid_ct_as_locatedin:
+    rec = dict()
+    rec['ID'] = s
+    rec['located_in'] = o
+    rec['OBO_Validated_located_in'] = True
+    rec['validation_date_located_in'] = datetime.now().isoformat()
+    records.append(rec)
+
+    if 'UBERON' in s and 'UBERON' in o:
+      valid_as.add((s,o))
+    elif 'CL' in s and 'CL' in o:
+      valid_ct.add((s,o))
+
+  terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_locatedin)
 
   # CONNECTED TO CHECK
   valid_conn_to = set()
