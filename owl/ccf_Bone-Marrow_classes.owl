@@ -9,7 +9,6 @@
      xmlns:mi="http://purl.obolibrary.org/obo/mi#"
      xmlns:so="http://purl.obolibrary.org/obo/so#"
      xmlns:eco="http://purl.obolibrary.org/obo/eco#"
-     xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:mmo="http://purl.obolibrary.org/obo/mmo#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -92,6 +91,22 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ECO_9000002">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/eco.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has GO evidence code</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0000006 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0000006">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/genepio.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0045078 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/HP_0045078">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -462,14 +477,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">term replaced by</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">term replaced by</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_isReversiblePropertyChain -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_isReversiblePropertyChain">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -5212,6 +5219,14 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/fypo#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fypo#seeAlso">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fypo#seealso.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/fypo#usage -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fypo#usage">
@@ -5377,6 +5392,15 @@ Where we have an annotation assertion
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_yeast">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yeast GO slim</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#prokaryote_subset -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#prokaryote_subset">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO subset for prokaryotes</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go#prokaryote.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -5819,27 +5843,11 @@ Where we have an annotation assertion
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mondo#broadMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#broadMatch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#broadmatch.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/mondo#clingen -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#clingen">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">initial subset used by clingen</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#clingen.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#closeMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#closeMatch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#closematch.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -5858,22 +5866,6 @@ Where we have an annotation assertion
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#do_inheritance_inconsistent">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classes where the corresponding DO term is both AR and AD https://github.com/monarch-initiative/monarch-disease-ontology/issues/406</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#do_inheritance.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#exactMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#exactMatch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#exactmatch.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#excluded_from_qc.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -5976,14 +5968,6 @@ Where we have an annotation assertion
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#n_of_one">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N of one</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#n_of.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#narrowMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#narrowMatch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#narrowmatch.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -6162,22 +6146,6 @@ Where we have an annotation assertion
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#related">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#related.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#relatedMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#relatedMatch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#relatedmatch.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#should_conform_to -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#should_conform_to">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#should_conform.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -7416,31 +7384,6 @@ Where we have an annotation assertion
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/EFO_0008147 -->
-
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_0008147">
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do not use this property for anything. It is an accidental duplication of another property that was released and has now been obsoleted following the accepted obsolence procedure</obo:IAO_0000116>
-        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/gwas_trait</obo:IAO_0100001>
-        <efo:obsoleted_in_version rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.89</efo:obsoleted_in_version>
-        <efo:reason_for_obsolescence rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accidental duplication of property gwas_trait</efo:reason_for_obsolescence>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_gwas_trait</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/obsoleted_in_version -->
-
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/obsoleted_in_version"/>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/reason_for_obsolescence -->
-
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/reason_for_obsolescence"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule">
@@ -7782,12 +7725,6 @@ Where we have an annotation assertion
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#deprecated -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
@@ -7995,7 +7932,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:17.135724</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:59.729403</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000049"/>
@@ -8071,7 +8008,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:17.135742</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:59.729380</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000050"/>
@@ -8123,7 +8060,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:17.135748</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:59.729399</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000051"/>
@@ -8345,7 +8282,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.483236</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:59.104520</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000556"/>
@@ -8451,7 +8388,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000094"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194031</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835862</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000767"/>
@@ -8497,7 +8434,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000094"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.193995</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835852</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000771"/>
@@ -8575,7 +8512,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194036</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835879</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000786"/>
@@ -8614,7 +8551,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194044</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835888</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000787"/>
@@ -8651,7 +8588,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194016</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835831</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000788"/>
@@ -8724,7 +8661,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194018</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835859</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
@@ -8757,7 +8694,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194033</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835882</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000816"/>
@@ -8799,7 +8736,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194038</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835856</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000817"/>
@@ -8835,7 +8772,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194041</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835869</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000818"/>
@@ -8966,7 +8903,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.730170</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:59.349668</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000836"/>
@@ -9130,7 +9067,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000576"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194021</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835873</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001054"/>
@@ -9192,7 +9129,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0001056"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194012</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835866</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001058"/>
@@ -9229,7 +9166,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194024</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835885</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001062"/>
@@ -9305,7 +9242,7 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000576"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:16.194027</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:58.835876</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002396"/>
@@ -9384,7 +9321,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-09T07:17:17.408859</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-25T09:15:59.979813</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002371"/>
