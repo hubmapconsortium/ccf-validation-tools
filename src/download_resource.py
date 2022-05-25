@@ -284,23 +284,17 @@ def main(args):
   data = requests.get(API_URL).text
   data = json.loads(data)
 
-  table_date = data["parsed"][6][1]
-  table_version = data["parsed"][7][1]
 
-  if table_date != '':
+  table_date = "NA"
+  table_version = "NA"
+
+  if data["metadata"]["date"] != '':
     try:
-      table_date = datetime.datetime.strptime(data["parsed"][6][1], '%m/%d/%Y').strftime('%Y-%m-%d')
+      table_date = datetime.datetime.strptime(data["metadata"]["date"], '%m/%d/%Y').strftime('%Y-%m-%d')
     except:
-      try:
-        table_date = datetime.datetime.strptime(data["parsed"][7][1], '%m/%d/%Y').strftime('%Y-%m-%d')
-        table_version = data["parsed"][8][1]
-      except:
-        table_date = "NA"
-  else:
-    table_date = "NA"
-
-  if table_version == '':
-    table_version = "NA"
+      table_date = data["metadata"]["date"]
+  if data["metadata"]["version"] != '':
+    table_version = data["metadata"]["version"]
       
   with open('tables_version.txt', 'a+', encoding='utf-8') as t:
     t.write(args.job + "," + table_version + "," + table_date + "\n")
