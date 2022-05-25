@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
+|UBERON|2022-05-17|
 |CL|2022-02-16|
-|UBERON|2022-04-18|
 
 ### ASCT+b Tables
 
@@ -44,13 +44,13 @@ Release Notes
 |Eye|NA|NA|
 |Fallopian_tube|NA|NA|
 |Heart|NA|NA|
-|Kidney|NA|NA|
+|Kidney|doi: https://doi.org/10.1101/2021.07.28.454201; DOI: 10.1038/s41467-019-10861-2; DOI: 10.1172/jci.insight.133267; DOI: 10.1038/s41586-020-2941-1; DOI: 10.1016/j.devcel.2019.10.005; DOI: 10.1073/pnas.2005477117; DOI: 10.1681/ASN.2020010071; DOI: 10.1126/science.aat1699; DOI: 10.3389/fimmu.2019.02035; DOI: 10.1126/science.aat5031; DOI: 10.1084/jem.20030323; DOI: 10.1016/j.exphem.2016.10.008|NA|
 |Knee|NA|NA|
 |Large_intestine|NA|NA|
 |Liver|NA|NA|
 |Lung|NA|NA|
 |Lymph_node|NA|NA|
-|Lymph_vasculature|3/31/2022|NA|
+|Lymph_vasculature|NA|NA|
 |Ovary|NA|NA|
 |Pancreas|NA|NA|
 |Placenta|NA|NA|
