@@ -58,8 +58,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   records_cl_sub = [seed_sub]
   no_valid_records = [seed_no_valid]
   if ccf_tools_df.empty:
-    return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, 
-            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame.from_records(image_report))
+    return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, report_relationship, strict_log, 
+            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame.from_records(image_report), ConjunctiveGraph())
 
   terms = set()
   all_as = set()
