@@ -297,7 +297,7 @@ def main(args):
     table_version = data["metadata"]["version"]
       
   with open('tables_version.txt', 'a+', encoding='utf-8') as t:
-    t.write(args.job + "," + table_version + "," + table_date + "\n")
+    t.write(args.job + ";" + table_version + ";" + table_date + "\n")
 
   with open(args.output_file, 'w', encoding='utf-8') as f:
     json.dump(data['data'], f, ensure_ascii=False, indent=2)
