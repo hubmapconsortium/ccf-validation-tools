@@ -15,7 +15,7 @@ Release Notes
 | :---: | :---: | :---: |
 |Bone-Marrow|v1.1|2021-12-01|
 |Blood|v1.1|2021-12-01|
-|Brain|12/1/2021|NA|
+|Brain|v1.1|2021-12-01|
 |Eye|v1.0|2021-12-01|
 |Fallopian_tube|v1.0|2021-12-01|
 |Heart|v1.1|2021-12-01|
@@ -39,19 +39,19 @@ Release Notes
 |Uterus|v1.0|2021-12-01|
 |Blood_vasculature|v1.1|2021-12-01|
 |Bone-Marrow|NA|NA|
-|Blood|NA|NA|
-|Brain|NA|NA|
+|Blood|v1.2|2022-04-01|
+|Brain|v1.2|May 6, 2022|
 |Eye|NA|NA|
-|Fallopian_tube|NA|NA|
+|Fallopian_tube|v1.1|2022-03-30|
 |Heart|NA|NA|
-|Kidney|doi: https://doi.org/10.1101/2021.07.28.454201; DOI: 10.1038/s41467-019-10861-2; DOI: 10.1172/jci.insight.133267; DOI: 10.1038/s41586-020-2941-1; DOI: 10.1016/j.devcel.2019.10.005; DOI: 10.1073/pnas.2005477117; DOI: 10.1681/ASN.2020010071; DOI: 10.1126/science.aat1699; DOI: 10.3389/fimmu.2019.02035; DOI: 10.1126/science.aat5031; DOI: 10.1084/jem.20030323; DOI: 10.1016/j.exphem.2016.10.008|NA|
+|Kidney|v1.2|2022-05-06|
 |Knee|NA|NA|
 |Large_intestine|NA|NA|
 |Liver|NA|NA|
-|Lung|NA|NA|
+|Lung|NA|4-19-2022 In Progress moving author formatted over to ASCT+B table format--Ellen|
 |Lymph_node|NA|NA|
-|Lymph_vasculature|NA|NA|
-|Ovary|NA|NA|
+|Lymph_vasculature|v1.1|2022-05-06|
+|Ovary|v1.1|2022-03-30|
 |Pancreas|NA|NA|
 |Placenta|NA|NA|
 |Peripheral_nervous_system|NA|NA|
@@ -63,5 +63,5 @@ Release Notes
 |Thymus|NA|NA|
 |Ureter|NA|NA|
 |Urinary_bladder|NA|NA|
-|Uterus|NA|NA|
-|Blood_vasculature|NA|NA|
+|Uterus|v1.1|May 6, 2022|
+|Blood_vasculature|v1.2|2022-03-31|
