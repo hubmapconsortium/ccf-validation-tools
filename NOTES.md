@@ -38,30 +38,30 @@ Release Notes
 |Urinary_bladder|v1.0|2021-12-01|
 |Uterus|v1.0|2021-12-01|
 |Blood_vasculature|v1.1|2021-12-01|
-|Bone-Marrow|NA|NA|
-|Blood|v1.2|2022-04-01|
-|Brain|v1.2|May 6, 2022|
-|Eye|NA|NA|
-|Fallopian_tube|v1.1|2022-03-30|
-|Heart|NA|NA|
+|Bone-Marrow|v1.2|2022-05-06|
+|Blood|v1.2|2022-05-06|
+|Brain|v1.2|2022-05-06|
+|Eye|v1.1|2022-05-06|
+|Fallopian_tube|v1.1|2022-05-06|
+|Heart|v1.2|revise for Oct 1, 2022|
 |Kidney|v1.2|2022-05-06|
-|Knee|NA|NA|
+|Knee|NA|revise for October 1, 2022|
 |Large_intestine|NA|NA|
-|Liver|NA|NA|
-|Lung|NA|4-19-2022 In Progress moving author formatted over to ASCT+B table format--Ellen|
-|Lymph_node|NA|NA|
+|Liver|v1.1|2022-05-06|
+|Lung|v1.2|2022-05-06|
+|Lymph_node|v1.2|2022-05-06|
 |Lymph_vasculature|v1.1|2022-05-06|
-|Ovary|v1.1|2022-03-30|
-|Pancreas|NA|NA|
-|Placenta|NA|NA|
-|Peripheral_nervous_system|NA|NA|
-|Prostate|NA|NA|
-|Skin|NA|NA|
-|Small_intestine|NA|NA|
-|Spleen|NA|NA|
+|Ovary|v1.1|2022-05-06|
+|Pancreas|v1.1|2022-05-06|
+|Placenta|V1.0|5/6/22|
+|Peripheral_nervous_system|v1.1|revise for Oct 1, 2022|
+|Prostate|NA|revise for Oct 1, 2022|
+|Skin|v1.2|2022-05-06|
+|Small_intestine|NA|revise for October 1, 2022|
+|Spleen|v1.2|5//6/2022|
 |Spinal_Cord|v1.0|2021-12-01|
-|Thymus|NA|NA|
+|Thymus|v1.2|2022-05-06|
 |Ureter|NA|NA|
 |Urinary_bladder|NA|NA|
 |Uterus|v1.1|May 6, 2022|
-|Blood_vasculature|v1.2|2022-03-31|
+|Blood_vasculature|v1.2|2022-05-06|
