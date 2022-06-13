@@ -46,7 +46,7 @@ Release Notes
 |Heart|v1.2|revise for Oct 1, 2022|
 |Kidney|v1.2|2022-05-06|
 |Knee|NA|revise for October 1, 2022|
-|Large_intestine|NA|NA|
+|Large_intestine|v1.2|2022-05-06|
 |Liver|v1.1|2022-05-06|
 |Lung|v1.2|2022-05-06|
 |Lymph_node|v1.2|2022-05-06|
