@@ -80,6 +80,28 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   invalid_ct_as = set()
   terms_ct_as_start = 0
  
+  for _, r in ccf_tools_df.iterrows():
+    terms.add(r['s'])
+    terms.add(r['o'])
+
+  # ENTITY CHECK
+  no_valid_class = set()
+  if len(terms) > 90:
+    for chunk in chunks(list(terms), 90):
+      no_valid_class = no_valid_class.union(ug.query_uberon(" ".join(chunk), ug.select_class))
+  else:
+    no_valid_class = ug.query_uberon(" ".join(list(terms)), ug.select_class)
+
+  del_index = []
+  for t in no_valid_class:
+    logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
+    del_index.extend(ccf_tools_df[(ccf_tools_df['s'] == t) | (ccf_tools_df['o'] == t)].index)
+   
+  # Drop rows with unrecognized UBERON/CL terms 
+  ccf_tools_df = ccf_tools_df.drop(del_index)
+
+  terms = set()
+  
   # Add declarations and labels for entity
   for i, r in ccf_tools_df.iterrows():
     records.append({'ID': r['s'], 'User_label': r['user_slabel']})
@@ -474,31 +496,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   
   terms_set = zip(terms_ct + terms_s, terms_as + terms_o)
 
-  # ENTITY CHECK
-  no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
-
-  no_valid_class_ct = set()
-  if len(terms_ct) > 90:
-    for chunk in chunks(list(terms_ct), 90):
-      no_valid_class_ct = no_valid_class_ct.union(ug.query_uberon(" ".join(chunk), ug.select_class))
-  else:
-    no_valid_class_ct = ug.query_uberon(" ".join(list(terms_ct)), ug.select_class)
-
-  for t in no_valid_class_s.union(no_valid_class_ct):
-    logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
-
-  no_valid_class_o = ug.query_uberon(" ".join(terms_o), ug.select_class)
-
-  no_valid_class_as = set()
-  if len(terms_as) > 90:
-    for chunk in chunks(list(terms_as), 90):
-      no_valid_class_as = no_valid_class_as.union(ug.query_uberon(" ".join(chunk), ug.select_class))
-  else:
-    no_valid_class_as = ug.query_uberon(" ".join(list(terms_as)), ug.select_class)
-
-  for t in no_valid_class_o.union(no_valid_class_as):
-    logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
-
   no_valid_relation = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(terms_set)]
 
   for _, r in no_valid_relation.iterrows():
@@ -603,7 +600,7 @@ def generate_vasculature_template(ccf_tools_df):
     rec['in_subset'] = 'human_reference_atlas'
     records.append(rec)
     
-  return pd.DataFrame.from_records(records)
+  return pd.DataFrame.from_records(records).sort_values(by=['SUBJECT'])
 
 
 
