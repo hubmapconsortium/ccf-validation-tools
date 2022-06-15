@@ -576,7 +576,7 @@ def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
     return pd.DataFrame.from_records(records)
 
 def generate_vasculature_template(ccf_tools_df):
-  seed = {'SUBJECT': 'ID', 'OBJECT': "SC 'connected_to' some %", 'in_subset': '>A in_subset'} 
+  seed = {'SUBJECT': 'ID', 'OBJECT': "SC 'connected_to' some %", 'in_subset': 'AI in_subset'} 
   records = [seed]
   ug = UberonGraph()
 
