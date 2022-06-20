@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2022-05-17|
 |CL|2022-02-16|
+|UBERON|2022-05-17|
 
 ### ASCT+b Tables
 
@@ -45,7 +45,7 @@ Release Notes
 |Fallopian_tube|v1.1|2022-05-06|
 |Heart|v1.2|revise for Oct 1, 2022|
 |Kidney|v1.2|2022-05-06|
-|Knee|NA|revise for October 1, 2022|
+|Knee|v1.1|05-06-2022|
 |Large_intestine|v1.2|2022-05-06|
 |Liver|v1.1|2022-05-06|
 |Lung|v1.2|2022-05-06|
