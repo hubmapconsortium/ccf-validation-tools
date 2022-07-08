@@ -12,11 +12,15 @@ parser.add_argument("job", help="job name")
 parser.add_argument("target_file", help='input file path')
 parser.add_argument("output_file", help='output file path')
 parser.add_argument("old_version", help="is old version")
+parser.add_argument("parse_asctb", help="need to parse ASCT+b table")
 
 TODAY = date.today().strftime("%Y%m%d")
 args = parser.parse_args()
 
-ccf_tools_df, report_t, new_terms_report = parse_asctb(args.target_file)
+if eval(args.parse_asctb):
+  ccf_tools_df, report_t, new_terms_report = parse_asctb(args.target_file)
+else:
+  ccf_tools_df = pd.read_csv(args.target_file)
 
 class_template, no_valid_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t, image_report, sec_graph = generate_class_graph_template(ccf_tools_df)
 
@@ -29,15 +33,15 @@ if args.job == 'Blood_vasculature':
   vasculature_template.to_csv(f'../templates/vasculature_class.tsv', sep='\t', index=False)
 
 if not eval(args.old_version):
-  report_t['Table'] = args.job
-  report_t = pd.DataFrame.from_dict(report_t)
-  report_t_path = f"../reports/report_terms_{TODAY}.tsv"
+  # report_t['Table'] = args.job
+  # report_t = pd.DataFrame.from_dict(report_t)
+  # report_t_path = f"../reports/report_terms_{TODAY}.tsv"
 
-  new_terms_report.to_csv(f'../logs/new_cl_terms_{args.job}.tsv', sep='\t', index=False)
+  # new_terms_report.to_csv(f'../logs/new_cl_terms_{args.job}.tsv', sep='\t', index=False)
 
-  report_r['Table'] = args.job
-  report_r = pd.DataFrame.from_dict(report_r)
-  report_r_path = f"../reports/report_relationship_{TODAY}.tsv"
+  # report_r['Table'] = args.job
+  # report_r = pd.DataFrame.from_dict(report_r)
+  # report_r_path = f"../reports/report_relationship_{TODAY}.tsv"
 
   no_valid_template.to_csv(f'../templates/{args.job}_no-valid.csv', sep=',', index=False)
 
@@ -57,15 +61,15 @@ if not eval(args.old_version):
 
   image_report.to_csv(f'../logs/report_images_{args.job}.tsv', sep='\t', index=False)
 
-  if os.path.isfile(report_t_path):
-    report_t.to_csv(report_t_path, sep='\t', index=False, mode='a', header=False)
-  else:
-    report_t.to_csv(report_t_path, sep='\t', index=False)
+  # if os.path.isfile(report_t_path):
+  #   report_t.to_csv(report_t_path, sep='\t', index=False, mode='a', header=False)
+  # else:
+  #   report_t.to_csv(report_t_path, sep='\t', index=False)
 
-  if os.path.isfile(report_r_path):
-    report_r.to_csv(report_r_path, sep='\t', index=False, mode='a', header=False)
-  else:
-    report_r.to_csv(report_r_path, sep='\t', index=False)
+  # if os.path.isfile(report_r_path):
+  #   report_r.to_csv(report_r_path, sep='\t', index=False, mode='a', header=False)
+  # else:
+  #   report_r.to_csv(report_r_path, sep='\t', index=False)
       
 
                        

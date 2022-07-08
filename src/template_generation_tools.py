@@ -130,6 +130,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       terms_pairs.add(f"({r['s']} {r['o']})")
       all_ct.add(r['s'])
       all_ct.add(r['o'])
+    elif 'FBbt' in r['s'] and 'FBbt' in r['o']:
+      terms_ct_as.add(f"({r['s']} {r['o']})")
+      terms_pairs.add(f"({r['s']} {r['o']})")
 
     terms.add(r['s'])
     terms.add(r['o'])
@@ -443,11 +446,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for _, r in has_part_report.iterrows():
     has_part_log = has_part_log.append(r)
 
-  terms_ct, terms_as = split_terms(terms_ct_as)
+  terms_ct, terms_as = split_terms(terms_ct_as - transform_to_str(valid_dev_from))
 
   terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_dev_from))
 
-  terms_as_d = set(t for t in terms_s if "UBERON" in t)
+  terms_as_d = set(t for t in terms_s if "UBERON" in t or "FBbt" in t)
   terms_ct_d = set(t for t in terms_s if "CL" in t)
 
   sec_graph = ConjunctiveGraph()
@@ -518,6 +521,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       no_v_rec = dict()
       no_v_rec['ID'] = r['s']
       no_v_rec['ccf_located_in'] = r['o']
+      no_valid_records.append(no_v_rec)
+    elif 'FBbt' in r['s'] and 'FBbt' in r['o']:
+      no_v_rec = dict()
+      no_v_rec['ID'] = r['s']
+      no_v_rec['ccf_part_of'] = r['o']
       no_valid_records.append(no_v_rec)
 
 
