@@ -133,6 +133,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     elif 'FBbt' in r['s'] and 'FBbt' in r['o']:
       terms_ct_as.add(f"({r['s']} {r['o']})")
       terms_pairs.add(f"({r['s']} {r['o']})")
+      all_as.add(r['s'])
+      all_ct.add(r['o'])
 
     terms.add(r['s'])
     terms.add(r['o'])

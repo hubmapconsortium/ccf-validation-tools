@@ -28,7 +28,7 @@ all: last_official_release official_release
 	${ROBOT} template --add-prefix "CCFH: http://ccf_tools_helpers/class_helper.owl#" \
 			--add-prefix "dc: http://purl.org/dc/elements/1.1/" \
 			--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
-			--input helper.owl --template $< \
+			--input ccf_helper.owl --template $< \
 			--output $@
 
 ../owl/ub_%_ASCTB_subset.owl: ../templates/temp_ub_%_ASCTB_subset.csv

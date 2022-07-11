@@ -251,8 +251,6 @@ class UberonGraph():
       query = query % terms
       self.sparql.setReturnFormat(JSON)
       self.sparql.setQuery(query)
-
-      print(query)
       
       results = self.sparql.query().convert()
       if results["results"]["bindings"]:

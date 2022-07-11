@@ -18,6 +18,11 @@ Declaration(ObjectProperty(<https://purl.org/ccf/latest/ccf.owl#ccf_part_of>))
 Declaration(ObjectProperty(<https://purl.org/ccf/latest/ccf.owl#ccf_located_in>)) 
 Declaration(AnnotationProperty(:IN_OBO))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002175>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 
 ############################
 #   Object Properties
@@ -56,5 +61,33 @@ AnnotationAssertion(rdfs:label <https://purl.org/ccf/latest/ccf.owl#ccf_part_of>
 # Object Property: <https://purl.org/ccf/latest/ccf.owl#ccf_located_in> (https://purl.org/ccf/latest/ccf.owl#ccf_located_in)
 
 AnnotationAssertion(rdfs:label <https://purl.org/ccf/latest/ccf.owl#ccf_located_in> "ccf_located_in")
+
+
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/RO_0002175> (present_in_taxon)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002175> "present_in_taxon")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#inSubset> (in_subset)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#inSubset> "in_subset")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas> (human_reference_atlas)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas> "human_reference_atlas")
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+###########################
+#   Class
+###########################
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
+
 
 )

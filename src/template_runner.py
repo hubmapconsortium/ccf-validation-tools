@@ -33,16 +33,6 @@ if args.job == 'Blood_vasculature':
   vasculature_template.to_csv(f'../templates/vasculature_class.tsv', sep='\t', index=False)
 
 if not eval(args.old_version):
-  # report_t['Table'] = args.job
-  # report_t = pd.DataFrame.from_dict(report_t)
-  # report_t_path = f"../reports/report_terms_{TODAY}.tsv"
-
-  # new_terms_report.to_csv(f'../logs/new_cl_terms_{args.job}.tsv', sep='\t', index=False)
-
-  # report_r['Table'] = args.job
-  # report_r = pd.DataFrame.from_dict(report_r)
-  # report_r_path = f"../reports/report_relationship_{TODAY}.tsv"
-
   no_valid_template.to_csv(f'../templates/{args.job}_no-valid.csv', sep=',', index=False)
 
   error_log.to_csv(f'../logs/class_{args.job}_log.tsv', sep='\t', index=False)
@@ -55,21 +45,32 @@ if not eval(args.old_version):
 
   has_part_log.to_csv(f'../logs/{args.job}_AS_has_part_CT_log.tsv', sep='\t', index=False)
 
-  ub_subs_t.to_csv(f'../templates/temp_ub_{args.job}_ASCTB_subset.csv', sep=',', index=False)
+  if eval(args.parse_asctb):
+    report_t['Table'] = args.job
+    report_t = pd.DataFrame.from_dict(report_t)
+    report_t_path = f"../reports/report_terms_{TODAY}.tsv"
 
-  cl_subs_t.to_csv(f'../templates/temp_cl_{args.job}_ASCTB_subset.csv', sep=',', index=False)
+    new_terms_report.to_csv(f'../logs/new_cl_terms_{args.job}.tsv', sep='\t', index=False)
 
-  image_report.to_csv(f'../logs/report_images_{args.job}.tsv', sep='\t', index=False)
+    report_r['Table'] = args.job
+    report_r = pd.DataFrame.from_dict(report_r)
+    report_r_path = f"../reports/report_relationship_{TODAY}.tsv"
 
-  # if os.path.isfile(report_t_path):
-  #   report_t.to_csv(report_t_path, sep='\t', index=False, mode='a', header=False)
-  # else:
-  #   report_t.to_csv(report_t_path, sep='\t', index=False)
+    ub_subs_t.to_csv(f'../templates/temp_ub_{args.job}_ASCTB_subset.csv', sep=',', index=False)
 
-  # if os.path.isfile(report_r_path):
-  #   report_r.to_csv(report_r_path, sep='\t', index=False, mode='a', header=False)
-  # else:
-  #   report_r.to_csv(report_r_path, sep='\t', index=False)
+    cl_subs_t.to_csv(f'../templates/temp_cl_{args.job}_ASCTB_subset.csv', sep=',', index=False)
+
+    image_report.to_csv(f'../logs/report_images_{args.job}.tsv', sep='\t', index=False)
+
+    if os.path.isfile(report_t_path):
+      report_t.to_csv(report_t_path, sep='\t', index=False, mode='a', header=False)
+    else:
+      report_t.to_csv(report_t_path, sep='\t', index=False)
+
+    if os.path.isfile(report_r_path):
+      report_r.to_csv(report_r_path, sep='\t', index=False, mode='a', header=False)
+    else:
+      report_r.to_csv(report_r_path, sep='\t', index=False)
       
 
                        
