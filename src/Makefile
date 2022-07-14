@@ -3,6 +3,7 @@ ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skin Small_intestine Spleen Spinal_Cord Thymus Ureter Urinary_bladder Uterus Blood_vasculature
 JOBS_OLD = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
 OLD_VERSION = False
+PARSE_ASCT = True
 
 TODAY ?= $(shell date +%Y-%m-%d)
 VERSION = $(TODAY)
@@ -57,7 +58,7 @@ all: last_official_release official_release
 					 convert --format json -o $*.json && \
 		${ROBOT} convert --input ../owl/$*_sec.owl -o $*_sec.json && \
 		python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green" && \
-		og2dot.js -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
+		og2dot -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png && \
 		dot $*.dot -Tpdf -Grankdir=LR > ../graphs/ccf_$*_graph.pdf && \
 		rm $*.json && \
@@ -68,7 +69,7 @@ all: last_official_release official_release
 ../owl/last_official_ASCTB_release/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl
 	if [ $(OLD_VERSION) = True ]; then ${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
 					 convert --format json -o $*.json && \
-		og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot &&\
+		og2dot -s ../style/ubergraph-style.json $*.json > $*.dot &&\
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.png && \
 		dot $*.dot -Tpdf -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.pdf && \
 		rm $*.json && \
