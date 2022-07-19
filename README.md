@@ -40,7 +40,15 @@ s | slabel | user_slabel | o | olabel | user_olabel
 
 Translation: There is no valid (part_of or is_a) relationship between 'renal column' and 'renal medulla' or between 'glomerular visceral epithelial cell' and 'glomerular visceral epithelium'.  
 
+### Validating different table
 
+It's also possible to validate the relationships between terms that are not in ASCT+b tables.
 
+The input CSV must have the columns:
+
+s | slabel | user_slabel | o | olabel | user_olabel
+-- | -- | -- | -- | -- | --
+|Term in CURIE format|Label of the term|Personal label for the term|Term in CURIE format|Label of the term|Personal label for the term|
+| UBERON:0001284 | renal column | renal column (column of Bertin) | UBERON:0000362 | renal medulla | renal medulla
 
 
