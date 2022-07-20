@@ -121,7 +121,7 @@ def parse_asctb(path):
             unique_terms.add(next['name'])
 
       # CT-AS RELATIONSHIP
-      if len(cell_types) > 0:
+      if len(anatomical_structures) > 0 and len(cell_types) > 0:
         last_as = anatomical_structures[-1]
         if not check_id(last_as['id']) and len(anatomical_structures) > 1:
           last_as = anatomical_structures[-2]
@@ -171,8 +171,11 @@ def parse_asctb(path):
             r['References/DOI'] = " ; ".join(refs_doi)
             rt.append(r)
 
-    as_invalid_term_percent = round((len(as_invalid_terms)*100)/len(unique_terms), 2)
-    ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/len(unique_terms), 2)
+    as_invalid_term_percent = 0
+    ct_invalid_terms_percent = 0
+    if len(unique_terms) > 0:
+      as_invalid_term_percent = round((len(as_invalid_terms)*100)/len(unique_terms), 2)
+      ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/len(unique_terms), 2)
 
     report_terms = {
       'Table': '',

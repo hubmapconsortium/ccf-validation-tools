@@ -1,22 +1,30 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ccf_tools_helpers/class_helper.owl#"
      xml:base="http://ccf_tools_helpers/class_helper.owl"
+     xmlns:B="http://purl.obolibrary.org/obo/mmusdv#EXACT%5B%5"
      xmlns:cl="http://purl.obolibrary.org/obo/cl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:go="http://purl.obolibrary.org/obo/go#"
      xmlns:hp="http://purl.obolibrary.org/obo/hp#"
+     xmlns:mi="http://purl.obolibrary.org/obo/mi#"
+     xmlns:so="http://purl.obolibrary.org/obo/so#"
      xmlns:eco="http://purl.obolibrary.org/obo/eco#"
-     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:mmo="http://purl.obolibrary.org/obo/mmo#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:zfa="http://purl.obolibrary.org/obo/zfa#"
+     xmlns:FBcv="http://purl.obolibrary.org/obo/FBcv#"
      xmlns:bspo="http://purl.obolibrary.org/obo/bspo#"
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:ecto="http://purl.obolibrary.org/obo/ecto#"
      xmlns:envo="http://purl.obolibrary.org/obo/envo#"
+     xmlns:fbbt="http://purl.obolibrary.org/obo/fbbt#"
+     xmlns:fbcv="http://purl.obolibrary.org/obo/fbcv#"
+     xmlns:fbdv="http://purl.obolibrary.org/obo/fbdv#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:fypo="http://purl.obolibrary.org/obo/fypo#"
      xmlns:maxo="http://purl.obolibrary.org/obo/maxo#"
@@ -31,6 +39,7 @@
      xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#2"
      xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#3"
      xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#1"
+     xmlns:mmusdv="http://purl.obolibrary.org/obo/mmusdv#"
      xmlns:uberon="http://purl.obolibrary.org/obo/uberon#"
      xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
      xmlns:mp-edit="http://purl.obolibrary.org/obo/mp-edit#"
@@ -38,6 +47,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:wbphenotype="http://purl.obolibrary.org/obo/wbphenotype#"
      xmlns:class_helper="http://ccf_tools_helpers/class_helper.owl#"
      xmlns:process_attribute="http://purl.obolibrary.org/obo/envo-p/patterns/process_attribute/">
     <owl:Ontology rdf:about="http://ccf_tools_helpers/class_helper.owl"/>
@@ -67,11 +77,36 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_based_on -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/COB_based_on">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cob_based.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">based on</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ECO_9000002 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ECO_9000002">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/eco.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has GO evidence code</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0000006 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0000006">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/genepio.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0045078 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/HP_0045078">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -130,6 +165,8 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</obo:IAO_0000111>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
@@ -397,8 +434,25 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000700 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700">
+        <obo:IAO_0000111 xml:lang="en">has ontology root term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Nicolas Matentzoglu</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO:0000700</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_ontology_root_term</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_ontology_root_term</oboInOwl:shorthand>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ontology root term</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preferred_root</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0006011 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0006011">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -423,14 +477,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">term replaced by</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">term replaced by</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_isReversiblePropertyChain -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_isReversiblePropertyChain">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -880,6 +926,34 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_A38 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A38">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An association that shows which Permissible Values are possible for a specific PCDC OS Variable.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A38</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_PCDC_OS_Permissible_Value</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_PCDC_OS_Permissible_Value</oboInOwl:hasExactSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_PCDC_OS_Permissible_Value</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A39 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A39">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An association that shows which Permissible Values are possible for a specific PCDC HL Variable.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A39</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_PCDC_HL_Permissible_Value</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_PCDC_HL_Permissible_Value</oboInOwl:hasExactSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_PCDC_HL_Permissible_Value</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_A4 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A4">
@@ -891,6 +965,20 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualifier_Applies_To</oboInOwl:hasExactSynonym>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualifier_Applies_To</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A40 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A40">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An association that shows which Permissible Values are possible for a specific DIPG/DMG Variable.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A40</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_DIPG_DMG_Permissible_Value</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_DIPG_DMG_Permissible_Value</oboInOwl:hasExactSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_DIPG_DMG_Permissible_Value</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -2213,6 +2301,20 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI_Drug_Dictionary_ID</oboInOwl:hasExactSynonym>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI_Drug_Dictionary_ID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P400 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P400">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing the numerical Variation ID assigned to a molecular abnormality entry by ClinVar.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P400</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ClinVar_Variation_ID</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ClinVar_Variation_ID</oboInOwl:hasExactSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ClinVar_Variation_ID</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -3765,6 +3867,15 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBcv#camcur -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/FBcv#camcur">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#camcur.owl"/>
+        <rdfs:label xml:lang="en">camcur</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/bspo#human -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/bspo#human">
@@ -3899,6 +4010,17 @@ Where we have an annotation assertion
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#BDS_subset">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl#bds.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cl#abbreviation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/cl#abbreviation">
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1773-2692"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-29T15:09:49+00:00</dc:date>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl#abbreviation.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abbreviation</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -4249,6 +4371,847 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/fbbt#BRAIN_NAME_ABV -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#BRAIN_NAME_ABV">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#brain_name.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BrainName official abbreviation</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#BRAND_NAME -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#BRAND_NAME">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#brand.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BRAND NAME</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#BrainName -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#BrainName">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BrainName project terms</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#brainname.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#BrainName_Embargo -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#BrainName_Embargo">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terms to hold back pending BrainName paper publication</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#brainname.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#Cross-product_review -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#Cross-product_review">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Involved_in</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#cross-product.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#EmbDevSlim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#EmbDevSlim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmbDevSlim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#embdevslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#FB_gloss -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#FB_gloss">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terms for FlyBase glossary page</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#fb.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#FORMULA -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#FORMULA">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#formula.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FORMULA</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#FT_new -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#FT_new">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyTed temp subset for edit tracking purposes</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#ft.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#FlyTed -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#FlyTed">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Testis slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#flyted.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#INN -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#INN">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#inn.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INN</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#IUPAC_NAME -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#IUPAC_NAME">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#iupac.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC NAME</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#InChI -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#InChI">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#inchi.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#InChIKey -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#InChIKey">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#inchikey.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChIKey</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#RD -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#RD">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terms for rd test ontology</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#rd.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#SMILES -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#SMILES">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#smiles.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMILES</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#TL_lineage_clone -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#TL_lineage_clone">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lineage clone related term from Tzumin Lee dataset</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#tl_lineage.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#VFB_SYMBOL">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#vfb.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">official symbol used on Virtual Fly Brain</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#cur -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#cur">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cur</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#cur.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#deprecated -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#deprecated">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">warning of impending obsoletion</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#deprecated.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#expressionslim_flybase_ribbon -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#expressionslim_flybase_ribbon">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase ribbon terms</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#expressionslim_flybase.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goantislim_grouping -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goantislim_grouping">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grouping classes that can be excluded</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goantislim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#gocheck_do_not_annotate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#gocheck_do_not_annotate">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term not to be used for direct annotation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#gocheck_do_not.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#gocheck_do_not_manually_annotate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#gocheck_do_not_manually_annotate">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term not to be used for direct manual annotation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#gocheck_do_not_manually.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_ChEMBL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_ChEMBL">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEMBL protein targets summary</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_agr -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_agr">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AGR slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_aspergillus -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_aspergillus">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspergillus GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_candida -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_candida">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candida GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_chembl -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_chembl">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEMBL protein targets summary</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_generic -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_generic">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_goa -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_goa">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOA and proteome slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_metagenomics -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_metagenomics">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metagenomics GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_mouse -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_mouse">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouse GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_pir -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_pir">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIR GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_plant -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_plant">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plant GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_pombe -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_pombe">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fission yeast GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_synapse -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_synapse">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synapse GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_virus -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_virus">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viral GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#goslim_yeast -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#goslim_yeast">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yeast GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#gosubset_prok -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#gosubset_prok">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prokaryotic GO subset</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#gosubset.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#hidden_assertion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#hidden_assertion">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stanza contains hidden assertion.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#hidden.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#high_level_annotation_qc -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#high_level_annotation_qc">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High-level terms not to be used for direct annotation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#high_level_annotation.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#larval_OF -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#larval_OF">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larval olfactory system</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#larval.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#mf_needs_review -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#mf_needs_review">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catalytic activity terms in need of attention</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#mf_needs.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#olfactory_system_draft -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#olfactory_system_draft">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult olfactory system model</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#olfactory_system.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#scrnaseq_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#scrnaseq_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell types selected for scRNAseq ribbon</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#scrnaseq.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#syngo_official_label -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#syngo_official_label">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#syngo_official.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label approved by the SynGO project</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#systematic_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#systematic_synonym">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#systematic.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systematic synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#termgenie_unvetted -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#termgenie_unvetted">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terms created by TermGenie that do not follow a template and require additional vetting by editors</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#termgenie.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#virus_checked -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#virus_checked">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viral overhaul terms</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbbt#virus.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#BRAIN_NAME_ABV -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#BRAIN_NAME_ABV">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#brain_name.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BrainName official abbreviation</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#BRAND_NAME -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#BRAND_NAME">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#brand.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BRAND NAME</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#EmbDevSlim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#EmbDevSlim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmbDevSlim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#embdevslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#FORMULA -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#FORMULA">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#formula.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FORMULA</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#FT_new -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#FT_new">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyTed temp subset for edit tracking purposes</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#ft.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#FlyTed -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#FlyTed">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Testis slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#flyted.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#INN -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#INN">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#inn.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INN</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#IUPAC_NAME -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#IUPAC_NAME">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#iupac.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC NAME</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#InChI -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#InChI">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#inchi.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#InChIKey -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#InChIKey">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#inchikey.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChIKey</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#RD -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#RD">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terms for rd test ontology</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#rd.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#SMILES -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#SMILES">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#smiles.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMILES</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#abnormal_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#abnormal_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abnormal/normal slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#abnormal.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#absent_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#absent_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Absent/present slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#absent.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#attribute_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#attribute_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attribute slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#attribute.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#attributionURL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#attributionURL">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#attributionurl.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#camcur -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#camcur">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">camcur</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#camcur.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#cell_quality -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#cell_quality">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_quality</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#cell.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#common_tool_use -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#common_tool_use">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#common_tool.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#cur -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#cur">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cur</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#cur.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#deprecated -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#deprecated">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">warning of impending obsoletion</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#deprecated.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#do_not_annotate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#do_not_annotate">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term not to be used for direct annotation</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do not annotate</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#do_not.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#do_not_manually_annotate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#do_not_manually_annotate">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term not to be used for direct manual annotation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#do_not_manually.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGI ribbon terms</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fbcvsubset_mgiribbons</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#fbcvsubset.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#larval_OF -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#larval_OF">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larval olfactory system</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#larval.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#lethal_phase -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#lethal_phase">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lethal phase terms</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#lethal.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#relational_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#relational_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relational slim: types of quality that require an additional entity in order to exist</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#relational.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#systematic_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#systematic_synonym">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#systematic.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systematic synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#value_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#value_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Value slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbcv#value.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#gocheck_do_not_annotate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#gocheck_do_not_annotate">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term not to be used for direct annotation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#gocheck_do_not.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#gocheck_do_not_manually_annotate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#gocheck_do_not_manually_annotate">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term not to be used for direct manual annotation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#gocheck_do_not_manually.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#goslim_ChEMBL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#goslim_ChEMBL">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEMBL GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#goslim_aspergillus -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#goslim_aspergillus">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspergillus GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#goslim_candida -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#goslim_candida">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candida GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#goslim_chembl -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#goslim_chembl">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEMBL GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#goslim_generic -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#goslim_generic">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#goslim_metagenomics -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#goslim_metagenomics">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metagenomics GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#goslim_pir -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#goslim_pir">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIR GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#goslim_plant -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#goslim_plant">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plant GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#goslim_pombe -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#goslim_pombe">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fission yeast GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#goslim_yeast -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#goslim_yeast">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yeast GO slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#goslim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#gosubset_prok -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#gosubset_prok">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prokaryotic GO subset</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#gosubset.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbdv#systematic_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbdv#systematic_synonym">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fbdv#systematic.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systematic synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/fypo#qc_do_not_annotate -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fypo#qc_do_not_annotate">
@@ -4263,6 +5226,14 @@ Where we have an annotation assertion
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fypo#qc_do_not_manually_annotate">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term not to be used for direct manual annotation</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fypo#qc_do_not_manually.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fypo#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fypo#seeAlso">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/fypo#seealso.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -4436,6 +5407,15 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/go#prokaryote_subset -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#prokaryote_subset">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO subset for prokaryotes</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go#prokaryote.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#syngo_official_label -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#syngo_official_label">
@@ -4553,6 +5533,273 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/mi#DeltaMass-label -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#DeltaMass-label">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#deltamass-label.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Label from MS DeltaMass</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#Drugable -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#Drugable">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drugable Genome Project</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#drugable.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#PSI-MI-alternate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#psi-mi-alternate.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternate label curated by PSI-MI</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#PSI-MI-short -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#PSI-MI-short">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#psi-mi-short.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique short label curated by PSI-MI</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#PSI-MI_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#PSI-MI_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subset of PSI-MI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#psi-mi.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#PSI-MOD-alternate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#PSI-MOD-alternate">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#psi-mod-alternate.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternate label curated by PSI-MOD</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#PSI-MOD-short -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#PSI-MOD-short">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#psi-mod-short.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique short label curated by PSI-MOD</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#PSI-MOD_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#PSI-MOD_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subset of protein modifications</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#psi-mod.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#PSI-MS-label -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#PSI-MS-label">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#psi-ms-label.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agreed label from MS community</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#RESID-alternate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#RESID-alternate">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#resid-alternate.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternate name from RESID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#RESID-misnomer -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#RESID-misnomer">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#resid-misnomer.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Misnomer label from RESID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#RESID-name -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#RESID-name">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#resid-name.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name from RESID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#RESID-systematic -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#RESID-systematic">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#resid-systematic.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systematic name from RESID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#UniMod-alternate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#UniMod-alternate">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#unimod-alternate.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternate name from UniMod</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#UniMod-description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#UniMod-description">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#unimod-description.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description (full_name) from UniMod</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#UniMod-interim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#UniMod-interim">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#unimod-interim.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interim label from UniMod</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#UniMod-label -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#UniMod-label">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#unimod-label.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Label (title) from UniMod</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#UniProt-feature -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#UniProt-feature">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mi#uniprot-feature.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein feature description from UniProtKB</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmo#DISPLAY_SYNONYM -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmo#DISPLAY_SYNONYM">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmo#display.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">term name abbreviation, used for display</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmusdv#end_dpc -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmusdv#end_dpc">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmusdv#end.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmusdv#end_mpb -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmusdv#end_mpb">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmusdv#end.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmusdv#end_wpb -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmusdv#end_wpb">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmusdv#end.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmusdv#end_ypb -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmusdv#end_ypb">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmusdv#end.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmusdv#has_stage_marker -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmusdv#has_stage_marker">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmusdv#has_stage.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmusdv#start_dpc -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmusdv#start_dpc">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmusdv#start.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmusdv#start_dpf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmusdv#start_dpf">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmusdv#start.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmusdv#start_mpb -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmusdv#start_mpb">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmusdv#start.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmusdv#start_wpb -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmusdv#start_wpb">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmusdv#start.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mmusdv#EXACT%5B%5D -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mmusdv#EXACT%5B%5D">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mmusdv#exact%5b%5d.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/mondo#ABBREVIATION -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ABBREVIATION">
@@ -4607,10 +5854,11 @@ Where we have an annotation assertion
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mondo#broadMatch -->
+    <!-- http://purl.obolibrary.org/obo/mondo#NON_HUMAN -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#broadMatch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#broadmatch.owl"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#NON_HUMAN">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#non.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A synonym that is used for non-human animal variants of a disease</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -4620,14 +5868,6 @@ Where we have an annotation assertion
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#clingen">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">initial subset used by clingen</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#clingen.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#closeMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#closeMatch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#closematch.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -4646,22 +5886,6 @@ Where we have an annotation assertion
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#do_inheritance_inconsistent">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classes where the corresponding DO term is both AR and AD https://github.com/monarch-initiative/monarch-disease-ontology/issues/406</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#do_inheritance.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#exactMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#exactMatch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#exactmatch.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#excluded_from_qc.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -4768,14 +5992,6 @@ Where we have an annotation assertion
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mondo#narrowMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#narrowMatch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#narrowmatch.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/mondo#not_a_disease -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#not_a_disease">
@@ -4839,6 +6055,15 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_disorder -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_disorder">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disorder</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#ordo.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/mondo#ordo_etiological_subtype -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_etiological_subtype">
@@ -4893,6 +6118,15 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subtype of a disorder</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/mondo#other_hierarchy -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#other_hierarchy">
@@ -4932,22 +6166,6 @@ Where we have an annotation assertion
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#related">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#related.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#relatedMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#relatedMatch">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#relatedmatch.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mondo#should_conform_to -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#should_conform_to">
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/mondo#should_conform.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -5280,6 +6498,133 @@ Where we have an annotation assertion
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eco subset</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/subsets/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#AAMOD -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#AAMOD">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#aamod.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amino acid modification</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#AGR -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#AGR">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#agr.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alliance of Genome Resources</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#Alliance_of_Genome_Resources -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#Alliance_of_Genome_Resources">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alliance of Genome Resources Gene Biotype Slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#alliance_of_genome.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#BS -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#BS">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#bs.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosapiens</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#DBVAR -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#DBVAR">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database of genomic structural variation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#dbvar.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#RNAMOD -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#RNAMOD">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#rnamod.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA modification</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#SOFA -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#SOFA">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO feature annotation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#sofa.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#VAR -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#VAR">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#var.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variant annotation term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#aa1 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#aa1">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#aa1.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amino acid 1 letter code</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#aa3 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#aa3">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#aa3.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amino acid 3 letter code</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#biosapiens -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#biosapiens">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosapiens protein feature ontology</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#biosapiens.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#dbsnp -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#dbsnp">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#dbsnp.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dbsnp variant terms</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#dbvar -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#dbvar">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#dbvar.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DBVAR</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/so#ebi_variants -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/so#ebi_variants">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/so#ebi.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ensembl variant terms</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -5731,6 +7076,41 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/wbphenotype#phenotype_slim_wb -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/wbphenotype#phenotype_slim_wb">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB phenotype slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/wbphenotype#phenotype_slim.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/wbphenotype#property-value -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/wbphenotype#property-value">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/wbphenotype#property-value.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/zfa#PLURAL -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/zfa#PLURAL">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/zfa#plural.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PLURAL</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/zfa#cell_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/zfa#cell_slim">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_slim</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/zfa#cell.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
@@ -5850,6 +7230,7 @@ Where we have an annotation assertion
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc-source</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc-source</oboInOwl:shorthand>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">derived from resource</rdfs:label>
     </owl:AnnotationProperty>
@@ -5902,6 +7283,19 @@ Where we have an annotation assertion
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/dc/terms/date</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcterms-date</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcterms-date</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -6010,31 +7404,6 @@ Where we have an annotation assertion
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/EFO_0008147 -->
-
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_0008147">
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do not use this property for anything. It is an accidental duplication of another property that was released and has now been obsoleted following the accepted obsolence procedure</obo:IAO_0000116>
-        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/gwas_trait</obo:IAO_0100001>
-        <efo:obsoleted_in_version rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.89</efo:obsoleted_in_version>
-        <efo:reason_for_obsolescence rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accidental duplication of property gwas_trait</efo:reason_for_obsolescence>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_gwas_trait</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/obsoleted_in_version -->
-
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/obsoleted_in_version"/>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/reason_for_obsolescence -->
-
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/reason_for_obsolescence"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule">
@@ -6079,6 +7448,7 @@ Where we have an annotation assertion
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">created_by</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -6087,6 +7457,7 @@ Where we have an annotation assertion
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">creation_date</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -6129,6 +7500,7 @@ Where we have an annotation assertion
     <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_alternative_id</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -6148,6 +7520,7 @@ Where we have an annotation assertion
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing a reference to an identical or very similar object in another database.</obo:IAO_0000115>
         <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</obo:NCIT_P108>
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</rdfs:label>
     </owl:AnnotationProperty>
@@ -6160,6 +7533,7 @@ Where we have an annotation assertion
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing a fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FULL_SYN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym with Source Data</oboInOwl:hasExactSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact synonym</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
     </owl:AnnotationProperty>
@@ -6169,6 +7543,7 @@ Where we have an annotation assertion
     <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -6185,6 +7560,7 @@ Where we have an annotation assertion
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -6193,6 +7569,7 @@ Where we have an annotation assertion
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -6217,6 +7594,7 @@ Where we have an annotation assertion
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -6227,6 +7605,7 @@ Where we have an annotation assertion
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An association that connects the concept defining a particular terminology subset with concepts that belong to this subset.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concept_In_Subset</oboInOwl:hasExactSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in subset</rdfs:label>
         <rdfs:label>in_subset</rdfs:label>
     </owl:AnnotationProperty>
@@ -6278,6 +7657,7 @@ Where we have an annotation assertion
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:isDefinedBy rdf:resource="http://www.geneontology.org/formats/oboinowl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -6293,6 +7673,14 @@ Where we have an annotation assertion
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-equivalent">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">treat-xrefs-as-equivalent</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-genus-differentia -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-genus-differentia">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">treat-xrefs-as-genus-differentia</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -6323,7 +7711,9 @@ Where we have an annotation assertion
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -6338,6 +7728,8 @@ Where we have an annotation assertion
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</obo:IAO_0000111>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -6356,12 +7748,6 @@ Where we have an annotation assertion
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#deprecated -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
     
 
 
@@ -6441,6 +7827,14 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <rdfs:label>located_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131">
@@ -6503,7 +7897,6 @@ Where we have an annotation assertion
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histaminocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">labrocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mastocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue basophil</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mast cells are generally integrin beta-7-negative and positive for TLR2, TLR3, TLR4, TLR5, TLR7, TLR9, C3aR, C5aR, CR3, CR4, VEGF, FGF2, and renin. They can express MHC Class I and II on their surface. Activated murine mast cells (IgE+Antigen) were capable of expressing the following co-stimulatory molecules: CD95 (Fas), CD120b, CD137 (4-1BB), CD153 (CD30L), CD154 (CD40L), GITR, ICOSL, OX40L, PD-L1, and PD-L2. Note that there was some mouse strain variation. Mast cells have also been demonstrated to produce bFGF, CCL2, CCL4, CCL5, CCL11, CCL20, CXCL2, CXCL8, CXCL10, GM-CSF, IFN-gamma, IL-1, IL-2, IL-3, IL-8, IL-10, IL-11, IL-12, IL-13, IL-16, IL-25, IL-18, MIP-1, prostaglandin D2, SCF, TGF-beta, TNF-alpha, TSLP, VEGF, and XCL1. They express the transcription factors Transcription factors AP-1, GATA1, MITF, Notch2, PIAS3, PU.1, and STAT5.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -6518,7 +7911,6 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dsd</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:068340007X</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:A11.329.427</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D008407</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMCID:PMC1312421</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMCID:PMC2855166</oboInOwl:hasDbXref>
@@ -6557,7 +7949,6 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0278</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:66772</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endotheliocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From FMA: 9.07.2001: Endothelial cell has always been classified as a kind of epithelial cell, specifically a squamous cell but that is not true. First, endothelial cell can either be squamous or cuboidal (e.g. high-endothelial cell) and secondly, it has different embryological derivation (mesodermal) than a true epithelial cell (ectodermal and endodermal). The basis for present classification is the fact that it comprises the outermost layer or lining of anatomical structures (location-based) but a better structural basis for the differentia is the cytoskeleton of the cell. Endothelial cell has vimentin filaments while an epithelial cell has keratin filaments. [Onard].</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell</rdfs:label>
@@ -6582,7 +7973,6 @@ Where we have an annotation assertion
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that specializes in controlled release of one or more substances.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0003659</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:86916</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secretory cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sebum secreting cell</skos:prefLabel>
@@ -6605,8 +7995,8 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0587</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:63261</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83585</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D008264</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histiocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morphology: Diameter 30_M-80 _M, abundant cytoplasm, low N/C ratio, eccentric nucleus. Irregular shape with pseudopods, highly adhesive. Contain vacuoles and phagosomes, may contain azurophilic granules; markers: Mouse &amp; Human: CD68, in most cases CD11b. Mouse: in most cases F4/80+; role or process: immune, antigen presentation, &amp; tissue remodelling; lineage: hematopoietic, myeloid.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macrophage</rdfs:label>
@@ -6632,11 +8022,11 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000776</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0068</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62869</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D001402</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001480</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B-lymphocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B cell</skos:prefLabel>
@@ -6671,7 +8061,6 @@ Where we have an annotation assertion
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A modified epidermal cell located in the stratum basale. They are found mostly in areas where sensory perception is acute. Merkel cells are closely associated with an expanded terminal bulb of an afferent myelinated nerve fiber.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70548</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merkel&apos;s cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merkel cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merkel cell</skos:prefLabel>
@@ -6686,13 +8075,13 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:15:50.461962</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193526</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000242"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A modified epidermal cell located in the stratum basale. They are found mostly in areas where sensory perception is acute. Merkel cells are closely associated with an expanded terminal bulb of an afferent myelinated nerve fiber.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:A08.800.550.700.500.425</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D018862</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -6713,7 +8102,6 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62879</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratinized cell of epidermis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">malpighian cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keratinocytes are reportedly CDw210a-negative, CDw210b-positive, CD281-positive, CD282-positive, CD285-positive, IL22Ra1-positive, Human keratinocytes are reportedly capable of secreting BD-2, BD-3, hCAP-18, CXCL1, CXCL5, CXCL8, elafin, MMP-3, NGAL, PDGF-A, S100A7, S100A8, and S100A9. Transcription factors: STAT3-positive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratinocyte</rdfs:label>
@@ -6724,7 +8112,6 @@ Where we have an annotation assertion
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An epidermal cell which synthesizes keratin and undergoes a characteristic change as it moves upward from the basal layers of the epidermis to the cornified (horny) layer of the skin. Successive stages of differentiation of the keratinocytes forming the epidermal layers are basal cell, spinous or prickle cell, and the granular cell.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dsd</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:A11.436.397</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D015603</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15582983</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15749908</oboInOwl:hasDbXref>
@@ -6740,7 +8127,6 @@ Where we have an annotation assertion
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A smooth muscle cell associated with the vasculature.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSMC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vascular smooth muscle cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vascular associated smooth muscle cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smooth muscle cell</skos:prefLabel>
@@ -6766,7 +8152,6 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001483</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBbt:0003679</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These cells are also reportedly CD4-negative and CD200-positive. They are also capable of producing CD40L and IFN-gamma.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuron</rdfs:label>
@@ -6776,7 +8161,6 @@ Where we have an annotation assertion
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The basic cellular unit of nervous tissue. Each neuron consists of a body, an axon, and dendrites. Their purpose is to receive, conduct, and transmit impulses in the nervous system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:A08.663</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D009474</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Neuron</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -6798,7 +8182,6 @@ Where we have an annotation assertion
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Th1 T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Th1 cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helper T cell type 1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;Th1 CD4+ T cell&apos;, but its logical definition includes additional known characteristics of T-helper 1 T cells.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-helper 1 cell</rdfs:label>
@@ -6842,9 +8225,9 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0664</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:63147</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83601</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D007694</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001697</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NK cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural killer cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural killer cell</skos:prefLabel>
@@ -6866,7 +8249,6 @@ Where we have an annotation assertion
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Undifferentiated; mitotic stem cell for other epithelial cell types; rounded or elliptical with little cytoplasm and few organelles; contain cytokeratin intermediate filament.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000939</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62516</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal cell</skos:prefLabel>
@@ -6894,7 +8276,6 @@ Where we have an annotation assertion
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0002186</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:69059</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prickle cell of epidermis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prickle cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prickle cell</skos:prefLabel>
@@ -6909,7 +8290,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:15:50.461949</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193564</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000649"/>
@@ -6932,13 +8313,12 @@ Where we have an annotation assertion
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adventitial reticular cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell of Rouget</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte of Rouget</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adventitial cell</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pericytes are CD10-positive, CD13-positive, CD31-negative, CD45-negative, CD106-positive, CD117-negative, CD140-positive, CD144-negative, CD146-positive, CD271-positive, CD325-positive, NG2-positive, RGS5-positive, SMA-positive, and desmin-positive. A subpopulation is CD248-positive. They are also capable of producing angiopoietin 1, CXCL12, TGF-beta, and VEGF-A.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -6971,11 +8351,11 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000399</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0279</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62861</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D004804</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eosinocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eosinophilic granulocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eosinophilic leucocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eosinophilic leukocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eosinophils are also CD14-negative, CD32-positive, CD44-positive, CD48-positive, CD69-positive, CD192-negative, MBP1-positive, MBP2-positive, TLR2-negative, TLR4-negative, and lineage-negative (B220, CD2, CD14, CD19, CD56, CD71, CD117, CD123, CD235a (glycophorin A), and TER119). The cytokines IL-3, IL-5, and GM-CSF are involved in their development and differentiation. Usually considered CD16-negative, CD16 is observed on eosinophilic metamyelocyte.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eosinophil</rdfs:label>
@@ -7011,12 +8391,12 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000130</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0688</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62860</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D009504</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophil leucocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophil leukocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophilic leucocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophilic leukocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophil</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophil</skos:prefLabel>
@@ -7039,11 +8419,11 @@ Where we have an annotation assertion
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A terminally differentiated, post-mitotic, antibody secreting cell of the B cell lineage with the phenotype CD138-positive, surface immunonoglobulin-negative, and MHC Class II-negative. Plasma cells are oval or round with extensive rough endoplasmic reticulum, a well-developed Golgi apparatus, and a round nucleus having a characteristic cartwheel heterochromatin pattern and are devoted to producing large amounts of immunoglobulin.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000392</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70574</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D010950</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma B cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma B-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasmacyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasmocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector B cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector B-cell</oboInOwl:hasRelatedSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma cells develop in the spleen and migrate to the bone marrow. Plasma cells are also reportedly CD5-negative, CD10-negative, CD19-positive, CD20-negative, CD21-negative, CD22-negative, CD23-negative, CD24-negative, CD25-negative, CD27-positive, CD34-negative, CD38-positive, CD40-positive, CD43-positive, CD45-positive, CD48-positive, CD53-low, CD80-negative, CD81-positive, CD86-positive, CD95-positive, CD196-negative, CD229-positive, CD270-positive, CD352-positive, CD361-positive, and IgD-negative. Transcription factors: BLIMP1-positive, IRF4-positive, PAX5-negative, SpiB-negative, Ets1-negative, and XBP1-positive.</rdfs:comment>
@@ -7079,11 +8459,11 @@ Where we have an annotation assertion
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T-lymphocyte</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004520</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:84070</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D050378</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treg</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type may express FoxP3 and CD25 and secretes IL-10 and TGF-beta.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell</rdfs:label>
@@ -7109,7 +8489,6 @@ Where we have an annotation assertion
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T-lymphocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T cell</skos:prefLabel>
@@ -7138,7 +8517,6 @@ Where we have an annotation assertion
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dermal dendritic cell is a conventional dendritic cell that is CD11b-positive, CD205-positive and CD8 alpha-negative.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004812</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Originally described in the dendritic cell ontology (DC_CL:0000019)(PMID:19243617). These cells are also CD281-positive (TLR1), CD282-positive (TLR2), CD283-positive (TLR3), CD284-positive (TLR4), CD285-positive (TLR5), CD288-positive (TLR8), and CD289-positive (TLR9).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermal dendritic cell</rdfs:label>
@@ -7154,7 +8532,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:15:50.461956</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193546</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001006"/>
@@ -7173,7 +8551,6 @@ Where we have an annotation assertion
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An innate lymphoid cell that is capable of producing the type 1 cytokine IFN-gamma, but not Th2 or Th17 cell-associated cytokines.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0001-9990-8331"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-30T20:42:44+00:00</dc:date>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group 1 innate lymphoid cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group 1 innate lymphoid cell</skos:prefLabel>
@@ -7198,7 +8575,6 @@ Where we have an annotation assertion
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ILC2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural helper cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nuocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group 2 innate lymphoid cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group 2 innate lymphoid cell</skos:prefLabel>
@@ -7222,7 +8598,6 @@ Where we have an annotation assertion
         <dc:creator rdf:resource="http://orcid.org/0000-0001-9990-8331"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-31T20:21:26+00:00</dc:date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ILC3</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group 3 innate lymphoid cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group 3 innate lymphoid cell</skos:prefLabel>
@@ -7250,7 +8625,6 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:68458</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphatic endothelial cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of lymphatic vessel</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of lymphatic vessel</skos:prefLabel>
@@ -7265,6 +8639,46 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0002153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002153">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dead keratin-filled squamous cell of the stratum corneum. This cell type lacks a nucleus.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-08-24T10:53:03Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001943</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:68650</oboInOwl:hasDbXref>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corneocyte</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corneocyte</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002153"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193544</dc:date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002153"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dead keratin-filled squamous cell of the stratum corneum. This cell type lacks a nucleus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:068340007X</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0002292 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002292">
@@ -7273,7 +8687,6 @@ Where we have an annotation assertion
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-09-13T01:40:21Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:84186</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glomus cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type I cell of carotid body</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type I cell of carotid body</skos:prefLabel>
@@ -7301,7 +8714,6 @@ Where we have an annotation assertion
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-09-20T03:07:03Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bulge keratinocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratinocyte stem cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratinocyte stem cell</skos:prefLabel>
@@ -7321,7 +8733,6 @@ Where we have an annotation assertion
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Langerhans cell that is in the epidermis and is CD45-positive, MHCII-positive, and CD11b-positive.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-11-22T03:57:57Z</oboInOwl:creation_date>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidermal Langerhans cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidermal Langerhans cell</skos:prefLabel>
@@ -7349,7 +8760,6 @@ Where we have an annotation assertion
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-02-21T02:51:22Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subcutaneous adipocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subcutaneous fat cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subcutaneous fat cell</skos:prefLabel>
@@ -7364,7 +8774,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:15:50.461946</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193553</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002521"/>
@@ -7383,7 +8793,7 @@ Where we have an annotation assertion
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-03-02T01:19:27Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001220</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0898</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D012583</oboInOwl:hasDbXref>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schwann cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schwann cell</skos:prefLabel>
@@ -7411,7 +8821,6 @@ Where we have an annotation assertion
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-03-14T12:31:49Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001255</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0935</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin fibroblast</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin fibroblast</skos:prefLabel>
@@ -7436,7 +8845,6 @@ Where we have an annotation assertion
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A myoepithelial cell that is part of the sweat gland.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67801</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myoepithelial cell of sweat gland</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myoepithelial cell of sweat gland</skos:prefLabel>
@@ -7463,7 +8871,6 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-2374</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:72144</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin melanocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">melanocyte of skin</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">melanocyte of skin</skos:prefLabel>
@@ -7501,6 +8908,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A merocrine, unbranched, unbranched, coiled, tubular gland sweat gland. In humans, distributed over almost all of the body surface, and promote cooling by evaporation of their secretion.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000008 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in mice, found only on footpads; in humans, entire body including soles and palms</obo:UBPROP_0000008>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002323</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:59154</oboInOwl:hasDbXref>
@@ -7517,6 +8925,7 @@ Where we have an annotation assertion
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eccrine gland</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">merocrine sweat gland</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000423</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#organ_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
@@ -7569,6 +8978,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The outer epithelial layer of the skin that is superficial to the dermis.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cellular, multilayered epithelium derived from the ectoderm. Zebrafish epidermis consists only of living cells unlike terrestrial vertebrates in which dead, keratinized cells are present. Le Guellec et al, 2004.[TAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The outer epithelial layer of the external integument of the body that is derived from the embryonic epiblast.[AAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relationship loss: subclass external integument structures (AAO:0000961)[AAO]</obo:UBPROP_0000002>
@@ -7601,6 +9011,7 @@ Where we have an annotation assertion
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001003</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
@@ -7618,7 +9029,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:15:50.461951</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193555</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001003"/>
@@ -7689,6 +9100,7 @@ Where we have an annotation assertion
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A holocrine gland that secretes sebum into the hair follicles, or in hairless areas into ducts.[MP].</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sebaceous glands are also found in glabrous areas of eyelids, nose, penis, labia minora and nipples, and do not always secrete into hair follices. This causes some confusion in classification. In addition some structures, such as preputial glands are sometimes called &apos;modified&apos; sebaceous glands, implying a non-subclass relationship. we follow MP and MA in keeping this class generic and creating a distinct subclass for sebaceuous glands of the skin. The FMA class may be better placed under this subclass.</obo:IAO_0000232>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any of the numerous holocrine glands in the dermis that empty into a hair follicle and produce and secrete sebum. [TFD][VHOG]</obo:UBPROP_0000001>
         <obo:UBPROP_0000003 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebaceous glands are also limited to mammals.[well established][VHOG]</obo:UBPROP_0000003>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001980</oboInOwl:hasDbXref>
@@ -7709,6 +9121,7 @@ Where we have an annotation assertion
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glandula sebaceae</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sebaceous follicle</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001821</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#organ_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
@@ -7727,7 +9140,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:16:57.441750</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:08.760090</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001821"/>
@@ -7800,6 +9213,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The deepest layer of the epidermis, which is composed of dividing stem cells and anchoring cells.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replaces damaged cells on outside of body</obo:UBPROP_0000009>
         <obo:UBPROP_0000010 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consisting of non-keratinized, viable cells, in contrast to the outer (upper) layer of epidermis made up of keratinized, anucleated, non-viable cells</obo:UBPROP_0000010>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malpighian layer</oboInOwl:hasBroadSynonym>
@@ -7835,6 +9249,7 @@ Where we have an annotation assertion
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidermis sensorial layer</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidermis stratum germinativum</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002025</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
@@ -7851,7 +9266,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:15:50.461954</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193559</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002025"/>
@@ -7863,7 +9278,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:16:48.292710</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:07.858214</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002025"/>
@@ -7934,6 +9349,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The layer of polyhedral cells in the epidermis found between the stratum granulosum and stratum basale; shrinkage and adhesion of these cells gives a spiny or prickly appearance.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has cells that produce and secrete bipolar lipids which prevent evaporation, helping to &apos;water-proof&apos; the skin. Keratinization begins in the stratum spinosum. [Wikipedia:Stratum_spinosum]</obo:UBPROP_0000009>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malpighian layer</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stratum Malpighii</oboInOwl:hasBroadSynonym>
@@ -7953,11 +9369,24 @@ Where we have an annotation assertion
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidermis prickle cell layer</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prickle cell layer</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002026</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stratum spinosum of epidermis</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stratum spinosum of epidermis</skos:prefLabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002026"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prickle cell layer of epidermis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67542</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002026"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prickle cell layer</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000435</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002026"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -7968,7 +9397,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:15:50.461964</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193548</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002026"/>
@@ -7996,18 +9425,6 @@ Where we have an annotation assertion
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0221924</owl:annotatedTarget>
         <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Stratum_Spinosum</oboInOwl:source>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002026"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prickle cell layer of epidermis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67542</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002026"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prickle cell layer</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000435</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8015,6 +9432,7 @@ Where we have an annotation assertion
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002027">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The outer layer of the epidermis, consisting of several layers of flat keratinized non-nucleated cells.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The keratinized outermost layer of the epidermis, which is periodically shed.[AAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000010 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">some oral epitehlium also has cornified layer / stratum corneum</obo:UBPROP_0000010>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horny layer</oboInOwl:hasBroadSynonym>
@@ -8037,6 +9455,7 @@ Where we have an annotation assertion
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stratum corneum epidermidis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002027</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stratum corneum of epidermis</rdfs:label>
@@ -8044,6 +9463,13 @@ Where we have an annotation assertion
         <foaf:depicted_by rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://upload.wikimedia.org/wikipedia/commons/2/20/Skinlayers.png</foaf:depicted_by>
         <foaf:depicted_by rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://upload.wikimedia.org/wikipedia/commons/e/e4/Epidermal_layers.png</foaf:depicted_by>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The outer layer of the epidermis, consisting of several layers of flat keratinized non-nucleated cells.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0-683-40008-8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MP:0001240</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
@@ -8078,13 +9504,6 @@ Where we have an annotation assertion
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Stratum_corneum</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The outer layer of the epidermis, consisting of several layers of flat keratinized non-nucleated cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0-683-40008-8</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MP:0001240</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -8111,6 +9530,7 @@ Where we have an annotation assertion
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dermis is a layer of skin between the epidermis (with which it makes up the skin) and subcutaneous tissues, and is composed of two layers, the papillary and reticular dermis[WP].</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consider adding a layer-of-skin grouping class for all skin layers</obo:IAO_0000116>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collagenous layer of the skin subjacent to the epidermis and covering the hypodermis. It contains various types of cells (e.g. fibroblasts, pigment cells, nerve, blood vessels and scales. Le Guellec et al, 2004.[TAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000003 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When approaching controversies surrounding skin evolution, we need to remember that the skin consists of two layers, an epidermis and a dermis, not a single evolving structure. (...) It is little wonder that controversies about homology exist. If we think of the epidermis, the dermis, and their interactions as an evolving unit, then their specialized products (hair, feathers, and reptilian scales) are broadly homologous.[well established][VHOG]</obo:UBPROP_0000003>
         <obo:UBPROP_0000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermal</obo:UBPROP_0000007>
@@ -8140,6 +9560,7 @@ Where we have an annotation assertion
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cutis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002067</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
@@ -8158,7 +9579,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:15:50.461925</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193551</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002067"/>
@@ -8170,7 +9591,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:16:57.441730</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:08.760129</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002067"/>
@@ -8182,7 +9603,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:16:57.441747</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:08.760132</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002067"/>
@@ -8248,6 +9669,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The layer of flattened cells containing basophilic granules of keratohyalin and lying just above the stratum spinosum (spiny layer) of the epidermis.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000361</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:32786</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70344</oboInOwl:hasDbXref>
@@ -8262,6 +9684,7 @@ Where we have an annotation assertion
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidermis granular layer</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002069</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stratum granulosum of epidermis</rdfs:label>
@@ -8277,7 +9700,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:15:50.461959</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193557</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002069"/>
@@ -8311,6 +9734,7 @@ Where we have an annotation assertion
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002072">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lowermost layer of the integumentary system in vertebrates. Types of cells that are found in the hypodermis are fibroblasts, adipose cells, and macrophages. It is derived from the mesoderm, but unlike the dermis, it is not derived from the dermatome region of the mesoderm. The hypodermis is used mainly for fat storage[WP].</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A layer separating the inner face of the dermis from the subjacent muscle cells. It is covered on both sides by a basement membrane. It contains pigment cells. Le Guellec et al, 2004.[TAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A layer separating the inner face of the dermis from the subjacent muscle cells. It is covered on both sides by a basement membrane. It contains pigment cells[FMA:70544].</obo:UBPROP_0000001>
         <obo:UBPROP_0000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypodermal</obo:UBPROP_0000007>
@@ -8336,6 +9760,7 @@ Where we have an annotation assertion
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superficial fascia</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tela subcutanea</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002072</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
@@ -8427,6 +9852,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tube-like opening in the epidermis where the hair shaft develops and into which the sebaceous glands open[GO].</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000003 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The earliest reliable record of hair is found in a fossil of the Paleocene period, in which the structure of hair cuticles is preserved. Its appearance suggests that the complicated structure of the hair follicle, closely similar to that of present-day mammals, had already appeared at this time.[well established][VHOG]</obo:UBPROP_0000003>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000554</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0432</oboInOwl:hasDbXref>
@@ -8448,6 +9874,7 @@ Where we have an annotation assertion
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">folliculus pili</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002073</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#organ_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
@@ -8467,7 +9894,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:16:12.200645</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.717879</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002073"/>
@@ -8506,6 +9933,7 @@ Where we have an annotation assertion
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002097">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The organ covering the body that consists of the dermis and epidermis.</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consider &apos;integumentary system&apos; for invertebrates</obo:IAO_0000232>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000012 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA uses the term skin to refer to what is called here: zone of skin</obo:UBPROP_0000012>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001253</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0934</oboInOwl:hasDbXref>
@@ -8532,6 +9960,7 @@ Where we have an annotation assertion
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002097</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#major_organ"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
@@ -8577,6 +10006,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A zone of skin that is mainly innervated by a single sensory nerve. A nerve field innervated by exactly one dorsal root is called a dermatome.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:80301</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:244023005</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Dermatome_(anatomy)</oboInOwl:hasDbXref>
@@ -8587,6 +10017,7 @@ Where we have an annotation assertion
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermatomic area</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peripheral nerve field</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007121</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples: V1, V2 and V3 distributions of the trigeminal nerve; the zone of skin innervated by S2</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin nerve field</rdfs:label>
@@ -8603,7 +10034,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:16:12.200624</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.717857</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007121"/>
@@ -8648,6 +10079,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The nail plate is the hard and translucent portion of the nail, composed of keratin.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000012 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in FMA, the nail is the nail plate</obo:UBPROP_0000012>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:35583</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0002708</oboInOwl:hasDbXref>
@@ -8657,6 +10089,7 @@ Where we have an annotation assertion
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lamina unguis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0008198</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nail plate</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nail plate</skos:prefLabel>
@@ -8672,7 +10105,7 @@ Where we have an annotation assertion
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11T08:15:50.461942</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-18T07:30:06.193562</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008198"/>
@@ -8702,16 +10135,19 @@ Where we have an annotation assertion
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0008974">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any exocrine gland whose cells bud their secretions off through the plasma membrane producing membrane-bound vesicles in the lumen; the apical portion of the secretory cell of the gland pinches off and enters the lumen; it loses part of its cytoplasm in their secretions; apocrine secretion is functional during hormonal stress or puberty; an example of true apocrine glands are mammary glands, responsible for secreting breast milk.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apocrine</obo:UBPROP_0000007>
         <obo:UBPROP_0000008 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mammary glands are modified apocrine glands present in both humans and mice; unlike humans, mice do not have axillary apocrine sweat glands[MGI:anna]</obo:UBPROP_0000008>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001162</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:35141</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0003040</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D001050</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:361698000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Apocrine</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true apocrine gland</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0008974</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#organ_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
@@ -8731,6 +10167,7 @@ Where we have an annotation assertion
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035549">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The part of the circulatory system that lies within the subcutaneous tissue layers close to the surface of the skin.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:225275</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superficial part of circulatory system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superficial vasculature</oboInOwl:hasExactSynonym>
@@ -8741,6 +10178,7 @@ Where we have an annotation assertion
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subcutaneous vasculature</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vasculature of skin</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0035549</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vasculature of integument</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vasculature of integument</skos:prefLabel>

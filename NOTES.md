@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|CL|2022-02-16|
-|UBERON|2022-02-21|
+|CL|2022-06-18|
+|UBERON|2022-06-30|
 
 ### ASCT+b Tables
 
@@ -38,3 +38,30 @@ Release Notes
 |Urinary_bladder|v1.0|2021-12-01|
 |Uterus|v1.0|2021-12-01|
 |Blood_vasculature|v1.1|2021-12-01|
+|Bone-Marrow|v1.2|2022-05-06|
+|Blood|v1.2|2022-05-06|
+|Brain|v1.2|2022-05-06|
+|Eye|v1.1|2022-05-06|
+|Fallopian_tube|v1.1|2022-05-06|
+|Heart|v1.2|revise for Oct 1, 2022|
+|Kidney|v1.2|2022-05-06|
+|Knee|v1.1|05-06-2022|
+|Large_intestine|v1.2|2022-05-06|
+|Liver|v1.1|2022-05-06|
+|Lung|v1.2|2022-05-06|
+|Lymph_node|v1.2|2022-05-06|
+|Lymph_vasculature|v1.1|2022-05-06|
+|Ovary|v1.1|2022-05-06|
+|Pancreas|v1.1|2022-05-06|
+|Placenta|V1.0|5/6/22|
+|Peripheral_nervous_system|v1.1|revise for Oct 1, 2022|
+|Prostate|v1.1|revise for Oct 1, 2022|
+|Skin|v1.2|2022-05-06|
+|Small_intestine|NA|revise for October 1, 2022|
+|Spleen|v1.2|5//6/2022|
+|Spinal_Cord|v1.0|2021-12-01|
+|Thymus|v1.2|2022-05-06|
+|Ureter|NA|revise for April 2023|
+|Urinary_bladder|v1.1|revise for April 2023|
+|Uterus|v1.1|May 6, 2022|
+|Blood_vasculature|v1.2|2022-05-06|

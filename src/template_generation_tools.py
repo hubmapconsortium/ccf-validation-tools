@@ -46,7 +46,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
           'validation_date_develops_from': '>A dc:date',
           'has_part': 'SC has_part some %',
           'OBO_Validated_has_part': '>A CCFH:IN_OBO',
-          'validation_date_has_part': '>A dc:date'}
+          'validation_date_has_part': '>A dc:date',
+          'located_in': 'SC located_in some %',
+          'OBO_Validated_located_in': '>A CCFH:IN_OBO',
+          'validation_date_located_in': '>A dc:date'}
 
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
   seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
@@ -57,8 +60,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   records_cl_sub = [seed_sub]
   no_valid_records = [seed_no_valid]
   if ccf_tools_df.empty:
-    return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, strict_log, 
-            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame.from_records(image_report))
+    return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, report_relationship, strict_log, 
+            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame.from_records(image_report), ConjunctiveGraph())
 
   terms = set()
   all_as = set()
@@ -76,6 +79,23 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   invalid_ct_as = set()
   terms_ct_as_start = 0
  
+  for _, r in ccf_tools_df.iterrows():
+    terms.add(r['s'])
+    terms.add(r['o'])
+
+  # ENTITY CHECK
+  no_valid_class, _ = ug.verify_relationship(terms, ug.select_class)
+
+  del_index = []
+  for t in no_valid_class:
+    logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
+    del_index.extend(ccf_tools_df[(ccf_tools_df['s'] == t) | (ccf_tools_df['o'] == t)].index)
+   
+  # Drop rows with unrecognized UBERON/CL terms 
+  ccf_tools_df = ccf_tools_df.drop(del_index)
+
+  terms = set()
+  
   # Add declarations and labels for entity
   for i, r in ccf_tools_df.iterrows():
     records.append({'ID': r['s'], 'User_label': r['user_slabel']})
@@ -212,6 +232,12 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     elif 'CL' in r['s'] and 'CL' in r['o']:
       indirect_ct.add((r['s'], r['o']))
 
+  # LOCATED IN CHECK
+  valid_ct_as_locatedin, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_located_in)
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_ct_as_locatedin, 'located_in')
+
+  terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_locatedin)
+
   # CONNECTED TO CHECK
   valid_conn_to, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_ct)
   valid_ct_as_conn_to, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_ct)
@@ -259,19 +285,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   sec_graph = get_suggestion_graph(sec_graph, ug, all_as, terms_as_d, all_ct, terms_ct, terms_ct_d)
 
   terms_set = zip(terms_ct + terms_s, terms_as + terms_o)
-
-  # ENTITY CHECK
-  no_valid_class_s = ug.query_uberon(" ".join(terms_s), ug.select_class)
-  no_valid_class_ct = ug.query_uberon(" ".join(terms_ct), ug.select_class)
-
-  for t in no_valid_class_s.union(no_valid_class_ct):
-    logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
-
-  no_valid_class_o = ug.query_uberon(" ".join(terms_o), ug.select_class)
-  no_valid_class_as = ug.query_uberon(" ".join(terms_as), ug.select_class)
-
-  for t in no_valid_class_o.union(no_valid_class_as):
-    logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
 
   # NOT VALID LOG
   no_valid_relation = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(terms_set)]
@@ -356,7 +369,7 @@ def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
     return pd.DataFrame.from_records(records)
 
 def generate_vasculature_template(ccf_tools_df):
-  seed = {'SUBJECT': 'ID', 'OBJECT': "SC 'connected_to' some %", 'in_subset': '>A in_subset'} 
+  seed = {'SUBJECT': 'ID', 'OBJECT': "SC 'connected_to' some %", 'in_subset': 'AI in_subset'} 
   records = [seed]
   ug = UberonGraph()
 
@@ -380,4 +393,7 @@ def generate_vasculature_template(ccf_tools_df):
     rec['in_subset'] = 'human_reference_atlas'
     records.append(rec)
     
-  return pd.DataFrame.from_records(records)
+  return pd.DataFrame.from_records(records).sort_values(by=['SUBJECT'])
+
+
+
