@@ -84,7 +84,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     terms.add(r['o'])
 
   # ENTITY CHECK
-  no_valid_class, _ = ug.verify_relationship(terms, ug.select_class)
+  no_valid_class = ug.query_uberon(" ".join(terms), ug.select_class)
 
   del_index = []
   for t in no_valid_class:
