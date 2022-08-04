@@ -54,6 +54,9 @@ all: last_official_release official_release
 					 merge --input ../owl/$*_sec.owl \
 					 reduce --reasoner ELK -o ../owl/$*_extended.owl \
 					 merge --input ../owl/$*_no-valid.owl \
+					 remove --select annotation-properties \
+  								--exclude-term rdfs:label \
+  								--exclude-term IAO:0000115 \
 					 convert --format json -o $*.json && \
 		${ROBOT} convert --input ../owl/$*_sec.owl -o $*_sec.json && \
 		python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green" && \
