@@ -18,8 +18,12 @@ RUN apt-get update && \
         curl \
         jq \
         graphviz \
-        nodejs \
         npm
+
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y --no-install-recommends \
+        nodejs
 
 ###### robot ######
 RUN curl -L $ROBOT_JAR -o /tools/robot.jar &&\
@@ -39,3 +43,8 @@ RUN cd /tools \
 && cd ontobio \
 && pip install -e .[dev,test]
 ENV PATH "/tools/ontobio/bin:$PATH"
+
+#### install python dependencies ####
+COPY requirements.txt /tools/requirements.txt
+RUN python -m pip install --upgrade pip &&\
+    pip install -r requirements.txt

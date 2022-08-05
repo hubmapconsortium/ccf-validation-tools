@@ -45,6 +45,7 @@ all: last_official_release official_release
 
 ../owl/%_ASCTB_subset.json: ../owl/ub_%_ASCTB_subset.owl ../owl/cl_%_ASCTB_subset.owl
 	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge $(patsubst %, -i %, $^) \
+					 annotate --ontology-iri http://purl.org/ccf/latest/$*_ASCTB_subset.owl \
 					 convert --format json -o $@; fi
 
 .PRECIOUS: ../owl/%_ASCTB_subset.json
@@ -54,13 +55,11 @@ all: last_official_release official_release
 					 merge --input ../owl/$*_sec.owl \
 					 reduce --reasoner ELK -o ../owl/$*_extended.owl \
 					 merge --input ../owl/$*_no-valid.owl \
-					 remove --select annotation-properties \
-  								--exclude-term rdfs:label \
-  								--exclude-term IAO:0000115 \
+					 annotate --ontology-iri http://purl.org/ccf/latest/ccf_$*_classes.owl \
 					 convert --format json -o $*.json && \
-		${ROBOT} convert --input ../owl/$*_sec.owl -o $*_sec.json && \
+		${ROBOT} annotate --input ../owl/$*_sec.owl --ontology-iri http://purl.org/ccf/latest/$*_sec.owl convert -o $*_sec.json && \
 		python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green" && \
-		og2dot.js -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
+		og2dot -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png && \
 		dot $*.dot -Tpdf -Grankdir=LR > ../graphs/ccf_$*_graph.pdf && \
 		rm $*.json && \
@@ -70,8 +69,9 @@ all: last_official_release official_release
 
 ../owl/last_official_ASCTB_release/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl
 	if [ $(OLD_VERSION) = True ]; then ${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
+					 annotate --ontology-iri http://purl.org/ccf/latest_official_ASCTB_release/ccf_$*_classes.owl \
 					 convert --format json -o $*.json && \
-		og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot &&\
+		og2dot -s ../style/ubergraph-style.json $*.json > $*.dot &&\
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.png && \
 		dot $*.dot -Tpdf -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.pdf && \
 		rm $*.json && \
