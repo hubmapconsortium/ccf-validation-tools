@@ -20,11 +20,6 @@ RUN apt-get update && \
         graphviz \
         npm
 
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
-
-RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y --no-install-recommends \
-        nodejs
-
 ###### robot ######
 RUN curl -L $ROBOT_JAR -o /tools/robot.jar &&\
     curl -L https://raw.githubusercontent.com/ontodev/robot/$ROBOT/bin/robot -o /tools/robot && \
