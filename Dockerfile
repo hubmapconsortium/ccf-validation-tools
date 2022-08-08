@@ -16,9 +16,12 @@ RUN apt-get update && \
         make \
         unzip \
         curl \
-        jq \
-        graphviz \
-        npm
+        jq
+
+###### nodejs #####
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y nodejs \
+      graphviz
 
 ###### robot ######
 RUN curl -L $ROBOT_JAR -o /tools/robot.jar &&\
