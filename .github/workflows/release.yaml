@@ -26,6 +26,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: verify and build
         run: mkdir -p resources/ASCT-b_tables && cd src && make last_official_release official_release
+      - name: Define repository's owner
+        run: chown -R root /__w/ccf-validation-tools/ccf-validation-tools
       - name: Commit report
         run: |
           git config --global user.name 'Anita Caron'
