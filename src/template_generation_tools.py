@@ -177,7 +177,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   # ADD RESULTS TO INDIRECT LOG
   for _, r in rows_nvso.iterrows():
-    valid_error_log = valid_error_log.append(r)
+    valid_error_log = pd.concat([valid_error_log, r])
 
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       indirect_as.add((r['s'], r['o']))
@@ -201,7 +201,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   # ADD RESULTS TO INDIRECT LOG
   for _, r in rows_nvponr.iterrows():
-    valid_error_log = valid_error_log.append(r)
+    valid_error_log = pd.concat([valid_error_log, r])
 
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       indirect_as.add((r['s'], r['o']))
@@ -225,7 +225,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   # ADD RESULTS TO INDIRECT LOG
   for _, r in rows_nvonr.iterrows():
-    valid_error_log = valid_error_log.append(r)
+    valid_error_log = pd.concat([valid_error_log, r])
 
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       indirect_as.add((r['s'], r['o']))
@@ -250,7 +250,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   no_valid_ct_as = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
   for _, r in no_valid_ct_as.iterrows():
-    strict_log = strict_log.append(r)
+    strict_log = pd.concat([strict_log,r])
 
   # DEVELOPS FROM CHECK
   valid_dev_from, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_develops_from)
@@ -272,7 +272,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   has_part_report = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
   for _, r in has_part_report.iterrows():
-    has_part_log = has_part_log.append(r)
+    has_part_log = pd.concat([has_part_log,r])
 
   terms_ct, terms_as = split_terms(terms_ct_as)
 
@@ -290,7 +290,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   no_valid_relation = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(terms_set)]
 
   for _, r in no_valid_relation.iterrows():
-    error_log = error_log.append(r)
+    error_log = pd.concat([error_log,r])
 
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       invalid_as.add((r['s'], r['o']))

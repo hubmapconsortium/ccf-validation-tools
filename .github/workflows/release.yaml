@@ -15,7 +15,7 @@ jobs:
   report-release:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    container: anitacaron/ccf-tools-dep
+    container: anitacaron/ccf-tools-dep:v1.0.4
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -24,12 +24,10 @@ jobs:
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
       - name: verify and build
         run: mkdir -p resources/ASCT-b_tables && cd src && make last_official_release official_release
+      - name: Define repository's owner
+        run: chown -R root /__w/ccf-validation-tools/ccf-validation-tools
       - name: Commit report
         run: |
           git config --global user.name 'Anita Caron'
