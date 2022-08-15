@@ -242,12 +242,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_locatedin)
 
   # CONNECTED TO CHECK
-  valid_conn_to = set()
-  if len(terms_pairs) > 90:
-    for chunk in chunks(list(terms_pairs), 90):
-      valid_conn_to = valid_conn_to.union(ug.query_uberon(" ".join(chunk), ug.select_ct))
-  else:
-    valid_conn_to = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct)
+  valid_conn_to, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_ct)
+  valid_ct_as_conn_to, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_ct)
+
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_conn_to.union(valid_ct_as_conn_to), 'connected_to')
 
