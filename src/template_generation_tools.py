@@ -61,7 +61,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   no_valid_records = [seed_no_valid]
   if ccf_tools_df.empty:
     return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, report_relationship, strict_log, 
-            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame.from_records(image_report), ConjunctiveGraph())
+            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame(columns=['term', 'image_url']), ConjunctiveGraph())
 
   terms = set()
   all_as = set()
@@ -154,11 +154,14 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       ccf_tools_df.loc[(ccf_tools_df['s'] == term), 'slabel'] = label
 
   # CREATE IMAGE REPORT
-  for term, image in terms_images:
-    rep_im = dict()
-    rep_im['term'] = term
-    rep_im['image_url'] = image
-    image_report.append(rep_im)
+  if len(terms_images) > 0:
+    for term, image in terms_images:
+      rep_im = dict()
+      rep_im['term'] = term
+      rep_im['image_url'] = image
+      image_report.append(rep_im)
+  else:
+    image_report.append({'term': '', 'image_url': ''})
       
   # SUBCLASS CHECK
   valid_subclass, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_subclass)
@@ -239,8 +242,12 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_locatedin)
 
   # CONNECTED TO CHECK
-  valid_conn_to, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_ct)
-  valid_ct_as_conn_to, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_ct)
+  valid_conn_to = set()
+  if len(terms_pairs) > 90:
+    for chunk in chunks(list(terms_pairs), 90):
+      valid_conn_to = valid_conn_to.union(ug.query_uberon(" ".join(chunk), ug.select_ct))
+  else:
+    valid_conn_to = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_ct)
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_conn_to.union(valid_ct_as_conn_to), 'connected_to')
 
@@ -252,12 +259,22 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   strict_log = pd.concat([strict_log,no_valid_ct_as])
 
   # DEVELOPS FROM CHECK
-  valid_dev_from, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_develops_from)
+  valid_dev_from = set()
+  if len(terms_pairs) > 90:
+    for chunk in chunks(list(terms_pairs), 90):
+      valid_dev_from = valid_dev_from.union(ug.query_uberon(" ".join(chunk), ug.select_develops_from))
+  else:
+    valid_dev_from = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_develops_from)
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_dev_from, 'develops_from')
 
   # AS-CT HAS PART
-  valid_has_part, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_has_part)
+  valid_has_part = set()
+  if len(terms_ct_as) > 90:
+    for chunk in chunks(list(terms_ct_as), 90):
+      valid_has_part = valid_has_part.union(ug.query_uberon(" ".join(chunk), ug.select_has_part))
+  else:
+    valid_has_part = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_has_part)
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_has_part, 'has_part', True)
 
