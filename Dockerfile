@@ -3,7 +3,7 @@ LABEL maintainer="anitac@ebi.ac.uk"
 
 WORKDIR /tools
 
-ENV ROBOT v1.8.2
+ENV ROBOT v1.9.0
 ARG ROBOT_JAR=https://github.com/ontodev/robot/releases/download/$ROBOT/robot.jar
 ENV ROBOT_JAR ${ROBOT_JAR}
 
@@ -16,10 +16,12 @@ RUN apt-get update && \
         make \
         unzip \
         curl \
-        jq \
-        graphviz \
-        nodejs \
-        npm
+        jq
+
+###### nodejs #####
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y nodejs \
+      graphviz
 
 ###### robot ######
 RUN curl -L $ROBOT_JAR -o /tools/robot.jar &&\
@@ -30,12 +32,8 @@ RUN curl -L $ROBOT_JAR -o /tools/robot.jar &&\
 ENV PATH "/tools/:$PATH"
 
 ###### obographviz #####
-RUN cd /tools \
-&& git clone 'https://github.com/cmungall/obographviz.git' \
-&& cd obographviz \
-&& git checkout b0d8f64517d4ae0085072866aaadb7602f41acf7 \
-&& make install
-ENV PATH "/tools/obographviz/bin:$PATH"
+RUN npm install obographviz && \
+    ln -s /tools/node_modules/obographviz/bin/og2dot.js /tools/og2dot.js
 
 ##### ontobio ######
 RUN cd /tools \
@@ -43,3 +41,8 @@ RUN cd /tools \
 && cd ontobio \
 && pip install -e .[dev,test]
 ENV PATH "/tools/ontobio/bin:$PATH"
+
+#### install python dependencies ####
+COPY requirements.txt /tools/requirements.txt
+RUN python -m pip install --upgrade pip &&\
+    pip install -r requirements.txt
