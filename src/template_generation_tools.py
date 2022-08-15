@@ -202,9 +202,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   rows_nvso = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
 
-  for _, r in rows_nvso.iterrows():
-    valid_error_log = pd.concat([valid_error_log, r])
+  valid_error_log = pd.concat([valid_error_log, rows_nvso])
 
+  for _, r in rows_nvso.iterrows():
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       indirect_as.add((r['s'], r['o']))
     elif 'CL' in r['s'] and 'CL' in r['o']:
@@ -255,9 +255,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   rows_nvponr = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
 
-  for _, r in rows_nvponr.iterrows():
-    valid_error_log = pd.concat([valid_error_log, r])
+  valid_error_log = pd.concat([valid_error_log, rows_nvponr])
 
+  for _, r in rows_nvponr.iterrows():
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       indirect_as.add((r['s'], r['o']))
     elif 'CL' in r['s'] and 'CL' in r['o']:
@@ -305,9 +305,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   rows_nvonr = ccf_tools_df[ccf_tools_df['s'].isin(terms_s) & ccf_tools_df['o'].isin(terms_o)]
 
-  for _, r in rows_nvonr.iterrows():
-    valid_error_log = pd.concat([valid_error_log, r])
+  valid_error_log = pd.concat([valid_error_log, rows_nvonr])
 
+  for _, r in rows_nvonr.iterrows():
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       indirect_as.add((r['s'], r['o']))
     elif 'CL' in r['s'] and 'CL' in r['o']:
@@ -376,8 +376,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   no_valid_ct_as = ccf_tools_df[ccf_tools_df['s'].isin(terms_ct) & ccf_tools_df['o'].isin(terms_as)]
 
-  for _, r in no_valid_ct_as.iterrows():
-    strict_log = pd.concat([strict_log,r])
+  strict_log = pd.concat([strict_log,no_valid_ct_as])
 
   # DEVELOPS FROM CHECK
   valid_dev_from = set()
@@ -440,8 +439,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   has_part_report = ccf_tools_df[ccf_tools_df['s'].isin(terms_ct) & ccf_tools_df['o'].isin(terms_as)]
 
-  for _, r in has_part_report.iterrows():
-    has_part_log = pd.concat([has_part_log,r])
+  has_part_log = pd.concat([has_part_log,has_part_report])
 
   terms_ct, terms_as = split_terms(terms_ct_as)
 
@@ -498,9 +496,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   no_valid_relation = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(terms_set)]
 
-  for _, r in no_valid_relation.iterrows():
-    error_log = pd.concat([error_log,r])
+  error_log = pd.concat([error_log,no_valid_relation])
 
+  for _, r in no_valid_relation.iterrows():
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       invalid_as.add((r['s'], r['o']))
       no_v_rec = dict()
@@ -558,8 +556,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   else:
     terms = "\n".join(terms)
     annotations = ug.construct_annotation(terms)
-  return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, annotations, valid_error_log, report_relationship, strict_log, 
-          has_part_report, pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report), sec_graph)
+  return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log.sort_values('s'), annotations, valid_error_log.sort_values('s'), report_relationship, strict_log.sort_values('s'), 
+          has_part_report.sort_values('s'), pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report).sort_values('term'), sec_graph)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
