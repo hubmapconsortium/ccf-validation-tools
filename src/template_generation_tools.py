@@ -170,9 +170,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_subclass.union(valid_ct_as_subclass), 'isa')
 
   # INDIRECT SUBCLASS CHECK
-  terms_valid_subclass = transform_to_str(valid_subclass)
-
-  valid_subclass_onto = ug.query_uberon(" ".join(list(terms_valid_subclass)), ug.select_subclass_ontology)
+  valid_subclass_onto, _ = ug.verify_relationship(transform_to_str(valid_subclass), ug.select_subclass_ontology)
 
   terms_s, terms_o = split_terms(transform_to_str(valid_subclass - valid_subclass_onto))
 
@@ -218,9 +216,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_overlaps.union(valid_ct_as_overlaps), 'overlaps')
   
   # INDIRECT OVERLAPS CHECK
-  terms_valid_overlaps = transform_to_str(valid_overlaps)
-
-  valid_o_nr = ug.query_uberon(" ".join(list(terms_valid_overlaps)), ug.select_overlaps_nonredundant)
+  valid_o_nr, _ = ug.verify_relationship(transform_to_str(valid_overlaps), ug.select_overlaps_nonredundant)
 
   terms_s, terms_o = split_terms(transform_to_str(valid_overlaps - valid_o_nr))
 
@@ -245,7 +241,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   valid_conn_to, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_ct)
   valid_ct_as_conn_to, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_ct)
 
-
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_conn_to.union(valid_ct_as_conn_to), 'connected_to')
 
   # STRICT CT-AS REPORT
@@ -256,28 +251,15 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   strict_log = pd.concat([strict_log,no_valid_ct_as])
 
   # DEVELOPS FROM CHECK
-  valid_dev_from = set()
-  if len(terms_pairs) > 90:
-    for chunk in chunks(list(terms_pairs), 90):
-      valid_dev_from = valid_dev_from.union(ug.query_uberon(" ".join(chunk), ug.select_develops_from))
-  else:
-    valid_dev_from = ug.query_uberon(" ".join(list(terms_pairs)), ug.select_develops_from)
-
+  valid_dev_from, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_develops_from)
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_dev_from, 'develops_from')
 
   # AS-CT HAS PART
-  valid_has_part = set()
-  if len(terms_ct_as) > 90:
-    for chunk in chunks(list(terms_ct_as), 90):
-      valid_has_part = valid_has_part.union(ug.query_uberon(" ".join(chunk), ug.select_has_part))
-  else:
-    valid_has_part = ug.query_uberon(" ".join(list(terms_ct_as)), ug.select_has_part)
-
+  valid_has_part, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_has_part)
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_has_part, 'has_part', True)
 
   # CT-AS SUBCLASS PART OF
   valid_subclass_ct_as_po, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_subclass_po)
-
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_subclass_ct_as_po, 'has_part', True)
 
   terms_s, terms_o = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
@@ -286,7 +268,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   has_part_log = pd.concat([has_part_log,has_part_report])
 
-  terms_ct, terms_as = split_terms(terms_ct_as)
+  terms_ct, terms_as = split_terms(terms_ct_as - transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
 
   terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_dev_from))
 
