@@ -1,4 +1,5 @@
 from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
+from rdflib.graph import ConjunctiveGraph
 from ccf_tools import chunks, transform_to_str
 
 class UberonGraph():
@@ -355,3 +356,60 @@ class UberonGraph():
       non_valid_relationship = terms_pairs - transform_to_str(valid_relationship)
 
       return valid_relationship, non_valid_relationship
+
+    def get_suggestion_graph(self, all_as, terms_as_d, all_ct, terms_ct, terms_ct_d):
+      sec_graph = ConjunctiveGraph()
+      if len(all_as) > 30:
+        for chunk_all in chunks(list(all_as), 30):
+          if len(terms_as_d) > 30:
+            for chunk in chunks(list(terms_as_d), 30):
+              sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="rdfs:subClassOf")
+              sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="part_of:")
+              sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="connected_to:")
+          else:
+            sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(chunk_all), property="rdfs:subClassOf")
+            sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(chunk_all), property="part_of:")
+            sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(chunk_all), property="connected_to:")
+
+          if len(terms_ct) > 30:
+            for chunk in chunks(list(terms_ct), 30):
+              sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="part_of:")
+          else:
+            sec_graph += self.construct_relation(subject="\n".join(terms_ct), objects="\n".join(chunk_all), property="part_of:")
+      else:
+        if len(terms_as_d) > 30:
+          for chunk in chunks(list(terms_as_d), 30):
+            sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
+            sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
+            sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="connected_to:")
+        else:
+          sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
+          sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(list(all_as)), property="part_of:")
+          sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(list(all_as)), property="connected_to:")
+        
+        if len(terms_ct) > 30:
+          for chunk in chunks(list(terms_ct), 30):
+            sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
+        else:
+          sec_graph += self.construct_relation(subject="\n".join(terms_ct), objects="\n".join(list(all_as)), property="part_of:")
+        
+
+      if len(terms_ct_d) > 20:
+        for chunk in chunks(list(terms_ct_d), 30):
+          sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
+      else:
+        sec_graph += self.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
+
+      return sec_graph
+
+    def get_annotations(self, terms):
+      annotations = ConjunctiveGraph()
+      terms = list(terms)
+      if len(terms) > 30:
+        for chunk in chunks(terms, 30):
+          annotations += self.construct_annotation("\n".join(chunk))
+      else:
+        terms = "\n".join(terms)
+        annotations = self.construct_annotation(terms)
+
+      return annotations

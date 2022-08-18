@@ -1,7 +1,7 @@
 import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import chunks, split_terms, transform_to_str, get_suggestion_graph, add_rows
+from ccf_tools import chunks, split_terms, transform_to_str, add_rows
 import logging
 
 logger = logging.getLogger('ASCT-b Tables Log')
@@ -275,8 +275,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   terms_as_d = set(t for t in terms_s if "UBERON" in t)
   terms_ct_d = set(t for t in terms_s if "CL" in t)
 
-  sec_graph = ConjunctiveGraph()
-  sec_graph = get_suggestion_graph(sec_graph, ug, all_as, terms_as_d, all_ct, terms_ct, terms_ct_d)
+  sec_graph = ug.get_suggestion_graph(all_as, terms_as_d, all_ct, terms_ct, terms_ct_d)
 
   terms_set = zip(terms_ct + terms_s, terms_as + terms_o)
 
@@ -336,14 +335,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   }
 
   # ANNOTATION 
-  annotations = ConjunctiveGraph()
-  terms = list(terms)
-  if len(terms) > 30:
-    for chunk in chunks(terms, 30):
-      annotations += ug.construct_annotation("\n".join(chunk))
-  else:
-    terms = "\n".join(terms)
-    annotations = ug.construct_annotation(terms)
+  annotations = ug.get_annotations(terms)
+  
 
   return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log.sort_values('s'), annotations, valid_error_log.sort_values('s'), report_relationship, strict_log.sort_values('s'), 
           has_part_report.sort_values('s'), pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report).sort_values('term'), sec_graph)
