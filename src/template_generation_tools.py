@@ -94,7 +94,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   del_index = []
   for t in no_valid_class:
-    logger.warning(f"Unrecognised UBERON/CL entity '{t}'")
+    logger.warning(f"Unrecognised UBERON/CL/PCL entity '{t}'")
     del_index.extend(ccf_tools_df[(ccf_tools_df['s'] == t) | (ccf_tools_df['o'] == t)].index)
    
   # Drop rows with unrecognized UBERON/CL terms 
@@ -116,7 +116,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
     if 'CL' in r['o']:
       records_cl_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
 
-    if 'CL' in r['s'] and 'UBERON' in r['o']:
+    if ('CL' in r['s'] or 'PCL' in r['s']) and 'UBERON' in r['o']:
       terms_ct_as.add(f"({r['s']} {r['o']})")
       all_ct.add(r['s'])
       all_as.add(r['o'])
@@ -125,7 +125,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       terms_pairs.add(f"({r['s']} {r['o']})")
       all_as.add(r['s'])
       all_as.add(r['o'])
-    elif 'CL' in r['s'] and 'CL' in r['o']:
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
       relation_ct.add(f"({r['s']} {r['o']})")
       terms_pairs.add(f"({r['s']} {r['o']})")
       all_ct.add(r['s'])
@@ -192,7 +192,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
     if 'UBERON' in s and 'UBERON' in o:
       valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
+    elif ('CL' in s or 'PCL' in s) and ('CL' in o or 'PCL' in o):
       valid_ct.add((s,o))
   
 
@@ -210,7 +210,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for _, r in rows_nvso.iterrows():
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       indirect_as.add((r['s'], r['o']))
-    elif 'CL' in r['s'] and 'CL' in r['o']:
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
       indirect_ct.add((r['s'], r['o']))
   
   terms_pairs = terms_pairs - terms_valid_subclass
@@ -241,7 +241,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
     if 'UBERON' in s and 'UBERON' in o:
       valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
+    elif ('CL' in s or 'PCL' in s) and ('CL' in o or 'PCL' in o):
       valid_ct.add((s,o))
 
   # INDIRECT PART OF CHECK
@@ -263,7 +263,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for _, r in rows_nvponr.iterrows():
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       indirect_as.add((r['s'], r['o']))
-    elif 'CL' in r['s'] and 'CL' in r['o']:
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
       indirect_ct.add((r['s'], r['o']))
 
   terms_pairs = terms_pairs - terms_valid_po
@@ -296,7 +296,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
     if 'UBERON' in s and 'UBERON' in o:
       valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
+    elif ('CL' in s or 'PCL' in s) and ('CL' in o or 'PCL' in o):
       valid_ct.add((s,o))
   
   # INDIRECT OVERLAPS CHECK
@@ -313,7 +313,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for _, r in rows_nvonr.iterrows():
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       indirect_as.add((r['s'], r['o']))
-    elif 'CL' in r['s'] and 'CL' in r['o']:
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
       indirect_ct.add((r['s'], r['o']))
 
   terms_pairs = terms_pairs - transform_to_str(valid_overlaps)
@@ -338,7 +338,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
     if 'UBERON' in s and 'UBERON' in o:
       valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
+    elif ('CL' in s or 'PCL' in s) and ('CL' in o or 'PCL' in o):
       valid_ct.add((s,o))
 
   terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_locatedin)
@@ -368,7 +368,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
     if 'UBERON' in s and 'UBERON' in o:
       valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
+    elif ('CL' in s or 'PCL' in s) and ('CL' in o or 'PCL' in o):
       valid_ct.add((s,o))
 
   terms_pairs = terms_pairs - transform_to_str(valid_conn_to)
@@ -399,7 +399,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
     if 'UBERON' in s and 'UBERON' in o:
       valid_as.add((s,o))
-    elif 'CL' in s and 'CL' in o:
+    elif ('CL' in s or 'PCL' in s) and ('CL' in o or 'PCL' in o):
       valid_ct.add((s,o))
 
   # AS-CT HAS PART
@@ -508,13 +508,13 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       no_v_rec['ID'] = r['s']
       no_v_rec['ccf_part_of'] = r['o']
       no_valid_records.append(no_v_rec)
-    elif 'CL' in r['s'] and 'CL' in r['o']:
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
       invalid_ct.add((r['s'], r['o']))
       no_v_rec = dict()
       no_v_rec['ID'] = r['s']
       no_v_rec['ccf_part_of'] = r['o']
       no_valid_records.append(no_v_rec)
-    elif 'CL' in r['s'] and 'UBERON' in r['o']:
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and 'UBERON' in r['o']:
       invalid_ct_as.add((r['s'], r['o']))
       no_v_rec = dict()
       no_v_rec['ID'] = r['s']
