@@ -111,9 +111,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       records_ub_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
     if 'UBERON' in r['o']:
       records_ub_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
-    if 'CL' in r['s']:
+    if 'CL' in r['s'] and not 'PCL' in r['s']:
       records_cl_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
-    if 'CL' in r['o']:
+    if 'CL' in r['o'] and not 'PCL' in r['o']:
       records_cl_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
 
     if ('CL' in r['s'] or 'PCL' in r['s']) and 'UBERON' in r['o']:
