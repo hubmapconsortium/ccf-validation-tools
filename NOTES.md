@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2022-05-17|
-|CL|2022-02-16|
+|UBERON|2022-06-30|
+|CL|2022-06-18|
 
 ### ASCT+b Tables
 
@@ -55,13 +55,13 @@ Release Notes
 |Pancreas|v1.1|2022-05-06|
 |Placenta|V1.0|5/6/22|
 |Peripheral_nervous_system|v1.1|revise for Oct 1, 2022|
-|Prostate|NA|revise for Oct 1, 2022|
+|Prostate|v1.1|revise for Oct 1, 2022|
 |Skin|v1.2|2022-05-06|
 |Small_intestine|NA|revise for October 1, 2022|
 |Spleen|v1.2|5//6/2022|
 |Spinal_Cord|v1.0|2021-12-01|
 |Thymus|v1.2|2022-05-06|
-|Ureter|NA|NA|
-|Urinary_bladder|NA|NA|
+|Ureter|NA|revise for April 2023|
+|Urinary_bladder|v1.1|revise for April 2023|
 |Uterus|v1.1|May 6, 2022|
 |Blood_vasculature|v1.2|2022-05-06|

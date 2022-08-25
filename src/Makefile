@@ -23,7 +23,7 @@ all: last_official_release official_release
 	python download_resource.py $* $@ $(OLD_VERSION)
 
 ../owl/%_annotations.owl ../owl/%_sec.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv: ../resources/ASCT-b_tables/%.json
-	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION) 2> ../logs/error_class_$*.log
+	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION) 2> ../logs/error_class_$*.log.tmp && cat ../logs/error_class_$*.log.tmp | uniq | sort > ../logs/error_class_$*.log && rm ../logs/error_class_$*.log.tmp
 
 ../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv
 	${ROBOT} template --add-prefix "CCFH: http://ccf_tools_helpers/class_helper.owl#" \
@@ -46,6 +46,7 @@ all: last_official_release official_release
 
 ../owl/%_ASCTB_subset.json: ../owl/ub_%_ASCTB_subset.owl ../owl/cl_%_ASCTB_subset.owl
 	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge $(patsubst %, -i %, $^) \
+					 annotate --ontology-iri http://purl.org/ccf/latest/$*_ASCTB_subset.owl \
 					 convert --format json -o $@; fi
 
 .PRECIOUS: ../owl/%_ASCTB_subset.json
@@ -55,8 +56,9 @@ all: last_official_release official_release
 					 merge --input ../owl/$*_sec.owl \
 					 reduce --reasoner ELK -o ../owl/$*_extended.owl \
 					 merge --input ../owl/$*_no-valid.owl \
+					 annotate --ontology-iri http://purl.org/ccf/latest/ccf_$*_classes.owl \
 					 convert --format json -o $*.json && \
-		${ROBOT} convert --input ../owl/$*_sec.owl -o $*_sec.json && \
+		${ROBOT} annotate --input ../owl/$*_sec.owl --ontology-iri http://purl.org/ccf/latest/$*_sec.owl convert -o $*_sec.json && \
 		python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green" && \
 		og2dot -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png && \
@@ -68,6 +70,7 @@ all: last_official_release official_release
 
 ../owl/last_official_ASCTB_release/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl
 	if [ $(OLD_VERSION) = True ]; then ${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
+					 annotate --ontology-iri http://purl.org/ccf/latest_official_ASCTB_release/ccf_$*_classes.owl \
 					 convert --format json -o $*.json && \
 		og2dot -s ../style/ubergraph-style.json $*.json > $*.dot &&\
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.png && \
