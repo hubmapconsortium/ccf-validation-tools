@@ -1,9 +1,9 @@
 import pandas as pd
-import rdflib
 import re
 import logging
 import sys
 import json
+from datetime import datetime
 
 class DuplicateFilter(logging.Filter):
     def filter(self, record):
@@ -209,3 +209,22 @@ def split_terms(list):
       terms_o.append(o[:-1])
 
     return terms_s, terms_o
+
+def add_rows(records, valid_as, valid_ct, pairs, relation, inverse=False):
+  for s, o in pairs:
+    rec = dict()
+    if inverse:
+      rec['ID'] = o
+      rec[relation] = s
+    else:
+      rec['ID'] = s
+      rec[relation] = o
+    rec['OBO_Validated_' + relation] = True
+    rec['validation_date_' + relation] = datetime.now().isoformat()
+    records.append(rec)
+
+    if 'UBERON' in s and 'UBERON' in o:
+      valid_as.add((s,o))
+    elif 'CL' in s and 'CL' in o:
+      valid_ct.add((s,o))
+  return records, valid_as, valid_ct
