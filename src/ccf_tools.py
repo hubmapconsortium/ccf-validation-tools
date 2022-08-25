@@ -34,13 +34,13 @@ def parse_asctb(path):
     where each pair of adjacent columns => a subject-object pair for testing"""
 
     def is_valid_id(content):
-        if re.match("(CL|UBERON)\:[0-9]+", content['id']):
+        if re.match("(CL|UBERON|PCL)\:[0-9]+", content['id']):
             return content
         else:
             logger.warning(f"No valid ID provided for '{content['id']}', label: {content['name']}, user_label: {content['rdfs_label']}")
             return False
     def check_id(id):
-      return re.match("(CL|UBERON)\:[0-9]+", id)
+      return re.match("(CL|UBERON|PCL)\:[0-9]+", id)
 
     asct_b_tab = json.load(open(path))
     as_invalid_terms = set()

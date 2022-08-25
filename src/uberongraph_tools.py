@@ -9,6 +9,7 @@ class UberonGraph():
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
           FROM <http://reasoner.renci.org/redundant>
@@ -24,6 +25,7 @@ class UberonGraph():
           PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
           FROM <http://reasoner.renci.org/redundant>
@@ -38,6 +40,7 @@ class UberonGraph():
           PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology/closure>
           { 
@@ -52,6 +55,7 @@ class UberonGraph():
           PREFIX owl: <http://www.w3.org/2002/07/owl#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject
           FROM <http://reasoner.renci.org/ontology>
           { 
@@ -65,6 +69,7 @@ class UberonGraph():
           PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
           FROM <http://reasoner.renci.org/redundant> 
@@ -80,6 +85,7 @@ class UberonGraph():
           PREFIX owl: <http://www.w3.org/2002/07/owl#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object 
           {
             VALUES ?subject {
@@ -94,6 +100,7 @@ class UberonGraph():
           PREFIX owl: <http://www.w3.org/2002/07/owl#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object 
           FROM <http://reasoner.renci.org/redundant> 
           {
@@ -108,6 +115,7 @@ class UberonGraph():
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/nonredundant>
           { 
@@ -122,6 +130,7 @@ class UberonGraph():
           PREFIX overlaps: <http://purl.obolibrary.org/obo/RO_0002131> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/nonredundant>
           { 
@@ -136,6 +145,7 @@ class UberonGraph():
           PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
           { 
@@ -151,6 +161,7 @@ class UberonGraph():
           PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
@@ -168,6 +179,7 @@ class UberonGraph():
           PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           PREFIX has_part: <http://purl.obolibrary.org/obo/BFO_0000051>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
@@ -184,6 +196,7 @@ class UberonGraph():
           PREFIX foaf: <http://xmlns.com/foaf/0.1/>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
           { 
             VALUES ?subject {
@@ -197,6 +210,7 @@ class UberonGraph():
           PREFIX owl: <http://www.w3.org/2002/07/owl#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/uberon/uberon-base.owl>
           PREFIX CL: <http://purl.obolibrary.org/obo/cl/cl-base.owl>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
           WHERE {
             VALUES ?subject { UBERON: CL: }
@@ -208,6 +222,7 @@ class UberonGraph():
           PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           PREFIX located_in: <http://purl.obolibrary.org/obo/RO_0001025>
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
@@ -263,6 +278,7 @@ class UberonGraph():
           PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
           PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170>
           PREFIX develops_from: <http://purl.obolibrary.org/obo/RO_0002202>
@@ -298,6 +314,7 @@ class UberonGraph():
               PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
               PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
               PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+              PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
               CONSTRUCT 
               {{
                 ?term rdf:type owl:Class; ?APT ?APVT .
@@ -336,12 +353,12 @@ class UberonGraph():
       return results
 
     def add_prefix(self, term):
-      return term.replace("http://purl.obolibrary.org/obo/UBERON_", "UBERON:").replace("http://purl.obolibrary.org/obo/CL_", "CL:")
+      return term.replace("http://purl.obolibrary.org/obo/UBERON_", "UBERON:").replace("http://purl.obolibrary.org/obo/CL_", "CL:").replace("http://purl.obolibrary.org/obo/PCL_", "PCL:")
 
     def add_prefix_ont(self, list_ontology):
       results = []
       for ont, version in list_ontology:
-        ont = ont.replace("http://purl.obolibrary.org/obo/uberon/uberon-base.owl", "UBERON").replace("http://purl.obolibrary.org/obo/cl/cl-base.owl", "CL")
+        ont = ont.replace("http://purl.obolibrary.org/obo/uberon/uberon-base.owl", "UBERON").replace("http://purl.obolibrary.org/obo/cl/cl-base.owl", "CL").replace("http://purl.obolibrary.org/obo/PCL_", "PCL:")
         results.extend([ont, version])
       return results
 
