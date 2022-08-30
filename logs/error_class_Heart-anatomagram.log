@@ -1,0 +1,47 @@
+/opt/homebrew/lib/python3.9/site-packages/rdflib_jsonld/__init__.py:9: DeprecationWarning: The rdflib-jsonld package has been integrated into rdflib as of rdflib==6.0.0.  Please remove rdflib-jsonld from your project's dependencies.
+  warnings.warn(
+WARNING - Unrecognised UBERON/CL/PCL entity 'UBERON:000209'
+WARNING - Unrecognised UBERON/CL/PCL entity 'UBERON:000201'
+WARNING - Different labels found for UBERON:0001585. Uberongraph: anterior vena cava ; ASCT+b table: superior vena cava
+Traceback (most recent call last):
+  File "/Users/anitac/Documents/GitHub/ccf-validation-tools/src/template_runner.py", line 25, in <module>
+    class_template, no_valid_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t, image_report, sec_graph = generate_class_graph_template(ccf_tools_df)
+  File "/Users/anitac/Documents/GitHub/ccf-validation-tools/src/template_generation_tools.py", line 348, in generate_class_graph_template
+    annotations = ug.get_annotations(terms)
+  File "/Users/anitac/Documents/GitHub/ccf-validation-tools/src/uberongraph_tools.py", line 447, in get_annotations
+    annotations = self.construct_annotation(terms)
+  File "/Users/anitac/Documents/GitHub/ccf-validation-tools/src/uberongraph_tools.py", line 360, in construct_annotation
+    result = self.sparql.query().convert()
+  File "/opt/homebrew/lib/python3.9/site-packages/SPARQLWrapper/Wrapper.py", line 1332, in convert
+    return self._convertRDF()
+  File "/opt/homebrew/lib/python3.9/site-packages/SPARQLWrapper/Wrapper.py", line 1229, in _convertRDF
+    retval.load(self.response) # (DEPRECATED) publicID=' ')
+  File "/opt/homebrew/lib/python3.9/site-packages/rdflib/graph.py", line 1280, in load
+    return self.parse(source, publicID, format)
+  File "/opt/homebrew/lib/python3.9/site-packages/rdflib/graph.py", line 1851, in parse
+    context.parse(source, publicID=publicID, format=format, **args)
+  File "/opt/homebrew/lib/python3.9/site-packages/rdflib/graph.py", line 1258, in parse
+    parser.parse(source, self, **args)  # type: ignore[call-arg]
+  File "/opt/homebrew/lib/python3.9/site-packages/rdflib/plugins/parsers/rdfxml.py", line 608, in parse
+    self._parser.parse(source)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/xml/sax/expatreader.py", line 111, in parse
+    xmlreader.IncrementalParser.parse(self, source)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/xml/sax/xmlreader.py", line 126, in parse
+    buffer = file.read(self._bufsize)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 463, in read
+    n = self.readinto(b)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 497, in readinto
+    return self._readinto_chunked(b)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 592, in _readinto_chunked
+    chunk_left = self._get_chunk_left()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 560, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 520, in _read_next_chunk_size
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1242, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.13_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1100, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt

@@ -114,3 +114,6 @@ official_release:
 last_official_release:
 	make ../owl/last_official_ASCTB_release/CCF_AS_CT.owl OLD_VERSION=True -B
 .PHONY: last_official_release
+
+run_anatomagram_validation:
+	make -f validation.Mak all -B

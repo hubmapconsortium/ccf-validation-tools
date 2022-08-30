@@ -177,9 +177,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   # INDIRECT SUBCLASS CHECK
   valid_subclass_onto, _ = ug.verify_relationship(transform_to_str(valid_subclass), ug.select_subclass_ontology)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_subclass - valid_subclass_onto))
+  i_terms_s, i_terms_o = split_terms(transform_to_str(valid_subclass - valid_subclass_onto))
 
-  rows_nvso = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+  rows_nvso = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(i_terms_s, i_terms_o))]
 
   # ADD RESULTS TO INDIRECT LOG
   valid_error_log = pd.concat([valid_error_log, rows_nvso])
@@ -201,9 +201,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   valid_po_nr, _ = ug.verify_relationship(terms_valid_po, ug.select_po_nonredundant)
   
-  terms_s, terms_o = split_terms(transform_to_str(valid_po - valid_po_nr))
+  i_terms_s, i_terms_o = split_terms(transform_to_str(valid_po - valid_po_nr))
 
-  rows_nvponr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+  rows_nvponr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(i_terms_s, i_terms_o))]
 
   # ADD RESULTS TO INDIRECT LOG
   valid_error_log = pd.concat([valid_error_log, rows_nvponr])
@@ -223,9 +223,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   # INDIRECT OVERLAPS CHECK
   valid_o_nr, _ = ug.verify_relationship(transform_to_str(valid_overlaps), ug.select_overlaps_nonredundant)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_overlaps - valid_o_nr))
+  i_terms_s, i_terms_o = split_terms(transform_to_str(valid_overlaps - valid_o_nr))
 
-  rows_nvonr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+  rows_nvonr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(i_terms_s, i_terms_o))]
 
   # ADD RESULTS TO INDIRECT LOG
   valid_error_log = pd.concat([valid_error_log, rows_nvonr])
@@ -249,15 +249,15 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_conn_to.union(valid_ct_as_conn_to), 'connected_to')
 
   # STRICT CT-AS REPORT
-  terms_s, terms_o = split_terms(terms_ct_as)
+  s_terms_s, s_terms_o = split_terms(terms_ct_as)
   
-  no_valid_ct_as = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+  no_valid_ct_as = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(s_terms_s, s_terms_o))]
 
   strict_log = pd.concat([strict_log,no_valid_ct_as])
 
   # DEVELOPS FROM CHECK
-  valid_dev_from, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_develops_from)
-  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_dev_from, 'develops_from')
+  #valid_dev_from, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_develops_from)
+  #records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_dev_from, 'develops_from')
 
   # AS-CT HAS PART
   valid_has_part, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_has_part)
@@ -267,15 +267,15 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   valid_subclass_ct_as_po, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_subclass_po)
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_subclass_ct_as_po, 'has_part', True)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
+  hp_terms_s, hp_terms_o = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
 
-  has_part_report = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+  has_part_report = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(hp_terms_s, hp_terms_o))]
 
   has_part_log = pd.concat([has_part_log,has_part_report])
 
   terms_ct, terms_as = split_terms(terms_ct_as - transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
 
-  terms_s, terms_o = split_terms(terms_pairs - transform_to_str(valid_dev_from))
+  terms_s, terms_o = split_terms(terms_pairs)
 
   terms_as_d = set(t for t in terms_s if "UBERON" in t or "FBbt" in t)
   terms_ct_d = set(t for t in terms_s if "CL" in t)
@@ -307,6 +307,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
       no_v_rec = dict()
       no_v_rec['ID'] = r['s']
       no_v_rec['ccf_located_in'] = r['o']
+      no_valid_records.append(no_v_rec)
+    elif 'FBbt' in r['s'] and 'FBbt' in r['o']:
+      no_v_rec = dict()
+      no_v_rec['ID'] = r['s']
+      no_v_rec['ccf_part_of'] = r['o']
       no_valid_records.append(no_v_rec)
 
   # RELATIONSHIP REPORT
@@ -341,7 +346,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   # ANNOTATION 
   annotations = ug.get_annotations(terms)
-  
 
   return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log.sort_values('s'), annotations, valid_error_log.sort_values('s'), report_relationship, strict_log.sort_values('s'), 
           has_part_report.sort_values('s'), pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report).sort_values('term'), sec_graph)
