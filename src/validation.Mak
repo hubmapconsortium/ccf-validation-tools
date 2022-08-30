@@ -36,7 +36,7 @@ all: ../owl/anatomagram/Validated_AS_CT.owl
 					 convert --format json -o $*.json && \
 		${ROBOT} annotate --input ../owl/$*_sec.owl --ontology-iri http://purl.org/scao/latest/$*_sec.owl convert -o $*_sec.json && \
 		python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green" && \
-		og2dot -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
+		og2dot.js -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/anatomagram/$*_graph.png && \
 		dot $*.dot -Tpdf -Grankdir=LR > ../graphs/anatomagram/$*_graph.pdf && \
 		rm $*.json && \

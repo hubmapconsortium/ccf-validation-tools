@@ -60,7 +60,7 @@ all: last_official_release official_release
 					 convert --format json -o $*.json && \
 		${ROBOT} annotate --input ../owl/$*_sec.owl --ontology-iri http://purl.org/ccf/latest/$*_sec.owl convert -o $*_sec.json && \
 		python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green" && \
-		og2dot -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
+		og2dot.js -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png && \
 		dot $*.dot -Tpdf -Grankdir=LR > ../graphs/ccf_$*_graph.pdf && \
 		rm $*.json && \
@@ -72,7 +72,7 @@ all: last_official_release official_release
 	if [ $(OLD_VERSION) = True ]; then ${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
 					 annotate --ontology-iri http://purl.org/ccf/latest_official_ASCTB_release/ccf_$*_classes.owl \
 					 convert --format json -o $*.json && \
-		og2dot -s ../style/ubergraph-style.json $*.json > $*.dot &&\
+		og2dot.js -s ../style/ubergraph-style.json $*.json > $*.dot &&\
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.png && \
 		dot $*.dot -Tpdf -Grankdir=LR > ../graphs/last_official_ASCTB_release/ccf_$*_graph.pdf && \
 		rm $*.json && \
