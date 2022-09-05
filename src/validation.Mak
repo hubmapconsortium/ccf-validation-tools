@@ -27,10 +27,10 @@ all: ../owl/anatomagram/Validated_AS_CT.owl
 	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@ && \
 		rm $<; fi
 
+# reduce --reasoner ELK -o ../owl/anatomagram/$*_extended.owl 
 ../owl/anatomagram/%_classes.owl: ../owl/anatomagram/%_classes_t.owl ../owl/%_annotations.owl ../owl/anatomagram/%_no-valid.owl ../owl/%_sec.owl
 	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge --input helper.owl -i ../owl/anatomagram/$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
 					 merge --input ../owl/$*_sec.owl \
-					 reduce --reasoner ELK -o ../owl/anatomagram/$*_extended.owl \
 					 merge --input ../owl/anatomagram/$*_no-valid.owl \
 					 annotate --ontology-iri http://purl.org/scao/latest/$*_classes.owl \
 					 convert --format json -o $*.json && \
