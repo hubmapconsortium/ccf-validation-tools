@@ -4,41 +4,41 @@ from urllib.parse import quote_plus
 JOB_SHEET_GID_MAPPING = {
     'Blood': {
       'new': {
-        'sheetId': '1LRgU3VGi7Jlxh4EtHZaQiHtzcPYvvxYLGXrMB6oxdvQ', # Blood_v1.2 DRAFT
+        'sheetId': '1wx2y8_t7NsAs8hPnr6u_N1QK8y_lC3t1G0DnD3LNUnQ', # Blood_v1.3 DRAFT
         'gid': '543201897',
       },
       'old': {
-        'sheetId': '1ZYcSWnFHmzR9XKy_002f_oA4PfzokiW4IxkaZZOusvg', # Blood_v1.1
-        'gid': '360436225'
-      } 
+        'sheetId': '1LRgU3VGi7Jlxh4EtHZaQiHtzcPYvvxYLGXrMB6oxdvQ', # Blood_v1.2 DRAFT
+        'gid': '543201897',
+      }
     },
     'Blood_vasculature': {
       'new': {
-        'sheetId': '1pBO70FENOlSyPJukxHYjeMXW0SYTLj4lbcw2oGsjuf0', # Blood_Vasculature_v1.2 DRAFT
-        'gid': '1789898267', 
+        'sheetId': '1N2_rZBJEJHuy_pVgZUdGRbXHwz9rdRp2U-rLpVN7n3w', # Blood_Vasculature_v1.3 DRAFT
+        'gid': '1789898267',
       },
       'old': {
-        'sheetId': '1IlELzPwpWoHUcDAmNBWofXfislAaF_oR8yVpwy-zl18', # Blood_Vasculature_v1.1
-        'gid': '997949803',
+        'sheetId': '1pBO70FENOlSyPJukxHYjeMXW0SYTLj4lbcw2oGsjuf0', # Blood_Vasculature_v1.2 DRAFT
+        'gid': '1789898267', 
       }
     },
     'Bone-Marrow': {
       'new': {
-        'sheetId': '16MUBNsMrE1kAyoY1sjCKsGSIHCRw7TnwTys8DHM17j0', # Bone Marrow_v1.2 DRAFT
+        'sheetId': '1prDIvvQF0akXKCfLv6FqjtQgZ_oKbIfSfMZt9twrfd0', # Bone Marrow_v1.3 DRAFT
         'gid': '771476671',
       },
       'old': {
-        'sheetId': '1tnqtCAWSA6atiUBUOOjAHdOrjDw_fsIoCd5RkAmw310', # Bone Marrow_v1.1
+        'sheetId': '16MUBNsMrE1kAyoY1sjCKsGSIHCRw7TnwTys8DHM17j0', # Bone Marrow_v1.2 DRAFT
         'gid': '771476671',
       }
     },
     'Brain': {
       'new': {
-        'sheetId': '1Dzbu_yNfQ-AyOgiScZq7rcoG4oINqO1qEU-MnEE4mPw', # Brain_v1.2 DRAFT
+        'sheetId': '1Hdd-llGhPZ4zFUq5nUyhTeDaPFgQYmEqk-Ch3E6xr-Q', # Brain_v1.3 DRAFT
         'gid': '2056967441',
       },
       'old': {
-        'sheetId': '1TiwW1NZJ5kdCzJ4zwCpY3Gzv3WE5WUoBDWIAkU5gXd0', # Brain_v1.1
+        'sheetId': '1Dzbu_yNfQ-AyOgiScZq7rcoG4oINqO1qEU-MnEE4mPw', # Brain_v1.2 DRAFT
         'gid': '2056967441',
       }
     },
@@ -50,22 +50,22 @@ JOB_SHEET_GID_MAPPING = {
     },
     'Eye': {
       'new': {
-        'sheetId': '1SFGfjkZeDxY_9FaQqNERzq4XRjWDUpwKC9FCqONlbuk', # Eye_v1.1 DRAFT
+        'sheetId': '1qx6ljQipIYEjm9HoDweulJoRq4saKXGv16S5en8O4Rs', # Eye_v1.2 DRAFT
         'gid': '695483621',
       },
       'old': {
-        'sheetId': '1u7IbxnPABRpYL5rFxOba8cmlvG1yGp-dwD3TV3V26K4', # Eye_v1.0
-        'gid': '44026578',
+        'sheetId': '1SFGfjkZeDxY_9FaQqNERzq4XRjWDUpwKC9FCqONlbuk', # Eye_v1.1 DRAFT
+        'gid': '695483621',
       }
     },
     'Fallopian_tube': {
       'new': {
-        'sheetId': '1DFGmDSU75eMF6Fgwzk7W2u20DGJRdXN00TP7sO3kTug', # Fallopian_Tube_v1.1 DRAFT
+        'sheetId': '16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI', # Fallopian_Tube_v1.2 DRAFT
         'gid': '991519552',
       },
       'old': {
-        'sheetId': '16tAvAmjwKwbq5SDz7UZ-T1N_KUHRGqPDbMqffFuInMI', # Fallopian_Tube_v1.0
-        'gid': '1739942440',
+        'sheetId': '1DFGmDSU75eMF6Fgwzk7W2u20DGJRdXN00TP7sO3kTug', # Fallopian_Tube_v1.1 DRAFT
+        'gid': '991519552',
       }
     },
     'Heart': {
@@ -77,96 +77,95 @@ JOB_SHEET_GID_MAPPING = {
         'sheetId': '1UhEZpDxQLCJLLx0gnWYDMQP8M-dwjZo_vIyPfjBCcVM', # Heart_v1.1
         'gid': '1759721736',
       }
-
     },
     'Kidney': {
       'new': {
-        'sheetId': '1NMfu1bEGNFcTYTFT-jCao_lSbFD8n0ti630iIpRj-hw', # Kidney_v1.2 DRAFT
+        'sheetId': '1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg', # Kidney_v1.3 DRAFT
         'gid': '949267305',
       },
       'old': {
-        'sheetId': '1PgjYp4MEWANfbxGIxFsJ9vkfEU90MP-v3p5oVlH8U-E', # Kidney_v1.1
+        'sheetId': '1NMfu1bEGNFcTYTFT-jCao_lSbFD8n0ti630iIpRj-hw', # Kidney_v1.2 DRAFT
         'gid': '949267305',
       }
     },
     'Knee': {
       'new': {
-        'sheetId': '1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw', # Knee_v1.1 DRAFT
+        'sheetId': '1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc', # Knee_v1.2 DRAFT
         'gid': '1815525900',
       },
       'old': {
-        'sheetId': '1QidDho8DxBYjsxaqApiIZA__Z7aWnB61KvC422g2kx8', # Knee_v1.0
-        'gid': '1824489301',
+        'sheetId': '1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw', # Knee_v1.1 DRAFT
+        'gid': '1815525900',
       }
     },
     'Large_intestine': {
       'new': {
-        'sheetId': '1d_KWKnQq3HT5nzDmfhlvFG4P_qdviu0vyhGZ6QHgNIk', # Large_Intestine_v1.2 DRAFT
+        'sheetId': '1DgN9i72VFDmGwynStGbhkpHfas_RA9ccIrDgI77ULJA', # Large_Intestine_v1.3 DRAFT
         'gid': '2043181688',
       },
       'old': {
-        'sheetId': '1vU6mQmnzAAxctbNYPoFxJ8NvbUql8pbipsGdt7YCOQQ', # Large_Intestine_v1.0
+        'sheetId': '1d_KWKnQq3HT5nzDmfhlvFG4P_qdviu0vyhGZ6QHgNIk', # Large_Intestine_v1.2 DRAFT
         'gid': '2043181688',
       }
     },
     'Liver': {
       'new': {
-        'sheetId': '1F8ZXt1naE1pJFjfsAd6wK7x22D3qRW5O0E2d9gUKAik', # Liver_v1.1 DRAFT
+        'sheetId': '1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ', # Liver_v1.2 DRAFT
         'gid': '1694828397',
       },
       'old': {
-        'sheetId': '1tPDKw_znxqWhZYPTeVN4AN2_F4-JecsdeUgp2lj4P8g', # Liver_v1.0
-        'gid': '1460762432',
+        'sheetId': '1F8ZXt1naE1pJFjfsAd6wK7x22D3qRW5O0E2d9gUKAik', # Liver_v1.1 DRAFT
+        'gid': '1694828397',
       }
     },
     'Lung': {
       'new': {
-        'sheetId': '1iF4vx9EuQ2tQMBOm6awd9sf-2e_EHsPlcgzrF_YDtis', # Lung_v1.2 DRAFT
+        'sheetId': '1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY', # Lung_v1.3 DRAFT
         'gid': '1523836586',
       },
       'old': {
-        'sheetId': '1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0', # Lung_v1.1
-        'gid': '1824552484',
+        'sheetId': '1iF4vx9EuQ2tQMBOm6awd9sf-2e_EHsPlcgzrF_YDtis', # Lung_v1.2 DRAFT
+        'gid': '1523836586',
       }
     },
     'Lymph_node': {
       'new': {
-        'sheetId': '1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA', # Lymph_Node_v1.2 DRAFT
+        'sheetId': '15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg', # Lymph_Node_v1.3 DRAFT
         'gid': '1223566381',
       },
       'old': {
-        'sheetId': '1aK9gJ2_kMb2B8zrQgScDgxpEWAcCs7kl-gnQGwV3LHM', # Lymph_Node_v1.1
+        'sheetId': '1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA', # Lymph_Node_v1.2 DRAFT
         'gid': '1223566381',
       }
     },
     'Lymph_vasculature': {
       'new': {
-        'sheetId': '1FNoQthhgP0OXEZuwIVL0XZA8SVYzCcVPm4_n20dt--8', # Lymph_Vasculature_v1.1 DRAFT
+        'sheetId': '1x2U09QKAkxGFI4d24JN6YSzEZruYHJi96PlDIT3c1pU', # Lymph_Vasculature_v1.2 DRAFT
         'gid': '2087685463',
       },
       'old': {
-        'sheetId': '1SILRNUI71BEVWl1fpsi_32DSuSA-bAPgXv5pTfKnrOE', # Lymph_Vasculature_v1.0
-        'gid': '1700987638',
+        'sheetId': '1FNoQthhgP0OXEZuwIVL0XZA8SVYzCcVPm4_n20dt--8', # Lymph_Vasculature_v1.1 DRAFT
+        'gid': '2087685463',
       }
     },
     'Ovary': {
       'new': {
-        'sheetId': '1K5LWhMaT_IryNxuK1Vko0Ud49VUB8RnMltL5jYhJUak', # Ovary_v1.1 DRAFT
+        'sheetId': '1bPMrORa7CQa2JpVkRF_jHmA_GdS1qBryXl9riMZUBJU', # Ovary_v1.2 DRAFT
         'gid': '756296951',
       },
       'old': {
-        'sheetId': '1FE2XufrruExUWqcai3XRFqtMjeEdzoLKJ-YNa-nRZ1M', # Ovary_v1.0
-        'gid': '1997082517',
+        'sheetId': '1K5LWhMaT_IryNxuK1Vko0Ud49VUB8RnMltL5jYhJUak', # Ovary_v1.1 DRAFT
+        'gid': '756296951',
       }
     },
     'Pancreas': {
       'new': {
-        'sheetId': '1_cmA0CWUzVz1lNMpNOXqzrnmWgXv3GANqN7W18N4crA', # Pancreas_v1.1 DRAFT
+        'sheetId': '1Ksn6FuMqIcZFXorMfM5gsuZugKESabQmwvIAwYksdRE', # Pancreas_v1.2 DRAFT
         'gid': '439021026',
       },
       'old': {
-        'sheetId': '1CIWqIygz2OzxMECIvhudFN14Kt7-JFUBLpzn5uuH5Xs', # Pancreas_v1.0
-        'gid': '801179416',
+        'sheetId': '1_cmA0CWUzVz1lNMpNOXqzrnmWgXv3GANqN7W18N4crA', # Pancreas_v1.1 DRAFT
+        'gid': '439021026',
       }
     },
     'Peripheral_nervous_system': {
@@ -181,6 +180,10 @@ JOB_SHEET_GID_MAPPING = {
     },
     'Placenta': {
       'new': {
+        'sheetId': '1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4', # Placenta_v1.1 DRAFT
+        'gid': '231591207',
+      },
+      'old': {
         'sheetId': '1TqatRIsZZ5QwvWdz6H4Un-sukbzSd21_x41Gqnn5UEY', # Placenta_v1.0 DRAFT
         'gid': '231591207',
       }
@@ -197,11 +200,11 @@ JOB_SHEET_GID_MAPPING = {
     },
     'Skin': {
       'new': {
-        'sheetId': '16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E', # Skin_v1.2 DRAFT
+        'sheetId': '1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw', # Skin_v1.3 DRAFT
         'gid': '269383687',
       },
       'old': {
-        'sheetId': '1Pmi3g26vhbg9HU6GDpIvxKbIP985JM-5eytOHxJUdZs', # Skin_v1.1
+        'sheetId': '16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E', # Skin_v1.2 DRAFT
         'gid': '269383687',
       }
     },
@@ -215,29 +218,29 @@ JOB_SHEET_GID_MAPPING = {
         'gid': '1762589435',
       }
     },
+    'Spinal_Cord': {
+      'new': {
+        'sheetId': '1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE', # Spinal_Cord_v1.0 DRAFT
+        'gid': '243784891',
+      }
+    },
     'Spleen': {
       'new': {
-        'sheetId': '1bairJs37srg0hF4MGIfsdtb000YtrA1hI45D8KI5Gxc', # Sleen_v1.2 DRAFT
+        'sheetId': '1AEKYXAKP1oRM2krnbU_Un89JfxYEm_gjjwwJTEt1SiI', # Sleen_v1.3 DRAFT
         'gid': '69626346',
       },
       'old': {
-        'sheetId': '1HL7aHx5A2KOa1KsJ0PIagqxdshVavFIEJZP6_YDtUww', # Sleen_v1.1
+        'sheetId': '1bairJs37srg0hF4MGIfsdtb000YtrA1hI45D8KI5Gxc', # Sleen_v1.2 DRAFT
         'gid': '69626346',
-      }
-    },
-    'Spinal_Cord': {
-      'new': {
-        'sheetId': '1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0', # Spinal_Cord_v1.0 DRAFT
-        'gid': '1106564583',
       }
     },
     'Thymus': {
       'new': {
-        'sheetId': '14KY4dp6YwVf0GSiCOcxhuy9L_aJ8FjTX_jidrIq7E_c', # Thymus_v1.2 DRAFT
+        'sheetId': '13VmRAofv85ZapJgmtHAVO67ICY4nK1FOugkTKV8_eoM', # Thymus_v1.3 DRAFT
         'gid': '863370556',
       },
       'old': {
-        'sheetId': '1nSiz2yFDMJSqIXbnAP_EXIQZfN6ZflOs-WBdZ6LVhUY', # Thymus_v1.1
+        'sheetId': '14KY4dp6YwVf0GSiCOcxhuy9L_aJ8FjTX_jidrIq7E_c', # Thymus_v1.2 DRAFT
         'gid': '863370556',
       }
     },
@@ -263,12 +266,12 @@ JOB_SHEET_GID_MAPPING = {
     },
     'Uterus': {
       'new': {
-        'sheetId': '1RasOQCB4oP_1kvZL7Xv40TID6_365FQ-cgX2fGR54gw', # Uterus_v1.1 DRAFT
+        'sheetId': '1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig', # Uterus_v1.2 DRAFT
         'gid': '603441642',
       },
       'old': {
-        'sheetId': '1yEcbJMrUIzJY-4JNtF1Y_eUpAQsgKF6DX2-5Z3UXBeE', # Uterus_v1.0
-        'gid': '1434605386',
+        'sheetId': '1RasOQCB4oP_1kvZL7Xv40TID6_365FQ-cgX2fGR54gw', # Uterus_v1.1 DRAFT
+        'gid': '603441642',
       }
     }
 }
