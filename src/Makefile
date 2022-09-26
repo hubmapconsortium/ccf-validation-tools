@@ -62,7 +62,6 @@ all: last_official_release official_release
 					 annotate --ontology-iri http://purl.org/ccf/latest/ccf_$*_classes.owl \
 					 convert --format json -o $*.json && \
 		${ROBOT} annotate --input ../owl/$*_sec_reduced.owl --ontology-iri http://purl.org/ccf/latest/$*_sec_reduced.owl convert -o $*_sec_reduced.json && \
-		${ROBOT} diff --labels True --left $@ --right ../owl/$*_extended.owl -f markdown -o ../diffs/$*-diff.md && \
 		python graph_construct.py $*.json $*_sec_reduced.json $*_f.json "color" "green" && \
 		og2dot.js -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png && \
