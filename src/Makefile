@@ -1,7 +1,8 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skin Small_intestine Spleen Spinal_Cord Thymus Ureter Urinary_bladder Uterus Blood_vasculature
-JOBS_OLD = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
+# JOBS = Breast Spinal_Cord doesn't have data in table
+JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature
+JOBS_OLD = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
 OLD_VERSION = False
 
 TODAY ?= $(shell date +%Y-%m-%d)
@@ -10,7 +11,7 @@ VERSION = $(TODAY)
 OWL_CLASS_FILES_OLD = $(patsubst %, ../owl/last_official_ASCTB_release/ccf_%_classes.owl, $(JOBS_OLD))
 OWL_ANNOTATION_FILES_OLD = $(patsubst %, ../owl/%_annotations.owl, $(JOBS_OLD))
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
-OWL_CLASS_SEC_FILES = $(patsubst %, ../owl/%_sec.owl, $(JOBS))
+OWL_CLASS_SEC_FILES = $(patsubst %, ../owl/%_sec_reduced.owl, $(JOBS))
 OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
 OWL_UB_SUBSET_FILES = $(patsubst %, ../owl/ub_%_ASCTB_subset.owl, $(JOBS))
 OWL_CL_SUBSET_FILES = $(patsubst %, ../owl/cl_%_ASCTB_subset.owl, $(JOBS))
@@ -50,20 +51,23 @@ all: last_official_release official_release
 
 .PRECIOUS: ../owl/%_ASCTB_subset.json
 
-../owl/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl ../owl/%_no-valid.owl ../owl/%_sec.owl
+../owl/%_sec_reduced.owl:  ../owl/%_sec.owl
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge --input helper.owl --input $< reduce --reasoner ELK -o ../owl/$*_sec_reduced.owl && \
+		rm ../owl/$*_sec.owl; fi
+
+../owl/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl ../owl/%_no-valid.owl ../owl/%_sec_reduced.owl
 	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
-					 merge --input ../owl/$*_sec.owl \
-					 reduce --reasoner ELK -o ../owl/$*_extended.owl \
+					 merge --input ../owl/$*_sec_reduced.owl -o ../owl/$*_extended.owl \
 					 merge --input ../owl/$*_no-valid.owl \
 					 annotate --ontology-iri http://purl.org/ccf/latest/ccf_$*_classes.owl \
 					 convert --format json -o $*.json && \
-		${ROBOT} annotate --input ../owl/$*_sec.owl --ontology-iri http://purl.org/ccf/latest/$*_sec.owl convert -o $*_sec.json && \
-		python graph_construct.py $*.json $*_sec.json $*_f.json "color" "green" && \
+		${ROBOT} annotate --input ../owl/$*_sec_reduced.owl --ontology-iri http://purl.org/ccf/latest/$*_sec_reduced.owl convert -o $*_sec_reduced.json && \
+		python graph_construct.py $*.json $*_sec_reduced.json $*_f.json "color" "green" && \
 		og2dot.js -s ../style/ubergraph-style.json $*_f.json > $*.dot && \
 		dot $*.dot -Tpng -Grankdir=LR > ../graphs/ccf_$*_graph.png && \
 		dot $*.dot -Tpdf -Grankdir=LR > ../graphs/ccf_$*_graph.pdf && \
 		rm $*.json && \
-		rm $*_sec.json && \
+		rm $*_sec_reduced.json && \
 		rm $*_f.json && \
 		rm $*.dot; fi
 
