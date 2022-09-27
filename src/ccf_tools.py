@@ -37,7 +37,7 @@ def parse_asctb(path):
         if re.match("(CL|UBERON|PCL)\:[0-9]+", content['id']):
             return content
         else:
-            logger.warning(f"No valid ID provided for '{content['id']}', label: {content['name']}, user_label: {content['rdfs_label']}")
+            logger.warning(f"No valid ID provided for '{content['id']}', label: {content['rdfs_label']}, user_label: {content['name']}")
             return False
     def check_id(id):
       return re.match("(CL|UBERON|PCL)\:[0-9]+", id)
@@ -64,11 +64,11 @@ def parse_asctb(path):
         if is_valid_id(current) and is_valid_id(next):
           d = {}
           d['s'] = next['id']
-          d['slabel'] = next['name']
-          d['user_slabel'] = next['rdfs_label']
+          d['slabel'] = next['rdfs_label']
+          d['user_slabel'] = next['name']
           d['o'] = current['id']
-          d['olabel'] = current['name']
-          d['user_olabel'] = current['rdfs_label']
+          d['olabel'] = current['rdfs_label']
+          d['user_olabel'] = current['name']
           dl.append(d)
           as_valid_terms.add(current['id'])
           as_valid_terms.add(next['id'])
@@ -76,7 +76,7 @@ def parse_asctb(path):
           if not check_id(current['id']) and current['rdfs_label'] != '':
             as_invalid_terms.add(current['rdfs_label'])
             unique_terms.add(current['rdfs_label'])
-          elif not check_id(current['id']) and current['name']:
+          elif not check_id(current['id']) and current['name'] != '':
             as_invalid_terms.add(current['name'])
             unique_terms.add(current['name'])
 
@@ -97,11 +97,11 @@ def parse_asctb(path):
         if is_valid_id(current) and is_valid_id(next):
           d = {}
           d['s'] = next['id']
-          d['slabel'] = next['name']
-          d['user_slabel'] = next['rdfs_label']
+          d['slabel'] = next['rdfs_label']
+          d['user_slabel'] = next['name']
           d['o'] = current['id']
-          d['olabel'] = current['name']
-          d['user_olabel'] = current['rdfs_label']
+          d['olabel'] = current['rdfs_label']
+          d['user_olabel'] = current['name']
           dl.append(d)
           ct_valid_terms.add(current['id'])
           ct_valid_terms.add(next['id'])
@@ -131,11 +131,11 @@ def parse_asctb(path):
         if is_valid_id(last_as) and is_valid_id(last_ct):
           d = {}
           d['s'] = last_ct['id']
-          d['slabel'] = last_ct['name']
-          d['user_slabel'] = last_ct['rdfs_label']
+          d['slabel'] = last_ct['rdfs_label']
+          d['user_slabel'] = last_ct['name']
           d['o'] = last_as['id']
-          d['olabel'] = last_as['name']
-          d['user_olabel'] = last_as['rdfs_label']
+          d['olabel'] = last_as['rdfs_label']
+          d['user_olabel'] = last_as['name']
           dl.append(d)
           as_valid_terms.add(last_as['id'])
           ct_valid_terms.add(last_ct['id'])
@@ -161,8 +161,8 @@ def parse_asctb(path):
           if cl['id'] == '' and cl['name'] != '':
             r = {}
             r['Terminal AS/ID'] = last_as['id']
-            r['Terminal AS/label'] = last_as['name']
-            r['Terminal AS/user_label'] = last_as['rdfs_label']
+            r['Terminal AS/label'] = last_as['rdfs_label']
+            r['Terminal AS/user_label'] = last_as['name']
             r['CL Name'] = cl['name']
 
             refs_id = [ref['id'] for ref in row['references'] if ref.get('id')]
