@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2022-08-19|
 |CL|2022-08-16|
+|UBERON|2022-08-19|
 
 ### ASCT+b Tables
 
@@ -51,7 +51,7 @@ Release Notes
 |Liver|v1.2|revise for October 1, 2022|
 |Lung|v1.3|revise for October 1, 2022|
 |Lymph_node|v1.3|revise for October 1, 2022|
-|Lymph_vasculature|v1.2|revise for October 1, 2022|
+|Lymph_vasculature|v1.2|2022-09-28|
 |Ovary|v1.2|revise for October 1 , 2022|
 |Pancreas|v1.2|revise for October 2022|
 |Placenta|V1.1|revise for October 1, 2022|
@@ -64,4 +64,4 @@ Release Notes
 |Ureter|NA|revise for April 2023|
 |Urinary_bladder|v1.1|revise for April 2023|
 |Uterus|v1.2|revise for October 1, 2022|
-|Blood_vasculature|v1.3|revise for October 1, 2022|
+|Blood_vasculature|v1.3|2022-09-28|
