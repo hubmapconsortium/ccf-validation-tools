@@ -16,7 +16,7 @@ parser.add_argument("old_version", help="is old version")
 TODAY = date.today().strftime("%Y%m%d")
 args = parser.parse_args()
 
-ccf_tools_df, report_t, new_terms_report = parse_asctb(args.target_file)
+ccf_tools_df, report_t, new_terms_report, new_uberon_terms = parse_asctb(args.target_file)
 
 class_template, no_valid_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t, image_report, sec_graph = generate_class_graph_template(ccf_tools_df)
 
@@ -34,6 +34,8 @@ if not eval(args.old_version):
   report_t_path = f"../reports/report_terms_{TODAY}.tsv"
 
   new_terms_report.to_csv(f'../logs/new_cl_terms_{args.job}.tsv', sep='\t', index=False)
+
+  new_uberon_terms.to_csv(f'../logs/new_uberon_terms_{args.job}.tsv', sep='\t', index=False)
 
   report_r['Table'] = args.job
   report_r = pd.DataFrame.from_dict(report_r)

@@ -49,6 +49,7 @@ def parse_asctb(path):
     as_valid_terms = set()
     ct_valid_terms = set()
     rt = []
+    rut = []
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
     dl = []
@@ -156,20 +157,37 @@ def parse_asctb(path):
             ct_invalid_terms.add(last_ct['name'])
             unique_terms.add(last_ct['name'])
       
-        # REPORT OF NEW CL TERMS
-        for cl in cell_types:
-          if cl['id'] == '' and cl['name'] != '':
-            r = {}
-            r['Terminal AS/ID'] = last_as['id']
-            r['Terminal AS/label'] = last_as['rdfs_label']
-            r['Terminal AS/user_label'] = last_as['name']
-            r['CL Name'] = cl['name']
+      # NEW CL TERMS REPORT
+      for cl in cell_types:
+        if cl['id'] == '' and cl['name'] != '':
+          r = {}
+          r['Terminal AS/ID'] = last_as['id']
+          r['Terminal AS/label'] = last_as['rdfs_label']
+          r['Terminal AS/user_label'] = last_as['name']
+          r['CL Name'] = cl['name']
 
-            refs_id = [ref['id'] for ref in row['references'] if ref.get('id')]
-            refs_doi = [ref['doi'] for ref in row['references'] if ref.get('doi')]
-            r['References/ID'] = " ; ".join(refs_id)
-            r['References/DOI'] = " ; ".join(refs_doi)
-            rt.append(r)
+          refs_id = [ref['id'] for ref in row['references'] if ref.get('id')]
+          refs_doi = [ref['doi'] for ref in row['references'] if ref.get('doi')]
+          r['References/ID'] = " ; ".join(refs_id)
+          r['References/DOI'] = " ; ".join(refs_doi)
+          rt.append(r)
+
+      # NEW UBERON TERMS REPORT
+      for i, term in enumerate(anatomical_structures):
+        if term['id'] == '' and term['name'] != '':
+          r = {}
+          r['Upper AS'] = anatomical_structures[i-1]['name']
+          r['Upper AS/label'] = anatomical_structures[i-1]['rdfs_label']
+          r['Upper AS/ID'] = anatomical_structures[i-1]['id']
+          r['AS Name'] = term['name']
+
+          refs_id = [ref['id'] for ref in row['references'] if ref.get('id')]
+          refs_doi = [ref['doi'] for ref in row['references'] if ref.get('doi')]
+          r['References/ID'] = " ; ".join(refs_id)
+          r['References/DOI'] = " ; ".join(refs_doi)
+          rut.append(r)
+
+        
 
     as_invalid_term_percent = 0
     ct_invalid_terms_percent = 0
@@ -190,7 +208,8 @@ def parse_asctb(path):
 
     out = pd.DataFrame.from_records(dl).drop_duplicates()
     new_terms = pd.DataFrame.from_records(rt).drop_duplicates()
-    return out, report_terms, new_terms
+    new_uberon_terms = pd.DataFrame.from_records(rut).drop_duplicates()
+    return out, report_terms, new_terms, new_uberon_terms
 
 def transform_to_str(list):
     terms_pairs = set()
