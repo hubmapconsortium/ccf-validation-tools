@@ -16,6 +16,7 @@ OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
 OWL_UB_SUBSET_FILES = $(patsubst %, ../owl/ub_%_ASCTB_subset.owl, $(JOBS))
 OWL_CL_SUBSET_FILES = $(patsubst %, ../owl/cl_%_ASCTB_subset.owl, $(JOBS))
 JSON_CLASSES_SUBSET = $(patsubst %, ../owl/%_ASCTB_subset.json, $(JOBS))
+CSV_CT_LOC_B = $(patsubst %, ../logs/ct_loc_markers/%_report.tsv, $(JOBS))
 
 all: last_official_release official_release
 
@@ -117,3 +118,9 @@ official_release:
 last_official_release:
 	make ../owl/last_official_ASCTB_release/CCF_AS_CT.owl OLD_VERSION=True -B
 .PHONY: last_official_release
+
+../logs/ct_loc_markers/%_report.tsv: ../resources/ASCT-b_tables/%.json
+	python cell_type_location.py $< $@ generate
+
+../logs/ct_loc_markers/ct_loc_b_report.tsv: ${CSV_CT_LOC_B}
+	python cell_type_location.py $< $@ merge
