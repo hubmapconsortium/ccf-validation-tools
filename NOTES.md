@@ -52,7 +52,7 @@ Release Notes
 |Lung|v1.3|revise for October 1, 2022|
 |Lymph_node|v1.3|revise for October 1, 2022|
 |Lymph_vasculature|v1.2|2022-09-28|
-|Ovary|v1.2|revise for October 1 , 2022|
+|Ovary|v1.2|2022-08-04|
 |Pancreas|v1.2|revise for October 2022|
 |Placenta|V1.1|revise for October 1, 2022|
 |Peripheral_nervous_system|v1.1|revise for Oct 1, 2022|
