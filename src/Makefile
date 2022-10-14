@@ -3,6 +3,7 @@ ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 # JOBS = Breast Spinal_Cord doesn't have data in table
 JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature
 JOBS_OLD = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
+JOBS_MARKERS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus
 OLD_VERSION = False
 
 TODAY ?= $(shell date +%Y-%m-%d)
@@ -16,7 +17,7 @@ OWL_ANNOTATION_FILES = $(patsubst %, ../owl/%_annotations.owl, $(JOBS))
 OWL_UB_SUBSET_FILES = $(patsubst %, ../owl/ub_%_ASCTB_subset.owl, $(JOBS))
 OWL_CL_SUBSET_FILES = $(patsubst %, ../owl/cl_%_ASCTB_subset.owl, $(JOBS))
 JSON_CLASSES_SUBSET = $(patsubst %, ../owl/%_ASCTB_subset.json, $(JOBS))
-CSV_CT_LOC_B = $(patsubst %, ../logs/ct_loc_markers/%_report.tsv, $(JOBS))
+CSV_CT_LOC_B = $(patsubst %, ../logs/ct_loc_markers/%_report.tsv, $(JOBS_MARKERS))
 
 all: last_official_release official_release
 
