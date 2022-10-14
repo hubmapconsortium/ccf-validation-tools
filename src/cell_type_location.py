@@ -34,6 +34,9 @@ def get_ct_loc_marker(file):
 
     markers_group = [marker["id"] for marker in biomarkers if is_valid_id(marker["id"])]
 
+    if len(markers_group) == 0:
+      continue
+
     r = {}
     r["Terminal AS/ID"] = last_as["id"]
     r["Terminal AS/label"] = last_as["rdfs_label"]
