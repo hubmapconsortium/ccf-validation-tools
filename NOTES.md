@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2022-08-19|
-|CL|2022-08-16|
+|CL|2022-09-15|
+|UBERON|2022-09-30|
 
 ### ASCT+b Tables
 
