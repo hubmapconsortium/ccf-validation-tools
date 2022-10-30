@@ -42,7 +42,7 @@ class UberonGraph():
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
-          FROM <http://reasoner.renci.org/ontology/closure>
+          FROM <http://reasoner.renci.org/redundant>
           { 
             VALUES (?subject ?object) {
               %s
@@ -210,10 +210,10 @@ class UberonGraph():
           PREFIX owl: <http://www.w3.org/2002/07/owl#>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/uberon/uberon-base.owl>
           PREFIX CL: <http://purl.obolibrary.org/obo/cl/cl-base.owl>
-          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/pcl/pcl-base.owl>
           SELECT ?subject ?object
           WHERE {
-            VALUES ?subject { UBERON: CL: }
+            VALUES ?subject { UBERON: CL: PCL: }
             ?subject owl:versionInfo ?object
           }
         """
@@ -358,7 +358,7 @@ class UberonGraph():
     def add_prefix_ont(self, list_ontology):
       results = []
       for ont, version in list_ontology:
-        ont = ont.replace("http://purl.obolibrary.org/obo/uberon/uberon-base.owl", "UBERON").replace("http://purl.obolibrary.org/obo/cl/cl-base.owl", "CL").replace("http://purl.obolibrary.org/obo/PCL_", "PCL:")
+        ont = ont.replace("http://purl.obolibrary.org/obo/uberon/uberon-base.owl", "UBERON").replace("http://purl.obolibrary.org/obo/cl/cl-base.owl", "CL").replace("http://purl.obolibrary.org/obo/pcl/pcl-base.owl", "PCL")
         results.extend([ont, version])
       return results
 
