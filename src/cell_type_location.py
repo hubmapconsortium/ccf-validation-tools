@@ -24,7 +24,7 @@ def get_ct_loc_marker(file):
     cell_types = row["cell_types"]
     biomarkers = row["biomarkers"]
 
-    if len(biomarkers) == 0 or len(anatomical_structures) == 0 or len(cell_types) == 0:
+    if not biomarkers or not anatomical_structures or not cell_types:
       continue
 
     last_as = anatomical_structures[-1]
@@ -38,7 +38,7 @@ def get_ct_loc_marker(file):
 
     markers_group = [marker["id"] for marker in biomarkers if is_valid_id(marker["id"])]
 
-    if len(markers_group) == 0:
+    if not markers_group:
       continue
 
     r = {}
@@ -53,7 +53,7 @@ def get_ct_loc_marker(file):
 
   report = None
   if out:
-    report = pd.DataFrame.from_records(out).drop_duplicates().sort_values("Terminal CT/ID")
+    report = pd.DataFrame.from_records(out).drop_duplicates(["Terminal AS/ID", "Terminal CT/ID", "Markers"]).sort_values("Terminal CT/ID")
 
   return report
 
@@ -64,6 +64,8 @@ def merge_csv(path):
   df = pd.concat([pd.read_csv(f'{dir_path}/{f}', sep='\t') for f in csv_files ], ignore_index=True).drop_duplicates().sort_values("Terminal CT/ID")
 
   df.to_csv(path, sep='\t', index=False)
+
+  
 
 def create_template(input, relationship):
   output = [{'ID': 'ID', 
@@ -79,14 +81,33 @@ def create_template(input, relationship):
     d['Equivalent relationship axioms'] = row["Terminal AS/ID"]
     output.append(d)
   return pd.DataFrame.from_records(output)
+
+def generate_id(start_range, end_range):
+  for i in range(start_range, end_range, 1):
+    yield f'CL:{str(i)}'
+
+def create_dosdp_template(input):
+  output = []
+  for i, row in input.iterrows():
+    d = {}
+
+    d["defined_class"] = generate_id(6000011, 6003543)
+    d["defined_class_label"] = ""
+    d["cell"] = row["Terminal CT/ID"]
+    d["anatomical_entity"] = row["Terminal AS/ID"]
+    d["pubs"] = ""
+    output.append(d)
+
+  return pd.DataFrame.from_records(output)
   
 def template(args):
   ug = UberonGraph()
 
   report = pd.read_csv(args.input, sep='\t')
 
+  # clean_report = report["Terminal CT/ID", "Terminal AS/ID"]
   clean_report = report.groupby(['Terminal AS/ID','Terminal CT/ID']).filter(lambda x: len(x)>1)
-  clean_report.to_csv('clean_report.tsv', sep='\t')
+  clean_report.to_csv('clean_report.tsv', sep='\t', index=False)
                     # leukocyte    myeloid cell
   parent_classes = ["CL:0000738", "CL:0000763"]
   ct_list = list(clean_report["Terminal CT/ID"].drop_duplicates())
@@ -100,14 +121,17 @@ def template(args):
   ccf_input_temp = clean_report.loc[clean_report["Terminal CT/ID"].isin(terms_ct_i)]
   
   ccf_template = create_template(ccf_input_temp, "located in")
-  ccf_template.to_csv(args.output, sep='\t')
+  ccf_template.to_csv(args.output, sep='\t', index=False)
 
   terms_ct_ni, _ = split_terms(not_valid_subclass)
   terms_ct = set(terms_ct_ni) - set(terms_ct_i)
-  cl_input_temp = clean_report.loc[clean_report["Terminal CT/ID"].isin(terms_ct)]
+  cl_input_temp = clean_report.loc[clean_report["Terminal CT/ID"].isin(terms_ct)][["Terminal AS/ID", "Terminal CT/ID"]].drop_duplicates()
 
-  cl_template = create_template(cl_input_temp, "part of")
-  cl_template.to_csv('../templates/cl_compound.tsv', sep='\t')
+  cl_template = create_dosdp_template(cl_input_temp)
+  cl_template.to_csv('../templates/cellPartOfAnatomicalEntity.tsv', sep='\t', index=False)
+
+  # cl_template = create_template(cl_input_temp, "part of")
+  # cl_template.to_csv('../templates/cl_compound.tsv', sep='\t')
 
 
 def generate(args):
