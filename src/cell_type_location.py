@@ -60,8 +60,15 @@ def get_ct_loc_marker(file):
 def merge_csv(path):
   dir_path = os.path.dirname(path)
   csv_files = os.listdir(os.path.dirname(path))
+  pds = []
 
-  df = pd.concat([pd.read_csv(f'{dir_path}/{f}', sep='\t') for f in csv_files ], ignore_index=True).drop_duplicates().sort_values("Terminal CT/ID")
+  for f in csv_files:
+    rep = pd.read_csv(f'{dir_path}/{f}', sep='\t')
+    name = f.split('_report')
+    rep['Table'] = name[0]
+    pds.append(rep)
+
+  df = pd.concat(pds, ignore_index=True).drop_duplicates().sort_values("Terminal CT/ID")
 
   df.to_csv(path, sep='\t', index=False)
 
@@ -88,10 +95,10 @@ def generate_id(start_range, end_range):
 
 def create_dosdp_template(input):
   output = []
-  for i, row in input.iterrows():
+  cl_id = generate_id(6000011, 6003543)
+  for _, row in input.iterrows():
     d = {}
-
-    d["defined_class"] = generate_id(6000011, 6003543)
+    d["defined_class"] = next(cl_id)
     d["defined_class_label"] = ""
     d["cell"] = row["Terminal CT/ID"]
     d["anatomical_entity"] = row["Terminal AS/ID"]
@@ -105,9 +112,18 @@ def template(args):
 
   report = pd.read_csv(args.input, sep='\t')
 
-  # clean_report = report["Terminal CT/ID", "Terminal AS/ID"]
-  clean_report = report.groupby(['Terminal AS/ID','Terminal CT/ID']).filter(lambda x: len(x)>1)
+  # Filtering cases where there're more than 1 CT, AS and Marker list.
+  multi_loc_rep = report.groupby(['Terminal AS/ID','Terminal CT/ID']).filter(lambda x: len(x)>1)
+  multi_loc_rep.to_csv('clean_report.tsv', sep='\t', index=False)
+
+  # Same CT and AS with different Marker list
+  cell_loc_diff_markers = multi_loc_rep.drop_duplicates(['Terminal AS/ID','Terminal CT/ID','Markers']).sort_values(['Terminal AS/ID','Terminal CT/ID']).groupby(['Terminal AS/ID','Terminal CT/ID']).filter(lambda x: len(x)>1)
+  cell_loc_diff_markers.to_csv('../logs/ct_loc_markers/cell-loc-diff-markers.tsv', sep='\t', index=False)
+  
+  # Filtering the rows from cell_loc_diff_marks
+  clean_report = multi_loc_rep[(multi_loc_rep['Terminal AS/ID'].isin(cell_loc_diff_markers['Terminal AS/ID']) == False) & (multi_loc_rep['Terminal CT/ID'].isin(cell_loc_diff_markers['Terminal CT/ID']) == False)].drop_duplicates(['Terminal AS/ID','Terminal CT/ID'])
   clean_report.to_csv('clean_report.tsv', sep='\t', index=False)
+
                     # leukocyte    myeloid cell
   parent_classes = ["CL:0000738", "CL:0000763"]
   ct_list = list(clean_report["Terminal CT/ID"].drop_duplicates())
@@ -129,10 +145,6 @@ def template(args):
 
   cl_template = create_dosdp_template(cl_input_temp)
   cl_template.to_csv('../templates/cellPartOfAnatomicalEntity.tsv', sep='\t', index=False)
-
-  # cl_template = create_template(cl_input_temp, "part of")
-  # cl_template.to_csv('../templates/cl_compound.tsv', sep='\t')
-
 
 def generate(args):
   report = get_ct_loc_marker(args.input)
