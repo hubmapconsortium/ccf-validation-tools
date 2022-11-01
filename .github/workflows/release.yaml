@@ -20,10 +20,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: verify and build
         run: mkdir -p resources/ASCT-b_tables && cd src && make last_official_release official_release
       - name: Define repository's owner
@@ -41,8 +40,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ steps.date.outputs.date }}
-          release_name: ${{ steps.date.outputs.date }}
+          tag_name: v${{ env.date }}
+          release_name: ${{ env.date }}
           body_path: NOTES.md
           commitish: master
           draft: false
