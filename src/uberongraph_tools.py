@@ -170,8 +170,9 @@ class UberonGraph():
             VALUES (?subject ?object) {
               %s
             }
-            ?sub rdfs:subClassOf+ ?subject .
+            ?sub rdfs:subClassOf ?subject .
             ?sub part_of: ?object .
+            FILTER (?sub != ?subject)
           }
         """
         
@@ -330,9 +331,9 @@ class UberonGraph():
                   }}
                   ?term rdf:type owl:Class; ?APT ?APVT .
                   ?APT rdf:type owl:AnnotationProperty .
-                  ?AP rdf:type owl:AnnotationProperty; ?APP ?APPV .
-                  ?APP rdf:type owl:AnnotationProperty .
                   OPTIONAL {{
+                    ?AP rdf:type owl:AnnotationProperty; ?APP ?APPV .
+                    ?APP rdf:type owl:AnnotationProperty .
                     ?a a owl:Axiom; owl:annotatedProperty ?AP; owl:annotatedSource ?term; owl:annotatedTarget ?APV; ?p ?o .
                     ?p rdf:type owl:AnnotationProperty .
                 }}
