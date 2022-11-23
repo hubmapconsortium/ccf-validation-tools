@@ -33,9 +33,9 @@ if not eval(args.old_version):
   report_t = pd.DataFrame.from_dict(report_t)
   report_t_path = f"../reports/report_terms_{TODAY}.tsv"
 
-  new_terms_report.to_csv(f'../logs/new_cl_terms_{args.job}.tsv', sep='\t', index=False)
+  new_terms_report.to_csv(f'../logs/{args.job}/new_cl_terms_{args.job}.tsv', sep='\t', index=False)
 
-  new_uberon_terms.to_csv(f'../logs/new_uberon_terms_{args.job}.tsv', sep='\t', index=False)
+  new_uberon_terms.to_csv(f'../logs/{args.job}/new_uberon_terms_{args.job}.tsv', sep='\t', index=False)
 
   report_r['Table'] = args.job
   report_r = pd.DataFrame.from_dict(report_r)
@@ -43,21 +43,21 @@ if not eval(args.old_version):
 
   no_valid_template.to_csv(f'../templates/{args.job}_no-valid.csv', sep=',', index=False)
 
-  error_log.to_csv(f'../logs/class_{args.job}_log.tsv', sep='\t', index=False)
+  error_log.to_csv(f'../logs/{args.job}/class_{args.job}_log.tsv', sep='\t', index=False)
 
   sec_graph.serialize(f'../owl/{args.job}_sec.owl', format='xml')
 
-  indirect_error_log.to_csv(f'../logs/class_{args.job}_indirect_log.tsv', sep='\t', index=False)
+  indirect_error_log.to_csv(f'../logs/{args.job}/class_{args.job}_indirect_log.tsv', sep='\t', index=False)
 
-  strict_log.to_csv(f'../logs/{args.job}_AS_CT_strict_log.tsv', sep='\t', index=False)
+  strict_log.to_csv(f'../logs/{args.job}/{args.job}_AS_CT_strict_log.tsv', sep='\t', index=False)
 
-  has_part_log.to_csv(f'../logs/{args.job}_AS_has_part_CT_log.tsv', sep='\t', index=False)
+  has_part_log.to_csv(f'../logs/{args.job}/{args.job}_AS_has_part_CT_log.tsv', sep='\t', index=False)
 
   ub_subs_t.to_csv(f'../templates/temp_ub_{args.job}_ASCTB_subset.csv', sep=',', index=False)
 
   cl_subs_t.to_csv(f'../templates/temp_cl_{args.job}_ASCTB_subset.csv', sep=',', index=False)
 
-  image_report.to_csv(f'../logs/report_images_{args.job}.tsv', sep='\t', index=False)
+  image_report.to_csv(f'../logs/{args.job}/report_images_{args.job}.tsv', sep='\t', index=False)
 
   if os.path.isfile(report_t_path):
     report_t.to_csv(report_t_path, sep='\t', index=False, mode='a', header=False)
