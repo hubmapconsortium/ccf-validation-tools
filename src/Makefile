@@ -23,7 +23,7 @@ all: last_official_release official_release
 	python download_resource.py $* $@ $(OLD_VERSION)
 
 ../owl/%_annotations.owl ../owl/%_sec.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv: ../resources/ASCT-b_tables/%.json
-	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION) 2> ../logs/$*/error_class_$*.log.tmp && cat ../logs/$*/error_class_$*.log.tmp | sort | uniq > ../logs/$*/error_class_$*.log && rm ../logs/$*/error_class_$*.log.tmp
+	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION)
 
 ../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv
 	${ROBOT} template --add-prefix "CCFH: http://ccf_tools_helpers/class_helper.owl#" \
