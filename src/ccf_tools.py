@@ -103,13 +103,13 @@ def parse_asctb(path):
           unique_terms.add(next['id'])
         if check_id(current['id']) and check_id(next['id']):
           d = {}
+          d['row_number'] = row['rowNumber']
           d['s'] = next['id']
           d['slabel'] = next['rdfs_label']
           d['user_slabel'] = next['name']
           d['o'] = current['id']
           d['olabel'] = current['rdfs_label']
           d['user_olabel'] = current['name']
-          d['row_number'] = row['rowNumber']
           dl.append(d)
           ct_valid_terms.add(current['id'])
           ct_valid_terms.add(next['id'])
@@ -140,13 +140,13 @@ def parse_asctb(path):
         log_dict = is_valid_id(log_dict, last_ct, row["rowNumber"])
         if check_id(last_as['id']) and check_id(last_ct['id']):
           d = {}
+          d['row_number'] = row['rowNumber']
           d['s'] = last_ct['id']
           d['slabel'] = last_ct['rdfs_label']
           d['user_slabel'] = last_ct['name']
           d['o'] = last_as['id']
           d['olabel'] = last_as['rdfs_label']
           d['user_olabel'] = last_as['name']
-          d['row_number'] = row['rowNumber']
           dl.append(d)
           as_valid_terms.add(last_as['id'])
           ct_valid_terms.add(last_ct['id'])

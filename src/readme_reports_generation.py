@@ -2,11 +2,29 @@ import argparse
 from mdutils.fileutils.fileutils import MarkDownFile
 from mdutils.mdutils import MdUtils
 
-def generate_template(file_name):
+def generate_template_readme(file_name):
   markers_dict = {}
   template = MdUtils(file_name=file_name, title='ASCT+B Validation Reports')
 
-  template.new_header(level=1, title="Invalid terms", add_table_of_contents="n")
+  template.new_header(level=1, title="Invalid terms", add_table_of_contents='y')
+
+  template.new_paragraph(text="These are the reports related to issues in the terms found in the ASCT+B table. We validate only [CL](https://www.ebi.ac.uk/ols/ontologies/cl) and [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) terms.")
+
+  template.new_header(level=2, title="Typos or punctuation mistakes", add_table_of_contents='y')
+
+  template.new_paragraph(text="This report provides a general quality check of the terms used in the ASCT+B table. Typos, font case (upper case), punctuation mistakes in IDs: two colons, spaces, underscore instead of a colon.")
+
+  template.new_header(level=2, title="Blank ontology ID", add_table_of_contents='y')
+
+  template.new_paragraph(text="This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index)")
+
+  template.new_header(level=2, title="Different labels", add_table_of_contents='y')
+
+  template.new_paragraph(text="This report provides a list of terms having different names found in the ontology and related to the one found in the ASCT+B table. Make sure to add the term's name in the column AS/N/LABEL or CT/N/LABEL. ")
+
+  template.new_header(level=2, title="Foundational models of anatomy ontology")
+
+  template.new_paragraph(text="This report provides a list of foundational models of anatomy ontology IDs provided when an adequate term is not found in Uberon. You can also request cross-database requests the same way a new term requests.")
 
   m_inv = template.create_marker(text_marker="invalid_terms")
   markers_dict["invalid_terms"] = m_inv
@@ -43,7 +61,7 @@ def generate_template(file_name):
   template.new_header(level=2, title="Indirect relationship", add_table_of_contents='y')
 
   m_ind = template.create_marker(text_marker="indirect")
-  markers_dict["indirects"] = m_ind
+  markers_dict["indirect"] = m_ind
 
   template.new_header(level=2, title="Relationship AS has part CT", add_table_of_contents='y')
 
@@ -53,20 +71,33 @@ def generate_template(file_name):
   template.new_table_of_contents(table_title="Table of contents", depth=2)
   return template, markers_dict
 
+def generate_invalid_terms_report(log_dict):
+  return True
+
+def add_base(content):
+  UBERON_BASE = "http://purl.obolibrary.org/obo/UBERON_"
+  CL_BASE = "http://purl.obolibrary.org/obo/CL_"
+
+  return content.replace("UBERON:", UBERON_BASE).replace("CL:", CL_BASE)
+
 def main(args):
-  report, markers_dict = generate_template(f'{args.job}')
+  readme, markers_dict = generate_template_readme(f'{args.output_file}')
 
-  report.file_data_text = report.place_text_using_marker(text=report.new_inline_link(f'../logs/{args.job}/{args.job}_AS_has_part_CT_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["has_part"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'../logs/{args.table}/{args.table}_AS__CT_strict_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["ct-as_report"])
 
-  report.create_md_file()
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'../logs/{args.table}/class_{args.table}_indirect_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["indirect"])
+
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'../logs/{args.table}/{args.table}_AS_has_part_CT_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["has_part"])
+  
+  readme.create_md_file()
 
   
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
-  parser.add_argument('job', help='job to download')
-  # parser.add_argument('output_file', help='output file path')
-  # parser.add_argument("old_version", help="is old version")
+  parser.add_argument('table', help='table to generate readme')
+  parser.add_argument("log_dict", help="log in json")
+  parser.add_argument('output_file', help='output file path')
 
   args = parser.parse_args()
   main(args)
