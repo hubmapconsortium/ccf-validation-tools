@@ -33,12 +33,12 @@ def parse_asctb(path):
     RETURN pandas dataframe of with columns ['o', 's', 'olabel', 'slabel', user_olabel, user_slabel]
     where each pair of adjacent columns => a subject-object pair for testing"""
 
-    def is_valid_id(content):
-        if re.match("(CL|UBERON|PCL)\:[0-9]+", content['id']):
-            return content
-        else:
-            logger.warning(f"No valid ID provided for '{content['id']}', label: {content['rdfs_label']}, user_label: {content['name']}")
-            return False
+    def is_valid_id(log_dict, content, row_number):
+        if not re.match("(CL|UBERON|PCL)\:[0-9]+", content['id']):
+            log_dict["no_valid_id"].append({"id": content['id'], "label": content['rdfs_label'], "user_label": content['name'], "row_number": row_number})
+            #logger.warning(f"No valid ID provided for '{content['id']}', label: {content['rdfs_label']}, user_label: {content['name']}")
+            return log_dict
+        return log_dict
     def check_id(id):
       return re.match("(CL|UBERON|PCL)\:[0-9]+", id)
 
@@ -50,19 +50,22 @@ def parse_asctb(path):
     ct_valid_terms = set()
     rt = []
     rut = []
+    log_dict = {"no_valid_id": [], "no_found_id": [], "diff_label": []}
 
-    #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel'])
+    #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel', 'row_number'])
     dl = []
 
     for row in asct_b_tab:
       # AS-AS RELATIONSHIP
       anatomical_structures = row['anatomical_structures']
       for current, next in zip(anatomical_structures, anatomical_structures[1:]):
+        log_dict = is_valid_id(log_dict, current, row["rowNumber"])
+        log_dict = is_valid_id(log_dict, next, row["rowNumber"])
         if current['id'] != '':
           unique_terms.add(current['id'])
         if next['id'] != '':
           unique_terms.add(next['id'])
-        if is_valid_id(current) and is_valid_id(next):
+        if check_id(current['id']) and check_id(next['id']):
           d = {}
           d['s'] = next['id']
           d['slabel'] = next['rdfs_label']
@@ -70,6 +73,7 @@ def parse_asctb(path):
           d['o'] = current['id']
           d['olabel'] = current['rdfs_label']
           d['user_olabel'] = current['name']
+          d['row_number'] = row['rowNumber']
           dl.append(d)
           as_valid_terms.add(current['id'])
           as_valid_terms.add(next['id'])
@@ -91,12 +95,15 @@ def parse_asctb(path):
       # CT-CT RELATIONSHIP
       cell_types = row['cell_types']
       for current, next in zip(cell_types, cell_types[1:]):
+        log_dict = is_valid_id(log_dict, current, row["rowNumber"])
+        log_dict = is_valid_id(log_dict, next, row["rowNumber"])
         if current['id'] != '':
           unique_terms.add(current['id'])
         if next['id'] != '':
           unique_terms.add(next['id'])
-        if is_valid_id(current) and is_valid_id(next):
+        if check_id(current['id']) and check_id(next['id']):
           d = {}
+          d['row_number'] = row['rowNumber']
           d['s'] = next['id']
           d['slabel'] = next['rdfs_label']
           d['user_slabel'] = next['name']
@@ -129,8 +136,11 @@ def parse_asctb(path):
         last_ct = cell_types[-1]
         if not check_id(last_ct['id']) and len(cell_types) > 1:
           last_ct = cell_types[-2]
-        if is_valid_id(last_as) and is_valid_id(last_ct):
+        log_dict = is_valid_id(log_dict, last_as, row["rowNumber"])
+        log_dict = is_valid_id(log_dict, last_ct, row["rowNumber"])
+        if check_id(last_as['id']) and check_id(last_ct['id']):
           d = {}
+          d['row_number'] = row['rowNumber']
           d['s'] = last_ct['id']
           d['slabel'] = last_ct['rdfs_label']
           d['user_slabel'] = last_ct['name']
@@ -209,7 +219,7 @@ def parse_asctb(path):
     out = pd.DataFrame.from_records(dl).drop_duplicates()
     new_terms = pd.DataFrame.from_records(rt).drop_duplicates()
     new_uberon_terms = pd.DataFrame.from_records(rut).drop_duplicates()
-    return out, report_terms, new_terms, new_uberon_terms
+    return out, report_terms, new_terms, new_uberon_terms, log_dict
 
 def transform_to_str(list):
     terms_pairs = set()

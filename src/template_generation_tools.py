@@ -4,12 +4,12 @@ from uberongraph_tools import UberonGraph
 from ccf_tools import chunks, split_terms, transform_to_str, add_rows
 import logging
 
-logger = logging.getLogger('ASCT-b Tables Log')
+# logger = logging.getLogger('ASCT-b Tables Log')
 
 #    olabel            slabel               o               s
 # 0  kidney      right kidney  UBERON:0002113  UBERON:0004539
 
-def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
+def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   """Takes a ccf tools dataframe as input;
   Validates relationships against OBO;
   Adds relationships to template, tagged with OBO status"""
@@ -61,7 +61,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   no_valid_records = [seed_no_valid]
   if ccf_tools_df.empty:
     return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, report_relationship, strict_log, 
-            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame(columns=['term', 'image_url']), ConjunctiveGraph())
+            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame(columns=['term', 'image_url']), ConjunctiveGraph(), log_dict)
 
   terms = set()
   all_as = set()
@@ -88,7 +88,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
 
   del_index = []
   for t in no_valid_class:
-    logger.warning(f"Unrecognised UBERON/CL/PCL entity '{t}'")
+    log_dict["no_found_id"].append({"id": {t}})
+    #logger.warning(f"Unrecognised UBERON/CL/PCL entity '{t}'")
     del_index.extend(ccf_tools_df[(ccf_tools_df['s'] == t) | (ccf_tools_df['o'] == t)].index)
    
   # Drop rows with unrecognized UBERON/CL terms 
@@ -144,12 +145,14 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   for term, label in terms_labels:
     row = ccf_tools_df[(ccf_tools_df['s'] == term) | (ccf_tools_df['o'] == term)].iloc[0]
     if row['s'] == term and row['slabel'].lower() != label.lower():
-      logger.warning(f"Different labels found for {term}. Uberongraph: {label} ; ASCT+b table: {row['slabel']}")
+      log_dict["diff_label"].append({"id": term, "label": label, "asct_label": row['slabel'], "user_label": row['user_slabel'], "rowNumber": int(row['row_number'])})
+      # logger.warning(f"Different labels found for {term}. Uberongraph: {label} ; ASCT+b table: {row['slabel']}")
       ccf_tools_df.loc[(ccf_tools_df['s'] == term), 'slabel'] = label
       ccf_tools_df.loc[(ccf_tools_df['o'] == term), 'olabel'] = label
         
     if row['o'] == term and row['olabel'].lower() != label.lower():
-      logger.warning(f"Different labels found for {term}. Uberongraph: {label} ; ASCT+b table: {row['olabel']}")
+      log_dict["diff_label"].append({"id": term, "label": label, "asct_label": row['olabel'], "user_label": row['user_olabel'], "rowNumber": int(row['row_number'])})
+      # logger.warning(f"Different labels found for {term}. Uberongraph: {label} ; ASCT+b table: {row['olabel']}")
       ccf_tools_df.loc[(ccf_tools_df['o'] == term), 'olabel'] = label
       ccf_tools_df.loc[(ccf_tools_df['s'] == term), 'slabel'] = label
 
@@ -339,7 +342,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame):
   
 
   return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log.sort_values('s'), annotations, valid_error_log.sort_values('s'), report_relationship, strict_log.sort_values('s'), 
-          has_part_report.sort_values('s'), pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report).sort_values('term'), sec_graph)
+          has_part_report.sort_values('s'), pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report).sort_values('term'), sec_graph, log_dict)
 
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
