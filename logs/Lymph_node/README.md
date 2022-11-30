@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_node (2022-11-29)
+ASCT+B Validation Reports for Lymph_node (2022-11-30)
 =====================================================
 
 Table of contents
@@ -50,11 +50,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _21_, the term _[CL:0009103](http://purl.obolibrary.org/obo/CL_0009103)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ymph node marginal reticular cell_ and the one in the ontology is _lymph node marginal reticular cell_. For reference, the given name/label by SMEs is _Marginal Reticular Cell_. Please correct it in the ASCT+B table.
-
 1. In row _17_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _Pericyte_. Please correct it in the ASCT+B table.
 
 1. In row _37_, the term _[UBERON:8410053](http://purl.obolibrary.org/obo/UBERON_8410053)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ymph node germinal center dark zone_ and the one in the ontology is _lymph node germinal center dark zone_. For reference, the given name/label by SMEs is _Dark Zone_. Please correct it in the ASCT+B table.
+
+1. In row _21_, the term _[CL:0009103](http://purl.obolibrary.org/obo/CL_0009103)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ymph node marginal reticular cell_ and the one in the ontology is _lymph node marginal reticular cell_. For reference, the given name/label by SMEs is _Marginal Reticular Cell_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID

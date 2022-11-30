@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Fallopian_tube (2022-11-29)
+ASCT+B Validation Reports for Fallopian_tube (2022-11-30)
 =========================================================
 
 Table of contents
@@ -50,17 +50,17 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
+1. In row _28_, the term _[UBERON:0003889](http://purl.obolibrary.org/obo/UBERON_0003889)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _fallopian tube_. For reference, the given name/label by SMEs is _Fallopian tube_. Please correct it in the ASCT+B table.
+
 1. In row _83_, the term _[UBERON:8410010](http://purl.obolibrary.org/obo/UBERON_8410010)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _fimbria of uterine tube_. For reference, the given name/label by SMEs is _fimbria of Fallopian tube_. Please correct it in the ASCT+B table.
 
 1. In row _28_, the term _[UBERON:0016632](http://purl.obolibrary.org/obo/UBERON_0016632)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _isthmus of fallopian tube_. For reference, the given name/label by SMEs is _isthmus of Fallopian tube_. Please correct it in the ASCT+B table.
 
-1. In row _60_, the term _[UBERON:0003984](http://purl.obolibrary.org/obo/UBERON_0003984)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _uterine tube infundibulum_. For reference, the given name/label by SMEs is _infundibulum of Fallopian tube_. Please correct it in the ASCT+B table.
-
 1. In row _76_, the term _[UBERON:0012331](http://purl.obolibrary.org/obo/UBERON_0012331)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _mesosalpinx_. For reference, the given name/label by SMEs is _mesosalpinx_. Please correct it in the ASCT+B table.
 
-1. In row _28_, the term _[UBERON:0003889](http://purl.obolibrary.org/obo/UBERON_0003889)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _fallopian tube_. For reference, the given name/label by SMEs is _Fallopian tube_. Please correct it in the ASCT+B table.
-
 1. In row _44_, the term _[UBERON:0012648](http://purl.obolibrary.org/obo/UBERON_0012648)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _ampulla of uterine tube_. For reference, the given name/label by SMEs is _ampulla of Fallopian tube_. Please correct it in the ASCT+B table.
+
+1. In row _60_, the term _[UBERON:0003984](http://purl.obolibrary.org/obo/UBERON_0003984)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _uterine tube infundibulum_. For reference, the given name/label by SMEs is _infundibulum of Fallopian tube_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID
