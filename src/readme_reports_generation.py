@@ -155,19 +155,19 @@ def main(args):
 
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["external"], marker=markers_dict["external"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'../logs/{args.table}/class_{args.table}_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["as-as_report"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'class_{args.table}_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["as-as_report"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'../logs/{args.table}/class_{args.table}_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["ct-ct_report"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'class_{args.table}_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["ct-ct_report"])
   
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'../logs/{args.table}/{args.table}_AS__CT_strict_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["ct-as_report"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'{args.table}_AS_CT_strict_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["ct-as_report"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'../logs/{args.table}/new_cl_terms_{args.table}.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["new_cl"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'new_cl_terms_{args.table}.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["new_cl"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'../logs/{args.table}/new_uberon_terms_{args.table}.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["new_uberon"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'new_uberon_terms_{args.table}.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["new_uberon"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'../logs/{args.table}/class_{args.table}_indirect_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["indirect"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'class_{args.table}_indirect_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["indirect"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'../logs/{args.table}/{args.table}_AS_has_part_CT_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["has_part"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'{args.table}_AS_has_part_CT_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["has_part"])
   
   readme.create_md_file()
 

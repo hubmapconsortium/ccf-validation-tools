@@ -780,18 +780,18 @@ This report provides a list of terms from another ontologies that we do not vali
 # Relationship reports
 
 ## Relationship AS-AS report
-[**Report**](../logs/Lung/class_Lung_log.tsv)
+[**Report**](class_Lung_log.tsv)
 ## Relationship CT-CT report
-[**Report**](../logs/Lung/class_Lung_log.tsv)
+[**Report**](class_Lung_log.tsv)
 ## Relationship CT-AS report
-[**Report**](../logs/Lung/Lung_AS__CT_strict_log.tsv)
+[**Report**](Lung_AS_CT_strict_log.tsv)
 # New CL terms
-[**Report**](../logs/Lung/new_cl_terms_Lung.tsv)
+[**Report**](new_cl_terms_Lung.tsv)
 # New UBERON terms
-[**Report**](../logs/Lung/new_uberon_terms_Lung.tsv)
+[**Report**](new_uberon_terms_Lung.tsv)
 # Informative reports (valid relationships)
 
 ## Indirect relationship
-[**Report**](../logs/Lung/class_Lung_indirect_log.tsv)
+[**Report**](class_Lung_indirect_log.tsv)
 ## Relationship AS has part CT
-[**Report**](../logs/Lung/Lung_AS_has_part_CT_log.tsv)
+[**Report**](Lung_AS_has_part_CT_log.tsv)

@@ -84,18 +84,18 @@ This report provides a list of terms from another ontologies that we do not vali
 # Relationship reports
 
 ## Relationship AS-AS report
-[**Report**](../logs/Prostate/class_Prostate_log.tsv)
+[**Report**](class_Prostate_log.tsv)
 ## Relationship CT-CT report
-[**Report**](../logs/Prostate/class_Prostate_log.tsv)
+[**Report**](class_Prostate_log.tsv)
 ## Relationship CT-AS report
-[**Report**](../logs/Prostate/Prostate_AS__CT_strict_log.tsv)
+[**Report**](Prostate_AS_CT_strict_log.tsv)
 # New CL terms
-[**Report**](../logs/Prostate/new_cl_terms_Prostate.tsv)
+[**Report**](new_cl_terms_Prostate.tsv)
 # New UBERON terms
-[**Report**](../logs/Prostate/new_uberon_terms_Prostate.tsv)
+[**Report**](new_uberon_terms_Prostate.tsv)
 # Informative reports (valid relationships)
 
 ## Indirect relationship
-[**Report**](../logs/Prostate/class_Prostate_indirect_log.tsv)
+[**Report**](class_Prostate_indirect_log.tsv)
 ## Relationship AS has part CT
-[**Report**](../logs/Prostate/Prostate_AS_has_part_CT_log.tsv)
+[**Report**](Prostate_AS_has_part_CT_log.tsv)

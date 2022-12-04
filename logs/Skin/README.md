@@ -80,18 +80,18 @@ This report provides a list of terms from another ontologies that we do not vali
 # Relationship reports
 
 ## Relationship AS-AS report
-[**Report**](../logs/Skin/class_Skin_log.tsv)
+[**Report**](class_Skin_log.tsv)
 ## Relationship CT-CT report
-[**Report**](../logs/Skin/class_Skin_log.tsv)
+[**Report**](class_Skin_log.tsv)
 ## Relationship CT-AS report
-[**Report**](../logs/Skin/Skin_AS__CT_strict_log.tsv)
+[**Report**](Skin_AS_CT_strict_log.tsv)
 # New CL terms
-[**Report**](../logs/Skin/new_cl_terms_Skin.tsv)
+[**Report**](new_cl_terms_Skin.tsv)
 # New UBERON terms
-[**Report**](../logs/Skin/new_uberon_terms_Skin.tsv)
+[**Report**](new_uberon_terms_Skin.tsv)
 # Informative reports (valid relationships)
 
 ## Indirect relationship
-[**Report**](../logs/Skin/class_Skin_indirect_log.tsv)
+[**Report**](class_Skin_indirect_log.tsv)
 ## Relationship AS has part CT
-[**Report**](../logs/Skin/Skin_AS_has_part_CT_log.tsv)
+[**Report**](Skin_AS_has_part_CT_log.tsv)
