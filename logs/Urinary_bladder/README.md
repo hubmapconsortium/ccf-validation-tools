@@ -92,18 +92,18 @@ This report provides a list of terms from another ontologies that we do not vali
 # Relationship reports
 
 ## Relationship AS-AS report
-[**Report**](../logs/Urinary_bladder/class_Urinary_bladder_log.tsv)
+[**Report**](class_Urinary_bladder_log.tsv)
 ## Relationship CT-CT report
-[**Report**](../logs/Urinary_bladder/class_Urinary_bladder_log.tsv)
+[**Report**](class_Urinary_bladder_log.tsv)
 ## Relationship CT-AS report
-[**Report**](../logs/Urinary_bladder/Urinary_bladder_AS__CT_strict_log.tsv)
+[**Report**](Urinary_bladder_AS_CT_strict_log.tsv)
 # New CL terms
-[**Report**](../logs/Urinary_bladder/new_cl_terms_Urinary_bladder.tsv)
+[**Report**](new_cl_terms_Urinary_bladder.tsv)
 # New UBERON terms
-[**Report**](../logs/Urinary_bladder/new_uberon_terms_Urinary_bladder.tsv)
+[**Report**](new_uberon_terms_Urinary_bladder.tsv)
 # Informative reports (valid relationships)
 
 ## Indirect relationship
-[**Report**](../logs/Urinary_bladder/class_Urinary_bladder_indirect_log.tsv)
+[**Report**](class_Urinary_bladder_indirect_log.tsv)
 ## Relationship AS has part CT
-[**Report**](../logs/Urinary_bladder/Urinary_bladder_AS_has_part_CT_log.tsv)
+[**Report**](Urinary_bladder_AS_has_part_CT_log.tsv)

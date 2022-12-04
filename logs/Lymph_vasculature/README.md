@@ -314,18 +314,18 @@ This report provides a list of terms from another ontologies that we do not vali
 # Relationship reports
 
 ## Relationship AS-AS report
-[**Report**](../logs/Lymph_vasculature/class_Lymph_vasculature_log.tsv)
+[**Report**](class_Lymph_vasculature_log.tsv)
 ## Relationship CT-CT report
-[**Report**](../logs/Lymph_vasculature/class_Lymph_vasculature_log.tsv)
+[**Report**](class_Lymph_vasculature_log.tsv)
 ## Relationship CT-AS report
-[**Report**](../logs/Lymph_vasculature/Lymph_vasculature_AS__CT_strict_log.tsv)
+[**Report**](Lymph_vasculature_AS_CT_strict_log.tsv)
 # New CL terms
-[**Report**](../logs/Lymph_vasculature/new_cl_terms_Lymph_vasculature.tsv)
+[**Report**](new_cl_terms_Lymph_vasculature.tsv)
 # New UBERON terms
-[**Report**](../logs/Lymph_vasculature/new_uberon_terms_Lymph_vasculature.tsv)
+[**Report**](new_uberon_terms_Lymph_vasculature.tsv)
 # Informative reports (valid relationships)
 
 ## Indirect relationship
-[**Report**](../logs/Lymph_vasculature/class_Lymph_vasculature_indirect_log.tsv)
+[**Report**](class_Lymph_vasculature_indirect_log.tsv)
 ## Relationship AS has part CT
-[**Report**](../logs/Lymph_vasculature/Lymph_vasculature_AS_has_part_CT_log.tsv)
+[**Report**](Lymph_vasculature_AS_has_part_CT_log.tsv)

@@ -126,18 +126,18 @@ This report provides a list of terms from another ontologies that we do not vali
 # Relationship reports
 
 ## Relationship AS-AS report
-[**Report**](../logs/Liver/class_Liver_log.tsv)
+[**Report**](class_Liver_log.tsv)
 ## Relationship CT-CT report
-[**Report**](../logs/Liver/class_Liver_log.tsv)
+[**Report**](class_Liver_log.tsv)
 ## Relationship CT-AS report
-[**Report**](../logs/Liver/Liver_AS__CT_strict_log.tsv)
+[**Report**](Liver_AS_CT_strict_log.tsv)
 # New CL terms
-[**Report**](../logs/Liver/new_cl_terms_Liver.tsv)
+[**Report**](new_cl_terms_Liver.tsv)
 # New UBERON terms
-[**Report**](../logs/Liver/new_uberon_terms_Liver.tsv)
+[**Report**](new_uberon_terms_Liver.tsv)
 # Informative reports (valid relationships)
 
 ## Indirect relationship
-[**Report**](../logs/Liver/class_Liver_indirect_log.tsv)
+[**Report**](class_Liver_indirect_log.tsv)
 ## Relationship AS has part CT
-[**Report**](../logs/Liver/Liver_AS_has_part_CT_log.tsv)
+[**Report**](Liver_AS_has_part_CT_log.tsv)

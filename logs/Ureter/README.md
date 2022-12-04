@@ -96,18 +96,18 @@ This report provides a list of terms from another ontologies that we do not vali
 # Relationship reports
 
 ## Relationship AS-AS report
-[**Report**](../logs/Ureter/class_Ureter_log.tsv)
+[**Report**](class_Ureter_log.tsv)
 ## Relationship CT-CT report
-[**Report**](../logs/Ureter/class_Ureter_log.tsv)
+[**Report**](class_Ureter_log.tsv)
 ## Relationship CT-AS report
-[**Report**](../logs/Ureter/Ureter_AS__CT_strict_log.tsv)
+[**Report**](Ureter_AS_CT_strict_log.tsv)
 # New CL terms
-[**Report**](../logs/Ureter/new_cl_terms_Ureter.tsv)
+[**Report**](new_cl_terms_Ureter.tsv)
 # New UBERON terms
-[**Report**](../logs/Ureter/new_uberon_terms_Ureter.tsv)
+[**Report**](new_uberon_terms_Ureter.tsv)
 # Informative reports (valid relationships)
 
 ## Indirect relationship
-[**Report**](../logs/Ureter/class_Ureter_indirect_log.tsv)
+[**Report**](class_Ureter_indirect_log.tsv)
 ## Relationship AS has part CT
-[**Report**](../logs/Ureter/Ureter_AS_has_part_CT_log.tsv)
+[**Report**](Ureter_AS_has_part_CT_log.tsv)
