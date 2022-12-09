@@ -17,24 +17,26 @@ def get_sheet_gid(job, old_version):
       else:
         return element["new"]
 
+def get_table_version_n_date(metadata):
+  table_date = "NA"
+  table_version = "NA"
+
+  if metadata["date"] != '':
+    table_date = metadata["date"]
+  if metadata["version"] != '':
+    table_version = metadata["version"]
+  
+  return table_date, table_version
+
 def main(args):
   version = get_sheet_gid(args.job, args.old_version)
 
-  API_URL = f'https://asctb-api.herokuapp.com/v2/{version["sheetId"]}/{version["gid"]}'
+  API_URL = f'https://mmpyikxkcp.us-east-2.awsapprunner.com/v2/{version["sheetId"]}/{version["gid"]}'
 
   data = requests.get(API_URL).text
   data = json.loads(data)
 
-  table_date = "NA"
-  table_version = "NA"
-
-  if data["metadata"]["date"] != '':
-    try:
-      table_date = datetime.datetime.strptime(data["metadata"]["date"], '%m/%d/%Y').strftime('%Y-%m-%d')
-    except:
-      table_date = data["metadata"]["date"]
-  if data["metadata"]["version"] != '':
-    table_version = data["metadata"]["version"]
+  table_date, table_version = get_table_version_n_date(data["metadata"])
       
   with open('tables_version.txt', 'a+', encoding='utf-8') as t:
     t.write(args.job + ";" + table_version + ";" + table_date + "\n")
