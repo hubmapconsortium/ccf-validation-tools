@@ -27,8 +27,6 @@ jobs:
         run: mkdir -p resources/ASCT-b_tables && cd src && make validation_reports_release
       - name: Define repository's owner
         run: chown -R root /__w/ccf-validation-tools/ccf-validation-tools
-      - name: Generate Validation Reports
-        run: cd src && make logs_as_md
       - name: Commit report
         run: |
           git config --global user.name 'Anita Caron'
@@ -48,9 +46,3 @@ jobs:
           commitish: master
           draft: false
           prerelease: false
-      - name: Deploy validation reports
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CONFIG_FILE: mkdocs.yaml
