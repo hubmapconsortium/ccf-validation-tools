@@ -26,8 +26,8 @@ all: last_official_release official_release
 	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION)
 
 ../logs/%/README.md: ../logs/%/logs_dict.json
-	python readme_reports_generation.py $* $< $@
-	rm ../logs/$*/logs_dict.json
+	if [ $(OLD_VERSION) = False ]; then python readme_reports_generation.py $* $< $@ && \
+		rm $<; fi
 .PRECIOUS: ../logs/%/README.md
 
 ../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv ../logs/%/README.md
@@ -122,3 +122,6 @@ official_release:
 last_official_release:
 	make ../owl/last_official_ASCTB_release/CCF_AS_CT.owl OLD_VERSION=True -B
 .PHONY: last_official_release
+
+validation_reports_release: official_release
+	cp -a ../logs/. ../docs
