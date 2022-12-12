@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Kidney (2022-11-30)
+ASCT+B Validation Reports for Kidney (2022-12-12)
 =================================================
 
 Table of contents
@@ -50,43 +50,43 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _34_, the term _[UBERON:0004193](http://purl.obolibrary.org/obo/UBERON_0004193)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ascending thin limb of loop of Henle_ and the one in the ontology is _loop of Henle ascending limb thin segment_. For reference, the given name/label by SMEs is _Loop of Henle (Thin Limb)_. Please correct it in the ASCT+B table.
-
-1. In row _43_, the term _[CL:4030018](http://purl.obolibrary.org/obo/CL_4030018)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule principal cell_ and the one in the ontology is _kidney connecting tubule principal cell_. For reference, the given name/label by SMEs is _Connecting Tubule Principal Cell_. Please correct it in the ASCT+B table.
-
-1. In row _13_, the term _[UBERON:0006852](http://purl.obolibrary.org/obo/UBERON_0006852)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _glomerular visceral epithelium_ and the one in the ontology is _obsolete glomerular visceral epithelium_. For reference, the given name/label by SMEs is _visceral epithelial layer_. Please correct it in the ASCT+B table.
-
-1. In row _41_, the term _[CL:4030017](http://purl.obolibrary.org/obo/CL_4030017)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _distal convoluted tubule cell type 2_ and the one in the ontology is _epithelial cell of late distal convoluted tubule_. For reference, the given name/label by SMEs is _Distal Convoluted Tubule Cell Type 2_. Please correct it in the ASCT+B table.
-
-1. In row _46_, the term _[CL:4030021](http://purl.obolibrary.org/obo/CL_4030021)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule intercalated cell type B_ and the one in the ontology is _kidney connecting tubule beta-intercalated cell_. For reference, the given name/label by SMEs is _Intercalated Cell Type B_. Please correct it in the ASCT+B table.
-
-1. In row _17_, the term _[UBERON:0001289](http://purl.obolibrary.org/obo/UBERON_0001289)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _descending thin limb of loop of Henle_ and the one in the ontology is _descending limb of loop of Henle_. For reference, the given name/label by SMEs is _Loop of Henle (Thin Limb)_. Please correct it in the ASCT+B table.
-
-1. In row _42_, the term _[UBERON:0005097](http://purl.obolibrary.org/obo/UBERON_0005097)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule_ and the one in the ontology is _renal connecting tubule_. For reference, the given name/label by SMEs is _Connecting Tubule_. Please correct it in the ASCT+B table.
+1. In row _13_, the term _[CL:0000653](http://purl.obolibrary.org/obo/CL_0000653)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _glomerular visceral epithelial cell_ and the one in the ontology is _podocyte_. For reference, the given name/label by SMEs is _Podocyte_. Please correct it in the ASCT+B table.
 
 1. In row _20_, the term _[UBERON:0001284](http://purl.obolibrary.org/obo/UBERON_0001284)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _renal column (column of Bertin)_ and the one in the ontology is _renal column_. For reference, the given name/label by SMEs is _renal column_. Please correct it in the ASCT+B table.
 
-1. In row _32_, the term _[CL:4030013](http://purl.obolibrary.org/obo/CL_4030013)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _Descending Thin Limb Cell Type 2_ and the one in the ontology is _kidney loop of Henle long descending thin limb outer medulla epithelial cell_. For reference, the given name/label by SMEs is _Descending Thin Limb Cell Type 2_. Please correct it in the ASCT+B table.
-
-1. In row _59_, the term _[CL:0000115](http://purl.obolibrary.org/obo/CL_0000115)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _endothlial cell_ and the one in the ontology is _endothelial cell_. For reference, the given name/label by SMEs is _Endothelial Cell_. Please correct it in the ASCT+B table.
-
-1. In row _54_, the term _[CL:4030015](http://purl.obolibrary.org/obo/CL_4030015)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _collecting duct intercalated cell type A_ and the one in the ontology is _kidney collecting duct alpha-intercalated cell_. For reference, the given name/label by SMEs is _Collecting Duct Intercalated Cell Type A_. Please correct it in the ASCT+B table.
-
-1. In row _44_, the term _[CL:4030019](http://purl.obolibrary.org/obo/CL_4030019)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule intercalated cell_ and the one in the ontology is _kidney connecting tubule intercalated cell_. For reference, the given name/label by SMEs is _Connecting Tubule Intercalated Cell_. Please correct it in the ASCT+B table.
-
-1. In row _31_, the term _[CL:4030012](http://purl.obolibrary.org/obo/CL_4030012)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _descending thin limb cell type 1_ and the one in the ontology is _kidney loop of Henle short descending thin limb epithelial cell_. For reference, the given name/label by SMEs is _Descending Thin Limb Cell Type 1_. Please correct it in the ASCT+B table.
-
-1. In row _45_, the term _[CL:4030020](http://purl.obolibrary.org/obo/CL_4030020)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule intercalated cell type A_ and the one in the ontology is _kidney connecting tubule alpha-intercalated cell_. For reference, the given name/label by SMEs is _Connecting Tubule Intercalated Cell Type A_. Please correct it in the ASCT+B table.
-
 1. In row _70_, the term _[CL:4030022](http://purl.obolibrary.org/obo/CL_4030022)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _medullary fibroblast_ and the one in the ontology is _renal medullary fibroblast_. For reference, the given name/label by SMEs is _Medullary Fibroblast_. Please correct it in the ASCT+B table.
+
+1. In row _32_, the term _[CL:4030013](http://purl.obolibrary.org/obo/CL_4030013)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _Descending Thin Limb Cell Type 2_ and the one in the ontology is _kidney loop of Henle long descending thin limb outer medulla epithelial cell_. For reference, the given name/label by SMEs is _Descending Thin Limb Cell Type 2_. Please correct it in the ASCT+B table.
 
 1. In row _33_, the term _[CL:4030014](http://purl.obolibrary.org/obo/CL_4030014)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _Descending Thin Limb Cell Type 3_ and the one in the ontology is _kidney loop of Henle long descending thin limb inner medulla epithelial cell_. For reference, the given name/label by SMEs is _Descending Thin Limb Cell Type 3_. Please correct it in the ASCT+B table.
 
-1. In row _13_, the term _[CL:0000653](http://purl.obolibrary.org/obo/CL_0000653)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _glomerular visceral epithelial cell_ and the one in the ontology is _podocyte_. For reference, the given name/label by SMEs is _Podocyte_. Please correct it in the ASCT+B table.
+1. In row _17_, the term _[UBERON:0001289](http://purl.obolibrary.org/obo/UBERON_0001289)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _descending thin limb of loop of Henle_ and the one in the ontology is _descending limb of loop of Henle_. For reference, the given name/label by SMEs is _Loop of Henle (Thin Limb)_. Please correct it in the ASCT+B table.
+
+1. In row _40_, the term _[CL:4030016](http://purl.obolibrary.org/obo/CL_4030016)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _distal convoluted tubule cell type 1_ and the one in the ontology is _epithelial cell of early distal convoluted tubule_. For reference, the given name/label by SMEs is _Distal Convoluted Tubule Cell Type 1_. Please correct it in the ASCT+B table.
+
+1. In row _43_, the term _[CL:4030018](http://purl.obolibrary.org/obo/CL_4030018)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule principal cell_ and the one in the ontology is _kidney connecting tubule principal cell_. For reference, the given name/label by SMEs is _Connecting Tubule Principal Cell_. Please correct it in the ASCT+B table.
+
+1. In row _31_, the term _[CL:4030012](http://purl.obolibrary.org/obo/CL_4030012)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _descending thin limb cell type 1_ and the one in the ontology is _kidney loop of Henle short descending thin limb epithelial cell_. For reference, the given name/label by SMEs is _Descending Thin Limb Cell Type 1_. Please correct it in the ASCT+B table.
 
 1. In row _24_, the term _[UBERON:0004190](http://purl.obolibrary.org/obo/UBERON_0004190)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _glomerulus vasculature_ and the one in the ontology is _renal glomerulus vasculature_. For reference, the given name/label by SMEs is _Glomerulus Vasculature_. Please correct it in the ASCT+B table.
 
-1. In row _40_, the term _[CL:4030016](http://purl.obolibrary.org/obo/CL_4030016)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _distal convoluted tubule cell type 1_ and the one in the ontology is _epithelial cell of early distal convoluted tubule_. For reference, the given name/label by SMEs is _Distal Convoluted Tubule Cell Type 1_. Please correct it in the ASCT+B table.
+1. In row _44_, the term _[CL:4030019](http://purl.obolibrary.org/obo/CL_4030019)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule intercalated cell_ and the one in the ontology is _kidney connecting tubule intercalated cell_. For reference, the given name/label by SMEs is _Connecting Tubule Intercalated Cell_. Please correct it in the ASCT+B table.
+
+1. In row _34_, the term _[UBERON:0004193](http://purl.obolibrary.org/obo/UBERON_0004193)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ascending thin limb of loop of Henle_ and the one in the ontology is _loop of Henle ascending limb thin segment_. For reference, the given name/label by SMEs is _Loop of Henle (Thin Limb)_. Please correct it in the ASCT+B table.
+
+1. In row _13_, the term _[UBERON:0006852](http://purl.obolibrary.org/obo/UBERON_0006852)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _glomerular visceral epithelium_ and the one in the ontology is _obsolete glomerular visceral epithelium_. For reference, the given name/label by SMEs is _visceral epithelial layer_. Please correct it in the ASCT+B table.
+
+1. In row _42_, the term _[UBERON:0005097](http://purl.obolibrary.org/obo/UBERON_0005097)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule_ and the one in the ontology is _renal connecting tubule_. For reference, the given name/label by SMEs is _Connecting Tubule_. Please correct it in the ASCT+B table.
+
+1. In row _59_, the term _[CL:0000115](http://purl.obolibrary.org/obo/CL_0000115)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _endothlial cell_ and the one in the ontology is _endothelial cell_. For reference, the given name/label by SMEs is _Endothelial Cell_. Please correct it in the ASCT+B table.
+
+1. In row _46_, the term _[CL:4030021](http://purl.obolibrary.org/obo/CL_4030021)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule intercalated cell type B_ and the one in the ontology is _kidney connecting tubule beta-intercalated cell_. For reference, the given name/label by SMEs is _Intercalated Cell Type B_. Please correct it in the ASCT+B table.
+
+1. In row _41_, the term _[CL:4030017](http://purl.obolibrary.org/obo/CL_4030017)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _distal convoluted tubule cell type 2_ and the one in the ontology is _epithelial cell of late distal convoluted tubule_. For reference, the given name/label by SMEs is _Distal Convoluted Tubule Cell Type 2_. Please correct it in the ASCT+B table.
+
+1. In row _45_, the term _[CL:4030020](http://purl.obolibrary.org/obo/CL_4030020)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule intercalated cell type A_ and the one in the ontology is _kidney connecting tubule alpha-intercalated cell_. For reference, the given name/label by SMEs is _Connecting Tubule Intercalated Cell Type A_. Please correct it in the ASCT+B table.
+
+1. In row _54_, the term _[CL:4030015](http://purl.obolibrary.org/obo/CL_4030015)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _collecting duct intercalated cell type A_ and the one in the ontology is _kidney collecting duct alpha-intercalated cell_. For reference, the given name/label by SMEs is _Collecting Duct Intercalated Cell Type A_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID
