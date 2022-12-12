@@ -24,7 +24,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: verify and build
-        run: mkdir -p resources/ASCT-b_tables && cd src && make official_release
+        run: mkdir -p resources/ASCT-b_tables && cd src && make validation_reports_release
       - name: Define repository's owner
         run: chown -R root /__w/ccf-validation-tools/ccf-validation-tools
       - name: Generate Validation Reports
