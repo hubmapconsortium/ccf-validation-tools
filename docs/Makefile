@@ -19,11 +19,11 @@ upgrade:
 
 
 s serve:
-	mkdocs serve --strict
+	mkdocs serve --config-file ../mkdocs.yml
 
 
 b build:
-	mkdocs build --strict
+	mkdocs build --config-file ../mkdocs.yml
 
 d deploy:
 	mkdocs gh-deploy --strict --force --config-file ../mkdocs.yml

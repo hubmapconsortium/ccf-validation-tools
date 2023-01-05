@@ -1,3 +1,6 @@
+---
+comments: true
+---
 
 ASCT+B Validation Reports for Placenta (2022-11-30)
 ===================================================

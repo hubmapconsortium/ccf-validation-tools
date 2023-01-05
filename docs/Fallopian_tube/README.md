@@ -1,3 +1,6 @@
+---
+comments: true
+---
 
 ASCT+B Validation Reports for Fallopian_tube (2022-11-30)
 =========================================================
