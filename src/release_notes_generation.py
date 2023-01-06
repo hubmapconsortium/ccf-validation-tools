@@ -19,7 +19,7 @@ mdFile.new_header(3, "Ontology release", add_table_of_contents='n')
 ontology_data = ["Ontology", "Version"]
 ontology_data.extend(ont_version)
 
-mdFile.new_table(columns=2, rows=3, text=ontology_data, text_align='center')
+mdFile.new_table(columns=2, rows=4, text=ontology_data, text_align='center')
 
 mdFile.new_header(3, "ASCT+b Tables", add_table_of_contents='n')
 
