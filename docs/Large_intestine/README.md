@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Large_intestine (2022-11-30)
+ASCT+B Validation Reports for Large_intestine (2023-01-09)
 ==========================================================
 
 Table of contents
@@ -50,33 +50,33 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _19_, the term _[CL:0009011](http://purl.obolibrary.org/obo/CL_0009011)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _transit amplifying cell of large intestine_ and the one in the ontology is _transit amplifying cell of colon_. For reference, the given name/label by SMEs is _transient amplifying cell_. Please correct it in the ASCT+B table.
-
-1. In row _1323_, the term _[UBERON:0000423](http://purl.obolibrary.org/obo/UBERON_0000423)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _eccrine (sweat) gland_ and the one in the ontology is _eccrine sweat gland_. For reference, the given name/label by SMEs is _eccrine (sweat) gland_. Please correct it in the ASCT+B table.
-
-1. In row _436_, the term _[CL:0000192](http://purl.obolibrary.org/obo/CL_0000192)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _smooth muscle_ and the one in the ontology is _smooth muscle cell_. For reference, the given name/label by SMEs is _smooth muscle_. Please correct it in the ASCT+B table.
-
-1. In row _89_, the term _[CL:1000279](http://purl.obolibrary.org/obo/CL_1000279)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _smooth muscle cell of large intestine_. For reference, the given name/label by SMEs is _muscle_. Please correct it in the ASCT+B table.
-
-1. In row _1196_, the term _[CL:0000244](http://purl.obolibrary.org/obo/CL_0000244)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _transitional epithelial cell_. For reference, the given name/label by SMEs is _transitional_. Please correct it in the ASCT+B table.
-
-1. In row _1213_, the term _[CL:0000240](http://purl.obolibrary.org/obo/CL_0000240)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _stratified squamous epithelial cell_. For reference, the given name/label by SMEs is _squamous_. Please correct it in the ASCT+B table.
-
-1. In row _436_, the term _[UBERON:0012419](http://purl.obolibrary.org/obo/UBERON_0012419)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _tenia coli_ and the one in the ontology is _taenia coli_. For reference, the given name/label by SMEs is _tenia coli_. Please correct it in the ASCT+B table.
-
-1. In row _1196_, the term _[UBERON:0015716](http://purl.obolibrary.org/obo/UBERON_0015716)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _epithelium_ and the one in the ontology is _anal canal epithelium_. For reference, the given name/label by SMEs is _epithelium_. Please correct it in the ASCT+B table.
-
-1. In row _330_, the term _[UBERON:0012498](http://purl.obolibrary.org/obo/UBERON_0012498)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _serosa_ and the one in the ontology is _serosa of appendix_. For reference, the given name/label by SMEs is _serosa_. Please correct it in the ASCT+B table.
-
-1. In row _119_, the term _[UBERON:0001153](http://purl.obolibrary.org/obo/UBERON_0001153)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _cecum_ and the one in the ontology is _caecum_. For reference, the given name/label by SMEs is _cecum_. Please correct it in the ASCT+B table.
-
 1. In row _1211_, the term _[CL:0000146](http://purl.obolibrary.org/obo/CL_0000146)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _simple columnar epithelial cell_. For reference, the given name/label by SMEs is _columnar_. Please correct it in the ASCT+B table.
-
-1. In row _1211_, the term _[UBERON:0004760](http://purl.obolibrary.org/obo/UBERON_0004760)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _anal gland_ and the one in the ontology is _gland of anal canal_. For reference, the given name/label by SMEs is _anal gland_. Please correct it in the ASCT+B table.
 
 1. In row _15_, the term _[CL:0009009](http://purl.obolibrary.org/obo/CL_0009009)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _paneth cell of epithelium of large intestine_ and the one in the ontology is _paneth cell of colon_. For reference, the given name/label by SMEs is _Paneth_. Please correct it in the ASCT+B table.
 
+1. In row _1211_, the term _[UBERON:0004760](http://purl.obolibrary.org/obo/UBERON_0004760)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _anal gland_ and the one in the ontology is _gland of anal canal_. For reference, the given name/label by SMEs is _anal gland_. Please correct it in the ASCT+B table.
+
+1. In row _1323_, the term _[UBERON:0000423](http://purl.obolibrary.org/obo/UBERON_0000423)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _eccrine (sweat) gland_ and the one in the ontology is _eccrine sweat gland_. For reference, the given name/label by SMEs is _eccrine (sweat) gland_. Please correct it in the ASCT+B table.
+
+1. In row _1196_, the term _[UBERON:0015716](http://purl.obolibrary.org/obo/UBERON_0015716)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _epithelium_ and the one in the ontology is _anal canal epithelium_. For reference, the given name/label by SMEs is _epithelium_. Please correct it in the ASCT+B table.
+
+1. In row _19_, the term _[CL:0009011](http://purl.obolibrary.org/obo/CL_0009011)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _transit amplifying cell of large intestine_ and the one in the ontology is _transit amplifying cell of colon_. For reference, the given name/label by SMEs is _transient amplifying cell_. Please correct it in the ASCT+B table.
+
+1. In row _119_, the term _[UBERON:0001153](http://purl.obolibrary.org/obo/UBERON_0001153)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _cecum_ and the one in the ontology is _caecum_. For reference, the given name/label by SMEs is _cecum_. Please correct it in the ASCT+B table.
+
+1. In row _436_, the term _[CL:0000192](http://purl.obolibrary.org/obo/CL_0000192)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _smooth muscle_ and the one in the ontology is _smooth muscle cell_. For reference, the given name/label by SMEs is _smooth muscle_. Please correct it in the ASCT+B table.
+
 1. In row _31_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _pericyte_. Please correct it in the ASCT+B table.
+
+1. In row _1196_, the term _[CL:0000244](http://purl.obolibrary.org/obo/CL_0000244)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _transitional epithelial cell_. For reference, the given name/label by SMEs is _transitional_. Please correct it in the ASCT+B table.
+
+1. In row _89_, the term _[CL:1000279](http://purl.obolibrary.org/obo/CL_1000279)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _smooth muscle cell of large intestine_. For reference, the given name/label by SMEs is _muscle_. Please correct it in the ASCT+B table.
+
+1. In row _436_, the term _[UBERON:0012419](http://purl.obolibrary.org/obo/UBERON_0012419)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _tenia coli_ and the one in the ontology is _taenia coli_. For reference, the given name/label by SMEs is _tenia coli_. Please correct it in the ASCT+B table.
+
+1. In row _330_, the term _[UBERON:0012498](http://purl.obolibrary.org/obo/UBERON_0012498)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _serosa_ and the one in the ontology is _serosa of appendix_. For reference, the given name/label by SMEs is _serosa_. Please correct it in the ASCT+B table.
+
+1. In row _1213_, the term _[CL:0000240](http://purl.obolibrary.org/obo/CL_0000240)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _stratified squamous epithelial cell_. For reference, the given name/label by SMEs is _squamous_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID

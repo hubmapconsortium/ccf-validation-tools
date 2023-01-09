@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Heart (2022-11-30)
+ASCT+B Validation Reports for Heart (2023-01-09)
 ================================================
 
 Table of contents
@@ -50,11 +50,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
+1. In row _21_, the term _[CL:0002138](http://purl.obolibrary.org/obo/CL_0002138)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _lymphatic endothelial cell_ and the one in the ontology is _endothelial cell of lymphatic vessel_. For reference, the given name/label by SMEs is _lymphatic endothelial cell_. Please correct it in the ASCT+B table.
+
+1. In row _196_, the term _[UBERON:0000946](http://purl.obolibrary.org/obo/UBERON_0000946)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _Cardial valve_ and the one in the ontology is _cardiac valve_. For reference, the given name/label by SMEs is _Cardial valve_. Please correct it in the ASCT+B table.
+
 1. In row _142_, the term _[UBERON:0002353](http://purl.obolibrary.org/obo/UBERON_0002353)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _atrioventricular bundle_ and the one in the ontology is _bundle of His_. For reference, the given name/label by SMEs is _bundle of His_. Please correct it in the ASCT+B table.
 
 1. In row _133_, the term _[UBERON:0006958](http://purl.obolibrary.org/obo/UBERON_0006958)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _great cardiac vein_ and the one in the ontology is _great vein of heart_. For reference, the given name/label by SMEs is _great cardiac vein_. Please correct it in the ASCT+B table.
-
-1. In row _21_, the term _[CL:0002138](http://purl.obolibrary.org/obo/CL_0002138)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _lymphatic endothelial cell_ and the one in the ontology is _endothelial cell of lymphatic vessel_. For reference, the given name/label by SMEs is _lymphatic endothelial cell_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID

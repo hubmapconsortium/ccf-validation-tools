@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2022-11-30)
+ASCT+B Validation Reports for Lung (2023-01-09)
 ===============================================
 
 Table of contents
@@ -50,65 +50,65 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _176_, the term _[CL:0000484](http://purl.obolibrary.org/obo/CL_0000484)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connective tissue mast cell_ and the one in the ontology is _connective tissue type mast cell_. For reference, the given name/label by SMEs is _connective tissue mast cell_. Please correct it in the ASCT+B table.
-
-1. In row _166_, the term _[CL:0002394](http://purl.obolibrary.org/obo/CL_0002394)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _myeloid dendritic cell cDC1_ and the one in the ontology is _CD141-positive myeloid dendritic cell_. For reference, the given name/label by SMEs is _cDC1 myeloid dendritic cell_. Please correct it in the ASCT+B table.
-
 1. In row _147_, the term _[CL:4028002](http://purl.obolibrary.org/obo/CL_4028002)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _capillary endothelial cell 1_ and the one in the ontology is _alveolar capillary type 1 endothelial cell_. For reference, the given name/label by SMEs is _CAP1 general capillary aCap_. Please correct it in the ASCT+B table.
-
-1. In row _179_, the term _[CL:0000094](http://purl.obolibrary.org/obo/CL_0000094)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _neutrophil_ and the one in the ontology is _granulocyte_. For reference, the given name/label by SMEs is _neutrophil_. Please correct it in the ASCT+B table.
-
-1. In row _13_, the term _[CL:1000329](http://purl.obolibrary.org/obo/CL_1000329)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _goblet cell of epithelium of trachea_ and the one in the ontology is _tracheal goblet cell_. For reference, the given name/label by SMEs is _tracheal goblet cell_. Please correct it in the ASCT+B table.
-
-1. In row _82_, the term _[CL:0000158](http://purl.obolibrary.org/obo/CL_0000158)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _club cell of bronchiole_ and the one in the ontology is _club cell_. For reference, the given name/label by SMEs is _club cell_. Please correct it in the ASCT+B table.
-
-1. In row _180_, the term _[CL:0000556](http://purl.obolibrary.org/obo/CL_0000556)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _lung megakaryocyte_ and the one in the ontology is _megakaryocyte_. For reference, the given name/label by SMEs is _lung megakaryocyte_. Please correct it in the ASCT+B table.
-
-1. In row _54_, the term _[UBERON:0008886](http://purl.obolibrary.org/obo/UBERON_0008886)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _Pulmonary Vascular System _ and the one in the ontology is _pulmonary vascular system_. For reference, the given name/label by SMEs is _Pulmonary Vascular System _. Please correct it in the ASCT+B table.
-
-1. In row _152_, the term _[CL:0000623](http://purl.obolibrary.org/obo/CL_0000623)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _natural killer_ and the one in the ontology is _natural killer cell_. For reference, the given name/label by SMEs is _natural killer_. Please correct it in the ASCT+B table.
-
-1. In row _12_, the term _[UBERON:0007196](http://purl.obolibrary.org/obo/UBERON_0007196)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _tracheobroncheal tree _ and the one in the ontology is _tracheobronchial tree_. For reference, the given name/label by SMEs is _tracheobroncheal tree _. Please correct it in the ASCT+B table.
-
-1. In row _153_, the term _[CL:0000938](http://purl.obolibrary.org/obo/CL_0000938)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _NK CD56bright_ and the one in the ontology is _CD16-negative, CD56-bright natural killer cell, human_. For reference, the given name/label by SMEs is _NK CD56bright_. Please correct it in the ASCT+B table.
-
-1. In row _154_, the term _[CL:0000814](http://purl.obolibrary.org/obo/CL_0000814)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _NK T cell_ and the one in the ontology is _mature NK T cell_. For reference, the given name/label by SMEs is _NK T cell_. Please correct it in the ASCT+B table.
-
-1. In row _139_, the term _[CL:4028006](http://purl.obolibrary.org/obo/CL_4028006)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _alveolar type 2 fibroblast_ and the one in the ontology is _alveolar type 2 fibroblast cell_. For reference, the given name/label by SMEs is _alveolar type 2 fibroblast_. Please correct it in the ASCT+B table.
-
-1. In row _148_, the term _[CL:4028003](http://purl.obolibrary.org/obo/CL_4028003)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _capillary endothelial cell 2_ and the one in the ontology is _alveolar capillary type 2 endothelial cell_. For reference, the given name/label by SMEs is _CAP2 aerocyte capillary gCap_. Please correct it in the ASCT+B table.
 
 1. In row _161_, the term _[CL:0000913](http://purl.obolibrary.org/obo/CL_0000913)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD8+ T cell effector memory_ and the one in the ontology is _effector memory CD8-positive, alpha-beta T cell_. For reference, the given name/label by SMEs is _CD8+ T cell effector memory_. Please correct it in the ASCT+B table.
 
-1. In row _158_, the term _[CL:0000905](http://purl.obolibrary.org/obo/CL_0000905)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD4+ T cell effector memory_ and the one in the ontology is _effector memory CD4-positive, alpha-beta T cell_. For reference, the given name/label by SMEs is _CD4+ T cell effector memory_. Please correct it in the ASCT+B table.
-
-1. In row _140_, the term _[CL:4028004](http://purl.obolibrary.org/obo/CL_4028004)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _alveolar type 1 fibroblast_ and the one in the ontology is _alveolar type 1 fibroblast cell_. For reference, the given name/label by SMEs is _alveolar type 1 fibroblast_. Please correct it in the ASCT+B table.
-
 1. In row _55_, the term _[CL:0002591](http://purl.obolibrary.org/obo/CL_0002591)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _smooth muscle cell of pulmonary artery_ and the one in the ontology is _smooth muscle cell of the pulmonary artery_. For reference, the given name/label by SMEs is _pulmonary artery smooth muscle cell_. Please correct it in the ASCT+B table.
 
-1. In row _127_, the term _[CL:1000352](http://purl.obolibrary.org/obo/CL_1000352)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _basal epithelial cell of lobular bronchiole_ and the one in the ontology is _basal cell of epithelium of lobular bronchiole_. For reference, the given name/label by SMEs is _basal cell_. Please correct it in the ASCT+B table.
+1. In row _152_, the term _[CL:0000623](http://purl.obolibrary.org/obo/CL_0000623)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _natural killer_ and the one in the ontology is _natural killer cell_. For reference, the given name/label by SMEs is _natural killer_. Please correct it in the ASCT+B table.
 
-1. In row _132_, the term _[CL:1001566](http://purl.obolibrary.org/obo/CL_1001566)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _bronchioalveolar stem cell_ and the one in the ontology is _obsolete bronchioalveolar stem cells_. For reference, the given name/label by SMEs is _bronchioalveolar stem cell_. Please correct it in the ASCT+B table.
+1. In row _154_, the term _[CL:0000814](http://purl.obolibrary.org/obo/CL_0000814)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _NK T cell_ and the one in the ontology is _mature NK T cell_. For reference, the given name/label by SMEs is _NK T cell_. Please correct it in the ASCT+B table.
 
-1. In row _126_, the term _[CL:0000192](http://purl.obolibrary.org/obo/CL_0000192)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _airway smooth muscle cells_ and the one in the ontology is _smooth muscle cell_. For reference, the given name/label by SMEs is _airway smooth muscle cells_. Please correct it in the ASCT+B table.
-
-1. In row _171_, the term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _myeloid dendritic cell cDC2_ and the one in the ontology is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label by SMEs is _cDC2 myeloid dendritic cell_. Please correct it in the ASCT+B table.
-
-1. In row _18_, the term _[UBERON:0005203](http://purl.obolibrary.org/obo/UBERON_0005203)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _tracheal submucosal gland_ and the one in the ontology is _trachea gland_. For reference, the given name/label by SMEs is _tracheal submucosal gland_. Please correct it in the ASCT+B table.
-
-1. In row _143_, the term _[CL:0000186](http://purl.obolibrary.org/obo/CL_0000186)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _secondary crest myofibroblasts_ and the one in the ontology is _myofibroblast cell_. For reference, the given name/label by SMEs is _secondary crest myofibroblasts_. Please correct it in the ASCT+B table.
-
-1. In row _155_, the term _[CL:0000900](http://purl.obolibrary.org/obo/CL_0000900)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD8+ T cell naive_ and the one in the ontology is _naive thymus-derived CD8-positive, alpha-beta T cell_. For reference, the given name/label by SMEs is _CD8+ T cell naive_. Please correct it in the ASCT+B table.
-
-1. In row _22_, the term _[CL:0000313](http://purl.obolibrary.org/obo/CL_0000313)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _serous cell of submucosal glands_ and the one in the ontology is _serous secreting cell_. For reference, the given name/label by SMEs is _submucosal gland serous cells_. Please correct it in the ASCT+B table.
-
-1. In row _141_, the term _[UBERON:0002299](http://purl.obolibrary.org/obo/UBERON_0002299)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pulmonary alveolus_ and the one in the ontology is _alveolus of lung_. For reference, the given name/label by SMEs is _Alveolus_. Please correct it in the ASCT+B table.
-
-1. In row _25_, the term _[CL:1000413](http://purl.obolibrary.org/obo/CL_1000413)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _arterial endothelial cell_ and the one in the ontology is _endothelial cell of artery_. For reference, the given name/label by SMEs is _arterial endothelial cell_. Please correct it in the ASCT+B table.
+1. In row _153_, the term _[CL:0000938](http://purl.obolibrary.org/obo/CL_0000938)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _NK CD56bright_ and the one in the ontology is _CD16-negative, CD56-bright natural killer cell, human_. For reference, the given name/label by SMEs is _NK CD56bright_. Please correct it in the ASCT+B table.
 
 1. In row _131_, the term _[CL:1000350](http://purl.obolibrary.org/obo/CL_1000350)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _basal epithelial cell of terminal bronchiole_ and the one in the ontology is _basal cell of epithelium of terminal bronchiole_. For reference, the given name/label by SMEs is _basal cell_. Please correct it in the ASCT+B table.
 
+1. In row _180_, the term _[CL:0000556](http://purl.obolibrary.org/obo/CL_0000556)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _lung megakaryocyte_ and the one in the ontology is _megakaryocyte_. For reference, the given name/label by SMEs is _lung megakaryocyte_. Please correct it in the ASCT+B table.
+
+1. In row _12_, the term _[UBERON:0007196](http://purl.obolibrary.org/obo/UBERON_0007196)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _tracheobroncheal tree _ and the one in the ontology is _tracheobronchial tree_. For reference, the given name/label by SMEs is _tracheobroncheal tree _. Please correct it in the ASCT+B table.
+
+1. In row _171_, the term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _myeloid dendritic cell cDC2_ and the one in the ontology is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label by SMEs is _cDC2 myeloid dendritic cell_. Please correct it in the ASCT+B table.
+
+1. In row _176_, the term _[CL:0000484](http://purl.obolibrary.org/obo/CL_0000484)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connective tissue mast cell_ and the one in the ontology is _connective tissue type mast cell_. For reference, the given name/label by SMEs is _connective tissue mast cell_. Please correct it in the ASCT+B table.
+
+1. In row _179_, the term _[CL:0000094](http://purl.obolibrary.org/obo/CL_0000094)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _neutrophil_ and the one in the ontology is _granulocyte_. For reference, the given name/label by SMEs is _neutrophil_. Please correct it in the ASCT+B table.
+
+1. In row _148_, the term _[CL:4028003](http://purl.obolibrary.org/obo/CL_4028003)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _capillary endothelial cell 2_ and the one in the ontology is _alveolar capillary type 2 endothelial cell_. For reference, the given name/label by SMEs is _CAP2 aerocyte capillary gCap_. Please correct it in the ASCT+B table.
+
 1. In row _159_, the term _[CL:0000895](http://purl.obolibrary.org/obo/CL_0000895)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD4+ T cell naive_ and the one in the ontology is _naive thymus-derived CD4-positive, alpha-beta T cell_. For reference, the given name/label by SMEs is _CD4+ T cell naive_. Please correct it in the ASCT+B table.
+
+1. In row _54_, the term _[UBERON:0008886](http://purl.obolibrary.org/obo/UBERON_0008886)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _Pulmonary Vascular System _ and the one in the ontology is _pulmonary vascular system_. For reference, the given name/label by SMEs is _Pulmonary Vascular System _. Please correct it in the ASCT+B table.
+
+1. In row _25_, the term _[CL:1000413](http://purl.obolibrary.org/obo/CL_1000413)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _arterial endothelial cell_ and the one in the ontology is _endothelial cell of artery_. For reference, the given name/label by SMEs is _arterial endothelial cell_. Please correct it in the ASCT+B table.
+
+1. In row _22_, the term _[CL:0000313](http://purl.obolibrary.org/obo/CL_0000313)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _serous cell of submucosal glands_ and the one in the ontology is _serous secreting cell_. For reference, the given name/label by SMEs is _submucosal gland serous cells_. Please correct it in the ASCT+B table.
+
+1. In row _140_, the term _[CL:4028004](http://purl.obolibrary.org/obo/CL_4028004)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _alveolar type 1 fibroblast_ and the one in the ontology is _alveolar type 1 fibroblast cell_. For reference, the given name/label by SMEs is _alveolar type 1 fibroblast_. Please correct it in the ASCT+B table.
+
+1. In row _82_, the term _[CL:0000158](http://purl.obolibrary.org/obo/CL_0000158)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _club cell of bronchiole_ and the one in the ontology is _club cell_. For reference, the given name/label by SMEs is _club cell_. Please correct it in the ASCT+B table.
+
+1. In row _155_, the term _[CL:0000900](http://purl.obolibrary.org/obo/CL_0000900)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD8+ T cell naive_ and the one in the ontology is _naive thymus-derived CD8-positive, alpha-beta T cell_. For reference, the given name/label by SMEs is _CD8+ T cell naive_. Please correct it in the ASCT+B table.
+
+1. In row _127_, the term _[CL:1000352](http://purl.obolibrary.org/obo/CL_1000352)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _basal epithelial cell of lobular bronchiole_ and the one in the ontology is _basal cell of epithelium of lobular bronchiole_. For reference, the given name/label by SMEs is _basal cell_. Please correct it in the ASCT+B table.
+
+1. In row _139_, the term _[CL:4028006](http://purl.obolibrary.org/obo/CL_4028006)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _alveolar type 2 fibroblast_ and the one in the ontology is _alveolar type 2 fibroblast cell_. For reference, the given name/label by SMEs is _alveolar type 2 fibroblast_. Please correct it in the ASCT+B table.
+
+1. In row _126_, the term _[CL:0000192](http://purl.obolibrary.org/obo/CL_0000192)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _airway smooth muscle cells_ and the one in the ontology is _smooth muscle cell_. For reference, the given name/label by SMEs is _airway smooth muscle cells_. Please correct it in the ASCT+B table.
+
+1. In row _166_, the term _[CL:0002394](http://purl.obolibrary.org/obo/CL_0002394)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _myeloid dendritic cell cDC1_ and the one in the ontology is _CD141-positive myeloid dendritic cell_. For reference, the given name/label by SMEs is _cDC1 myeloid dendritic cell_. Please correct it in the ASCT+B table.
+
+1. In row _141_, the term _[UBERON:0002299](http://purl.obolibrary.org/obo/UBERON_0002299)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pulmonary alveolus_ and the one in the ontology is _alveolus of lung_. For reference, the given name/label by SMEs is _Alveolus_. Please correct it in the ASCT+B table.
+
+1. In row _18_, the term _[UBERON:0005203](http://purl.obolibrary.org/obo/UBERON_0005203)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _tracheal submucosal gland_ and the one in the ontology is _trachea gland_. For reference, the given name/label by SMEs is _tracheal submucosal gland_. Please correct it in the ASCT+B table.
+
+1. In row _132_, the term _[CL:1001566](http://purl.obolibrary.org/obo/CL_1001566)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _bronchioalveolar stem cell_ and the one in the ontology is _obsolete bronchioalveolar stem cells_. For reference, the given name/label by SMEs is _bronchioalveolar stem cell_. Please correct it in the ASCT+B table.
+
+1. In row _143_, the term _[CL:0000186](http://purl.obolibrary.org/obo/CL_0000186)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _secondary crest myofibroblasts_ and the one in the ontology is _myofibroblast cell_. For reference, the given name/label by SMEs is _secondary crest myofibroblasts_. Please correct it in the ASCT+B table.
+
+1. In row _158_, the term _[CL:0000905](http://purl.obolibrary.org/obo/CL_0000905)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD4+ T cell effector memory_ and the one in the ontology is _effector memory CD4-positive, alpha-beta T cell_. For reference, the given name/label by SMEs is _CD4+ T cell effector memory_. Please correct it in the ASCT+B table.
+
+1. In row _13_, the term _[CL:1000329](http://purl.obolibrary.org/obo/CL_1000329)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _goblet cell of epithelium of trachea_ and the one in the ontology is _tracheal goblet cell_. For reference, the given name/label by SMEs is _tracheal goblet cell_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID

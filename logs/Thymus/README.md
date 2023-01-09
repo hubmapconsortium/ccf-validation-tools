@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Thymus (2022-11-30)
+ASCT+B Validation Reports for Thymus (2023-01-09)
 =================================================
 
 Table of contents
@@ -52,11 +52,11 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
   
 1. In row _30_, the term _[CL:0009081](http://purl.obolibrary.org/obo/CL_0009081)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _specified double negative thymocyte_ and the one in the ontology is _specified double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 2_. Please correct it in the ASCT+B table.
 
-1. In row _78_, the term _[CL:0000914](http://purl.obolibrary.org/obo/CL_0000914)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _immature NKT cell_ and the one in the ontology is _immature NK T cell_. For reference, the given name/label by SMEs is _immature NKT cell_. Please correct it in the ASCT+B table.
-
 1. In row _31_, the term _[CL:0009082](http://purl.obolibrary.org/obo/CL_0009082)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _committed double negative thymocyte_ and the one in the ontology is _committed double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 3_. Please correct it in the ASCT+B table.
 
 1. In row _32_, the term _[CL:0009083](http://purl.obolibrary.org/obo/CL_0009083)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _rearranging double negative thymocyte_ and the one in the ontology is _rearranging double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 4_. Please correct it in the ASCT+B table.
+
+1. In row _78_, the term _[CL:0000914](http://purl.obolibrary.org/obo/CL_0000914)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _immature NKT cell_ and the one in the ontology is _immature NK T cell_. For reference, the given name/label by SMEs is _immature NKT cell_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID
