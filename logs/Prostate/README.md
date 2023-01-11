@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2022-11-30)
+ASCT+B Validation Reports for Prostate (2023-01-11)
 ===================================================
 
 Table of contents
@@ -58,25 +58,25 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _17_, no term id was found for the name/label _periepithelial fibroblast_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[17](https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481&range=17:17)_, no term id was found for the name/label _periepithelial fibroblast_.
 
-1. In row _18_, no term id was found for the name/label _interstitial fibroblast_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[18](https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481&range=18:18)_, no term id was found for the name/label _interstitial fibroblast_.
 
-1. In row _19_, no term id was found for the name/label _vascular smooth muscle_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[19](https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481&range=19:19)_, no term id was found for the name/label _vascular smooth muscle_.
 
-1. In row _20_, no term id was found for the name/label _prostate perictye_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[20](https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481&range=20:20)_, no term id was found for the name/label _prostate perictye_.
 
-1. In row _21_, no term id was found for the name/label _basal cell of prostatic urethra_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[21](https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481&range=21:21)_, no term id was found for the name/label _basal cell of prostatic urethra_.
 
-1. In row _22_, no term id was found for the name/label _club cell of prostatic urethra_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[22](https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481&range=22:22)_, no term id was found for the name/label _club cell of prostatic urethra_.
 
-1. In row _23_, no term id was found for the name/label _hillock cell of prostatic urethra_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[23](https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481&range=23:23)_, no term id was found for the name/label _hillock cell of prostatic urethra_.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request.  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 

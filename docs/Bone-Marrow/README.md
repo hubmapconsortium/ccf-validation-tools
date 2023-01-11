@@ -2,7 +2,7 @@
 comments: true
 ---
 
-ASCT+B Validation Reports for Bone-Marrow (2022-11-30)
+ASCT+B Validation Reports for Bone-Marrow (2023-01-11)
 ======================================================
 
 Table of contents
@@ -53,9 +53,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _33_, the term _[CL:0000037](http://purl.obolibrary.org/obo/CL_0000037)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _hemopoietic stem cell_ and the one in the ontology is _hematopoietic stem cell_. For reference, the given name/label by SMEs is _hemopoietic stem cell (HSC)_. Please correct it in the ASCT+B table.
+1. In row _[55](https://docs.google.com/spreadsheets/d/1prDIvvQF0akXKCfLv6FqjtQgZ_oKbIfSfMZt9twrfd0/edit#gid=771476671&range=55:55)_, the term _[CL:0000938](http://purl.obolibrary.org/obo/CL_0000938)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD16-negative, CD56-bright natural killer cell_ and the one in the ontology is _CD16-negative, CD56-bright natural killer cell, human_. For reference, the given name/label by SMEs is _CD56 bright Natural Killer_. Please correct it in the ASCT+B table.
 
-1. In row _55_, the term _[CL:0000938](http://purl.obolibrary.org/obo/CL_0000938)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD16-negative, CD56-bright natural killer cell_ and the one in the ontology is _CD16-negative, CD56-bright natural killer cell, human_. For reference, the given name/label by SMEs is _CD56 bright Natural Killer_. Please correct it in the ASCT+B table.
+1. In row _[33](https://docs.google.com/spreadsheets/d/1prDIvvQF0akXKCfLv6FqjtQgZ_oKbIfSfMZt9twrfd0/edit#gid=771476671&range=33:33)_, the term _[CL:0000037](http://purl.obolibrary.org/obo/CL_0000037)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _hemopoietic stem cell_ and the one in the ontology is _hematopoietic stem cell_. For reference, the given name/label by SMEs is _hemopoietic stem cell (HSC)_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -63,19 +63,19 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _34_, no term id was found for the name/label _lympho-myeloid progenitor cell (LMPP)_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[34](https://docs.google.com/spreadsheets/d/1prDIvvQF0akXKCfLv6FqjtQgZ_oKbIfSfMZt9twrfd0/edit#gid=771476671&range=34:34)_, no term id was found for the name/label _lympho-myeloid progenitor cell (LMPP)_.
 
-1. In row _39_, no term id was found for the name/label _Myeloid progenitor (MOP)_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[39](https://docs.google.com/spreadsheets/d/1prDIvvQF0akXKCfLv6FqjtQgZ_oKbIfSfMZt9twrfd0/edit#gid=771476671&range=39:39)_, no term id was found for the name/label _Myeloid progenitor (MOP)_.
 
-1. In row _52_, no term id was found for the name/label _CD8 T cell effector memory_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[52](https://docs.google.com/spreadsheets/d/1prDIvvQF0akXKCfLv6FqjtQgZ_oKbIfSfMZt9twrfd0/edit#gid=771476671&range=52:52)_, no term id was found for the name/label _CD8 T cell effector memory_.
 
-1. In row _54_, no term id was found for the name/label _mature CD8 T cell_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[54](https://docs.google.com/spreadsheets/d/1prDIvvQF0akXKCfLv6FqjtQgZ_oKbIfSfMZt9twrfd0/edit#gid=771476671&range=54:54)_, no term id was found for the name/label _mature CD8 T cell_.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request.  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 

@@ -1,7 +1,7 @@
 ---
 comments: true
 ---
-ASCT+B Validation Reports for Urinary_bladder (2022-11-30)
+ASCT+B Validation Reports for Urinary_bladder (2023-01-11)
 ==========================================================
 
 Table of contents
@@ -60,33 +60,33 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _12_, no term id was found for the name/label _basal cell of bladder urothelium_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[12](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=12:12)_, no term id was found for the name/label _basal cell of bladder urothelium_.
 
-1. In row _13_, no term id was found for the name/label _intermediate cell of bladder urothelium_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[13](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=13:13)_, no term id was found for the name/label _intermediate cell of bladder urothelium_.
 
-1. In row _14_, no term id was found for the name/label _superficial cell of bladder urothelium_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[14](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=14:14)_, no term id was found for the name/label _superficial cell of bladder urothelium_.
 
-1. In row _15_, no term id was found for the name/label _detrusor smooth muscle cell of bladder_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[15](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=15:15)_, no term id was found for the name/label _detrusor smooth muscle cell of bladder_.
 
-1. In row _16_, no term id was found for the name/label _myofibroblast cell of bladder_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[16](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=16:16)_, no term id was found for the name/label _myofibroblast cell of bladder_.
 
-1. In row _17_, no term id was found for the name/label _PI16+ fibroblast cell of bladder_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[17](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=17:17)_, no term id was found for the name/label _PI16+ fibroblast cell of bladder_.
 
-1. In row _18_, no term id was found for the name/label _DPT+ fibroblast cell of bladder_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[18](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=18:18)_, no term id was found for the name/label _DPT+ fibroblast cell of bladder_.
 
-1. In row _19_, no term id was found for the name/label _lipofibroblast cell of bladder_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[19](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=19:19)_, no term id was found for the name/label _lipofibroblast cell of bladder_.
 
-1. In row _20_, no term id was found for the name/label _endothelial cell of bladder_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[20](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=20:20)_, no term id was found for the name/label _endothelial cell of bladder_.
 
-1. In row _21_, no term id was found for the name/label _vascular smooth muscle cell of bladder_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[21](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=21:21)_, no term id was found for the name/label _vascular smooth muscle cell of bladder_.
 
-1. In row _22_, no term id was found for the name/label _pericyte cell of bladder_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[22](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=22:22)_, no term id was found for the name/label _pericyte cell of bladder_.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request.  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 

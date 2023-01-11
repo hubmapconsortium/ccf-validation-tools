@@ -2,7 +2,7 @@
 comments: true
 ---
 
-ASCT+B Validation Reports for Thymus (2022-11-30)
+ASCT+B Validation Reports for Thymus (2023-01-11)
 =================================================
 
 Table of contents
@@ -53,13 +53,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _30_, the term _[CL:0009081](http://purl.obolibrary.org/obo/CL_0009081)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _specified double negative thymocyte_ and the one in the ontology is _specified double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 2_. Please correct it in the ASCT+B table.
+1. In row _[31](https://docs.google.com/spreadsheets/d/13VmRAofv85ZapJgmtHAVO67ICY4nK1FOugkTKV8_eoM/edit#gid=863370556&range=31:31)_, the term _[CL:0009082](http://purl.obolibrary.org/obo/CL_0009082)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _committed double negative thymocyte_ and the one in the ontology is _committed double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 3_. Please correct it in the ASCT+B table.
 
-1. In row _78_, the term _[CL:0000914](http://purl.obolibrary.org/obo/CL_0000914)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _immature NKT cell_ and the one in the ontology is _immature NK T cell_. For reference, the given name/label by SMEs is _immature NKT cell_. Please correct it in the ASCT+B table.
+1. In row _[32](https://docs.google.com/spreadsheets/d/13VmRAofv85ZapJgmtHAVO67ICY4nK1FOugkTKV8_eoM/edit#gid=863370556&range=32:32)_, the term _[CL:0009083](http://purl.obolibrary.org/obo/CL_0009083)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _rearranging double negative thymocyte_ and the one in the ontology is _rearranging double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 4_. Please correct it in the ASCT+B table.
 
-1. In row _31_, the term _[CL:0009082](http://purl.obolibrary.org/obo/CL_0009082)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _committed double negative thymocyte_ and the one in the ontology is _committed double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 3_. Please correct it in the ASCT+B table.
+1. In row _[30](https://docs.google.com/spreadsheets/d/13VmRAofv85ZapJgmtHAVO67ICY4nK1FOugkTKV8_eoM/edit#gid=863370556&range=30:30)_, the term _[CL:0009081](http://purl.obolibrary.org/obo/CL_0009081)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _specified double negative thymocyte_ and the one in the ontology is _specified double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 2_. Please correct it in the ASCT+B table.
 
-1. In row _32_, the term _[CL:0009083](http://purl.obolibrary.org/obo/CL_0009083)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _rearranging double negative thymocyte_ and the one in the ontology is _rearranging double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 4_. Please correct it in the ASCT+B table.
+1. In row _[78](https://docs.google.com/spreadsheets/d/13VmRAofv85ZapJgmtHAVO67ICY4nK1FOugkTKV8_eoM/edit#gid=863370556&range=78:78)_, the term _[CL:0000914](http://purl.obolibrary.org/obo/CL_0000914)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _immature NKT cell_ and the one in the ontology is _immature NK T cell_. For reference, the given name/label by SMEs is _immature NKT cell_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -73,7 +73,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request.  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 
