@@ -1,3 +1,6 @@
+---
+comments: true
+---
 
 ASCT+B Validation Reports for Lung (2023-01-11)
 ===============================================

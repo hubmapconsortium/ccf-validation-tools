@@ -1,3 +1,6 @@
+---
+comments: true
+---
 
 ASCT+B Validation Reports for Pancreas (2023-01-11)
 ===================================================
