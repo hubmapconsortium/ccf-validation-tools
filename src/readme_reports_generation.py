@@ -3,6 +3,8 @@ from datetime import datetime
 from mdutils.fileutils.fileutils import MarkDownFile
 from mdutils.mdutils import MdUtils
 
+from download_resource import get_sheet_gid
+
 def generate_template_readme(file_name, table):
   date = datetime.today().strftime('%Y-%m-%d')
 
@@ -48,7 +50,7 @@ def generate_template_readme(file_name, table):
   markers_dict["blank"] = m_blank
 
   template.new_header(level=2, title="Terms from another ontology")
-  template.new_paragraph(text="This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request.")
+  template.new_paragraph(text="This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).")
   template.new_line()
   template.new_line()
   
@@ -97,17 +99,24 @@ def generate_template_readme(file_name, table):
   template.new_table_of_contents(table_title="Table of contents", depth=2)
   return template, markers_dict
 
-def generate_invalid_terms_report(log_dict):
+def get_row_link(table, row):
+  table_config = get_sheet_gid(table, "False")
+
+  URL = f'https://docs.google.com/spreadsheets/d/{table_config["sheetId"]}/edit#gid={table_config["gid"]}&range={row}:{row}'
+
+  return URL
+
+def generate_invalid_terms_report(log_dict, table):
 
   terms_report = {"no_found_id": "", "typos": "", "diff_label": "", "blank": "", "external": ""}
 
   for issue in log_dict["no_valid_id"]:
-    if issue["id"] == "":
-      terms_report["blank"] += f'1. In row _{issue["row_number"]}_, no term id was found for the name/label _{issue["user_label"]}_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).\n\n'
+    if issue["id"] == "": 
+      terms_report["blank"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, no term id was found for the name/label _{issue["user_label"]}_.\n\n'
     elif 'uberon' in issue["id"] or 'UBERON' in issue["id"] or 'cl' in issue["id"] or 'CL' in issue["id"]:
-      terms_report["typos"] += f'1. In row _{issue["row_number"]}_, it might have a typo in the term _{issue["id"]}_. The term id should have this pattern: UBERON:NNNNNNN or CL:NNNNNNN or PCL:NNNNNNN. The ontology name in upper case. N is a number and it should have exact 7 numbers after the colon. Please change it in the ASCT+B table.\n\n'
+      terms_report["typos"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, it might have a typo in the term _{issue["id"]}_. The term id should have this pattern: UBERON:NNNNNNN or CL:NNNNNNN or PCL:NNNNNNN. The ontology name in upper case. N is a number and it should have exact 7 numbers after the colon. Please change it in the ASCT+B table.\n\n'
     elif 'FMA' in issue["id"] or 'fma' in issue["id"] or 'LMHA' in issue["id"] or 'lmha' in issue["id"]:
-      terms_report["external"] += f'1. In row _{issue["row_number"]}_, the term _{issue["id"]}_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon. Please search for synonyms in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl) to replace these terms.\n\n'
+      terms_report["external"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, the term _{issue["id"]}_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon. Please search for synonyms in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl) to replace these terms.\n\n'
   
   if terms_report["blank"] == "":
     terms_report["blank"] = "- No issues found.\n\n"
@@ -124,8 +133,8 @@ def generate_invalid_terms_report(log_dict):
   if terms_report["no_found_id"] == "":
     terms_report["no_found_id"] = "- No issues found.\n\n"
   
-  for issue in log_dict["diff_label"]:
-    terms_report["diff_label"] += f'1. In row _{issue["rowNumber"]}_, the term _{add_base_iri(issue["id"])}_ has different name/label in the source ontology. The name/label in the ASCT+B table is _{issue["asct_label"]}_ and the one in the ontology is _{issue["label"]}_. For reference, the given name/label by SMEs is _{issue["user_label"]}_. Please correct it in the ASCT+B table.\n\n'
+  for issue in log_dict["diff_label"]:       
+    terms_report["diff_label"] += f'1. In row _[{issue["rowNumber"]}]({get_row_link(table, issue["rowNumber"])})_, the term _{add_base_iri(issue["id"])}_ has different name/label in the source ontology. The name/label in the ASCT+B table is _{issue["asct_label"]}_ and the one in the ontology is _{issue["label"]}_. For reference, the given name/label by SMEs is _{issue["user_label"]}_. Please correct it in the ASCT+B table.\n\n'
   
   if terms_report["diff_label"] == "":
     terms_report["diff_label"] = "- No issues found.\n\n"
@@ -143,7 +152,7 @@ def add_base_iri(content):
 def main(args):
   readme, markers_dict = generate_template_readme(args.output_file, args.table)
   
-  terms_report = generate_invalid_terms_report(log)
+  terms_report = generate_invalid_terms_report(args.log_dict, args.table)
 
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["no_found_id"], marker=markers_dict["nfound"])
 
