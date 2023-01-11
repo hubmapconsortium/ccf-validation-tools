@@ -23,6 +23,7 @@ def get_ct_loc_marker(file):
     anatomical_structures = row["anatomical_structures"]
     cell_types = row["cell_types"]
     biomarkers = row["biomarkers"]
+    refs = row["references"]
 
     if not biomarkers or not anatomical_structures or not cell_types:
       continue
@@ -41,6 +42,11 @@ def get_ct_loc_marker(file):
     if not markers_group:
       continue
 
+    refs_group_doi = [ref["doi"].replace(' ', '') for ref in refs]
+
+    refs_group_pmid = [list(map(lambda x: x.replace(' ', ''), ref["id"].split('.'))) for ref in refs if "PM" in ref["id"]]
+    refs_group_pmid = [pid for pmid in refs_group_pmid for pid in pmid]
+
     r = {}
     r["Terminal AS/ID"] = last_as["id"]
     r["Terminal AS/label"] = last_as["rdfs_label"]
@@ -49,6 +55,7 @@ def get_ct_loc_marker(file):
     r["Terminal CT/label"] = last_ct["rdfs_label"]
     r["Terminal CT/user_label"] = last_ct["name"]
     r["Markers"] = ', '.join(markers_group)
+    r["References"] = '|'.join(refs_group_doi + refs_group_pmid)
     out.append(r)
 
   report = None
@@ -60,6 +67,10 @@ def get_ct_loc_marker(file):
 def merge_csv(path):
   dir_path = os.path.dirname(path)
   csv_files = os.listdir(os.path.dirname(path))
+  filter = ["cell-loc-diff-markers.tsv", "ct_loc_b_report.tsv"]
+  for file in filter:
+    csv_files.remove(file)
+
   pds = []
 
   for f in csv_files:
@@ -102,7 +113,7 @@ def create_dosdp_template(input):
     d["defined_class_label"] = ""
     d["cell"] = row["Terminal CT/ID"]
     d["anatomical_entity"] = row["Terminal AS/ID"]
-    d["pubs"] = ""
+    d["pubs"] = row["References"]
     output.append(d)
 
   return pd.DataFrame.from_records(output)
@@ -113,8 +124,8 @@ def template(args):
   report = pd.read_csv(args.input, sep='\t')
 
   # Filtering cases where there're more than 1 CT, AS and Marker list.
-  multi_loc_rep = report.groupby(['Terminal AS/ID','Terminal CT/ID']).filter(lambda x: len(x)>1)
-  multi_loc_rep.to_csv('clean_report.tsv', sep='\t', index=False)
+  multi_loc_rep = report.groupby(['Terminal AS/ID', 'Terminal CT/ID']).filter(lambda x: len(x)>1)
+  multi_loc_rep.to_csv('multi_loc_report.tsv', sep='\t', index=False)
 
   # Same CT and AS with different Marker list
   cell_loc_diff_markers = multi_loc_rep.drop_duplicates(['Terminal AS/ID','Terminal CT/ID','Markers']).sort_values(['Terminal AS/ID','Terminal CT/ID']).groupby(['Terminal AS/ID','Terminal CT/ID']).filter(lambda x: len(x)>1)
@@ -141,7 +152,7 @@ def template(args):
 
   terms_ct_ni, _ = split_terms(not_valid_subclass)
   terms_ct = set(terms_ct_ni) - set(terms_ct_i)
-  cl_input_temp = clean_report.loc[clean_report["Terminal CT/ID"].isin(terms_ct)][["Terminal AS/ID", "Terminal CT/ID"]].drop_duplicates()
+  cl_input_temp = clean_report.loc[clean_report["Terminal CT/ID"].isin(terms_ct)][["Terminal AS/ID", "Terminal CT/ID", "References"]].drop_duplicates()
 
   cl_template = create_dosdp_template(cl_input_temp)
   cl_template.to_csv('../templates/cellPartOfAnatomicalEntity.tsv', sep='\t', index=False)

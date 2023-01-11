@@ -130,6 +130,10 @@ last_official_release:
 
 ../logs/ct_loc_markers/ct_loc_b_report.tsv: ${CSV_CT_LOC_B}
 	python cell_type_location.py $< $@ merge
+.PHONY: ../logs/ct_loc_markers/ct_loc_b_report.tsv
+
+generate_dosdp_template: ../logs/ct_loc_markers/ct_loc_b_report.tsv
+	python cell_type_location.py $< ../templates/ccf_compound.tsv template
 
 validation_reports_release: official_release
 	cp -a ../logs/. ../docs
