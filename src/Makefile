@@ -125,3 +125,7 @@ last_official_release:
 
 validation_reports_release: official_release
 	cp -a ../logs/. ../docs
+
+build-docker-v%:
+	docker buildx use ccf-tools-dep-builder
+	docker buildx build --platform linux/amd64,linux/arm64 -t anitacaron/ccf-tools-dep:v$* --push .
