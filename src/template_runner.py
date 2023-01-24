@@ -18,7 +18,7 @@ args = parser.parse_args()
 
 ccf_tools_df, report_t, new_terms_report, new_uberon_terms, log_dict = parse_asctb(args.target_file)
 
-class_template, no_valid_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t, image_report, sec_graph, log_dict = generate_class_graph_template(ccf_tools_df, log_dict)
+class_template, no_valid_template, error_log, annotations, indirect_error_log, report_r, strict_log, has_part_log, ub_subs_t, cl_subs_t, image_report, sec_graph, log_dict, generic_uberon_log = generate_class_graph_template(ccf_tools_df, log_dict)
 
 class_template.to_csv(args.output_file, sep=',', index=False)
 
@@ -58,6 +58,8 @@ if not eval(args.old_version):
   cl_subs_t.to_csv(f'../templates/temp_cl_{args.job}_ASCTB_subset.csv', sep=',', index=False)
 
   image_report.to_csv(f'../logs/{args.job}/report_images_{args.job}.tsv', sep='\t', index=False)
+
+  generic_uberon_log.to_csv(f'../logs/{args.job}/generic_uberon_location.tsv', sep='\t', index=False)
 
   with open(f'../logs/{args.job}/logs_dict.json', 'w', encoding='utf-8') as f:
     json.dump(log_dict, f, ensure_ascii=False, indent=2)

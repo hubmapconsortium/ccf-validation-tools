@@ -235,6 +235,19 @@ class UberonGraph():
             ?subject located_in: ?object .
           }
         """     
+        self.select_normalized_ic = """
+          PREFIX normalizedIC: <http://reasoner.renci.org/vocab/normalizedInformationContent>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/ontology>
+          {
+            VALUES ?subject {
+              %s
+            }
+            ?subject normalizedIC: ?object .
+          }
+        """
 
     def ask_uberon(self, r, q, urls=True):
         """"""
