@@ -1,8 +1,5 @@
----
-comments: true
----
 
-ASCT+B Validation Reports for Prostate (2023-01-11)
+ASCT+B Validation Reports for Prostate (2023-01-24)
 ===================================================
 
 Table of contents
