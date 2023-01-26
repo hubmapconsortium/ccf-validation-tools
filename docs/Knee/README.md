@@ -1,8 +1,5 @@
----
-comments: true
----
 
-ASCT+B Validation Reports for Knee (2023-01-11)
+ASCT+B Validation Reports for Knee (2023-01-25)
 ===============================================
 
 Table of contents
