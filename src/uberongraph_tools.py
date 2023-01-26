@@ -238,6 +238,7 @@ class UberonGraph():
         self.select_normalized_ic = """
           PREFIX normalizedIC: <http://reasoner.renci.org/vocab/normalizedInformationContent>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>

@@ -17,7 +17,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   valid_error_log = pd.DataFrame(columns=ccf_tools_df.columns)
   strict_log = pd.DataFrame(columns=ccf_tools_df.columns)
   has_part_log = pd.DataFrame(columns=ccf_tools_df.columns)
-  generic_uberon_log = pd.DataFrame(columns=[ccf_tools_df.columns]+["deltaIC"])
   report_relationship = {
     'Table': '', 
     'number_of_AS-AS_relationships': [0], 
@@ -62,7 +61,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   no_valid_records = [seed_no_valid]
   if ccf_tools_df.empty:
     return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, report_relationship, strict_log, 
-            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame(columns=['term', 'image_url']), ConjunctiveGraph(), log_dict, generic_uberon_log)
+            has_part_log, pd.DataFrame.from_records(records_ub_sub), pd.DataFrame.from_records(records_cl_sub), pd.DataFrame(columns=['term', 'image_url']), ConjunctiveGraph(), log_dict)
 
   terms = set()
   all_as = set()
@@ -286,8 +285,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # NOT VALID LOG
   no_valid_relation = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(terms_set)]
 
-  error_log = pd.concat([error_log,no_valid_relation])
-
   for _, r in no_valid_relation.iterrows():
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       invalid_as.add((r['s'], r['o']))
@@ -307,21 +304,21 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
       no_v_rec['ID'] = r['s']
       no_v_rec['ccf_located_in'] = r['o']
       no_valid_records.append(no_v_rec)
-
-  # GENERIC UBERON REPORT
-  as_as_report = no_valid_relation[(no_valid_relation["s"].str.contains("UBERON")) & (no_valid_relation["o"].str.contains("UBERON"))]
-  as_terms = set(as_as_report["s"]).union(set(as_as_report["o"]))
-
-  norm_ic_list = ug.query_uberon(" ".join(as_terms), ug.select_normalized_ic)
   
-  for _, r in as_as_report.iterrows():
+  error_log = pd.concat([error_log,no_valid_relation])
+
+  # ADD DELTA IC TO NOT VALIDATED REPORT
+  error_log["deltaIC"] = None
+  all_terms = set(error_log["s"]).union(set(error_log["o"]))
+
+  norm_ic_list = ug.query_uberon(" ".join(all_terms), ug.select_normalized_ic)
+  
+  for _, r in error_log.iterrows():
     subj_ic = norm_ic_term(norm_ic_list, r["s"])
     obj_ic = norm_ic_term(norm_ic_list, r["o"])
     if subj_ic < obj_ic:
       r["deltaIC"] = abs(subj_ic - obj_ic)
-      generic_uberon_log = pd.concat([generic_uberon_log, pd.DataFrame(r)], axis=1, ignore_index=True)
     
-  generic_uberon_log = generic_uberon_log.transpose().dropna()
 
   # RELATIONSHIP REPORT
   nb_relation_as = len(relation_as)
@@ -357,8 +354,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   annotations = ug.get_annotations(terms)
   
 
-  return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log.sort_values('s'), annotations, valid_error_log.sort_values('s'), report_relationship, strict_log.sort_values('s'), 
-          has_part_report.sort_values('s'), pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report).sort_values('term'), sec_graph, log_dict, generic_uberon_log.sort_values('deltaIC', ascending=False))
+  return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log.sort_values('deltaIC', ascending=False), annotations, valid_error_log.sort_values('s'), report_relationship, strict_log.sort_values('s'), 
+          has_part_report.sort_values('s'), pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report).sort_values('term'), sec_graph, log_dict)
 
 def norm_ic_term(normalized_ic_list, term):
   for t, ic in normalized_ic_list:
