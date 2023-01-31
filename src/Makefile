@@ -124,22 +124,22 @@ release_notes:
 		rm ${OWL_CL_SUBSET_FILES}; fi
 
 official_release:
-	make ../owl/CCF_AS_CT.owl ../owl/UB_ASCTB_subset.owl ../owl/CL_ASCTB_subset.owl -B
+	make ../owl/CCF_AS_CT.owl ../owl/UB_ASCTB_subset.owl ../owl/CL_ASCTB_subset.owl ../logs/ct_loc_markers/ct_loc_b_report.tsv -B
 .PHONY: official_release
 
 last_official_release:
 	make ../owl/last_official_ASCTB_release/CCF_AS_CT.owl OLD_VERSION=True -B
 .PHONY: last_official_release
 
-../logs/ct_loc_markers/%_report.tsv: ../resources/ASCT-b_tables/%.json
-	python cell_type_location.py $< $@ generate
+../logs/%/ct_loc_markers_%.tsv: ../resources/ASCT-b_tables/%.json
+	python cell_type_location.py --input $< --output $@ --mode generate
 
-../logs/ct_loc_markers/ct_loc_b_report.tsv: ${CSV_CT_LOC_B}
-	python cell_type_location.py $< $@ merge
+../logs/ct_loc_b_report.tsv: ${CSV_CT_LOC_B}
+	python cell_type_location.py --input $< --output $@ --mode merge
 .PHONY: ../logs/ct_loc_markers/ct_loc_b_report.tsv
 
-generate_dosdp_template: ../logs/ct_loc_markers/ct_loc_b_report.tsv
-	python cell_type_location.py $< ../templates/ccf_compound.tsv template
+generate_dosdp_template: ../logs/ct_loc_b_report.tsv
+	python cell_type_location.py --input $< --output ../templates/ccf_compound.tsv --mode template
 
 validation_reports_release: official_release
 	cp -a ../logs/. ../docs

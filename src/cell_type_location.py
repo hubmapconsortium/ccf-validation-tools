@@ -166,9 +166,9 @@ def generate(args):
 
 if __name__ == '__main__':
   parser = ArgumentParser()
-  parser.add_argument('input', help='input json file')
-  parser.add_argument('output', help='output csv file')
-  parser.add_argument('mode', help='three modes to deal with report: generate, merge or template')
+  parser.add_argument('-i', '--input', help='input json file')
+  parser.add_argument('-o', '--output', help='output csv file')
+  parser.add_argument('-m', '--mode', help='three modes to deal with report: generate, merge or template')
 
   args = parser.parse_args()
   if args.mode == 'generate':
