@@ -28,18 +28,24 @@ all: last_official_release official_release
 	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION)
 
 ../logs/%/README.md: ../logs/%/logs_dict.json
-	if [ $(OLD_VERSION) = False ]; then python readme_reports_generation.py $* $< $@ && \
+	if [ $(OLD_VERSION) = False ]; then python readme_reports_generation.py --table $* --data $< --output $@ --mode "readme" && \
 		rm $<; fi
 .PRECIOUS: ../logs/%/README.md
 
-../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv ../logs/%/README.md
+../docs/%/graph.md: ../owl/ccf_%_classes.owl
+	if [ $(OLD_VERSION) = False ]; then cp -a ../graphs/ccf_$*_graph.png ../docs/$*/assets/. && \
+		cp -a ../graphs/ccf_$*_graph.pdf ../docs/$*/assets/. && \
+		python readme_reports_generation.py --table $* --output $@ --mode "graph"; fi
+.PRECIOUS: ../docs/%/graph.md
+
+../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv ../logs/%/README.md 
 	${ROBOT} template --add-prefix "CCFH: http://ccf_tools_helpers/class_helper.owl#" \
 			--add-prefix "dc: http://purl.org/dc/elements/1.1/" \
 			--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
 			--input helper.owl --template $< \
 			--output $@
 
-../owl/ub_%_ASCTB_subset.owl: ../templates/temp_ub_%_ASCTB_subset.csv
+../owl/ub_%_ASCTB_subset.owl: ../templates/temp_ub_%_ASCTB_subset.csv ../docs/%/graph.md
 	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@ && \
 		rm $<; fi
 
@@ -137,3 +143,7 @@ generate_dosdp_template: ../logs/ct_loc_markers/ct_loc_b_report.tsv
 
 validation_reports_release: official_release
 	cp -a ../logs/. ../docs
+
+build-docker-v%:
+	docker buildx use ccf-tools-dep-builder
+	docker buildx build --platform linux/amd64,linux/arm64 -t anitacaron/ccf-tools-dep:v$* --push .

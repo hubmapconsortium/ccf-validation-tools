@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Skin (2022-11-30)
+ASCT+B Validation Reports for Skin (2023-01-25)
 ===============================================
 
 Table of contents
@@ -50,11 +50,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _50_, the term _[CL:0000359](http://purl.obolibrary.org/obo/CL_0000359)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _smooth muscle cell_ and the one in the ontology is _vascular associated smooth muscle cell_. For reference, the given name/label by SMEs is _Perivascular smooth muscle cell_. Please correct it in the ASCT+B table.
+1. In row _[52](https://docs.google.com/spreadsheets/d/16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E/edit#gid=269383687&range=52:52)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _52_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _Pericyte_. Please correct it in the ASCT+B table.
+1. In row _[24](https://docs.google.com/spreadsheets/d/16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E/edit#gid=269383687&range=24:24)_, the term _[CL:0000151](http://purl.obolibrary.org/obo/CL_0000151)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _sebum secreting cell_ and the one in the ontology is _secretory cell_. For reference, the given name/label by SMEs is _Germinative (epithelial) cell, Sebocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _24_, the term _[CL:0000151](http://purl.obolibrary.org/obo/CL_0000151)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _sebum secreting cell_ and the one in the ontology is _secretory cell_. For reference, the given name/label by SMEs is _Germinative (epithelial) cell, Sebocyte_. Please correct it in the ASCT+B table.
+1. In row _[50](https://docs.google.com/spreadsheets/d/16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E/edit#gid=269383687&range=50:50)_, the term _[CL:0000359](http://purl.obolibrary.org/obo/CL_0000359)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _smooth muscle cell_ and the one in the ontology is _vascular associated smooth muscle cell_. For reference, the given name/label by SMEs is _Perivascular smooth muscle cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -62,17 +62,17 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _22_, no term id was found for the name/label _Keratinocyte (Onychocyte)_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[22](https://docs.google.com/spreadsheets/d/16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E/edit#gid=269383687&range=22:22)_, no term id was found for the name/label _Keratinocyte (Onychocyte)_.
 
-1. In row _48_, no term id was found for the name/label _perineurial cells_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[48](https://docs.google.com/spreadsheets/d/16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E/edit#gid=269383687&range=48:48)_, no term id was found for the name/label _perineurial cells_.
 
-1. In row _68_, no term id was found for the name/label _Perineural cell_. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).
+1. In row _[68](https://docs.google.com/spreadsheets/d/16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E/edit#gid=269383687&range=68:68)_, no term id was found for the name/label _Perineural cell_.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request.  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 

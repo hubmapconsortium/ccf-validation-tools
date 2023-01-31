@@ -55,6 +55,7 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2012-04-05: 
@@ -103,6 +104,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -128,6 +130,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
     
 
 
@@ -249,12 +257,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
@@ -312,7 +314,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/information-artifact-ontology/ontology-metadata/issues/18</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has broad synonym</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/information-artifact-ontology/ontology-metadata/issues/18</rdfs:seeAlso>
     </owl:AnnotationProperty>
     
 
@@ -567,7 +574,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/CL_0000084 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000084">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T cell</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of lymphocyte whose defining characteristic is the expression of a T cell receptor complex.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000804</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000812</oboInOwl:hasAlternativeId>
@@ -600,7 +609,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/CL_0000097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000097">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mast cell</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that is found in almost all tissues containing numerous basophilic granules and capable of releasing large amounts of histamine and heparin upon activation. Progenitors leave bone marrow and mature in connective and mucosal tissue. Mature mast cells are found in all tissues, except the bloodstream. Their phenotype is CD117-high, CD123-negative, CD193-positive, CD200R3-positive, and FceRI-high. Stem-cell factor (KIT-ligand; SCF) is the main controlling signal of their survival and development.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000830</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0603</oboInOwl:hasDbXref>
@@ -684,7 +695,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/CL_0000236 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000236">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B cell</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lymphocyte of B lineage that is capable of B cell mediated immunity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000776</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0068</oboInOwl:hasDbXref>
@@ -714,7 +727,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/CL_0000576 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000576">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monocyte</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myeloid mononuclear recirculating leukocyte that can act as a precursor of tissue macrophages, osteoclasts and some populations of tissue dendritic cells.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000876</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0638</oboInOwl:hasDbXref>
@@ -854,7 +869,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/CL_0000775 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000775">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophil</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any of the immature or mature forms of a granular leukocyte that in its mature form has a nucleus with three to five lobes connected by slender threads of chromatin, and cytoplasm containing fine inconspicuous granules and stainable by neutral dyes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMN</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly</oboInOwl:hasBroadSynonym>
@@ -892,7 +909,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/CL_0000786 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000786">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma cell</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A terminally differentiated, post-mitotic, antibody secreting cell of the B cell lineage with the phenotype CD138-positive, surface immunonoglobulin-negative, and MHC Class II-negative. Plasma cells are oval or round with extensive rough endoplasmic reticulum, a well-developed Golgi apparatus, and a round nucleus having a characteristic cartwheel heterochromatin pattern and are devoted to producing large amounts of immunoglobulin.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000392</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70574</oboInOwl:hasDbXref>
@@ -930,7 +949,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/CL_0000814 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000814">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mature NK T cell</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mature alpha-beta T cell of a distinct lineage that bears natural killer markers and a T cell receptor specific for a limited set of ligands. NK T cells have activation and regulatory roles particularly early in an immune response.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mature NK T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mature NK T-cell</oboInOwl:hasExactSynonym>
@@ -1190,7 +1211,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266015</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754811</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002306"/>
@@ -1232,7 +1253,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266030</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754613</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000452"/>
@@ -1278,7 +1299,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.265993</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754734</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000454"/>
@@ -1321,7 +1342,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266143</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754806</dc:date>
     </owl:Axiom>
     
 
@@ -1385,7 +1406,9 @@ We also have the outstanding issue of how to aim different definitions to differ
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005215"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001109</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney resident macrophage</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M2-Macrophage</skos:prefLabel>
@@ -1400,7 +1423,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266174</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754627</dc:date>
     </owl:Axiom>
     
 
@@ -1431,7 +1454,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266023</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754552</dc:date>
     </owl:Axiom>
     
 
@@ -1463,7 +1486,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266136</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754536</dc:date>
     </owl:Axiom>
     
 
@@ -1494,7 +1517,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266185</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754681</dc:date>
     </owl:Axiom>
     
 
@@ -1525,7 +1548,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266230</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754548</dc:date>
     </owl:Axiom>
     
 
@@ -1580,7 +1603,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266124</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754839</dc:date>
     </owl:Axiom>
     
 
@@ -1614,7 +1637,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266199</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754787</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000742"/>
@@ -1664,7 +1687,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.265998</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754701</dc:date>
     </owl:Axiom>
     
 
@@ -1695,7 +1718,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266242</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754661</dc:date>
     </owl:Axiom>
     
 
@@ -1726,7 +1749,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266098</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754816</dc:date>
     </owl:Axiom>
     
 
@@ -1757,7 +1780,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266065</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754596</dc:date>
     </owl:Axiom>
     
 
@@ -1837,7 +1860,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266102</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754706</dc:date>
     </owl:Axiom>
     
 
@@ -1868,7 +1891,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266177</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754835</dc:date>
     </owl:Axiom>
     
 
@@ -1899,7 +1922,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266192</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754592</dc:date>
     </owl:Axiom>
     
 
@@ -1930,7 +1953,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266203</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754509</dc:date>
     </owl:Axiom>
     
 
@@ -1961,7 +1984,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266079</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754797</dc:date>
     </owl:Axiom>
     
 
@@ -1992,7 +2015,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266069</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754652</dc:date>
     </owl:Axiom>
     
 
@@ -2023,7 +2046,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266162</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754768</dc:date>
     </owl:Axiom>
     
 
@@ -2054,7 +2077,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266113</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754587</dc:date>
     </owl:Axiom>
     
 
@@ -2085,7 +2108,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266091</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754802</dc:date>
     </owl:Axiom>
     
 
@@ -2142,7 +2165,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266026</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754677</dc:date>
     </owl:Axiom>
     
 
@@ -2174,7 +2197,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266072</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754778</dc:date>
     </owl:Axiom>
     
 
@@ -2364,7 +2387,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266214</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754657</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030012"/>
@@ -2405,7 +2428,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266004</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754642</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030013"/>
@@ -2446,7 +2469,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266207</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754671</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030014"/>
@@ -2488,7 +2511,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266094</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754696</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030015"/>
@@ -2536,7 +2559,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266117</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754864</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030016"/>
@@ -2584,7 +2607,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266083</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754730</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030017"/>
@@ -2619,7 +2642,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A renal principal cell located in the connecting tubule.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-27T15:25:10+00:00</terms:date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -2636,7 +2659,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266007</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754830</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030018"/>
@@ -2660,7 +2683,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A renal intercalated cell that is part of the renal connecting tubule.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-29T11:25:22+00:00</terms:date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -2677,7 +2700,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266159</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754868</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030019"/>
@@ -2699,7 +2722,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A renal alpha-intercalated cell that is part of the renal connecting tubule.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-29T12:48:43+00:00</terms:date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connecting tubule A-IC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney connecting tubule intercalated cell type A</oboInOwl:hasExactSynonym>
@@ -2718,7 +2741,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266049</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754557</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030020"/>
@@ -2754,7 +2777,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A renal beta-intercalated cell that is part of the renal connecting tubule.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-29T14:31:18+00:00</terms:date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connecting tubule B-IC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney connecting tubule intercalated cell type B</oboInOwl:hasExactSynonym>
@@ -2773,7 +2796,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266062</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754773</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030021"/>
@@ -2820,7 +2843,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fibroblast that is located in the renal medulla interstitium.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <dc:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-05T12:13:40+00:00</terms:date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney medullary fibroblast</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -2862,7 +2885,9 @@ We also have the outstanding issue of how to aim different definitions to differ
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">renal medulla</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The inner portion of the kidney consisting of the renal pyramids.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000010 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The renal medulla is split up into a number of sections, known as the renal pyramids. Blood enters into the kidney via the renal artery, which then splits up to form the arcuate arterioles. The arcuate arterioles each in turn branch into interlobular arterioles, which finally reach the glomeruli. At the glomerulus the blood reaches a highly disfavourable pressure gradient and a large exchange surface area, which forces the serum portion of the blood out of the vessel into the renal tubules. Flow continues through the renal tubules, including the proximal tubule, the Loop of Henle, and finally leaves the kidney by means of the collecting duct, leading to the renal ureter. The renal medulla contains the structures of the nephrons responsible for maintaining the salt and water balance of the blood. The renal medulla is hypertonic to the filtrate in the nephron and aids in the reabsorption of water</obo:UBPROP_0000010>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001167</oboInOwl:hasDbXref>
@@ -2906,7 +2931,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266033</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754854</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000362"/>
@@ -3003,7 +3028,9 @@ We also have the outstanding issue of how to aim different definitions to differ
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cortex of kidney</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer cortical portion of the kidney, between the renal capsule and the renal medulla.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000010 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the adult metanephros, it forms a continuous smooth outer zone with a number of projections that extend down between the pyramids. It contains the renal corpuscles and the renal tubules except for parts of the loop of Henle which descend into the renal medulla. It also contains blood vessels and cortical collecting ducts. The renal cortex is the part of the kidney where ultrafiltration occurs.[WP]</obo:UBPROP_0000010>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001166</oboInOwl:hasDbXref>
@@ -3042,7 +3069,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266188</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754725</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001225"/>
@@ -3116,7 +3143,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.265969</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754582</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001228"/>
@@ -3128,7 +3155,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266019</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754749</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001228"/>
@@ -3207,7 +3234,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266087</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754666</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001229"/>
@@ -3343,7 +3370,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266166</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754606</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
@@ -3460,7 +3487,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266109</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754691</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001232"/>
@@ -3472,7 +3499,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:18.000846</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:06.477981</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001232"/>
@@ -3686,7 +3713,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266181</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754686</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001285"/>
@@ -3788,7 +3815,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:11.891236</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.235461</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001289"/>
@@ -3854,7 +3881,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266245</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754720</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001290"/>
@@ -3958,7 +3985,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:11.891273</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.235491</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001291"/>
@@ -4043,7 +4070,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:11.891255</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.235476</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001292"/>
@@ -4122,7 +4149,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266234</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754739</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001294"/>
@@ -4209,7 +4236,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:17.252014</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:06.295571</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001986"/>
@@ -4273,7 +4300,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266076</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754825</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002015"/>
@@ -4357,7 +4384,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:17.252070</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:06.295549</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002042"/>
@@ -4429,7 +4456,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D007668</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000119</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12415</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rvVjlYpwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:181414000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0022646</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Kidney</oboInOwl:hasDbXref>
@@ -4503,7 +4529,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001225"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:11.891228</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.235455</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002189"/>
@@ -4560,7 +4586,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266238</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754543</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002319"/>
@@ -4628,7 +4654,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266170</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754601</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002320"/>
@@ -4769,7 +4795,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266120</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754792</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004100"/>
@@ -4827,7 +4853,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:11.891267</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.235466</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004134"/>
@@ -4911,7 +4937,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266139</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754632</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004188"/>
@@ -4967,7 +4993,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266147</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754530</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004190"/>
@@ -5039,7 +5065,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:11.891242</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.235431</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004193"/>
@@ -5105,7 +5131,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266041</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754647</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004196"/>
@@ -5171,7 +5197,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266037</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754859</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004197"/>
@@ -5254,7 +5280,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266045</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754577</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004200"/>
@@ -5379,7 +5405,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266106</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754617</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004201"/>
@@ -5466,7 +5492,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266154</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754844</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004202"/>
@@ -5562,7 +5588,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266150</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754562</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004203"/>
@@ -5609,7 +5635,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001232"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:11.891169</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.235486</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004204"/>
@@ -5657,7 +5683,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001232"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:11.891279</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.235471</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004205"/>
@@ -5720,7 +5746,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266128</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754567</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004294"/>
@@ -5947,7 +5973,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266217</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754622</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005096"/>
@@ -6029,7 +6055,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:11.891249</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.235481</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005097"/>
@@ -6109,7 +6135,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266132</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754637</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005215"/>
@@ -6121,7 +6147,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:18.000785</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:06.478002</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005215"/>
@@ -6193,7 +6219,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266011</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754572</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005271"/>
@@ -6260,7 +6286,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266057</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754782</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005272"/>
@@ -6317,7 +6343,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004188"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:11.891261</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.235496</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005750"/>
@@ -6448,7 +6474,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266196</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754710</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006544"/>
@@ -6529,7 +6555,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266053</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754820</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009095"/>
@@ -6607,7 +6633,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266210</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754744</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009883"/>
@@ -6679,7 +6705,7 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:12:13.266249</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:05:04.754715</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012441"/>

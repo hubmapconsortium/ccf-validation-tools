@@ -61,6 +61,7 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&apos;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2012-04-05: 
@@ -109,6 +110,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -140,6 +142,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
     
 
 
@@ -381,7 +389,12 @@ WHERE {
     <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/information-artifact-ontology/ontology-metadata/issues/18</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has broad synonym</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/information-artifact-ontology/ontology-metadata/issues/18</rdfs:seeAlso>
     </owl:AnnotationProperty>
     
 
@@ -697,7 +710,9 @@ WHERE {
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fibroblast</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000452</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0362</oboInOwl:hasDbXref>
@@ -719,7 +734,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478516</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592412</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
@@ -776,7 +791,9 @@ WHERE {
     <!-- http://purl.obolibrary.org/obo/CL_0000097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000097">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mast cell</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that is found in almost all tissues containing numerous basophilic granules and capable of releasing large amounts of histamine and heparin upon activation. Progenitors leave bone marrow and mature in connective and mucosal tissue. Mature mast cells are found in all tissues, except the bloodstream. Their phenotype is CD117-high, CD123-negative, CD193-positive, CD200R3-positive, and FceRI-high. Stem-cell factor (KIT-ligand; SCF) is the main controlling signal of their survival and development.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000830</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0603</oboInOwl:hasDbXref>
@@ -867,7 +884,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478496</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592312</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000136"/>
@@ -1037,7 +1054,9 @@ WHERE {
     <!-- http://purl.obolibrary.org/obo/CL_0000235 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000235">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macrophage</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mononuclear phagocyte present in variety of tissues, typically differentiated from monocytes, capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000801</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0587</oboInOwl:hasDbXref>
@@ -1067,7 +1086,9 @@ WHERE {
     <!-- http://purl.obolibrary.org/obo/CL_0000236 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000236">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B cell</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lymphocyte of B lineage that is capable of B cell mediated immunity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000776</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0068</oboInOwl:hasDbXref>
@@ -1140,7 +1161,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478502</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592397</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000242"/>
@@ -1205,7 +1226,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478518</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592337</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000312"/>
@@ -1248,7 +1269,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478505</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592342</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000317"/>
@@ -1303,7 +1324,9 @@ WHERE {
     <!-- http://purl.obolibrary.org/obo/CL_0000451 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000451">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic cell</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell of hematopoietic origin, typically resident in particular tissues, specialized in the uptake, processing, and transport of antigens to lymph nodes for the purpose of stimulating an immune response via T cell activation. These cells are lineage negative (CD3-negative, CD19-negative, CD34-negative, and CD56-negative).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002042</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0194</oboInOwl:hasDbXref>
@@ -1483,7 +1506,9 @@ WHERE {
     <!-- http://purl.obolibrary.org/obo/CL_0000786 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000786">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma cell</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A terminally differentiated, post-mitotic, antibody secreting cell of the B cell lineage with the phenotype CD138-positive, surface immunonoglobulin-negative, and MHC Class II-negative. Plasma cells are oval or round with extensive rough endoplasmic reticulum, a well-developed Golgi apparatus, and a round nucleus having a characteristic cartwheel heterochromatin pattern and are devoted to producing large amounts of immunoglobulin.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000392</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70574</oboInOwl:hasDbXref>
@@ -1574,11 +1599,13 @@ WHERE {
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000802">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gamma-delta intraepithelial T cell that has the phenotype CD8-alpha alpha-positive.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEL</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intraepithelial lymphocyte</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, gamma-delta intraepithelial T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, gamma-delta intraepithelial T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, gamma-delta intraepithelial T-lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-alpha alpha positive, gamma-delta intraepithelial T cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface intraepithelial CD8+ lymphocyte gamma/delta</skos:prefLabel>
@@ -1768,12 +1795,14 @@ WHERE {
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002088">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a cell found in the gastrointestinal tract of mammals and serves as a pacemaker that triggers gut contraction. ICCs mediate inputs from the enteric nervous system to smooth muscle cells and are thought to be the cells from which gastrointestinal stromal tumors (GISTs) arise.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-07-22T03:26:00Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0003914</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:86573</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intestinal pacemaker cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Some argue this cell type is of mesenchymal origin.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstitial cell of Cajal</rdfs:label>
@@ -1917,7 +1946,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478508</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592302</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002543"/>
@@ -2243,7 +2272,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478483</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592392</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000321"/>
@@ -2255,7 +2284,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478491</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592287</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000321"/>
@@ -2301,7 +2330,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478485</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592297</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000412"/>
@@ -2422,7 +2451,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:10.345657</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:32.380222</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000055"/>
@@ -2451,7 +2480,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D007420</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000046</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12379</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rvVkF5pwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:181254001</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0021851</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0000054</oboInOwl:hasDbXref>
@@ -2557,7 +2585,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478529</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592422</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000159"/>
@@ -2647,7 +2675,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478520</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592427</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000314"/>
@@ -2939,7 +2967,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:10.345682</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:32.380231</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000397"/>
@@ -3069,7 +3097,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:10.345662</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:32.380193</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000423"/>
@@ -3225,7 +3253,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:10.345692</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:32.380226</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001003"/>
@@ -3288,7 +3316,9 @@ WHERE {
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rectum</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The terminal portion of the intestinal tube, terminating with the anus.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The terminal portion of the large intestine between the ileo-pelvic colon and the anus. [Dorian_AF, Elsevier&apos;s_encyclopaedic_dictionary_of_medicine, Part_B:_Anatomy_(1988)_Amsterdam_etc.:_Elsevier][VHOG]</obo:UBPROP_0000001>
         <obo:UBPROP_0000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rectal</obo:UBPROP_0000007>
@@ -3308,7 +3338,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D012007</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000050</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12390</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rvVjaU5wpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:181261002</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0034896</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001751</oboInOwl:hasDbXref>
@@ -3340,7 +3369,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478526</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592347</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001052"/>
@@ -3401,7 +3430,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D002432</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000288</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12381</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rve6u4JwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:181256004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0007531</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001559</oboInOwl:hasDbXref>
@@ -3438,7 +3466,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478523</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592382</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001153"/>
@@ -3547,7 +3575,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D001065</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000287</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12380</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rvVjGgJwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:181255000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0003617</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001306</oboInOwl:hasDbXref>
@@ -3581,7 +3608,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478476</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592252</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001154"/>
@@ -3664,7 +3691,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D044682</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000311</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12265</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rv3H0FZwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:362162009</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0227375</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Ascending_colon</oboInOwl:hasDbXref>
@@ -3691,7 +3717,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478478</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592317</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001156"/>
@@ -3750,7 +3776,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D044684</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000312</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12385</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rvg7qyJwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:362163004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0227386</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Transverse_colon</oboInOwl:hasDbXref>
@@ -3776,7 +3801,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478498</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592323</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001157"/>
@@ -3822,7 +3847,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D044683</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000313</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12268</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rwHsNhpwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:362165006</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0227389</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Descending_colon</oboInOwl:hasDbXref>
@@ -3848,7 +3872,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478510</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592281</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001158"/>
@@ -3881,7 +3905,9 @@ WHERE {
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sigmoid colon</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The part of the large intestine that is closest to the rectum and anus. It forms a loop that averages about 40 cm. in length, and normally lies within the pelvis, but on account of its freedom of movement it is liable to be displaced into the abdominal cavity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000645</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-2044</oboInOwl:hasDbXref>
@@ -3893,7 +3919,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000314</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12384</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C33550</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rwHX_-5wpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:362166007</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0227391</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0682612</oboInOwl:hasDbXref>
@@ -3923,7 +3948,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478506</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592332</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001159"/>
@@ -3968,7 +3993,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAID:312</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0000331</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C43362</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rvVjaEZwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:181262009</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TADS:0000066</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGMA:0001279</oboInOwl:hasDbXref>
@@ -4050,7 +4074,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:09.469829</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:22.692664</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001367"/>
@@ -4225,7 +4249,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:10.345651</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:32.380198</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001961"/>
@@ -4237,7 +4261,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:10.345678</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:32.380217</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001961"/>
@@ -4249,7 +4273,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:10.345687</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:32.380167</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001961"/>
@@ -4333,7 +4357,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:10.345667</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:32.380213</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001962"/>
@@ -4353,8 +4377,10 @@ WHERE {
     <!-- http://purl.obolibrary.org/obo/UBERON_0002067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002067">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermis</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dermis is a layer of skin between the epidermis (with which it makes up the skin) and subcutaneous tissues, and is composed of two layers, the papillary and reticular dermis[WP].</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consider adding a layer-of-skin grouping class for all skin layers</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collagenous layer of the skin subjacent to the epidermis and covering the hypodermis. It contains various types of cells (e.g. fibroblasts, pigment cells, nerve, blood vessels and scales. Le Guellec et al, 2004.[TAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000003 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When approaching controversies surrounding skin evolution, we need to remember that the skin consists of two layers, an epidermis and a dermis, not a single evolving structure. (...) It is little wonder that controversies about homology exist. If we think of the epidermis, the dermis, and their interactions as an evolving unit, then their specialized products (hair, feathers, and reptilian scales) are broadly homologous.[well established][VHOG]</obo:UBPROP_0000003>
@@ -4477,7 +4503,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0000154</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D018859</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C13317</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rvVjOI5wpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:280830006</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0221971</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001268</oboInOwl:hasDbXref>
@@ -4506,7 +4531,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:10.345672</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:32.380208</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002073"/>
@@ -4518,7 +4543,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:04.647088</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:19.956300</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002073"/>
@@ -4668,7 +4693,6 @@ WHERE {
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D003238</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000301</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12374</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rv-aBgZwpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:361919005</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0001641</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0009780</oboInOwl:hasDbXref>
@@ -4920,7 +4944,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478486</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592417</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003329"/>
@@ -5192,7 +5216,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478489</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592307</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003342"/>
@@ -5509,7 +5533,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478480</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592352</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004927"/>
@@ -5588,7 +5612,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478512</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592437</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004928"/>
@@ -5722,7 +5746,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478525</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592407</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004989"/>
@@ -6068,7 +6092,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:10.345594</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:32.380203</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005742"/>
@@ -6201,7 +6225,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478494</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592402</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007177"/>
@@ -6437,7 +6461,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:09.469877</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:22.692692</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012375"/>
@@ -6585,7 +6609,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:09.469874</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:22.692687</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012419"/>
@@ -6734,7 +6758,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478452</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592387</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012498"/>
@@ -6806,7 +6830,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478514</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592327</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013485"/>
@@ -6904,7 +6928,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478500</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592292</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022276"/>
@@ -6984,7 +7008,7 @@ WHERE {
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-30T10:13:02.478493</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09T07:06:18.592432</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022277"/>
