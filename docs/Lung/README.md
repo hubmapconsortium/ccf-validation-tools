@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2023-01-24)
+ASCT+B Validation Reports for Lung (2023-01-25)
 ===============================================
 
 Table of contents
@@ -108,7 +108,7 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 1. In row _[161](https://docs.google.com/spreadsheets/d/1iF4vx9EuQ2tQMBOm6awd9sf-2e_EHsPlcgzrF_YDtis/edit#gid=1523836586&range=161:161)_, the term _[CL:0000913](http://purl.obolibrary.org/obo/CL_0000913)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD8+ T cell effector memory_ and the one in the ontology is _effector memory CD8-positive, alpha-beta T cell_. For reference, the given name/label by SMEs is _CD8+ T cell effector memory_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1iF4vx9EuQ2tQMBOm6awd9sf-2e_EHsPlcgzrF_YDtis/edit#gid=1523836586&range=13:13)_, the term _[CL:1000329](http://purl.obolibrary.org/obo/CL_1000329)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _goblet cell of epithelium of trachea_ and the one in the ontology is _tracheal goblet cell_. For reference, the given name/label by SMEs is _tracheal goblet cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[161](https://docs.google.com/spreadsheets/d/1iF4vx9EuQ2tQMBOm6awd9sf-2e_EHsPlcgzrF_YDtis/edit#gid=1523836586&range=161:161)_, the term _[CL:0000913](http://purl.obolibrary.org/obo/CL_0000913)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD8+ T cell effector memory_ and the one in the ontology is _effector memory CD8-positive, alpha-beta T cell_. For reference, the given name/label by SMEs is _CD8+ T cell effector memory_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID

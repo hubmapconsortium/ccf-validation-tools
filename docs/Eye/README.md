@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Eye (2023-01-24)
+ASCT+B Validation Reports for Eye (2023-01-25)
 ==============================================
 
 Table of contents
@@ -50,13 +50,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[38](https://docs.google.com/spreadsheets/d/1qx6ljQipIYEjm9HoDweulJoRq4saKXGv16S5en8O4Rs/edit#gid=695483621&range=38:38)_, the term _[UBERON:0000965](http://purl.obolibrary.org/obo/UBERON_0000965)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _lens_ and the one in the ontology is _lens of camera-type eye_. For reference, the given name/label by SMEs is _lens_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[38](https://docs.google.com/spreadsheets/d/1qx6ljQipIYEjm9HoDweulJoRq4saKXGv16S5en8O4Rs/edit#gid=695483621&range=38:38)_, the term _[UBERON:0000965](http://purl.obolibrary.org/obo/UBERON_0000965)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _lens_ and the one in the ontology is _lens of camera-type eye_. For reference, the given name/label by SMEs is _lens_. Please correct it in the ASCT+B table.
+
+1. In row _[34](https://docs.google.com/spreadsheets/d/1qx6ljQipIYEjm9HoDweulJoRq4saKXGv16S5en8O4Rs/edit#gid=695483621&range=34:34)_, the term _[UBERON:0004864](http://purl.obolibrary.org/obo/UBERON_0004864)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _retinal vasculature_ and the one in the ontology is _vasculature of retina_. For reference, the given name/label by SMEs is _vasculature_. Please correct it in the ASCT+B table.
 
 1. In row _[50](https://docs.google.com/spreadsheets/d/1qx6ljQipIYEjm9HoDweulJoRq4saKXGv16S5en8O4Rs/edit#gid=695483621&range=50:50)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[52](https://docs.google.com/spreadsheets/d/1qx6ljQipIYEjm9HoDweulJoRq4saKXGv16S5en8O4Rs/edit#gid=695483621&range=52:52)_, the term _[UBERON:0001782](http://purl.obolibrary.org/obo/UBERON_0001782)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _retinal pigmented epithelium_ and the one in the ontology is _pigmented layer of retina_. For reference, the given name/label by SMEs is _retinal pigmented epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[34](https://docs.google.com/spreadsheets/d/1qx6ljQipIYEjm9HoDweulJoRq4saKXGv16S5en8O4Rs/edit#gid=695483621&range=34:34)_, the term _[UBERON:0004864](http://purl.obolibrary.org/obo/UBERON_0004864)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _retinal vasculature_ and the one in the ontology is _vasculature of retina_. For reference, the given name/label by SMEs is _vasculature_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[50](https://docs.google.com/spreadsheets/d/1qx6ljQipIYEjm9HoDweulJoRq4saKXGv16S5en8O4Rs/edit#gid=695483621&range=50:50)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _Pericyte_. Please correct it in the ASCT+B table.
 
 
 ## Blank ontology ID

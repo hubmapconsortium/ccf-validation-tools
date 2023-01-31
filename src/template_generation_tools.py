@@ -285,8 +285,6 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # NOT VALID LOG
   no_valid_relation = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(terms_set)]
 
-  error_log = pd.concat([error_log,no_valid_relation])
-
   for _, r in no_valid_relation.iterrows():
     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
       invalid_as.add((r['s'], r['o']))
@@ -306,6 +304,21 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
       no_v_rec['ID'] = r['s']
       no_v_rec['ccf_located_in'] = r['o']
       no_valid_records.append(no_v_rec)
+  
+  error_log = pd.concat([error_log,no_valid_relation])
+
+  # ADD DELTA IC TO NOT VALIDATED REPORT
+  error_log["deltaIC"] = None
+  all_terms = set(error_log["s"]).union(set(error_log["o"]))
+
+  norm_ic_list = ug.query_uberon(" ".join(all_terms), ug.select_normalized_ic)
+  
+  for _, r in error_log.iterrows():
+    subj_ic = norm_ic_term(norm_ic_list, r["s"])
+    obj_ic = norm_ic_term(norm_ic_list, r["o"])
+    if subj_ic < obj_ic:
+      r["deltaIC"] = abs(subj_ic - obj_ic)
+    
 
   # RELATIONSHIP REPORT
   nb_relation_as = len(relation_as)
@@ -341,9 +354,13 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   annotations = ug.get_annotations(terms)
   
 
-  return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log.sort_values('s'), annotations, valid_error_log.sort_values('s'), report_relationship, strict_log.sort_values('s'), 
+  return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log.sort_values('deltaIC', ascending=False), annotations, valid_error_log.sort_values('s'), report_relationship, strict_log.sort_values('s'), 
           has_part_report.sort_values('s'), pd.DataFrame.from_records(records_ub_sub).drop_duplicates(), pd.DataFrame.from_records(records_cl_sub).drop_duplicates(), pd.DataFrame.from_records(image_report).sort_values('term'), sec_graph, log_dict)
 
+def norm_ic_term(normalized_ic_list, term):
+  for t, ic in normalized_ic_list:
+    if t == term:
+      return float(ic)
 
 def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
     seed = {'ID': 'ID', 'LABEL': 'A rdfs:label', 'TYPE': 'TYPE',
