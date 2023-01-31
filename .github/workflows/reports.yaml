@@ -14,11 +14,19 @@ jobs:
     name: Build and deploy validation reports
 
     runs-on: ubuntu-latest
-    container: anitacaron/ccf-tools-dep:v1.0.5
 
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+
+      - name: Set up Python 3 ⚙️ 🐍
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies 🔧
+        working-directory: docs
+        run: make install
 
       - name: Build and deploy to GitHub Pages 🏗️ 🚀
         working-directory: docs
