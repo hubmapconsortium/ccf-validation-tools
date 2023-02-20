@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Urinary_bladder (2023-01-25)
+ASCT+B Validation Reports for Urinary_bladder (2023-02-20)
 ==========================================================
 
 Table of contents
@@ -58,27 +58,27 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=12:12)_, no term id was found for the name/label _basal cell of bladder urothelium_.
+1. In row _[12](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=12:12)_, no term id was found for the name/label _basal cell of bladder urothelium_.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=13:13)_, no term id was found for the name/label _intermediate cell of bladder urothelium_.
+1. In row _[13](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=13:13)_, no term id was found for the name/label _intermediate cell of bladder urothelium_.
 
-1. In row _[14](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=14:14)_, no term id was found for the name/label _superficial cell of bladder urothelium_.
+1. In row _[14](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=14:14)_, no term id was found for the name/label _superficial cell of bladder urothelium_.
 
-1. In row _[15](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=15:15)_, no term id was found for the name/label _detrusor smooth muscle cell of bladder_.
+1. In row _[15](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=15:15)_, no term id was found for the name/label _detrusor smooth muscle cell of bladder_.
 
-1. In row _[16](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=16:16)_, no term id was found for the name/label _myofibroblast cell of bladder_.
+1. In row _[16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16)_, no term id was found for the name/label _myofibroblast cell of bladder_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=17:17)_, no term id was found for the name/label _PI16+ fibroblast cell of bladder_.
+1. In row _[17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17)_, no term id was found for the name/label _PI16+ fibroblast cell of bladder_.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=18:18)_, no term id was found for the name/label _DPT+ fibroblast cell of bladder_.
+1. In row _[18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18)_, no term id was found for the name/label _DPT+ fibroblast cell of bladder_.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=19:19)_, no term id was found for the name/label _lipofibroblast cell of bladder_.
+1. In row _[19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19)_, no term id was found for the name/label _lipofibroblast cell of bladder_.
 
-1. In row _[20](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=20:20)_, no term id was found for the name/label _endothelial cell of bladder_.
+1. In row _[20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20)_, no term id was found for the name/label _endothelial cell of bladder_.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=21:21)_, no term id was found for the name/label _vascular smooth muscle cell of bladder_.
+1. In row _[21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21)_, no term id was found for the name/label _vascular smooth muscle cell of bladder_.
 
-1. In row _[22](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=22:22)_, no term id was found for the name/label _pericyte cell of bladder_.
+1. In row _[22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22)_, no term id was found for the name/label _pericyte cell of bladder_.
 
 
 ## Terms from another ontology

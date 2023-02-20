@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Knee (2023-01-25)
+ASCT+B Validation Reports for Knee (2023-02-20)
 ===============================================
 
 Table of contents
@@ -50,9 +50,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[24](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=24:24)_, the term _[UBERON:0010996](http://purl.obolibrary.org/obo/UBERON_0010996)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _Superior Articular Cartilage_ and the one in the ontology is _articular cartilage of joint_. For reference, the given name/label by SMEs is _Articular cartilage of a joint_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[24](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=24:24)_, the term _[UBERON:0010996](http://purl.obolibrary.org/obo/UBERON_0010996)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _Superior Articular Cartilage_ and the one in the ontology is _articular cartilage of joint_. For reference, the given name/label by SMEs is _Articular cartilage of a joint_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[38](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=38:38)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _pericyte cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[38](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=38:38)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _pericyte cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -60,45 +60,45 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=12:12)_, no term id was found for the name/label _proximal tibia_.
+1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, no term id was found for the name/label _proximal tibia_.
 
-1. In row _[12](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=12:12)_, no term id was found for the name/label _proximal tibia_.
+1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, no term id was found for the name/label _proximal tibia_.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=13:13)_, no term id was found for the name/label _proximal fibula_.
+1. In row _[13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13)_, no term id was found for the name/label _proximal fibula_.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=13:13)_, no term id was found for the name/label _proximal fibula_.
+1. In row _[13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13)_, no term id was found for the name/label _proximal fibula_.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=24:24)_, no term id was found for the name/label _Superficial Zone_.
+1. In row _[24](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=24:24)_, no term id was found for the name/label _Superficial Zone_.
 
-1. In row _[25](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=25:25)_, no term id was found for the name/label _Transitional Zone_.
+1. In row _[25](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=25:25)_, no term id was found for the name/label _Transitional Zone_.
 
-1. In row _[25](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=25:25)_, no term id was found for the name/label _Deep Superficial_.
+1. In row _[25](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=25:25)_, no term id was found for the name/label _Deep Superficial_.
 
-1. In row _[26](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=26:26)_, no term id was found for the name/label _Rounded Chondrocytes_.
+1. In row _[26](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=26:26)_, no term id was found for the name/label _Rounded Chondrocytes_.
 
-1. In row _[27](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=27:27)_, no term id was found for the name/label _Deep Zone_.
+1. In row _[27](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=27:27)_, no term id was found for the name/label _Deep Zone_.
 
-1. In row _[28](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=28:28)_, no term id was found for the name/label _Tidemark_.
+1. In row _[28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28)_, no term id was found for the name/label _Tidemark_.
 
-1. In row _[28](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=28:28)_, no term id was found for the name/label _Prehypertrophic Chondrocytes_.
+1. In row _[28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28)_, no term id was found for the name/label _Prehypertrophic Chondrocytes_.
 
-1. In row _[30](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=30:30)_, no term id was found for the name/label _Subchondral Bone_.
+1. In row _[30](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=30:30)_, no term id was found for the name/label _Subchondral Bone_.
 
-1. In row _[30](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=30:30)_, no term id was found for the name/label _Residual Hypertrophic Chondrocytes_.
+1. In row _[30](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=30:30)_, no term id was found for the name/label _Residual Hypertrophic Chondrocytes_.
 
-1. In row _[33](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=33:33)_, no term id was found for the name/label _Bone lIning Cells_.
+1. In row _[33](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=33:33)_, no term id was found for the name/label _Bone lIning Cells_.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=35:35)_, no term id was found for the name/label _Preosteoclasts_.
+1. In row _[35](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=35:35)_, no term id was found for the name/label _Preosteoclasts_.
 
-1. In row _[37](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=37:37)_, no term id was found for the name/label _vascular endothelial cells_.
+1. In row _[37](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=37:37)_, no term id was found for the name/label _vascular endothelial cells_.
 
-1. In row _[38](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=38:38)_, no term id was found for the name/label _perivascular cells_.
+1. In row _[38](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=38:38)_, no term id was found for the name/label _perivascular cells_.
 
-1. In row _[40](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=40:40)_, no term id was found for the name/label _sinusoidal cells_.
+1. In row _[40](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=40:40)_, no term id was found for the name/label _sinusoidal cells_.
 
-1. In row _[41](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=41:41)_, no term id was found for the name/label _autonomic neuronal cells_.
+1. In row _[41](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=41:41)_, no term id was found for the name/label _autonomic neuronal cells_.
 
-1. In row _[42](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=42:42)_, no term id was found for the name/label _Marrow Adipocytes_.
+1. In row _[42](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=42:42)_, no term id was found for the name/label _Marrow Adipocytes_.
 
 
 ## Terms from another ontology
