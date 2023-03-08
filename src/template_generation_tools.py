@@ -88,7 +88,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
 
   del_index = []
   for t in no_valid_class:
-    log_dict["no_found_id"].append({"id": {t}})
+    log_dict["no_found_id"].append({"id": t})
     #logger.warning(f"Unrecognised UBERON/CL/PCL entity '{t}'")
     del_index.extend(ccf_tools_df[(ccf_tools_df['s'] == t) | (ccf_tools_df['o'] == t)].index)
    
