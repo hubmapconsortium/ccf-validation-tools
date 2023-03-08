@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|PCL|2022-10-19|
 |CL|2023-01-09|
+|PCL|2022-10-19|
 |UBERON|2023-01-09|
 
 ### ASCT+b Tables
@@ -29,7 +29,7 @@ Release Notes
 |Lymph_vasculature|v1.3|revise for April 1, 2023|
 |Ovary|v1.3|revise for April 1, 2023|
 |Pancreas|v1.3|revise for April 1, 2023|
-|Placenta|V1.1|revise for October 1, 2022|
+|Placenta|V1.1|revise for April 1, 2023|
 |Peripheral_nervous_system|v1.1|revise for Oct 1, 2022|
 |Prostate|v1.1|revise for Oct 1, 2022|
 |Skin|v1.3|revise for October 1, 2022|

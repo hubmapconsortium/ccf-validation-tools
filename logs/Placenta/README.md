@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Placenta (2023-02-27)
+ASCT+B Validation Reports for Placenta (2023-03-08)
 ===================================================
 
 Table of contents
@@ -52,9 +52,9 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
   
 1. In row _[25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25)_, the term _[CL:0000523](http://purl.obolibrary.org/obo/CL_0000523)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _cytotrophoblast_ and the one in the ontology is _mononuclear cytotrophoblast cell_. For reference, the given name/label by SMEs is _cytotrophoblast (CTB)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=13:13)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _pericytes_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)_, the term _[CL:0000525](http://purl.obolibrary.org/obo/CL_0000525)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _syncytiotrophoblast_ and the one in the ontology is _syncytiotrophoblast cell_. For reference, the given name/label by SMEs is _syncytiotrophoblast (STB)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[13](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=13:13)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _pericytes_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[20](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=20:20)_, the term _[UBERON:0003254](http://purl.obolibrary.org/obo/UBERON_0003254)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _amnion epithelium_ and the one in the ontology is _amniotic ectoderm_. For reference, the given name/label by SMEs is _amniotic ectoderm_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
