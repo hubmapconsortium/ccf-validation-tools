@@ -69,6 +69,8 @@ all: last_official_release official_release
 ../owl/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl ../owl/%_no-valid.owl ../owl/%_sec_reduced.owl
 	if [ $(OLD_VERSION) = False ]; then ${ROBOT} merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
 					 merge --input ../owl/$*_sec_reduced.owl -o ../owl/$*_extended.owl \
+					 reduce --reasoner ELK \
+					 merge -i ../owl/ccf_$*_classes_t.owl \
 					 merge --input ../owl/$*_no-valid.owl \
 					 annotate --ontology-iri http://purl.org/ccf/latest/ccf_$*_classes.owl \
 					 convert --format json -o $*.json && \
