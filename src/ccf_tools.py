@@ -33,12 +33,14 @@ def parse_asctb(path):
     RETURN pandas dataframe of with columns ['o', 's', 'olabel', 'slabel', user_olabel, user_slabel]
     where each pair of adjacent columns => a subject-object pair for testing"""
 
-    def is_valid_id(log_dict, content, row_number):
+    def is_valid_id(log_dict, content, row_number, terms_set):
         if not re.match("(CL|UBERON|PCL)\:[0-9]+", content['id']):
-            log_dict["no_valid_id"].append({"id": content['id'], "label": content['rdfs_label'], "user_label": content['name'], "row_number": row_number})
+            if content['name'] not in terms_set:
+              log_dict["no_valid_id"].append({"id": content['id'], "label": content['rdfs_label'], "user_label": content['name'], "row_number": row_number})
+              terms_set.add(content['name'])
             #logger.warning(f"No valid ID provided for '{content['id']}', label: {content['rdfs_label']}, user_label: {content['name']}")
-            return log_dict
-        return log_dict
+            return log_dict, terms_set
+        return log_dict, terms_set
     def check_id(id):
       return re.match("(CL|UBERON|PCL)\:[0-9]+", id)
 
@@ -51,6 +53,7 @@ def parse_asctb(path):
     rt = []
     rut = []
     log_dict = {"no_valid_id": [], "no_found_id": [], "diff_label": []}
+    terms_set = set()
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel', 'row_number'])
     dl = []
@@ -59,8 +62,8 @@ def parse_asctb(path):
       # AS-AS RELATIONSHIP
       anatomical_structures = row['anatomical_structures']
       for current, next in zip(anatomical_structures, anatomical_structures[1:]):
-        log_dict = is_valid_id(log_dict, current, row["rowNumber"])
-        log_dict = is_valid_id(log_dict, next, row["rowNumber"])
+        log_dict, terms_set = is_valid_id(log_dict, current, row["rowNumber"], terms_set)
+        log_dict, terms_set = is_valid_id(log_dict, next, row["rowNumber"], terms_set)
         if current['id'] != '':
           unique_terms.add(current['id'])
         if next['id'] != '':
@@ -95,8 +98,8 @@ def parse_asctb(path):
       # CT-CT RELATIONSHIP
       cell_types = row['cell_types']
       for current, next in zip(cell_types, cell_types[1:]):
-        log_dict = is_valid_id(log_dict, current, row["rowNumber"])
-        log_dict = is_valid_id(log_dict, next, row["rowNumber"])
+        log_dict, terms_set = is_valid_id(log_dict, current, row["rowNumber"], terms_set)
+        log_dict, terms_set = is_valid_id(log_dict, next, row["rowNumber"], terms_set)
         if current['id'] != '':
           unique_terms.add(current['id'])
         if next['id'] != '':
@@ -136,8 +139,8 @@ def parse_asctb(path):
         last_ct = cell_types[-1]
         if not check_id(last_ct['id']) and len(cell_types) > 1:
           last_ct = cell_types[-2]
-        log_dict = is_valid_id(log_dict, last_as, row["rowNumber"])
-        log_dict = is_valid_id(log_dict, last_ct, row["rowNumber"])
+        log_dict, terms_set = is_valid_id(log_dict, last_as, row["rowNumber"], terms_set)
+        log_dict, terms_set = is_valid_id(log_dict, last_ct, row["rowNumber"], terms_set)
         if check_id(last_as['id']) and check_id(last_ct['id']):
           d = {}
           d['row_number'] = row['rowNumber']
