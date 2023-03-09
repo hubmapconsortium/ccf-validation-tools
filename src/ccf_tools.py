@@ -35,9 +35,9 @@ def parse_asctb(path):
 
     def is_valid_id(log_dict, content, row_number, terms_set):
         if not re.match("(CL|UBERON|PCL)\:[0-9]+", content['id']):
-            if content['name'] not in terms_set:
+            if (content['name'], row_number) not in terms_set:
               log_dict["no_valid_id"].append({"id": content['id'], "label": content['rdfs_label'], "user_label": content['name'], "row_number": row_number})
-              terms_set.add(content['name'])
+              terms_set.add((content['name'], row_number))
             #logger.warning(f"No valid ID provided for '{content['id']}', label: {content['rdfs_label']}, user_label: {content['name']}")
             return log_dict, terms_set
         return log_dict, terms_set
