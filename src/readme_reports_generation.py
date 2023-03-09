@@ -2,6 +2,8 @@ import argparse, json
 from datetime import datetime
 from mdutils.fileutils.fileutils import MarkDownFile
 from mdutils.mdutils import MdUtils
+from tabulate import tabulate
+import pandas as pd
 
 from download_resource import get_sheet_gid
 
@@ -58,6 +60,8 @@ def generate_template_readme(file_name, table):
   markers_dict["external"] = m_ext
 
   template.new_header(level=1, title="Relationship reports", add_table_of_contents='y')
+
+  template.new_paragraph(text="")
 
   template.new_header(level=2, title="Relationship AS-AS report", add_table_of_contents='y')
 
@@ -164,15 +168,15 @@ def generate_readme(file, data, table):
 
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["external"], marker=markers_dict["external"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'class_{args.table}_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["as-as_report"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link('not_valid_as-as.md', text="Report", bold_italics_code='b'), marker=markers_dict["as-as_report"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'class_{args.table}_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["ct-ct_report"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link('not_valid_ct-ct.md', text="Report", bold_italics_code='b'), marker=markers_dict["ct-ct_report"])
   
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'{args.table}_AS_CT_strict_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["ct-as_report"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link('not_valid_ct-as.md', text="Report", bold_italics_code='b'), marker=markers_dict["ct-as_report"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'new_cl_terms_{args.table}.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["new_cl"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link('new_cl_terms.md', text="Report", bold_italics_code='b'), marker=markers_dict["new_cl"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'new_uberon_terms_{args.table}.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["new_uberon"])
+  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link('new_uberon_terms.md', text="Report", bold_italics_code='b'), marker=markers_dict["new_uberon"])
 
   readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'class_{args.table}_indirect_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["indirect"])
 
@@ -210,12 +214,72 @@ def generate_graph_page(file, table):
 
   graph_page.create_md_file()
 
+def add_row_link(report, table):
+  for row in report.itertuples():
+    row_n = row.row_number
+    report.at[row.Index, "row_number"] = f'[{row_n}]({get_row_link(table, row_n)})'
+
+  return report
+
+def split_report(report):
+  report_as = report[report['s'].str.contains('UBERON') & report['o'].str.contains('UBERON')]
+  report_ct = report[report['s'].str.contains('CL') & report['o'].str.contains('CL')]
+
+  return report_as, report_ct
+
+def tsv2md(report):
+  return tabulate(report, headers=report.columns, tablefmt="github")
+
+def generate_relationship_template(file, table):
+  date = datetime.today().strftime('%Y-%m-%d')
+  markers_dict = {}
+
+  template = MdUtils(file_name=file, title=f'ASCT+B Validation Reports for {table} ({date})')
+
+  template.new_header(level=2, title="Relationship reports")
+
+  template.new_paragraph(text="""These reports are other representation of the ASCT+B table. We splitted each row into pairs. 
+                          We verify for each pair a valid relationship in the source ontologies (UBERON and CL).""")
+  
+  template.new_paragraph(text="The report means that we could not find partonomy relationship in the source ontologies, but it doen't mean that this relationship is not valid.")
+  
+  template.new_header(level=3, title="Relationship AS-AS Report")
+
+  template.new_paragraph(text="")
+
+  m_as_as = template.create_marker(text_marker="as_as")
+  markers_dict["as_as"] = m_as_as
+
+  template.new_header(level=3, title="Relationship AS-AS Report")
+
+  m_as_as = template.create_marker(text_marker="as-as")
+  markers_dict["as_as"] = m_as_as
+
+
+
+  return template
+
+def generate_relationship_page(file, table):
+  relationship_page = generate_relationship_template(file, table)
+  BASE_PATH = "../docs/"
+  reports_list = [f"{BASE_PATH}class_{table}_log.tsv", f"{BASE_PATH}{table}_AS_CT_strict_log.tsv"]
+
+  report = pd.read_csv(f"../docs/{table}/class_{table}_log.tsv", sep='\t')
+  report_as, report_ct = split_report(add_row_link(report, table))
+  report_as, report_ct = tsv2md(report_as), tsv2md(report_ct)
+  
+  relationship_page.new_paragraph(text=report_as)
+  relationship_page.new_paragraph(text=report_ct)
+
+  relationship_page.create_md_file()
+
+
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
   parser.add_argument("-t", "--table", help="table to generate readme")
   parser.add_argument("-o", "--output", help="output file path")
-  parser.add_argument("-m", "--mode", help="readme or graph")
+  parser.add_argument("-m", "--mode", help="readme or graph or relationship")
   parser.add_argument("-d", "--data", help="log in json")
 
   args = parser.parse_args()
@@ -225,3 +289,5 @@ if __name__ == '__main__':
     generate_readme(args.output, args.data, args.table)
   elif args.mode == "graph":
     generate_graph_page(args.output, args.table)
+  elif args.mode == "relationship":
+    generate_relationship_page(args.output, args.table)
