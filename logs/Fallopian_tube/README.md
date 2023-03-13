@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Fallopian_tube (2023-03-08)
+ASCT+B Validation Reports for Fallopian_tube (2023-03-13)
 =========================================================
 
 Table of contents
@@ -50,17 +50,17 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[83](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=83:83)_, the term _[UBERON:8410010](http://purl.obolibrary.org/obo/UBERON_8410010)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _fimbria of uterine tube_. For reference, the given name/label by SMEs is _fimbria of Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[76](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=76:76)_, the term _[UBERON:0012331](http://purl.obolibrary.org/obo/UBERON_0012331)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _mesosalpinx_. For reference, the given name/label by SMEs is _mesosalpinx_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[44](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=44:44)_, the term _[UBERON:0012648](http://purl.obolibrary.org/obo/UBERON_0012648)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _ampulla of uterine tube_. For reference, the given name/label by SMEs is _ampulla of Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[28](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=28:28)_, the term _[UBERON:0016632](http://purl.obolibrary.org/obo/UBERON_0016632)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _isthmus of fallopian tube_. For reference, the given name/label by SMEs is _isthmus of Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[28](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=28:28)_, the term _[UBERON:0003889](http://purl.obolibrary.org/obo/UBERON_0003889)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _fallopian tube_. For reference, the given name/label by SMEs is _Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=76:76)_, the term _[UBERON:0012331](http://purl.obolibrary.org/obo/UBERON_0012331)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _mesosalpinx_. For reference, the given name/label by SMEs is _mesosalpinx_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[83](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=83:83)_, the term _[UBERON:8410010](http://purl.obolibrary.org/obo/UBERON_8410010)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _fimbria of uterine tube_. For reference, the given name/label by SMEs is _fimbria of Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[60](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=60:60)_, the term _[UBERON:0003984](http://purl.obolibrary.org/obo/UBERON_0003984)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _uterine tube infundibulum_. For reference, the given name/label by SMEs is _infundibulum of Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[44](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=44:44)_, the term _[UBERON:0012648](http://purl.obolibrary.org/obo/UBERON_0012648)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _ampulla of uterine tube_. For reference, the given name/label by SMEs is _ampulla of Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[28](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=28:28)_, the term _[UBERON:0003889](http://purl.obolibrary.org/obo/UBERON_0003889)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _fallopian tube_. For reference, the given name/label by SMEs is _Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -70,141 +70,85 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
   
 1. In row _[12](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=12:12)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
-1. In row _[12](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=12:12)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[12](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=12:12)_, no term id was found for the name/label _fluid of Fallopian tube intramural segment_.
-
-1. In row _[13](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=13:13)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[13](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=13:13)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[13](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=13:13)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=13:13)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[13](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=13:13)_, no term id was found for the name/label _Fibroblast_.
-
-1. In row _[14](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=14:14)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[14](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=14:14)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[14](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=14:14)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[14](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=14:14)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[14](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=14:14)_, no term id was found for the name/label _fibroblast-mesenchymal cell_.
-
-1. In row _[15](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=15:15)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[15](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=15:15)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[15](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=15:15)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[15](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=15:15)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[15](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=15:15)_, no term id was found for the name/label _macrophage_.
-
-1. In row _[16](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=16:16)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[16](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=16:16)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[16](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=16:16)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[16](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=16:16)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[16](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=16:16)_, no term id was found for the name/label _CD8+ T-cells_.
-
-1. In row _[17](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=17:17)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[17](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=17:17)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[17](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=17:17)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=17:17)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[17](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=17:17)_, no term id was found for the name/label _Natural killer cell_.
-
-1. In row _[18](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=18:18)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[18](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=18:18)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[18](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=18:18)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=18:18)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[18](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=18:18)_, no term id was found for the name/label _CD4+ T-cell_.
-
-1. In row _[19](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=19:19)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[19](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=19:19)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[19](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=19:19)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=19:19)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[19](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=19:19)_, no term id was found for the name/label _Langerhans cell_.
-
-1. In row _[20](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=20:20)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[20](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=20:20)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[20](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=20:20)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[20](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=20:20)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[20](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=20:20)_, no term id was found for the name/label _monocyte_.
-
-1. In row _[21](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=21:21)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[21](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=21:21)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[21](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=21:21)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=21:21)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[21](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=21:21)_, no term id was found for the name/label _dendritic cell_.
-
-1. In row _[22](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=22:22)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[22](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=22:22)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[22](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=22:22)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[22](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=22:22)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[22](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=22:22)_, no term id was found for the name/label _mast cell_.
-
-1. In row _[23](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=23:23)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[23](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=23:23)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[23](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=23:23)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[23](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=23:23)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[23](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=23:23)_, no term id was found for the name/label _B cell_.
-
-1. In row _[24](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=24:24)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[24](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=24:24)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[24](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=24:24)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=24:24)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[24](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=24:24)_, no term id was found for the name/label _plasma cell_.
-
-1. In row _[25](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=25:25)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[25](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=25:25)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[25](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=25:25)_, no term id was found for the name/label _lamina propria of Fallopian tube intramural segment_.
 
-1. In row _[25](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=25:25)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[25](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=25:25)_, no term id was found for the name/label _neutrophil_.
-
-1. In row _[26](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=26:26)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[26](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=26:26)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
@@ -212,11 +156,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[27](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=27:27)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
-1. In row _[27](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=27:27)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[27](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=27:27)_, no term id was found for the name/label _vasculature of Fallopian tube intramural segment_.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=27:27)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
 1. In row _[27](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=27:27)_, no term id was found for the name/label _Endothelial cell_.
 
@@ -406,19 +346,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[77](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=77:77)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
-1. In row _[77](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=77:77)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=77:77)_, no term id was found for the name/label _wall of Fallopian tube intramural segment_.
-
 1. In row _[77](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=77:77)_, no term id was found for the name/label _wall of Fallopian tube intramural segment_.
 
 1. In row _[77](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=77:77)_, no term id was found for the name/label _serosa of Fallopian tube intramural segment_.
 
 1. In row _[78](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=78:78)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=78:78)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=78:78)_, no term id was found for the name/label _wall of Fallopian tube intramural segment_.
 
 1. In row _[78](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=78:78)_, no term id was found for the name/label _wall of Fallopian tube intramural segment_.
 
@@ -426,11 +358,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[79](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=79:79)_, no term id was found for the name/label _wall of Fallopian tube isthmus_.
 
-1. In row _[79](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=79:79)_, no term id was found for the name/label _wall of Fallopian tube isthmus_.
-
 1. In row _[79](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=79:79)_, no term id was found for the name/label _serosa of Fallopian tube isthmus_.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=80:80)_, no term id was found for the name/label _wall of Fallopian tube isthmus_.
 
 1. In row _[80](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=80:80)_, no term id was found for the name/label _wall of Fallopian tube isthmus_.
 
@@ -438,11 +366,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[81](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=81:81)_, no term id was found for the name/label _wall of Fallopian tube ampulla_.
 
-1. In row _[81](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=81:81)_, no term id was found for the name/label _wall of Fallopian tube ampulla_.
-
 1. In row _[81](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=81:81)_, no term id was found for the name/label _serosa of Fallopian tube ampulla_.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=82:82)_, no term id was found for the name/label _wall of Fallopian tube ampulla_.
 
 1. In row _[82](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=82:82)_, no term id was found for the name/label _wall of Fallopian tube ampulla_.
 
@@ -510,11 +434,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[99](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=99:99)_, no term id was found for the name/label _wall of Fallopian tube infundibulum_.
 
-1. In row _[99](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=99:99)_, no term id was found for the name/label _wall of Fallopian tube infundibulum_.
-
 1. In row _[99](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=99:99)_, no term id was found for the name/label _serosa of Fallopian tube infundibulum_.
-
-1. In row _[100](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=100:100)_, no term id was found for the name/label _wall of Fallopian tube infundibulum_.
 
 1. In row _[100](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=100:100)_, no term id was found for the name/label _wall of Fallopian tube infundibulum_.
 
@@ -522,11 +442,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[101](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=101:101)_, no term id was found for the name/label _serous membrane lining of mesosalpinx_.
 
-1. In row _[101](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=101:101)_, no term id was found for the name/label _serous membrane lining of mesosalpinx_.
-
 1. In row _[101](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=101:101)_, no term id was found for the name/label _lymphatic of mesosalpinx_.
-
-1. In row _[102](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=102:102)_, no term id was found for the name/label _serous membrane lining of mesosalpinx_.
 
 1. In row _[102](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=102:102)_, no term id was found for the name/label _serous membrane lining of mesosalpinx_.
 
@@ -534,19 +450,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[103](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=103:103)_, no term id was found for the name/label _serous membrane lining of mesosalpinx_.
 
-1. In row _[103](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=103:103)_, no term id was found for the name/label _serous membrane lining of mesosalpinx_.
-
 1. In row _[103](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=103:103)_, no term id was found for the name/label _vasculature of mesosalpinx_.
 
 1. In row _[104](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=104:104)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
-1. In row _[104](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=104:104)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[104](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=104:104)_, no term id was found for the name/label _plica of Fallopian tube intramural segment_.
-
-1. In row _[104](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=104:104)_, no term id was found for the name/label _plica of Fallopian tube intramural segment_.
-
-1. In row _[104](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=104:104)_, no term id was found for the name/label _mucosa of Fallopian tube intramural segment_.
 
 1. In row _[104](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=104:104)_, no term id was found for the name/label _mucosa of Fallopian tube intramural segment_.
 
@@ -554,13 +462,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[105](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=105:105)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
-1. In row _[105](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=105:105)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[105](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=105:105)_, no term id was found for the name/label _wall of Fallopian tube intramural segment_.
-
-1. In row _[105](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=105:105)_, no term id was found for the name/label _wall of Fallopian tube intramural segment_.
-
-1. In row _[105](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=105:105)_, no term id was found for the name/label _muscle layer of oviduct intramural segment_.
 
 1. In row _[105](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=105:105)_, no term id was found for the name/label _muscle layer of oviduct intramural segment_.
 
@@ -568,13 +470,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[106](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=106:106)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
-1. In row _[106](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=106:106)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[106](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=106:106)_, no term id was found for the name/label _wall of Fallopian tube intramural segment_.
-
-1. In row _[106](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=106:106)_, no term id was found for the name/label _wall of Fallopian tube intramural segment_.
-
-1. In row _[106](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=106:106)_, no term id was found for the name/label _muscle layer of oviduct intramural segment_.
 
 1. In row _[106](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=106:106)_, no term id was found for the name/label _muscle layer of oviduct intramural segment_.
 
@@ -582,13 +478,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[107](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=107:107)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
-1. In row _[107](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=107:107)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[107](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=107:107)_, no term id was found for the name/label _wall of Fallopian tube intramural segment_.
-
-1. In row _[107](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=107:107)_, no term id was found for the name/label _wall of Fallopian tube intramural segment_.
-
-1. In row _[107](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=107:107)_, no term id was found for the name/label _muscle layer of oviduct intramural segment_.
 
 1. In row _[107](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=107:107)_, no term id was found for the name/label _muscle layer of oviduct intramural segment_.
 
@@ -596,19 +486,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[108](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=108:108)_, no term id was found for the name/label _plica of Fallopian tube isthmus_.
 
-1. In row _[108](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=108:108)_, no term id was found for the name/label _plica of Fallopian tube isthmus_.
-
-1. In row _[108](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=108:108)_, no term id was found for the name/label _mucosa of Fallopian tube isthmus_.
-
 1. In row _[108](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=108:108)_, no term id was found for the name/label _mucosa of Fallopian tube isthmus_.
 
 1. In row _[108](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=108:108)_, no term id was found for the name/label _intercalary cell_.
 
 1. In row _[109](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=109:109)_, no term id was found for the name/label _wall of Fallopian tube isthmus_.
-
-1. In row _[109](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=109:109)_, no term id was found for the name/label _wall of Fallopian tube isthmus_.
-
-1. In row _[109](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=109:109)_, no term id was found for the name/label _muscle layer of oviduct isthmus_.
 
 1. In row _[109](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=109:109)_, no term id was found for the name/label _muscle layer of oviduct isthmus_.
 
@@ -616,19 +498,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[110](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=110:110)_, no term id was found for the name/label _wall of Fallopian tube isthmus_.
 
-1. In row _[110](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=110:110)_, no term id was found for the name/label _wall of Fallopian tube isthmus_.
-
-1. In row _[110](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=110:110)_, no term id was found for the name/label _muscle layer of oviduct isthmus_.
-
 1. In row _[110](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=110:110)_, no term id was found for the name/label _muscle layer of oviduct isthmus_.
 
 1. In row _[110](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=110:110)_, no term id was found for the name/label _Middle muscle layer of Fallopian tube isthmus_.
 
 1. In row _[111](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=111:111)_, no term id was found for the name/label _wall of Fallopian tube isthmus_.
-
-1. In row _[111](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=111:111)_, no term id was found for the name/label _wall of Fallopian tube isthmus_.
-
-1. In row _[111](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=111:111)_, no term id was found for the name/label _muscle layer of oviduct isthmus_.
 
 1. In row _[111](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=111:111)_, no term id was found for the name/label _muscle layer of oviduct isthmus_.
 
@@ -636,19 +510,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[112](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=112:112)_, no term id was found for the name/label _plica of Fallopian tube ampulla_.
 
-1. In row _[112](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=112:112)_, no term id was found for the name/label _plica of Fallopian tube ampulla_.
-
-1. In row _[112](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=112:112)_, no term id was found for the name/label _mucosa of Fallopian tube ampulla_.
-
 1. In row _[112](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=112:112)_, no term id was found for the name/label _mucosa of Fallopian tube ampulla_.
 
 1. In row _[112](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=112:112)_, no term id was found for the name/label _intercalary cell_.
 
 1. In row _[113](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=113:113)_, no term id was found for the name/label _wall of Fallopian tube ampulla_.
-
-1. In row _[113](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=113:113)_, no term id was found for the name/label _wall of Fallopian tube ampulla_.
-
-1. In row _[113](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=113:113)_, no term id was found for the name/label _muscle layer of oviduct ampulla_.
 
 1. In row _[113](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=113:113)_, no term id was found for the name/label _muscle layer of oviduct ampulla_.
 
@@ -656,19 +522,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[114](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=114:114)_, no term id was found for the name/label _wall of Fallopian tube ampulla_.
 
-1. In row _[114](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=114:114)_, no term id was found for the name/label _wall of Fallopian tube ampulla_.
-
-1. In row _[114](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=114:114)_, no term id was found for the name/label _muscle layer of oviduct ampulla_.
-
 1. In row _[114](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=114:114)_, no term id was found for the name/label _muscle layer of oviduct ampulla_.
 
 1. In row _[114](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=114:114)_, no term id was found for the name/label _Middle muscle layer of Fallopian tube ampulla_.
 
 1. In row _[115](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=115:115)_, no term id was found for the name/label _wall of Fallopian tube ampulla_.
-
-1. In row _[115](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=115:115)_, no term id was found for the name/label _wall of Fallopian tube ampulla_.
-
-1. In row _[115](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=115:115)_, no term id was found for the name/label _muscle layer of oviduct ampulla_.
 
 1. In row _[115](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=115:115)_, no term id was found for the name/label _muscle layer of oviduct ampulla_.
 
@@ -676,15 +534,9 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[116](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=116:116)_, no term id was found for the name/label _mucosa of Fallopian tube fimbria_.
 
-1. In row _[116](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=116:116)_, no term id was found for the name/label _mucosa of Fallopian tube fimbria_.
-
 1. In row _[116](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=116:116)_, no term id was found for the name/label _intercalary cell_.
 
 1. In row _[117](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=117:117)_, no term id was found for the name/label _plica of Fallopian tube infundibulum_.
-
-1. In row _[117](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=117:117)_, no term id was found for the name/label _plica of Fallopian tube infundibulum_.
-
-1. In row _[117](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=117:117)_, no term id was found for the name/label _mucosa of Fallopian tube infundibulum_.
 
 1. In row _[117](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=117:117)_, no term id was found for the name/label _mucosa of Fallopian tube infundibulum_.
 
@@ -692,19 +544,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[118](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=118:118)_, no term id was found for the name/label _wall of Fallopian tube infundibulum_.
 
-1. In row _[118](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=118:118)_, no term id was found for the name/label _wall of Fallopian tube infundibulum_.
-
-1. In row _[118](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=118:118)_, no term id was found for the name/label _muscle layer of oviduct infundibulum_.
-
 1. In row _[118](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=118:118)_, no term id was found for the name/label _muscle layer of oviduct infundibulum_.
 
 1. In row _[118](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=118:118)_, no term id was found for the name/label _Inner muscle layer of Fallopian tube infundibulum_.
 
 1. In row _[119](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=119:119)_, no term id was found for the name/label _wall of Fallopian tube infundibulum_.
-
-1. In row _[119](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=119:119)_, no term id was found for the name/label _wall of Fallopian tube infundibulum_.
-
-1. In row _[119](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=119:119)_, no term id was found for the name/label _muscle layer of oviduct infundibulum_.
 
 1. In row _[119](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=119:119)_, no term id was found for the name/label _muscle layer of oviduct infundibulum_.
 
@@ -712,23 +556,13 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[120](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=120:120)_, no term id was found for the name/label _wall of Fallopian tube infundibulum_.
 
-1. In row _[120](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=120:120)_, no term id was found for the name/label _wall of Fallopian tube infundibulum_.
-
-1. In row _[120](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=120:120)_, no term id was found for the name/label _muscle layer of oviduct infundibulum_.
-
 1. In row _[120](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=120:120)_, no term id was found for the name/label _muscle layer of oviduct infundibulum_.
 
 1. In row _[120](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=120:120)_, no term id was found for the name/label _Outer muscle layer of Fallopian tube infundibulum_.
 
 1. In row _[121](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=121:121)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
-1. In row _[121](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=121:121)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[121](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=121:121)_, no term id was found for the name/label _plica of Fallopian tube intramural segment_.
-
-1. In row _[121](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=121:121)_, no term id was found for the name/label _plica of Fallopian tube intramural segment_.
-
-1. In row _[121](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=121:121)_, no term id was found for the name/label _mucosa of Fallopian tube intramural segment_.
 
 1. In row _[121](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=121:121)_, no term id was found for the name/label _mucosa of Fallopian tube intramural segment_.
 
@@ -736,13 +570,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[122](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=122:122)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
 
-1. In row _[122](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=122:122)_, no term id was found for the name/label _intramural segment of Fallopian tube_.
-
 1. In row _[122](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=122:122)_, no term id was found for the name/label _plica of Fallopian tube intramural segment_.
-
-1. In row _[122](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=122:122)_, no term id was found for the name/label _plica of Fallopian tube intramural segment_.
-
-1. In row _[122](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=122:122)_, no term id was found for the name/label _mucosa of Fallopian tube intramural segment_.
 
 1. In row _[122](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=122:122)_, no term id was found for the name/label _mucosa of Fallopian tube intramural segment_.
 
@@ -750,19 +578,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[123](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=123:123)_, no term id was found for the name/label _plica of Fallopian tube isthmus_.
 
-1. In row _[123](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=123:123)_, no term id was found for the name/label _plica of Fallopian tube isthmus_.
-
-1. In row _[123](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=123:123)_, no term id was found for the name/label _mucosa of Fallopian tube isthmus_.
-
 1. In row _[123](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=123:123)_, no term id was found for the name/label _mucosa of Fallopian tube isthmus_.
 
 1. In row _[123](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=123:123)_, no term id was found for the name/label _ciliated epithelial cell_.
 
 1. In row _[124](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=124:124)_, no term id was found for the name/label _plica of Fallopian tube isthmus_.
-
-1. In row _[124](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=124:124)_, no term id was found for the name/label _plica of Fallopian tube isthmus_.
-
-1. In row _[124](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=124:124)_, no term id was found for the name/label _mucosa of Fallopian tube isthmus_.
 
 1. In row _[124](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=124:124)_, no term id was found for the name/label _mucosa of Fallopian tube isthmus_.
 
@@ -770,19 +590,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[125](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=125:125)_, no term id was found for the name/label _plica of Fallopian tube ampulla_.
 
-1. In row _[125](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=125:125)_, no term id was found for the name/label _plica of Fallopian tube ampulla_.
-
-1. In row _[125](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=125:125)_, no term id was found for the name/label _mucosa of Fallopian tube ampulla_.
-
 1. In row _[125](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=125:125)_, no term id was found for the name/label _mucosa of Fallopian tube ampulla_.
 
 1. In row _[125](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=125:125)_, no term id was found for the name/label _ciliated epithelial cell_.
 
 1. In row _[126](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=126:126)_, no term id was found for the name/label _plica of Fallopian tube ampulla_.
-
-1. In row _[126](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=126:126)_, no term id was found for the name/label _plica of Fallopian tube ampulla_.
-
-1. In row _[126](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=126:126)_, no term id was found for the name/label _mucosa of Fallopian tube ampulla_.
 
 1. In row _[126](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=126:126)_, no term id was found for the name/label _mucosa of Fallopian tube ampulla_.
 
@@ -790,11 +602,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[127](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=127:127)_, no term id was found for the name/label _mucosa of Fallopian tube fimbria_.
 
-1. In row _[127](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=127:127)_, no term id was found for the name/label _mucosa of Fallopian tube fimbria_.
-
 1. In row _[127](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=127:127)_, no term id was found for the name/label _ciliated epithelial cell_.
-
-1. In row _[128](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=128:128)_, no term id was found for the name/label _mucosa of Fallopian tube fimbria_.
 
 1. In row _[128](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=128:128)_, no term id was found for the name/label _mucosa of Fallopian tube fimbria_.
 
@@ -802,19 +610,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[129](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=129:129)_, no term id was found for the name/label _plica of Fallopian tube infundibulum_.
 
-1. In row _[129](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=129:129)_, no term id was found for the name/label _plica of Fallopian tube infundibulum_.
-
-1. In row _[129](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=129:129)_, no term id was found for the name/label _mucosa of Fallopian tube infundibulum_.
-
 1. In row _[129](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=129:129)_, no term id was found for the name/label _mucosa of Fallopian tube infundibulum_.
 
 1. In row _[129](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=129:129)_, no term id was found for the name/label _ciliated epithelial cell_.
 
 1. In row _[130](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=130:130)_, no term id was found for the name/label _plica of Fallopian tube infundibulum_.
-
-1. In row _[130](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=130:130)_, no term id was found for the name/label _plica of Fallopian tube infundibulum_.
-
-1. In row _[130](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=130:130)_, no term id was found for the name/label _mucosa of Fallopian tube infundibulum_.
 
 1. In row _[130](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=130:130)_, no term id was found for the name/label _mucosa of Fallopian tube infundibulum_.
 

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Spleen (2023-03-08)
+ASCT+B Validation Reports for Spleen (2023-03-13)
 =================================================
 
 Table of contents
@@ -50,13 +50,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[54](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=54:54)_, the term _[CL:0002394](http://purl.obolibrary.org/obo/CL_0002394)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _myeloid dendritic cell cDC1_ and the one in the ontology is _CD141-positive myeloid dendritic cell_. For reference, the given name/label by SMEs is _cDC1 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[55](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=55:55)_, the term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _myeloid dendritic cell cDC2_ and the one in the ontology is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label by SMEs is _cDC2 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[36](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=36:36)_, the term _[CL:0000037](http://purl.obolibrary.org/obo/CL_0000037)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _hematopoetic stem cell_ and the one in the ontology is _hematopoietic stem cell_. For reference, the given name/label by SMEs is _Hematopoetic Stem Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[30](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=30:30)_, the term _[UBERON:0009967](http://purl.obolibrary.org/obo/UBERON_0009967)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _splenic sinusoid_ and the one in the ontology is _spleen venous sinus_. For reference, the given name/label by SMEs is _Splenic Sinusoid_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[55](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=55:55)_, the term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _myeloid dendritic cell cDC2_ and the one in the ontology is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label by SMEs is _cDC2 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[54](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=54:54)_, the term _[CL:0002394](http://purl.obolibrary.org/obo/CL_0002394)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _myeloid dendritic cell cDC1_ and the one in the ontology is _CD141-positive myeloid dendritic cell_. For reference, the given name/label by SMEs is _cDC1 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -104,17 +104,9 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[49](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=49:49)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
-1. In row _[49](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=49:49)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=50:50)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
 1. In row _[50](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=50:50)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
 1. In row _[51](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=51:51)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=51:51)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=52:52)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
 1. In row _[52](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=52:52)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
@@ -122,27 +114,15 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[53](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=53:53)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
-1. In row _[53](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=53:53)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
 1. In row _[53](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=53:53)_, no term id was found for the name/label _Sheathed Capillary_.
 
 1. In row _[54](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=54:54)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
-1. In row _[54](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=54:54)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=55:55)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
 1. In row _[55](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=55:55)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
 1. In row _[56](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=56:56)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
-1. In row _[56](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=56:56)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
 1. In row _[57](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=57:57)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=57:57)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=58:58)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
 1. In row _[58](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=58:58)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
@@ -162,17 +142,9 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[92](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=92:92)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
-1. In row _[92](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=92:92)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=93:93)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
 1. In row _[93](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=93:93)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
 1. In row _[94](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=94:94)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=94:94)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
-
-1. In row _[95](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=95:95)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
 1. In row _[95](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=95:95)_, no term id was found for the name/label _Red Pulp-White Pulp Border_.
 
@@ -205,8 +177,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[106](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=106:106)_, no term id was found for the name/label _Interdigitating Dendritic Cells_.
 
 1. In row _[107](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=107:107)_, no term id was found for the name/label _Inner PALS_.
-
-1. In row _[108](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=108:108)_, no term id was found for the name/label _Inner PALS_.
 
 1. In row _[108](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=108:108)_, no term id was found for the name/label _Inner PALS_.
 
