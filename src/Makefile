@@ -136,4 +136,4 @@ validation_reports_release: official_release
 
 build-docker-v%:
 	docker buildx use ccf-tools-dep-builder
-	docker buildx build --platform linux/amd64,linux/arm64 -t anitacaron/ccf-tools-dep:v$* --push .
+	docker buildx build --platform linux/amd64,linux/arm64 -t anitacaron/ccf-tools-dep:v$* --push ../
