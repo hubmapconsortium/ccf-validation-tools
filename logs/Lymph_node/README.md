@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_node (2023-03-13)
+ASCT+B Validation Reports for Lymph_node (2023-03-20)
 =====================================================
 
 Table of contents
@@ -50,11 +50,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
+1. In row _[17](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=17:17)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
 1. In row _[21](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=21:21)_, the term _[CL:0009103](http://purl.obolibrary.org/obo/CL_0009103)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ymph node marginal reticular cell_ and the one in the ontology is _lymph node marginal reticular cell_. For reference, the given name/label by SMEs is _Marginal Reticular Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[37](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=37:37)_, the term _[UBERON:8410053](http://purl.obolibrary.org/obo/UBERON_8410053)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ymph node germinal center dark zone_ and the one in the ontology is _lymph node germinal center dark zone_. For reference, the given name/label by SMEs is _Dark Zone_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[17](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=17:17)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

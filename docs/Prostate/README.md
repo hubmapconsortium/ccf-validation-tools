@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2023-03-13)
+ASCT+B Validation Reports for Prostate (2023-03-20)
 ===================================================
 
 Table of contents
@@ -58,15 +58,7 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, no term id was found for the name/label _vascular smooth muscle_.
-
-1. In row _[20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20)_, no term id was found for the name/label _prostate perictye_.
-
-1. In row _[21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21)_, no term id was found for the name/label _basal cell of prostatic urethra_.
-
-1. In row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_, no term id was found for the name/label _club cell of prostatic urethra_.
-
-1. In row _[23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23)_, no term id was found for the name/label _hillock cell of prostatic urethra_.
+- No issues found.
 
 
 ## Terms from another ontology
