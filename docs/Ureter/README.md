@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Ureter (2023-03-20)
+ASCT+B Validation Reports for Ureter (2023-03-21)
 =================================================
 
 Table of contents
@@ -50,9 +50,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15)_, the term _[UBERON:0009919](http://purl.obolibrary.org/obo/UBERON_0009919)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ureter detrusor smooth muscle_ and the one in the ontology is _ureter smooth muscle_. For reference, the given name/label by SMEs is _ureter detrusor smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12)_, the term _[CL:1001428](http://purl.obolibrary.org/obo/CL_1001428)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ureter urothelial cell_ and the one in the ontology is _bladder urothelial cell_. For reference, the given name/label by SMEs is _urothelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15)_, the term _[UBERON:0009919](http://purl.obolibrary.org/obo/UBERON_0009919)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ureter detrusor smooth muscle_ and the one in the ontology is _ureter smooth muscle_. For reference, the given name/label by SMEs is _ureter detrusor smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -95,12 +95,59 @@ This report provides a list of terms from another ontologies that we do not vali
 
 # Relationship reports
 
+
+These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
+
+The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
 ## Relationship AS-AS report
-[**Report**](class_Ureter_log.tsv)
+
+
+In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+
+
+
+|    | s              | slabel                   | user_slabel                   | o              | olabel                | user_olabel           | row_number                                                                                                              |   deltaIC |
+|----|----------------|--------------------------|-------------------------------|----------------|-----------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------|-----------|
+|  0 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12) |   15.2575 |
+|  1 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [13](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=13:13) |   15.2575 |
+|  2 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [14](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=14:14) |   15.2575 |
+|  3 | UBERON:0009919 | ureter smooth muscle     | ureter detrusor smooth muscle | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15) |   10.6646 |
+| 12 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [16](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=16:16) |  nan      |
+| 13 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [17](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=17:17) |  nan      |
+| 15 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [18](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=18:18) |  nan      |
+| 17 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [19](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=19:19) |  nan      |
+| 18 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [20](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=20:20) |  nan      |
+| 19 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [21](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=21:21) |  nan      |
+| 20 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [22](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=22:22) |  nan      |
 ## Relationship CT-CT report
-[**Report**](class_Ureter_log.tsv)
+
+
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+
+
+
+- No issues found.
+
+
 ## Relationship CT-AS report
-[**Report**](Ureter_AS_CT_strict_log.tsv)
+
+
+In the case of the AS-CT relationship, for each couple of terms, we verify for _connected to and has part_ in the source ontologies.
+
+
+
+|    | s          | slabel                            | user_slabel   | o              | olabel                   | user_olabel              | row_number                                                                                                              |
+|----|------------|-----------------------------------|---------------|----------------|--------------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------|
+|  0 | CL:1000308 | fibrocyte of adventitia of ureter | fibroblast    | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [17](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=17:17) |
+|  1 | CL:1000308 | fibrocyte of adventitia of ureter | fibroblast    | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [18](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=18:18) |
+|  2 | CL:1000708 | ureter adventitial cell           | myofibroblast | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [16](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=16:16) |
+|  3 | CL:1000708 | ureter adventitial cell           | fibroblast    | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [19](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=19:19) |
+|  4 | CL:1000708 | ureter adventitial cell           | endothelium   | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [20](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=20:20) |
+|  5 | CL:1000708 | ureter adventitial cell           | smooth muscle | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [21](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=21:21) |
+|  6 | CL:1000708 | ureter adventitial cell           | smooth muscle | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [22](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=22:22) |
+|  7 | CL:1001428 | bladder urothelial cell           | urothelium    | UBERON:0001254 | urothelium of ureter     | urothelium of ureter     | [12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12) |
+|  8 | CL:1001428 | bladder urothelial cell           | urothelium    | UBERON:0001254 | urothelium of ureter     | urothelium of ureter     | [13](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=13:13) |
+|  9 | CL:1001428 | bladder urothelial cell           | urothelium    | UBERON:0001254 | urothelium of ureter     | urothelium of ureter     | [14](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=14:14) |
 # New CL terms
 [**Report**](new_cl_terms_Ureter.tsv)
 # New UBERON terms

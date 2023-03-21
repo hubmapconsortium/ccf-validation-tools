@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2023-03-20)
+ASCT+B Validation Reports for Prostate (2023-03-21)
 ===================================================
 
 Table of contents
@@ -71,12 +71,48 @@ This report provides a list of terms from another ontologies that we do not vali
 
 # Relationship reports
 
+
+These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
+
+The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
 ## Relationship AS-AS report
-[**Report**](class_Prostate_log.tsv)
+
+
+In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+
+
+
+|    | s              | slabel            | user_slabel       | o              | olabel         | user_olabel    | row_number                                                                                                                |   deltaIC |
+|----|----------------|-------------------|-------------------|----------------|----------------|----------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+|  5 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) |       nan |
+|  6 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |       nan |
+|  7 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |       nan |
 ## Relationship CT-CT report
-[**Report**](class_Prostate_log.tsv)
+
+
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+
+
+
+- No issues found.
+
+
 ## Relationship CT-AS report
-[**Report**](Prostate_AS_CT_strict_log.tsv)
+
+
+In the case of the AS-CT relationship, for each couple of terms, we verify for _connected to and has part_ in the source ontologies.
+
+
+
+|    | s          | slabel                                                           | user_slabel               | o              | olabel                | user_olabel         | row_number                                                                                                                |
+|----|------------|------------------------------------------------------------------|---------------------------|----------------|-----------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------|
+|  0 | CL:0002313 | endocrine-paracrine cell of prostate gland                       | neuroendocrine epithelia  | UBERON:0000428 | prostate epithelium   | prostate epithelium | [14](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=14:14) |
+|  1 | CL:0002340 | luminal cell of prostate epithelium                              | luminal epithelia         | UBERON:0000428 | prostate epithelium   | prostate epithelium | [12](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=12:12) |
+|  2 | CL:0002341 | basal cell of prostate epithelium                                | basal epithelia           | UBERON:0000428 | prostate epithelium   | prostate epithelium | [13](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=13:13) |
+|  3 | CL:1000299 | fibroblast of connective tissue of prostate                      | interstitial fibroblast   | UBERON:0004184 | prostate gland stroma | prostate stroma     | [18](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=18:18) |
+|  4 | CL:1000301 | fibroblast of subepithelial connective tissue of prostatic gland | periepithelial fibroblast | UBERON:0004184 | prostate gland stroma | prostate stroma     | [17](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=17:17) |
+|  5 | CL:1000487 | smooth muscle cell of prostate                                   | prostate smooth muscle    | UBERON:0004184 | prostate gland stroma | prostate stroma     | [15](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=15:15) |
+|  6 | CL:2000059 | prostate gland microvascular endothelial cell                    | endothelia                | UBERON:0004184 | prostate gland stroma | prostate stroma     | [16](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=16:16) |
 # New CL terms
 [**Report**](new_cl_terms_Prostate.tsv)
 # New UBERON terms

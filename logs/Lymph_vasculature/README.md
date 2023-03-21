@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_vasculature (2023-03-20)
+ASCT+B Validation Reports for Lymph_vasculature (2023-03-21)
 ============================================================
 
 Table of contents
@@ -201,12 +201,73 @@ This report provides a list of terms from another ontologies that we do not vali
 
 # Relationship reports
 
+
+These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
+
+The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
 ## Relationship AS-AS report
-[**Report**](class_Lymph_vasculature_log.tsv)
+
+
+In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+
+
+
+|    | row_number                                                                                                                | s              | slabel                    | user_slabel               | o              | olabel                    | user_olabel               |   deltaIC |
+|----|---------------------------------------------------------------------------------------------------------------------------|----------------|---------------------------|---------------------------|----------------|---------------------------|---------------------------|-----------|
+| 11 | [34](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=34:34) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8727  |
+| 12 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8727  |
+| 13 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8727  |
+| 14 | [31](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=31:31) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8727  |
+| 15 | [30](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=30:30) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8727  |
+| 27 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | UBERON:0001543 | popliteal lymph node      | popliteal lymph node      | UBERON:0009006 | deep inguinal lymph node  | deep inguinal lymph node  |   6.07158 |
+| 29 | [31](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=31:31) | UBERON:0015880 | external iliac lymph node | external iliac lymph node | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | nan       |
+| 30 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | UBERON:0015880 | external iliac lymph node | external iliac lymph node | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | nan       |
+| 31 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | UBERON:0009006 | deep inguinal lymph node  | deep inguinal lymph node  | UBERON:0015880 | external iliac lymph node | external iliac lymph node | nan       |
+| 32 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | UBERON:0015880 | external iliac lymph node | external iliac lymph node | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | nan       |
+| 33 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | UBERON:0009006 | deep inguinal lymph node  | deep inguinal lymph node  | UBERON:0015880 | external iliac lymph node | external iliac lymph node | nan       |
+| 34 | [34](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=34:34) | UBERON:0015881 | internal iliac lymph node | internal iliac lymph node | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | nan       |
 ## Relationship CT-CT report
-[**Report**](class_Lymph_vasculature_log.tsv)
+
+
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+
+
+
+- No issues found.
+
+
 ## Relationship CT-AS report
-[**Report**](Lymph_vasculature_AS_CT_strict_log.tsv)
+
+
+In the case of the AS-CT relationship, for each couple of terms, we verify for _connected to and has part_ in the source ontologies.
+
+
+
+|    | row_number                                                                                                                | s          | slabel                               | user_slabel                | o              | olabel                       | user_olabel                |
+|----|---------------------------------------------------------------------------------------------------------------------------|------------|--------------------------------------|----------------------------|----------------|------------------------------|----------------------------|
+|  0 | [16](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=16:16) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0001631 | thoracic duct                | thoracic duct              |
+|  1 | [41](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=41:41) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0001631 | thoracic duct                | thoracic duct              |
+|  2 | [40](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=40:40) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0001631 | thoracic duct                | thoracic duct              |
+|  3 | [39](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=39:39) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0001631 | thoracic duct                | thoracic duct              |
+|  4 | [38](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=38:38) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0001631 | thoracic duct                | thoracic duct              |
+|  5 | [37](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=37:37) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0001631 | thoracic duct                | thoracic duct              |
+|  6 | [36](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=36:36) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0005435 | upper part of cisterna chyli | cisterna chyli             |
+|  7 | [34](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=34:34) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0015881 | internal iliac lymph node    | internal iliac lymph node  |
+|  8 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0001543 | popliteal lymph node         | popliteal lymph node       |
+|  9 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0009006 | deep inguinal lymph node     | deep inguinal lymph node   |
+| 10 | [45](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=45:45) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0035279 | supraclavicular lymph node   | supraclavicular lymph node |
+| 11 | [31](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=31:31) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0015880 | external iliac lymph node    | external iliac lymph node  |
+| 12 | [29](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=29:29) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0016386 | paraaortic lymph node        | paraaortic lymph node      |
+| 13 | [28](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=28:28) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0016402 | mesocolic lymph node         | mesocolic lymph node       |
+| 14 | [27](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=27:27) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0002509 | mesenteric lymph node        | mesenteric lymph node      |
+| 15 | [24](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=24:24) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0016378 | ileocolic lymph node         | ileocolic lymph node       |
+| 16 | [23](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=23:23) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0002508 | celiac lymph node            | celiac lymph node          |
+| 17 | [20](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=20:20) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0005435 | upper part of cisterna chyli | cisterna chyli             |
+| 18 | [19](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=19:19) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0005435 | upper part of cisterna chyli | cisterna chyli             |
+| 19 | [18](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=18:18) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0005435 | upper part of cisterna chyli | cisterna chyli             |
+| 20 | [17](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=17:17) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0001631 | thoracic duct                | thoracic duct              |
+| 21 | [30](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=30:30) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0015878 | common iliac lymph node      | common iliac lymph node    |
+| 22 | [46](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=46:46) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0035279 | supraclavicular lymph node   | supraclavicular lymph node |
 # New CL terms
 [**Report**](new_cl_terms_Lymph_vasculature.tsv)
 # New UBERON terms

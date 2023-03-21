@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Urinary_bladder (2023-03-20)
+ASCT+B Validation Reports for Urinary_bladder (2023-03-21)
 ==========================================================
 
 Table of contents
@@ -91,12 +91,53 @@ This report provides a list of terms from another ontologies that we do not vali
 
 # Relationship reports
 
+
+These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
+
+The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
 ## Relationship AS-AS report
-[**Report**](class_Urinary_bladder_log.tsv)
+
+
+In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+
+
+
+|    | s              | slabel                            | user_slabel                       | o              | olabel                       | user_olabel                  | row_number                                                                                                                |   deltaIC |
+|----|----------------|-----------------------------------|-----------------------------------|----------------|------------------------------|------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+|  5 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16) |       nan |
+|  6 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17) |       nan |
+|  7 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18) |       nan |
+|  8 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19) |       nan |
+|  9 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20) |       nan |
+| 11 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21) |       nan |
+| 13 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22) |       nan |
 ## Relationship CT-CT report
-[**Report**](class_Urinary_bladder_log.tsv)
+
+
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+
+
+
+- No issues found.
+
+
 ## Relationship CT-AS report
-[**Report**](Urinary_bladder_AS_CT_strict_log.tsv)
+
+
+In the case of the AS-CT relationship, for each couple of terms, we verify for _connected to and has part_ in the source ontologies.
+
+
+
+|    | s          | slabel                                 | user_slabel   | o              | olabel                                 | user_olabel                            | row_number                                                                                                                |
+|----|------------|----------------------------------------|---------------|----------------|----------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+|  0 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0000381 | urinary bladder detrusor smooth muscle | urinary bladder detrusor smooth muscle | [15](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=15:15) |
+|  1 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21) |
+|  2 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22) |
+|  3 | CL:1001319 | bladder cell                           | myofibroblast | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16) |
+|  4 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17) |
+|  5 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18) |
+|  6 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19) |
+|  7 | CL:2000040 | bladder microvascular endothelial cell | endothelium   | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20) |
 # New CL terms
 [**Report**](new_cl_terms_Urinary_bladder.tsv)
 # New UBERON terms

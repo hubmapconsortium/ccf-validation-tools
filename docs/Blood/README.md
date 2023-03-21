@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Blood (2023-03-20)
+ASCT+B Validation Reports for Blood (2023-03-21)
 ================================================
 
 Table of contents
@@ -71,12 +71,71 @@ This report provides a list of terms from another ontologies that we do not vali
 
 # Relationship reports
 
+
+These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
+
+The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
 ## Relationship AS-AS report
-[**Report**](class_Blood_log.tsv)
+
+
+In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+
+
+
+- No issues found.
+
+
 ## Relationship CT-CT report
-[**Report**](class_Blood_log.tsv)
+
+
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+
+
+
+|    | row_number                                                                                                               | s          | slabel                                                | user_slabel                       | o          | olabel                | user_olabel              |   deltaIC |
+|----|--------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------|-----------------------------------|------------|-----------------------|--------------------------|-----------|
+|  0 | [20](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=20:20) | CL:0000840 | immature conventional dendritic cell                  | transitional Dendritic Cell (tDC) | CL:0001056 | dendritic cell, human | dendritic cell (DC)      |   13.2024 |
+|  5 | [16](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=16:16) | CL:0002394 | CD141-positive myeloid dendritic cell                 | dendritic cell type 1 (DC1)       | CL:0001056 | dendritic cell, human | dendritic cell (DC)      |  nan      |
+|  7 | [17](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=17:17) | CL:0002399 | CD1c-positive myeloid dendritic cell                  | dendritic cell type 2 (DC2)       | CL:0001056 | dendritic cell, human | dendritic cell (DC)      |  nan      |
+|  9 | [18](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=18:18) | CL:0002399 | CD1c-positive myeloid dendritic cell                  | dendritic cell type 3 (DC3)       | CL:0001056 | dendritic cell, human | dendritic cell (DC)      |  nan      |
+| 15 | [23](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=23:23) | CL:0000775 | neutrophil                                            | neutrophil                        | CL:0000775 | neutrophil            | neutrophilic granulocyte |  nan      |
+| 28 | [35](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=35:35) | CL:0000938 | CD16-negative, CD56-bright natural killer cell, human | CD56 bright Natural killer        | CL:0000814 | mature NK T cell      | NK lymphocytes           |  nan      |
+| 30 | [36](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=36:36) | CL:0000824 | mature natural killer cell                            | mature Natural killer             | CL:0000814 | mature NK T cell      | NK lymphocytes           |  nan      |
 ## Relationship CT-AS report
-[**Report**](Blood_AS_CT_strict_log.tsv)
+
+
+In the case of the AS-CT relationship, for each couple of terms, we verify for _connected to and has part_ in the source ontologies.
+
+
+
+|    | row_number                                                                                                               | s          | slabel                                                                     | user_slabel                       | o              | olabel   | user_olabel   |
+|----|--------------------------------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------|-----------------------------------|----------------|----------|---------------|
+|  0 | [25](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=25:25) | CL:0000767 | basophil                                                                   | basophil                          | UBERON:0000178 | Blood    | Blood         |
+|  1 | [24](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=24:24) | CL:0000771 | eosinophil                                                                 | eosinophil                        | UBERON:0000178 | Blood    | Blood         |
+|  2 | [23](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=23:23) | CL:0000775 | neutrophil                                                                 | neutrophil                        | UBERON:0000178 | Blood    | Blood         |
+|  3 | [13](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=13:13) | CL:0000787 | memory B cell                                                              | memory B cell                     | UBERON:0000178 | Blood    | Blood         |
+|  4 | [14](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=14:14) | CL:0000788 | naive B cell                                                               | naive B cell                      | UBERON:0000178 | Blood    | Blood         |
+|  5 | [37](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=37:37) | CL:0000815 | regulatory T cell                                                          | T regulatory                      | UBERON:0000178 | Blood    | Blood         |
+|  6 | [12](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=12:12) | CL:0000816 | immature B cell                                                            | immature B cell                   | UBERON:0000178 | Blood    | Blood         |
+|  7 | [15](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=15:15) | CL:0000818 | transitional stage B cell                                                  | transitional B cell               | UBERON:0000178 | Blood    | Blood         |
+|  8 | [36](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=36:36) | CL:0000824 | mature natural killer cell                                                 | mature Natural killer             | UBERON:0000178 | Blood    | Blood         |
+|  9 | [20](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=20:20) | CL:0000840 | immature conventional dendritic cell                                       | transitional Dendritic Cell (tDC) | UBERON:0000178 | Blood    | Blood         |
+| 10 | [26](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=26:26) | CL:0000895 | naive thymus-derived CD4-positive, alpha-beta T cell                       | CD4 naive                         | UBERON:0000178 | Blood    | Blood         |
+| 11 | [31](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=31:31) | CL:0000897 | CD4-positive, alpha-beta memory T cell                                     | CD4 T cell memory                 | UBERON:0000178 | Blood    | Blood         |
+| 12 | [28](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=28:28) | CL:0000897 | CD4-positive, alpha-beta memory T cell                                     | CD4 T cell memory                 | UBERON:0000178 | Blood    | Blood         |
+| 13 | [27](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=27:27) | CL:0000897 | CD4-positive, alpha-beta memory T cell                                     | CD4 T cell memory                 | UBERON:0000178 | Blood    | Blood         |
+| 14 | [30](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=30:30) | CL:0000900 | naive thymus-derived CD8-positive, alpha-beta T cell                       | CD8 naive                         | UBERON:0000178 | Blood    | Blood         |
+| 15 | [35](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=35:35) | CL:0000938 | CD16-negative, CD56-bright natural killer cell, human                      | CD56 bright Natural killer        | UBERON:0000178 | Blood    | Blood         |
+| 16 | [32](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=32:32) | CL:0001050 | effector CD8-positive, alpha-beta T cell                                   | CD8 T cell effector memory        | UBERON:0000178 | Blood    | Blood         |
+| 17 | [21](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=21:21) | CL:0001054 | CD14-positive monocyte                                                     | CD14 monocyte                     | UBERON:0000178 | Blood    | Blood         |
+| 18 | [19](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=19:19) | CL:0001058 | plasmacytoid dendritic cell, human                                         | Plasmacytoid Dendritic Cell (pDC) | UBERON:0000178 | Blood    | Blood         |
+| 19 | [33](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=33:33) | CL:0001062 | effector memory CD8-positive, alpha-beta T cell, terminally differentiated | CD8 T cell effector memory CD45RA | UBERON:0000178 | Blood    | Blood         |
+| 20 | [29](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=29:29) | CL:0001087 | effector memory CD4-positive, alpha-beta T cell, terminally differentiated | CD4 T cell effector memory CD45RA | UBERON:0000178 | Blood    | Blood         |
+| 21 | [16](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=16:16) | CL:0002394 | CD141-positive myeloid dendritic cell                                      | dendritic cell type 1 (DC1)       | UBERON:0000178 | Blood    | Blood         |
+| 22 | [22](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=22:22) | CL:0002396 | CD14-low, CD16-positive monocyte                                           | CD16 monocyte                     | UBERON:0000178 | Blood    | Blood         |
+| 23 | [17](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=17:17) | CL:0002399 | CD1c-positive myeloid dendritic cell                                       | dendritic cell type 2 (DC2)       | UBERON:0000178 | Blood    | Blood         |
+| 24 | [18](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=18:18) | CL:0002399 | CD1c-positive myeloid dendritic cell                                       | dendritic cell type 3 (DC3)       | UBERON:0000178 | Blood    | Blood         |
+| 25 | [34](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=34:34) | CL:0002437 | mature CD8 single-positive thymocyte                                       | mature CD8 T cell                 | UBERON:0000178 | Blood    | Blood         |
 # New CL terms
 [**Report**](new_cl_terms_Blood.tsv)
 # New UBERON terms
