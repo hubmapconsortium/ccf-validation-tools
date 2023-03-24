@@ -158,7 +158,7 @@ def generate_invalid_terms_report(log_dict, table):
     terms_report["no_found_id"] = "- No issues found.\n\n"
   
   for issue in log_dict["diff_label"]:       
-    terms_report["diff_label"] += f'1. In row _[{issue["rowNumber"]}]({get_row_link(table, issue["rowNumber"])})_, the term _{add_base_iri(issue["id"])}_ has different name/label in the source ontology. The name/label in the ASCT+B table is _{issue["asct_label"]}_ and the one in the ontology is _{issue["label"]}_. For reference, the given name/label by SMEs is _{issue["user_label"]}_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.\n\n'
+    terms_report["diff_label"] += f'1. In row _[{issue["rowNumber"]}]({get_row_link(table, issue["rowNumber"])})_, the term _{add_base_iri(issue["id"])}_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _{issue["asct_label"]}_ and the one in the **ontology** is _{issue["label"]}_. For reference, the given name/label **by SMEs** is _{issue["user_label"]}_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.\n\n'
   
   if terms_report["diff_label"] == "":
     terms_report["diff_label"] = "- No issues found.\n\n"
