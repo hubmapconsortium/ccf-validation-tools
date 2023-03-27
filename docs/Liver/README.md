@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Liver (2023-03-21)
+ASCT+B Validation Reports for Liver (2023-03-27)
 ================================================
 
 Table of contents
@@ -12,6 +12,7 @@ Table of contents
 	* [Blank ontology ID](#blank-ontology-id)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
+	* [How to read a table entry](#how-to-read-a-table-entry)
 	* [Relationship AS-AS report](#relationship-as-as-report)
 	* [Relationship CT-CT report](#relationship-ct-ct-report)
 	* [Relationship CT-AS report](#relationship-ct-as-report)
@@ -28,7 +29,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 ## Terms not found
 
 
-This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table.  
+This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
 - No issues found.
 
@@ -50,21 +51,21 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[24](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=24:24)_, the term _[CL:0000526](http://purl.obolibrary.org/obo/CL_0000526)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _afferent neuron cell_ and the one in the ontology is _afferent neuron_. For reference, the given name/label by SMEs is _neuron cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[34](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=34:34)_, the term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD1c+ myeloid dendritic cell_ and the one in the **ontology** is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label **by SMEs** is _Conventional DC 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[30](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=30:30)_, the term _[CL:0002138](http://purl.obolibrary.org/obo/CL_0002138)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _lymphatic endothelial cell_ and the one in the ontology is _endothelial cell of lymphatic vessel_. For reference, the given name/label by SMEs is _hepatic lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[30](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=30:30)_, the term _[CL:0002138](http://purl.obolibrary.org/obo/CL_0002138)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _endothelial cell of lymphatic vessel_. For reference, the given name/label **by SMEs** is _hepatic lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[38](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=38:38)_, the term _[CL:0000798](http://purl.obolibrary.org/obo/CL_0000798)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _gamma delta T cell_ and the one in the ontology is _gamma-delta T cell_. For reference, the given name/label by SMEs is _gamma delta T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[37](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=37:37)_, the term _[CL:0000624](http://purl.obolibrary.org/obo/CL_0000624)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD4 positive alpha beta_ and the one in the **ontology** is _CD4-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD4+T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[37](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=37:37)_, the term _[CL:0000624](http://purl.obolibrary.org/obo/CL_0000624)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD4 positive alpha beta_ and the one in the ontology is _CD4-positive, alpha-beta T cell_. For reference, the given name/label by SMEs is _CD4+T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[32](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=32:32)_, the term _[CL:0001056](http://purl.obolibrary.org/obo/CL_0001056)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _human Dendritic cell_ and the one in the **ontology** is _dendritic cell, human_. For reference, the given name/label **by SMEs** is _conventional Dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[34](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=34:34)_, the term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD1c+ myeloid dendritic cell_ and the one in the ontology is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label by SMEs is _Conventional DC 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[24](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=24:24)_, the term _[CL:0000526](http://purl.obolibrary.org/obo/CL_0000526)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _afferent neuron cell_ and the one in the **ontology** is _afferent neuron_. For reference, the given name/label **by SMEs** is _neuron cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[28](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=28:28)_, the term _[CL:0002196](http://purl.obolibrary.org/obo/CL_0002196)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _Hepatic oval cell_ and the one in the ontology is _hepatic oval stem cell_. For reference, the given name/label by SMEs is _hepatic oval cell _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[38](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=38:38)_, the term _[CL:0000798](http://purl.obolibrary.org/obo/CL_0000798)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _gamma delta T cell_ and the one in the **ontology** is _gamma-delta T cell_. For reference, the given name/label **by SMEs** is _gamma delta T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[32](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=32:32)_, the term _[CL:0001056](http://purl.obolibrary.org/obo/CL_0001056)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _human Dendritic cell_ and the one in the ontology is _dendritic cell, human_. For reference, the given name/label by SMEs is _conventional Dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[28](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=28:28)_, the term _[CL:0002196](http://purl.obolibrary.org/obo/CL_0002196)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Hepatic oval cell_ and the one in the **ontology** is _hepatic oval stem cell_. For reference, the given name/label **by SMEs** is _hepatic oval cell _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[39](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=39:39)_, the term _[CL:0001203](http://purl.obolibrary.org/obo/CL_0001203)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _CD8 positiver alpha beta memory T cell CD45RO +_ and the one in the ontology is _CD8-positive, alpha-beta memory T cell, CD45RO-positive_. For reference, the given name/label by SMEs is _CD8+ Liver-Resident Memory T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[39](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=39:39)_, the term _[CL:0001203](http://purl.obolibrary.org/obo/CL_0001203)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD8 positiver alpha beta memory T cell CD45RO +_ and the one in the **ontology** is _CD8-positive, alpha-beta memory T cell, CD45RO-positive_. For reference, the given name/label **by SMEs** is _CD8+ Liver-Resident Memory T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -129,10 +130,32 @@ This report provides a list of terms from another ontologies that we do not vali
 These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
 
 The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
+## How to read a table entry
+
+
+**In the ASCT+B table**
+|AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
+
+
+
+
+
+
+**In the Relationship Report**
+|s|slabel|user_slabel|o|olabel|user_olabel|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
+
+
+
+
+
 ## Relationship AS-AS report
 
 
-In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+This table contains terms for anatomical structures that are related to each other according to the ASCT+B table but are not related to each other in source ontologies via one of the relation types we consider valid for ASCT+B tables. Valid relationships are: *part_of*, e.g. corneal endothelium part_of cornea; *subClassOf*, e.g. left kidney subClassOf (is_a) kidney; and *overlaps* (has some part in), e.g. ureter overlaps kidney; *connected_to*, e.g. TBA. *part_of* and *subClassOf* relationships should be specific to general, e.g. left kidney (specific) to kidney (general); corneal endothelium (specific) to cornea (general). The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
@@ -157,14 +180,22 @@ In the case of the AS-AS relationship, for each couple of terms, we verify for _
 | 31 | UBERON:0001193 | hepatic artery      | hepatic artery     | UBERON:0001279 | portal triad | portal triad/tract | [26](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=26:26) | nan       |
 | 32 | UBERON:0001279 | portal triad        | portal triad/tract | UBERON:0004647 | liver lobule | hepatic Lobule     | [27](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=27:27) | nan       |
 | 35 | UBERON:0016478 | liver stroma        | stroma             | UBERON:0004647 | liver lobule | hepatic Lobule     | [31](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=31:31) | nan       |
+
+
+
+
 ## Relationship CT-CT report
 
 
-In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
 - No issues found.
+
+
+
+
 
 
 ## Relationship CT-AS report
@@ -199,10 +230,22 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 20 | CL:0019028 | midzonal region hepatocyte                              | mid zone hepatocyte                                                 | UBERON:0005452 | hepatic cord               | hepatic plate      | [19](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=19:19) |
 | 21 | CL:0019029 | centrilobular region hepatocyte                         | pericentral hepatocyte                                              | UBERON:0005452 | hepatic cord               | hepatic plate      | [18](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=18:18) |
 | 22 | CL:1000413 | endothelial cell of artery                              | endothelial cell                                                    | UBERON:0001193 | hepatic artery             | hepatic artery     | [25](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=25:25) |
+
+
+
+
 # New CL terms
 [**Report**](new_cl_terms_Liver.tsv)
+
+
+
+
 # New UBERON terms
 [**Report**](new_uberon_terms_Liver.tsv)
+
+
+
+
 # Informative reports (valid relationships)
 
 ## Indirect relationship

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2023-03-21)
+ASCT+B Validation Reports for Lung (2023-03-27)
 ===============================================
 
 Table of contents
@@ -12,6 +12,7 @@ Table of contents
 	* [Blank ontology ID](#blank-ontology-id)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
+	* [How to read a table entry](#how-to-read-a-table-entry)
 	* [Relationship AS-AS report](#relationship-as-as-report)
 	* [Relationship CT-CT report](#relationship-ct-ct-report)
 	* [Relationship CT-AS report](#relationship-ct-as-report)
@@ -28,17 +29,9 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 ## Terms not found
 
 
-This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table.  
+This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. CL:4033010
-
-1. CL:4033003
-
-1. CL:4033008
-
-1. CL:4033007
-
-1. CL:4033009
+- No issues found.
 
 
 ## Typos or punctuation mistakes
@@ -58,7 +51,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[134](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=134:134)_, the term _[CL:1000350](http://purl.obolibrary.org/obo/CL_1000350)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _basal cell of epithelium of terminal  bronchiole_ and the one in the ontology is _basal cell of epithelium of terminal bronchiole_. For reference, the given name/label by SMEs is _basal cell of epithelium of terminal  bronchiole_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[134](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=134:134)_, the term _[CL:1000350](http://purl.obolibrary.org/obo/CL_1000350)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _basal cell of epithelium of terminal  bronchiole_ and the one in the **ontology** is _basal cell of epithelium of terminal bronchiole_. For reference, the given name/label **by SMEs** is _basal cell of epithelium of terminal  bronchiole_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[41](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=41:41)_, the term _[CL:4033007](http://purl.obolibrary.org/obo/CL_4033007)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _brush cell of lobar bronchus_ and the one in the **ontology** is _brush cell of epithelium of lobar bronchus_. For reference, the given name/label **by SMEs** is _tuft cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -156,301 +151,301 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-1. In row _[18](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=18:18)_, the term _LMHA:00142_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[18](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=18:18)_, the term _LMHA:00142_ is from another ontology that is not validated in this process.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=19:19)_, the term _LMHA:00087_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[19](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=19:19)_, the term _LMHA:00087_ is from another ontology that is not validated in this process.
 
-1. In row _[20](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=20:20)_, the term _LMHA:00693_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[20](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=20:20)_, the term _LMHA:00693_ is from another ontology that is not validated in this process.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=21:21)_, the term _LMHA:00238_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[21](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=21:21)_, the term _LMHA:00238_ is from another ontology that is not validated in this process.
 
-1. In row _[49](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=49:49)_, the term _LMHA:00142_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[49](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=49:49)_, the term _LMHA:00142_ is from another ontology that is not validated in this process.
 
-1. In row _[50](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=50:50)_, the term _LMHA:00087_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[50](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=50:50)_, the term _LMHA:00087_ is from another ontology that is not validated in this process.
 
-1. In row _[51](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=51:51)_, the term _LMHA:00693_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[51](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=51:51)_, the term _LMHA:00693_ is from another ontology that is not validated in this process.
 
-1. In row _[52](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=52:52)_, the term _LMHA:00238_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[52](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=52:52)_, the term _LMHA:00238_ is from another ontology that is not validated in this process.
 
-1. In row _[78](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=78:78)_, the term _LMHA:00142_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[78](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=78:78)_, the term _LMHA:00142_ is from another ontology that is not validated in this process.
 
-1. In row _[79](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=79:79)_, the term _LMHA:00087_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[79](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=79:79)_, the term _LMHA:00087_ is from another ontology that is not validated in this process.
 
-1. In row _[80](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=80:80)_, the term _LMHA:00693_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[80](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=80:80)_, the term _LMHA:00693_ is from another ontology that is not validated in this process.
 
-1. In row _[81](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=81:81)_, the term _LMHA:00238_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[81](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=81:81)_, the term _LMHA:00238_ is from another ontology that is not validated in this process.
 
-1. In row _[102](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=102:102)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[102](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=102:102)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[102](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=102:102)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[102](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=102:102)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[103](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=103:103)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[103](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=103:103)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[103](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=103:103)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[103](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=103:103)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[104](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=104:104)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[104](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=104:104)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[104](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=104:104)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[104](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=104:104)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[105](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=105:105)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[105](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=105:105)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[105](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=105:105)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[105](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=105:105)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[106](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=106:106)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[106](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=106:106)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[106](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=106:106)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[106](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=106:106)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[107](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=107:107)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[107](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=107:107)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[107](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=107:107)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[107](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=107:107)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[108](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=108:108)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[108](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=108:108)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[108](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=108:108)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[108](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=108:108)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[109](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=109:109)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[109](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=109:109)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[109](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=109:109)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[109](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=109:109)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[110](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=110:110)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[110](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=110:110)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[110](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=110:110)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[110](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=110:110)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[111](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=111:111)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[111](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=111:111)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[111](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=111:111)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[111](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=111:111)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[112](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=112:112)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[112](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=112:112)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[112](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=112:112)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[112](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=112:112)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[113](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=113:113)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[113](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=113:113)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[113](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=113:113)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[113](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=113:113)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[114](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=114:114)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[114](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=114:114)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[114](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=114:114)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[114](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=114:114)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[115](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=115:115)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[115](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=115:115)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[116](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=116:116)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[116](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=116:116)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[117](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=117:117)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[117](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=117:117)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[118](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=118:118)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[118](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=118:118)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=121:121)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=121:121)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=121:121)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=121:121)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=121:121)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=121:121)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=121:121)_, the term _LMHA:00142_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=121:121)_, the term _LMHA:00142_ is from another ontology that is not validated in this process.
 
-1. In row _[122](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=122:122)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[122](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=122:122)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[122](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=122:122)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[122](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=122:122)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[122](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=122:122)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[122](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=122:122)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[122](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=122:122)_, the term _LMHA:00087_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[122](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=122:122)_, the term _LMHA:00087_ is from another ontology that is not validated in this process.
 
-1. In row _[123](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=123:123)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[123](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=123:123)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[123](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=123:123)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[123](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=123:123)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[123](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=123:123)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[123](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=123:123)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[123](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=123:123)_, the term _LMHA:00693_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[123](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=123:123)_, the term _LMHA:00693_ is from another ontology that is not validated in this process.
 
-1. In row _[124](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=124:124)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[124](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=124:124)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[124](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=124:124)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[124](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=124:124)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[124](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=124:124)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[124](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=124:124)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[124](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=124:124)_, the term _LMHA:00238_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[124](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=124:124)_, the term _LMHA:00238_ is from another ontology that is not validated in this process.
 
-1. In row _[125](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=125:125)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[125](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=125:125)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[125](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=125:125)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[125](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=125:125)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[125](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=125:125)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[125](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=125:125)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[126](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=126:126)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[126](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=126:126)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[126](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=126:126)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[126](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=126:126)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[126](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=126:126)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[126](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=126:126)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[127](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=127:127)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[127](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=127:127)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[127](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=127:127)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[127](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=127:127)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[127](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=127:127)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[127](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=127:127)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[128](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=128:128)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[128](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=128:128)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[128](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=128:128)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[128](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=128:128)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[128](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=128:128)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[128](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=128:128)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[129](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=129:129)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[129](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=129:129)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[129](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=129:129)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[129](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=129:129)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[129](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=129:129)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[129](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=129:129)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[130](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=130:130)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[130](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=130:130)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[130](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=130:130)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[130](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=130:130)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[130](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=130:130)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[130](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=130:130)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[131](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=131:131)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[131](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=131:131)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[131](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=131:131)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[131](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=131:131)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[131](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=131:131)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[131](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=131:131)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[132](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=132:132)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[132](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=132:132)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[132](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=132:132)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[132](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=132:132)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[132](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=132:132)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[132](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=132:132)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[133](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=133:133)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[133](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=133:133)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[133](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=133:133)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[133](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=133:133)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[133](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=133:133)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[133](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=133:133)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[134](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=134:134)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[134](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=134:134)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[134](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=134:134)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[134](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=134:134)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[134](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=134:134)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[134](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=134:134)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[135](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=135:135)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[135](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=135:135)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[135](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=135:135)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[135](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=135:135)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[135](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=135:135)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[135](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=135:135)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[136](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=136:136)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[136](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=136:136)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[136](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=136:136)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[136](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=136:136)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[136](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=136:136)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[136](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=136:136)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[137](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=137:137)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[137](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=137:137)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[137](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=137:137)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[137](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=137:137)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[137](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=137:137)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[137](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=137:137)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[138](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=138:138)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[138](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=138:138)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[138](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=138:138)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[138](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=138:138)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[138](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=138:138)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[138](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=138:138)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[139](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=139:139)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[139](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=139:139)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[139](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=139:139)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[139](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=139:139)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[139](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=139:139)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[139](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=139:139)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[140](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=140:140)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[140](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=140:140)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[140](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=140:140)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[140](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=140:140)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[140](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=140:140)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[140](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=140:140)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[141](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=141:141)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[141](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=141:141)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[141](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=141:141)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[141](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=141:141)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[141](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=141:141)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[141](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=141:141)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[142](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=142:142)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[142](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=142:142)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[142](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=142:142)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[142](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=142:142)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[142](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=142:142)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[142](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=142:142)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[143](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=143:143)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[143](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=143:143)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[143](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=143:143)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[143](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=143:143)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[143](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=143:143)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[143](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=143:143)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[144](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=144:144)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[144](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=144:144)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[144](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=144:144)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[144](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=144:144)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[144](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=144:144)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[144](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=144:144)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[145](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=145:145)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[145](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=145:145)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[145](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=145:145)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[145](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=145:145)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[145](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=145:145)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[145](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=145:145)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[146](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=146:146)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[146](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=146:146)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[146](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=146:146)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[146](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=146:146)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[146](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=146:146)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[146](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=146:146)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[147](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=147:147)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[147](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=147:147)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[147](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=147:147)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[147](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=147:147)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[147](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=147:147)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[147](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=147:147)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[148](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=148:148)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[148](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=148:148)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[148](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=148:148)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[148](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=148:148)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[148](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=148:148)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[148](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=148:148)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[149](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=149:149)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[149](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=149:149)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[149](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=149:149)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[149](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=149:149)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[149](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=149:149)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[149](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=149:149)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[150](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=150:150)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[150](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=150:150)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[150](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=150:150)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[150](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=150:150)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[150](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=150:150)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[150](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=150:150)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[150](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=150:150)_, the term _FMA:84472_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[150](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=150:150)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
 
-1. In row _[150](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=150:150)_, the term _FMA:76965_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[150](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=150:150)_, the term _FMA:76965_ is from another ontology that is not validated in this process.
 
-1. In row _[151](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=151:151)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[151](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=151:151)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[151](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=151:151)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[151](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=151:151)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[151](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=151:151)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[151](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=151:151)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[151](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=151:151)_, the term _FMA:84472_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[151](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=151:151)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
 
-1. In row _[151](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=151:151)_, the term _FMA:76965_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[151](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=151:151)_, the term _FMA:76965_ is from another ontology that is not validated in this process.
 
-1. In row _[152](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=152:152)_, the term _FMA:7312_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[152](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=152:152)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[152](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=152:152)_, the term _FMA:7408_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[152](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=152:152)_, the term _FMA:7408_ is from another ontology that is not validated in this process.
 
-1. In row _[152](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=152:152)_, the term _FMA:323213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[152](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=152:152)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
-1. In row _[152](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=152:152)_, the term _FMA:84472_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[152](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=152:152)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
 
-1. In row _[160](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=160:160)_, the term _LMHA:00213_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.
+1. In row _[160](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=160:160)_, the term _LMHA:00213_ is from another ontology that is not validated in this process.
 
 
 # Relationship reports
@@ -459,10 +454,32 @@ This report provides a list of terms from another ontologies that we do not vali
 These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
 
 The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
+## How to read a table entry
+
+
+**In the ASCT+B table**
+|AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
+
+
+
+
+
+
+**In the Relationship Report**
+|s|slabel|user_slabel|o|olabel|user_olabel|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
+
+
+
+
+
 ## Relationship AS-AS report
 
 
-In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+This table contains terms for anatomical structures that are related to each other according to the ASCT+B table but are not related to each other in source ontologies via one of the relation types we consider valid for ASCT+B tables. Valid relationships are: *part_of*, e.g. corneal endothelium part_of cornea; *subClassOf*, e.g. left kidney subClassOf (is_a) kidney; and *overlaps* (has some part in), e.g. ureter overlaps kidney; *connected_to*, e.g. TBA. *part_of* and *subClassOf* relationships should be specific to general, e.g. left kidney (specific) to kidney (general); corneal endothelium (specific) to cornea (general). The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
@@ -642,10 +659,14 @@ In the case of the AS-AS relationship, for each couple of terms, we verify for _
 | 312 | UBERON:0035754 | pulmonary capillary plexus                      | pulmonary capillary plexus                                               | UBERON:0000101 | Lobe of Lung                | Lung Lobe                          | [184](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=184:184) | nan       |
 | 313 | UBERON:0004883 | lung mesenchyme                                 | Lung Mesenchyme                                                          | UBERON:0000101 | Lobe of Lung                | Lung Lobe                          | [185](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=185:185) | nan       |
 | 314 | UBERON:0000114 | lung connective tissue                          | Pulmonary Interstitum                                                    | UBERON:0000101 | Lobe of Lung                | Lung Lobe                          | [186](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=186:186) | nan       |
+
+
+
+
 ## Relationship CT-CT report
 
 
-In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
@@ -693,6 +714,10 @@ In the case of the CT-CT relationship, for each couple of terms, we verify for _
 | 298 | CL:0009086 | endothelial cell of respiratory system lymphatic vessel | lymphatic endothelial cell                         | CL:1001567 | lung endothelial cell                    | lung endothelial cell                    | [152](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=152:152) |       nan |
 | 309 | CL:0000556 | megakaryocyte                                           | megakaryocyte                                      | CL:0000766 | myeloid leukocyte                        | myeloid leukocyte                        | [167](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=167:167) |       nan |
 | 310 | CL:0000784 | plasmacytoid dendritic cell                             | plasmacytoid dendritic cell                        | CL:0000782 | myeloid dendritic cell                   | myeloid dendritic cell                   | [172](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=172:172) |       nan |
+
+
+
+
 ## Relationship CT-AS report
 
 
@@ -819,10 +844,22 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 114 | CL:4028004 | alveolar type 1 fibroblast cell                         | alveolar type 1 fibroblast cell                    | UBERON:0008870 | pulmonary alveolar parenchyma                   | pulmonary alveolar duct parenchyma              | [146](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=146:146) |
 | 115 | CL:4028006 | alveolar type 2 fibroblast cell                         | alveolar type 2 fibroblast cell                    | UBERON:0008870 | pulmonary alveolar parenchyma                   | pulmonary alveolar duct parenchyma              | [145](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=145:145) |
 | 116 | CL:4028006 | alveolar type 2 fibroblast cell                         | alveolar type 2 fibroblast cell                    | UBERON:0008870 | pulmonary alveolar parenchyma                   | pulmonary alveolar duct parenchyma              | [140](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586&range=140:140) |
+
+
+
+
 # New CL terms
 [**Report**](new_cl_terms_Lung.tsv)
+
+
+
+
 # New UBERON terms
 [**Report**](new_uberon_terms_Lung.tsv)
+
+
+
+
 # Informative reports (valid relationships)
 
 ## Indirect relationship

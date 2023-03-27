@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Large_intestine (2023-03-21)
+ASCT+B Validation Reports for Large_intestine (2023-03-27)
 ==========================================================
 
 Table of contents
@@ -12,6 +12,7 @@ Table of contents
 	* [Blank ontology ID](#blank-ontology-id)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
+	* [How to read a table entry](#how-to-read-a-table-entry)
 	* [Relationship AS-AS report](#relationship-as-as-report)
 	* [Relationship CT-CT report](#relationship-ct-ct-report)
 	* [Relationship CT-AS report](#relationship-ct-as-report)
@@ -28,7 +29,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 ## Terms not found
 
 
-This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table.  
+This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
 - No issues found.
 
@@ -50,33 +51,35 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[1196](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1196:1196)_, the term _[CL:0000244](http://purl.obolibrary.org/obo/CL_0000244)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _transitional epithelial cell_. For reference, the given name/label by SMEs is _transitional_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[31](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=31:31)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[119](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=119:119)_, the term _[UBERON:0001153](http://purl.obolibrary.org/obo/UBERON_0001153)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _cecum_ and the one in the ontology is _caecum_. For reference, the given name/label by SMEs is _cecum_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[89](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=89:89)_, the term _[CL:1000279](http://purl.obolibrary.org/obo/CL_1000279)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _smooth muscle cell of large intestine_. For reference, the given name/label **by SMEs** is _muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[31](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=31:31)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[1323](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1323:1323)_, the term _[UBERON:0000423](http://purl.obolibrary.org/obo/UBERON_0000423)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _eccrine (sweat) gland_ and the one in the **ontology** is _eccrine sweat gland_. For reference, the given name/label **by SMEs** is _eccrine (sweat) gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[1211](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1211:1211)_, the term _[CL:0000146](http://purl.obolibrary.org/obo/CL_0000146)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _simple columnar epithelial cell_. For reference, the given name/label by SMEs is _columnar_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[1211](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1211:1211)_, the term _[CL:0000146](http://purl.obolibrary.org/obo/CL_0000146)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _simple columnar epithelial cell_. For reference, the given name/label **by SMEs** is _columnar_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[1211](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1211:1211)_, the term _[UBERON:0004760](http://purl.obolibrary.org/obo/UBERON_0004760)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _anal gland_ and the one in the ontology is _gland of anal canal_. For reference, the given name/label by SMEs is _anal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[436](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=436:436)_, the term _[UBERON:0012419](http://purl.obolibrary.org/obo/UBERON_0012419)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _tenia coli_ and the one in the **ontology** is _taenia coli_. For reference, the given name/label **by SMEs** is _tenia coli_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=19:19)_, the term _[CL:0009011](http://purl.obolibrary.org/obo/CL_0009011)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _transit amplifying cell of large intestine_ and the one in the ontology is _transit amplifying cell of colon_. For reference, the given name/label by SMEs is _transient amplifying cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[436](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=436:436)_, the term _[CL:0000192](http://purl.obolibrary.org/obo/CL_0000192)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _smooth muscle_ and the one in the **ontology** is _smooth muscle cell_. For reference, the given name/label **by SMEs** is _smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[89](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=89:89)_, the term _[CL:1000279](http://purl.obolibrary.org/obo/CL_1000279)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _smooth muscle cell of large intestine_. For reference, the given name/label by SMEs is _muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[1196](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1196:1196)_, the term _[UBERON:0015716](http://purl.obolibrary.org/obo/UBERON_0015716)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _epithelium_ and the one in the **ontology** is _anal canal epithelium_. For reference, the given name/label **by SMEs** is _epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[1213](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1213:1213)_, the term _[CL:0000240](http://purl.obolibrary.org/obo/CL_0000240)_ has different name/label in the source ontology. The name/label in the ASCT+B table is __ and the one in the ontology is _stratified squamous epithelial cell_. For reference, the given name/label by SMEs is _squamous_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[119](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=119:119)_, the term _[UBERON:0001153](http://purl.obolibrary.org/obo/UBERON_0001153)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _cecum_ and the one in the **ontology** is _caecum_. For reference, the given name/label **by SMEs** is _cecum_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[436](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=436:436)_, the term _[UBERON:0012419](http://purl.obolibrary.org/obo/UBERON_0012419)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _tenia coli_ and the one in the ontology is _taenia coli_. For reference, the given name/label by SMEs is _tenia coli_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[1213](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1213:1213)_, the term _[CL:0000240](http://purl.obolibrary.org/obo/CL_0000240)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _stratified squamous epithelial cell_. For reference, the given name/label **by SMEs** is _squamous_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[436](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=436:436)_, the term _[CL:0000192](http://purl.obolibrary.org/obo/CL_0000192)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _smooth muscle_ and the one in the ontology is _smooth muscle cell_. For reference, the given name/label by SMEs is _smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[19](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=19:19)_, the term _[CL:0009011](http://purl.obolibrary.org/obo/CL_0009011)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _transit amplifying cell of large intestine_ and the one in the **ontology** is _transit amplifying cell of colon_. For reference, the given name/label **by SMEs** is _transient amplifying cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[1196](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1196:1196)_, the term _[UBERON:0015716](http://purl.obolibrary.org/obo/UBERON_0015716)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _epithelium_ and the one in the ontology is _anal canal epithelium_. For reference, the given name/label by SMEs is _epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[1211](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1211:1211)_, the term _[UBERON:0004760](http://purl.obolibrary.org/obo/UBERON_0004760)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _anal gland_ and the one in the **ontology** is _gland of anal canal_. For reference, the given name/label **by SMEs** is _anal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[330](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=330:330)_, the term _[UBERON:0012498](http://purl.obolibrary.org/obo/UBERON_0012498)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _serosa_ and the one in the ontology is _serosa of appendix_. For reference, the given name/label by SMEs is _serosa_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[330](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=330:330)_, the term _[UBERON:0012498](http://purl.obolibrary.org/obo/UBERON_0012498)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _serosa_ and the one in the **ontology** is _serosa of appendix_. For reference, the given name/label **by SMEs** is _serosa_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[15](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=15:15)_, the term _[CL:0009009](http://purl.obolibrary.org/obo/CL_0009009)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _paneth cell of epithelium of large intestine_ and the one in the ontology is _paneth cell of colon_. For reference, the given name/label by SMEs is _Paneth_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[1337](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1337:1337)_, the term _[CL:0002576](http://purl.obolibrary.org/obo/CL_0002576)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _perineural cell_ and the one in the **ontology** is _perineurial cell_. For reference, the given name/label **by SMEs** is _perineurial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[1323](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1323:1323)_, the term _[UBERON:0000423](http://purl.obolibrary.org/obo/UBERON_0000423)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _eccrine (sweat) gland_ and the one in the ontology is _eccrine sweat gland_. For reference, the given name/label by SMEs is _eccrine (sweat) gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[15](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=15:15)_, the term _[CL:0009009](http://purl.obolibrary.org/obo/CL_0009009)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _paneth cell of epithelium of large intestine_ and the one in the **ontology** is _paneth cell of colon_. For reference, the given name/label **by SMEs** is _Paneth_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[1196](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1196:1196)_, the term _[CL:0000244](http://purl.obolibrary.org/obo/CL_0000244)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _transitional epithelial cell_. For reference, the given name/label **by SMEs** is _transitional_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -277,10 +280,32 @@ This report provides a list of terms from another ontologies that we do not vali
 These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
 
 The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
+## How to read a table entry
+
+
+**In the ASCT+B table**
+|AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
+
+
+
+
+
+
+**In the Relationship Report**
+|s|slabel|user_slabel|o|olabel|user_olabel|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
+
+
+
+
+
 ## Relationship AS-AS report
 
 
-In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+This table contains terms for anatomical structures that are related to each other according to the ASCT+B table but are not related to each other in source ontologies via one of the relation types we consider valid for ASCT+B tables. Valid relationships are: *part_of*, e.g. corneal endothelium part_of cornea; *subClassOf*, e.g. left kidney subClassOf (is_a) kidney; and *overlaps* (has some part in), e.g. ureter overlaps kidney; *connected_to*, e.g. TBA. *part_of* and *subClassOf* relationships should be specific to general, e.g. left kidney (specific) to kidney (general); corneal endothelium (specific) to cornea (general). The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
@@ -2794,14 +2819,22 @@ In the case of the AS-AS relationship, for each couple of terms, we verify for _
 | 3660 | UBERON:0001245 | anus                                                 | anus                                                                    | UBERON:0000059 | large intestine             | large intestine         | [1362](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1362:1362) | nan        |
 | 3661 | UBERON:0002190 | subcutaneous adipose tissue                          | subcutaneous                                                            | UBERON:0001245 | anus                        | anus                    | [1362](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1362:1362) | nan        |
 | 3662 | UBERON:0001367 | external anal sphincter                              | external anal sphincter                                                 | UBERON:0002190 | subcutaneous adipose tissue | subcutaneous            | [1362](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1362:1362) | nan        |
+
+
+
+
 ## Relationship CT-CT report
 
 
-In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
 - No issues found.
+
+
+
+
 
 
 ## Relationship CT-AS report
@@ -4054,10 +4087,22 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 1238 | CL:1000457 | mesothelial cell of visceral peritoneum                       | mesothelial cell                                                        | UBERON:0003335 | serosa                                               | serosa                                                                  | [439](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=439:439)    |
 | 1239 | CL:1000457 | mesothelial cell of visceral peritoneum                       | mesothelial cell                                                        | UBERON:0003335 | serosa                                               | serosa                                                                  | [548](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=548:548)    |
 | 1240 | CL:1000457 | mesothelial cell of visceral peritoneum                       | mesothelial cell                                                        | UBERON:0003335 | serosa                                               | serosa                                                                  | [984](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=984:984)    |
+
+
+
+
 # New CL terms
 [**Report**](new_cl_terms_Large_intestine.tsv)
+
+
+
+
 # New UBERON terms
 [**Report**](new_uberon_terms_Large_intestine.tsv)
+
+
+
+
 # Informative reports (valid relationships)
 
 ## Indirect relationship

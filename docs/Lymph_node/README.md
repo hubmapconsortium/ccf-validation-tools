@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_node (2023-03-21)
+ASCT+B Validation Reports for Lymph_node (2023-03-27)
 =====================================================
 
 Table of contents
@@ -12,6 +12,7 @@ Table of contents
 	* [Blank ontology ID](#blank-ontology-id)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
+	* [How to read a table entry](#how-to-read-a-table-entry)
 	* [Relationship AS-AS report](#relationship-as-as-report)
 	* [Relationship CT-CT report](#relationship-ct-ct-report)
 	* [Relationship CT-AS report](#relationship-ct-as-report)
@@ -28,7 +29,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 ## Terms not found
 
 
-This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table.  
+This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
 - No issues found.
 
@@ -50,11 +51,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[17](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=17:17)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[21](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=21:21)_, the term _[CL:0009103](http://purl.obolibrary.org/obo/CL_0009103)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ymph node marginal reticular cell_ and the one in the **ontology** is _lymph node marginal reticular cell_. For reference, the given name/label **by SMEs** is _Marginal Reticular Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=21:21)_, the term _[CL:0009103](http://purl.obolibrary.org/obo/CL_0009103)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ymph node marginal reticular cell_ and the one in the ontology is _lymph node marginal reticular cell_. For reference, the given name/label by SMEs is _Marginal Reticular Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[17](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=17:17)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[37](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=37:37)_, the term _[UBERON:8410053](http://purl.obolibrary.org/obo/UBERON_8410053)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ymph node germinal center dark zone_ and the one in the ontology is _lymph node germinal center dark zone_. For reference, the given name/label by SMEs is _Dark Zone_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[37](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=37:37)_, the term _[UBERON:8410053](http://purl.obolibrary.org/obo/UBERON_8410053)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ymph node germinal center dark zone_ and the one in the **ontology** is _lymph node germinal center dark zone_. For reference, the given name/label **by SMEs** is _Dark Zone_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -79,10 +80,32 @@ This report provides a list of terms from another ontologies that we do not vali
 These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
 
 The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
+## How to read a table entry
+
+
+**In the ASCT+B table**
+|AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
+
+
+
+
+
+
+**In the Relationship Report**
+|s|slabel|user_slabel|o|olabel|user_olabel|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
+
+
+
+
+
 ## Relationship AS-AS report
 
 
-In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+This table contains terms for anatomical structures that are related to each other according to the ASCT+B table but are not related to each other in source ontologies via one of the relation types we consider valid for ASCT+B tables. Valid relationships are: *part_of*, e.g. corneal endothelium part_of cornea; *subClassOf*, e.g. left kidney subClassOf (is_a) kidney; and *overlaps* (has some part in), e.g. ureter overlaps kidney; *connected_to*, e.g. TBA. *part_of* and *subClassOf* relationships should be specific to general, e.g. left kidney (specific) to kidney (general); corneal endothelium (specific) to cornea (general). The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
@@ -117,14 +140,22 @@ In the case of the AS-AS relationship, for each couple of terms, we verify for _
 | 87 | UBERON:8410036 | medullary venule of lymph node         | Venule                    | UBERON:8410033 | lymph node vein                 | Hilar Vein                | [90](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=90:90) | nan       |
 | 89 | UBERON:0005463 | subcapsular sinus of lymph node        | Subcapsular Sinus         | UBERON:0002007 | medulla of lymph node           | Medulla                   | [92](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=92:92) | nan       |
 | 93 | UBERON:8410033 | lymph node vein                        | Hilar Vein                | UBERON:0035495 | hilum of lymph node             | Hilum                     | [97](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=97:97) | nan       |
+
+
+
+
 ## Relationship CT-CT report
 
 
-In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
 - No issues found.
+
+
+
+
 
 
 ## Relationship CT-AS report
@@ -214,10 +245,22 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 75 | CL:0009114 | monocytoid B Cell                                    | Monocytoid B Cell                             | UBERON:8410075 | lymph node paracortical cord           | Paracortical Cord       | [77](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=77:77) |
 | 76 | CL:0011103 | sympathetic neuron                                   | Sympathetic Neuron                            | UBERON:0034729 | sympathetic nerve                      | Sympathetic nerve       | [95](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=95:95) |
 | 77 | CL:0019017 | lymphatic vessel smooth muscle cell                  | Smooth Muscle Cell                            | UBERON:0010397 | efferent lymphatic vessel              | Efferent Lymphatics     | [94](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=94:94) |
+
+
+
+
 # New CL terms
 [**Report**](new_cl_terms_Lymph_node.tsv)
+
+
+
+
 # New UBERON terms
 [**Report**](new_uberon_terms_Lymph_node.tsv)
+
+
+
+
 # Informative reports (valid relationships)
 
 ## Indirect relationship

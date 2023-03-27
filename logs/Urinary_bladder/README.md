@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Urinary_bladder (2023-03-21)
+ASCT+B Validation Reports for Urinary_bladder (2023-03-27)
 ==========================================================
 
 Table of contents
@@ -12,6 +12,7 @@ Table of contents
 	* [Blank ontology ID](#blank-ontology-id)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
+	* [How to read a table entry](#how-to-read-a-table-entry)
 	* [Relationship AS-AS report](#relationship-as-as-report)
 	* [Relationship CT-CT report](#relationship-ct-ct-report)
 	* [Relationship CT-AS report](#relationship-ct-as-report)
@@ -28,7 +29,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 ## Terms not found
 
 
-This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table.  
+This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
 - No issues found.
 
@@ -95,10 +96,32 @@ This report provides a list of terms from another ontologies that we do not vali
 These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
 
 The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
+## How to read a table entry
+
+
+**In the ASCT+B table**
+|AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
+
+
+
+
+
+
+**In the Relationship Report**
+|s|slabel|user_slabel|o|olabel|user_olabel|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
+
+
+
+
+
 ## Relationship AS-AS report
 
 
-In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+This table contains terms for anatomical structures that are related to each other according to the ASCT+B table but are not related to each other in source ontologies via one of the relation types we consider valid for ASCT+B tables. Valid relationships are: *part_of*, e.g. corneal endothelium part_of cornea; *subClassOf*, e.g. left kidney subClassOf (is_a) kidney; and *overlaps* (has some part in), e.g. ureter overlaps kidney; *connected_to*, e.g. TBA. *part_of* and *subClassOf* relationships should be specific to general, e.g. left kidney (specific) to kidney (general); corneal endothelium (specific) to cornea (general). The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
@@ -111,14 +134,22 @@ In the case of the AS-AS relationship, for each couple of terms, we verify for _
 |  9 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20) |       nan |
 | 11 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21) |       nan |
 | 13 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22) |       nan |
+
+
+
+
 ## Relationship CT-CT report
 
 
-In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
 - No issues found.
+
+
+
+
 
 
 ## Relationship CT-AS report
@@ -138,10 +169,22 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 |  5 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18) |
 |  6 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19) |
 |  7 | CL:2000040 | bladder microvascular endothelial cell | endothelium   | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20) |
+
+
+
+
 # New CL terms
 [**Report**](new_cl_terms_Urinary_bladder.tsv)
+
+
+
+
 # New UBERON terms
 [**Report**](new_uberon_terms_Urinary_bladder.tsv)
+
+
+
+
 # Informative reports (valid relationships)
 
 ## Indirect relationship

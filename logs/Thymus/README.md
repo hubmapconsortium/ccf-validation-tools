@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Thymus (2023-03-21)
+ASCT+B Validation Reports for Thymus (2023-03-27)
 =================================================
 
 Table of contents
@@ -12,6 +12,7 @@ Table of contents
 	* [Blank ontology ID](#blank-ontology-id)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
+	* [How to read a table entry](#how-to-read-a-table-entry)
 	* [Relationship AS-AS report](#relationship-as-as-report)
 	* [Relationship CT-CT report](#relationship-ct-ct-report)
 	* [Relationship CT-AS report](#relationship-ct-as-report)
@@ -28,7 +29,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 ## Terms not found
 
 
-This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table.  
+This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
 - No issues found.
 
@@ -50,13 +51,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[78](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=78:78)_, the term _[CL:0000914](http://purl.obolibrary.org/obo/CL_0000914)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _immature NKT cell_ and the one in the ontology is _immature NK T cell_. For reference, the given name/label by SMEs is _immature NKT cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[30](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=30:30)_, the term _[CL:0009081](http://purl.obolibrary.org/obo/CL_0009081)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _specified double negative thymocyte_ and the one in the **ontology** is _specified double negative thymocyte (Homo sapiens)_. For reference, the given name/label **by SMEs** is _double negative thymocyte 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[32](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=32:32)_, the term _[CL:0009083](http://purl.obolibrary.org/obo/CL_0009083)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _rearranging double negative thymocyte_ and the one in the ontology is _rearranging double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 4_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[31](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=31:31)_, the term _[CL:0009082](http://purl.obolibrary.org/obo/CL_0009082)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _committed double negative thymocyte_ and the one in the **ontology** is _committed double negative thymocyte (Homo sapiens)_. For reference, the given name/label **by SMEs** is _double negative thymocyte 3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[30](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=30:30)_, the term _[CL:0009081](http://purl.obolibrary.org/obo/CL_0009081)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _specified double negative thymocyte_ and the one in the ontology is _specified double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[32](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=32:32)_, the term _[CL:0009083](http://purl.obolibrary.org/obo/CL_0009083)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _rearranging double negative thymocyte_ and the one in the **ontology** is _rearranging double negative thymocyte (Homo sapiens)_. For reference, the given name/label **by SMEs** is _double negative thymocyte 4_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[31](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=31:31)_, the term _[CL:0009082](http://purl.obolibrary.org/obo/CL_0009082)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _committed double negative thymocyte_ and the one in the ontology is _committed double negative thymocyte (Homo sapiens)_. For reference, the given name/label by SMEs is _double negative thymocyte 3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[78](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=78:78)_, the term _[CL:0000914](http://purl.obolibrary.org/obo/CL_0000914)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _immature NKT cell_ and the one in the **ontology** is _immature NK T cell_. For reference, the given name/label **by SMEs** is _immature NKT cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -81,10 +82,32 @@ This report provides a list of terms from another ontologies that we do not vali
 These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
 
 The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
+## How to read a table entry
+
+
+**In the ASCT+B table**
+|AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
+
+
+
+
+
+
+**In the Relationship Report**
+|s|slabel|user_slabel|o|olabel|user_olabel|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
+
+
+
+
+
 ## Relationship AS-AS report
 
 
-In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+This table contains terms for anatomical structures that are related to each other according to the ASCT+B table but are not related to each other in source ontologies via one of the relation types we consider valid for ASCT+B tables. Valid relationships are: *part_of*, e.g. corneal endothelium part_of cornea; *subClassOf*, e.g. left kidney subClassOf (is_a) kidney; and *overlaps* (has some part in), e.g. ureter overlaps kidney; *connected_to*, e.g. TBA. *part_of* and *subClassOf* relationships should be specific to general, e.g. left kidney (specific) to kidney (general); corneal endothelium (specific) to cornea (general). The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
@@ -184,14 +207,22 @@ In the case of the AS-AS relationship, for each couple of terms, we verify for _
 | 144 | UBERON:0003846 | thymus epithelium                 | thymus epithelium                 | UBERON:0002124 | medulla of thymus                | medulla of thymus                   | [94](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=94:94) | nan        |
 | 145 | UBERON:0003846 | thymus epithelium                 | thymus epithelium                 | UBERON:0002124 | medulla of thymus                | medulla of thymus                   | [95](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=95:95) | nan        |
 | 146 | UBERON:0003846 | thymus epithelium                 | thymus epithelium                 | UBERON:0002124 | medulla of thymus                | medulla of thymus                   | [96](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=96:96) | nan        |
+
+
+
+
 ## Relationship CT-CT report
 
 
-In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
 - No issues found.
+
+
+
+
 
 
 ## Relationship CT-AS report
@@ -266,10 +297,22 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 60 | CL:3000002 | sympathetic noradrenergic neuron                     | sympathetic noradrenergic nerve         | UBERON:0001021 | nerve                            | nerve                               | [18](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=18:18) |
 | 61 | CL:3000002 | sympathetic noradrenergic neuron                     | sympathetic noradrenergic nerve         | UBERON:0001021 | nerve                            | nerve                               | [15](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=15:15) |
 | 62 | CL:3000002 | sympathetic noradrenergic neuron                     | sympathetic noradrenergic nerve         | UBERON:0001021 | nerve                            | nerve                               | [42](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=42:42) |
+
+
+
+
 # New CL terms
 [**Report**](new_cl_terms_Thymus.tsv)
+
+
+
+
 # New UBERON terms
 [**Report**](new_uberon_terms_Thymus.tsv)
+
+
+
+
 # Informative reports (valid relationships)
 
 ## Indirect relationship

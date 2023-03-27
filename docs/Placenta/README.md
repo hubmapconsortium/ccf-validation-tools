@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Placenta (2023-03-21)
+ASCT+B Validation Reports for Placenta (2023-03-27)
 ===================================================
 
 Table of contents
@@ -12,6 +12,7 @@ Table of contents
 	* [Blank ontology ID](#blank-ontology-id)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
+	* [How to read a table entry](#how-to-read-a-table-entry)
 	* [Relationship AS-AS report](#relationship-as-as-report)
 	* [Relationship CT-CT report](#relationship-ct-ct-report)
 	* [Relationship CT-AS report](#relationship-ct-as-report)
@@ -28,7 +29,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 ## Terms not found
 
 
-This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table.  
+This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
 - No issues found.
 
@@ -50,17 +51,17 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[20](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=20:20)_, the term _[UBERON:0003254](http://purl.obolibrary.org/obo/UBERON_0003254)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _amnion epithelium_ and the one in the ontology is _amniotic ectoderm_. For reference, the given name/label by SMEs is _amniotic ectoderm_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, the term _[CL:2000062](http://purl.obolibrary.org/obo/CL_2000062)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _placental villous capillary endothelial cell_ and the one in the **ontology** is _placental villus capillary endothelial cell_. For reference, the given name/label **by SMEs** is _placental microvascular endothelial cells_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=13:13)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _pericyte cell_ and the one in the ontology is _pericyte_. For reference, the given name/label by SMEs is _pericytes_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[13](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=13:13)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _pericytes_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, the term _[CL:2000062](http://purl.obolibrary.org/obo/CL_2000062)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _placental villous capillary endothelial cell_ and the one in the ontology is _placental villus capillary endothelial cell_. For reference, the given name/label by SMEs is _placental microvascular endothelial cells_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)_, the term _[CL:0000525](http://purl.obolibrary.org/obo/CL_0000525)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _syncytiotrophoblast_ and the one in the **ontology** is _syncytiotrophoblast cell_. For reference, the given name/label **by SMEs** is _syncytiotrophoblast (STB)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[34](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=34:34)_, the term _[CL:2000091](http://purl.obolibrary.org/obo/CL_2000091)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _endometrial microvascular endothelial cells_ and the one in the ontology is _endometrial microvascular endothelial cell_. For reference, the given name/label by SMEs is _endometrial microvascular endothelial cell (EMEC)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[34](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=34:34)_, the term _[CL:2000091](http://purl.obolibrary.org/obo/CL_2000091)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _endometrial microvascular endothelial cells_ and the one in the **ontology** is _endometrial microvascular endothelial cell_. For reference, the given name/label **by SMEs** is _endometrial microvascular endothelial cell (EMEC)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)_, the term _[CL:0000525](http://purl.obolibrary.org/obo/CL_0000525)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _syncytiotrophoblast_ and the one in the ontology is _syncytiotrophoblast cell_. For reference, the given name/label by SMEs is _syncytiotrophoblast (STB)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25)_, the term _[CL:0000523](http://purl.obolibrary.org/obo/CL_0000523)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _cytotrophoblast_ and the one in the **ontology** is _mononuclear cytotrophoblast cell_. For reference, the given name/label **by SMEs** is _cytotrophoblast (CTB)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25)_, the term _[CL:0000523](http://purl.obolibrary.org/obo/CL_0000523)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _cytotrophoblast_ and the one in the ontology is _mononuclear cytotrophoblast cell_. For reference, the given name/label by SMEs is _cytotrophoblast (CTB)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[20](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=20:20)_, the term _[UBERON:0003254](http://purl.obolibrary.org/obo/UBERON_0003254)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _amnion epithelium_ and the one in the **ontology** is _amniotic ectoderm_. For reference, the given name/label **by SMEs** is _amniotic ectoderm_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -239,10 +240,32 @@ This report provides a list of terms from another ontologies that we do not vali
 These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
 
 The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
+## How to read a table entry
+
+
+**In the ASCT+B table**
+|AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
+
+
+
+
+
+
+**In the Relationship Report**
+|s|slabel|user_slabel|o|olabel|user_olabel|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
+
+
+
+
+
 ## Relationship AS-AS report
 
 
-In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+This table contains terms for anatomical structures that are related to each other according to the ASCT+B table but are not related to each other in source ontologies via one of the relation types we consider valid for ASCT+B tables. Valid relationships are: *part_of*, e.g. corneal endothelium part_of cornea; *subClassOf*, e.g. left kidney subClassOf (is_a) kidney; and *overlaps* (has some part in), e.g. ureter overlaps kidney; *connected_to*, e.g. TBA. *part_of* and *subClassOf* relationships should be specific to general, e.g. left kidney (specific) to kidney (general); corneal endothelium (specific) to cornea (general). The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
@@ -287,14 +310,22 @@ In the case of the AS-AS relationship, for each couple of terms, we verify for _
 | 69 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [61](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=61:61) | nan        |
 | 70 | UBERON:0015172 | endometrial blood vessel | decidual blood vessel                      | UBERON:0002450 | decidua          | decidua           | [62](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=62:62) | nan        |
 | 71 | UBERON:0015172 | endometrial blood vessel | decidual blood vessel                      | UBERON:0002450 | decidua          | decidua           | [63](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=63:63) | nan        |
+
+
+
+
 ## Relationship CT-CT report
 
 
-In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
 - No issues found.
+
+
+
+
 
 
 ## Relationship CT-AS report
@@ -344,10 +375,22 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 35 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast (EVT)            | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | [47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47) |
 | 36 | CL:2000062 | placental villus capillary endothelial cell | placental microvascular endothelial cells | UBERON:0007106 | chorionic villus         | chorionic villous                          | [53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53) |
 | 37 | CL:3000001 | Hofbauer cell                               | Hofbauer cell (HC)                        | UBERON:0007106 | chorionic villus         | chorionic villous                          | [48](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=48:48) |
+
+
+
+
 # New CL terms
 [**Report**](new_cl_terms_Placenta.tsv)
+
+
+
+
 # New UBERON terms
 [**Report**](new_uberon_terms_Placenta.tsv)
+
+
+
+
 # Informative reports (valid relationships)
 
 ## Indirect relationship

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Kidney (2023-03-21)
+ASCT+B Validation Reports for Kidney (2023-03-27)
 =================================================
 
 Table of contents
@@ -12,6 +12,7 @@ Table of contents
 	* [Blank ontology ID](#blank-ontology-id)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
+	* [How to read a table entry](#how-to-read-a-table-entry)
 	* [Relationship AS-AS report](#relationship-as-as-report)
 	* [Relationship CT-CT report](#relationship-ct-ct-report)
 	* [Relationship CT-AS report](#relationship-ct-as-report)
@@ -28,7 +29,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 ## Terms not found
 
 
-This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table.  
+This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
 - No issues found.
 
@@ -50,33 +51,33 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[44](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=44:44)_, the term _[CL:4030019](http://purl.obolibrary.org/obo/CL_4030019)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule intercalated cell_ and the one in the ontology is _kidney connecting tubule intercalated cell_. For reference, the given name/label by SMEs is _Connecting Tubule Intercalated Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[70](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=70:70)_, the term _[CL:4030022](http://purl.obolibrary.org/obo/CL_4030022)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _medullary fibroblast_ and the one in the **ontology** is _renal medullary fibroblast_. For reference, the given name/label **by SMEs** is _Medullary Fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[20](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=20:20)_, the term _[UBERON:0001284](http://purl.obolibrary.org/obo/UBERON_0001284)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _renal column (column of Bertin)_ and the one in the ontology is _renal column_. For reference, the given name/label by SMEs is _renal column_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[43](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=43:43)_, the term _[CL:4030018](http://purl.obolibrary.org/obo/CL_4030018)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _connecting tubule principal cell_ and the one in the **ontology** is _kidney connecting tubule principal cell_. For reference, the given name/label **by SMEs** is _Connecting Tubule Principal Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=17:17)_, the term _[UBERON:0001289](http://purl.obolibrary.org/obo/UBERON_0001289)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _descending thin limb of loop of Henle_ and the one in the ontology is _descending limb of loop of Henle_. For reference, the given name/label by SMEs is _Loop of Henle (Thin Limb)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[46](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=46:46)_, the term _[CL:4030021](http://purl.obolibrary.org/obo/CL_4030021)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _connecting tubule intercalated cell type B_ and the one in the **ontology** is _kidney connecting tubule beta-intercalated cell_. For reference, the given name/label **by SMEs** is _Intercalated Cell Type B_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[42](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=42:42)_, the term _[UBERON:0005097](http://purl.obolibrary.org/obo/UBERON_0005097)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule_ and the one in the ontology is _renal connecting tubule_. For reference, the given name/label by SMEs is _Connecting Tubule_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[13](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=13:13)_, the term _[UBERON:0006852](http://purl.obolibrary.org/obo/UBERON_0006852)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _glomerular visceral epithelium_ and the one in the **ontology** is _obsolete glomerular visceral epithelium_. For reference, the given name/label **by SMEs** is _visceral epithelial layer_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[45](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=45:45)_, the term _[CL:4030020](http://purl.obolibrary.org/obo/CL_4030020)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule intercalated cell type A_ and the one in the ontology is _kidney connecting tubule alpha-intercalated cell_. For reference, the given name/label by SMEs is _Connecting Tubule Intercalated Cell Type A_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[54](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=54:54)_, the term _[CL:4030015](http://purl.obolibrary.org/obo/CL_4030015)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _collecting duct intercalated cell type A_ and the one in the **ontology** is _kidney collecting duct alpha-intercalated cell_. For reference, the given name/label **by SMEs** is _Collecting Duct Intercalated Cell Type A_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[46](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=46:46)_, the term _[CL:4030021](http://purl.obolibrary.org/obo/CL_4030021)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule intercalated cell type B_ and the one in the ontology is _kidney connecting tubule beta-intercalated cell_. For reference, the given name/label by SMEs is _Intercalated Cell Type B_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[44](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=44:44)_, the term _[CL:4030019](http://purl.obolibrary.org/obo/CL_4030019)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _connecting tubule intercalated cell_ and the one in the **ontology** is _kidney connecting tubule intercalated cell_. For reference, the given name/label **by SMEs** is _Connecting Tubule Intercalated Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[34](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=34:34)_, the term _[UBERON:0004193](http://purl.obolibrary.org/obo/UBERON_0004193)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _ascending thin limb of loop of Henle_ and the one in the ontology is _loop of Henle ascending limb thin segment_. For reference, the given name/label by SMEs is _Loop of Henle (Thin Limb)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[24](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=24:24)_, the term _[UBERON:0004190](http://purl.obolibrary.org/obo/UBERON_0004190)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _glomerulus vasculature_ and the one in the **ontology** is _renal glomerulus vasculature_. For reference, the given name/label **by SMEs** is _Glomerulus Vasculature_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[59](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=59:59)_, the term _[CL:0000115](http://purl.obolibrary.org/obo/CL_0000115)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _endothlial cell_ and the one in the ontology is _endothelial cell_. For reference, the given name/label by SMEs is _Endothelial Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[45](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=45:45)_, the term _[CL:4030020](http://purl.obolibrary.org/obo/CL_4030020)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _connecting tubule intercalated cell type A_ and the one in the **ontology** is _kidney connecting tubule alpha-intercalated cell_. For reference, the given name/label **by SMEs** is _Connecting Tubule Intercalated Cell Type A_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[43](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=43:43)_, the term _[CL:4030018](http://purl.obolibrary.org/obo/CL_4030018)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _connecting tubule principal cell_ and the one in the ontology is _kidney connecting tubule principal cell_. For reference, the given name/label by SMEs is _Connecting Tubule Principal Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[17](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=17:17)_, the term _[UBERON:0001289](http://purl.obolibrary.org/obo/UBERON_0001289)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _descending thin limb of loop of Henle_ and the one in the **ontology** is _descending limb of loop of Henle_. For reference, the given name/label **by SMEs** is _Loop of Henle (Thin Limb)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=13:13)_, the term _[UBERON:0006852](http://purl.obolibrary.org/obo/UBERON_0006852)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _glomerular visceral epithelium_ and the one in the ontology is _obsolete glomerular visceral epithelium_. For reference, the given name/label by SMEs is _visceral epithelial layer_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[34](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=34:34)_, the term _[UBERON:0004193](http://purl.obolibrary.org/obo/UBERON_0004193)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ascending thin limb of loop of Henle_ and the one in the **ontology** is _loop of Henle ascending limb thin segment_. For reference, the given name/label **by SMEs** is _Loop of Henle (Thin Limb)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[70](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=70:70)_, the term _[CL:4030022](http://purl.obolibrary.org/obo/CL_4030022)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _medullary fibroblast_ and the one in the ontology is _renal medullary fibroblast_. For reference, the given name/label by SMEs is _Medullary Fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[20](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=20:20)_, the term _[UBERON:0001284](http://purl.obolibrary.org/obo/UBERON_0001284)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _renal column (column of Bertin)_ and the one in the **ontology** is _renal column_. For reference, the given name/label **by SMEs** is _renal column_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[60](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=60:60)_, the term _[UBERON:0001916](http://purl.obolibrary.org/obo/UBERON_0001916)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _juxtaglomerular arteriole_ and the one in the ontology is _endothelium of arteriole_. For reference, the given name/label by SMEs is _Juxtaglomerular Arteriole_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[42](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=42:42)_, the term _[UBERON:0005097](http://purl.obolibrary.org/obo/UBERON_0005097)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _connecting tubule_ and the one in the **ontology** is _renal connecting tubule_. For reference, the given name/label **by SMEs** is _Connecting Tubule_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=24:24)_, the term _[UBERON:0004190](http://purl.obolibrary.org/obo/UBERON_0004190)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _glomerulus vasculature_ and the one in the ontology is _renal glomerulus vasculature_. For reference, the given name/label by SMEs is _Glomerulus Vasculature_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[60](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=60:60)_, the term _[UBERON:0001916](http://purl.obolibrary.org/obo/UBERON_0001916)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _juxtaglomerular arteriole_ and the one in the **ontology** is _endothelium of arteriole_. For reference, the given name/label **by SMEs** is _Juxtaglomerular Arteriole_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[54](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=54:54)_, the term _[CL:4030015](http://purl.obolibrary.org/obo/CL_4030015)_ has different name/label in the source ontology. The name/label in the ASCT+B table is _collecting duct intercalated cell type A_ and the one in the ontology is _kidney collecting duct alpha-intercalated cell_. For reference, the given name/label by SMEs is _Collecting Duct Intercalated Cell Type A_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[59](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=59:59)_, the term _[CL:0000115](http://purl.obolibrary.org/obo/CL_0000115)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _endothlial cell_ and the one in the **ontology** is _endothelial cell_. For reference, the given name/label **by SMEs** is _Endothelial Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -153,10 +154,32 @@ This report provides a list of terms from another ontologies that we do not vali
 These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.
 
 The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.
+## How to read a table entry
+
+
+**In the ASCT+B table**
+|AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
+
+
+
+
+
+
+**In the Relationship Report**
+|s|slabel|user_slabel|o|olabel|user_olabel|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
+
+
+
+
+
 ## Relationship AS-AS report
 
 
-In the case of the AS-AS relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+This table contains terms for anatomical structures that are related to each other according to the ASCT+B table but are not related to each other in source ontologies via one of the relation types we consider valid for ASCT+B tables. Valid relationships are: *part_of*, e.g. corneal endothelium part_of cornea; *subClassOf*, e.g. left kidney subClassOf (is_a) kidney; and *overlaps* (has some part in), e.g. ureter overlaps kidney; *connected_to*, e.g. TBA. *part_of* and *subClassOf* relationships should be specific to general, e.g. left kidney (specific) to kidney (general); corneal endothelium (specific) to cornea (general). The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
@@ -204,14 +227,22 @@ In the case of the AS-AS relationship, for each couple of terms, we verify for _
 | 53 | UBERON:0002303 | juxtaglomerular apparatus               | Juxtaglomerular Apparatus          | UBERON:0001981 | blood vessel                          | Blood Vessel                       | [61](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=61:61) | nan       |
 | 54 | UBERON:0001916 | endothelium of arteriole                | Juxtaglomerular Arteriole          | UBERON:0002303 | juxtaglomerular apparatus             | Juxtaglomerular Apparatus          | [61](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=61:61) | nan       |
 | 56 | UBERON:0002303 | juxtaglomerular apparatus               | Juxtaglomerular Apparatus          | UBERON:0003517 | kidney blood vessel                   | Kidney Blood Vessel                | [68](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=68:68) | nan       |
+
+
+
+
 ## Relationship CT-CT report
 
 
-In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The column **deltaIC** is here for help finding terms in a general location. It means the Information Content difference between the terms in the columns s and o. A large number (>50) can tell that the two terms are in a general location.
+In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.
 
 
 
 - No issues found.
+
+
+
+
 
 
 ## Relationship CT-AS report
@@ -249,10 +280,22 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 23 | CL:4030009 | epithelial cell of proximal tubule segment 1        | Proximal Tubule Epithelial Cell Segment 1      | UBERON:0004196 | proximal convoluted tubule segment 1    | proximal convoluted tubule segment 1 | [27](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=27:27) |
 | 24 | CL:4030010 | epithelial cell of proximal tubule segment 2        | Proximal Tubule Epithelial Cell Segment 2      | UBERON:0004197 | proximal convoluted tubule segment 2    | proximal convoluted tubule segment 2 | [28](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=28:28) |
 | 25 | CL:4030011 | epithelial cell of proximal tubule segment 3        | Proximal Tubule Cell Epithelial Segment 3      | UBERON:0001290 | proximal straight tubule                | proximal straight tubule segment 3   | [29](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=29:29) |
+
+
+
+
 # New CL terms
 [**Report**](new_cl_terms_Kidney.tsv)
+
+
+
+
 # New UBERON terms
 [**Report**](new_uberon_terms_Kidney.tsv)
+
+
+
+
 # Informative reports (valid relationships)
 
 ## Indirect relationship
