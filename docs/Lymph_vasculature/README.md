@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_vasculature (2023-03-27)
+ASCT+B Validation Reports for Lymph_vasculature (2023-04-03)
 ============================================================
 
 Table of contents
@@ -61,13 +61,99 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
   
 1. In row _[43](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=43:43)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
 
-1. In row _[46](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=46:46)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
+1. In row _[44](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=44:44)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
 
-1. In row _[47](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=47:47)_, no term id was found for the name/label _subclavicular lymph node_.
+1. In row _[44](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=44:44)_, no term id was found for the name/label _epitrochlear lymph node_.
 
-1. In row _[48](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=48:48)_, no term id was found for the name/label _subclavicular lymph node_.
+1. In row _[45](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=45:45)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
 
-1. In row _[48](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=48:48)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm #2_.
+1. In row _[45](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=45:45)_, no term id was found for the name/label _epitrochlear lymph node_.
+
+1. In row _[45](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=45:45)_, no term id was found for the name/label _ulnar lymphatic channel_.
+
+1. In row _[46](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=46:46)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+
+1. In row _[46](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=46:46)_, no term id was found for the name/label _epitrochlear lymph node_.
+
+1. In row _[46](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=46:46)_, no term id was found for the name/label _ulnar lymphatic channel_.
+
+1. In row _[46](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=46:46)_, no term id was found for the name/label _little finger lateral lymphatic channel_.
+
+1. In row _[47](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=47:47)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+
+1. In row _[47](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=47:47)_, no term id was found for the name/label _epitrochlear lymph node_.
+
+1. In row _[47](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=47:47)_, no term id was found for the name/label _ulnar lymphatic channel_.
+
+1. In row _[47](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=47:47)_, no term id was found for the name/label _little finger medial lymphatic channel_.
+
+1. In row _[48](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=48:48)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+
+1. In row _[48](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=48:48)_, no term id was found for the name/label _epitrochlear lymph node_.
+
+1. In row _[48](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=48:48)_, no term id was found for the name/label _ulnar lymphatic channel_.
+
+1. In row _[48](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=48:48)_, no term id was found for the name/label _ring finger lateral lymphatic channel_.
+
+1. In row _[49](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=49:49)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+
+1. In row _[49](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=49:49)_, no term id was found for the name/label _epitrochlear lymph node_.
+
+1. In row _[49](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=49:49)_, no term id was found for the name/label _ulnar lymphatic channel_.
+
+1. In row _[49](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=49:49)_, no term id was found for the name/label _ring finger medial lymphatic channel_.
+
+1. In row _[50](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=50:50)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+
+1. In row _[50](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=50:50)_, no term id was found for the name/label _epitrochlear lymph node_.
+
+1. In row _[50](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=50:50)_, no term id was found for the name/label _ulnar lymphatic channel_.
+
+1. In row _[50](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=50:50)_, no term id was found for the name/label _middle finger medial lymphatic channel_.
+
+1. In row _[53](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=53:53)_, no term id was found for the name/label _epitrochlear lymph node #2_.
+
+1. In row _[58](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=58:58)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
+
+1. In row _[59](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=59:59)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
+
+1. In row _[59](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=59:59)_, no term id was found for the name/label _radial lymphatic channel_.
+
+1. In row _[60](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=60:60)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
+
+1. In row _[60](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=60:60)_, no term id was found for the name/label _radial lymphatic channel_.
+
+1. In row _[60](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=60:60)_, no term id was found for the name/label _middle finger lateral lymphatic channel_.
+
+1. In row _[61](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=61:61)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
+
+1. In row _[61](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=61:61)_, no term id was found for the name/label _radial lymphatic channel_.
+
+1. In row _[61](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=61:61)_, no term id was found for the name/label _index finger lateral lymphatic channel_.
+
+1. In row _[62](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=62:62)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
+
+1. In row _[62](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=62:62)_, no term id was found for the name/label _radial lymphatic channel_.
+
+1. In row _[62](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=62:62)_, no term id was found for the name/label _index finger medial lymphatic channel_.
+
+1. In row _[63](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=63:63)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
+
+1. In row _[63](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=63:63)_, no term id was found for the name/label _radial lymphatic channel_.
+
+1. In row _[63](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=63:63)_, no term id was found for the name/label _thumb lateral lymphatic channel_.
+
+1. In row _[64](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=64:64)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
+
+1. In row _[64](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=64:64)_, no term id was found for the name/label _radial lymphatic channel_.
+
+1. In row _[64](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=64:64)_, no term id was found for the name/label _thumb medial lymphatic channel_.
+
+1. In row _[65](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=65:65)_, no term id was found for the name/label _subclavicular lymph node_.
+
+1. In row _[66](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=66:66)_, no term id was found for the name/label _subclavicular lymph node_.
+
+1. In row _[66](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=66:66)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm #2_.
 
 
 ## Terms from another ontology
@@ -185,19 +271,103 @@ This report provides a list of terms from another ontologies that we do not vali
 
 1. In row _[44](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=44:44)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
 
-1. In row _[44](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=44:44)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+1. In row _[44](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=44:44)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
 
 1. In row _[45](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=45:45)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
 
-1. In row _[45](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=45:45)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+1. In row _[45](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=45:45)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
 
 1. In row _[46](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=46:46)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
 
-1. In row _[46](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=46:46)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+1. In row _[46](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=46:46)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
 
 1. In row _[47](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=47:47)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
 
+1. In row _[47](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=47:47)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
+
 1. In row _[48](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=48:48)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[48](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=48:48)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
+
+1. In row _[49](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=49:49)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[49](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=49:49)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
+
+1. In row _[50](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=50:50)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[50](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=50:50)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
+
+1. In row _[51](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=51:51)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[51](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=51:51)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
+
+1. In row _[51](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=51:51)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
+
+1. In row _[52](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=52:52)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[52](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=52:52)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
+
+1. In row _[52](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=52:52)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
+
+1. In row _[52](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=52:52)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
+
+1. In row _[53](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=53:53)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[53](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=53:53)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
+
+1. In row _[53](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=53:53)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
+
+1. In row _[53](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=53:53)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
+
+1. In row _[54](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=54:54)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[54](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=54:54)_, the term _FMA:323948_ is from another ontology that is not validated in this process.
+
+1. In row _[55](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=55:55)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[55](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=55:55)_, the term _FMA:323948_ is from another ontology that is not validated in this process.
+
+1. In row _[55](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=55:55)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
+
+1. In row _[56](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=56:56)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[56](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=56:56)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+
+1. In row _[57](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=57:57)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[57](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=57:57)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+
+1. In row _[58](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=58:58)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[58](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=58:58)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+
+1. In row _[59](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=59:59)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[59](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=59:59)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+
+1. In row _[60](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=60:60)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[60](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=60:60)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+
+1. In row _[61](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=61:61)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[61](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=61:61)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+
+1. In row _[62](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=62:62)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[62](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=62:62)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+
+1. In row _[63](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=63:63)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[63](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=63:63)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+
+1. In row _[64](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=64:64)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[64](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=64:64)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
+
+1. In row _[65](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=65:65)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
+
+1. In row _[66](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=66:66)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
 
 
 # Relationship reports
@@ -237,12 +407,12 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | row_number                                                                                                                | s              | slabel                    | user_slabel               | o              | olabel                    | user_olabel               |   deltaIC |
 |----|---------------------------------------------------------------------------------------------------------------------------|----------------|---------------------------|---------------------------|----------------|---------------------------|---------------------------|-----------|
-| 11 | [34](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=34:34) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8727  |
-| 12 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8727  |
-| 13 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8727  |
-| 14 | [31](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=31:31) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8727  |
-| 15 | [30](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=30:30) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8727  |
-| 27 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | UBERON:0001543 | popliteal lymph node      | popliteal lymph node      | UBERON:0009006 | deep inguinal lymph node  | deep inguinal lymph node  |   6.07158 |
+| 11 | [34](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=34:34) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.869   |
+| 12 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.869   |
+| 13 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.869   |
+| 14 | [31](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=31:31) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.869   |
+| 15 | [30](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=30:30) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.869   |
+| 27 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | UBERON:0001543 | popliteal lymph node      | popliteal lymph node      | UBERON:0009006 | deep inguinal lymph node  | deep inguinal lymph node  |   6.06972 |
 | 29 | [31](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=31:31) | UBERON:0015880 | external iliac lymph node | external iliac lymph node | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | nan       |
 | 30 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | UBERON:0015880 | external iliac lymph node | external iliac lymph node | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | nan       |
 | 31 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | UBERON:0009006 | deep inguinal lymph node  | deep inguinal lymph node  | UBERON:0015880 | external iliac lymph node | external iliac lymph node | nan       |

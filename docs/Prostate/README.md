@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2023-03-27)
+ASCT+B Validation Reports for Prostate (2023-04-03)
 ===================================================
 
 Table of contents
@@ -59,7 +59,7 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-- No issues found.
+1. In row _[21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21)_, no term id was found for the name/label _basal cell of prostatic urethra_.
 
 
 ## Terms from another ontology

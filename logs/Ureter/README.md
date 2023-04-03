@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Ureter (2023-03-27)
+ASCT+B Validation Reports for Ureter (2023-04-03)
 =================================================
 
 Table of contents
@@ -51,9 +51,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15)_, the term _[UBERON:0009919](http://purl.obolibrary.org/obo/UBERON_0009919)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ureter detrusor smooth muscle_ and the one in the **ontology** is _ureter smooth muscle_. For reference, the given name/label **by SMEs** is _ureter detrusor smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12)_, the term _[CL:1001428](http://purl.obolibrary.org/obo/CL_1001428)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ureter urothelial cell_ and the one in the **ontology** is _bladder urothelial cell_. For reference, the given name/label **by SMEs** is _urothelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15)_, the term _[UBERON:0009919](http://purl.obolibrary.org/obo/UBERON_0009919)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ureter detrusor smooth muscle_ and the one in the **ontology** is _ureter smooth muscle_. For reference, the given name/label **by SMEs** is _ureter detrusor smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -131,10 +131,10 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                   | user_slabel                   | o              | olabel                | user_olabel           | row_number                                                                                                              |   deltaIC |
 |----|----------------|--------------------------|-------------------------------|----------------|-----------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12) |   15.2575 |
-|  1 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [13](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=13:13) |   15.2575 |
-|  2 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [14](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=14:14) |   15.2575 |
-|  3 | UBERON:0009919 | ureter smooth muscle     | ureter detrusor smooth muscle | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15) |   10.6646 |
+|  0 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12) |   15.2528 |
+|  1 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [13](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=13:13) |   15.2528 |
+|  2 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [14](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=14:14) |   15.2528 |
+|  3 | UBERON:0009919 | ureter smooth muscle     | ureter detrusor smooth muscle | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15) |   10.6613 |
 | 12 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [16](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=16:16) |  nan      |
 | 13 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [17](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=17:17) |  nan      |
 | 15 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [18](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=18:18) |  nan      |
