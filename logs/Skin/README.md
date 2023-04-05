@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Skin (2023-04-03)
+ASCT+B Validation Reports for Skin (2023-04-05)
 ===============================================
 
 Table of contents
@@ -51,11 +51,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[50](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=50:50)_, the term _[CL:0000359](http://purl.obolibrary.org/obo/CL_0000359)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _smooth muscle cell_ and the one in the **ontology** is _vascular associated smooth muscle cell_. For reference, the given name/label **by SMEs** is _Perivascular smooth muscle cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[52](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=52:52)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[24](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=24:24)_, the term _[CL:0000151](http://purl.obolibrary.org/obo/CL_0000151)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _sebum secreting cell_ and the one in the **ontology** is _secretory cell_. For reference, the given name/label **by SMEs** is _Germinative (epithelial) cell, Sebocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[52](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=52:52)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[50](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=50:50)_, the term _[CL:0000359](http://purl.obolibrary.org/obo/CL_0000359)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _smooth muscle cell_ and the one in the **ontology** is _vascular associated smooth muscle cell_. For reference, the given name/label **by SMEs** is _Perivascular smooth muscle cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -88,6 +88,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the ASCT+B table**
+
+
+
+
 |AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
@@ -98,6 +102,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the Relationship Report**
+
+
+
+
 |s|slabel|user_slabel|o|olabel|user_olabel|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|

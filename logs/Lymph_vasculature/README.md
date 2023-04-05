@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_vasculature (2023-04-03)
+ASCT+B Validation Reports for Lymph_vasculature (2023-04-05)
 ============================================================
 
 Table of contents
@@ -380,6 +380,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the ASCT+B table**
+
+
+
+
 |AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
@@ -390,6 +394,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the Relationship Report**
+
+
+
+
 |s|slabel|user_slabel|o|olabel|user_olabel|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
@@ -456,7 +464,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 |  7 | [34](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=34:34) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0015881 | internal iliac lymph node    | internal iliac lymph node  |
 |  8 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0001543 | popliteal lymph node         | popliteal lymph node       |
 |  9 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0009006 | deep inguinal lymph node     | deep inguinal lymph node   |
-| 10 | [45](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=45:45) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0035279 | supraclavicular lymph node   | supraclavicular lymph node |
+| 10 | [57](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=57:57) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0035279 | supraclavicular lymph node   | supraclavicular lymph node |
 | 11 | [31](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=31:31) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0015880 | external iliac lymph node    | external iliac lymph node  |
 | 12 | [29](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=29:29) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0016386 | paraaortic lymph node        | paraaortic lymph node      |
 | 13 | [28](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=28:28) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0016402 | mesocolic lymph node         | mesocolic lymph node       |
@@ -468,7 +476,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 19 | [18](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=18:18) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0005435 | upper part of cisterna chyli | cisterna chyli             |
 | 20 | [17](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=17:17) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0001631 | thoracic duct                | thoracic duct              |
 | 21 | [30](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=30:30) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0015878 | common iliac lymph node      | common iliac lymph node    |
-| 22 | [46](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=46:46) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0035279 | supraclavicular lymph node   | supraclavicular lymph node |
+| 22 | [58](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=58:58) | CL:0002138 | endothelial cell of lymphatic vessel | lymphatic endothelial cell | UBERON:0035279 | supraclavicular lymph node   | supraclavicular lymph node |
 
 
 

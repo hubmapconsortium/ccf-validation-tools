@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Ovary (2023-04-03)
+ASCT+B Validation Reports for Ovary (2023-04-05)
 ================================================
 
 Table of contents
@@ -14030,6 +14030,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the ASCT+B table**
+
+
+
+
 |AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
@@ -14040,6 +14044,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the Relationship Report**
+
+
+
+
 |s|slabel|user_slabel|o|olabel|user_olabel|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
