@@ -65,10 +65,12 @@ def generate_template_readme(file_name, table):
 
   template.new_header(level=2, title="How to read a table entry")
   template.new_paragraph(text="**In the ASCT+B table**")
+  template.new_paragraph(text="\n\n")
   template.new_table(columns=6, rows=2, text=["AS/2","AS/2/LABEL","AS/2/ID","AS/3","AS/3/LABEL","AS/3/ID", "lens","lens","UBERON:0000965","ciliary zonules","suspensory ligament of lens","UBERON:0006762"])
   template.new_paragraph(text="\n\n")
 
   template.new_paragraph(text="**In the Relationship Report**")
+  template.new_paragraph(text="\n\n")
   template.new_table(columns=6, rows=2, text=["s","slabel","user_slabel","o","olabel","user_olabel","UBERON:0006762","suspensory ligament of lens","ciliary zonules","UBERON:0000965","lens","lens"])
   template.new_paragraph(text="\n\n")
   
