@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2023-04-05)
+ASCT+B Validation Reports for Lung (2023-04-11)
 ===============================================
 
 Table of contents
@@ -31,23 +31,23 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. CL:4033017
-
-1. CL:4033016
-
-1. CL:4033025
-
-1. CL:4033018
+1. CL:4033023
 
 1. CL:4033022
 
-1. CL:4033020
+1. CL:4033016
 
-1. CL:4033021
+1. CL:4033017
 
 1. CL:4033024
 
-1. CL:4033023
+1. CL:4033018
+
+1. CL:4033020
+
+1. CL:4033025
+
+1. CL:4033021
 
 
 ## Typos or punctuation mistakes

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Bone-Marrow (2023-04-05)
+ASCT+B Validation Reports for Bone-Marrow (2023-04-11)
 ======================================================
 
 Table of contents
@@ -51,9 +51,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[33](https://docs.google.com/spreadsheets/d/1z60ZA9r8Y435skSIjRwMX_EgBK0FN9up4CFfBQ0s944/edit#gid=771476671&range=33:33)_, the term _[CL:0000037](http://purl.obolibrary.org/obo/CL_0000037)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _hemopoietic stem cell_ and the one in the **ontology** is _hematopoietic stem cell_. For reference, the given name/label **by SMEs** is _hemopoietic stem cell (HSC)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[55](https://docs.google.com/spreadsheets/d/1z60ZA9r8Y435skSIjRwMX_EgBK0FN9up4CFfBQ0s944/edit#gid=771476671&range=55:55)_, the term _[CL:0000938](http://purl.obolibrary.org/obo/CL_0000938)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD16-negative, CD56-bright natural killer cell_ and the one in the **ontology** is _CD16-negative, CD56-bright natural killer cell, human_. For reference, the given name/label **by SMEs** is _CD56 bright Natural Killer_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[33](https://docs.google.com/spreadsheets/d/1z60ZA9r8Y435skSIjRwMX_EgBK0FN9up4CFfBQ0s944/edit#gid=771476671&range=33:33)_, the term _[CL:0000037](http://purl.obolibrary.org/obo/CL_0000037)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _hemopoietic stem cell_ and the one in the **ontology** is _hematopoietic stem cell_. For reference, the given name/label **by SMEs** is _hemopoietic stem cell (HSC)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
