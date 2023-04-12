@@ -25,7 +25,10 @@ all: last_official_release official_release
 ../owl/%_annotations.owl ../owl/%_sec.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv ../logs/%/logs_dict.json: ../resources/ASCT-b_tables/%.json
 	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION)
 
-../logs/%/README.md: ../logs/%/logs_dict.json
+validation_reports_release:
+	cp -a ../logs/. ../docs
+
+../logs/%/README.md: ../logs/%/logs_dict.json validation_reports_release
 	if [ $(OLD_VERSION) = False ]; then python readme_reports_generation.py --table $* --data $< --output $@ --mode "readme" && \
 		rm $<; fi
 .PRECIOUS: ../logs/%/README.md
@@ -130,9 +133,6 @@ official_release:
 last_official_release:
 	make ../owl/last_official_ASCTB_release/CCF_AS_CT.owl OLD_VERSION=True -B
 .PHONY: last_official_release
-
-validation_reports_release: official_release
-	cp -a ../logs/. ../docs
 
 build-docker-v%:
 	docker buildx use ccf-tools-dep-builder
