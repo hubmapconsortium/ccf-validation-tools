@@ -1,7 +1,7 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-# JOBS = Adipose Knee Lingual_Tonsil Mammary_Gland Nasal_Passage Palatine_Tonsil Pharyngeal_Tonsil Quadriceps_Femoris Spinal_Cord Triceps_Surae  don't have data in table
-JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Large_intestine Liver Lung Lymph_node Lymph_vasculature Muscular_System Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skeleton Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature
+# JOBS = Adipose  Lingual_Tonsil Mammary_Gland Nasal_Passage Palatine_Tonsil Pharyngeal_Tonsil Quadriceps_Femoris Spinal_Cord Triceps_Surae  don't have data in table
+JOBS = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Muscular_System Ovary Palatine_Tonsil Pancreas Placenta Peripheral_nervous_system Prostate Skeleton Skin Small_intestine Spinal_Cord Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature
 JOBS_OLD = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
 OLD_VERSION = False
 
@@ -25,10 +25,10 @@ all: last_official_release official_release
 ../owl/%_annotations.owl ../owl/%_sec.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv ../logs/%/logs_dict.json: ../resources/ASCT-b_tables/%.json
 	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION)
 
-validation_reports_release:
-	cp -a ../logs/. ../docs
+validation_reports_release_%:
+	cp -a ../logs/$*/. ../docs/$*
 
-../logs/%/README.md: ../logs/%/logs_dict.json validation_reports_release
+../logs/%/README.md: ../logs/%/logs_dict.json validation_reports_release_%
 	if [ $(OLD_VERSION) = False ]; then python readme_reports_generation.py --table $* --data $< --output $@ --mode "readme" && \
 		rm $<; fi
 .PRECIOUS: ../logs/%/README.md
