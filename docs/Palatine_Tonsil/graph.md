@@ -1,6 +1,6 @@
 
-ASCT+B Validation Reports for Knee (2023-04-17)
-===============================================
+ASCT+B Validation Reports for Palatine_Tonsil (2023-04-17)
+==========================================================
 
 # ASCT+B as Graph
 
@@ -17,6 +17,6 @@ Please ensure that all terms have a relationship that is part of the path to the
 
 Please ensure that there isn't the same term in two levels on the same row. In the graph, it is represented as a red-edge relationship to the term itself.
 
-[*View image as PDF*](assets/ccf_Knee_graph.pdf)
+[*View image as PDF*](assets/ccf_Palatine_Tonsil_graph.pdf)
 
-![Knee ASCT+B table in graph](assets/ccf_Knee_graph.png)
+![Palatine_Tonsil ASCT+B table in graph](assets/ccf_Palatine_Tonsil_graph.png)
