@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Spinal_Cord (2023-04-17)
+ASCT+B Validation Reports for Spinal_Cord (2023-04-24)
 ======================================================
 
 Table of contents
@@ -51,9 +51,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[24](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=24:24)_, the term _[CL:0000129](http://purl.obolibrary.org/obo/CL_0000129)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Microglia_ and the one in the **ontology** is _microglial cell_. For reference, the given name/label **by SMEs** is _Microglia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[94](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=94:94)_, the term _[CL:0000100](http://purl.obolibrary.org/obo/CL_0000100)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Motoneuron_ and the one in the **ontology** is _motor neuron_. For reference, the given name/label **by SMEs** is _Motoneuron_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[24](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=24:24)_, the term _[CL:0000129](http://purl.obolibrary.org/obo/CL_0000129)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Microglia_ and the one in the **ontology** is _microglial cell_. For reference, the given name/label **by SMEs** is _Microglia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -117,10 +117,10 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                                         | user_slabel                                    | o              | olabel                           | user_olabel                      | row_number                                                                                                                  |   deltaIC |
 |----|----------------|------------------------------------------------|------------------------------------------------|----------------|----------------------------------|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|
-| 23 | UBERON:0014620 | cervical spinal cord dorsal horn               | cervical spinal cord dorsal horn               | UBERON:0014613 | cervical spinal cord gray matter | cervical spinal cord gray matter | [141](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=141:141) |   2.68589 |
-| 24 | UBERON:0014620 | cervical spinal cord dorsal horn               | cervical spinal cord dorsal horn               | UBERON:0014613 | cervical spinal cord gray matter | cervical spinal cord gray matter | [142](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=142:142) |   2.68589 |
-| 25 | UBERON:0014609 | thoracic spinal cord dorsal horn               | thoracic spinal cord dorsal horn               | UBERON:0014636 | thoracic spinal cord gray matter | thoracic spinal cord gray matter | [145](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=145:145) |   2.68589 |
-| 26 | UBERON:0014609 | thoracic spinal cord dorsal horn               | thoracic spinal cord dorsal horn               | UBERON:0014636 | thoracic spinal cord gray matter | thoracic spinal cord gray matter | [146](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=146:146) |   2.68589 |
+| 23 | UBERON:0014620 | cervical spinal cord dorsal horn               | cervical spinal cord dorsal horn               | UBERON:0014613 | cervical spinal cord gray matter | cervical spinal cord gray matter | [141](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=141:141) |   2.68585 |
+| 24 | UBERON:0014620 | cervical spinal cord dorsal horn               | cervical spinal cord dorsal horn               | UBERON:0014613 | cervical spinal cord gray matter | cervical spinal cord gray matter | [142](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=142:142) |   2.68585 |
+| 25 | UBERON:0014609 | thoracic spinal cord dorsal horn               | thoracic spinal cord dorsal horn               | UBERON:0014636 | thoracic spinal cord gray matter | thoracic spinal cord gray matter | [145](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=145:145) |   2.68585 |
+| 26 | UBERON:0014609 | thoracic spinal cord dorsal horn               | thoracic spinal cord dorsal horn               | UBERON:0014636 | thoracic spinal cord gray matter | thoracic spinal cord gray matter | [146](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=146:146) |   2.68585 |
 | 27 | UBERON:0014543 | lumbar division of spinal cord central canal   | lumbar division of spinal cord central canal   | UBERON:0002792 | lumbar spinal cord               | lumbar spinal cord               | [20](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=20:20)    | nan       |
 | 28 | UBERON:0014541 | thoracic division of spinal cord central canal | thoracic division of spinal cord central canal | UBERON:0003038 | thoracic spinal cord             | thoracic spinal cord             | [35](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=35:35)    | nan       |
 | 29 | UBERON:0014547 | sacral division of spinal cord central canal   | sacral division of spinal cord central canal   | UBERON:0005843 | sacral spinal cord               | sacral spinal cord               | [36](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=36:36)    | nan       |

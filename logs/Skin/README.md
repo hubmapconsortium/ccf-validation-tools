@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Skin (2023-04-17)
+ASCT+B Validation Reports for Skin (2023-04-24)
 ===============================================
 
 Table of contents
@@ -53,9 +53,9 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
   
 1. In row _[52](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=52:52)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[50](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=50:50)_, the term _[CL:0000359](http://purl.obolibrary.org/obo/CL_0000359)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _smooth muscle cell_ and the one in the **ontology** is _vascular associated smooth muscle cell_. For reference, the given name/label **by SMEs** is _Perivascular smooth muscle cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[24](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=24:24)_, the term _[CL:0000151](http://purl.obolibrary.org/obo/CL_0000151)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _sebum secreting cell_ and the one in the **ontology** is _secretory cell_. For reference, the given name/label **by SMEs** is _Germinative (epithelial) cell, Sebocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[50](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=50:50)_, the term _[CL:0000359](http://purl.obolibrary.org/obo/CL_0000359)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _smooth muscle cell_ and the one in the **ontology** is _vascular associated smooth muscle cell_. For reference, the given name/label **by SMEs** is _Perivascular smooth muscle cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -123,7 +123,7 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                       | user_slabel            | o              | olabel         | user_olabel   | row_number                                                                                                               |   deltaIC |
 |----|----------------|------------------------------|------------------------|----------------|----------------|---------------|--------------------------------------------------------------------------------------------------------------------------|-----------|
-|  9 | UBERON:0035549 | vasculature of integument    | Blood vessels          | UBERON:0002072 | hypodermis     | Subcutaneous  | [69](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=69:69) |   1.36361 |
+|  9 | UBERON:0035549 | vasculature of integument    | Blood vessels          | UBERON:0002072 | hypodermis     | Subcutaneous  | [69](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=69:69) |   1.36359 |
 | 11 | UBERON:0002027 | stratum corneum of epidermis | Stratum corneum (SC)   | UBERON:0001003 | skin epidermis | Epidermis     | [12](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=12:12) | nan       |
 | 18 | UBERON:0001821 | sebaceous gland              | Sebaceous glands       | UBERON:0002067 | dermis         | Dermis        | [24](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=24:24) | nan       |
 | 19 | UBERON:0000423 | eccrine sweat gland          | Eccrine (sweat) glands | UBERON:0002067 | dermis         | Dermis        | [25](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=25:25) | nan       |
