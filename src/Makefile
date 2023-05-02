@@ -25,7 +25,7 @@ all: last_official_release official_release
 ../owl/%_annotations.owl ../owl/%_sec.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv ../logs/%/logs_dict.json: ../resources/ASCT-b_tables/%.json
 	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION)
 
-validation_reports_release_%:
+validation_reports_release_%: ../logs/%/logs_dict.json
 	cp -a ../logs/$*/. ../docs/$*
 
 ../logs/%/README.md: ../logs/%/logs_dict.json validation_reports_release_%
