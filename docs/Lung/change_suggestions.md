@@ -162,3 +162,79 @@ It needs a 'has part' relationship.
 **41 - Lobe of Lung --> lung connective tissue**
 
 It needs a 'has part' relationship.
+
+
+## CT-CT
+
+**1 - epithelial cell of tracheobronchial tree --> serous cell of epithelium of trachea**
+
+`tracheobronchial serous cell` should be an 'epithelial cell', but is is not. Once this is resolved, `serous cell of epithelium of trachea` will be inferred as an `pithelial cell of tracheobronchial tree`
+
+**2 - epithelial cell of tracheobronchial tree --> myoepithelial cell**
+
+
+
+**3 - smooth muscle cell --> smooth muscle cell**
+
+
+
+**4 - lung endothelial cell --> endothelial cell of artery**
+
+
+
+**5 - blood vessel smooth muscle cell --> blood vessel smooth muscle cell**
+
+
+
+**6 - lung endothelial cell --> vein endothelial cell of respiratory system**
+
+
+
+**7 - lung endothelial cell --> vein endothelial cell**
+
+
+
+**8 - epithelial cell of tracheobronchial tree --> serous cell of epithelium of bronchus**
+
+
+
+**9 - lung endothelial cell --> pulmonary artery endothelial cell**
+
+
+
+**10 - fibroblast of lung --> fibroblast of pulmonary artery**
+
+
+
+**11 - epithelial cell of lung --> club cell**
+
+
+
+**12 - epithelial cell of tracheobronchial tree --> lung goblet cell**
+
+
+
+
+**13 - epithelial cell of lung --> lung ciliated cell**
+
+
+
+**14 - connective tissue cell --> myofibroblast cell**
+
+
+
+**15 - fibroblast of lung --> lung pericyte**
+
+
+
+**16 - lung endothelial cell --> endothelial cell of respiratory system lymphatic vessel**
+
+
+
+**17 - myeloid leukocyte --> megakaryocyte**
+
+
+
+**18 - myeloid dendritic cell --> plasmacytoid dendritic cell**
+
+
