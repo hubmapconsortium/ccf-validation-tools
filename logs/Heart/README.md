@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Heart (2023-04-03)
+ASCT+B Validation Reports for Heart (2023-05-02)
 ================================================
 
 Table of contents
@@ -53,11 +53,11 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
   
 1. In row _[21](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=21:21)_, the term _[CL:0002138](http://purl.obolibrary.org/obo/CL_0002138)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _endothelial cell of lymphatic vessel_. For reference, the given name/label **by SMEs** is _lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
+1. In row _[133](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=133:133)_, the term _[UBERON:0006958](http://purl.obolibrary.org/obo/UBERON_0006958)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _great cardiac vein_ and the one in the **ontology** is _great vein of heart_. For reference, the given name/label **by SMEs** is _great cardiac vein_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
 1. In row _[142](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=142:142)_, the term _[UBERON:0002353](http://purl.obolibrary.org/obo/UBERON_0002353)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _atrioventricular bundle_ and the one in the **ontology** is _bundle of His_. For reference, the given name/label **by SMEs** is _bundle of His_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[196](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=196:196)_, the term _[UBERON:0000946](http://purl.obolibrary.org/obo/UBERON_0000946)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Cardial valve_ and the one in the **ontology** is _cardiac valve_. For reference, the given name/label **by SMEs** is _Cardial valve_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[133](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=133:133)_, the term _[UBERON:0006958](http://purl.obolibrary.org/obo/UBERON_0006958)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _great cardiac vein_ and the one in the **ontology** is _great vein of heart_. For reference, the given name/label **by SMEs** is _great cardiac vein_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -308,6 +308,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the ASCT+B table**
+
+
+
+
 |AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
@@ -318,6 +322,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the Relationship Report**
+
+
+
+
 |s|slabel|user_slabel|o|olabel|user_olabel|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
@@ -335,26 +343,26 @@ This table contains terms for anatomical structures that are related to each oth
 
 |     | s              | slabel                                           | user_slabel            | o              | olabel                  | user_olabel               | row_number                                                                                                                   |   deltaIC |
 |-----|----------------|--------------------------------------------------|------------------------|----------------|-------------------------|---------------------------|------------------------------------------------------------------------------------------------------------------------------|-----------|
-|  12 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002079 | left cardiac atrium     | left atrium               | [65](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=65:65)    |  24.5404  |
-|  13 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002079 | left cardiac atrium     | left atrium               | [66](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=66:66)    |  24.5404  |
-|  14 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002079 | left cardiac atrium     | left atrium               | [67](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=67:67)    |  24.5404  |
-|  15 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002080 | heart right ventricle   | right ventricle           | [178](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=178:178) |  24.3572  |
-|  16 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002080 | heart right ventricle   | right ventricle           | [177](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=177:177) |  24.3572  |
-|  17 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002080 | heart right ventricle   | right ventricle           | [176](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=176:176) |  24.3572  |
-|  26 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002078 | right cardiac atrium    | right atrium              | [28](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=28:28)    |  21.7116  |
-|  27 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002078 | right cardiac atrium    | right atrium              | [27](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=27:27)    |  21.7116  |
-|  28 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002078 | right cardiac atrium    | right atrium              | [26](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=26:26)    |  21.7116  |
-|  29 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002084 | heart left ventricle    | left ventricle            | [94](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=94:94)    |  21.5127  |
-|  30 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002084 | heart left ventricle    | left ventricle            | [95](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=95:95)    |  21.5127  |
-|  31 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002084 | heart left ventricle    | left ventricle            | [96](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=96:96)    |  21.5127  |
-|  64 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002094 | interventricular septum | septum                    | [140](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=140:140) |  13.3605  |
-|  65 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002094 | interventricular septum | septum                    | [139](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=139:139) |  13.3605  |
-|  81 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002079 | left cardiac atrium     | left atrium               | [68](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=68:68)    |  10.1599  |
-|  82 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002079 | left cardiac atrium     | left atrium               | [69](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=69:69)    |  10.1599  |
-|  84 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002080 | heart right ventricle   | right ventricle           | [179](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=179:179) |   9.97672 |
-|  85 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002080 | heart right ventricle   | right ventricle           | [180](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=180:180) |   9.97672 |
-|  97 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002084 | heart left ventricle    | left ventricle            | [97](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=97:97)    |   7.13215 |
-|  98 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002084 | heart left ventricle    | left ventricle            | [98](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=98:98)    |   7.13215 |
+|  12 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002079 | left cardiac atrium     | left atrium               | [65](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=65:65)    |  24.5537  |
+|  13 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002079 | left cardiac atrium     | left atrium               | [66](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=66:66)    |  24.5537  |
+|  14 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002079 | left cardiac atrium     | left atrium               | [67](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=67:67)    |  24.5537  |
+|  15 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002080 | heart right ventricle   | right ventricle           | [178](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=178:178) |  24.3705  |
+|  16 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002080 | heart right ventricle   | right ventricle           | [177](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=177:177) |  24.3705  |
+|  17 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002080 | heart right ventricle   | right ventricle           | [176](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=176:176) |  24.3705  |
+|  26 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002078 | right cardiac atrium    | right atrium              | [28](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=28:28)    |  21.6847  |
+|  27 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002078 | right cardiac atrium    | right atrium              | [27](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=27:27)    |  21.6847  |
+|  28 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002078 | right cardiac atrium    | right atrium              | [26](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=26:26)    |  21.6847  |
+|  29 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002084 | heart left ventricle    | left ventricle            | [94](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=94:94)    |  21.526   |
+|  30 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002084 | heart left ventricle    | left ventricle            | [95](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=95:95)    |  21.526   |
+|  31 | UBERON:0002049 | vasculature                                      | vasculature            | UBERON:0002084 | heart left ventricle    | left ventricle            | [96](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=96:96)    |  21.526   |
+|  64 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002094 | interventricular septum | septum                    | [140](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=140:140) |  13.3603  |
+|  65 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002094 | interventricular septum | septum                    | [139](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=139:139) |  13.3603  |
+|  81 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002079 | left cardiac atrium     | left atrium               | [68](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=68:68)    |  10.1597  |
+|  82 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002079 | left cardiac atrium     | left atrium               | [69](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=69:69)    |  10.1597  |
+|  83 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002080 | heart right ventricle   | right ventricle           | [179](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=179:179) |   9.97656 |
+|  84 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002080 | heart right ventricle   | right ventricle           | [180](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=180:180) |   9.97656 |
+|  98 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002084 | heart left ventricle    | left ventricle            | [97](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=97:97)    |   7.13204 |
+|  99 | UBERON:0001982 | capillary                                        | vasculature            | UBERON:0002084 | heart left ventricle    | left ventricle            | [98](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=98:98)    |   7.13204 |
 | 122 | UBERON:0003383 | cardiac muscle tissue of interventricular septum | myocardium             | UBERON:0002078 | right cardiac atrium    | right atrium              | [20](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=20:20)    | nan       |
 | 123 | UBERON:0003383 | cardiac muscle tissue of interventricular septum | myocardium             | UBERON:0002078 | right cardiac atrium    | right atrium              | [21](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=21:21)    | nan       |
 | 124 | UBERON:0003383 | cardiac muscle tissue of interventricular septum | myocardium             | UBERON:0002078 | right cardiac atrium    | right atrium              | [22](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=22:22)    | nan       |

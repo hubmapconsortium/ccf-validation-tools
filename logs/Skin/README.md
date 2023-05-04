@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Skin (2023-04-03)
+ASCT+B Validation Reports for Skin (2023-05-02)
 ===============================================
 
 Table of contents
@@ -88,6 +88,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the ASCT+B table**
+
+
+
+
 |AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
@@ -98,6 +102,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the Relationship Report**
+
+
+
+
 |s|slabel|user_slabel|o|olabel|user_olabel|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
@@ -115,7 +123,7 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                       | user_slabel            | o              | olabel         | user_olabel   | row_number                                                                                                               |   deltaIC |
 |----|----------------|------------------------------|------------------------|----------------|----------------|---------------|--------------------------------------------------------------------------------------------------------------------------|-----------|
-|  9 | UBERON:0035549 | vasculature of integument    | Blood vessels          | UBERON:0002072 | hypodermis     | Subcutaneous  | [69](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=69:69) |   1.36361 |
+|  9 | UBERON:0035549 | vasculature of integument    | Blood vessels          | UBERON:0002072 | hypodermis     | Subcutaneous  | [69](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=69:69) |   1.36359 |
 | 11 | UBERON:0002027 | stratum corneum of epidermis | Stratum corneum (SC)   | UBERON:0001003 | skin epidermis | Epidermis     | [12](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=12:12) | nan       |
 | 18 | UBERON:0001821 | sebaceous gland              | Sebaceous glands       | UBERON:0002067 | dermis         | Dermis        | [24](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=24:24) | nan       |
 | 19 | UBERON:0000423 | eccrine sweat gland          | Eccrine (sweat) glands | UBERON:0002067 | dermis         | Dermis        | [25](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=25:25) | nan       |

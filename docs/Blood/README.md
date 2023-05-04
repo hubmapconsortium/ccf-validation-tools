@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Blood (2023-04-03)
+ASCT+B Validation Reports for Blood (2023-05-02)
 ================================================
 
 Table of contents
@@ -80,6 +80,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the ASCT+B table**
+
+
+
+
 |AS/2|AS/2/LABEL|AS/2/ID|AS/3|AS/3/LABEL|AS/3/ID|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |lens|lens|UBERON:0000965|ciliary zonules|suspensory ligament of lens|UBERON:0006762|
@@ -90,6 +94,10 @@ The report means it could not find a partonomy relationship in the source ontolo
 
 
 **In the Relationship Report**
+
+
+
+
 |s|slabel|user_slabel|o|olabel|user_olabel|
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |UBERON:0006762|suspensory ligament of lens|ciliary zonules|UBERON:0000965|lens|lens|
@@ -121,7 +129,7 @@ In the case of the CT-CT relationship, for each couple of terms, we verify for _
 
 |    | row_number                                                                                                               | s          | slabel                                                | user_slabel                       | o          | olabel                | user_olabel              |   deltaIC |
 |----|--------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------|-----------------------------------|------------|-----------------------|--------------------------|-----------|
-|  0 | [20](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=20:20) | CL:0000840 | immature conventional dendritic cell                  | transitional Dendritic Cell (tDC) | CL:0001056 | dendritic cell, human | dendritic cell (DC)      |   11.2926 |
+|  0 | [20](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=20:20) | CL:0000840 | immature conventional dendritic cell                  | transitional Dendritic Cell (tDC) | CL:0001056 | dendritic cell, human | dendritic cell (DC)      |   11.2925 |
 |  5 | [16](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=16:16) | CL:0002394 | CD141-positive myeloid dendritic cell                 | dendritic cell type 1 (DC1)       | CL:0001056 | dendritic cell, human | dendritic cell (DC)      |  nan      |
 |  7 | [17](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=17:17) | CL:0002399 | CD1c-positive myeloid dendritic cell                  | dendritic cell type 2 (DC2)       | CL:0001056 | dendritic cell, human | dendritic cell (DC)      |  nan      |
 |  9 | [18](https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662&range=18:18) | CL:0002399 | CD1c-positive myeloid dendritic cell                  | dendritic cell type 3 (DC3)       | CL:0001056 | dendritic cell, human | dendritic cell (DC)      |  nan      |
