@@ -149,7 +149,7 @@ We are still working for a solution for the immune system, but pulmonary acinus 
 
 **38 - Lobe of Lung --> pulmonary nerve plexus**
 
-It `innervate`s `respiratory system` (UBERON:3010524) or `bronchial tube` (UBERON:3010524), but not `lobe of lung`. However, `innervates` does not validate.
+It `innervates` `respiratory system` (UBERON:3010524) or `bronchial tube` (UBERON:3010524), but not `lobe of lung`. However, `innervates` does not validate.
 
 **39 - Lobe of Lung --> pulmonary capillary plexus**
 
@@ -166,75 +166,66 @@ It needs a 'has part' relationship.
 
 ## CT-CT
 
-**1 - epithelial cell of tracheobronchial tree --> serous cell of epithelium of trachea**
-
-`tracheobronchial serous cell` should be an 'epithelial cell', but is is not. Once this is resolved, `serous cell of epithelium of trachea` will be inferred as an `pithelial cell of tracheobronchial tree`
-
-**2 - epithelial cell of tracheobronchial tree --> myoepithelial cell**
 
 
+**1 - epithelial cell of tracheobronchial tree --> airway submucosal gland duct basal cell**
 
-**3 - smooth muscle cell --> smooth muscle cell**
+This can be solved if `airway submucosal gland duct basal cell` is in CT1, and we include `'has part' some 'airway submucosal gland duct basal cell'` to `terminal ciliated ducts for tracheal submucosal gland` (term under review, so I will add before it is merged).
 
+**2 - epithelial cell of tracheobronchial tree --> serous cell of epithelium of bronchus**
 
+`tracheobronchial serous cell` should be an 'epithelial cell', but is is not. Once this is resolved, `serous cell of epithelium of bronchus` will be inferred as an `epithelial cell of tracheobronchial tree`
 
-**4 - lung endothelial cell --> endothelial cell of artery**
+**3 - epithelial cell of tracheobronchial tree --> airway submucosal gland collecting duct epithelial cell**
 
+Same approach as CT-CT1
 
+**4 - epithelial cell of tracheobronchial tree --> mucus secreting cell of bronchus submucosal gland**
 
-**5 - blood vessel smooth muscle cell --> blood vessel smooth muscle cell**
+Same approach as CT-CT1
 
+**5 - pulmonary interstitial fibroblast --> tracheobronchial chondrocyte**
 
+The ID used is wrong. CL:0019002 is tracheobronchial condrocyte. `lung perichondrial fibroblast` is CL:4033026 (Cell DN21)
 
-**6 - lung endothelial cell --> vein endothelial cell of respiratory system**
+**6 - epithelial cell of lung --> club cell**
 
+After [some disccussion wish Joshua](https://github.com/obophenotype/cell-ontology/pull/1934), `club cell` is now an `epithelial cell of tracheobronchial tree` (CL:0002202). The recommendation is to use it as a parent term
 
+**7 - epithelial cell of tracheobronchial tree --> lung goblet cell**
 
-**7 - lung endothelial cell --> vein endothelial cell**
+`lung goblet cell` is an `epithelial cell of lung`
 
+**8 - epithelial cell of lung --> lung ciliated cell**
 
+Not all ciliated cells are epithelial cells. In the lung, are all ciliated cells also epithelial cells? If yes, the axiom can fe included.
 
-**8 - epithelial cell of tracheobronchial tree --> serous cell of epithelium of bronchus**
+**9 - lung endothelial cell --> vein endothelial cell of respiratory system**
 
+The respiratory system is too broad, best solution is to add a new term (vein endothelial cell pf lung).
 
+**10 - lung endothelial cell --> endothelial cell of respiratory system lymphatic vessel**
 
-**9 - lung endothelial cell --> pulmonary artery endothelial cell**
-
-
-
-**10 - fibroblast of lung --> fibroblast of pulmonary artery**
-
-
-
-**11 - epithelial cell of lung --> club cell**
-
-
-
-**12 - epithelial cell of tracheobronchial tree --> lung goblet cell**
-
-
-
-
-**13 - epithelial cell of lung --> lung ciliated cell**
+The respiratory system is more general than lung, probably creating a new term is the best solution (lymphatic endothelial cell of lung).
 
 
+**11 - connective tissue cell --> myofibroblast cell**
 
-**14 - connective tissue cell --> myofibroblast cell**
+A `myofibroblast cell` is primarily found in connective tissue, but not exclusively, and therefore it can't be a `connective tissue cell`. If `secondary crest myofibroblast` is moved to CT1, it will solved this validation and the `lung connective tissue` --> `connective tissue cell` validation.
 
+**12 - myeloid dendritic cell --> plasmacytoid dendritic cell**
 
+This relationship is tricky, as it is not clear if `plasmacytoid dendritic cell` has myeloid, lymphoid or both precursors. Alternatively, the following terms from the hierarchy can be used as parental terms:
+> hematopoietic cell > leukocyte > dendritic cell > plasmacytoid dendritic cell
 
-**15 - fibroblast of lung --> lung pericyte**
+**13 - myeloid leukocyte --> megakaryocyte**
 
+`myeloid leukocyte` should be substituted for `myeloid cell`(CL:0000763)
 
+**14 - lung endothelial cell --> vein endothelial cell of respiratory system**
 
-**16 - lung endothelial cell --> endothelial cell of respiratory system lymphatic vessel**
+The respiratory system is more general than lung, probably creating a new term is the best solution (pulmonary vein endothelial cell).
 
+**15 - lung endothelial cell --> endothelial cell of artery**
 
-
-**17 - myeloid leukocyte --> megakaryocyte**
-
-
-
-**18 - myeloid dendritic cell --> plasmacytoid dendritic cell**
-
-
+`pulmonary artery endothelial cell` CL:1001568 is more adequate. `pulmonary vascular system` has to be fixed still, as it doesn't show a relationship with lung.
