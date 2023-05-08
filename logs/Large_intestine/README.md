@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Large_intestine (2023-05-02)
+ASCT+B Validation Reports for Large_intestine (2023-05-08)
 ==========================================================
 
 Table of contents
@@ -51,9 +51,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[15](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=15:15)_, the term _[CL:0009009](http://purl.obolibrary.org/obo/CL_0009009)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _paneth cell of epithelium of large intestine_ and the one in the **ontology** is _paneth cell of colon_. For reference, the given name/label **by SMEs** is _Paneth_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[1196](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1196:1196)_, the term _[CL:0000244](http://purl.obolibrary.org/obo/CL_0000244)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _transitional epithelial cell_. For reference, the given name/label **by SMEs** is _transitional_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[15](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=15:15)_, the term _[CL:0009009](http://purl.obolibrary.org/obo/CL_0009009)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _paneth cell of epithelium of large intestine_ and the one in the **ontology** is _paneth cell of colon_. For reference, the given name/label **by SMEs** is _Paneth_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

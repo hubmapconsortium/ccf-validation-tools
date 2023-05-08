@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2023-05-02)
+ASCT+B Validation Reports for Main_Bronchus (2023-05-08)
 ========================================================
 
 Table of contents
@@ -31,15 +31,15 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. UBERON:8600010
+1. CL:4033044
 
 1. UBERON:8600013
 
-1. CL:4033048
-
-1. CL:4033044
-
 1. UBERON:8600012
+
+1. UBERON:8600010
+
+1. CL:4033048
 
 
 ## Typos or punctuation mistakes

@@ -7,8 +7,8 @@ Release Notes
 |Ontology|Version|
 | :---: | :---: |
 |CL|2023-03-21|
-|PCL|2023-02-27|
 |UBERON|2023-03-15|
+|PCL|2023-02-27|
 
 ### ASCT+b Tables
 
@@ -20,11 +20,11 @@ Release Notes
 |Eye|v1.2|revise for April 1, 2023|
 |Fallopian_tube|v1.2|modify for October 1, 2022|
 |Heart|v1.3|revise for April 1, 2023|
-|Kidney|v1.3|revise for October 2022|
+|Kidney|v1.3|June 15, 2023|
 |Knee|v1.1|June 15, 2023|
 |Large_intestine|v1.4|revise for October, 2022|
 |Liver|v1.2|revise for April 1, 2023|
-|Lung|v1.3|revise for April 1, 2023|
+|Lung|v1.3|June 15, 2023|
 |Lymph_node|v1.3|revise for October 1, 2022|
 |Lymph_vasculature|v1.3|March 29, 2023|
 |Main_Bronchus|v1.0|revise for April 1, 2023|
