@@ -229,3 +229,86 @@ The respiratory system is more general than lung, probably creating a new term i
 **15 - lung endothelial cell --> endothelial cell of artery**
 
 `pulmonary artery endothelial cell` CL:1001568 is more adequate. `pulmonary vascular system` has to be fixed still, as it doesn't show a relationship with lung.
+
+
+
+## CT-AS
+
+**1 - terminal bronchiole epithelium --> club cell**
+
+It needs a 'has part' relationship.
+
+**2 - epithelium of segmental bronchus --> club cell**
+
+It needs a 'has part' relationship.
+
+**3 - epithelium of respiratory bronchiole --> club cell**
+
+It needs a 'has part' relationship.
+
+**4 - epithelium of bronchiole --> club cell**
+
+It needs a 'has part' relationship.
+
+**5 - pulmonary alveolar parenchyma --> type I pneumocyte**
+
+It needs a 'has part' relationship.
+
+
+**6 - pulmonary alveolar parenchyma --> type II pneumocyte**
+
+It needs a 'has part' relationship.
+
+**7 - epithelium of segmental bronchus --> brush cell of bronchus**
+
+It needs a 'has part' relationship.
+
+**8 - epithelium of segmental bronchus --> basal epithelial cell of tracheobronchial tree**
+
+It needs a 'has part' relationship.
+
+**9 - epithelium of lobar bronchus --> basal epithelial cell of tracheobronchial tree**
+
+It needs a 'has part' relationship.
+
+**10 - epithelium of lobar bronchus --> ciliated cell of the bronchus**
+
+It needs a 'has part' relationship.
+
+**11 - epithelium of segmental bronchus --> ciliated cell of the bronchus**
+
+It needs a 'has part' relationship.
+
+**12 - wall of pulmonary artery --> smooth muscle cell of the pulmonary artery**
+
+It needs a 'has part' relationship.
+
+**13 - bronchus smooth muscle --> bronchial smooth muscle cell**
+
+It needs a 'has part' relationship.
+
+**14 - respiratory system venous endothelium --> adult endothelial progenitor cell**
+**15 - respiratory system lymphatic vessel endothelium --> endothelial cell of respiratory system lymphatic vessel**
+**16 - pulmonary alveolar parenchyma --> lung pericyte**
+**17 - pulmonary nerve plexus --> sympathetic neuron**
+**18 - epithelium of segmental bronchus --> pulmonary ionocyte**
+**19 - epithelium of lobar bronchus --> pulmonary ionocyte**
+**20 - cartilage of bronchus --> tracheobronchial chondrocyte**
+**21 - respiratory system arterial smooth muscle --> blood vessel smooth muscle cell**
+**22 - respiratory system venous smooth muscle --> blood vessel smooth muscle cell**
+**23 - lobar bronchus mesenchyme --> tracheobronchial smooth muscle cell**
+**24 - epithelium of segmental bronchus --> lung goblet cell**
+**25 - epithelium of segmental bronchus --> lung neuroendocrine cell**
+**26 - epithelium of bronchiole --> lung ciliated cell**
+**27 - terminal bronchiole epithelium --> lung ciliated cell**
+**28 - respiratory system arterial endothelium --> endothelial cell of artery**
+**29 - wall of pulmonary artery --> pulmonary artery endothelial cell**
+**30 - pulmonary capillary plexus --> alveolar capillary type 1 endothelial cell**
+**31 - pulmonary capillary plexus --> alveolar capillary type 2 endothelial cell**
+**32 - pulmonary alveolar parenchyma --> alveolar type 1 fibroblast cell**
+**33 - pulmonary alveolar parenchyma --> alveolar type 2 fibroblast cell**
+**34 - respiratory system venous endothelium --> vein endothelial cell of respiratory system**
+**35 - smooth muscle tissue of terminal bronchiole --> bronchiolar smooth muscle cell**
+**36 - smooth muscle tissue of bronchiole --> bronchiolar smooth muscle cell**
+**37 - smooth muscle tissue of respiratory bronchiole --> bronchiolar smooth muscle cell**
+**38 - immune system --> lung megakaryocyte**
