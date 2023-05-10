@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# Suggestions on the AS-AS relations in eye table v1.3 (22/3/2023)
+# Suggestions on the AS-AS relations in eye table v1.3 (08/05/2023)
 
 Please, add a comment below if you want to address any of the actions to be taken. Please, indicate the number before the comment.
 
@@ -10,113 +10,182 @@ Please, add a comment below if you want to address any of the actions to be take
 
 ## AS-AS
 
-N | s | slabel | user_slabel | o | olabel | user_olabel | row_number | deltaIC
--- | -- | -- | -- | -- | -- | -- | -- | --
-0 | UBERON:0034713 | cranial neuron projection bundle | cranial neuron projection bundle | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | 68 | 35.4785
-1 | UBERON:0003902 | retinal neural layer | retinal neural layer | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | 67 | 27.1852
-3 | UBERON:0001773 | sclera | sclera | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | 66 | 18.5758
-10 | UBERON:0000482 | basal lamina of epithelium | basal epithelium | UBERON:0006761 | corneo-scleral junction | corneoscleral limbus | 74 | 2.22955
-27 | UBERON:0002203 | vasculature of eye | vasculature of eye | UBERON:0000966 | retina | retina | 32 | nan
-41 | UBERON:0006762 | suspensory ligament of lens | ciliary zonules | UBERON:0000965 | lens | lens | 59 | nan
-44 | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | UBERON:0000970 | eye | eye | 64 | nan
-45 | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | UBERON:0000970 | eye | eye | 65 | nan
-46 | UBERON:0035966 | scleral lamina cribrosa | scleral lamina cribrosa | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | 65 | nan
-47 | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | UBERON:0000970 | eye | eye | 66 | nan
-48 | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | UBERON:0000970 | eye | eye | 67 | nan
-49 | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | UBERON:0000970 | eye | eye | 68 | nan
-50 | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | UBERON:0000970 | eye | eye | 70 | nan
-51 | UBERON:0006136 | unmyelinated nerve fiber | unmyelinated nerve fiber | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | 70 | nan
-52 | UBERON:0002276 | lamina of spiral limbus | lamina of spiral limbus | UBERON:0000970 | eye | eye | 74 | nan
-53 | UBERON:0006761 | corneo-scleral junction | corneoscleral limbus | UBERON:0002276 | lamina of spiral limbus | lamina of spiral limbus | 74 | nan
+**1 - neuron projection bundle connecting eye with brain --> cranial neuron projection bundle**
+
+Substitute `cranial neuron projection bundle` with `cranial nerve II` UBERON:0000941 (aka optic nerve).
+
+**2 - neuron projection bundle connecting eye with brain --> retinal neural layer**
+
+This will be solved with AS-AS1.
+
+**3 - neuron projection bundle connecting eye with brain --> sclera**
+
+What relationship is expected here? 
+
+**4 - corneo-scleral junction --> basal lamina of epithelium**
+
+Needs a NTR 'basal epithelial layer of limbus'.
+
+**5 - retina --> vasculature of eye**
+
+Should be `vasculature of retina` UBERON:0004864.
+
+**6 - lens --> suspensory ligament of lens**
+
+Correct relationship is continuous_with @anitacaron to add to checks. https://github.com/hubmapconsortium/ccf-validation-tools/issues/221
+
+**7 - eye --> neuron projection bundle connecting eye with brain**
+
+AS-AS1 might solve it.
+
+**8 - neuron projection bundle connecting eye with brain --> scleral lamina cribrosa**
+
+`scleral lamina cribrosa` is a part of `sclera`.
+
+**9 - neuron projection bundle connecting eye with brain --> unmyelinated nerve fiber**
+
+It needs a 'has part' relationship.
+
+**10 - eye --> lamina of spiral limbus**
+
+`lamina of spiral limbus` is a ear structure, not sure why is in this table.
+
+**11 - lamina of spiral limbus --> corneo-scleral junction**
+
+`lamina of spiral limbus` is a ear structure, not sure why is in this table.
 
 
 
-## Actions to be taken
+## CT-CT
 
-1 - 
+**1 - Amacrine Cell --> GABAergic interneuron**
 
-UBERON:0034713 | cranial neuron projection bundle | cranial neuron projection bundle | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain
--- | -- | -- | -- | -- | --
+`GABAergic amacrine cell` CL:4030027 is more specific and validates.
 
+~~**2 - ON-bipolar cell --> rod bipolar cell**~~
 
-neuron projection bundle connecting eye with brain --> cranial nerve II (AKA optic nerve).  This should then validate.
+It has been fixed
 
-2 -  Lots of connections for optic nerve:
+**3 - medium field retinal amacrine cell --> wide field retinal amacrine cell**
 
+A `wide field retinal amacrine cell` is not a `medium field retinal amacrine cell`
 
-<img width="405" alt="image" src="https://user-images.githubusercontent.com/112839/226932876-8c0ae06b-b4a0-45d7-9715-ccc563515cc5.png">
+**4 - neuron --> microglial cell**
 
-UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain | UBERON:0000970 | eye | eye
--- | -- | -- | -- | -- | --
-retinal neural layer | retinal neural layer | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain
-UBERON:0035966 | scleral lamina cribrosa | scleral lamina cribrosa | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain.
+Microglial cell is not a neuron. It can be classified under `neural cell` or `central nervous system macrophage`.
 
+**5 - neuron --> Mueller cell**
 
-Update Uberon term as 1.   
-- [ ] Looks like some of these should have some kind of connected_to relationship in Uberon. https://github.com/obophenotype/uberon/issues/2852
-       **retinal neural layer connected_to optic nerve. scleral lamina cribrosa overlaps with optic nerve.**
-
-4 -  
-
-UBERON:0001773 | sclera | sclera | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain
--- | -- | -- | -- | -- | --
-
-- [ ] Add adjacent_to relationship
-Hard to know what type of relationship was expected.  **sclera is adjacent_to some optic nerve**
-
-5 - 
-
-UBERON:0000482 | basal lamina of epithelium | basal epithelium | UBERON:0006761 | corneo-scleral junction | corneoscleral limbus
--- | -- | -- | -- | -- | --
-
-- [ ] NTR 'basal epithelial layer of limbus'
-Generic term in specific location.  Is there a case for adding a specific basal lamina term to Uberon?
-'Limbal stem cell' is part_of some 'basal epithelial layer of limbus' . Both terms need to be added.
-
-
-6 - 
-
-UBERON:0002203 | vasculature of eye | vasculature of eye | UBERON:0000966 | retina | retina
--- | -- | -- | -- | -- | --
-
-- [ ] Table error - should be vasculature of retina UBERON:0004864 . Request change. Comment from Ellen: 
-> we are striving to remove all generic "vasculature of X" type entries from all tables in favor of any blood vasculature that already has a "part of" relationship to structures.
-
-7 - 
-
-UBERON:0006762 | suspensory ligament of lens | ciliary zonules | UBERON:0000965 | lens | lens
--- | -- | -- | -- | -- | --
-
-- [ ] Correct relationship is continuous_with @anitacaron  to add to checks. https://github.com/hubmapconsortium/ccf-validation-tools/issues/221
-
-8 - 
-
-UBERON:0006136 | unmyelinated nerve fiber | unmyelinated nerve fiber | UBERON:0004904 | neuron projection bundle connecting eye with brain | neuron projection bundle connecting eye with brain
--- | -- | -- | -- | -- | --
-
-May be fixed by updating Uberon term
-
-- [ ] check classification in Uberon
-
-9 - 
-
-UBERON:0002276 | lamina of spiral limbus | lamina of spiral limbus | UBERON:0000970 | eye | eye
--- | -- | -- | -- | -- | --
-UBERON:0006761 | corneo-scleral junction | corneoscleral limbus | UBERON:0002276 | lamina of spiral limbus | lamina of spiral limbus
-
-Incorrect Uberon term UBERON:0002276 - is in the ear.
-
-- [ ] Ask experts what they intended here.
+Müller cell is not a neuron. It can be classified under `neural cell`, `neuron associated cell` or `glial cell`.
 
 
 
+## AS-CT
 
+**1 - iris epithelium --> epithelial cell**
 
+High level cell.
 
+**2 - retina --> microglial cell**
 
+High level cell.
 
+**3 - inner nuclear layer of retina --> Amacrine Cell**
 
- 
+`amacrine cell` is all lowercase. `inner nuclear layer of retina` has part some `amacrine cell`, and should validate.
 
+**4 - outer nuclear layer of retina --> retinal cone cell**
 
+Missing 'has soma location' some 'outer nuclear layer of retina'.
 
+**5 - outer nuclear layer of retina --> retinal rod cell**
+
+Missing 'has soma location' some 'outer nuclear layer of retina'.
+
+**6 - inner nuclear layer of retina --> Mueller cell**
+
+[MCs cover the entire thickness of the retina](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8784480/#:~:text=MCs%20cover%20the%20entire%20thickness%20of%20the%20retina). The AS should be `retine` and then it will validate.
+
+**7 - vasculature of retina --> pericyte**
+
+It needs a NTR `retinal pericyte`.
+
+**8 - ganglionic layer of retina --> retinal ganglion cell**
+
+Need to validate `'has soma location' some retina`.
+
+**9 - inner nuclear layer of retina --> retina horizontal cell**
+
+`inner nuclear layer of retina` has part some `retina horizontal cell`, and should validate.
+
+**10 - inner nuclear layer of retina --> retinal bipolar neuron**
+
+`inner nuclear layer of retina` has part some `retinal bipolar neuron`, and should validate.
+
+**11 - inner nuclear layer of retina --> ON-bipolar cell**
+
+It will be fixed with AS-CT10.
+
+**12 - inner nuclear layer of retina --> rod bipolar cell**
+
+It will be fixed with AS-CT10.
+
+**13 - lens nucleus --> secondary lens fiber**
+
+All lens fibers structures and cells need revision.
+
+**14 - lens fiber --> primary lens fiber**
+
+All lens fibers structures and cells need revision.
+
+**15 - anterior stroma of cornea --> keratocyte**
+
+`keratocyte` is `'part of' some 'substantia propria of cornea'`(UBERON:0001777).
+
+**16 - vasculature of retina --> retinal blood vessel endothelial cell**
+
+it needs a SubclassOf `'part of' some 'vasculature of retina'`
+
+**17 - inner nuclear layer of retina --> A2 amacrine cell**
+
+It will be fixed with AS-CT3.
+
+**18 - inner nuclear layer of retina --> starburst amacrine cell**
+
+It will be fixed with AS-CT3.
+
+**19 - inner nuclear layer of retina --> wide field retinal amacrine cell**
+
+It will be fixed with AS-CT3.
+
+**20 - lens fiber --> lens fiber cell**
+
+All lens fibers structures and cells need revision.
+
+**21 - lens nucleus --> lens fiber cell**
+
+All lens fibers structures and cells need revision.
+
+**22 - lens cortex --> lens fiber cell**
+
+All lens fibers structures and cells need revision.
+
+**23 - inner nuclear layer of retina --> GABAergic interneuron**
+
+It will be fixed with AS-CT3 and CT-CT1.
+
+**24 - anterior stroma of cornea --> telocyte**
+
+Looking at [this reference](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5706519/), telocytes are not only in the anterior stroma of cornea.
+
+**25 - ganglionic layer of retina --> Midget ganglion cell of retina**
+
+It will be fixed with AS-CT8.
+
+**26 - ganglionic layer of retina --> Parasol ganglion cell of retina**
+
+It will be fixed with AS-CT8.
+
+**27 - inner nuclear layer of retina --> glycinergic amacrine cell**
+
+It will be fixed with AS-CT3.
