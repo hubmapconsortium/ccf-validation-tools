@@ -208,7 +208,6 @@ The respiratory system is too broad, best solution is to add a new term (vein en
 
 The respiratory system is more general than lung, probably creating a new term is the best solution (lymphatic endothelial cell of lung).
 
-
 **11 - connective tissue cell --> myofibroblast cell**
 
 A `myofibroblast cell` is primarily found in connective tissue, but not exclusively, and therefore it can't be a `connective tissue cell`. If `secondary crest myofibroblast` is moved to CT1, it will solved this validation and the `lung connective tissue` --> `connective tissue cell` validation.
@@ -229,3 +228,163 @@ The respiratory system is more general than lung, probably creating a new term i
 **15 - lung endothelial cell --> endothelial cell of artery**
 
 `pulmonary artery endothelial cell` CL:1001568 is more adequate. `pulmonary vascular system` has to be fixed still, as it doesn't show a relationship with lung.
+
+
+
+## CT-AS
+
+**1 - terminal bronchiole epithelium --> club cell**
+
+It needs a 'has part' relationship.
+
+**2 - epithelium of segmental bronchus --> club cell**
+
+It needs a 'has part' relationship.
+
+**3 - epithelium of respiratory bronchiole --> club cell**
+
+It needs a 'has part' relationship.
+
+**4 - epithelium of bronchiole --> club cell**
+
+It needs a 'has part' relationship.
+
+**5 - pulmonary alveolar parenchyma --> type I pneumocyte**
+
+It needs a 'has part' relationship.
+
+**6 - pulmonary alveolar parenchyma --> type II pneumocyte**
+
+It needs a 'has part' relationship.
+
+**7 - epithelium of segmental bronchus --> brush cell of bronchus**
+
+It needs a 'has part' relationship.
+
+**8 - epithelium of segmental bronchus --> basal epithelial cell of tracheobronchial tree**
+
+It needs a 'has part' relationship.
+
+**9 - epithelium of lobar bronchus --> basal epithelial cell of tracheobronchial tree**
+
+It needs a 'has part' relationship.
+
+**10 - epithelium of lobar bronchus --> ciliated cell of the bronchus**
+
+It needs a 'has part' relationship.
+
+**11 - epithelium of segmental bronchus --> ciliated cell of the bronchus**
+
+It needs a 'has part' relationship.
+
+**12 - wall of pulmonary artery --> smooth muscle cell of the pulmonary artery**
+
+It needs a 'has part' relationship.
+
+**13 - bronchus smooth muscle --> bronchial smooth muscle cell**
+
+It needs a 'has part' relationship.
+
+**14 - respiratory system venous endothelium --> adult endothelial progenitor cell**
+
+The textual definition of a `respiratory system venous endothelium` is the following:
+> An adult angioblastic cell released from the bone marrow, or from the kidney in some teleost species, capable of blood circulation and participation in angiogenesis by differentiating into blood vessel endothelial cells.
+
+Is this cell type meant to be resident or circulating? In case it is a resident type, it would need a new term. In case it is circulating, we will need a similar soultion as immune cells.
+
+**15 - respiratory system lymphatic vessel endothelium --> endothelial cell of respiratory system lymphatic vessel**
+
+It is missing a `part of` relationship.
+
+**16 - pulmonary alveolar parenchyma --> lung pericyte**
+
+It needs a 'has part' relationship.
+
+**17 - pulmonary nerve plexus --> sympathetic neuron**
+
+It needs a 'has part' relationship.
+
+**18 - epithelium of segmental bronchus --> pulmonary ionocyte**
+
+It needs a 'has part' relationship.
+
+**19 - epithelium of lobar bronchus --> pulmonary ionocyte**
+
+It needs a 'has part' relationship.
+
+**20 - cartilage of bronchus --> tracheobronchial chondrocyte**
+
+It needs a 'has part' relationship.
+
+**21 - respiratory system arterial smooth muscle --> blood vessel smooth muscle cell**
+
+It needs a 'has part' relationship.
+
+**22 - respiratory system venous smooth muscle --> blood vessel smooth muscle cell**
+
+It needs a 'has part' relationship.
+
+**23 - lobar bronchus mesenchyme --> tracheobronchial smooth muscle cell**
+
+It needs a 'has part' relationship.
+
+**24 - epithelium of segmental bronchus --> lung goblet cell**
+
+It needs a 'has part' relationship.
+
+**25 - epithelium of segmental bronchus --> lung neuroendocrine cell**
+
+It needs a 'has part' relationship. This is a very general term, are there lung neuroendocrine cell subtypes needed?
+
+**26 - epithelium of bronchiole --> lung ciliated cell**
+
+It needs a 'has part' relationship.
+
+**27 - terminal bronchiole epithelium --> lung ciliated cell**
+
+It needs a 'has part' relationship.
+
+**28 - respiratory system arterial endothelium --> endothelial cell of artery**
+
+CT-CT15 should solve this.
+
+**29 - wall of pulmonary artery --> pulmonary artery endothelial cell**
+
+It is probably missing a `part of` relationship, or a 'has part' otherwise.
+
+**30 - pulmonary capillary plexus --> alveolar capillary type 1 endothelial cell**
+
+According to  [this reference](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7721049/) it is probably missing a `part of` relationship.
+
+**31 - pulmonary capillary plexus --> alveolar capillary type 2 endothelial cell**
+
+According to  [this reference](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7721049/) it is probably missing a `part of` relationship.
+
+
+**32 - pulmonary alveolar parenchyma --> alveolar type 1 fibroblast cell**
+
+It is missing a `part of` [relationship](https://www.annualreviews.org/doi/10.1146/annurev.physiol.59.1.43?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub++0pubmed).
+
+**33 - pulmonary alveolar parenchyma --> alveolar type 2 fibroblast cell**
+
+It is missing a `part of` [relationship](https://pubmed.ncbi.nlm.nih.gov/33624948/). Include synonym 'resident interstitial lung fibroblasts'.
+
+**34 - respiratory system venous endothelium --> vein endothelial cell of respiratory system**
+
+It is missing a `part of` relationship.
+
+**35 - smooth muscle tissue of terminal bronchiole --> bronchiolar smooth muscle cell**
+
+It needs a 'has part' relationship.
+
+**36 - smooth muscle tissue of bronchiole --> bronchiolar smooth muscle cell**
+
+It is missing a `part of` relationship.
+
+**37 - smooth muscle tissue of respiratory bronchiole --> bronchiolar smooth muscle cell**
+
+It needs a 'has part' relationship.
+
+**38 - immune system --> lung megakaryocyte**
+
+Megakaryocytes are not considered to be part of the immune system. It can directly map to lung.
