@@ -25,15 +25,15 @@ all: last_official_release official_release
 ../owl/%_annotations.owl ../owl/%_sec.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv ../logs/%/logs_dict.json: ../resources/ASCT-b_tables/%.json
 	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION)
 
-validation_reports_release_%: ../logs/%/logs_dict.json
+validation_reports_release_%: ../logs/%/README.md
 	cp -a ../logs/$*/. ../docs/$*
 
-../logs/%/README.md: ../logs/%/logs_dict.json validation_reports_release_%
+../logs/%/README.md: ../logs/%/logs_dict.json
 	if [ $(OLD_VERSION) = False ]; then python readme_reports_generation.py --table $* --data $< --output $@ --mode "readme" && \
 		rm $<; fi
 .PRECIOUS: ../logs/%/README.md
 
-../docs/%/graph.md: ../owl/ccf_%_classes.owl
+../docs/%/graph.md: ../owl/ccf_%_classes.owl validation_reports_release_%
 	if [ $(OLD_VERSION) = False ]; then cp -a ../graphs/ccf_$*_graph.png ../docs/$*/assets/. && \
 		cp -a ../graphs/ccf_$*_graph.pdf ../docs/$*/assets/. && \
 		python readme_reports_generation.py --table $* --output $@ --mode "graph"; fi
