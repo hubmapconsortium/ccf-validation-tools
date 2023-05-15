@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2023-05-08)
+ASCT+B Validation Reports for Main_Bronchus (2023-05-15)
 ========================================================
 
 Table of contents
@@ -33,13 +33,13 @@ This report provides a list of terms not found neither in UBERON nor in CL. Plea
   
 1. CL:4033044
 
-1. UBERON:8600013
-
-1. UBERON:8600012
-
 1. UBERON:8600010
 
+1. UBERON:8600013
+
 1. CL:4033048
+
+1. UBERON:8600012
 
 
 ## Typos or punctuation mistakes
@@ -59,7 +59,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[20](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=20:20)_, the term _[CL:0019002](http://purl.obolibrary.org/obo/CL_0019002)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lung perichondrial fibroblast_ and the one in the **ontology** is _tracheobronchial chondrocyte_. For reference, the given name/label **by SMEs** is _lung perichondrial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[21](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=21:21)_, the term _[CL:0019002](http://purl.obolibrary.org/obo/CL_0019002)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lung perichondrial fibroblast_ and the one in the **ontology** is _tracheobronchial chondrocyte_. For reference, the given name/label **by SMEs** is _lung perichondrial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -75,7 +75,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-1. In row _[14](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=14:14)_, the term _LMHA:00142_ is from another ontology that is not validated in this process.
+1. In row _[15](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=15:15)_, the term _LMHA:00142_ is from another ontology that is not validated in this process.
 
 
 # Relationship reports

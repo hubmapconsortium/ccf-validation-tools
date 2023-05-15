@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2023-05-08)
+ASCT+B Validation Reports for Lung (2023-05-15)
 ===============================================
 
 Table of contents
@@ -31,31 +31,29 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. CL:4033044
-
-1. UBERON:8600013
+1. CL:4033040
 
 1. UBERON:8600012
 
+1. CL:4033048
+
 1. CL:4033041
-
-1. CL:4033039
-
-1. CL:4033038
-
-1. UBERON:8600009
-
-1. CL:4033040
-
-1. CL:4033043
-
-1. CL:4033045
 
 1. UBERON:8600010
 
+1. CL:4033039
+
+1. CL:4033044
+
+1. CL:4033045
+
 1. CL:4033042
 
-1. CL:4033048
+1. CL:4033043
+
+1. UBERON:8600013
+
+1. CL:4033038
 
 
 ## Typos or punctuation mistakes
@@ -75,11 +73,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[21](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=21:21)_, the term _[CL:0019002](http://purl.obolibrary.org/obo/CL_0019002)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lung perichondrial fibroblast_ and the one in the **ontology** is _tracheobronchial chondrocyte_. For reference, the given name/label **by SMEs** is _lung perichondrial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=121:121)_, the term _[CL:0000945](http://purl.obolibrary.org/obo/CL_0000945)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lymphocyte of B cell lineage_ and the one in the **ontology** is _lymphocyte of B lineage_. For reference, the given name/label **by SMEs** is _lymphocyte of B cell lineage_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[74](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=74:74)_, the term _[UBERON:0016405](http://purl.obolibrary.org/obo/UBERON_0016405)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pulmonary capillary _ and the one in the **ontology** is _pulmonary capillary_. For reference, the given name/label **by SMEs** is _pulmonary capillary _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[13](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=13:13)_, the term _[UBERON:8410043](http://purl.obolibrary.org/obo/UBERON_8410043)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _bronchial submucosal gland_ and the one in the **ontology** is _bronchus submucosal gland_. For reference, the given name/label **by SMEs** is _bronchial submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=121:121)_, the term _[CL:0000945](http://purl.obolibrary.org/obo/CL_0000945)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lymphocyte of B cell lineage_ and the one in the **ontology** is _lymphocyte of B lineage_. For reference, the given name/label **by SMEs** is _lymphocyte of B cell lineage_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[21](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=21:21)_, the term _[CL:0019002](http://purl.obolibrary.org/obo/CL_0019002)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lung perichondrial fibroblast_ and the one in the **ontology** is _tracheobronchial chondrocyte_. For reference, the given name/label **by SMEs** is _lung perichondrial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -87,7 +87,7 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[89](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=89:89)_, no term id was found for the name/label _HGNC:7035_.
+- No issues found.
 
 
 ## Terms from another ontology

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Kidney (2023-05-08)
+ASCT+B Validation Reports for Kidney (2023-05-15)
 =================================================
 
 Table of contents
@@ -70,10 +70,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[33](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=33:33)_, no term id was found for the name/label _descending thin limb of loop of Henle 3_.
 
 1. In row _[52](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=52:52)_, no term id was found for the name/label _Transitional principal-intercalated cell_.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=63:63)_, no term id was found for the name/label _endothelium_.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=64:64)_, no term id was found for the name/label _endothelium_.
 
 1. In row _[65](https://docs.google.com/spreadsheets/d/1aXnWkwArSRmDnhyq0n_ptISWnmRwXvD4X0BPa9WQfmg/edit#gid=949267305&range=65:65)_, no term id was found for the name/label _Kidney Lymphatic Vessel_.
 

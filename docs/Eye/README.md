@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Eye (2023-05-02)
+ASCT+B Validation Reports for Eye (2023-05-15)
 ==============================================
 
 Table of contents
@@ -31,23 +31,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. CL:4033027
-
-1. CL:4033030
-
-1. CL:4033029
-
-1. CL:4033031
-
-1. CL:4033028
-
-1. CL:4033019
-
-1. CL:4033033
-
-1. CL:4033034
-
-1. CL:4033032
+- No issues found.
 
 
 ## Typos or punctuation mistakes
@@ -67,19 +51,23 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[74](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=74:74)_, the term _[UBERON:0006761](http://purl.obolibrary.org/obo/UBERON_0006761)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _corneoscleral limbus_ and the one in the **ontology** is _corneo-scleral junction_. For reference, the given name/label **by SMEs** is _corneoscleral limbus_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[74](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=74:74)_, the term _[UBERON:0000482](http://purl.obolibrary.org/obo/UBERON_0000482)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _basal epithelium_ and the one in the **ontology** is _basal lamina of epithelium_. For reference, the given name/label **by SMEs** is _basal epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[24](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=24:24)_, the term _[CL:4033029](http://purl.obolibrary.org/obo/CL_4033029)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _diffuse bipolar 3a cell _ and the one in the **ontology** is _diffuse bipolar 3a cell_. For reference, the given name/label **by SMEs** is _Diffuse bipolar 3a cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[70](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=70:70)_, the term _[UBERON:0006136](http://purl.obolibrary.org/obo/UBERON_0006136)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _unmyelinated nerve bundles_ and the one in the **ontology** is _unmyelinated nerve fiber_. For reference, the given name/label **by SMEs** is _unmyelinated nerve fiber_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[68](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=68:68)_, the term _[UBERON:0034713](http://purl.obolibrary.org/obo/UBERON_0034713)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _nerve bundle_ and the one in the **ontology** is _cranial neuron projection bundle_. For reference, the given name/label **by SMEs** is _cranial neuron projection bundle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[72](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=72:72)_, the term _[UBERON:0001783](http://purl.obolibrary.org/obo/UBERON_0001783)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _optic nerve head_ and the one in the **ontology** is _optic disc_. For reference, the given name/label **by SMEs** is _optic disc_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[64](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=64:64)_, the term _[UBERON:0004904](http://purl.obolibrary.org/obo/UBERON_0004904)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _optic nerve_ and the one in the **ontology** is _neuron projection bundle connecting eye with brain_. For reference, the given name/label **by SMEs** is _neuron projection bundle connecting eye with brain_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[34](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=34:34)_, the term _[UBERON:0004864](http://purl.obolibrary.org/obo/UBERON_0004864)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _vasculature of retina _ and the one in the **ontology** is _vasculature of retina_. For reference, the given name/label **by SMEs** is _vasculature_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[70](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=70:70)_, the term _[UBERON:0006136](http://purl.obolibrary.org/obo/UBERON_0006136)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _unmyelinated nerve bundles_ and the one in the **ontology** is _unmyelinated nerve fiber_. For reference, the given name/label **by SMEs** is _unmyelinated nerve fiber_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[26](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=26:26)_, the term _[CL:4033031](http://purl.obolibrary.org/obo/CL_4033031)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _diffuse bipolar 4 cell _ and the one in the **ontology** is _diffuse bipolar 4 cell_. For reference, the given name/label **by SMEs** is _Diffuse bipolar 4 cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[72](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=72:72)_, the term _[UBERON:0001783](http://purl.obolibrary.org/obo/UBERON_0001783)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _optic nerve head_ and the one in the **ontology** is _optic disc_. For reference, the given name/label **by SMEs** is _optic disc_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=68:68)_, the term _[UBERON:0034713](http://purl.obolibrary.org/obo/UBERON_0034713)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _nerve bundle_ and the one in the **ontology** is _cranial neuron projection bundle_. For reference, the given name/label **by SMEs** is _cranial neuron projection bundle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=74:74)_, the term _[UBERON:0000482](http://purl.obolibrary.org/obo/UBERON_0000482)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _basal epithelium_ and the one in the **ontology** is _basal lamina of epithelium_. For reference, the given name/label **by SMEs** is _basal epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[74](https://docs.google.com/spreadsheets/d/1tZ3YZ_PJ5viU2h8Bx3l02uhcMZ41AW4sbmJrKfRtfgg/edit#gid=695483621&range=74:74)_, the term _[UBERON:0006761](http://purl.obolibrary.org/obo/UBERON_0006761)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _corneoscleral limbus_ and the one in the **ontology** is _corneo-scleral junction_. For reference, the given name/label **by SMEs** is _corneoscleral limbus_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

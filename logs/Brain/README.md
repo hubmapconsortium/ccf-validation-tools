@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Brain (2023-05-08)
+ASCT+B Validation Reports for Brain (2023-05-15)
 ================================================
 
 Table of contents
@@ -53,11 +53,9 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
   
 1. In row _[731](https://docs.google.com/spreadsheets/d/1u0m_ktn6jy-V0l52pH1l_9H81nGClRbXygPEId4pU3c/edit#gid=2056967441&range=731:731)_, the term _[PCL:0015119](Phttp://purl.obolibrary.org/obo/CL_0015119)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L3-6 OPALIN ENPP6_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[732](https://docs.google.com/spreadsheets/d/1u0m_ktn6jy-V0l52pH1l_9H81nGClRbXygPEId4pU3c/edit#gid=2056967441&range=732:732)_, the term _[PCL:0015120](Phttp://purl.obolibrary.org/obo/CL_0015120)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN FTH1P3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[730](https://docs.google.com/spreadsheets/d/1u0m_ktn6jy-V0l52pH1l_9H81nGClRbXygPEId4pU3c/edit#gid=2056967441&range=730:730)_, the term _[PCL:0015079](Phttp://purl.obolibrary.org/obo/CL_0015079)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN MAP6D1_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[305](https://docs.google.com/spreadsheets/d/1u0m_ktn6jy-V0l52pH1l_9H81nGClRbXygPEId4pU3c/edit#gid=2056967441&range=305:305)_, the term _[CL:4023039](http://purl.obolibrary.org/obo/CL_4023039)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _amygdala excitatory neuron_ and the one in the **ontology** is _amgydala excitatory neuron_. For reference, the given name/label **by SMEs** is _amygdala excitatory neuron_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[732](https://docs.google.com/spreadsheets/d/1u0m_ktn6jy-V0l52pH1l_9H81nGClRbXygPEId4pU3c/edit#gid=2056967441&range=732:732)_, the term _[PCL:0015120](Phttp://purl.obolibrary.org/obo/CL_0015120)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN FTH1P3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
