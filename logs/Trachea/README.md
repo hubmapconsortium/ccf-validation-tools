@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Trachea (2023-05-15)
+ASCT+B Validation Reports for Trachea (2023-05-22)
 ==================================================
 
 Table of contents
@@ -31,11 +31,11 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
+1. UBERON:8600013
+
 1. UBERON:8600011
 
 1. UBERON:8600012
-
-1. UBERON:8600013
 
 
 ## Typos or punctuation mistakes
@@ -117,16 +117,18 @@ This table contains terms for anatomical structures that are related to each oth
 
 
 
-|    | s              | slabel                                    | user_slabel                             | o              | olabel               | user_olabel          | row_number                                                                                                       |   deltaIC |
-|----|----------------|-------------------------------------------|-----------------------------------------|----------------|----------------------|----------------------|------------------------------------------------------------------------------------------------------------------|-----------|
-| 14 | UBERON:0001592 | bronchial vein                            | bronchial vein                          | UBERON:0003505 | trachea blood vessel | trachea blood vessel | [29](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=29:29) |       nan |
-| 15 | UBERON:0004849 | respiratory system venous endothelium     | respiratory system venous endothelium   | UBERON:0001592 | bronchial vein       | bronchial vein       | [29](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=29:29) |       nan |
-| 18 | UBERON:0001592 | bronchial vein                            | bronchial vein                          | UBERON:0003505 | trachea blood vessel | trachea blood vessel | [30](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=30:30) |       nan |
-| 19 | UBERON:0012418 | respiratory system venous smooth muscle   | venous system smooth muscle             | UBERON:0001592 | bronchial vein       | bronchial vein       | [30](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=30:30) |       nan |
-| 20 | UBERON:0002040 | bronchial artery                          | bronchial artery                        | UBERON:0003505 | trachea blood vessel | trachea blood vessel | [31](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=31:31) |       nan |
-| 21 | UBERON:0004848 | respiratory system arterial endothelium   | respiratory system arterial endothelium | UBERON:0002040 | bronchial artery     | bronchial artery     | [31](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=31:31) |       nan |
-| 23 | UBERON:0002040 | bronchial artery                          | bronchial artery                        | UBERON:0003505 | trachea blood vessel | trachea blood vessel | [32](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=32:32) |       nan |
-| 24 | UBERON:0012416 | respiratory system arterial smooth muscle | arterial system smooth muscle           | UBERON:0002040 | bronchial artery     | bronchial artery     | [32](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=32:32) |       nan |
+|    | s              | slabel                                    | user_slabel                             | o              | olabel               | user_olabel          | row_number                                                                                                       |    deltaIC |
+|----|----------------|-------------------------------------------|-----------------------------------------|----------------|----------------------|----------------------|------------------------------------------------------------------------------------------------------------------|------------|
+|  4 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [18](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=18:18) |   0.884513 |
+|  5 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [19](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=19:19) |   0.884513 |
+|  6 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [20](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=20:20) |   0.884513 |
+|  7 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [21](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=21:21) |   0.884513 |
+|  8 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [22](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=22:22) |   0.884513 |
+|  9 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [23](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=23:23) |   0.884513 |
+| 20 | UBERON:0004849 | respiratory system venous endothelium     | respiratory system venous endothelium   | UBERON:0001592 | bronchial vein       | bronchial vein       | [29](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=29:29) | nan        |
+| 23 | UBERON:0012418 | respiratory system venous smooth muscle   | venous system smooth muscle             | UBERON:0001592 | bronchial vein       | bronchial vein       | [30](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=30:30) | nan        |
+| 24 | UBERON:0004848 | respiratory system arterial endothelium   | respiratory system arterial endothelium | UBERON:0002040 | bronchial artery     | bronchial artery     | [31](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=31:31) | nan        |
+| 26 | UBERON:0012416 | respiratory system arterial smooth muscle | arterial system smooth muscle           | UBERON:0002040 | bronchial artery     | bronchial artery     | [32](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=32:32) | nan        |
 
 
 
@@ -140,13 +142,13 @@ In the case of the CT-CT relationship, for each couple of terms, we verify for _
 
 |    | s          | slabel                                                  | user_slabel                                             | o          | olabel                                   | user_olabel                              | row_number                                                                                                       |   deltaIC |
 |----|------------|---------------------------------------------------------|---------------------------------------------------------|------------|------------------------------------------|------------------------------------------|------------------------------------------------------------------------------------------------------------------|-----------|
-|  6 | CL:1000330 | serous cell of epithelium of trachea                    | serous cell of epithelium of trachea                    | CL:0002202 | epithelial cell of tracheobronchial tree | epithelial cell of tracheobronchial tree | [18](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=18:18) |       nan |
-|  7 | CL:4033023 | airway submucosal gland collecting duct epithelial cell | airway submucosal gland collecting duct epithelial cell | CL:0002202 | epithelial cell of tracheobronchial tree | epithelial cell of tracheobronchial tree | [19](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=19:19) |       nan |
-|  8 | CL:4033024 | airway submucosal gland duct basal cell                 | airway submucosal gland duct basal cell                 | CL:0002202 | epithelial cell of tracheobronchial tree | epithelial cell of tracheobronchial tree | [21](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=21:21) |       nan |
-|  9 | CL:4033020 | mucus secreting cell of trachea gland                   | mucus secreting cell of trachea gland                   | CL:0002202 | epithelial cell of tracheobronchial tree | epithelial cell of tracheobronchial tree | [22](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=22:22) |       nan |
-| 12 | CL:4033025 | perichondrial fibroblast                                | perichondrial fibroblast                                | CL:0002553 | fibroblast of lung                       | fibroblast of lung                       | [28](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=28:28) |       nan |
-| 16 | CL:4033008 | vein endothelial cell of respiratory system             | vein endothelial cell of respiratory system             | CL:1001567 | lung endothelial cell                    | lung endothelial cell                    | [29](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=29:29) |       nan |
-| 22 | CL:1000413 | endothelial cell of artery                              | endothelial cell of artery                              | CL:1001567 | lung endothelial cell                    | lung endothelial cell                    | [31](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=31:31) |       nan |
+| 12 | CL:1000330 | serous cell of epithelium of trachea                    | serous cell of epithelium of trachea                    | CL:0002202 | epithelial cell of tracheobronchial tree | epithelial cell of tracheobronchial tree | [18](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=18:18) |       nan |
+| 13 | CL:4033023 | airway submucosal gland collecting duct epithelial cell | airway submucosal gland collecting duct epithelial cell | CL:0002202 | epithelial cell of tracheobronchial tree | epithelial cell of tracheobronchial tree | [19](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=19:19) |       nan |
+| 14 | CL:4033024 | airway submucosal gland duct basal cell                 | airway submucosal gland duct basal cell                 | CL:0002202 | epithelial cell of tracheobronchial tree | epithelial cell of tracheobronchial tree | [21](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=21:21) |       nan |
+| 15 | CL:4033020 | mucus secreting cell of trachea gland                   | mucus secreting cell of trachea gland                   | CL:0002202 | epithelial cell of tracheobronchial tree | epithelial cell of tracheobronchial tree | [22](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=22:22) |       nan |
+| 18 | CL:4033025 | perichondrial fibroblast                                | perichondrial fibroblast                                | CL:0002553 | fibroblast of lung                       | fibroblast of lung                       | [28](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=28:28) |       nan |
+| 21 | CL:4033008 | vein endothelial cell of respiratory system             | vein endothelial cell of respiratory system             | CL:1001567 | lung endothelial cell                    | lung endothelial cell                    | [29](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=29:29) |       nan |
+| 25 | CL:1000413 | endothelial cell of artery                              | endothelial cell of artery                              | CL:1001567 | lung endothelial cell                    | lung endothelial cell                    | [31](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=31:31) |       nan |
 
 
 

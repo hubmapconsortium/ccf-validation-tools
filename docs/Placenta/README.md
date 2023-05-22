@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Placenta (2023-05-15)
+ASCT+B Validation Reports for Placenta (2023-05-22)
 ===================================================
 
 Table of contents
@@ -51,17 +51,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, the term _[CL:2000062](http://purl.obolibrary.org/obo/CL_2000062)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _placental villous capillary endothelial cell_ and the one in the **ontology** is _placental villus capillary endothelial cell_. For reference, the given name/label **by SMEs** is _placental microvascular endothelial cells_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)_, the term _[CL:0000525](http://purl.obolibrary.org/obo/CL_0000525)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _syncytiotrophoblast_ and the one in the **ontology** is _syncytiotrophoblast cell_. For reference, the given name/label **by SMEs** is _syncytiotrophoblast (STB)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25)_, the term _[CL:0000523](http://purl.obolibrary.org/obo/CL_0000523)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _cytotrophoblast_ and the one in the **ontology** is _mononuclear cytotrophoblast cell_. For reference, the given name/label **by SMEs** is _cytotrophoblast (CTB)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[34](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=34:34)_, the term _[CL:2000091](http://purl.obolibrary.org/obo/CL_2000091)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _endometrial microvascular endothelial cells_ and the one in the **ontology** is _endometrial microvascular endothelial cell_. For reference, the given name/label **by SMEs** is _endometrial microvascular endothelial cell (EMEC)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[20](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=20:20)_, the term _[UBERON:0003254](http://purl.obolibrary.org/obo/UBERON_0003254)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _amnion epithelium_ and the one in the **ontology** is _amniotic ectoderm_. For reference, the given name/label **by SMEs** is _amniotic ectoderm_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[13](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=13:13)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _pericytes_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
@@ -73,25 +63,17 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[19](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=19:19)_, no term id was found for the name/label _basal plate_.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=21:21)_, no term id was found for the name/label _amnion mesenchymal stromal cell (AMSC)_.
-
 1. In row _[22](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=22:22)_, no term id was found for the name/label _placental disc_.
 
 1. In row _[23](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=23:23)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[23](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=23:23)_, no term id was found for the name/label _amnion mesenchymal stromal cell (AMSC)_.
-
 1. In row _[24](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=24:24)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[24](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=24:24)_, no term id was found for the name/label _chorionic mesenchymal stromal cell (CMSC)_.
 
 1. In row _[25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25)_, no term id was found for the name/label _fetal membranes_.
 
 1. In row _[26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26)_, no term id was found for the name/label _fetal membranes_.
 
 1. In row _[27](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=27:27)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=27:27)_, no term id was found for the name/label _endometrial epithelial cell_.
 
 1. In row _[28](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=28:28)_, no term id was found for the name/label _fetal membranes_.
 
@@ -120,8 +102,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[37](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=37:37)_, no term id was found for the name/label _fetal membranes_.
 
 1. In row _[38](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=38:38)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[38](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=38:38)_, no term id was found for the name/label _amnion mesenchymal stromal cell (AMSC)_.
 
 1. In row _[39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39)_, no term id was found for the name/label _placental disc_.
 
@@ -180,8 +160,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, no term id was found for the name/label _placental disc_.
 
 1. In row _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, no term id was found for the name/label _basal plate_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, no term id was found for the name/label _endometrial epithelial cell_.
 
 1. In row _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, no term id was found for the name/label _placental disc_.
 
@@ -279,14 +257,14 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                   | user_slabel                                | o              | olabel           | user_olabel       | row_number                                                                                                               |    deltaIC |
 |----|----------------|--------------------------|--------------------------------------------|----------------|------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------|------------|
-|  7 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0004027 | chorionic plate  | chorionic plate   | [39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39) |  13.956    |
-|  8 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0004027 | chorionic plate  | chorionic plate   | [41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41) |  13.956    |
-|  9 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0007106 | chorionic villus | chorionic villous | [45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45) |  13.956    |
-| 10 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0007106 | chorionic villus | chorionic villous | [46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46) |  13.956    |
-| 11 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0007106 | chorionic villus | chorionic villous | [47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47) |  13.956    |
-| 12 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0004027 | chorionic plate  | chorionic plate   | [40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40) |  13.956    |
-| 23 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorion membrane) | UBERON:0003124 | chorion membrane | chorion membrane  | [26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26) |   0.560118 |
-| 24 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorion membrane) | UBERON:0003124 | chorion membrane | chorion membrane  | [25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25) |   0.560118 |
+|  7 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0004027 | chorionic plate  | chorionic plate   | [39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39) |  13.9557   |
+|  8 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0004027 | chorionic plate  | chorionic plate   | [41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41) |  13.9557   |
+|  9 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0007106 | chorionic villus | chorionic villous | [45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45) |  13.9557   |
+| 10 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0007106 | chorionic villus | chorionic villous | [46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46) |  13.9557   |
+| 11 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0007106 | chorionic villus | chorionic villous | [47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47) |  13.9557   |
+| 12 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0004027 | chorionic plate  | chorionic plate   | [40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40) |  13.9557   |
+| 23 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorion membrane) | UBERON:0003124 | chorion membrane | chorion membrane  | [26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26) |   0.463406 |
+| 24 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorion membrane) | UBERON:0003124 | chorion membrane | chorion membrane  | [25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25) |   0.463406 |
 | 25 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [12](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=12:12) | nan        |
 | 26 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [13](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=13:13) | nan        |
 | 27 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [14](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=14:14) | nan        |
