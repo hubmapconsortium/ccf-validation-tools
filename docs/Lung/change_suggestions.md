@@ -38,9 +38,11 @@ It is missing a connected to relationship
 
 **8 - bronchial artery --> respiratory system arterial endothelium**
 
+It needs a 'has part' relationship.
 
 **9 - bronchial artery --> respiratory system arterial smooth muscle**
 
+It needs a 'has part' relationship.
 
 **10 - trachea blood vessel --> bronchial vein**
 
@@ -71,11 +73,11 @@ It needs a 'has part' relationship.
 
 **18 - lobar bronchus --> bronchus connective tissue**
 
-It needs a 'has part' relationship.
+There is a `lobar bronchus connective tissue` UBERON:0003591.
 
 **19 - pulmonary artery --> respiratory system arterial endothelium**
 
-It needs a 'has part' relationship.
+There is a `pulmonary artery endothelium` UBERON:0005317.
 
 **20 - pulmonary artery --> respiratory system arterial smooth muscle**
 
@@ -149,7 +151,7 @@ We are still working for a solution for the immune system, but pulmonary acinus 
 
 **38 - Lobe of Lung --> pulmonary nerve plexus**
 
-It `innervates` `respiratory system` (UBERON:3010524) or `bronchial tube` (UBERON:3010524), but not `lobe of lung`. However, `innervates` does not validate.
+It `innervates` `respiratory system` (UBERON:3010524) or `bronchial tube` (UBERON:3010524), but not `lobe of lung`. However, `innervates` does not validate. Pending to see if innervates can validate.
 
 **39 - Lobe of Lung --> pulmonary capillary plexus**
 
@@ -174,7 +176,7 @@ This can be solved if `airway submucosal gland duct basal cell` is in CT1, and w
 
 **2 - epithelial cell of tracheobronchial tree --> serous cell of epithelium of bronchus**
 
-`tracheobronchial serous cell` should be an 'epithelial cell', but is is not. Once this is resolved, `serous cell of epithelium of bronchus` will be inferred as an `epithelial cell of tracheobronchial tree`.
+`tracheobronchial serous cell` should be an 'epithelial cell', but it is not. Once this is resolved, `serous cell of epithelium of bronchus` will be inferred as an `epithelial cell of tracheobronchial tree`.
 
 **3 - epithelial cell of tracheobronchial tree --> airway submucosal gland collecting duct epithelial cell**
 
@@ -194,7 +196,7 @@ After [some disccussion wish Joshua](https://github.com/obophenotype/cell-ontolo
 
 **7 - epithelial cell of tracheobronchial tree --> lung goblet cell**
 
-`lung goblet cell` is an `epithelial cell of lung`.
+Change to `tracheobronchial goblet cell`.
 
 **8 - epithelial cell of lung --> lung ciliated cell**
 
@@ -202,7 +204,7 @@ Not all ciliated cells are epithelial cells. In the lung, are all ciliated cells
 
 **9 - lung endothelial cell --> vein endothelial cell of respiratory system**
 
-The respiratory system is too broad, best solution is to add a new term (vein endothelial cell pf lung).
+The respiratory system is too broad, best solution is to add a new term (vein endothelial cell of lung).
 
 **10 - lung endothelial cell --> endothelial cell of respiratory system lymphatic vessel**
 
@@ -210,7 +212,7 @@ The respiratory system is more general than lung, probably creating a new term i
 
 **11 - connective tissue cell --> myofibroblast cell**
 
-A `myofibroblast cell` is primarily found in connective tissue, but not exclusively, and therefore it can't be a `connective tissue cell`. If `secondary crest myofibroblast` is moved to CT1, it will solved this validation and the `lung connective tissue` --> `connective tissue cell` validation.
+A `myofibroblast cell` might be `connective tissue cell`. It needs further study.
 
 **12 - myeloid dendritic cell --> plasmacytoid dendritic cell**
 
@@ -287,7 +289,7 @@ It needs a 'has part' relationship.
 
 **14 - respiratory system venous endothelium --> adult endothelial progenitor cell**
 
-The textual definition of a `respiratory system venous endothelium` is the following:
+The textual definition of a `adult endothelial progenitor cell` is the following:
 > An adult angioblastic cell released from the bone marrow, or from the kidney in some teleost species, capable of blood circulation and participation in angiogenesis by differentiating into blood vessel endothelial cells.
 
 Is this cell type meant to be resident or circulating? In case it is a resident type, it would need a new term. In case it is circulating, we will need a similar soultion as immune cells.
