@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Spinal_Cord (2023-05-22)
+ASCT+B Validation Reports for Spinal_Cord (2023-05-24)
 ======================================================
 
 Table of contents
@@ -51,9 +51,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[24](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=24:24)_, the term _[CL:0000129](http://purl.obolibrary.org/obo/CL_0000129)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Microglia_ and the one in the **ontology** is _microglial cell_. For reference, the given name/label **by SMEs** is _Microglia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[94](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=94:94)_, the term _[CL:0000100](http://purl.obolibrary.org/obo/CL_0000100)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Motoneuron_ and the one in the **ontology** is _motor neuron_. For reference, the given name/label **by SMEs** is _Motoneuron_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[24](https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891&range=24:24)_, the term _[CL:0000129](http://purl.obolibrary.org/obo/CL_0000129)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Microglia_ and the one in the **ontology** is _microglial cell_. For reference, the given name/label **by SMEs** is _Microglia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

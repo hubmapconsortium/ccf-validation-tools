@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Trachea (2023-05-22)
+ASCT+B Validation Reports for Trachea (2023-05-24)
 ==================================================
 
 Table of contents
@@ -31,11 +31,11 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. UBERON:8600013
-
 1. UBERON:8600011
 
 1. UBERON:8600012
+
+1. UBERON:8600013
 
 
 ## Typos or punctuation mistakes
@@ -119,12 +119,12 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                                    | user_slabel                             | o              | olabel               | user_olabel          | row_number                                                                                                       |    deltaIC |
 |----|----------------|-------------------------------------------|-----------------------------------------|----------------|----------------------|----------------------|------------------------------------------------------------------------------------------------------------------|------------|
-|  4 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [18](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=18:18) |   0.884513 |
-|  5 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [19](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=19:19) |   0.884513 |
-|  6 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [20](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=20:20) |   0.884513 |
-|  7 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [21](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=21:21) |   0.884513 |
-|  8 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [22](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=22:22) |   0.884513 |
-|  9 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [23](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=23:23) |   0.884513 |
+|  4 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [18](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=18:18) |   0.884511 |
+|  5 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [19](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=19:19) |   0.884511 |
+|  6 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [20](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=20:20) |   0.884511 |
+|  7 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [21](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=21:21) |   0.884511 |
+|  8 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [22](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=22:22) |   0.884511 |
+|  9 | UBERON:0005203 | trachea gland                             | tracheal submucosal gland               | UBERON:0002202 | submucosa of trachea | submucosa of trachea | [23](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=23:23) |   0.884511 |
 | 20 | UBERON:0004849 | respiratory system venous endothelium     | respiratory system venous endothelium   | UBERON:0001592 | bronchial vein       | bronchial vein       | [29](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=29:29) | nan        |
 | 23 | UBERON:0012418 | respiratory system venous smooth muscle   | venous system smooth muscle             | UBERON:0001592 | bronchial vein       | bronchial vein       | [30](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=30:30) | nan        |
 | 24 | UBERON:0004848 | respiratory system arterial endothelium   | respiratory system arterial endothelium | UBERON:0002040 | bronchial artery     | bronchial artery     | [31](https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0&range=31:31) | nan        |

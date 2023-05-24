@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2023-05-22)
+ASCT+B Validation Reports for Main_Bronchus (2023-05-24)
 ========================================================
 
 Table of contents
@@ -31,13 +31,13 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. CL:4033044
+1. UBERON:8600013
 
 1. UBERON:8600012
 
-1. UBERON:8600010
+1. CL:4033044
 
-1. UBERON:8600013
+1. UBERON:8600010
 
 1. CL:4033048
 
@@ -123,24 +123,24 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                                    | user_slabel                             | o              | olabel           | user_olabel             | row_number                                                                                                       |   deltaIC |
 |----|----------------|-------------------------------------------|-----------------------------------------|----------------|------------------|-------------------------|------------------------------------------------------------------------------------------------------------------|-----------|
-|  3 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [24](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=24:24) |   4.18155 |
-|  4 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [30](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=30:30) |   4.18155 |
-|  5 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [29](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=29:29) |   4.18155 |
-|  6 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [28](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=28:28) |   4.18155 |
-|  7 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [27](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=27:27) |   4.18155 |
-|  8 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [26](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=26:26) |   4.18155 |
-|  9 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [25](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=25:25) |   4.18155 |
-| 10 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [13](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=13:13) |   4.18155 |
-| 11 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [14](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=14:14) |   4.18155 |
-| 12 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [22](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=22:22) |   4.18155 |
-| 13 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [21](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=21:21) |   4.18155 |
-| 14 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [20](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=20:20) |   4.18155 |
-| 15 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [19](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=19:19) |   4.18155 |
-| 16 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [18](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=18:18) |   4.18155 |
-| 17 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [17](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=17:17) |   4.18155 |
-| 18 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [16](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=16:16) |   4.18155 |
-| 19 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [15](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=15:15) |   4.18155 |
-| 20 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [23](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=23:23) |   4.18155 |
+|  3 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [24](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=24:24) |   4.18154 |
+|  4 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [30](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=30:30) |   4.18154 |
+|  5 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [29](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=29:29) |   4.18154 |
+|  6 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [28](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=28:28) |   4.18154 |
+|  7 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [27](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=27:27) |   4.18154 |
+|  8 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [26](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=26:26) |   4.18154 |
+|  9 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [25](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=25:25) |   4.18154 |
+| 10 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [13](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=13:13) |   4.18154 |
+| 11 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [14](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=14:14) |   4.18154 |
+| 12 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [22](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=22:22) |   4.18154 |
+| 13 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [21](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=21:21) |   4.18154 |
+| 14 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [20](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=20:20) |   4.18154 |
+| 15 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [19](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=19:19) |   4.18154 |
+| 16 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [18](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=18:18) |   4.18154 |
+| 17 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [17](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=17:17) |   4.18154 |
+| 18 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [16](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=16:16) |   4.18154 |
+| 19 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [15](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=15:15) |   4.18154 |
+| 20 | UBERON:0035767 | intrapulmonary bronchus                   | intrapulmonary bronchus                 | UBERON:0002182 | main bronchus    | extrapulmonary bronchus | [23](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=23:23) |   4.18154 |
 | 21 | UBERON:0004242 | bronchus smooth muscle                    | bronchial smooth muscle                 | UBERON:0002183 | lobar bronchus   | lobar bronchus          | [14](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=14:14) | nan       |
 | 23 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002183 | lobar bronchus   | lobar bronchus          | [15](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=15:15) | nan       |
 | 24 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002183 | lobar bronchus   | lobar bronchus          | [16](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=16:16) | nan       |

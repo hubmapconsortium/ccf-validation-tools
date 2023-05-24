@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Muscular_System (2023-05-22)
+ASCT+B Validation Reports for Muscular_System (2023-05-24)
 ==========================================================
 
 Table of contents
@@ -1058,12 +1058,12 @@ This table contains terms for anatomical structures that are related to each oth
 |  33 | [177](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=177:177) | UBERON:0001482 | muscle of shoulder         | shoulder muscle           | UBERON:0002426 | chest muscle      | chest muscle   |  15.4695  |
 |  34 | [178](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=178:178) | UBERON:0001482 | muscle of shoulder         | shoulder muscle           | UBERON:0002426 | chest muscle      | chest muscle   |  15.4695  |
 |  35 | [176](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=176:176) | UBERON:0001482 | muscle of shoulder         | shoulder muscle           | UBERON:0002426 | chest muscle      | chest muscle   |  15.4695  |
-|  36 | [172](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=172:172) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90091 |
-|  37 | [170](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=170:170) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90091 |
-|  38 | [175](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=175:175) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90091 |
-|  39 | [174](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=174:174) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90091 |
-|  40 | [171](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=171:171) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90091 |
-|  41 | [173](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=173:173) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90091 |
+|  36 | [172](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=172:172) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90089 |
+|  37 | [170](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=170:170) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90089 |
+|  38 | [175](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=175:175) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90089 |
+|  39 | [174](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=174:174) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90089 |
+|  40 | [171](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=171:171) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90089 |
+|  41 | [173](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=173:173) | UBERON:0001495 | pectoral muscle            | pectoral muscle           | UBERON:0002426 | chest muscle      | chest muscle   |   8.90089 |
 |  42 | [109](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=109:109) | UBERON:0001482 | muscle of shoulder         | shoulder muscle           | UBERON:0001499 | muscle of arm     | arm muscle     |   1.83476 |
 |  43 | [108](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=108:108) | UBERON:0001482 | muscle of shoulder         | shoulder muscle           | UBERON:0001499 | muscle of arm     | arm muscle     |   1.83476 |
 |  44 | [110](https://docs.google.com/spreadsheets/d/1UDKjTuDa18kydtOLZr_amdihGWvKs5xzwQ9W_oco3U8/edit#gid=0&range=110:110) | UBERON:0001482 | muscle of shoulder         | shoulder muscle           | UBERON:0001499 | muscle of arm     | arm muscle     |   1.83476 |

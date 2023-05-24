@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_vasculature (2023-05-22)
+ASCT+B Validation Reports for Lymph_vasculature (2023-05-24)
 ============================================================
 
 Table of contents
@@ -420,7 +420,7 @@ This table contains terms for anatomical structures that are related to each oth
 | 13 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8686  |
 | 14 | [31](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=31:31) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8686  |
 | 15 | [30](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=30:30) | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | UBERON:0016386 | paraaortic lymph node     | paraaortic lymph node     |  11.8686  |
-| 27 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | UBERON:0001543 | popliteal lymph node      | popliteal lymph node      | UBERON:0009006 | deep inguinal lymph node  | deep inguinal lymph node  |   6.06952 |
+| 27 | [33](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=33:33) | UBERON:0001543 | popliteal lymph node      | popliteal lymph node      | UBERON:0009006 | deep inguinal lymph node  | deep inguinal lymph node  |   6.06951 |
 | 29 | [31](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=31:31) | UBERON:0015880 | external iliac lymph node | external iliac lymph node | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | nan       |
 | 30 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | UBERON:0015880 | external iliac lymph node | external iliac lymph node | UBERON:0015878 | common iliac lymph node   | common iliac lymph node   | nan       |
 | 31 | [32](https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463&range=32:32) | UBERON:0009006 | deep inguinal lymph node  | deep inguinal lymph node  | UBERON:0015880 | external iliac lymph node | external iliac lymph node | nan       |

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Liver (2023-05-22)
+ASCT+B Validation Reports for Liver (2023-05-24)
 ================================================
 
 Table of contents
@@ -53,17 +53,17 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
   
 1. In row _[38](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=38:38)_, the term _[CL:0000798](http://purl.obolibrary.org/obo/CL_0000798)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _gamma delta T cell_ and the one in the **ontology** is _gamma-delta T cell_. For reference, the given name/label **by SMEs** is _gamma delta T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=24:24)_, the term _[CL:0000526](http://purl.obolibrary.org/obo/CL_0000526)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _afferent neuron cell_ and the one in the **ontology** is _afferent neuron_. For reference, the given name/label **by SMEs** is _neuron cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[39](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=39:39)_, the term _[CL:0001203](http://purl.obolibrary.org/obo/CL_0001203)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD8 positiver alpha beta memory T cell CD45RO +_ and the one in the **ontology** is _CD8-positive, alpha-beta memory T cell, CD45RO-positive_. For reference, the given name/label **by SMEs** is _CD8+ Liver-Resident Memory T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
+1. In row _[24](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=24:24)_, the term _[CL:0000526](http://purl.obolibrary.org/obo/CL_0000526)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _afferent neuron cell_ and the one in the **ontology** is _afferent neuron_. For reference, the given name/label **by SMEs** is _neuron cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
 1. In row _[30](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=30:30)_, the term _[CL:0002138](http://purl.obolibrary.org/obo/CL_0002138)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _endothelial cell of lymphatic vessel_. For reference, the given name/label **by SMEs** is _hepatic lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[32](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=32:32)_, the term _[CL:0001056](http://purl.obolibrary.org/obo/CL_0001056)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _human Dendritic cell_ and the one in the **ontology** is _dendritic cell, human_. For reference, the given name/label **by SMEs** is _conventional Dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[34](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=34:34)_, the term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD1c+ myeloid dendritic cell_ and the one in the **ontology** is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label **by SMEs** is _Conventional DC 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[37](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=37:37)_, the term _[CL:0000624](http://purl.obolibrary.org/obo/CL_0000624)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD4 positive alpha beta_ and the one in the **ontology** is _CD4-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD4+T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[32](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=32:32)_, the term _[CL:0001056](http://purl.obolibrary.org/obo/CL_0001056)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _human Dendritic cell_ and the one in the **ontology** is _dendritic cell, human_. For reference, the given name/label **by SMEs** is _conventional Dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -165,9 +165,9 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel              | user_slabel        | o              | olabel       | user_olabel        | row_number                                                                                                                |   deltaIC |
 |----|----------------|---------------------|--------------------|----------------|--------------|--------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | UBERON:0002384 | connective tissue   | connective tissue  | UBERON:0016478 | liver stroma | stroma             | [31](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=31:31) |  52.8733  |
+|  0 | UBERON:0002384 | connective tissue   | connective tissue  | UBERON:0016478 | liver stroma | stroma             | [31](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=31:31) |  52.8747  |
 |  3 | UBERON:0005169 | interstitial tissue | interstitial       | UBERON:0001279 | portal triad | portal triad/tract | [27](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=27:27) |  14.2057  |
-|  5 | UBERON:0002017 | portal vein         | portal vein        | UBERON:0001279 | portal triad | portal triad/tract | [23](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=23:23) |   7.92397 |
+|  5 | UBERON:0002017 | portal vein         | portal vein        | UBERON:0001279 | portal triad | portal triad/tract | [23](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=23:23) |   7.92396 |
 | 13 | UBERON:0005452 | hepatic cord        | hepatic plate      | UBERON:0004647 | liver lobule | hepatic Lobule     | [16](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=16:16) | nan       |
 | 14 | UBERON:0005452 | hepatic cord        | hepatic plate      | UBERON:0004647 | liver lobule | hepatic Lobule     | [17](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=17:17) | nan       |
 | 16 | UBERON:0005452 | hepatic cord        | hepatic plate      | UBERON:0004647 | liver lobule | hepatic Lobule     | [18](https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397&range=18:18) | nan       |
