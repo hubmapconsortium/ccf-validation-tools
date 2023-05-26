@@ -10,160 +10,94 @@ Please, add a comment below if you want to address any of the actions to be take
 
 ## AS-AS
 
-**1 - Lobe of Lung --> immune system**
-
-
-**2 - Secondary Pulmonary Lobule --> terminal bronchiole**
+**1 - Secondary Pulmonary Lobule --> terminal bronchiole**
 
 `secondary pulmonary lobule` should have a `'has part' some 'terminal bronchiole'` PMID:3259815
 
-**3 - carina of trachea --> trachea cartilage**
+**2 - subsegmental bronchus --> cartilage of bronchus**
 
-The relationship in Uberon is on the opposite direction, needs further revision.
+It needs a 'has part' relationship.
 
-**4 - pulmonary alveolar duct --> alveolus of lung**
+**3 - pulmonary alveolar duct --> alveolus of lung**
 
 This relationship is difficult to validate, because single alveolus can be found as scattered outpockets of the respiratory bronchiole. I would recommend to have the `alveolus of lung` in the next column of `pulmonary acinus`. [See issue 286](https://github.com/obophenotype/uberon/issues/2864)
 
-**5 - Main Bronchus --> Intrapulmonary Bronchus**
+**4 - subsegmental bronchus --> lobar bronchus mesenchyme**
 
-It is missing a connected to relationship
+It needs a new term (either general `bronchus mesenchyme` and add 'has part' axiom, or `subsegmental bronchus mesenchyme`).
 
-**6 - pulmonary alveolar duct --> pulmonary alveolar parenchyma**
+**5 - subsegmental bronchus --> bronchus smooth muscle**
+
+It needs a 'has part' relationship.
+
+**6 - lung --> immune system**
+
+No actions for now.
+
+**7 - epithelium of segmental bronchus --> bronchus submucosal gland**
+
+The `bronchus submucosal gland` are not part of an epithelium. I can add a `'has part' some 'bronchus sumucosal gland'` to `segmental bronchus`, and this term replaces `epithelium of segmental bronchus`.
+
+**8 - pulmonary alveolar duct --> pulmonary alveolar parenchyma**
 
 `pulmonary alveolar parenchyma` is `parenchyma and (part of some alveolus of lung)`. Therefore, mapping to `alveolus of lung` instead of `pulmonary alveolar duct` will validate.
 
-**7 - trachea blood vessel --> bronchial artery**
+**9 - Tracheobronchial tree --> pulmonary nerve plexus**
 
+It should have a `part of`.
 
-**8 - bronchial artery --> respiratory system arterial endothelium**
-
-It needs a 'has part' relationship.
-
-**9 - bronchial artery --> respiratory system arterial smooth muscle**
+**10 - lobar bronchus --> bronchus submucosal gland**
 
 It needs a 'has part' relationship.
 
-**10 - trachea blood vessel --> bronchial vein**
-
-
-**11 - bronchial vein --> respiratory system venous endothelium**
-
-
-**12 - bronchial vein --> respiratory system venous smooth muscle**
-
-
-**13 - lobar bronchus --> bronchus smooth muscle**
-
-It needs a 'has part' relationship.
-
-**14 - lobar bronchus --> cartilage of main bronchus**
-
-It needs a 'has part' relationship.
-
-**15 - lobar bronchus vasculature --> bronchial artery**
-
-
-**16 - lobar bronchus vasculature --> bronchial vein**
-
-
-**17 - lobar bronchus --> bronchus submucosal gland**
-
-It needs a 'has part' relationship.
-
-**18 - lobar bronchus --> bronchus connective tissue**
+**11 - lobar bronchus --> bronchus connective tissue**
 
 There is a `lobar bronchus connective tissue` UBERON:0003591.
 
-**19 - pulmonary artery --> respiratory system arterial endothelium**
-
-There is a `pulmonary artery endothelium` UBERON:0005317.
-
-**20 - pulmonary artery --> respiratory system arterial smooth muscle**
+**12 - lobar bronchus --> bronchus smooth muscle**
 
 It needs a 'has part' relationship.
 
-**21 - pulmonary vein --> respiratory system venous endothelium**
+**13 - lobar bronchus --> cartilage of bronchus**
 
 It needs a 'has part' relationship.
 
-**22 - pulmonary vein --> respiratory system venous smooth muscle**
+**14 - Segmental Bronchus --> bronchus smooth muscle**
 
 It needs a 'has part' relationship.
 
-**23 - lobar bronchus --> bronchial submucosal gland**
+**25 - Segmental Bronchus --> cartilage of bronchus**
 
-Change name to `bronchus submucosal gland` in V13-V18 and then same as number 17.
+I can add for both structures a `'has part' some 'cartilage of bronchus'` axiom (UBERON:0001956) (also for subsegmental bronchus).
 
-**24 - Segmental Bronchus --> bronchus smooth muscle**
-
-It needs a 'has part' relationship.
-
-**25 - Segmental Bronchus --> lobar bronchus mesenchyme**
+**16 - Segmental Bronchus --> lobar bronchus mesenchyme**
 
 This can't validate, as the `lobar bronchus masenchyme` should map to `lobar bronchus` only. This problem will also occur for `subsegmental bronchus` once Ubergraph gets the new release. I can add for both structures a `'has part' some 'lung mesenchyme'` axiom (UBERON:0004883) and that terms substitutes `lobar bronchus mesenchyme`.
 
-**26 - Segmental Bronchus --> cartilage of main bronchus**
+**17 - subsegmental bronchus --> epithelium of segmental bronchus**
 
-This can't validate, as the `cartilage of main bronchus` should map to `main bronchus` only. This problem will also occur for `subsegmental bronchus` once Ubergraph gets the new release. I can add for both structures a `'has part' some 'cartilage of bronchus'` axiom (UBERON:0001956) and that terms substitutes `cartilage of main bronchus`.
+The correct term would be `epithelium of bronchus` (UBERON:0002031). It needs a `has part` axiom. However, in this case a new term might be beneficial.
 
-**27 - Segmental Bronchus --> lobar bronchus vasculature**
+**18 - subsegmental bronchus --> primary bronchiole**
 
-This can't validate, as the `lobar bronchus vasculature` should map to `lobar bronchus` only. I can add a relationship with `lung vasculature` (UBERON:0000102) and that terms substitutes `lobar bronchus vasculature`.
+Primary bronchiole needs to be edited. This is tricky, because according of some literature, there is a ssub-subsegmental bronchus, and therefore any axiom would be not true.
 
-**28 - lobar bronchus vasculature' --> respiratory system arterial endothelium**
-
-It needs a 'has part' relationship.
-
-**29 - lobar bronchus vasculature' --> respiratory system arterial smooth muscle**
-
-It needs a 'has part' relationship.
-
-**30 - Segmental Bronchus --> lobar bronchus vasculature'**
-
-It is the same as 27, however the name is not correct (it has an apostrophe at the end). These are cells V131, V132, Z135 and Z136.
-
-**31 - lobar bronchus vasculature --> respiratory system venous endothelium**
-
-It needs a 'has part' relationship.
-
-**32 - lobar bronchus vasculature --> respiratory system venous smooth muscle**
-
-It needs a 'has part' relationship.
-
-**33 - lobar bronchus --> Segmental Pulmonary Artery**
-
-
-**34 - Segmental Pulmonary Artery --> wall of pulmonary artery**
-
-
-**35 - respiratory bronchiole --> pulmonary alveolar duct**
+**19 - respiratory bronchiole --> pulmonary alveolar duct**
 
 There should be a `connected to` relationship.
 
-**36 - pulmonary lymphatic vessel --> respiratory system lymphatic vessel endothelium**
+**20 - pulmonary alveolar parenchyma --> pulmonary capillary**
+
+Not sure of the expected relationship expected.
+
+**21 - pulmonary lymphatic vessel --> respiratory system lymphatic vessel endothelium**
 
 It needs a 'has part' relationship.
 
-**37 - immune system --> Pulmonary Acinus**
+**22 - immune system --> Pulmonary Acinus**
 
-We are still working for a solution for the immune system, but pulmonary acinus (and all child terms) are not part of the immune system. I would recommend to delete it.
+We are still working for a solution for the immune system, but pulmonary acinus (and all child terms) are not part of the immune system. I would recommend to delete it or 'immune system' as last AS column.
 
-**38 - Lobe of Lung --> pulmonary nerve plexus**
-
-It `innervates` `respiratory system` (UBERON:3010524) or `bronchial tube` (UBERON:3010524), but not `lobe of lung`. However, `innervates` does not validate. Pending to see if innervates can validate.
-
-**39 - Lobe of Lung --> pulmonary capillary plexus**
-
-'part of' some 'pulmonary vascular system', which lacks relationship with respiratory system, and it needs to be added.
-
-**40 - Lobe of Lung --> lung mesenchyme**
-
-It needs a 'has part' relationship.
-
-**41 - Lobe of Lung --> lung connective tissue**
-
-It needs a 'has part' relationship.
 
 
 ## CT-CT
@@ -188,7 +122,7 @@ Same approach as CT-CT1.
 
 **5 - pulmonary interstitial fibroblast --> tracheobronchial chondrocyte**
 
-The ID used is wrong. CL:0019002 is tracheobronchial condrocyte. `lung perichondrial fibroblast` is CL:4033026 (Cell DN21).
+The ID used is wrong. CL:0019002 is tracheobronchial condrocyte. `lung perichondrial fibroblast` is CL:4033026.
 
 **6 - epithelial cell of lung --> club cell**
 
@@ -200,7 +134,7 @@ Change to `tracheobronchial goblet cell`.
 
 **8 - epithelial cell of lung --> lung ciliated cell**
 
-Not all ciliated cells are epithelial cells. In the lung, are all ciliated cells also epithelial cells? If yes, the axiom can be included.
+Not all ciliated cells are epithelial cells. In the lung, are all ciliated cells also epithelial cells? Yes, axiom needs to be included with reference.
 
 **9 - lung endothelial cell --> vein endothelial cell of respiratory system**
 
@@ -212,7 +146,7 @@ The respiratory system is more general than lung, probably creating a new term i
 
 **11 - connective tissue cell --> myofibroblast cell**
 
-A `myofibroblast cell` might be `connective tissue cell`. It needs further study.
+A `myofibroblast cell` is a  `connective tissue cell`. STATUS: [DONE](https://github.com/obophenotype/cell-ontology/issues/1991)
 
 **12 - myeloid dendritic cell --> plasmacytoid dendritic cell**
 
@@ -223,13 +157,6 @@ This relationship is tricky, as it is not clear if `plasmacytoid dendritic cell`
 
 `myeloid leukocyte` should be substituted for `myeloid cell`(CL:0000763).
 
-**14 - lung endothelial cell --> vein endothelial cell of respiratory system**
-
-The respiratory system is more general than lung, probably creating a new term is the best solution (pulmonary vein endothelial cell).
-
-**15 - lung endothelial cell --> endothelial cell of artery**
-
-`pulmonary artery endothelial cell` CL:1001568 is more adequate. `pulmonary vascular system` has to be fixed still, as it doesn't show a relationship with lung.
 
 
 
@@ -279,114 +206,94 @@ It needs a 'has part' relationship.
 
 It needs a 'has part' relationship.
 
-**12 - wall of pulmonary artery --> smooth muscle cell of the pulmonary artery**
+**12 - bronchus smooth muscle --> bronchial smooth muscle cell**
 
 It needs a 'has part' relationship.
 
-**13 - bronchus smooth muscle --> bronchial smooth muscle cell**
+**13 - respiratory system venous endothelium --> adult endothelial progenitor cell**
 
-It needs a 'has part' relationship.
-
-**14 - respiratory system venous endothelium --> adult endothelial progenitor cell**
-
-The textual definition of a `adult endothelial progenitor cell` is the following:
+The textual definition of an `adult endothelial progenitor cell` is the following:
 > An adult angioblastic cell released from the bone marrow, or from the kidney in some teleost species, capable of blood circulation and participation in angiogenesis by differentiating into blood vessel endothelial cells.
 
 Is this cell type meant to be resident or circulating? In case it is a resident type, it would need a new term. In case it is circulating, we will need a similar soultion as immune cells.
 
-**15 - respiratory system lymphatic vessel endothelium --> endothelial cell of respiratory system lymphatic vessel**
+**14 - respiratory system lymphatic vessel endothelium --> endothelial cell of respiratory system lymphatic vessel**
 
 It is missing a `part of` relationship.
 
-**16 - pulmonary alveolar parenchyma --> lung pericyte**
+**15- pulmonary alveolar parenchyma --> lung pericyte**
 
 It needs a 'has part' relationship.
 
-**17 - pulmonary nerve plexus --> sympathetic neuron**
+**16 - pulmonary nerve plexus --> sympathetic neuron**
 
 It needs a 'has part' relationship.
 
-**18 - epithelium of segmental bronchus --> pulmonary ionocyte**
+**17 - epithelium of segmental bronchus --> pulmonary ionocyte**
 
 It needs a 'has part' relationship.
 
-**19 - epithelium of lobar bronchus --> pulmonary ionocyte**
+**18 - epithelium of lobar bronchus --> pulmonary ionocyte**
 
 It needs a 'has part' relationship.
 
-**20 - cartilage of bronchus --> tracheobronchial chondrocyte**
+**19 - cartilage of bronchus --> tracheobronchial chondrocyte**
 
 It needs a 'has part' relationship.
 
-**21 - respiratory system arterial smooth muscle --> blood vessel smooth muscle cell**
+**20 - lobar bronchus mesenchyme --> tracheobronchial smooth muscle cell**
 
 It needs a 'has part' relationship.
 
-**22 - respiratory system venous smooth muscle --> blood vessel smooth muscle cell**
+**21 - epithelium of segmental bronchus --> lung goblet cell**
 
 It needs a 'has part' relationship.
 
-**23 - lobar bronchus mesenchyme --> tracheobronchial smooth muscle cell**
-
-It needs a 'has part' relationship.
-
-**24 - epithelium of segmental bronchus --> lung goblet cell**
-
-It needs a 'has part' relationship.
-
-**25 - epithelium of segmental bronchus --> lung neuroendocrine cell**
+**22 - epithelium of segmental bronchus --> lung neuroendocrine cell**
 
 It needs a 'has part' relationship. This is a very general term, are there lung neuroendocrine cell subtypes needed?
 
-**26 - epithelium of bronchiole --> lung ciliated cell**
+**23 - epithelium of bronchiole --> lung ciliated cell**
 
 It needs a 'has part' relationship.
 
-**27 - terminal bronchiole epithelium --> lung ciliated cell**
+**24 - terminal bronchiole epithelium --> lung ciliated cell**
 
 It needs a 'has part' relationship.
 
-**28 - respiratory system arterial endothelium --> endothelial cell of artery**
-
-CT-CT15 should solve this.
-
-**29 - wall of pulmonary artery --> pulmonary artery endothelial cell**
-
-It is probably missing a `part of` relationship, or a 'has part' otherwise.
-
-**30 - pulmonary capillary plexus --> alveolar capillary type 1 endothelial cell**
+**25 - pulmonary capillary --> alveolar capillary type 1 endothelial cell**
 
 According to  [this reference](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7721049/) it is probably missing a `part of` relationship.
 
-**31 - pulmonary capillary plexus --> alveolar capillary type 2 endothelial cell**
+**26 - pulmonary capillary --> alveolar capillary type 2 endothelial cell**
 
 According to  [this reference](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7721049/) it is probably missing a `part of` relationship.
 
 
-**32 - pulmonary alveolar parenchyma --> alveolar type 1 fibroblast cell**
+**27 - pulmonary alveolar parenchyma --> alveolar type 1 fibroblast cell**
 
 It is missing a `part of` [relationship](https://www.annualreviews.org/doi/10.1146/annurev.physiol.59.1.43?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub++0pubmed).
 
-**33 - pulmonary alveolar parenchyma --> alveolar type 2 fibroblast cell**
+**28 - pulmonary alveolar parenchyma --> alveolar type 2 fibroblast cell**
 
 It is missing a `part of` [relationship](https://pubmed.ncbi.nlm.nih.gov/33624948/). Include synonym 'resident interstitial lung fibroblasts'.
 
-**34 - respiratory system venous endothelium --> vein endothelial cell of respiratory system**
+**29 - respiratory system venous endothelium --> vein endothelial cell of respiratory system**
 
 It is missing a `part of` relationship.
 
-**35 - smooth muscle tissue of terminal bronchiole --> bronchiolar smooth muscle cell**
+**30 - smooth muscle tissue of terminal bronchiole --> bronchiolar smooth muscle cell**
 
 It needs a 'has part' relationship.
 
-**36 - smooth muscle tissue of bronchiole --> bronchiolar smooth muscle cell**
+**31 - smooth muscle tissue of bronchiole --> bronchiolar smooth muscle cell**
 
 It is missing a `part of` relationship.
 
-**37 - smooth muscle tissue of respiratory bronchiole --> bronchiolar smooth muscle cell**
+**32 - smooth muscle tissue of respiratory bronchiole --> bronchiolar smooth muscle cell**
 
 It needs a 'has part' relationship.
 
-**38 - immune system --> lung megakaryocyte**
+**33 - immune system --> lung megakaryocyte**
 
 Megakaryocytes are not considered to be part of the immune system. It can directly map to lung.
