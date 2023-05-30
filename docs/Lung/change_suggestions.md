@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# Suggestions to make valid relationships in the lung table v1.3 (24/05/2023)
+# Suggestions to make valid relationships in the lung table v1.3 (30/05/2023)
 
 Please, add a comment below if you want to address any of the actions to be taken. Please, indicate the number before the comment.
 
@@ -104,59 +104,7 @@ We are still working for a solution for the immune system, but pulmonary acinus 
 
 
 
-**1 - epithelial cell of tracheobronchial tree --> airway submucosal gland duct basal cell**
-
-This can be solved if `airway submucosal gland duct basal cell` is in CT1, and we include `'has part' some 'airway submucosal gland duct basal cell'` to `terminal ciliated ducts for tracheal submucosal gland` (term under review, so I will add before it is merged).
-
-**2 - epithelial cell of tracheobronchial tree --> serous cell of epithelium of bronchus**
-
-`tracheobronchial serous cell` should be an 'epithelial cell', but it is not. Once this is resolved, `serous cell of epithelium of bronchus` will be inferred as an `epithelial cell of tracheobronchial tree`.
-
-**3 - epithelial cell of tracheobronchial tree --> airway submucosal gland collecting duct epithelial cell**
-
-Same approach as CT-CT1.
-
-**4 - epithelial cell of tracheobronchial tree --> mucus secreting cell of bronchus submucosal gland**
-
-Same approach as CT-CT1.
-
-**5 - pulmonary interstitial fibroblast --> tracheobronchial chondrocyte**
-
-The ID used is wrong. CL:0019002 is tracheobronchial condrocyte. `lung perichondrial fibroblast` is CL:4033026.
-
-**6 - epithelial cell of lung --> club cell**
-
-After [some disccussion wish Joshua](https://github.com/obophenotype/cell-ontology/pull/1934), `club cell` is now an `epithelial cell of tracheobronchial tree` (CL:0002202). The recommendation is to use it as a parent term.
-
-**7 - epithelial cell of tracheobronchial tree --> lung goblet cell**
-
-Change to `tracheobronchial goblet cell`.
-
-**8 - epithelial cell of lung --> lung ciliated cell**
-
-Not all ciliated cells are epithelial cells. In the lung, are all ciliated cells also epithelial cells? Yes, axiom needs to be included with reference.
-
-**9 - lung endothelial cell --> vein endothelial cell of respiratory system**
-
-The respiratory system is too broad, best solution is to add a new term (vein endothelial cell of lung).
-
-**10 - lung endothelial cell --> endothelial cell of respiratory system lymphatic vessel**
-
-The respiratory system is more general than lung, probably creating a new term is the best solution (lymphatic endothelial cell of lung).
-
-**11 - connective tissue cell --> myofibroblast cell**
-
-A `myofibroblast cell` is a  `connective tissue cell`. STATUS: [DONE](https://github.com/obophenotype/cell-ontology/issues/1991)
-
-**12 - myeloid dendritic cell --> plasmacytoid dendritic cell**
-
-This relationship is tricky, as it is not clear if `plasmacytoid dendritic cell` has myeloid, lymphoid or both precursors. Alternatively, the following terms from the hierarchy can be used as parental terms:
-> hematopoietic cell > leukocyte > dendritic cell > plasmacytoid dendritic cell
-
-**13 - myeloid leukocyte --> megakaryocyte**
-
-`myeloid leukocyte` should be substituted for `myeloid cell`(CL:0000763).
-
+**No issues**
 
 
 
