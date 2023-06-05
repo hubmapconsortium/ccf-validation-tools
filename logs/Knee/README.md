@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Knee (2023-05-29)
+ASCT+B Validation Reports for Knee (2023-06-05)
 ===============================================
 
 Table of contents
@@ -51,9 +51,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, the term _[UBERON:0004406](http://purl.obolibrary.org/obo/UBERON_0004406)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Distal Epiphysis of the Femur_ and the one in the **ontology** is _distal epiphysis of femur_. For reference, the given name/label **by SMEs** is _Distal Epiphysis of the Femur_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[14](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=14:14)_, the term _[UBERON:0008775](http://purl.obolibrary.org/obo/UBERON_0008775)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Proximal Epiphysis of the Fibula_ and the one in the **ontology** is _proximal epiphysis of fibula_. For reference, the given name/label **by SMEs** is _Proximal Epiphysis of the Fibula_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[26](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=26:26)_, the term _[UBERON:0003671](http://purl.obolibrary.org/obo/UBERON_0003671)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Anterior cruciate ligament of the knee_ and the one in the **ontology** is _anterior cruciate ligament of knee joint_. For reference, the given name/label **by SMEs** is _Anterior cruciate ligament_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28)_, the term _[UBERON:0010996](http://purl.obolibrary.org/obo/UBERON_0010996)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Articular cartilage of a joint_ and the one in the **ontology** is _articular cartilage of joint_. For reference, the given name/label **by SMEs** is _Articular cartilage of a joint_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13)_, the term _[UBERON:0008772](http://purl.obolibrary.org/obo/UBERON_0008772)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Proximal Epiphysis of the Tibia_ and the one in the **ontology** is _proximal epiphysis of tibia_. For reference, the given name/label **by SMEs** is _Proximal Epiphysis of the Tibia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[17](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=17:17)_, the term _[UBERON:0007617](http://purl.obolibrary.org/obo/UBERON_0007617)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Space encapsulated by the synovial membrane_ and the one in the **ontology** is _synovial cavity of joint_. For reference, the given name/label **by SMEs** is _Synovial Cavity_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
@@ -61,11 +65,7 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 1. In row _[23](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=23:23)_, the term _[UBERON:0011088](http://purl.obolibrary.org/obo/UBERON_0011088)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Tibial collageral ligament_ and the one in the **ontology** is _ligament of knee joint_. For reference, the given name/label **by SMEs** is _Tibial collageral ligament_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13)_, the term _[UBERON:0008772](http://purl.obolibrary.org/obo/UBERON_0008772)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Proximal Epiphysis of the Tibia_ and the one in the **ontology** is _proximal epiphysis of tibia_. For reference, the given name/label **by SMEs** is _Proximal Epiphysis of the Tibia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28)_, the term _[UBERON:0010996](http://purl.obolibrary.org/obo/UBERON_0010996)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Articular cartilage of a joint_ and the one in the **ontology** is _articular cartilage of joint_. For reference, the given name/label **by SMEs** is _Articular cartilage of a joint_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[14](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=14:14)_, the term _[UBERON:0008775](http://purl.obolibrary.org/obo/UBERON_0008775)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Proximal Epiphysis of the Fibula_ and the one in the **ontology** is _proximal epiphysis of fibula_. For reference, the given name/label **by SMEs** is _Proximal Epiphysis of the Fibula_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, the term _[UBERON:0004406](http://purl.obolibrary.org/obo/UBERON_0004406)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Distal Epiphysis of the Femur_ and the one in the **ontology** is _distal epiphysis of femur_. For reference, the given name/label **by SMEs** is _Distal Epiphysis of the Femur_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

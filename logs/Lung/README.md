@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2023-05-29)
+ASCT+B Validation Reports for Lung (2023-06-05)
 ===============================================
 
 Table of contents
@@ -31,29 +31,29 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. UBERON:8600012
-
-1. CL:4033045
-
-1. UBERON:8600013
-
-1. CL:4033048
-
-1. CL:4033043
+1. CL:4033042
 
 1. UBERON:8600010
-
-1. CL:4033040
-
-1. CL:4033041
 
 1. CL:4033038
 
 1. CL:4033044
 
+1. CL:4033043
+
+1. CL:4033040
+
+1. CL:4033045
+
 1. CL:4033039
 
-1. CL:4033042
+1. CL:4033048
+
+1. CL:4033041
+
+1. UBERON:8600013
+
+1. UBERON:8600012
 
 
 ## Typos or punctuation mistakes
@@ -73,9 +73,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[13](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=13:13)_, the term _[UBERON:8410043](http://purl.obolibrary.org/obo/UBERON_8410043)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _bronchial submucosal gland_ and the one in the **ontology** is _bronchus submucosal gland_. For reference, the given name/label **by SMEs** is _bronchial submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[116](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=116:116)_, the term _[UBERON:0003920](http://purl.obolibrary.org/obo/UBERON_0003920)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _venous blood vessel _ and the one in the **ontology** is _venous blood vessel_. For reference, the given name/label **by SMEs** is _venous blood vessel _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=21:21)_, the term _[CL:0019002](http://purl.obolibrary.org/obo/CL_0019002)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lung perichondrial fibroblast_ and the one in the **ontology** is _tracheobronchial chondrocyte_. For reference, the given name/label **by SMEs** is _lung perichondrial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[85](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=85:85)_, the term _[CL:4028006](http://purl.obolibrary.org/obo/CL_4028006)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _adventitial fibroblast_ and the one in the **ontology** is _alveolar type 2 fibroblast cell_. For reference, the given name/label **by SMEs** is _adventitial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -91,18 +91,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-1. In row _[13](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=13:13)_, the term _LMHA:00142_ is from another ontology that is not validated in this process.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=45:45)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
-
-1. In row _[46](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=46:46)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
-
-1. In row _[47](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=47:47)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
-
-1. In row _[47](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=47:47)_, the term _LMHA:00142_ is from another ontology that is not validated in this process.
-
-1. In row _[48](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=48:48)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
-
 1. In row _[49](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=49:49)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
 1. In row _[50](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=50:50)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
@@ -135,29 +123,25 @@ This report provides a list of terms from another ontologies that we do not vali
 
 1. In row _[64](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=64:64)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[64](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=64:64)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
-
 1. In row _[65](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=65:65)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=65:65)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
 
 1. In row _[66](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=66:66)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[66](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=66:66)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
-
 1. In row _[67](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=67:67)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[67](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=67:67)_, the term _FMA:323213_ is from another ontology that is not validated in this process.
+1. In row _[68](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=68:68)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[86](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=86:86)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
+1. In row _[69](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=69:69)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[86](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=86:86)_, the term _FMA:76965_ is from another ontology that is not validated in this process.
+1. In row _[70](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=70:70)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[87](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=87:87)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
+1. In row _[71](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=71:71)_, the term _FMA:7312_ is from another ontology that is not validated in this process.
 
-1. In row _[87](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=87:87)_, the term _FMA:76965_ is from another ontology that is not validated in this process.
+1. In row _[101](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=101:101)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
 
-1. In row _[88](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=88:88)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
+1. In row _[102](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=102:102)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
+
+1. In row _[103](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=103:103)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
 
 
 # Relationship reports

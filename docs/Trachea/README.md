@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Trachea (2023-05-29)
+ASCT+B Validation Reports for Trachea (2023-06-05)
 ==================================================
 
 Table of contents
@@ -31,11 +31,11 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. UBERON:8600013
-
 1. UBERON:8600012
 
 1. UBERON:8600011
+
+1. UBERON:8600013
 
 
 ## Typos or punctuation mistakes

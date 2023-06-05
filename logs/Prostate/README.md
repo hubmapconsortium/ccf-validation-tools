@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2023-05-29)
+ASCT+B Validation Reports for Prostate (2023-06-05)
 ===================================================
 
 Table of contents
@@ -51,9 +51,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24)_, the term _[CL:0002313](http://purl.obolibrary.org/obo/CL_0002313)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _neuroendocrine cell of the prostatic urethral epithelium_ and the one in the **ontology** is _endocrine-paracrine cell of prostate gland_. For reference, the given name/label **by SMEs** is _neuroendocrine cell of prostatic urethra_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_, the term _[CL:4032000](http://purl.obolibrary.org/obo/CL_4032000)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _club-like cell of prostatic urethral epithelium_ and the one in the **ontology** is _club-like cell of the urethral epithelium_. For reference, the given name/label **by SMEs** is _club cell of prostatic urethra_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24)_, the term _[CL:0002313](http://purl.obolibrary.org/obo/CL_0002313)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _neuroendocrine cell of the prostatic urethral epithelium_ and the one in the **ontology** is _endocrine-paracrine cell of prostate gland_. For reference, the given name/label **by SMEs** is _neuroendocrine cell of prostatic urethra_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2023-05-29)
+ASCT+B Validation Reports for Main_Bronchus (2023-06-05)
 ========================================================
 
 Table of contents
@@ -31,13 +31,13 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. CL:4033048
+1. UBERON:8600013
 
 1. CL:4033044
 
-1. UBERON:8600012
+1. CL:4033048
 
-1. UBERON:8600013
+1. UBERON:8600012
 
 1. UBERON:8600010
 
@@ -59,7 +59,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[21](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=21:21)_, the term _[CL:0019002](http://purl.obolibrary.org/obo/CL_0019002)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lung perichondrial fibroblast_ and the one in the **ontology** is _tracheobronchial chondrocyte_. For reference, the given name/label **by SMEs** is _lung perichondrial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
