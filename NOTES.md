@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2023-04-19|
-|CL|2023-04-20|
+|CL|2023-05-22|
+|UBERON|2023-05-23|
 |PCL|2023-02-27|
 
 ### ASCT+b Tables
@@ -17,7 +17,7 @@ Release Notes
 |Bone-Marrow|v1.3|revise for April 1, 2023|
 |Blood|v1.4|June 15, 2023|
 |Brain|v1.4|June 15, 2023|
-|Eye|v1.2|revise for April 1, 2023|
+|Eye|v1.2|June 15, 2023|
 |Fallopian_tube|v1.2|modify for October 1, 2022|
 |Heart|v1.3|revise for April 1, 2023|
 |Kidney|v1.3|June 15, 2023|
@@ -38,7 +38,7 @@ Release Notes
 |Skeleton|v1.0|June 15, 2023|
 |Skin|v1.3|revise for October 1, 2023|
 |Small_intestine|v1.2|revise for April 1, 2023|
-|Spinal_Cord|v1.0|4/1/23|
+|Spinal_Cord|v1.0|June 15, 2023|
 |Spleen|v1.4|revise for October 1, 2022|
 |Thymus|v1.4|revise for April 1, 2023|
 |Trachea|v1.0|June 15, 2023|
