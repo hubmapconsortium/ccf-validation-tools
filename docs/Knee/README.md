@@ -51,21 +51,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, the term _[UBERON:0004406](http://purl.obolibrary.org/obo/UBERON_0004406)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Distal Epiphysis of the Femur_ and the one in the **ontology** is _distal epiphysis of femur_. For reference, the given name/label **by SMEs** is _Distal Epiphysis of the Femur_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[24](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=24:24)_, the term _[UBERON:0010996](http://purl.obolibrary.org/obo/UBERON_0010996)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Superior Articular Cartilage_ and the one in the **ontology** is _articular cartilage of joint_. For reference, the given name/label **by SMEs** is _Articular cartilage of a joint_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13)_, the term _[UBERON:0008772](http://purl.obolibrary.org/obo/UBERON_0008772)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Proximal Epiphysis of the Tibia_ and the one in the **ontology** is _proximal epiphysis of tibia_. For reference, the given name/label **by SMEs** is _Proximal Epiphysis of the Tibia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=27:27)_, the term _[UBERON:0003680](http://purl.obolibrary.org/obo/UBERON_0003680)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Posterior cruciate ligament of the knee_ and the one in the **ontology** is _posterior cruciate ligament of knee joint_. For reference, the given name/label **by SMEs** is _Posterior cruciate ligament_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[23](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=23:23)_, the term _[UBERON:0011088](http://purl.obolibrary.org/obo/UBERON_0011088)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Tibial collageral ligament_ and the one in the **ontology** is _ligament of knee joint_. For reference, the given name/label **by SMEs** is _Tibial collageral ligament_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28)_, the term _[UBERON:0010996](http://purl.obolibrary.org/obo/UBERON_0010996)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Articular cartilage of a joint_ and the one in the **ontology** is _articular cartilage of joint_. For reference, the given name/label **by SMEs** is _Articular cartilage of a joint_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[14](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=14:14)_, the term _[UBERON:0008775](http://purl.obolibrary.org/obo/UBERON_0008775)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Proximal Epiphysis of the Fibula_ and the one in the **ontology** is _proximal epiphysis of fibula_. For reference, the given name/label **by SMEs** is _Proximal Epiphysis of the Fibula_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[17](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=17:17)_, the term _[UBERON:0007617](http://purl.obolibrary.org/obo/UBERON_0007617)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Space encapsulated by the synovial membrane_ and the one in the **ontology** is _synovial cavity of joint_. For reference, the given name/label **by SMEs** is _Synovial Cavity_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[26](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=26:26)_, the term _[UBERON:0003671](http://purl.obolibrary.org/obo/UBERON_0003671)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Anterior cruciate ligament of the knee_ and the one in the **ontology** is _anterior cruciate ligament of knee joint_. For reference, the given name/label **by SMEs** is _Anterior cruciate ligament_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[38](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=38:38)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _pericyte cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -73,15 +61,41 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28)_, no term id was found for the name/label _superficial zone cell of articular cartilage_.
+1. In row _[12](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=12:12)_, no term id was found for the name/label _proximal tibia_.
 
-1. In row _[29](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=29:29)_, no term id was found for the name/label _transition zone cell of the articular cartilage_.
+1. In row _[13](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=13:13)_, no term id was found for the name/label _proximal fibula_.
 
-1. In row _[30](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=30:30)_, no term id was found for the name/label _middle zone cell of articular cartilage_.
+1. In row _[24](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=24:24)_, no term id was found for the name/label _Superficial Zone_.
 
-1. In row _[31](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=31:31)_, no term id was found for the name/label _deep zone cell of articular cartilage_.
+1. In row _[25](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=25:25)_, no term id was found for the name/label _Transitional Zone_.
 
-1. In row _[32](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=32:32)_, no term id was found for the name/label _subchondral bone cell of articular cartilage_.
+1. In row _[25](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=25:25)_, no term id was found for the name/label _Deep Superficial_.
+
+1. In row _[26](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=26:26)_, no term id was found for the name/label _Rounded Chondrocytes_.
+
+1. In row _[27](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=27:27)_, no term id was found for the name/label _Deep Zone_.
+
+1. In row _[28](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=28:28)_, no term id was found for the name/label _Tidemark_.
+
+1. In row _[28](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=28:28)_, no term id was found for the name/label _Prehypertrophic Chondrocytes_.
+
+1. In row _[30](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=30:30)_, no term id was found for the name/label _Subchondral Bone_.
+
+1. In row _[30](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=30:30)_, no term id was found for the name/label _Residual Hypertrophic Chondrocytes_.
+
+1. In row _[33](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=33:33)_, no term id was found for the name/label _Bone lIning Cells_.
+
+1. In row _[35](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=35:35)_, no term id was found for the name/label _Preosteoclasts_.
+
+1. In row _[37](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=37:37)_, no term id was found for the name/label _vascular endothelial cells_.
+
+1. In row _[38](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=38:38)_, no term id was found for the name/label _perivascular cells_.
+
+1. In row _[40](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=40:40)_, no term id was found for the name/label _sinusoidal cells_.
+
+1. In row _[41](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=41:41)_, no term id was found for the name/label _autonomic neuronal cells_.
+
+1. In row _[42](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=42:42)_, no term id was found for the name/label _Marrow Adipocytes_.
 
 
 ## Terms from another ontology
@@ -89,9 +103,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-1. In row _[15](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=15:15)_, the term _FMA:321690_ is from another ontology that is not validated in this process.
-
-1. In row _[25](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=25:25)_, the term _FMA:9660_ is from another ontology that is not validated in this process.
+- No issues found.
 
 
 # Relationship reports
@@ -139,22 +151,22 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                              | user_slabel                      | o              | olabel     | user_olabel   | row_number                                                                                                                |    deltaIC |
 |----|----------------|-------------------------------------|----------------------------------|----------------|------------|---------------|---------------------------------------------------------------------------------------------------------------------------|------------|
-|  0 | UBERON:0008772 | proximal epiphysis of tibia         | Proximal Epiphysis of the Tibia  | UBERON:0000387 | meniscus   | Meniscus      | [33](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=33:33) |  16.9901   |
-|  1 | UBERON:0002446 | patella                             | Patella                          | UBERON:0001485 | Knee Joint | knee joint    | [19](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=19:19) |   0.186603 |
-|  2 | UBERON:0004406 | distal epiphysis of femur           | Distal Epiphysis of the Femur    | UBERON:0001485 | Knee Joint | knee joint    | [12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12) | nan        |
-|  3 | UBERON:0008772 | proximal epiphysis of tibia         | Proximal Epiphysis of the Tibia  | UBERON:0001485 | Knee Joint | knee joint    | [13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13) | nan        |
-|  4 | UBERON:0008775 | proximal epiphysis of fibula        | Proximal Epiphysis of the Fibula | UBERON:0001485 | Knee Joint | knee joint    | [14](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=14:14) | nan        |
-|  5 | UBERON:0002018 | synovial membrane of synovial joint | Synovial membrane                | UBERON:0001485 | Knee Joint | knee joint    | [16](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=16:16) | nan        |
-|  6 | UBERON:0007617 | synovial cavity of joint            | Synovial Cavity                  | UBERON:0001485 | Knee Joint | knee joint    | [17](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=17:17) | nan        |
-|  7 | UBERON:0014848 | tendon of quadriceps femoris        | Patellar Tendon                  | UBERON:0001485 | Knee Joint | knee joint    | [18](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=18:18) | nan        |
-|  8 | UBERON:0016400 | infrapatellar fat pad               | Infrapatellar fat pad            | UBERON:0001485 | Knee Joint | knee joint    | [21](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=21:21) | nan        |
-|  9 | UBERON:0003668 | synovial bursa                      | Synovial Bursa                   | UBERON:0001485 | Knee Joint | knee joint    | [22](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=22:22) | nan        |
-| 10 | UBERON:0010996 | articular cartilage of joint        | Articular cartilage of a joint   | UBERON:0001485 | Knee Joint | knee joint    | [28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28) | nan        |
-| 11 | UBERON:0010996 | articular cartilage of joint        | Articular cartilage of a joint   | UBERON:0001485 | Knee Joint | knee joint    | [29](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=29:29) | nan        |
-| 12 | UBERON:0010996 | articular cartilage of joint        | Articular cartilage of a joint   | UBERON:0001485 | Knee Joint | knee joint    | [30](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=30:30) | nan        |
-| 13 | UBERON:0010996 | articular cartilage of joint        | Articular cartilage of a joint   | UBERON:0001485 | Knee Joint | knee joint    | [31](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=31:31) | nan        |
-| 14 | UBERON:0010996 | articular cartilage of joint        | Articular cartilage of a joint   | UBERON:0001485 | Knee Joint | knee joint    | [32](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=32:32) | nan        |
-| 15 | UBERON:0000387 | meniscus                            | Meniscus                         | UBERON:0001485 | Knee Joint | knee joint    | [33](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=33:33) | nan        |
+|  0 | UBERON:0008772 | proximal epiphysis of tibia         | Proximal Epiphysis of the Tibia  | UBERON:0000387 | meniscus   | Meniscus      | [33](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=33:33) |  16.9901   |
+|  1 | UBERON:0002446 | patella                             | Patella                          | UBERON:0001485 | Knee Joint | knee joint    | [19](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=19:19) |   0.186603 |
+|  2 | UBERON:0004406 | distal epiphysis of femur           | Distal Epiphysis of the Femur    | UBERON:0001485 | Knee Joint | knee joint    | [12](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=12:12) | nan        |
+|  3 | UBERON:0008772 | proximal epiphysis of tibia         | Proximal Epiphysis of the Tibia  | UBERON:0001485 | Knee Joint | knee joint    | [13](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=13:13) | nan        |
+|  4 | UBERON:0008775 | proximal epiphysis of fibula        | Proximal Epiphysis of the Fibula | UBERON:0001485 | Knee Joint | knee joint    | [14](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=14:14) | nan        |
+|  5 | UBERON:0002018 | synovial membrane of synovial joint | Synovial membrane                | UBERON:0001485 | Knee Joint | knee joint    | [16](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=16:16) | nan        |
+|  6 | UBERON:0007617 | synovial cavity of joint            | Synovial Cavity                  | UBERON:0001485 | Knee Joint | knee joint    | [17](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=17:17) | nan        |
+|  7 | UBERON:0014848 | tendon of quadriceps femoris        | Patellar Tendon                  | UBERON:0001485 | Knee Joint | knee joint    | [18](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=18:18) | nan        |
+|  8 | UBERON:0016400 | infrapatellar fat pad               | Infrapatellar fat pad            | UBERON:0001485 | Knee Joint | knee joint    | [21](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=21:21) | nan        |
+|  9 | UBERON:0003668 | synovial bursa                      | Synovial Bursa                   | UBERON:0001485 | Knee Joint | knee joint    | [22](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=22:22) | nan        |
+| 10 | UBERON:0010996 | articular cartilage of joint        | Articular cartilage of a joint   | UBERON:0001485 | Knee Joint | knee joint    | [28](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=28:28) | nan        |
+| 11 | UBERON:0010996 | articular cartilage of joint        | Articular cartilage of a joint   | UBERON:0001485 | Knee Joint | knee joint    | [29](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=29:29) | nan        |
+| 12 | UBERON:0010996 | articular cartilage of joint        | Articular cartilage of a joint   | UBERON:0001485 | Knee Joint | knee joint    | [30](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=30:30) | nan        |
+| 13 | UBERON:0010996 | articular cartilage of joint        | Articular cartilage of a joint   | UBERON:0001485 | Knee Joint | knee joint    | [31](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=31:31) | nan        |
+| 14 | UBERON:0010996 | articular cartilage of joint        | Articular cartilage of a joint   | UBERON:0001485 | Knee Joint | knee joint    | [32](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=32:32) | nan        |
+| 15 | UBERON:0000387 | meniscus                            | Meniscus                         | UBERON:0001485 | Knee Joint | knee joint    | [33](https://docs.google.com/spreadsheets/d/1zDCnaoMdSx09OGxjeeG2Sxokw4c_0bnNyDOJC6IMPCw/edit#gid=1815525900&range=33:33) | nan        |
 
 
 

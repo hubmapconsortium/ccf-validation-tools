@@ -59,27 +59,27 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=12:12)_, no term id was found for the name/label _basal cell of bladder urothelium_.
+1. In row _[12](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=12:12)_, no term id was found for the name/label _basal cell of bladder urothelium_.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=13:13)_, no term id was found for the name/label _intermediate cell of bladder urothelium_.
+1. In row _[13](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=13:13)_, no term id was found for the name/label _intermediate cell of bladder urothelium_.
 
-1. In row _[14](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=14:14)_, no term id was found for the name/label _superficial cell of bladder urothelium_.
+1. In row _[14](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=14:14)_, no term id was found for the name/label _superficial cell of bladder urothelium_.
 
-1. In row _[15](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=15:15)_, no term id was found for the name/label _detrusor smooth muscle cell of bladder_.
+1. In row _[15](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=15:15)_, no term id was found for the name/label _detrusor smooth muscle cell of bladder_.
 
-1. In row _[16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16)_, no term id was found for the name/label _myofibroblast cell of bladder_.
+1. In row _[16](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=16:16)_, no term id was found for the name/label _myofibroblast cell of bladder_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17)_, no term id was found for the name/label _PI16+ fibroblast cell of bladder_.
+1. In row _[17](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=17:17)_, no term id was found for the name/label _PI16+ fibroblast cell of bladder_.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18)_, no term id was found for the name/label _DPT+ fibroblast cell of bladder_.
+1. In row _[18](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=18:18)_, no term id was found for the name/label _DPT+ fibroblast cell of bladder_.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19)_, no term id was found for the name/label _lipofibroblast cell of bladder_.
+1. In row _[19](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=19:19)_, no term id was found for the name/label _lipofibroblast cell of bladder_.
 
-1. In row _[20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20)_, no term id was found for the name/label _endothelial cell of bladder_.
+1. In row _[20](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=20:20)_, no term id was found for the name/label _endothelial cell of bladder_.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21)_, no term id was found for the name/label _vascular smooth muscle cell of bladder_.
+1. In row _[21](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=21:21)_, no term id was found for the name/label _vascular smooth muscle cell of bladder_.
 
-1. In row _[22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22)_, no term id was found for the name/label _pericyte cell of bladder_.
+1. In row _[22](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=22:22)_, no term id was found for the name/label _pericyte cell of bladder_.
 
 
 ## Terms from another ontology
@@ -135,13 +135,13 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                            | user_slabel                       | o              | olabel                       | user_olabel                  | row_number                                                                                                                |   deltaIC |
 |----|----------------|-----------------------------------|-----------------------------------|----------------|------------------------------|------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  5 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16) |       nan |
-|  6 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17) |       nan |
-|  7 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18) |       nan |
-|  8 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19) |       nan |
-|  9 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20) |       nan |
-| 11 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21) |       nan |
-| 13 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22) |       nan |
+|  5 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [16](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=16:16) |       nan |
+|  6 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [17](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=17:17) |       nan |
+|  7 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [18](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=18:18) |       nan |
+|  8 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [19](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=19:19) |       nan |
+|  9 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [20](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=20:20) |       nan |
+| 11 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [21](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=21:21) |       nan |
+| 13 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [22](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=22:22) |       nan |
 
 
 
@@ -169,14 +169,14 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 |    | s          | slabel                                 | user_slabel   | o              | olabel                                 | user_olabel                            | row_number                                                                                                                |
 |----|------------|----------------------------------------|---------------|----------------|----------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-|  0 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0000381 | urinary bladder detrusor smooth muscle | urinary bladder detrusor smooth muscle | [15](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=15:15) |
-|  1 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21) |
-|  2 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22) |
-|  3 | CL:1001319 | bladder cell                           | myofibroblast | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16) |
-|  4 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17) |
-|  5 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18) |
-|  6 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19) |
-|  7 | CL:2000040 | bladder microvascular endothelial cell | endothelium   | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20) |
+|  0 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0000381 | urinary bladder detrusor smooth muscle | urinary bladder detrusor smooth muscle | [15](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=15:15) |
+|  1 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [21](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=21:21) |
+|  2 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [22](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=22:22) |
+|  3 | CL:1001319 | bladder cell                           | myofibroblast | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [16](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=16:16) |
+|  4 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [17](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=17:17) |
+|  5 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [18](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=18:18) |
+|  6 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [19](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=19:19) |
+|  7 | CL:2000040 | bladder microvascular endothelial cell | endothelium   | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [20](https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957&range=20:20) |
 
 
 
