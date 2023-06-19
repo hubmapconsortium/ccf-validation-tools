@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2023-06-14)
+ASCT+B Validation Reports for Lung (2023-06-19)
 ===============================================
 
 Table of contents
@@ -31,19 +31,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. CL:4033042
-
-1. CL:4033044
-
-1. CL:4033043
-
-1. CL:4033045
-
-1. CL:4033040
-
-1. CL:4033048
-
-1. CL:4033041
+- No issues found.
 
 
 ## Typos or punctuation mistakes
@@ -63,15 +51,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[135](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=135:135)_, the term _[CL:4033038](http://purl.obolibrary.org/obo/CL_4033038)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD4+ T cell resident memory_ and the one in the **ontology** is _lung resident memory CD4-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD4+ T cell resident memory_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[85](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=85:85)_, the term _[CL:4028006](http://purl.obolibrary.org/obo/CL_4028006)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _adventitial fibroblast_ and the one in the **ontology** is _alveolar type 2 fibroblast cell_. For reference, the given name/label **by SMEs** is _adventitial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[13](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=13:13)_, the term _[UBERON:8600010](http://purl.obolibrary.org/obo/UBERON_8600010)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ciliated ducts of bronchial submucosal gland_ and the one in the **ontology** is _bronchial submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _ciliated ducts of bronchial submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[116](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=116:116)_, the term _[UBERON:0003920](http://purl.obolibrary.org/obo/UBERON_0003920)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _venous blood vessel _ and the one in the **ontology** is _venous blood vessel_. For reference, the given name/label **by SMEs** is _venous blood vessel _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=13:13)_, the term _[UBERON:8600010](http://purl.obolibrary.org/obo/UBERON_8600010)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ciliated ducts of bronchial submucosal gland_ and the one in the **ontology** is _bronchial submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _ciliated ducts of bronchial submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[139](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=139:139)_, the term _[CL:4033039](http://purl.obolibrary.org/obo/CL_4033039)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD8+ T cell resident memory_ and the one in the **ontology** is _lung resident memory CD8-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD8+ T cell resident memory_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[85](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=85:85)_, the term _[CL:4028006](http://purl.obolibrary.org/obo/CL_4028006)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _adventitial fibroblast_ and the one in the **ontology** is _alveolar type 2 fibroblast cell_. For reference, the given name/label **by SMEs** is _adventitial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -79,9 +63,39 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[13](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=13:13)_, no term id was found for the name/label _airway submucosal gland ciliated duct cells_.
+1. In row _[13](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=13:13)_, no term id was found for the name/label _airway submucosal gland ciliated duct cell_.
+
+1. In row _[22](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=22:22)_, no term id was found for the name/label _airway deuterosomal cell_.
+
+1. In row _[24](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=24:24)_, no term id was found for the name/label _respiratory suprabasal cell_.
+
+1. In row _[31](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=31:31)_, no term id was found for the name/label _airway submucosal gland ciliated duct cells_.
+
+1. In row _[39](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=39:39)_, no term id was found for the name/label _respiratory suprabasal cell_.
+
+1. In row _[44](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=44:44)_, no term id was found for the name/label _airway deuterosomal cell_.
 
 1. In row _[51](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=51:51)_, no term id was found for the name/label _airway submucosal gland ciliated duct cells_.
+
+1. In row _[57](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=57:57)_, no term id was found for the name/label _airway deuterosomal cell_.
+
+1. In row _[60](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=60:60)_, no term id was found for the name/label _respiratory suprabasal cell_.
+
+1. In row _[64](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=64:64)_, no term id was found for the name/label _airway deuterosomal cell_.
+
+1. In row _[118](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=118:118)_, no term id was found for the name/label _alveolar macrophage CCL3+_.
+
+1. In row _[120](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=120:120)_, no term id was found for the name/label _alveolar macrophage proliferating_.
+
+1. In row _[121](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=121:121)_, no term id was found for the name/label _alveolar macrophage MT-positive_.
+
+1. In row _[122](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=122:122)_, no term id was found for the name/label _Interstitial macrophage_.
+
+1. In row _[135](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=135:135)_, no term id was found for the name/label _CD4+ T cell resident memory_.
+
+1. In row _[139](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=139:139)_, no term id was found for the name/label _CD8+ T cell resident memory_.
+
+1. In row _[143](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=143:143)_, no term id was found for the name/label _migratory dendritic cell_.
 
 
 ## Terms from another ontology

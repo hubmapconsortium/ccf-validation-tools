@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2023-06-14)
+ASCT+B Validation Reports for Main_Bronchus (2023-06-19)
 ========================================================
 
 Table of contents
@@ -31,9 +31,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. CL:4033044
-
-1. CL:4033048
+- No issues found.
 
 
 ## Typos or punctuation mistakes
@@ -61,7 +59,9 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-- No issues found.
+1. In row _[25](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=25:25)_, no term id was found for the name/label _respiratory suprabasal cell_.
+
+1. In row _[28](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=28:28)_, no term id was found for the name/label _airway deuterosomal cell_.
 
 
 ## Terms from another ontology
@@ -117,23 +117,22 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                                    | user_slabel                             | o              | olabel                    | user_olabel                | row_number                                                                                                       |   deltaIC |
 |----|----------------|-------------------------------------------|-----------------------------------------|----------------|---------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------|-----------|
-|  3 | UBERON:0002182 | main bronchus smooth muscle               | main bronchus smooth muscle             | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [14](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=14:14) |       nan |
-|  5 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [15](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=15:15) |       nan |
-|  6 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [16](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=16:16) |       nan |
-|  7 | UBERON:8600013 | submucosal gland collecting duct          | submucosal gland collecting duct        | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [16](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=16:16) |       nan |
-|  9 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [17](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=17:17) |       nan |
-| 10 | UBERON:8600012 | submucosal gland acinus                   | submucosal gland acini                  | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [17](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=17:17) |       nan |
-| 12 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [18](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=18:18) |       nan |
-| 13 | UBERON:8600012 | submucosal gland acinus                   | submucosal gland acini                  | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [18](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=18:18) |       nan |
-| 15 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [19](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=19:19) |       nan |
-| 16 | UBERON:8600012 | submucosal gland acinus                   | submucosal gland acini                  | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [19](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=19:19) |       nan |
-| 18 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [20](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=20:20) |       nan |
-| 19 | UBERON:8600013 | submucosal gland collecting duct          | submucosal gland collecting duct        | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [20](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=20:20) |       nan |
-| 21 | UBERON:0001956 | cartilage of bronchus                     | cartilage of bronchus                   | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [21](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=21:21) |       nan |
-| 30 | UBERON:0004848 | respiratory system arterial endothelium   | respiratory system arterial endothelium | UBERON:0002040 | bronchial artery          | bronchial artery           | [31](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=31:31) |       nan |
-| 31 | UBERON:0012416 | respiratory system arterial smooth muscle | arterial system smooth muscle           | UBERON:0002040 | bronchial artery          | bronchial artery           | [32](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=32:32) |       nan |
-| 32 | UBERON:0004849 | respiratory system venous endothelium     | respiratory system venous endothelium   | UBERON:0001592 | bronchial vein            | bronchial vein             | [33](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=33:33) |       nan |
-| 34 | UBERON:0012418 | respiratory system venous smooth muscle   | venous system smooth muscle             | UBERON:0001592 | bronchial vein            | bronchial vein             | [34](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=34:34) |       nan |
+|  4 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [15](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=15:15) |       nan |
+|  5 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [16](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=16:16) |       nan |
+|  6 | UBERON:8600013 | submucosal gland collecting duct          | submucosal gland collecting duct        | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [16](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=16:16) |       nan |
+|  8 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [17](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=17:17) |       nan |
+|  9 | UBERON:8600012 | submucosal gland acinus                   | submucosal gland acini                  | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [17](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=17:17) |       nan |
+| 11 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [18](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=18:18) |       nan |
+| 12 | UBERON:8600012 | submucosal gland acinus                   | submucosal gland acini                  | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [18](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=18:18) |       nan |
+| 14 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [19](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=19:19) |       nan |
+| 15 | UBERON:8600012 | submucosal gland acinus                   | submucosal gland acini                  | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [19](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=19:19) |       nan |
+| 17 | UBERON:8410043 | bronchus submucosal gland                 | bronchial submucosal gland              | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [20](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=20:20) |       nan |
+| 18 | UBERON:8600013 | submucosal gland collecting duct          | submucosal gland collecting duct        | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [20](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=20:20) |       nan |
+| 20 | UBERON:0001956 | cartilage of bronchus                     | cartilage of bronchus                   | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [21](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=21:21) |       nan |
+| 29 | UBERON:0004848 | respiratory system arterial endothelium   | respiratory system arterial endothelium | UBERON:0002040 | bronchial artery          | bronchial artery           | [31](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=31:31) |       nan |
+| 30 | UBERON:0012416 | respiratory system arterial smooth muscle | arterial system smooth muscle           | UBERON:0002040 | bronchial artery          | bronchial artery           | [32](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=32:32) |       nan |
+| 31 | UBERON:0004849 | respiratory system venous endothelium     | respiratory system venous endothelium   | UBERON:0001592 | bronchial vein            | bronchial vein             | [33](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=33:33) |       nan |
+| 33 | UBERON:0012418 | respiratory system venous smooth muscle   | venous system smooth muscle             | UBERON:0001592 | bronchial vein            | bronchial vein             | [34](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=34:34) |       nan |
 
 
 
@@ -163,7 +162,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 |----|------------|---------------------------------------------------------|---------------------------------------------------------|----------------|-------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------|
 |  0 | CL:0002329 | basal epithelial cell of tracheobronchial tree          | basal epithelial cell of tracheobronchial tree          | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [30](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=30:30) |
 |  1 | CL:0002332 | ciliated cell of the bronchus                           | ciliated cell of the bronchus                           | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [26](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=26:26) |
-|  2 | CL:0002598 | bronchial smooth muscle cell                            | bronchial smooth muscle cell                            | UBERON:0002182 | main bronchus smooth muscle               | main bronchus smooth muscle             | [14](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=14:14) |
+|  2 | CL:0002598 | bronchial smooth muscle cell                            | bronchial smooth muscle cell                            | UBERON:0004241 | main bronchus smooth muscle               | main bronchus smooth muscle             | [14](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=14:14) |
 |  3 | CL:0017000 | pulmonary ionocyte                                      | pulmonary ionocyte                                      | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [23](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=23:23) |
 |  4 | CL:0019002 | tracheobronchial chondrocyte                            | tracheobronchial chondrocyte                            | UBERON:0001956 | cartilage of bronchus                     | cartilage of bronchus                   | [21](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=21:21) |
 |  5 | CL:0019002 | lung perichondrial fibroblast                           | lung perichondrial fibroblast                           | UBERON:0002182 | main bronchus                             | extrapulmonary bronchus                 | [22](https://docs.google.com/spreadsheets/d/1VstIfAHSehrY5MNeTlNtRlOHtbQN8psru5rl5vglPxA/edit#gid=0&range=22:22) |
