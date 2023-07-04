@@ -24,11 +24,11 @@ This relationship is difficult to validate, because single alveolus can be found
 
 **4 - subsegmental bronchus --> lobar bronchus mesenchyme**
 
-It needs a new term (either general `bronchus mesenchyme` and add 'has part' axiom, or `subsegmental bronchus mesenchyme`).
+It needs a new term (either general `bronchus mesenchyme` and add 'has part' axiom, or `subsegmental bronchus mesenchyme`).  Status: Completed second part, it needs to be changed the term [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **5 - subsegmental bronchus --> bronchus smooth muscle**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **6 - lung --> immune system**
 
@@ -36,7 +36,7 @@ No actions for now.
 
 **7 - epithelium of segmental bronchus --> bronchus submucosal gland**
 
-The `bronchus submucosal gland` are not part of an epithelium. I can add a `'has part' some 'bronchus sumucosal gland'` to `segmental bronchus`, and this term replaces `epithelium of segmental bronchus`.
+The `bronchus submucosal gland` are not part of an epithelium. I can add a `'has part' some 'bronchus sumucosal gland'` to `segmental bronchus`, and this term replaces `epithelium of segmental bronchus`. Status: Has part completed, class needs to be changed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **8 - pulmonary alveolar duct --> pulmonary alveolar parenchyma**
 
@@ -44,11 +44,11 @@ The `bronchus submucosal gland` are not part of an epithelium. I can add a `'has
 
 **9 - Tracheobronchial tree --> pulmonary nerve plexus**
 
-It should have a `part of`.
+It should have an `overlaps` relation.
 
 **10 - lobar bronchus --> bronchus submucosal gland**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **11 - lobar bronchus --> bronchus connective tissue**
 
@@ -56,23 +56,23 @@ There is a `lobar bronchus connective tissue` UBERON:0003591.
 
 **12 - lobar bronchus --> bronchus smooth muscle**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **13 - lobar bronchus --> cartilage of bronchus**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **14 - Segmental Bronchus --> bronchus smooth muscle**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **25 - Segmental Bronchus --> cartilage of bronchus**
 
-I can add for both structures a `'has part' some 'cartilage of bronchus'` axiom (UBERON:0001956) (also for subsegmental bronchus).
+I can add for both structures a `'has part' some 'cartilage of bronchus'` axiom (UBERON:0001956) (also for subsegmental bronchus). Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **16 - Segmental Bronchus --> lobar bronchus mesenchyme**
 
-This can't validate, as the `lobar bronchus masenchyme` should map to `lobar bronchus` only. This problem will also occur for `subsegmental bronchus` once Ubergraph gets the new release. I can add for both structures a `'has part' some 'lung mesenchyme'` axiom (UBERON:0004883) and that terms substitutes `lobar bronchus mesenchyme`.
+This can't validate, as the `lobar bronchus masenchyme` should map to `lobar bronchus` only. This problem will also occur for `subsegmental bronchus` once Ubergraph gets the new release. I can add for both structures a `'has part' some 'lung mesenchyme'` axiom (UBERON:0004883) and that terms substitutes `lobar bronchus mesenchyme`. Second part  Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **17 - subsegmental bronchus --> epithelium of segmental bronchus**
 
@@ -92,7 +92,7 @@ Not sure of the expected relationship expected.
 
 **21 - pulmonary lymphatic vessel --> respiratory system lymphatic vessel endothelium**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **22 - immune system --> Pulmonary Acinus**
 
