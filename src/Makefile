@@ -40,22 +40,22 @@ validation_reports_release_%: ../logs/%/README.md
 .PRECIOUS: ../docs/%/graph.md
 
 ../owl/ccf_%_classes_t.owl: ../templates/class_template_%.csv ../logs/%/README.md 
-	${ROBOT} template --add-prefix "CCFH: http://ccf_tools_helpers/class_helper.owl#" \
+	${ROBOT} $(CATALOG) template --add-prefix "CCFH: http://ccf_tools_helpers/class_helper.owl#" \
 			--add-prefix "dc: http://purl.org/dc/elements/1.1/" \
 			--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
 			--input helper.owl --template $< \
 			--output $@
 
 ../owl/ub_%_ASCTB_subset.owl: ../templates/temp_ub_%_ASCTB_subset.csv ../docs/%/graph.md
-	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@ && \
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} $(CATALOG) template --input helper.owl --template $< --output $@ && \
 		rm $<; fi
 
 ../owl/cl_%_ASCTB_subset.owl: ../templates/temp_cl_%_ASCTB_subset.csv
-	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@ && \
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} $(CATALOG) template --input helper.owl --template $< --output $@ && \
 		rm $<; fi
 
 ../owl/%_no-valid.owl: ../templates/%_no-valid.csv
-	if [ $(OLD_VERSION) = False ]; then ${ROBOT} template --input helper.owl --template $< --output $@ && \
+	if [ $(OLD_VERSION) = False ]; then ${ROBOT} $(CATALOG) template --input helper.owl --template $< --output $@ && \
 		rm $<; fi
 
 ../owl/%_ASCTB_subset.json: ../owl/ub_%_ASCTB_subset.owl ../owl/cl_%_ASCTB_subset.owl
@@ -146,5 +146,6 @@ mirror/ro.owl:
 .PRECIOUS: mirror/ro.owl
 
 imports/ro_import.owl: mirror/ro.owl imports/ro_terms.txt
-	$(ROBOT) extract --input $< --term-file imports/ro_terms.txt --method BOT --output $@.tmp.owl && mv $@.tmp.owl $@
+	$(ROBOT) extract --input $< --term-file imports/ro_terms.txt --method BOT \
+	annotate --ontology-iri "http://ccf_tools_helpers/class_helper/imports/ro_import.owl" --output $@.tmp.owl && mv $@.tmp.owl $@
 .PHONY: imports/ro_import.owl
