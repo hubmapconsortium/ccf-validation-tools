@@ -260,12 +260,16 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # AS-CT HAS PART
   valid_has_part, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_has_part)
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_has_part, 'has_part', True)
+  
+  # AS-AS HAS PART
+  valid_as_as_has_part, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_has_part)
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_as_as_has_part, 'has_part')
 
   # CT-AS SUBCLASS PART OF
   valid_subclass_ct_as_po, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_subclass_po)
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_subclass_ct_as_po, 'has_part', True)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
+  terms_s, terms_o = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po).union(valid_as_as_has_part)))
 
   has_part_report = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
