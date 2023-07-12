@@ -49,7 +49,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
           'validation_date_has_part': '>A dc:date',
           'located_in': 'SC located_in some %',
           'OBO_Validated_located_in': '>A CCFH:IN_OBO',
-          'validation_date_located_in': '>A dc:date'}
+          'validation_date_located_in': '>A dc:date',
+          'continuous_with': 'SC continuous_with some %',
+          'OBO_Validated_continuous_with': '>A CCFH:IN_OBO',
+          'validation_date_continuous_with': '>A dc:date'}
 
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
   seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
@@ -245,6 +248,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   valid_ct_as_conn_to, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_ct)
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_conn_to.union(valid_ct_as_conn_to), 'connected_to')
+
+  # CONTINUOUS WITH CHECK
+  valid_cont_with, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_continuous_with)
+
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_cont_with, 'continuous_with')
 
   # STRICT CT-AS REPORT
   terms_s, terms_o = split_terms(terms_ct_as)
