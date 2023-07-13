@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Ureter (2023-07-07)
+ASCT+B Validation Reports for Ureter (2023-07-13)
 =================================================
 
 Table of contents
@@ -139,10 +139,10 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                   | user_slabel                   | o              | olabel                | user_olabel           | row_number                                                                                                                |   deltaIC |
 |----|----------------|--------------------------|-------------------------------|----------------|-----------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [12](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=12:12) |   15.2522 |
-|  1 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [13](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=13:13) |   15.2522 |
-|  2 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [14](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=14:14) |   15.2522 |
-|  3 | UBERON:0009919 | ureter smooth muscle     | ureter detrusor smooth muscle | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [15](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=15:15) |   10.6609 |
+|  0 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [12](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=12:12) |   15.2448 |
+|  1 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [13](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=13:13) |   15.2448 |
+|  2 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [14](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=14:14) |   15.2448 |
+|  3 | UBERON:0009919 | ureter smooth muscle     | ureter detrusor smooth muscle | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [15](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=15:15) |   10.6556 |
 | 12 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [16](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=16:16) |  nan      |
 | 13 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [17](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=17:17) |  nan      |
 | 15 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [18](https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583&range=18:18) |  nan      |

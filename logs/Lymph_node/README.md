@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_node (2023-07-07)
+ASCT+B Validation Reports for Lymph_node (2023-07-13)
 =====================================================
 
 Table of contents
@@ -51,11 +51,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[17](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=17:17)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[37](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=37:37)_, the term _[UBERON:8410053](http://purl.obolibrary.org/obo/UBERON_8410053)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ymph node germinal center dark zone_ and the one in the **ontology** is _lymph node germinal center dark zone_. For reference, the given name/label **by SMEs** is _Dark Zone_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[21](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=21:21)_, the term _[CL:0009103](http://purl.obolibrary.org/obo/CL_0009103)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ymph node marginal reticular cell_ and the one in the **ontology** is _lymph node marginal reticular cell_. For reference, the given name/label **by SMEs** is _Marginal Reticular Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[17](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=17:17)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -119,12 +119,12 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                                 | user_slabel               | o              | olabel                          | user_olabel               | row_number                                                                                                                |   deltaIC |
 |----|----------------|----------------------------------------|---------------------------|----------------|---------------------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  7 | UBERON:0001473 | lymphatic vessel                       | Lymphatic Vessels         | UBERON:0010396 | afferent lymphatic vessel       | Afferent lymphatic vessel | [18](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=18:18) |  29.6952  |
-|  8 | UBERON:0001473 | lymphatic vessel                       | Lymphatic Vessels         | UBERON:0010396 | afferent lymphatic vessel       | Afferent lymphatic vessel | [19](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=19:19) |  29.6952  |
-| 14 | UBERON:0034729 | sympathetic nerve                      | Sympathetic nerve         | UBERON:0035495 | hilum of lymph node             | Hilum                     | [95](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=95:95) |  25.0663  |
-| 39 | UBERON:0010397 | efferent lymphatic vessel              | Efferent Lymphatics       | UBERON:0035495 | hilum of lymph node             | Hilum                     | [93](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=93:93) |  11.8685  |
-| 40 | UBERON:0010397 | efferent lymphatic vessel              | Efferent Lymphatics       | UBERON:0035495 | hilum of lymph node             | Hilum                     | [94](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=94:94) |  11.8685  |
-| 46 | UBERON:8410034 | lymph node artery                      | Lymphatic Artery          | UBERON:0035495 | hilum of lymph node             | Hilum                     | [96](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=96:96) |   4.59138 |
+|  7 | UBERON:0001473 | lymphatic vessel                       | Lymphatic Vessels         | UBERON:0010396 | afferent lymphatic vessel       | Afferent lymphatic vessel | [18](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=18:18) |  29.6807  |
+|  8 | UBERON:0001473 | lymphatic vessel                       | Lymphatic Vessels         | UBERON:0010396 | afferent lymphatic vessel       | Afferent lymphatic vessel | [19](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=19:19) |  29.6807  |
+| 14 | UBERON:0034729 | sympathetic nerve                      | Sympathetic nerve         | UBERON:0035495 | hilum of lymph node             | Hilum                     | [95](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=95:95) |  25.0541  |
+| 39 | UBERON:0010397 | efferent lymphatic vessel              | Efferent Lymphatics       | UBERON:0035495 | hilum of lymph node             | Hilum                     | [93](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=93:93) |  11.8627  |
+| 40 | UBERON:0010397 | efferent lymphatic vessel              | Efferent Lymphatics       | UBERON:0035495 | hilum of lymph node             | Hilum                     | [94](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=94:94) |  11.8627  |
+| 46 | UBERON:8410034 | lymph node artery                      | Lymphatic Artery          | UBERON:0035495 | hilum of lymph node             | Hilum                     | [96](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=96:96) |   4.58914 |
 | 49 | UBERON:8410042 | arteriole of lymph node                | Arteriole                 | UBERON:0002194 | capsule of lymph node           | Capsule                   | [13](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=13:13) | nan       |
 | 50 | UBERON:8410041 | venule of lymph node                   | Venule                    | UBERON:0002194 | capsule of lymph node           | Capsule                   | [14](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=14:14) | nan       |
 | 51 | UBERON:0002195 | trabecula of lymph node                | Trabeculae                | UBERON:0002194 | capsule of lymph node           | Capsule                   | [15](https://docs.google.com/spreadsheets/d/1_VWj_dD1dbmnBf8t0wptXvpy1oyyllZ1tXc0aKo2MSA/edit#gid=1223566381&range=15:15) | nan       |
