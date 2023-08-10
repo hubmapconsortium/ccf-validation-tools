@@ -12,7 +12,7 @@ class HRAWrapper():
             PREFIX ccf: <http://purl.org/ccf/>
 
             CONSTRUCT {
-                ?uberon foaf:depicted_by ?url .
+                ?uberon foaf:depiction ?url .
             
             }
             WHERE {
