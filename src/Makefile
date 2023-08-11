@@ -155,3 +155,7 @@ imports/ro_import.owl: mirror/ro.owl imports/ro_terms.txt
 		annotate -V http://ccf_tools_helpers/class_helper/releases/imports/$(VERSION)/ro_import.owl --annotation owl:versionInfo $(VERSION) \
 		convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
 .PHONY: imports/ro_import.owl
+
+dashboard:
+	python dashboard_generation.py
+	# make build -f ../docs/Makefile
