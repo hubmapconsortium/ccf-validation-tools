@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2023-08-10)
+ASCT+B Validation Reports for Lung (2023-08-23)
 ===============================================
 
 Table of contents
@@ -51,9 +51,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[13](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=13:13)_, the term _[UBERON:8600010](http://purl.obolibrary.org/obo/UBERON_8600010)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ciliated ducts of bronchial submucosal gland_ and the one in the **ontology** is _bronchial submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _ciliated ducts of bronchial submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[85](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=85:85)_, the term _[CL:4028006](http://purl.obolibrary.org/obo/CL_4028006)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _adventitial fibroblast_ and the one in the **ontology** is _alveolar type 2 fibroblast cell_. For reference, the given name/label **by SMEs** is _adventitial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[13](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=13:13)_, the term _[UBERON:8600010](http://purl.obolibrary.org/obo/UBERON_8600010)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ciliated ducts of bronchial submucosal gland_ and the one in the **ontology** is _bronchial submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _ciliated ducts of bronchial submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[116](https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1109843030&range=116:116)_, the term _[UBERON:0003920](http://purl.obolibrary.org/obo/UBERON_0003920)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _venous blood vessel _ and the one in the **ontology** is _venous blood vessel_. For reference, the given name/label **by SMEs** is _venous blood vessel _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
