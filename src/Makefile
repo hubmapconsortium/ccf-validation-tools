@@ -30,6 +30,7 @@ validation_reports_release_%: ../logs/%/logs_dict.json
 
 ../logs/%/README.md: ../logs/%/logs_dict.json validation_reports_release_%
 	if [ $(OLD_VERSION) = False ]; then python readme_reports_generation.py --table $* --data $< --output $@ --mode "readme" && \
+		cp $@ ../docs/$*/README.md && \
 		rm $<; fi
 .PRECIOUS: ../logs/%/README.md
 
