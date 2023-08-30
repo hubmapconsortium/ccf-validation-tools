@@ -4,6 +4,10 @@ Welcome to the ASCT+B Validation Reports! This is your go-to source for all of t
 
 With our reports, you can easily identify any potential errors or inconsistencies in your ASCT+B table, allowing you to take action to correct them before the next HRA release.
 
+## Validation Dashboard
+
+- [Dashboard](dashboard.md)
+
 ## Validation reports
 
 - [Blood](Blood/README.md)
