@@ -102,7 +102,7 @@ release_notes:
 	python release_notes_generation.py
 	rm tables_version.txt
 	
-../owl/CCF_AS_CT.owl: $(OWL_CLASS_FILES) $(OWL_CLASS_SEC_FILES) release_notes
+../owl/CCF_AS_CT.owl: $(OWL_CLASS_FILES) $(OWL_CLASS_SEC_FILES) release_notes dashboard
 	if [ $(OLD_VERSION) = False ]; then $(ROBOT) $(CATALOG) merge $(patsubst %, -i %, $(OWL_CLASS_FILES)) \
 					 merge $(patsubst %, -i %, $(OWL_CLASS_SEC_FILES)) \
 					 reduce --reasoner ELK \
@@ -158,5 +158,5 @@ imports/ro_import.owl: mirror/ro.owl imports/ro_terms.txt
 .PHONY: imports/ro_import.owl
 
 dashboard:
-	python dashboard_generation.py
+	python dashboard_generation.py --output ../docs/dashboard.md
 	# make build -f ../docs/Makefile
