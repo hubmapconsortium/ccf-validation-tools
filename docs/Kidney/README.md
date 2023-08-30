@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Kidney (2023-08-29)
+ASCT+B Validation Reports for Kidney (2023-08-30)
 =================================================
 
 Table of contents
@@ -191,7 +191,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 |  3 | CL:0000236 | B cell                                              | B cell                                         | UBERON:0005215 | kidney interstitium                  | Interstitium                         | [85](https://docs.google.com/spreadsheets/d/19B_iDwpVTzLl6JLUl7g943p8b14YxYRwOshm-PLbIwk/edit#gid=949267305&range=85:85) |
 |  4 | CL:0000576 | monocyte                                            | Monocyte                                       | UBERON:0005215 | kidney interstitium                  | Interstitium                         | [80](https://docs.google.com/spreadsheets/d/19B_iDwpVTzLl6JLUl7g943p8b14YxYRwOshm-PLbIwk/edit#gid=949267305&range=80:80) |
 |  5 | CL:0000623 | natural killer cell                                 | Natural Killer Cell                            | UBERON:0005215 | kidney interstitium                  | Interstitium                         | [75](https://docs.google.com/spreadsheets/d/19B_iDwpVTzLl6JLUl7g943p8b14YxYRwOshm-PLbIwk/edit#gid=949267305&range=75:75) |
-|  6 | CL:0000738 | Leukocyte                                           | nan                                            | UBERON:0005215 | kidney interstitium                  | Interstitium                         | [72](https://docs.google.com/spreadsheets/d/19B_iDwpVTzLl6JLUl7g943p8b14YxYRwOshm-PLbIwk/edit#gid=949267305&range=72:72) |
+|  6 | CL:0000738 | Leukocyte                                           | Leukocyte                                      | UBERON:0005215 | kidney interstitium                  | Interstitium                         | [72](https://docs.google.com/spreadsheets/d/19B_iDwpVTzLl6JLUl7g943p8b14YxYRwOshm-PLbIwk/edit#gid=949267305&range=72:72) |
 |  7 | CL:0000775 | neutrophil                                          | Neutrophil                                     | UBERON:0005215 | kidney interstitium                  | Interstitium                         | [87](https://docs.google.com/spreadsheets/d/19B_iDwpVTzLl6JLUl7g943p8b14YxYRwOshm-PLbIwk/edit#gid=949267305&range=87:87) |
 |  8 | CL:0000786 | plasma cell                                         | Plasma cell                                    | UBERON:0005215 | kidney interstitium                  | Interstitium                         | [86](https://docs.google.com/spreadsheets/d/19B_iDwpVTzLl6JLUl7g943p8b14YxYRwOshm-PLbIwk/edit#gid=949267305&range=86:86) |
 |  9 | CL:0000814 | mature NK T cell                                    | Natural Killer T Cell                          | UBERON:0005215 | kidney interstitium                  | Interstitium                         | [76](https://docs.google.com/spreadsheets/d/19B_iDwpVTzLl6JLUl7g943p8b14YxYRwOshm-PLbIwk/edit#gid=949267305&range=76:76) |

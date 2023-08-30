@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Small_intestine (2023-08-29)
+ASCT+B Validation Reports for Small_intestine (2023-08-30)
 ==========================================================
 
 Table of contents
@@ -1279,7 +1279,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 17 | CL:0000163 | endocrine cell                                      | endocrine                   | UBERON:0000400 | jejunal epithelium      | Epithelium                                           | [225](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=225:225) |
 | 18 | CL:0000163 | endocrine cell                                      | endocrine lineage cell      | UBERON:0008346 | duodenal epithelium     | Epithelium                                           | [60](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=60:60)    |
 | 19 | CL:0000186 | myofibroblast cell                                  | myofibroblast               | UBERON:0015834 | duodenum lamina propria | Lamina propria/Gut associated lymphoid tissue (GALT) | [65](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=65:65)    |
-| 20 | CL:0000186 | myofibroblast cell                                  | myofibroblasts              | UBERON:0000399 | jejunal mucosa          | mucosa                                               | [232](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=232:232) |
+| 20 | CL:0000186 | myofibroblast                                       | myofibroblasts              | UBERON:0000399 | jejunal mucosa          | mucosa                                               | [232](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=232:232) |
 | 21 | CL:0000212 | absorptive cell                                     | absorptive                  | UBERON:0000400 | jejunal epithelium      | Epithelium                                           | [226](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=226:226) |
 | 22 | CL:0000212 | absorptive cell                                     | absorptive                  | UBERON:0008346 | duodenal epithelium     | Epithelium                                           | [58](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=58:58)    |
 | 23 | CL:0000235 | macrophage                                          | macrophages                 | UBERON:0000399 | jejunal mucosa          | mucosa                                               | [241](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=241:241) |
