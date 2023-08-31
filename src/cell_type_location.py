@@ -31,13 +31,22 @@ def get_ct_loc_marker(file):
     last_as = anatomical_structures[-1]
     last_ct = cell_types[-1]
 
-    if last_ct["id"] == '' or last_as["id"] == '':
-      continue
+    if last_ct["id"] == "":
+        if len(cell_types) > 1:
+            last_ct = cell_types[-2]
+            if last_ct["id"] == "":
+                continue
+
+    if last_as["id"] == "":
+        if len(anatomical_structures) > 1:
+            last_as = anatomical_structures[-2]
+            if last_as["id"] == "":
+                continue
 
     if not is_valid_id(last_ct["id"]) or not is_valid_id(last_as["id"]):
       continue
 
-    markers_group = [marker["id"] for marker in biomarkers if is_valid_id(marker["id"])]
+    markers_group = sorted([marker["id"] for marker in biomarkers if is_valid_id(marker["id"])])
 
     if not markers_group:
       continue
@@ -122,17 +131,19 @@ def template(args):
   ug = UberonGraph()
 
   report = pd.read_csv(args.input, sep='\t')
+  dir_path = os.path.dirname(args.input)
 
   # Filtering cases where there're more than 1 CT, AS and Marker list.
   multi_loc_rep = report.groupby(['Terminal AS/ID', 'Terminal CT/ID']).filter(lambda x: len(x)>1)
-  multi_loc_rep.to_csv('multi_loc_report.tsv', sep='\t', index=False)
+  multi_loc_rep.to_csv(f"{dir_path}/multi_loc_report.tsv", sep="\t", index=False)
 
   # Same CT and AS with different Marker list
   cell_loc_diff_markers = multi_loc_rep.drop_duplicates(['Terminal AS/ID','Terminal CT/ID','Markers']).sort_values(['Terminal AS/ID','Terminal CT/ID']).groupby(['Terminal AS/ID','Terminal CT/ID']).filter(lambda x: len(x)>1)
-  cell_loc_diff_markers.to_csv('../logs/ct_loc_markers/cell-loc-diff-markers.tsv', sep='\t', index=False)
+  cell_loc_diff_markers.to_csv(f"{dir_path}/cell-loc-diff-markers.tsv", sep="\t", index=False)
   
   # Filtering the rows from cell_loc_diff_marks
-  clean_report = multi_loc_rep[(multi_loc_rep['Terminal AS/ID'].isin(cell_loc_diff_markers['Terminal AS/ID']) == False) & (multi_loc_rep['Terminal CT/ID'].isin(cell_loc_diff_markers['Terminal CT/ID']) == False)].drop_duplicates(['Terminal AS/ID','Terminal CT/ID'])
+#   clean_report = multi_loc_rep[(multi_loc_rep['Terminal AS/ID'].isin(cell_loc_diff_markers['Terminal AS/ID']) == False) & (multi_loc_rep['Terminal CT/ID'].isin(cell_loc_diff_markers['Terminal CT/ID']) == False)].drop_duplicates(['Terminal AS/ID','Terminal CT/ID'])
+  clean_report = cell_loc_diff_markers[~cell_loc_diff_markers.isin(multi_loc_rep)].dropna()
   clean_report.to_csv('clean_report.tsv', sep='\t', index=False)
 
                     # leukocyte    myeloid cell
