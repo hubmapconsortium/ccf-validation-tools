@@ -248,8 +248,9 @@ def add_row_link(report, table):
 def split_report(report):
   report_as = report[report['s'].str.contains('UBERON') & report['o'].str.contains('UBERON')]
   report_ct = report[report['s'].str.contains('CL') & report['o'].str.contains('CL')]
+  report_ct_as = report[report['s'].str.contains('CL') & report['o'].str.contains('UBERON')]
 
-  return report_as, report_ct
+  return report_as, report_ct, report_ct_as
 
 def tsv2md(report):
   return tabulate(report, headers=report.columns, tablefmt="github")
@@ -260,7 +261,7 @@ def generate_relationship_md(table):
   BASE_PATH = f"../docs/{table}/"
 
   report = pd.read_csv(f"{BASE_PATH}class_{table}_log.tsv", sep='\t')
-  report_as, report_ct = split_report(add_row_link(report, table))
+  report_as, report_ct, report_ct_as = split_report(add_row_link(report, table))
 
   if len(report_as):
     reports["as-as"] = tsv2md(report_as)
@@ -272,9 +273,8 @@ def generate_relationship_md(table):
   else:
     reports["ct-ct"] = "- No issues found.\n\n"
 
-  report_ct_as = pd.read_csv(f"{BASE_PATH}{table}_AS_CT_strict_log.tsv", sep='\t')
   if len(report_ct_as):
-    reports["ct-as"] = tsv2md(add_row_link(report_ct_as, table))
+    reports["ct-as"] = tsv2md(report_ct_as)
   else:
     report["ct-as"] = "- No issues found.\n\n"
 
