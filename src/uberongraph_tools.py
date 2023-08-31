@@ -249,6 +249,20 @@ class UberonGraph():
             ?subject normalizedIC: ?object .
           }
         """
+        self.select_continuous_with = """
+          PREFIX continuous_with: <http://purl.obolibrary.org/obo/RO_0002150>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/redundant>
+          {
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject continuous_with: ?object .
+          }
+        """
 
     def ask_uberon(self, r, q, urls=True):
         """"""

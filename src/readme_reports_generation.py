@@ -2,6 +2,8 @@ import argparse, json
 from datetime import datetime
 from mdutils.fileutils.fileutils import MarkDownFile
 from mdutils.mdutils import MdUtils
+from tabulate import tabulate
+import pandas as pd
 
 from download_resource import get_sheet_gid
 
@@ -15,7 +17,7 @@ def generate_template_readme(file_name, table):
   template.new_paragraph(text="These are the reports related to issues in the terms found in the ASCT+B table. We validate only [CL](https://www.ebi.ac.uk/ols/ontologies/cl), [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) and [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl) terms.")
   
   template.new_header(level=2, title="Terms not found", add_table_of_contents='y')
-  template.new_paragraph(text="This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table.")
+  template.new_paragraph(text="This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.")
   template.new_line()
   template.new_line()
 
@@ -58,31 +60,55 @@ def generate_template_readme(file_name, table):
   markers_dict["external"] = m_ext
 
   template.new_header(level=1, title="Relationship reports", add_table_of_contents='y')
+  template.new_paragraph(text="These reports are other representations of the ASCT+B table. We split each row into pairs with adjacent terms, resulting in a table with two primary columns, object (o), left side and subject (s), right side. The experts' labels for the subject and object are in the columns user_slabel and user_olabel. The other columns are the subject label (s_label) and object label (o_label), the label from the source ontologies.")
+  template.new_paragraph(text="The report means it could not find a partonomy relationship in the source ontologies, but it doesn't mean this relationship is entirely invalid. In some cases, the pair is in the *inverse order*. In other cases, the relationship is *missing* in the source ontologies. Finally, how it was modelled in the ASCT+B table is not aligned with the ontologies sources and needs a more general discussion.")
 
+  template.new_header(level=2, title="How to read a table entry")
+  template.new_paragraph(text="**In the ASCT+B table**")
+  template.new_paragraph(text="\n\n")
+  template.new_table(columns=6, rows=2, text=["AS/2","AS/2/LABEL","AS/2/ID","AS/3","AS/3/LABEL","AS/3/ID", "lens","lens","UBERON:0000965","ciliary zonules","suspensory ligament of lens","UBERON:0006762"])
+  template.new_paragraph(text="\n\n")
+
+  template.new_paragraph(text="**In the Relationship Report**")
+  template.new_paragraph(text="\n\n")
+  template.new_table(columns=6, rows=2, text=["s","slabel","user_slabel","o","olabel","user_olabel","UBERON:0006762","suspensory ligament of lens","ciliary zonules","UBERON:0000965","lens","lens"])
+  template.new_paragraph(text="\n\n")
+  
   template.new_header(level=2, title="Relationship AS-AS report", add_table_of_contents='y')
-
+  template.new_paragraph(text="This table contains terms for anatomical structures that are related to each other according to the ASCT+B table but are not related to each other in source ontologies via one of the relation types we consider valid for ASCT+B tables. Valid relationships are: *part_of*, e.g. corneal endothelium part_of cornea; *subClassOf*, e.g. left kidney subClassOf (is_a) kidney; and *overlaps* (has some part in), e.g. ureter overlaps kidney; *connected_to*, e.g. TBA. *part_of* and *subClassOf* relationships should be specific to general, e.g. left kidney (specific) to kidney (general); corneal endothelium (specific) to cornea (general). The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.")
+  
+  template.new_paragraph(text="\n\n")
   m_as = template.create_marker(text_marker="as-as_report")
   markers_dict["as-as_report"] = m_as
+  template.new_paragraph(text="\n\n")
 
   template.new_header(level=2, title="Relationship CT-CT report", add_table_of_contents='y')
+  template.new_paragraph(text="In the case of the CT-CT relationship, for each couple of terms, we verify for _sub class of, part of and overlaps_ in the source ontologies. The **deltaIC** score is included because a high score (>50) can indicate that this order is reversed, e.g. TBA.")
 
+  template.new_paragraph(text="\n\n")
   m_ct = template.create_marker(text_marker="ct-ct_report")
   markers_dict["ct-ct_report"] = m_ct
+  template.new_paragraph(text="\n\n")
 
   template.new_header(level=2, title="Relationship CT-AS report", add_table_of_contents='y')
+  template.new_paragraph(text="In the case of the AS-CT relationship, for each couple of terms, we verify for _connected to and has part_ in the source ontologies.")
 
+  template.new_paragraph(text="\n\n")
   m_ctas = template.create_marker(text_marker="ct-as_report")
   markers_dict["ct-as_report"] = m_ctas
+  template.new_paragraph(text="\n\n")
 
   template.new_header(level=1, title="New CL terms", add_table_of_contents='y')
 
   m_ncl = template.create_marker(text_marker="new_cl")
   markers_dict["new_cl"] = m_ncl
+  template.new_paragraph(text="\n\n")
 
   template.new_header(level=1, title="New UBERON terms", add_table_of_contents='y')
 
   m_nub = template.create_marker(text_marker="new_uberon")
   markers_dict["new_uberon"] = m_nub
+  template.new_paragraph(text="\n\n")
 
   template.new_header(level=1, title="Informative reports (valid relationships)", add_table_of_contents='y')
 
@@ -116,7 +142,7 @@ def generate_invalid_terms_report(log_dict, table):
     elif 'uberon' in issue["id"] or 'UBERON' in issue["id"] or 'cl' in issue["id"] or 'CL' in issue["id"]:
       terms_report["typos"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, it might have a typo in the term _{issue["id"]}_. The term id should have this pattern: UBERON:NNNNNNN or CL:NNNNNNN or PCL:NNNNNNN. The ontology name in upper case. N is a number and it should have exact 7 numbers after the colon. Please change it in the ASCT+B table.\n\n'
     elif 'FMA' in issue["id"] or 'fma' in issue["id"] or 'LMHA' in issue["id"] or 'lmha' in issue["id"]:
-      terms_report["external"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, the term _{issue["id"]}_ is from another ontology that is not validated in this process. The term id should have this pattern: FMA:NNNNN or LMHA:NNNNN. The ontology name in upper case. N is a number and it should have exact 5 number after the colon.\n\n'
+      terms_report["external"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, the term _{issue["id"]}_ is from another ontology that is not validated in this process.\n\n'
   
   if terms_report["blank"] == "":
     terms_report["blank"] = "- No issues found.\n\n"
@@ -134,7 +160,7 @@ def generate_invalid_terms_report(log_dict, table):
     terms_report["no_found_id"] = "- No issues found.\n\n"
   
   for issue in log_dict["diff_label"]:       
-    terms_report["diff_label"] += f'1. In row _[{issue["rowNumber"]}]({get_row_link(table, issue["rowNumber"])})_, the term _{add_base_iri(issue["id"])}_ has different name/label in the source ontology. The name/label in the ASCT+B table is _{issue["asct_label"]}_ and the one in the ontology is _{issue["label"]}_. For reference, the given name/label by SMEs is _{issue["user_label"]}_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.\n\n'
+    terms_report["diff_label"] += f'1. In row _[{issue["rowNumber"]}]({get_row_link(table, issue["rowNumber"])})_, the term _{add_base_iri(issue["id"])}_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _{issue["asct_label"]}_ and the one in the **ontology** is _{issue["label"]}_. For reference, the given name/label **by SMEs** is _{issue["user_label"]}_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.\n\n'
   
   if terms_report["diff_label"] == "":
     terms_report["diff_label"] = "- No issues found.\n\n"
@@ -154,6 +180,8 @@ def generate_readme(file, data, table):
   
   terms_report = generate_invalid_terms_report(data, table)
 
+  rel_report = generate_relationship_md(table)
+
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["no_found_id"], marker=markers_dict["nfound"])
 
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["typos"], marker=markers_dict["typos"])
@@ -164,11 +192,11 @@ def generate_readme(file, data, table):
 
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["external"], marker=markers_dict["external"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'class_{args.table}_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["as-as_report"])
+  readme.file_data_text = readme.place_text_using_marker(text=rel_report["as-as"], marker=markers_dict["as-as_report"])
 
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'class_{args.table}_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["ct-ct_report"])
+  readme.file_data_text = readme.place_text_using_marker(text=rel_report["ct-ct"], marker=markers_dict["ct-ct_report"])
   
-  readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'{args.table}_AS_CT_strict_log.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["ct-as_report"])
+  readme.file_data_text = readme.place_text_using_marker(text=rel_report["ct-as"], marker=markers_dict["ct-as_report"])
 
   readme.file_data_text = readme.place_text_using_marker(text=readme.new_inline_link(f'new_cl_terms_{args.table}.tsv', text="Report", bold_italics_code='b'), marker=markers_dict["new_cl"])
 
@@ -209,6 +237,49 @@ def generate_graph_page(file, table):
   graph_page = generate_graph_template(file, table)
 
   graph_page.create_md_file()
+
+def add_row_link(report, table):
+  for row in report.itertuples():
+    row_n = row.row_number
+    report.at[row.Index, "row_number"] = f'[{row_n}]({get_row_link(table, row_n)})'
+
+  return report
+
+def split_report(report):
+  report_as = report[report['s'].str.contains('UBERON') & report['o'].str.contains('UBERON')]
+  report_ct = report[report['s'].str.contains('CL') & report['o'].str.contains('CL')]
+  report_ct_as = report[report['s'].str.contains('CL') & report['o'].str.contains('UBERON')]
+
+  return report_as, report_ct, report_ct_as
+
+def tsv2md(report):
+  return tabulate(report, headers=report.columns, tablefmt="github")
+
+
+def generate_relationship_md(table):
+  reports = {"as-as": "", "ct-ct": "", "ct-as": ""}
+  BASE_PATH = f"../docs/{table}/"
+
+  report = pd.read_csv(f"{BASE_PATH}class_{table}_log.tsv", sep='\t')
+  report_as, report_ct, report_ct_as = split_report(add_row_link(report, table))
+
+  if len(report_as):
+    reports["as-as"] = tsv2md(report_as)
+  else:
+    reports["as-as"] = "- No issues found.\n\n"
+  
+  if len(report_ct):
+    reports["ct-ct"] = tsv2md(report_ct)
+  else:
+    reports["ct-ct"] = "- No issues found.\n\n"
+
+  if len(report_ct_as):
+    reports["ct-as"] = tsv2md(report_ct_as)
+  else:
+    report["ct-as"] = "- No issues found.\n\n"
+
+  return reports
+
 
 
 if __name__ == '__main__':

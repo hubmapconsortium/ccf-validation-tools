@@ -2,10 +2,9 @@ name: Release
 
 # Controls when the action will run.
 on:
-  # Triggers the workflow weekly on Mondays at 6:54 am
+  # Triggers the workflow weekly on Wednesdays at 6:54 am
   schedule:
-    - cron: '54 6 9 1 *'
-    # - cron: '54 6 * * 1'
+   - cron: '54 6 * * 3'
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,7 +15,7 @@ jobs:
   report-release:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    container: anitacaron/ccf-tools-dep:v1.0.5
+    container: anitacaron/ccf-tools-dep:v1.0.8
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -25,7 +24,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: verify and build
-        run: mkdir -p resources/ASCT-b_tables && cd src && make validation_reports_release
+        run: mkdir -p resources/ASCT-b_tables && cd src && make official_release
       - name: Define repository's owner
         run: chown -R root /__w/ccf-validation-tools/ccf-validation-tools
       - name: Commit report

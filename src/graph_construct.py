@@ -9,11 +9,11 @@ def merge_json(file, sec, param, value):
         }
       ]
     }
-
-  for f_edge in file["graphs"][0]["edges"]:
-    for s_edge in sec["graphs"][0]["edges"]:
-      if f_edge["sub"] == s_edge["sub"] and f_edge["pred"] == s_edge["pred"] and f_edge["obj"] == s_edge["obj"]:
-        f_edge["meta"] = style_prop
+  if sec["graphs"][0].get("edges"):
+    for f_edge in file["graphs"][0]["edges"]:
+      for s_edge in sec["graphs"][0]["edges"]:
+        if f_edge["sub"] == s_edge["sub"] and f_edge["pred"] == s_edge["pred"] and f_edge["obj"] == s_edge["obj"]:
+          f_edge["meta"] = style_prop
 
   return file
 

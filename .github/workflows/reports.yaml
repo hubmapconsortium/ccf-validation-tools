@@ -1,12 +1,10 @@
 name: Validation Reports Page
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - 'docs/**'
-      - 'mkdocs.yml'
+  workflow_run:
+    workflows: [Release]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:

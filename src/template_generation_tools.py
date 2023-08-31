@@ -32,24 +32,27 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
           'isa': 'SC %',
           'OBO_Validated_isa': '>A CCFH:IN_OBO',
           'validation_date_isa': '>A dc:date',
-          'part_of': 'SC part_of some %',
+          'part_of': "SC 'part of' some %",
           'OBO_Validated_part_of': '>A CCFH:IN_OBO',
           'validation_date_part_of': '>A dc:date',
           'overlaps': 'SC overlaps some %',
           'OBO_Validated_overlaps': '>A CCFH:IN_OBO',
           'validation_date_overlaps': '>A dc:date',
-          'connected_to': 'SC connected_to some %',
+          'connected_to': "SC 'connected to' some %",
           'OBO_Validated_connected_to': '>A CCFH:IN_OBO',
           'validation_date_connected_to': '>A dc:date',
-          'develops_from': 'SC develops_from some %',
+          'develops_from': "SC 'develops from' some %",
           'OBO_Validated_develops_from': '>A CCFH:IN_OBO',
           'validation_date_develops_from': '>A dc:date',
-          'has_part': 'SC has_part some %',
+          'has_part': "SC 'has part' some %",
           'OBO_Validated_has_part': '>A CCFH:IN_OBO',
           'validation_date_has_part': '>A dc:date',
-          'located_in': 'SC located_in some %',
+          'located_in': "SC 'located in' some %",
           'OBO_Validated_located_in': '>A CCFH:IN_OBO',
-          'validation_date_located_in': '>A dc:date'}
+          'validation_date_located_in': '>A dc:date',
+          'continuous_with': "SC 'continuous with' some %",
+          'OBO_Validated_continuous_with': '>A CCFH:IN_OBO',
+          'validation_date_continuous_with': '>A dc:date'}
 
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
   seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
@@ -88,7 +91,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
 
   del_index = []
   for t in no_valid_class:
-    log_dict["no_found_id"].append({"id": {t}})
+    log_dict["no_found_id"].append({"id": t})
     #logger.warning(f"Unrecognised UBERON/CL/PCL entity '{t}'")
     del_index.extend(ccf_tools_df[(ccf_tools_df['s'] == t) | (ccf_tools_df['o'] == t)].index)
    
@@ -246,6 +249,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_conn_to.union(valid_ct_as_conn_to), 'connected_to')
 
+  # CONTINUOUS WITH CHECK
+  valid_cont_with, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_continuous_with)
+
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_cont_with, 'continuous_with')
+
   # STRICT CT-AS REPORT
   terms_s, terms_o = split_terms(terms_ct_as)
   
@@ -260,12 +268,16 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # AS-CT HAS PART
   valid_has_part, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_has_part)
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_has_part, 'has_part', True)
+  
+  # AS-AS HAS PART
+  valid_as_as_has_part, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_has_part)
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_as_as_has_part, 'has_part')
 
   # CT-AS SUBCLASS PART OF
   valid_subclass_ct_as_po, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_subclass_po)
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_subclass_ct_as_po, 'has_part', True)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po)))
+  terms_s, terms_o = split_terms(transform_to_str(valid_has_part.union(valid_subclass_ct_as_po).union(valid_as_as_has_part)))
 
   has_part_report = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
