@@ -32,6 +32,7 @@ def add_color(report, report_type):
         for row in report.itertuples():
             report.at[row.Index, "AS_invalid_term_percent"] = check_number_n_get_color(row.AS_invalid_term_percent)
             report.at[row.Index, "CT_invalid_term_percent"] = check_number_n_get_color(row.CT_invalid_term_percent)
+            report.at[row.Index, "invalid_terms_percent"] = check_number_n_get_color(row.invalid_terms_percent)
     elif report_type == "relations":
         for row in report.itertuples():
             report.at[row.Index, "percent_invalid_AS-AS_relationship"] = check_number_n_get_color(row._3)
@@ -52,7 +53,8 @@ def get_reports(date):
         "AS_invalid_term_percent": "% INVALID AS TERMS",
         "CT_valid_term_number": "# VALID CT TERMS",
         "CT_invalid_term_number": "# INVALID CT TERMS",
-        "CT_invalid_term_percent": "% INVALID CT TERMS"
+        "CT_invalid_term_percent": "% INVALID CT TERMS",
+        "invalid_terms_percent": "% INVALID TERMS"
     }, inplace=True)
     ter_report = add_link(ter_report)
     ter_report_md = tsv2md(ter_report)
