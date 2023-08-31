@@ -10,7 +10,7 @@ tables_version = []
 with open('tables_version.txt', 'r', encoding='utf-8') as t:
   content_list = [line.rstrip('\n') for line in t]
   for table in content_list:
-    tables_version.extend(table.split(","))
+    tables_version.extend(table.split(";"))
 
 mdFile = MdUtils(file_name='../NOTES', title='Release Notes')
 
@@ -19,7 +19,7 @@ mdFile.new_header(3, "Ontology release", add_table_of_contents='n')
 ontology_data = ["Ontology", "Version"]
 ontology_data.extend(ont_version)
 
-mdFile.new_table(columns=2, rows=3, text=ontology_data, text_align='center')
+mdFile.new_table(columns=2, rows=4, text=ontology_data, text_align='center')
 
 mdFile.new_header(3, "ASCT+b Tables", add_table_of_contents='n')
 
