@@ -10,6 +10,7 @@ With our reports, you can easily identify any potential errors or inconsistencie
 
 ## Validation reports
 
+- [Anatomical System](Anatomical_Systems/README.md)
 - [Blood](Blood/README.md)
 - [Blood Vasculature](Blood_vasculature/README.md)
 - [Bone-Marrow](Bone-Marrow/README.md)
@@ -25,6 +26,7 @@ With our reports, you can easily identify any potential errors or inconsistencie
 - [Lymph Node](Lymph_node/README.md)
 - [Lymph Vasculature](Lymph_vasculature/README.md)
 - [Main Bronchus](Main_Bronchus/README.md)
+- [Mammary Gland](Mammary_Gland/README.md)
 - [Muscular_System](Muscular_System/README.md)
 - [Ovary](Ovary/README.md)
 - [Palatine_Tonsil](Palatine_Tonsil/README.md)
