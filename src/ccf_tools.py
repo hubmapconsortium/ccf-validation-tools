@@ -156,6 +156,10 @@ def parse_asctb(path):
           unique_terms.add(last_as['id'])
           unique_terms.add(last_ct['id'])
         else:
+          if check_id(last_as['id']):
+            as_valid_terms.add(last_as['id'])
+          if check_id(last_ct['id']):
+            ct_valid_terms.add(last_ct['id'])
           if not check_id(last_as['id']) and last_as['rdfs_label'] != '':
             as_invalid_terms.add(last_as['rdfs_label'])
             unique_terms.add(last_as['rdfs_label'])
@@ -204,9 +208,11 @@ def parse_asctb(path):
 
     as_invalid_term_percent = 0
     ct_invalid_terms_percent = 0
-    if len(unique_terms) > 0:
+    if len(as_valid_terms) + len(ct_invalid_terms) > 0:
       as_invalid_term_percent = round((len(as_invalid_terms)*100)/(len(as_valid_terms)+len(as_invalid_terms)), 2)
+    if len(ct_valid_terms) + len(ct_invalid_terms) > 0:
       ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/(len(ct_valid_terms)+len(ct_invalid_terms)), 2)
+    if len(unique_terms) > 0:
       invalid_terms_percent = round((len(as_invalid_terms)+len(ct_invalid_terms))*100/len(unique_terms), 2)
 
     report_terms = {
