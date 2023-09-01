@@ -259,9 +259,12 @@ def tsv2md(report):
 def generate_relationship_md(table):
   reports = {"as-as": "", "ct-ct": "", "ct-as": ""}
   BASE_PATH = f"../docs/{table}/"
-
-  report = pd.read_csv(f"{BASE_PATH}class_{table}_log.tsv", sep='\t')
-  report_as, report_ct, report_ct_as = split_report(add_row_link(report, table))
+  try:
+    report = pd.read_csv(f"{BASE_PATH}class_{table}_log.tsv", sep='\t')
+    report_as, report_ct, report_ct_as = split_report(add_row_link(report, table))
+  except:
+    report_as = report_ct = report_ct_as = []
+  
 
   if len(report_as):
     reports["as-as"] = tsv2md(report_as)
@@ -276,7 +279,7 @@ def generate_relationship_md(table):
   if len(report_ct_as):
     reports["ct-as"] = tsv2md(report_ct_as)
   else:
-    report["ct-as"] = "- No issues found.\n\n"
+    reports["ct-as"] = "- No issues found.\n\n"
 
   return reports
 
