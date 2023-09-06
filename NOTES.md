@@ -14,6 +14,7 @@ Release Notes
 
 |Organ|Version|Date|
 | :---: | :---: | :---: |
+|Anatomical_Systems|v1.0|December 15, 2023|
 |Blood|v1.4|revise for October 1, 2023|
 |Bone-Marrow|v1.3|revise for April 1, 2023|
 |Brain|v1.5|revise for October 1, 2023|
@@ -28,9 +29,11 @@ Release Notes
 |Lymph_node|v1.3|revise for October 1, 2023|
 |Lymph_vasculature|v1.4|NA|
 |Main_Bronchus|v1.1|revise for October 1, 2023|
+|Mammary_Gland|v1.0|revise for October 1, 2023|
 |Muscular_System|v1.1|revise for October 1, 2023|
 |Ovary|v1.3|revise for April 1, 2023|
 |Pancreas|v1.3|revise for April 1, 2023|
+|Palatine_Tonsil|V1.0|June 15, 2023|
 |Peripheral_nervous_system|v1.1|revise for Oct 1, 2022|
 |Placenta|V1.1|revise for April 1, 2023|
 |Prostate|v1.1|revise for Oct 1, 2023|

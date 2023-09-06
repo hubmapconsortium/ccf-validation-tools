@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Anatomical_Systems (2023-09-01)
+ASCT+B Validation Reports for Anatomical_Systems (2023-09-06)
 =============================================================
 
 Table of contents
@@ -51,7 +51,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=12:12)_, the term _[UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _circulatory system_ and the one in the **ontology** is _anatomical system_. For reference, the given name/label **by SMEs** is _circulatory system_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
@@ -59,11 +59,7 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[18](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=18:18)_, no term id was found for the name/label _liver_.
-
-1. In row _[36](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=36:36)_, no term id was found for the name/label _upper respiratory system_.
-
-1. In row _[37](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=37:37)_, no term id was found for the name/label _lower respiratory system_.
+- No issues found.
 
 
 ## Terms from another ontology
