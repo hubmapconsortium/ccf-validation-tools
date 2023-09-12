@@ -5,10 +5,11 @@ comments: true
 # Suggestions to make valid relationships in the eye table v1.3 (08/05/2023)
 
 Please, add a comment below if you want to address any of the actions to be taken. Please, indicate the number before the comment.
+**IMPORTANT** The order of the two classes in these pages is the same as it is found in the tables (e.g. AS4 --> AS5)
 
  
 
-## AS-AS
+## AS-->AS
 
 **1 - neuron projection bundle connecting eye with brain --> cranial neuron projection bundle**
 
@@ -56,7 +57,7 @@ It needs a 'has part' relationship.
 
 
 
-## CT-CT
+## CT-->CT
 
 **1 - Amacrine Cell --> GABAergic interneuron**
 
@@ -80,7 +81,7 @@ Müller cell is not a neuron. It can be classified under `neural cell`, `neuron 
 
 
 
-## AS-CT
+## AS-->CT
 
 **1 - iris epithelium --> epithelial cell**
 
