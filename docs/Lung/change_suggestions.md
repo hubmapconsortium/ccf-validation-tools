@@ -5,10 +5,11 @@ comments: true
 # Suggestions to make valid relationships in the lung table v1.3 (30/05/2023)
 
 Please, add a comment below if you want to address any of the actions to be taken. Please, indicate the number before the comment.
+**IMPORTANT** The order of the two classes in these pages is the same as it is found in the tables (e.g. AS4 --> AS5)
 
 
 
-## AS-AS
+## AS-->AS
 
 **1 - Secondary Pulmonary Lobule --> terminal bronchiole**
 
@@ -100,7 +101,7 @@ We are still working for a solution for the immune system, but pulmonary acinus 
 
 
 
-## CT-CT
+## CT-->CT
 
 
 
@@ -108,7 +109,7 @@ We are still working for a solution for the immune system, but pulmonary acinus 
 
 
 
-## CT-AS
+## AS-->CT
 
 **1 - terminal bronchiole epithelium --> club cell**
 
