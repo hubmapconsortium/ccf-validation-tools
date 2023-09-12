@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# Suggestions to make valid relationships in the lung table v1.3 (30/05/2023)
+# Suggestions to make valid relationships in the Pancreas table v1.3 (12/09/2023)
 
 Please, add a comment below if you want to address any of the actions to be taken. Please, indicate the number before the comment.
 
