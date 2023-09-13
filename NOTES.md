@@ -7,8 +7,8 @@ Release Notes
 |Ontology|Version|
 | :---: | :---: |
 |PCL|2023-02-27|
-|CL|2023-07-20|
 |UBERON|2023-07-25|
+|CL|2023-07-20|
 
 ### ASCT+b Tables
 
@@ -19,7 +19,7 @@ Release Notes
 |Bone-Marrow|v1.3|revise for April 1, 2023|
 |Brain|v1.5|revise for October 1, 2023|
 |Eye|v1.4|revise for October 1, 2023|
-|Fallopian_tube|v1.2|modify for October 1, 2022|
+|Fallopian_tube|v1.2|revise for October 1, 2023|
 |Heart|v1.3|revise for April 1, 2023|
 |Kidney|v1.4|revise for October 1, 2023|
 |Knee|v1.1|June 15, 2023|
