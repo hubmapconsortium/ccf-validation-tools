@@ -47,9 +47,16 @@ def generate_template_readme(file_name, table):
   template.new_line()
   template.new_line()
   
-
   m_blank = template.create_marker(text_marker="blank")
   markers_dict["blank"] = m_blank
+  
+  template.new_header(level=2, title="Blank ontology ID missing parent", add_table_of_contents="y")
+  template.new_paragraph(text="This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.")
+  template.new_line()
+  template.new_line()
+  
+  m_parent = template.create_marker(text_marker="no_parent")
+  markers_dict["no_parent"] = m_parent
 
   template.new_header(level=2, title="Terms from another ontology")
   template.new_paragraph(text="This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).")
@@ -134,7 +141,7 @@ def get_row_link(table, row):
 
 def generate_invalid_terms_report(log_dict, table):
 
-  terms_report = {"no_found_id": "", "typos": "", "diff_label": "", "blank": "", "external": ""}
+  terms_report = {"no_found_id": "", "typos": "", "diff_label": "", "blank": "", "external": "", "no_parent": ""}
 
   for issue in log_dict["no_valid_id"]:
     if issue["id"] == "": 
@@ -164,7 +171,12 @@ def generate_invalid_terms_report(log_dict, table):
   
   if terms_report["diff_label"] == "":
     terms_report["diff_label"] = "- No issues found.\n\n"
+    
+  for issue in log_dict["no_parent"]:
+    terms_report["no_parent"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, the term _{issue["user_label"]}_ without ontology ID has no parent that is from the CL ontology.\n\n'
 
+  if terms_report["no_parent"] == "":
+    terms_report["no_parent"] = "- No issue found.\n\n"
   return terms_report
 
 def add_base_iri(content):
@@ -189,6 +201,8 @@ def generate_readme(file, data, table):
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["diff_label"], marker=markers_dict["diff_label"])
 
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["blank"], marker=markers_dict["blank"])
+  
+  readme.file_data_text = readme.place_text_using_marker(text=terms_report["no_parent"], marker=markers_dict["no_parent"])
 
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["external"], marker=markers_dict["external"])
 
