@@ -45,7 +45,8 @@ def parse_asctb(path):
       return re.match("(CL|UBERON|PCL)\:[0-9]+", id)
   
     def no_parent(log_dict, cell_type, row_number):
-      log_dict["no_parent"].append({"id": cell_type["id"], "label": cell_type["rdfs_label"], "user_label": cell_type["name"], "row_number": row_number})
+      if not check_id(cell_type["id"]):
+        log_dict["no_parent"].append({"id": cell_type["id"], "label": cell_type["rdfs_label"], "user_label": cell_type["name"], "row_number": row_number})
       return log_dict
 
     asct_b_tab = json.load(open(path))
@@ -137,8 +138,10 @@ def parse_asctb(path):
             ct_invalid_terms.add(next['name'])
             unique_terms.add(next['name'])
             
-          if not check_id(current['id']) and check_id(next['']):
-            log_dict = no_parent(log_dict, current['id'], row['rowNumber'])
+          if not check_id(current['id']) and (check_id(next['id']) or not check_id(next['id'])):
+            log_dict = no_parent(log_dict, current, row['rowNumber'])
+            if not check_id(next['id']):
+              log_dict = no_parent(log_dict, next, row['rowNumber'])
 
       # CT-AS RELATIONSHIP
       if len(anatomical_structures) > 0 and len(cell_types) > 0:
