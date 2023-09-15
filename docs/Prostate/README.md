@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2023-09-13)
+ASCT+B Validation Reports for Prostate (2023-09-15)
 ===================================================
 
 Table of contents
@@ -119,11 +119,11 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel            | user_slabel       | o              | olabel         | user_olabel    | row_number                                                                                                                |   deltaIC |
 |----|----------------|-------------------|-------------------|----------------|----------------|----------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20) |   6528.13 |
-|  1 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) |   6528.13 |
-|  2 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |   6528.13 |
-|  3 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |   6528.13 |
-|  4 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |   6528.13 |
+|  0 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20) |   10199.5 |
+|  1 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) |   10199.5 |
+|  2 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |   10199.5 |
+|  3 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |   10199.5 |
+|  4 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |   10199.5 |
 
 
 
@@ -151,7 +151,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 |    | s          | slabel                                                           | user_slabel                              | o              | olabel                | user_olabel       | row_number                                                                                                                |       deltaIC |
 |----|------------|------------------------------------------------------------------|------------------------------------------|----------------|-----------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------|---------------|
-|  5 | CL:0000669 | pericyte                                                         | prostate perictye                        | UBERON:0004184 | prostate gland stroma | prostate stroma   | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |   3.90828e-17 |
+|  5 | CL:0000669 | pericyte                                                         | prostate perictye                        | UBERON:0004184 | prostate gland stroma | prostate stroma   | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |   5.04377e-17 |
 |  6 | CL:1000487 | smooth muscle cell of prostate                                   | prostate smooth muscle                   | UBERON:0004184 | prostate gland stroma | prostate stroma   | [14](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=14:14) | nan           |
 |  7 | CL:2000059 | prostate gland microvascular endothelial cell                    | endothelia                               | UBERON:0004184 | prostate gland stroma | prostate stroma   | [15](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=15:15) | nan           |
 |  8 | CL:1000301 | fibroblast of subepithelial connective tissue of prostatic gland | periepithelial fibroblast                | UBERON:0004184 | prostate gland stroma | prostate stroma   | [16](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=16:16) | nan           |

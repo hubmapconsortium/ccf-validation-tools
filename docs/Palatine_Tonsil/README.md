@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Palatine_Tonsil (2023-09-13)
+ASCT+B Validation Reports for Palatine_Tonsil (2023-09-15)
 ==========================================================
 
 Table of contents
@@ -51,15 +51,15 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17)_, the term _[CL:0000624](http://purl.obolibrary.org/obo/CL_0000624)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD4-positive alpha-beta T cells_ and the one in the **ontology** is _CD4-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD4 T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18)_, the term _[CL:0000625](http://purl.obolibrary.org/obo/CL_0000625)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD8-positive alpha-beta T cells_ and the one in the **ontology** is _CD8-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD8 T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17)_, the term _[CL:0000624](http://purl.obolibrary.org/obo/CL_0000624)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD4-positive alpha-beta T cells_ and the one in the **ontology** is _CD4-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD4 T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[30](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=30:30)_, the term _[UBERON:0001070](http://purl.obolibrary.org/obo/UBERON_0001070)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lesser palatine artery_ and the one in the **ontology** is _external carotid artery_. For reference, the given name/label **by SMEs** is _lesser palatine artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[28](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=28:28)_, the term _[UBERON:0001612](http://purl.obolibrary.org/obo/UBERON_0001612)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _tonsillar branch of the facial artery_ and the one in the **ontology** is _facial artery_. For reference, the given name/label **by SMEs** is _facial artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[26](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=26:26)_, the term _[UBERON:0001610](http://purl.obolibrary.org/obo/UBERON_0001610)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _dorsal lingual artery_ and the one in the **ontology** is _lingual artery_. For reference, the given name/label **by SMEs** is _lingual artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[28](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=28:28)_, the term _[UBERON:0001612](http://purl.obolibrary.org/obo/UBERON_0001612)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _tonsillar branch of the facial artery_ and the one in the **ontology** is _facial artery_. For reference, the given name/label **by SMEs** is _facial artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -347,7 +347,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 |  2 | CL:0000786 | Plasma Cell                     | plasma cell       | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59) |  100      |
 |  3 | CL:0000084 | T Cell                          | T Cell            | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60) |  100      |
 |  4 | CL:0000624 | CD4-positive, alpha-beta T cell | CD4 T cell        | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56) |  100      |
-|  5 | CL:0000235 | Macrophage                      | macrophage        | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61) |   77.8462 |
+|  5 | CL:0000235 | Macrophage                      | macrophage        | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61) |   66.4327 |
 |  6 | CL:0000084 | T cell                          | T cell            | UBERON:0002372 | tonsil                 | tonsil                 | [16](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=16:16) |  nan      |
 |  7 | CL:0000624 | CD4-positive, alpha-beta T cell | CD4 T cell        | UBERON:0002372 | tonsil                 | tonsil                 | [17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17) |  nan      |
 |  8 | CL:0000625 | CD8-positive, alpha-beta T cell | CD8 T cell        | UBERON:0002372 | tonsil                 | tonsil                 | [18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18) |  nan      |

@@ -1,5 +1,5 @@
 
-Validation Dashboard (2023-09-13)
+Validation Dashboard (2023-09-15)
 =================================
 
 # Terms
@@ -16,8 +16,8 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 |  4 | [Brain](Brain/README.md)                                         |                116 |                   61 | <font color='green'>34.46</font> |                163 |                  463 | <font color='red'>73.96</font>   | <font color='red'>64.77</font>   |
 |  5 | [Eye](Eye/README.md)                                             |                 36 |                    3 | <font color='green'>7.69</font>  |                 47 |                    8 | <font color='green'>14.55</font> | <font color='green'>11.7</font>  |
 |  6 | [Fallopian_tube](Fallopian_tube/README.md)                       |                  9 |                   63 | <font color='red'>87.5</font>    |                 17 |                    1 | <font color='green'>5.56</font>  | <font color='red'>71.11</font>   |
-|  7 | [Heart](Heart/README.md)                                         |                 29 |                   24 | <font color='green'>45.28</font> |                 27 |                    1 | <font color='green'>3.57</font>  | <font color='green'>24.27</font> |
-|  8 | [Kidney](Kidney/README.md)                                       |                 56 |                    6 | <font color='green'>9.68</font>  |                 65 |                    3 | <font color='green'>4.41</font>  | <font color='green'>6.92</font>  |
+|  7 | [Heart](Heart/README.md)                                         |                 29 |                   23 | <font color='green'>44.23</font> |                 28 |                    0 | <font color='green'>0.0</font>   | <font color='green'>22.55</font> |
+|  8 | [Kidney](Kidney/README.md)                                       |                 56 |                    5 | <font color='green'>8.2</font>   |                 66 |                    3 | <font color='green'>4.35</font>  | <font color='green'>6.15</font>  |
 |  9 | [Knee](Knee/README.md)                                           |                 18 |                    2 | <font color='green'>10.0</font>  |                  0 |                    5 | <font color='red'>100.0</font>   | <font color='green'>25.93</font> |
 | 10 | [Large_intestine](Large_intestine/README.md)                     |                 54 |                    4 | <font color='green'>6.9</font>   |                 55 |                    3 | <font color='green'>5.17</font>  | <font color='green'>5.98</font>  |
 | 11 | [Liver](Liver/README.md)                                         |                 14 |                    3 | <font color='green'>17.65</font> |                 25 |                    5 | <font color='green'>16.67</font> | <font color='green'>17.02</font> |
@@ -56,11 +56,11 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 |  1 | [Blood](Blood/README.md)                                         |                   0 | <font color='green'>0.0</font>   |                  23 | <font color='green'>26.09</font> |                  23 | <font color='red'>100.0</font>   |
 |  2 | [Blood_vasculature](Blood_vasculature/README.md)                 |                 337 | <font color='green'>0.0</font>   |                   6 | <font color='green'>33.33</font> |                1136 | <font color='red'>66.55</font>   |
 |  3 | [Bone-Marrow](Bone-Marrow/README.md)                             |                   0 | <font color='green'>0.0</font>   |                  41 | <font color='green'>36.59</font> |                  42 | <font color='red'>95.24</font>   |
-|  4 | [Brain](Brain/README.md)                                         |                 112 | <font color='green'>28.57</font> |                   0 | <font color='green'>0.0</font>   |                 203 | <font color='green'>19.7</font>  |
+|  4 | [Brain](Brain/README.md)                                         |                 112 | <font color='green'>28.57</font> |                   0 | <font color='green'>0.0</font>   |                 203 | <font color='green'>20.2</font>  |
 |  5 | [Eye](Eye/README.md)                                             |                  35 | <font color='green'>28.57</font> |                  32 | <font color='green'>12.5</font>  |                  43 | <font color='green'>41.86</font> |
 |  6 | [Fallopian_tube](Fallopian_tube/README.md)                       |                   7 | <font color='green'>42.86</font> |                   0 | <font color='green'>0.0</font>   |                  56 | <font color='red'>94.64</font>   |
-|  7 | [Heart](Heart/README.md)                                         |                  37 | <font color='red'>56.76</font>   |                   0 | <font color='green'>0.0</font>   |                 137 | <font color='red'>86.86</font>   |
-|  8 | [Kidney](Kidney/README.md)                                       |                  67 | <font color='green'>28.36</font> |                   0 | <font color='green'>0.0</font>   |                  67 | <font color='green'>28.36</font> |
+|  7 | [Heart](Heart/README.md)                                         |                  39 | <font color='red'>58.97</font>   |                   0 | <font color='green'>0.0</font>   |                 140 | <font color='red'>87.14</font>   |
+|  8 | [Kidney](Kidney/README.md)                                       |                  67 | <font color='green'>28.36</font> |                   0 | <font color='green'>0.0</font>   |                  68 | <font color='green'>29.41</font> |
 |  9 | [Knee](Knee/README.md)                                           |                  18 | <font color='red'>66.67</font>   |                   0 | <font color='green'>0.0</font>   |                   0 | <font color='green'>0.0</font>   |
 | 10 | [Large_intestine](Large_intestine/README.md)                     |                 157 | <font color='red'>86.62</font>   |                   0 | <font color='green'>0.0</font>   |                 152 | <font color='red'>83.55</font>   |
 | 11 | [Liver](Liver/README.md)                                         |                  13 | <font color='green'>38.46</font> |                   0 | <font color='green'>0.0</font>   |                  26 | <font color='red'>84.62</font>   |

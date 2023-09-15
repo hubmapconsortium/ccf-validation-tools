@@ -6,9 +6,9 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
+|CL|2023-08-24|
 |PCL|2023-02-27|
-|UBERON|2023-07-25|
-|CL|2023-07-20|
+|UBERON|2023-09-05|
 
 ### ASCT+b Tables
 
@@ -20,10 +20,10 @@ Release Notes
 |Brain|v1.5|revise for October 1, 2023|
 |Eye|v1.4|revise for October 1, 2023|
 |Fallopian_tube|v1.2|revise for October 1, 2023|
-|Heart|v1.3|revise for April 1, 2023|
+|Heart|v1.3|revise for October 1, 2023|
 |Kidney|v1.4|revise for October 1, 2023|
 |Knee|v1.1|June 15, 2023|
-|Large_intestine|v1.4|revise for October, 2022|
+|Large_intestine|v1.4|revise for October, 2023|
 |Liver|v1.2|revise for April 1, 2023|
 |Lung|v1.4|revise for October 1|
 |Lymph_node|v1.3|revise for October 1, 2023|

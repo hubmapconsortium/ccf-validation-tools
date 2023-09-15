@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Urinary_bladder (2023-09-13)
+ASCT+B Validation Reports for Urinary_bladder (2023-09-15)
 ==========================================================
 
 Table of contents
@@ -135,13 +135,13 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                            | user_slabel                       | o              | olabel                       | user_olabel                  | row_number                                                                                                                |   deltaIC |
 |----|----------------|-----------------------------------|-----------------------------------|----------------|------------------------------|------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20) |    21.852 |
-|  1 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21) |    21.852 |
-|  2 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22) |    21.852 |
-|  4 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16) |   nan     |
-|  6 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17) |   nan     |
-|  8 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18) |   nan     |
-| 10 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19) |   nan     |
+|  0 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20) |   34.8448 |
+|  1 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21) |   34.8448 |
+|  2 | UBERON:0012239 | urinary bladder vasculature       | urinary bladder vasculature       | UBERON:0001256 | wall of urinary bladder      | wall of urinary bladder      | [22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22) |   34.8448 |
+|  4 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16) |  nan      |
+|  6 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17) |  nan      |
+|  8 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18) |  nan      |
+| 10 | UBERON:0001261 | lamina propria of urinary bladder | lamina propria of urinary bladder | UBERON:0004943 | submucosa of urinary bladder | submucosa of urinary bladder | [19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19) |  nan      |
 
 
 
