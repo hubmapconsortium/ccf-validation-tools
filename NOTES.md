@@ -6,9 +6,9 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|CL|2023-08-24|
-|PCL|2023-02-27|
 |UBERON|2023-09-05|
+|PCL|2023-02-27|
+|CL|2023-08-24|
 
 ### ASCT+b Tables
 
@@ -35,7 +35,7 @@ Release Notes
 |Pancreas|v1.3|revise for April 1, 2023|
 |Palatine_Tonsil|V1.0|June 15, 2023|
 |Peripheral_nervous_system|v1.1|revise for Oct 1, 2022|
-|Placenta|V1.1|revise for April 1, 2023|
+|Placenta|V1.1|revise for October 1, 2023|
 |Prostate|v1.1|revise for Oct 1, 2023|
 |Skeleton|v1.1|revise for October 1, 2023|
 |Skin|v1.3|revise for October 1, 2023|
