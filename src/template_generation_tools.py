@@ -359,7 +359,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
     'percent_invalid_CT-CT_relationship': [perc_inv_ct],
     'percent_indirect_CT-CT_relationship': [perc_ind_ct],
     'number_of_CT-AS_relationships': [terms_ct_as_start],
-    'percent_invalid_CT-AS_relationship': [perc_inv_ct_as]
+    'percent_invalid_CT-AS_relationship': [perc_inv_ct_as],
+    'number_of_no_parent_relationships': [len(log_dict["no_parent"])],
   }
 
   # ANNOTATION 
