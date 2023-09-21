@@ -178,7 +178,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # INDIRECT SUBCLASS CHECK
   valid_subclass_onto, _ = ug.verify_relationship(transform_to_str(valid_subclass), ug.select_subclass_ontology)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_subclass - valid_subclass_onto))
+  terms_s, terms_o = split_terms(transform_to_str(valid_subclass_onto))
 
   rows_nvso = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
@@ -202,7 +202,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
 
   valid_po_nr, _ = ug.verify_relationship(terms_valid_po, ug.select_po_nonredundant)
   
-  terms_s, terms_o = split_terms(transform_to_str(valid_po - valid_po_nr))
+  terms_s, terms_o = split_terms(transform_to_str(valid_po_nr))
 
   rows_nvponr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
@@ -224,7 +224,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # INDIRECT OVERLAPS CHECK
   valid_o_nr, _ = ug.verify_relationship(transform_to_str(valid_overlaps), ug.select_overlaps_nonredundant)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_overlaps - valid_o_nr))
+  terms_s, terms_o = split_terms(transform_to_str(valid_o_nr))
 
   rows_nvonr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
@@ -252,7 +252,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # INDIRECT CONNECTED TO CHECK
   valid_conn_to_nr, _ = ug.verify_relationship(transform_to_str(valid_conn_to), ug.select_ct_nonredundant)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_conn_to - valid_conn_to_nr))
+  terms_s, terms_o = split_terms(transform_to_str(valid_conn_to_nr))
 
   rows_vctnr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
@@ -284,7 +284,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # INDIRECT DEVELOPS FROM CHECK
   valid_dev_nr, _ = ug.verify_relationship(transform_to_str(valid_dev_from), ug.select_dev_from_nonredundant)
   print(valid_dev_from, valid_dev_nr)
-  terms_s, terms_o = split_terms(transform_to_str(valid_dev_from - valid_dev_nr))
+  terms_s, terms_o = split_terms(transform_to_str(valid_dev_nr))
   
   rows_vdfnr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
