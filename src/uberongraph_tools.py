@@ -71,8 +71,21 @@ class UberonGraph():
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
-          FROM <http://reasoner.renci.org/ontology>
           FROM <http://reasoner.renci.org/redundant> 
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject connected_to: ?object .
+          }"""
+          
+        self.select_ct_nonredundant = """
+          PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170> 
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/nonredundant> 
           { 
             VALUES (?subject ?object) {
               %s
@@ -103,6 +116,22 @@ class UberonGraph():
           PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object 
           FROM <http://reasoner.renci.org/redundant> 
+          {
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject develops_from: ?object .
+          }
+        """
+        
+        self.select_dev_from_nonredundant = """
+          PREFIX develops_from: <http://purl.obolibrary.org/obo/RO_0002202>
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
+          SELECT ?subject ?object 
+          FROM <http://reasoner.renci.org/nonredundant> 
           {
             VALUES (?subject ?object) {
               %s

@@ -248,6 +248,22 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   valid_ct_as_conn_to, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_ct)
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_conn_to.union(valid_ct_as_conn_to), 'connected_to')
+  
+  # INDIRECT CONNECTED TO CHECK
+  valid_conn_to_nr, _ = ug.verify_relationship(transform_to_str(valid_conn_to), ug.select_ct_nonredundant)
+
+  terms_s, terms_o = split_terms(transform_to_str(valid_conn_to - valid_conn_to_nr))
+
+  rows_vctnr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+
+  # ADD RESULTS TO INDIRECT LOG
+  valid_error_log = pd.concat([valid_error_log, rows_vctnr])
+
+  for _, r in rows_vctnr.iterrows():
+    if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+      indirect_as.add((r['s'], r['o']))
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+      indirect_ct.add((r['s'], r['o']))
 
   # CONTINUOUS WITH CHECK
   valid_cont_with, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_continuous_with)
@@ -264,6 +280,22 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # DEVELOPS FROM CHECK
   valid_dev_from, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_develops_from)
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_dev_from, 'develops_from')
+  
+  # INDIRECT DEVELOPS FROM CHECK
+  valid_dev_nr, _ = ug.verify_relationship(transform_to_str(valid_dev_from), ug.select_dev_from_nonredundant)
+  print(valid_dev_from, valid_dev_nr)
+  terms_s, terms_o = split_terms(transform_to_str(valid_dev_from - valid_dev_nr))
+  
+  rows_vdfnr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+
+  # ADD RESULTS TO INDIRECT LOG
+  valid_error_log = pd.concat([valid_error_log, rows_vdfnr])
+
+  for _, r in rows_vdfnr.iterrows():
+    if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+      indirect_as.add((r['s'], r['o']))
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+      indirect_ct.add((r['s'], r['o']))
 
   # AS-CT HAS PART
   valid_has_part, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_has_part)
