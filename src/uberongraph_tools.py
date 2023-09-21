@@ -263,7 +263,24 @@ class UberonGraph():
             }
             ?subject located_in: ?object .
           }
-        """     
+        """   
+        
+        self.select_li_nonredundant = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
+          PREFIX located_in: <http://purl.obolibrary.org/obo/RO_0001025>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/nonredundant>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject located_in: ?object .
+          }
+        """   
+          
         self.select_normalized_ic = """
           PREFIX normalizedIC: <http://reasoner.renci.org/vocab/normalizedInformationContent>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
@@ -285,6 +302,20 @@ class UberonGraph():
 
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/redundant>
+          {
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject continuous_with: ?object .
+          }
+        """
+        self.select_cw_nonredundant = """
+          PREFIX continuous_with: <http://purl.obolibrary.org/obo/RO_0002150>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/nonredundant>
           {
             VALUES (?subject ?object) {
               %s

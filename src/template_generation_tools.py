@@ -242,6 +242,22 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_ct_as_locatedin, 'located_in')
 
   terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_locatedin)
+  
+  # INDIRECT LOCATED IN CHECK
+  valid_loc_in_nr, _ = ug.verify_relationship(transform_to_str(valid_ct_as_locatedin), ug.select_li_nonredundant)
+
+  terms_s, terms_o = split_terms(transform_to_str(valid_loc_in_nr))
+
+  rows_vlinr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+
+  # ADD RESULTS TO INDIRECT LOG
+  valid_error_log = pd.concat([valid_error_log, rows_vlinr])
+
+  for _, r in rows_vlinr.iterrows():
+    if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+      indirect_as.add((r['s'], r['o']))
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+      indirect_ct.add((r['s'], r['o']))
 
   # CONNECTED TO CHECK
   valid_conn_to, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_ct)
@@ -269,6 +285,22 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   valid_cont_with, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_continuous_with)
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_cont_with, 'continuous_with')
+  
+  # INDIRECT CONTINUOUS WITH CHECK
+  valid_cont_with_nr, _ = ug.verify_relationship(transform_to_str(valid_cont_with), ug.select_cw_nonredundant)
+
+  terms_s, terms_o = split_terms(transform_to_str(valid_cont_with_nr))
+
+  rows_vctnr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+
+  # ADD RESULTS TO INDIRECT LOG
+  valid_error_log = pd.concat([valid_error_log, rows_vctnr])
+
+  for _, r in rows_vctnr.iterrows():
+    if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+      indirect_as.add((r['s'], r['o']))
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+      indirect_ct.add((r['s'], r['o']))
 
   # STRICT CT-AS REPORT
   terms_s, terms_o = split_terms(terms_ct_as)
