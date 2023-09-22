@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Thymus (2023-09-20)
+ASCT+B Validation Reports for Thymus (2023-09-22)
 =================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -51,13 +52,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[78](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=78:78)_, the term _[CL:0000914](http://purl.obolibrary.org/obo/CL_0000914)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _immature NKT cell_ and the one in the **ontology** is _immature NK T cell_. For reference, the given name/label **by SMEs** is _immature NKT cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[30](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=30:30)_, the term _[CL:0009081](http://purl.obolibrary.org/obo/CL_0009081)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _specified double negative thymocyte_ and the one in the **ontology** is _specified double negative thymocyte (Homo sapiens)_. For reference, the given name/label **by SMEs** is _double negative thymocyte 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[31](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=31:31)_, the term _[CL:0009082](http://purl.obolibrary.org/obo/CL_0009082)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _committed double negative thymocyte_ and the one in the **ontology** is _committed double negative thymocyte (Homo sapiens)_. For reference, the given name/label **by SMEs** is _double negative thymocyte 3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[32](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=32:32)_, the term _[CL:0009083](http://purl.obolibrary.org/obo/CL_0009083)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _rearranging double negative thymocyte_ and the one in the **ontology** is _rearranging double negative thymocyte (Homo sapiens)_. For reference, the given name/label **by SMEs** is _double negative thymocyte 4_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[31](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=31:31)_, the term _[CL:0009082](http://purl.obolibrary.org/obo/CL_0009082)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _committed double negative thymocyte_ and the one in the **ontology** is _committed double negative thymocyte (Homo sapiens)_. For reference, the given name/label **by SMEs** is _double negative thymocyte 3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[30](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=30:30)_, the term _[CL:0009081](http://purl.obolibrary.org/obo/CL_0009081)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _specified double negative thymocyte_ and the one in the **ontology** is _specified double negative thymocyte (Homo sapiens)_. For reference, the given name/label **by SMEs** is _double negative thymocyte 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[78](https://docs.google.com/spreadsheets/d/1tbHMjOi7wPXnq3TFp74N2kPKtiJ_pFSgz5u5CZOGGrc/edit#gid=863370556&range=78:78)_, the term _[CL:0000914](http://purl.obolibrary.org/obo/CL_0000914)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _immature NKT cell_ and the one in the **ontology** is _immature NK T cell_. For reference, the given name/label **by SMEs** is _immature NKT cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -66,6 +67,14 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
 - No issues found.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+- No issue found.
 
 
 ## Terms from another ontology

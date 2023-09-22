@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Ureter (2023-09-20)
+ASCT+B Validation Reports for Ureter (2023-09-22)
 =================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -84,6 +85,14 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[22](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=22:22)_, no term id was found for the name/label _pericyte cell of ureter_.
 
 1. In row _[23](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=23:23)_, no term id was found for the name/label _ureter vasculature_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+1. In row _[15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15)_, the term _detrusor smooth muscle cell of ureter_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology

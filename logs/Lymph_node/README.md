@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_node (2023-09-20)
+ASCT+B Validation Reports for Lymph_node (2023-09-22)
 =====================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -51,11 +52,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[21](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=21:21)_, the term _[CL:0009103](http://purl.obolibrary.org/obo/CL_0009103)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ymph node marginal reticular cell_ and the one in the **ontology** is _lymph node marginal reticular cell_. For reference, the given name/label **by SMEs** is _Marginal Reticular Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[37](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=37:37)_, the term _[UBERON:8410053](http://purl.obolibrary.org/obo/UBERON_8410053)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ymph node germinal center dark zone_ and the one in the **ontology** is _lymph node germinal center dark zone_. For reference, the given name/label **by SMEs** is _Dark Zone_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[17](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=17:17)_, the term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[37](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=37:37)_, the term _[UBERON:8410053](http://purl.obolibrary.org/obo/UBERON_8410053)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ymph node germinal center dark zone_ and the one in the **ontology** is _lymph node germinal center dark zone_. For reference, the given name/label **by SMEs** is _Dark Zone_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[21](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=21:21)_, the term _[CL:0009103](http://purl.obolibrary.org/obo/CL_0009103)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ymph node marginal reticular cell_ and the one in the **ontology** is _lymph node marginal reticular cell_. For reference, the given name/label **by SMEs** is _Marginal Reticular Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -64,6 +65,14 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
 1. In row _[59](https://docs.google.com/spreadsheets/d/15iuKGfnSjBbLd--873MKX2N0GgGKbXXk2dfzisiS-wg/edit#gid=1223566381&range=59:59)_, no term id was found for the name/label _capillaries of lymph node_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+- No issue found.
 
 
 ## Terms from another ontology

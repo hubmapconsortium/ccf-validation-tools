@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Blood (2023-09-20)
+ASCT+B Validation Reports for Blood (2023-09-22)
 ================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -60,6 +61,14 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
 - No issues found.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+- No issue found.
 
 
 ## Terms from another ontology

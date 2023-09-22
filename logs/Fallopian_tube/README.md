@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Fallopian_tube (2023-09-20)
+ASCT+B Validation Reports for Fallopian_tube (2023-09-22)
 =========================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -448,6 +449,22 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[130](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=130:130)_, no term id was found for the name/label _plica of Fallopian tube infundibulum_.
 
 1. In row _[130](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=130:130)_, no term id was found for the name/label _mucosa of Fallopian tube infundibulum_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+1. In row _[14](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=14:14)_, the term _fibroblast-mesenchymal cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[30](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=30:30)_, the term _fibroblast-mesenchymal cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[46](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=46:46)_, the term _fibroblast-mesenchymal cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[62](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=62:62)_, the term _fibroblast-mesenchymal cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[85](https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552&range=85:85)_, the term _fibroblast-mesenchymal cell_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology

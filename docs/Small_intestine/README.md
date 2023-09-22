@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Small_intestine (2023-09-20)
+ASCT+B Validation Reports for Small_intestine (2023-09-22)
 ==========================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -666,6 +667,86 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[345](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=345:345)_, no term id was found for the name/label _serosa_.
 
 1. In row _[346](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=346:346)_, no term id was found for the name/label _serosa_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+1. In row _[62](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=62:62)_, the term _BCHE (butyrylcholinesterase) cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[64](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=64:64)_, the term _lymphatic_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[67](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=67:67)_, the term _nerve_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[71](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=71:71)_, the term _CD4+ T_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[72](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=72:72)_, the term _regulatory CD4+ T_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[73](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=73:73)_, the term _CD8+ T_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[85](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=85:85)_, the term _nerve_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[86](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=86:86)_, the term _muscle_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[231](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=231:231)_, the term _lymphatics_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[234](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=234:234)_, the term _nerves_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[238](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=238:238)_, the term _CD4+ T_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[239](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=239:239)_, the term _regulatory CD4+ T_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[240](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=240:240)_, the term _CD8+ T_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[248](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=248:248)_, the term _muscle_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[249](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=249:249)_, the term _nerves_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[251](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=251:251)_, the term _lymphatic_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[252](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=252:252)_, the term _nerves_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[253](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=253:253)_, the term _muscle_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[254](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=254:254)_, the term _muscle_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[258](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=258:258)_, the term _nerves_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[259](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=259:259)_, the term _nerves_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[260](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=260:260)_, the term _muscle_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[306](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=306:306)_, the term _epithelial stem cells_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[314](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=314:314)_, the term _lymphatics_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[317](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=317:317)_, the term _nerves_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[321](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=321:321)_, the term _CD4+ T_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[322](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=322:322)_, the term _regulatory CD4+ T_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[323](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=323:323)_, the term _CD8+ T_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[331](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=331:331)_, the term _muscle_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[332](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=332:332)_, the term _nerves_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[334](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=334:334)_, the term _lymphatic_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[335](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=335:335)_, the term _nerves_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[336](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=336:336)_, the term _muscle_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[337](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=337:337)_, the term _muscle_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[341](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=341:341)_, the term _nerves_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[342](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=342:342)_, the term _nerves_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[343](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=343:343)_, the term _muscle_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology

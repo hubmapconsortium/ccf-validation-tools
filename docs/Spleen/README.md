@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Spleen (2023-09-20)
+ASCT+B Validation Reports for Spleen (2023-09-22)
 =================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -51,13 +52,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[55](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=55:55)_, the term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _myeloid dendritic cell cDC2_ and the one in the **ontology** is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label **by SMEs** is _cDC2 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=54:54)_, the term _[CL:0002394](http://purl.obolibrary.org/obo/CL_0002394)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _myeloid dendritic cell cDC1_ and the one in the **ontology** is _CD141-positive myeloid dendritic cell_. For reference, the given name/label **by SMEs** is _cDC1 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[30](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=30:30)_, the term _[UBERON:0009967](http://purl.obolibrary.org/obo/UBERON_0009967)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _splenic sinusoid_ and the one in the **ontology** is _spleen venous sinus_. For reference, the given name/label **by SMEs** is _Splenic Sinusoid_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[36](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=36:36)_, the term _[CL:0000037](http://purl.obolibrary.org/obo/CL_0000037)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _hematopoetic stem cell_ and the one in the **ontology** is _hematopoietic stem cell_. For reference, the given name/label **by SMEs** is _Hematopoetic Stem Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[55](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=55:55)_, the term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _myeloid dendritic cell cDC2_ and the one in the **ontology** is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label **by SMEs** is _cDC2 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[54](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=54:54)_, the term _[CL:0002394](http://purl.obolibrary.org/obo/CL_0002394)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _myeloid dendritic cell cDC1_ and the one in the **ontology** is _CD141-positive myeloid dendritic cell_. For reference, the given name/label **by SMEs** is _cDC1 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -218,6 +219,60 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[137](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=137:137)_, no term id was found for the name/label _Subcapsular Dendritic Cell_.
 
 1. In row _[141](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=141:141)_, no term id was found for the name/label _Catecholaminergic Neuron_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+1. In row _[13](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=13:13)_, the term _Catecholaminergic Neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[14](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=14:14)_, the term _Catecholaminergic Neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[19](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=19:19)_, the term _Adventitial Stromal Cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[25](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=25:25)_, the term _Splenic Stromal Sheath Cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[30](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=30:30)_, the term _Reticular Cell of splenic sinusoid_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[31](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=31:31)_, the term _Splenic Littoral Cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[32](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=32:32)_, the term _Splenic Red Pulp Stromal Cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[39](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=39:39)_, the term _B cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[52](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=52:52)_, the term _Splenic perifollicular zone macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[58](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=58:58)_, the term _DEC205+ DC_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[65](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=65:65)_, the term _DEC205+ DC_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[72](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=72:72)_, the term _Mantle Zone B Cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[76](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=76:76)_, the term _Splenic Pericyte_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[80](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=80:80)_, the term _Splenic Pericyte_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[97](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=97:97)_, the term _Adventitial Stromal Cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[98](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=98:98)_, the term _Catecholaminergic Neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[106](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=106:106)_, the term _Interdigitating Dendritic Cells_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[108](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=108:108)_, the term _Catecholaminergic Neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[110](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=110:110)_, the term _Splenic Smooth Muscle Cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[119](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=119:119)_, the term _Cytotoxic Memory T Cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[127](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=127:127)_, the term _DEC205+ DC_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[134](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=134:134)_, the term _Catecholaminergic Neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[137](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=137:137)_, the term _Subcapsular Dendritic Cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[141](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=141:141)_, the term _Catecholaminergic Neuron_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology

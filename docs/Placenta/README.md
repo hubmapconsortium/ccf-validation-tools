@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Placenta (2023-09-20)
+ASCT+B Validation Reports for Placenta (2023-09-22)
 ===================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -202,6 +203,22 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[64](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=64:64)_, no term id was found for the name/label _basal plate_.
 
 1. In row _[64](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=64:64)_, no term id was found for the name/label _decidual lymphatic vessel_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+1. In row _[29](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=29:29)_, the term _uterine NK cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[30](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=30:30)_, the term _uterine macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[49](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=49:49)_, the term _placental stromal cell (PSC)_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, the term _uterine NK cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, the term _uterine macrophage_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology

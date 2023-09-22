@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Ovary (2023-09-20)
+ASCT+B Validation Reports for Ovary (2023-09-22)
 ================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -13954,6 +13955,588 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[1518](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=1518:1518)_, no term id was found for the name/label _cumulus oophorus oocyte complex_.
 
 1. In row _[1518](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=1518:1518)_, no term id was found for the name/label _corona radiata_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+1. In row _[19](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=19:19)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[20](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=20:20)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[23](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=23:23)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[24](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=24:24)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[27](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=27:27)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[28](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=28:28)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[31](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=31:31)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[32](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=32:32)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[35](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=35:35)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[36](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=36:36)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[39](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=39:39)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[40](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=40:40)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[43](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=43:43)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[44](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=44:44)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[47](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=47:47)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[48](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=48:48)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[51](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=51:51)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[52](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=52:52)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[55](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=55:55)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[56](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=56:56)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[59](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=59:59)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[60](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=60:60)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[63](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=63:63)_, the term _columnar ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[64](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=64:64)_, the term _flattened cuboidal ovarian surface epithelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[70](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=70:70)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[71](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=71:71)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[75](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=75:75)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[76](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=76:76)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[77](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=77:77)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[78](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=78:78)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[79](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=79:79)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[87](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=87:87)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[88](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=88:88)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[92](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=92:92)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[93](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=93:93)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[94](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=94:94)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[95](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=95:95)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[96](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=96:96)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[104](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=104:104)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[105](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=105:105)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[109](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=109:109)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[110](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=110:110)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[111](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=111:111)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[112](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=112:112)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[113](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=113:113)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[121](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=121:121)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[122](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=122:122)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[126](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=126:126)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[127](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=127:127)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[128](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=128:128)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[129](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=129:129)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[130](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=130:130)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[138](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=138:138)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[139](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=139:139)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[143](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=143:143)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[144](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=144:144)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[145](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=145:145)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[146](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=146:146)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[147](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=147:147)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[155](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=155:155)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[156](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=156:156)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[160](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=160:160)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[161](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=161:161)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[162](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=162:162)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[163](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=163:163)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[164](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=164:164)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[172](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=172:172)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[173](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=173:173)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[177](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=177:177)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[178](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=178:178)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[179](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=179:179)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[180](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=180:180)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[181](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=181:181)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[189](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=189:189)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[190](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=190:190)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[194](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=194:194)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[195](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=195:195)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[196](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=196:196)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[197](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=197:197)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[198](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=198:198)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[206](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=206:206)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[207](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=207:207)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[211](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=211:211)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[212](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=212:212)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[213](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=213:213)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[214](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=214:214)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[215](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=215:215)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[223](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=223:223)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[224](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=224:224)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[228](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=228:228)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[229](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=229:229)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[230](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=230:230)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[231](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=231:231)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[232](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=232:232)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[240](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=240:240)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[241](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=241:241)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[245](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=245:245)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[246](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=246:246)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[247](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=247:247)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[248](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=248:248)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[249](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=249:249)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[257](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=257:257)_, the term _corpus luteum endothelial cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[258](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=258:258)_, the term _corpus luteum macrophage_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[262](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=262:262)_, the term _Stroma Type I cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[263](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=263:263)_, the term _Stroma Type II cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[264](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=264:264)_, the term _Stroma Type III cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[265](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=265:265)_, the term _Stroma Type IV cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[266](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=266:266)_, the term _Stroma Type V cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[273](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=273:273)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[276](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=276:276)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[278](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=278:278)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[280](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=280:280)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[286](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=286:286)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[289](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=289:289)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[291](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=291:291)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[293](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=293:293)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[299](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=299:299)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[302](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=302:302)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[304](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=304:304)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[306](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=306:306)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[312](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=312:312)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[315](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=315:315)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[317](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=317:317)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[319](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=319:319)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[325](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=325:325)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[328](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=328:328)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[330](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=330:330)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[332](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=332:332)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[338](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=338:338)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[341](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=341:341)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[343](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=343:343)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[345](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=345:345)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[351](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=351:351)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[354](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=354:354)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[356](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=356:356)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[358](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=358:358)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[364](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=364:364)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[367](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=367:367)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[369](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=369:369)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[371](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=371:371)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[377](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=377:377)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[380](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=380:380)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[382](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=382:382)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[384](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=384:384)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[390](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=390:390)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[393](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=393:393)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[395](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=395:395)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[397](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=397:397)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[403](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=403:403)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[406](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=406:406)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[408](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=408:408)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[410](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=410:410)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[416](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=416:416)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[419](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=419:419)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[421](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=421:421)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[423](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=423:423)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[429](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=429:429)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[431](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=431:431)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[434](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=434:434)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[436](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=436:436)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[438](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=438:438)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[440](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=440:440)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[441](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=441:441)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[442](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=442:442)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[443](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=443:443)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[444](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=444:444)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[445](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=445:445)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[448](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=448:448)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[450](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=450:450)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[453](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=453:453)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[455](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=455:455)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[457](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=457:457)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[459](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=459:459)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[460](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=460:460)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[461](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=461:461)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[462](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=462:462)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[463](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=463:463)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[464](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=464:464)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[467](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=467:467)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[469](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=469:469)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[472](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=472:472)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[474](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=474:474)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[476](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=476:476)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[478](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=478:478)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[479](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=479:479)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[480](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=480:480)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[481](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=481:481)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[482](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=482:482)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[483](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=483:483)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[486](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=486:486)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[488](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=488:488)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[491](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=491:491)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[493](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=493:493)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[495](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=495:495)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[497](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=497:497)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[498](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=498:498)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[499](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=499:499)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[500](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=500:500)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[501](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=501:501)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[502](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=502:502)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[505](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=505:505)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[507](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=507:507)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[510](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=510:510)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[512](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=512:512)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[514](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=514:514)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[516](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=516:516)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[517](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=517:517)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[518](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=518:518)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[519](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=519:519)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[520](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=520:520)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[521](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=521:521)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[524](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=524:524)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[526](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=526:526)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[529](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=529:529)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[531](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=531:531)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[533](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=533:533)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[535](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=535:535)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[536](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=536:536)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[537](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=537:537)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[538](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=538:538)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[539](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=539:539)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[540](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=540:540)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[543](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=543:543)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[545](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=545:545)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[548](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=548:548)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[550](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=550:550)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[552](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=552:552)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[554](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=554:554)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[555](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=555:555)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[556](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=556:556)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[557](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=557:557)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[558](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=558:558)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[559](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=559:559)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[562](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=562:562)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[564](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=564:564)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[567](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=567:567)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[569](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=569:569)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[571](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=571:571)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[573](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=573:573)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[574](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=574:574)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[575](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=575:575)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[576](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=576:576)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[577](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=577:577)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[578](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=578:578)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[581](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=581:581)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[583](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=583:583)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[586](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=586:586)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[588](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=588:588)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[590](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=590:590)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[592](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=592:592)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[593](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=593:593)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[594](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=594:594)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[595](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=595:595)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[596](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=596:596)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[597](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=597:597)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[600](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=600:600)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[602](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=602:602)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[605](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=605:605)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[607](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=607:607)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[609](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=609:609)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[611](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=611:611)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[612](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=612:612)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[613](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=613:613)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[614](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=614:614)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[615](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=615:615)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[616](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=616:616)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[619](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=619:619)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[621](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=621:621)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[624](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=624:624)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[626](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=626:626)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[628](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=628:628)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[630](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=630:630)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[631](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=631:631)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[632](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=632:632)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[633](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=633:633)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[634](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=634:634)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[635](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=635:635)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[638](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=638:638)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[640](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=640:640)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[643](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=643:643)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[645](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=645:645)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[647](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=647:647)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[649](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=649:649)_, the term _pre-antral follicle granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[650](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=650:650)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[651](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=651:651)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[652](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=652:652)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[653](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=653:653)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[654](https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951&range=654:654)_, the term _mural granulosa cell_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology

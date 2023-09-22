@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Mammary_Gland (2023-09-20)
+ASCT+B Validation Reports for Mammary_Gland (2023-09-22)
 ========================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -78,6 +79,32 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[20](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=20:20)_, no term id was found for the name/label _T-cell_.
 
 1. In row _[21](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=21:21)_, no term id was found for the name/label _Macrophage_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+1. In row _[12](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=12:12)_, the term _Basal cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[13](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=13:13)_, the term _estrogen receptor negative luminal progenitor cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[14](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=14:14)_, the term _mature luminal cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[15](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=15:15)_, the term _Endothelial cell 1_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[16](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=16:16)_, the term _Endothelial cell 2_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[17](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=17:17)_, the term _Adipocyte 1_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[18](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=18:18)_, the term _Adipocyte 2_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[19](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=19:19)_, the term _Fibroblast_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[20](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=20:20)_, the term _T-cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[21](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=21:21)_, the term _Macrophage_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology

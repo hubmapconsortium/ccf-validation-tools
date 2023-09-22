@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Brain (2023-09-20)
+ASCT+B Validation Reports for Brain (2023-09-22)
 ================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -51,13 +52,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[730](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=730:730)_, the term _[PCL:0015079](Phttp://purl.obolibrary.org/obo/CL_0015079)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN MAP6D1_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[731](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=731:731)_, the term _[PCL:0015119](Phttp://purl.obolibrary.org/obo/CL_0015119)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L3-6 OPALIN ENPP6_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[228](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=228:228)_, the term _[CL:4023073](http://purl.obolibrary.org/obo/CL_4023073)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _choroid plexus cell_ and the one in the **ontology** is _obsolete choroid plexus cell_. For reference, the given name/label **by SMEs** is _choroid plexus cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[732](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=732:732)_, the term _[PCL:0015120](Phttp://purl.obolibrary.org/obo/CL_0015120)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN FTH1P3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[731](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=731:731)_, the term _[PCL:0015119](Phttp://purl.obolibrary.org/obo/CL_0015119)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L3-6 OPALIN ENPP6_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[730](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=730:730)_, the term _[PCL:0015079](Phttp://purl.obolibrary.org/obo/CL_0015079)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN MAP6D1_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -1330,6 +1331,68 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[612](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=612:612)_, no term id was found for the name/label _thalamus_.
 
 1. In row _[612](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=612:612)_, no term id was found for the name/label _Thex_460_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+1. In row _[449](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=449:449)_, the term _upper rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[449](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=449:449)_, the term _URL_297_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[460](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=460:460)_, the term _upper rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[460](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=460:460)_, the term _URL_308_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[461](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=461:461)_, the term _upper rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[461](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=461:461)_, the term _URL_309_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[462](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=462:462)_, the term _upper rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[462](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=462:462)_, the term _URL_310_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[463](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=463:463)_, the term _upper rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[463](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=463:463)_, the term _URL_311_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[464](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=464:464)_, the term _upper rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[464](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=464:464)_, the term _URL_312_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[467](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=467:467)_, the term _lower rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[467](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=467:467)_, the term _LRL_315_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[468](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=468:468)_, the term _lower rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[468](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=468:468)_, the term _LRL_316_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[469](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=469:469)_, the term _lower rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[469](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=469:469)_, the term _LRL_317_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[470](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=470:470)_, the term _lower rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[470](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=470:470)_, the term _LRL_318_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[471](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=471:471)_, the term _lower rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[471](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=471:471)_, the term _LRL_319_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[472](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=472:472)_, the term _lower rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[472](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=472:472)_, the term _LRL_320_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[473](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=473:473)_, the term _lower rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[473](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=473:473)_, the term _LRL_321_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[474](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=474:474)_, the term _lower rhombic lip neuron_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[474](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=474:474)_, the term _LRL_322_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2023-09-20)
+ASCT+B Validation Reports for Main_Bronchus (2023-09-22)
 ========================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -62,6 +63,18 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[25](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=25:25)_, no term id was found for the name/label _respiratory suprabasal cell_.
 
 1. In row _[28](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=28:28)_, no term id was found for the name/label _airway deuterosomal cell_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+1. In row _[15](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=15:15)_, the term _ciliated cell of terminal ciliated ducts of submucosal glands_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[25](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=25:25)_, the term _respiratory suprabasal cell_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[28](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=28:28)_, the term _airway deuterosomal cell_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology
