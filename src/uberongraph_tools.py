@@ -239,6 +239,7 @@ class UberonGraph():
           PREFIX normalizedIC: <http://reasoner.renci.org/vocab/normalizedInformationContent>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
 
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/ontology>
@@ -253,6 +254,7 @@ class UberonGraph():
           PREFIX continuous_with: <http://purl.obolibrary.org/obo/RO_0002150>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
 
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/redundant>
