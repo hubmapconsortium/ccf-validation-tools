@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Ureter (2023-09-22)
+ASCT+B Validation Reports for Ureter (2023-09-27)
 =================================================
 
 Table of contents
@@ -52,9 +52,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12)_, the term _[CL:1001428](http://purl.obolibrary.org/obo/CL_1001428)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ureter urothelial cell_ and the one in the **ontology** is _bladder urothelial cell_. For reference, the given name/label **by SMEs** is _urothelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15)_, the term _[UBERON:0009919](http://purl.obolibrary.org/obo/UBERON_0009919)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ureter detrusor smooth muscle_ and the one in the **ontology** is _ureter smooth muscle_. For reference, the given name/label **by SMEs** is _ureter detrusor smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12)_, the term _[CL:1001428](http://purl.obolibrary.org/obo/CL_1001428)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _ureter urothelial cell_ and the one in the **ontology** is _bladder urothelial cell_. For reference, the given name/label **by SMEs** is _urothelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

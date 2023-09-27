@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2023-09-22)
+ASCT+B Validation Reports for Prostate (2023-09-27)
 ===================================================
 
 Table of contents
@@ -32,7 +32,11 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
+1. UBERON:000570
+
+1. UBERON:0000752
+
+1. UBERON:0000766
 
 
 ## Typos or punctuation mistakes
@@ -52,9 +56,19 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21)_, the term _[CL:4032000](http://purl.obolibrary.org/obo/CL_4032000)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _club-like cell of prostatic urethral epithelium_ and the one in the **ontology** is _club-like cell of the urethral epithelium_. For reference, the given name/label **by SMEs** is _club cell of prostatic urethra_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001085](http://purl.obolibrary.org/obo/UBERON_0001085)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _vascular system_ and the one in the **ontology** is _skin of trunk_. For reference, the given name/label **by SMEs** is _vascular system_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23)_, the term _[CL:0002313](http://purl.obolibrary.org/obo/CL_0002313)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _neuroendocrine cell of the prostatic urethral epithelium_ and the one in the **ontology** is _endocrine-paracrine cell of prostate gland_. For reference, the given name/label **by SMEs** is _neuroendocrine cell of prostatic urethra_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26)_, the term _[CL:4032000](http://purl.obolibrary.org/obo/CL_4032000)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _club cell of prostatic urethral epithelium_ and the one in the **ontology** is _club-like cell of the urethral epithelium_. For reference, the given name/label **by SMEs** is _club epithelia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001102](http://purl.obolibrary.org/obo/UBERON_0001102)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _blood vessel_ and the one in the **ontology** is _cartilage of main bronchus_. For reference, the given name/label **by SMEs** is _blood vessel_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001489](http://purl.obolibrary.org/obo/UBERON_0001489)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _whole body_ and the one in the **ontology** is _manus joint_. For reference, the given name/label **by SMEs** is _whole body_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_, the term _[UBERON:0004167](http://purl.obolibrary.org/obo/UBERON_0004167)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _orbitofrontal cortex_. For reference, the given name/label **by SMEs** is _lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23)_, the term _[UBERON:0001431](http://purl.obolibrary.org/obo/UBERON_0001431)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _vascular smooth muscle_ and the one in the **ontology** is _distal carpal bone 2_. For reference, the given name/label **by SMEs** is _vascular smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24)_, the term _[UBERON:0002441](http://purl.obolibrary.org/obo/UBERON_0002441)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte_ and the one in the **ontology** is _cervicothoracic ganglion_. For reference, the given name/label **by SMEs** is _pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -62,9 +76,15 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20)_, no term id was found for the name/label _basal cell of prostatic urethra_.
+1. In row _[15](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=15:15)_, no term id was found for the name/label _ionocyte epithelia_.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24)_, no term id was found for the name/label _ionocyte of prostatic urethra_.
+1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, no term id was found for the name/label _endothelial cell of artery_.
+
+1. In row _[20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20)_, no term id was found for the name/label _capillary endothelial cell_.
+
+1. In row _[21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21)_, no term id was found for the name/label _vein endothelial cell_.
+
+1. In row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_, no term id was found for the name/label _lymph node lymphatic vessel endothelial cell_.
 
 
 ## Blank ontology ID missing parent
@@ -72,9 +92,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20)_, the term _basal cell of prostatic urethra_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24)_, the term _ionocyte of prostatic urethra_ without ontology ID has no parent that is from the CL ontology.
+1. In row _[25](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=25:25)_, the term _basal cell of prostatic urethra_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology
@@ -128,13 +146,24 @@ This table contains terms for anatomical structures that are related to each oth
 
 
 
-|    | s              | slabel            | user_slabel       | o              | olabel         | user_olabel    | row_number                                                                                                                |   deltaIC |
-|----|----------------|-------------------|-------------------|----------------|----------------|----------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20) |   10199.5 |
-|  1 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) |   10199.5 |
-|  2 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |   10199.5 |
-|  3 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |   10199.5 |
-|  4 | UBERON:0001335 | prostatic urethra | prostatic urethra | UBERON:0002367 | prostate gland | prostate gland | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |   10199.5 |
+|    | s              | slabel                       | user_slabel                  | o              | olabel                     | user_olabel     | row_number                                                                                                                |   deltaIC |
+|----|----------------|------------------------------|------------------------------|----------------|----------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+|  0 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland             | prostate gland  | [25](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=25:25) | 10199.5   |
+|  1 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland             | prostate gland  | [26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26) | 10199.5   |
+|  2 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland             | prostate gland  | [27](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=27:27) | 10199.5   |
+|  3 | UBERON:0002441 | cervicothoracic ganglion     | pericyte                     | UBERON:0001102 | cartilage of main bronchus | blood vessel    | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |   134.845 |
+|  4 | UBERON:0001431 | distal carpal bone 2         | vascular smooth muscle       | UBERON:0001102 | cartilage of main bronchus | blood vessel    | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |   100     |
+|  7 | UBERON:0004243 | prostate gland smooth muscle | prostate gland smooth muscle | UBERON:0004184 | prostate gland stroma      | prostate stroma | [16](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=16:16) |   nan     |
+| 10 | UBERON:0001085 | skin of trunk                | vascular system              | UBERON:0001489 | manus joint                | whole body      | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |   nan     |
+| 11 | UBERON:0001102 | cartilage of main bronchus   | blood vessel                 | UBERON:0001085 | skin of trunk              | vascular system | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |   nan     |
+| 12 | UBERON:0001085 | skin of trunk                | vascular system              | UBERON:0001489 | manus joint                | whole body      | [20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20) |   nan     |
+| 13 | UBERON:0001102 | cartilage of main bronchus   | blood vessel                 | UBERON:0001085 | skin of trunk              | vascular system | [20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20) |   nan     |
+| 14 | UBERON:0001085 | skin of trunk                | vascular system              | UBERON:0001489 | manus joint                | whole body      | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) |   nan     |
+| 15 | UBERON:0001102 | cartilage of main bronchus   | blood vessel                 | UBERON:0001085 | skin of trunk              | vascular system | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) |   nan     |
+| 16 | UBERON:0001085 | skin of trunk                | vascular system              | UBERON:0001489 | manus joint                | whole body      | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |   nan     |
+| 17 | UBERON:0001102 | cartilage of main bronchus   | blood vessel                 | UBERON:0001085 | skin of trunk              | vascular system | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |   nan     |
+| 19 | UBERON:0001085 | skin of trunk                | vascular system              | UBERON:0001489 | manus joint                | whole body      | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |   nan     |
+| 20 | UBERON:0001102 | cartilage of main bronchus   | blood vessel                 | UBERON:0001085 | skin of trunk              | vascular system | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |   nan     |
 
 
 
@@ -160,16 +189,15 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 
 
-|    | s          | slabel                                                           | user_slabel                              | o              | olabel                | user_olabel       | row_number                                                                                                                |       deltaIC |
-|----|------------|------------------------------------------------------------------|------------------------------------------|----------------|-----------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------|---------------|
-|  5 | CL:0000669 | pericyte                                                         | prostate perictye                        | UBERON:0004184 | prostate gland stroma | prostate stroma   | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |   5.04377e-17 |
-|  6 | CL:1000487 | smooth muscle cell of prostate                                   | prostate smooth muscle                   | UBERON:0004184 | prostate gland stroma | prostate stroma   | [14](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=14:14) | nan           |
-|  7 | CL:2000059 | prostate gland microvascular endothelial cell                    | endothelia                               | UBERON:0004184 | prostate gland stroma | prostate stroma   | [15](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=15:15) | nan           |
-|  8 | CL:1000301 | fibroblast of subepithelial connective tissue of prostatic gland | periepithelial fibroblast                | UBERON:0004184 | prostate gland stroma | prostate stroma   | [16](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=16:16) | nan           |
-|  9 | CL:1000299 | fibroblast of connective tissue of prostate                      | interstitial fibroblast                  | UBERON:0004184 | prostate gland stroma | prostate stroma   | [17](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=17:17) | nan           |
-| 10 | CL:0000359 | vascular associated smooth muscle cell                           | vascular smooth muscle                   | UBERON:0004184 | prostate gland stroma | prostate stroma   | [18](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=18:18) | nan           |
-| 11 | CL:4032000 | club-like cell of the urethral epithelium                        | club cell of prostatic urethra           | UBERON:0001335 | prostatic urethra     | prostatic urethra | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) | nan           |
-| 12 | CL:0002313 | endocrine-paracrine cell of prostate gland                       | neuroendocrine cell of prostatic urethra | UBERON:0001335 | prostatic urethra     | prostatic urethra | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) | nan           |
+|    | s          | slabel                                                           | user_slabel                            | o              | olabel                   | user_olabel                | row_number                                                                                                                |       deltaIC |
+|----|------------|------------------------------------------------------------------|----------------------------------------|----------------|--------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------|---------------|
+|  5 | CL:0002138 | endothelial cell of lymphatic vessel                             | endothelial cell of lymphatic vessel   | UBERON:0004167 | orbitofrontal cortex     | lymphatic endothelial cell | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |   1.10703e-43 |
+|  6 | CL:0005006 | ionocyte                                                         | ionocyte epithelia                     | UBERON:0000428 | prostate epithelium      | prostate epithelium        | [15](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=15:15) | nan           |
+|  8 | CL:1000301 | fibroblast of subepithelial connective tissue of prostatic gland | periprostatic fibroblast               | UBERON:0004184 | prostate gland stroma    | prostate stroma            | [17](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=17:17) | nan           |
+|  9 | CL:1000299 | fibroblast of connective tissue of prostate                      | interstitial fibroblast                | UBERON:0004184 | prostate gland stroma    | prostate stroma            | [18](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=18:18) | nan           |
+| 18 | CL:0000359 | vascular associated smooth muscle cell                           | vascular associated smooth muscle cell | UBERON:0001431 | distal carpal bone 2     | vascular smooth muscle     | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) | nan           |
+| 21 | CL:0000669 | pericyte                                                         | perictye                               | UBERON:0002441 | cervicothoracic ganglion | pericyte                   | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) | nan           |
+| 22 | CL:4032000 | club-like cell of the urethral epithelium                        | club epithelia                         | UBERON:0001335 | prostatic urethra        | prostatic urethra          | [26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26) | nan           |
 
 
 

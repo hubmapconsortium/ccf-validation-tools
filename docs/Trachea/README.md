@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Trachea (2023-09-22)
+ASCT+B Validation Reports for Trachea (2023-09-27)
 ==================================================
 
 Table of contents
@@ -52,9 +52,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[20](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=20:20)_, the term _[UBERON:8600011](http://purl.obolibrary.org/obo/UBERON_8600011)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _terminal ciliated ducts for tracheal submucosal gland_ and the one in the **ontology** is _tracheal submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _terminal ciliated ducts for tracheal submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. In row _[18](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=18:18)_, the term _[UBERON:8600012](http://purl.obolibrary.org/obo/UBERON_8600012)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _submucosal gland acini_ and the one in the **ontology** is _submucosal gland acinus_. For reference, the given name/label **by SMEs** is _submucosal gland acini_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[20](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=20:20)_, the term _[UBERON:8600011](http://purl.obolibrary.org/obo/UBERON_8600011)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _terminal ciliated ducts for tracheal submucosal gland_ and the one in the **ontology** is _tracheal submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _terminal ciliated ducts for tracheal submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

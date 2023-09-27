@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Urinary_bladder (2023-09-22)
+ASCT+B Validation Reports for Urinary_bladder (2023-09-27)
 ==========================================================
 
 Table of contents
@@ -82,13 +82,141 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22)_, no term id was found for the name/label _pericyte cell of bladder_.
 
+1. In row _[29](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=29:29)_, no term id was found for the name/label _luminal epithelia_.
+
+1. In row _[29](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=29:29)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[30](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=30:30)_, no term id was found for the name/label _basal epithelia_.
+
+1. In row _[30](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=30:30)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[31](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=31:31)_, no term id was found for the name/label _intermediate epithelia_.
+
+1. In row _[31](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=31:31)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_, no term id was found for the name/label _CXCL14 fibroblast_.
+
+1. In row _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_, no term id was found for the name/label _minor interstitial fibroblast_.
+
+1. In row _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_, no term id was found for the name/label _periurothelial fibroblast_.
+
+1. In row _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[36](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=36:36)_, no term id was found for the name/label _myofibroblast_.
+
+1. In row _[36](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=36:36)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_, no term id was found for the name/label _major interstitial fibroblast_.
+
+1. In row _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[38](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=38:38)_, no term id was found for the name/label _neurofibroblast_.
+
+1. In row _[38](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=38:38)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[39](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=39:39)_, no term id was found for the name/label _lipofibroblast_.
+
+1. In row _[39](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=39:39)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[40](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=40:40)_, no term id was found for the name/label _vascular smooth muscle_.
+
+1. In row _[40](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=40:40)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[41](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=41:41)_, no term id was found for the name/label _perictye_.
+
+1. In row _[41](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=41:41)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[42](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=42:42)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[43](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=43:43)_, no term id was found for the name/label _endothelia_.
+
+1. In row _[43](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=43:43)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[44](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=44:44)_, no term id was found for the name/label _endothelia_.
+
+1. In row _[44](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=44:44)_, no term id was found for the name/label _need to add to CL_.
+
+1. In row _[45](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=45:45)_, no term id was found for the name/label _endothelia_.
+
+1. In row _[45](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=45:45)_, no term id was found for the name/label _need to add to CL_.
+
 
 ## Blank ontology ID missing parent
 
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-- No issue found.
+1. In row _[29](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=29:29)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[29](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=29:29)_, the term _UPK3A_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[30](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=30:30)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[30](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=30:30)_, the term _BCAM_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[31](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=31:31)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[31](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=31:31)_, the term _LYPD3_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[32](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=32:32)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[32](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=32:32)_, the term _ACTG2_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_, the term _APOE_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_, the term _PLA2G2A_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_, the term _LAMC3_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[36](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=36:36)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[36](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=36:36)_, the term _TAGLN_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_, the term _CCL11_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[38](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=38:38)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[38](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=38:38)_, the term _MFAP5_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[39](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=39:39)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[39](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=39:39)_, the term _PILRA_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[40](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=40:40)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[40](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=40:40)_, the term _MCAM_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[41](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=41:41)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[41](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=41:41)_, the term _NDUFA4L2_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[42](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=42:42)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[42](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=42:42)_, the term _IGFBP3_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[43](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=43:43)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[43](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=43:43)_, the term _CA4_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[44](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=44:44)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[44](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=44:44)_, the term _CSF3_ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[45](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=45:45)_, the term __ without ontology ID has no parent that is from the CL ontology.
+
+1. In row _[45](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=45:45)_, the term _FLT4_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology
@@ -176,16 +304,17 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 
 
-|    | s          | slabel                                 | user_slabel   | o              | olabel                                 | user_olabel                            | row_number                                                                                                                |   deltaIC |
-|----|------------|----------------------------------------|---------------|----------------|----------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  3 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0000381 | urinary bladder detrusor smooth muscle | urinary bladder detrusor smooth muscle | [15](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=15:15) |       nan |
-|  5 | CL:1001319 | bladder cell                           | myofibroblast | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16) |       nan |
-|  7 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17) |       nan |
-|  9 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18) |       nan |
-| 11 | CL:1001319 | bladder cell                           | fibroblast    | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19) |       nan |
-| 12 | CL:2000040 | bladder microvascular endothelial cell | endothelium   | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20) |       nan |
-| 13 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21) |       nan |
-| 14 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22) |       nan |
+|    | s          | slabel                                 | user_slabel                     | o              | olabel                                 | user_olabel                            | row_number                                                                                                                |   deltaIC |
+|----|------------|----------------------------------------|---------------------------------|----------------|----------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+|  3 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle                   | UBERON:0000381 | urinary bladder detrusor smooth muscle | urinary bladder detrusor smooth muscle | [15](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=15:15) |       nan |
+|  5 | CL:1001319 | bladder cell                           | myofibroblast                   | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16) |       nan |
+|  7 | CL:1001319 | bladder cell                           | fibroblast                      | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17) |       nan |
+|  9 | CL:1001319 | bladder cell                           | fibroblast                      | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18) |       nan |
+| 11 | CL:1001319 | bladder cell                           | fibroblast                      | UBERON:0001261 | lamina propria of urinary bladder      | lamina propria of urinary bladder      | [19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19) |       nan |
+| 12 | CL:2000040 | bladder microvascular endothelial cell | endothelium                     | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20) |       nan |
+| 13 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle                   | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21) |       nan |
+| 14 | CL:0002597 | smooth muscle cell of bladder          | smooth muscle                   | UBERON:0012239 | urinary bladder vasculature            | urinary bladder vasculature            | [22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22) |       nan |
+| 15 | CL:0002597 | smooth muscle cell of bladder          | muscle layer of urinary bladder | UBERON:0012378 | muscle layer of urinary bladder        | urinary bladder stroma                 | [32](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=32:32) |       nan |
 
 
 
