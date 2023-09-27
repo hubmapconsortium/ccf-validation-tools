@@ -1,7 +1,7 @@
 import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import chunks, split_terms, transform_to_str, add_rows
+from ccf_tools import chunks, split_terms, transform_to_str, add_rows, add_indirect_nb
 import logging
 
 # logger = logging.getLogger('ASCT-b Tables Log')
@@ -176,20 +176,22 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_subclass.union(valid_ct_as_subclass), 'isa')
 
   # INDIRECT SUBCLASS CHECK
-  valid_subclass_onto, _ = ug.verify_relationship(transform_to_str(valid_subclass), ug.select_subclass_ontology)
+  terms_s, terms_o = ug.check_indirect_rel(valid_subclass, ug.select_subclass_ontology)
+#   valid_subclass_onto, _ = ug.verify_relationship(transform_to_str(valid_subclass), ug.select_subclass_ontology)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_subclass_onto))
+#   terms_s, terms_o = split_terms(transform_to_str(valid_subclass_onto))
 
   rows_nvso = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
   # ADD RESULTS TO INDIRECT LOG
-  valid_error_log = pd.concat([valid_error_log, rows_nvso])
+  valid_error_log, indirect_as, indirect_ct = add_indirect_nb(valid_error_log, indirect_as, indirect_ct, rows_nvso)
+#   valid_error_log = pd.concat([valid_error_log, rows_nvso])
 
-  for _, r in rows_nvso.iterrows():
-    if 'UBERON' in r['s'] and 'UBERON' in r['o']:
-      indirect_as.add((r['s'], r['o']))
-    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
-      indirect_ct.add((r['s'], r['o']))
+#   for _, r in rows_nvso.iterrows():
+#     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+#       indirect_as.add((r['s'], r['o']))
+#     elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+#       indirect_ct.add((r['s'], r['o']))
 
   # PART OF CHECK
   valid_po, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_po)

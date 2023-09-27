@@ -1,6 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
 from rdflib.graph import ConjunctiveGraph
-from ccf_tools import chunks, transform_to_str
+from ccf_tools import chunks, transform_to_str, split_terms
 
 class UberonGraph():
     def __init__(self):
@@ -519,3 +519,14 @@ class UberonGraph():
         annotations = self.construct_annotation(terms)
 
       return annotations
+  
+    def check_indirect_rel(self, valid_rel, query):
+      valid_indirect, _ = self.verify_relationship(transform_to_str(valid_rel), query)
+
+      terms_s, terms_o = split_terms(transform_to_str(valid_indirect))
+
+      return terms_s, terms_o
+
+      
+
+    
