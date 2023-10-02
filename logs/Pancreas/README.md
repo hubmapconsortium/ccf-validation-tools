@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Pancreas (2023-09-27)
+ASCT+B Validation Reports for Pancreas (2023-10-02)
 ===================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[19](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=19:19)_, the term _[CL:0002080](http://purl.obolibrary.org/obo/CL_0002080)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pancreatic centroacinar cell_ and the one in the **ontology** is _pancreatic centro-acinar cell_. For reference, the given name/label **by SMEs** is _Centroacinar cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2023-09-27)
+ASCT+B Validation Reports for Prostate (2023-10-02)
 ===================================================
 
 Table of contents
@@ -34,9 +34,9 @@ This report provides a list of terms not found neither in UBERON nor in CL. Plea
   
 1. UBERON:000570
 
-1. UBERON:0000752
-
 1. UBERON:0000766
+
+1. UBERON:0000752
 
 
 ## Typos or punctuation mistakes
@@ -60,13 +60,13 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 1. In row _[26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26)_, the term _[CL:4032000](http://purl.obolibrary.org/obo/CL_4032000)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _club cell of prostatic urethral epithelium_ and the one in the **ontology** is _club-like cell of the urethral epithelium_. For reference, the given name/label **by SMEs** is _club epithelia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001102](http://purl.obolibrary.org/obo/UBERON_0001102)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _blood vessel_ and the one in the **ontology** is _cartilage of main bronchus_. For reference, the given name/label **by SMEs** is _blood vessel_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23)_, the term _[UBERON:0001431](http://purl.obolibrary.org/obo/UBERON_0001431)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _vascular smooth muscle_ and the one in the **ontology** is _distal carpal bone 2_. For reference, the given name/label **by SMEs** is _vascular smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001489](http://purl.obolibrary.org/obo/UBERON_0001489)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _whole body_ and the one in the **ontology** is _manus joint_. For reference, the given name/label **by SMEs** is _whole body_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_, the term _[UBERON:0004167](http://purl.obolibrary.org/obo/UBERON_0004167)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _orbitofrontal cortex_. For reference, the given name/label **by SMEs** is _lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001102](http://purl.obolibrary.org/obo/UBERON_0001102)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _blood vessel_ and the one in the **ontology** is _cartilage of main bronchus_. For reference, the given name/label **by SMEs** is _blood vessel_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23)_, the term _[UBERON:0001431](http://purl.obolibrary.org/obo/UBERON_0001431)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _vascular smooth muscle_ and the one in the **ontology** is _distal carpal bone 2_. For reference, the given name/label **by SMEs** is _vascular smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_, the term _[UBERON:0004167](http://purl.obolibrary.org/obo/UBERON_0004167)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _orbitofrontal cortex_. For reference, the given name/label **by SMEs** is _lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24)_, the term _[UBERON:0002441](http://purl.obolibrary.org/obo/UBERON_0002441)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte_ and the one in the **ontology** is _cervicothoracic ganglion_. For reference, the given name/label **by SMEs** is _pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 

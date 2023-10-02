@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Skeleton (2023-09-27)
+ASCT+B Validation Reports for Skeleton (2023-10-02)
 ===================================================
 
 Table of contents
@@ -66,8 +66,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[17](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=17:17)_, no term id was found for the name/label _free part of arm bone_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=17:17)_, no term id was found for the name/label _anatomical neck of humerus_.
-
 1. In row _[18](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=18:18)_, no term id was found for the name/label _free part of arm bone_.
 
 1. In row _[19](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=19:19)_, no term id was found for the name/label _free part of arm bone_.
@@ -76,37 +74,21 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[20](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=20:20)_, no term id was found for the name/label _free part of arm bone_.
 
-1. In row _[20](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=20:20)_, no term id was found for the name/label _deltoid tuberosity of humerus_.
-
 1. In row _[21](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=21:21)_, no term id was found for the name/label _free part of arm bone_.
-
-1. In row _[21](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=21:21)_, no term id was found for the name/label _greater tubercle of humerus_.
 
 1. In row _[22](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=22:22)_, no term id was found for the name/label _free part of arm bone_.
 
-1. In row _[22](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=22:22)_, no term id was found for the name/label _head of humerus_.
-
 1. In row _[23](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=23:23)_, no term id was found for the name/label _free part of arm bone_.
-
-1. In row _[23](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=23:23)_, no term id was found for the name/label _intertubercular sulcus of humerus_.
 
 1. In row _[24](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=24:24)_, no term id was found for the name/label _free part of arm bone_.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=24:24)_, no term id was found for the name/label _lateral epicondyle of humerus_.
-
 1. In row _[25](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=25:25)_, no term id was found for the name/label _free part of arm bone_.
-
-1. In row _[25](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=25:25)_, no term id was found for the name/label _lateral supracondylar ridge of humerus_.
 
 1. In row _[26](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=26:26)_, no term id was found for the name/label _free part of arm bone_.
 
 1. In row _[27](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=27:27)_, no term id was found for the name/label _free part of arm bone_.
 
-1. In row _[27](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=27:27)_, no term id was found for the name/label _medial epicondyle of humerus_.
-
 1. In row _[28](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=28:28)_, no term id was found for the name/label _free part of arm bone_.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=28:28)_, no term id was found for the name/label _medial supracondylar ridge of humerus_.
 
 1. In row _[29](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=29:29)_, no term id was found for the name/label _free part of arm bone_.
 
@@ -122,11 +104,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[32](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=32:32)_, no term id was found for the name/label _free part of arm bone_.
 
-1. In row _[32](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=32:32)_, no term id was found for the name/label _shaft of humerus_.
-
 1. In row _[33](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=33:33)_, no term id was found for the name/label _free part of arm bone_.
-
-1. In row _[33](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=33:33)_, no term id was found for the name/label _surgical neck of humerus_.
 
 1. In row _[34](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=34:34)_, no term id was found for the name/label _free part of arm bone_.
 
@@ -137,8 +115,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[36](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=36:36)_, no term id was found for the name/label _head of radius of radius_.
 
 1. In row _[37](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=37:37)_, no term id was found for the name/label _free part of arm bone_.
-
-1. In row _[37](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=37:37)_, no term id was found for the name/label _interosseous border of radius_.
 
 1. In row _[38](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=38:38)_, no term id was found for the name/label _free part of arm bone_.
 
@@ -154,11 +130,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[41](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=41:41)_, no term id was found for the name/label _free part of arm bone_.
 
-1. In row _[41](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=41:41)_, no term id was found for the name/label _styloid process of radius_.
-
 1. In row _[42](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=42:42)_, no term id was found for the name/label _free part of arm bone_.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=42:42)_, no term id was found for the name/label _ulnar notch of radius_.
 
 1. In row _[43](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=43:43)_, no term id was found for the name/label _free part of arm bone_.
 
@@ -170,15 +142,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[46](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=46:46)_, no term id was found for the name/label _free part of arm bone_.
 
-1. In row _[46](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=46:46)_, no term id was found for the name/label _interosseous border of ulna_.
-
 1. In row _[47](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=47:47)_, no term id was found for the name/label _free part of arm bone_.
 
 1. In row _[47](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=47:47)_, no term id was found for the name/label _olecranon of ulna_.
 
 1. In row _[48](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=48:48)_, no term id was found for the name/label _free part of arm bone_.
-
-1. In row _[48](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=48:48)_, no term id was found for the name/label _radial notch of ulna_.
 
 1. In row _[49](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=49:49)_, no term id was found for the name/label _free part of arm bone_.
 
@@ -187,8 +155,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[50](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=50:50)_, no term id was found for the name/label _free part of arm bone_.
 
 1. In row _[51](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=51:51)_, no term id was found for the name/label _free part of arm bone_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=51:51)_, no term id was found for the name/label _supinator crest of ulna_.
 
 1. In row _[52](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=52:52)_, no term id was found for the name/label _free part of arm bone_.
 
@@ -202,151 +168,33 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[54](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=54:54)_, no term id was found for the name/label _ulnar tuberosity of ulna_.
 
-1. In row _[60](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=60:60)_, no term id was found for the name/label _hook of hamate_.
-
 1. In row _[62](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=62:62)_, no term id was found for the name/label _base of first distal phalanx of hand_.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=63:63)_, no term id was found for the name/label _head of first distal phalanx of hand_.
 
 1. In row _[64](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=64:64)_, no term id was found for the name/label _shaft of first distal phalanx of hand_.
 
 1. In row _[65](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=65:65)_, no term id was found for the name/label _tuberosity of first distal phalanx of hand_.
 
-1. In row _[67](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=67:67)_, no term id was found for the name/label _base of second distal phalanx of hand_.
-
 1. In row _[68](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=68:68)_, no term id was found for the name/label _head of second distal phalanx of hand_.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=69:69)_, no term id was found for the name/label _shaft of second distal phalanx of hand_.
 
 1. In row _[70](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=70:70)_, no term id was found for the name/label _tuberosity of second distal phalanx of hand_.
 
-1. In row _[72](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=72:72)_, no term id was found for the name/label _base of third distal phalanx of hand_.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=73:73)_, no term id was found for the name/label _head of third distal phalanx of hand_.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=74:74)_, no term id was found for the name/label _shaft of third distal phalanx of hand_.
-
 1. In row _[75](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=75:75)_, no term id was found for the name/label _tuberosity of third distal phalanx of hand_.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=77:77)_, no term id was found for the name/label _base of fourth distal phalanx of hand_.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=78:78)_, no term id was found for the name/label _head of fourth distal phalanx of hand_.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=79:79)_, no term id was found for the name/label _shaft of fourth distal phalanx of hand_.
 
 1. In row _[80](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=80:80)_, no term id was found for the name/label _tuberosity of fourth distal phalanx of hand_.
 
-1. In row _[82](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=82:82)_, no term id was found for the name/label _base of fifth distal phalanx of hand_.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=83:83)_, no term id was found for the name/label _head of fifth distal phalanx of hand_.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=84:84)_, no term id was found for the name/label _shaft of fifth distal phalanx of hand_.
-
 1. In row _[85](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=85:85)_, no term id was found for the name/label _tuberosity of fifth distal phalanx of hand_.
-
-1. In row _[88](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=88:88)_, no term id was found for the name/label _base of first metacarpal bone_.
-
-1. In row _[89](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=89:89)_, no term id was found for the name/label _head of first metacarpal bone_.
-
-1. In row _[90](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=90:90)_, no term id was found for the name/label _shaft of first metacarpal bone_.
-
-1. In row _[92](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=92:92)_, no term id was found for the name/label _base of second metacarpal bone_.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=93:93)_, no term id was found for the name/label _head of second metacarpal bone_.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=94:94)_, no term id was found for the name/label _shaft of second metacarpal bone_.
-
-1. In row _[96](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=96:96)_, no term id was found for the name/label _base of third metacarpal bone_.
-
-1. In row _[97](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=97:97)_, no term id was found for the name/label _head of third metacarpal bone_.
-
-1. In row _[98](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=98:98)_, no term id was found for the name/label _shaft of third metacarpal bone_.
-
-1. In row _[100](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=100:100)_, no term id was found for the name/label _base of fourth metacarpal bone_.
-
-1. In row _[101](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=101:101)_, no term id was found for the name/label _head of fourth metacarpal bone_.
-
-1. In row _[102](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=102:102)_, no term id was found for the name/label _shaft of fourth metacarpal bone_.
-
-1. In row _[104](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=104:104)_, no term id was found for the name/label _base of fifth metacarpal bone_.
-
-1. In row _[105](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=105:105)_, no term id was found for the name/label _head of fifth metacarpal bone_.
-
-1. In row _[106](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=106:106)_, no term id was found for the name/label _shaft of fifth metacarpal bone_.
-
-1. In row _[108](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=108:108)_, no term id was found for the name/label _base of second middle phalanx of hand_.
 
 1. In row _[109](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=109:109)_, no term id was found for the name/label _head of second middle phalanx of hand_.
 
-1. In row _[110](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=110:110)_, no term id was found for the name/label _shaft of second middle phalanx of hand_.
-
-1. In row _[112](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=112:112)_, no term id was found for the name/label _base of third middle phalanx of hand_.
-
-1. In row _[113](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=113:113)_, no term id was found for the name/label _head of third middle phalanx of han_.
-
-1. In row _[114](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=114:114)_, no term id was found for the name/label _shaft of third middle phalanx of hand_.
-
-1. In row _[116](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=116:116)_, no term id was found for the name/label _base of fourth middle phalanx of hand_.
-
-1. In row _[117](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=117:117)_, no term id was found for the name/label _head of fourth middle phalanx of hand_.
-
-1. In row _[118](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=118:118)_, no term id was found for the name/label _shaft of fourth middle phalanx of hand_.
-
-1. In row _[120](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=120:120)_, no term id was found for the name/label _base of fifth middle phalanx of hand_.
-
-1. In row _[121](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=121:121)_, no term id was found for the name/label _head of fifth middle phalanx of hand_.
-
-1. In row _[122](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=122:122)_, no term id was found for the name/label _shaft of fifth middle phalanx of hand_.
+1. In row _[113](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=113:113)_, no term id was found for the name/label _head of third middle phalanx of hand_.
 
 1. In row _[125](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=125:125)_, no term id was found for the name/label _base of first proximal phalanx of hand_.
 
-1. In row _[126](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=126:126)_, no term id was found for the name/label _head of first proximal phalanx of hand_.
-
 1. In row _[127](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=127:127)_, no term id was found for the name/label _shaft of first proximal phalanx of hand_.
-
-1. In row _[129](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=129:129)_, no term id was found for the name/label _base of second proximal phalanx of hand_.
-
-1. In row _[130](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=130:130)_, no term id was found for the name/label _head of second proximal phalanx of hand_.
-
-1. In row _[131](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=131:131)_, no term id was found for the name/label _shaft of second proximal phalanx of hand_.
-
-1. In row _[133](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=133:133)_, no term id was found for the name/label _base of third proximal phalanx of hand_.
-
-1. In row _[134](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=134:134)_, no term id was found for the name/label _head of third proximal phalanx of hand_.
-
-1. In row _[135](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=135:135)_, no term id was found for the name/label _shaft of third proximal phalanx of hand_.
-
-1. In row _[137](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=137:137)_, no term id was found for the name/label _base of fourth proximal phalanx of hand_.
-
-1. In row _[138](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=138:138)_, no term id was found for the name/label _head of fourth proximal phalanx of hand_.
-
-1. In row _[139](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=139:139)_, no term id was found for the name/label _shaft of fourth proximal phalanx of hand_.
-
-1. In row _[141](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=141:141)_, no term id was found for the name/label _base of fifth proximal phalanx of hand_.
-
-1. In row _[142](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=142:142)_, no term id was found for the name/label _head of fifth proximal phalanx of hand_.
-
-1. In row _[143](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=143:143)_, no term id was found for the name/label _shaft of fifth proximal phalanx of hand_.
 
 1. In row _[145](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=145:145)_, no term id was found for the name/label _scaphoid tubercle of scaphoid_.
 
-1. In row _[149](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=149:149)_, no term id was found for the name/label _acromial end of clavicle_.
-
-1. In row _[150](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=150:150)_, no term id was found for the name/label _acromial facet of clavicle_.
-
-1. In row _[151](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=151:151)_, no term id was found for the name/label _conoid tubercle of clavicle_.
-
-1. In row _[152](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=152:152)_, no term id was found for the name/label _shaft of clavicle_.
-
-1. In row _[154](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=154:154)_, no term id was found for the name/label _sternal facet of clavicle_.
-
-1. In row _[155](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=155:155)_, no term id was found for the name/label _subclavian groove of clavicle_.
-
-1. In row _[156](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=156:156)_, no term id was found for the name/label _trapezoid line of clavicle_.
-
 1. In row _[158](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=158:158)_, no term id was found for the name/label _acromial process of scapula_.
-
-1. In row _[159](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=159:159)_, no term id was found for the name/label _clavicular facet of scapula_.
 
 1. In row _[161](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=161:161)_, no term id was found for the name/label _glenoid fossa of scapula_.
 
@@ -362,13 +210,9 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[170](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=170:170)_, no term id was found for the name/label _subscapular fossa of scapula_.
 
-1. In row _[172](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=172:172)_, no term id was found for the name/label _superior border of scapula_.
-
 1. In row _[173](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=173:173)_, no term id was found for the name/label _supraglenoid tubercle of scapula_.
 
 1. In row _[174](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=174:174)_, no term id was found for the name/label _supraspinous fossa of scapula_.
-
-1. In row _[178](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=178:178)_, no term id was found for the name/label _anterior talar articular surface of calcaneus_.
 
 1. In row _[179](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=179:179)_, no term id was found for the name/label _articular surface for cuboid bone of calcaneus_.
 
@@ -386,141 +230,17 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[186](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=186:186)_, no term id was found for the name/label _medial process of tuberosity of calcaneus_.
 
-1. In row _[187](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=187:187)_, no term id was found for the name/label _middle talar articular surface of calcaneus_.
-
-1. In row _[188](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=188:188)_, no term id was found for the name/label _posterior talar articular surface of calcaneus_.
-
 1. In row _[189](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=189:189)_, no term id was found for the name/label _sustentaculum tali of calcaneus_.
 
 1. In row _[191](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=191:191)_, no term id was found for the name/label _groove for fibularis longus tendon of cuboid_.
 
-1. In row _[192](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=192:192)_, no term id was found for the name/label _tuberosity of cuboid_.
-
 1. In row _[194](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=194:194)_, no term id was found for the name/label _base of first distal phalanx of foot_.
-
-1. In row _[195](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=195:195)_, no term id was found for the name/label _head of first distal phalanx of foot_.
-
-1. In row _[196](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=196:196)_, no term id was found for the name/label _shaft of first distal phalanx of foot_.
-
-1. In row _[198](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=198:198)_, no term id was found for the name/label _base of second distal phalanx of foot_.
 
 1. In row _[199](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=199:199)_, no term id was found for the name/label _head of second distal phalanx of foot_.
 
-1. In row _[200](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=200:200)_, no term id was found for the name/label _shaft of second distal phalanx of foot_.
-
-1. In row _[202](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=202:202)_, no term id was found for the name/label _base of third distal phalanx of foot_.
-
-1. In row _[203](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=203:203)_, no term id was found for the name/label _head of third distal phalanx of foot_.
-
-1. In row _[204](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=204:204)_, no term id was found for the name/label _shaft of third distal phalanx of foot_.
-
-1. In row _[206](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=206:206)_, no term id was found for the name/label _base of fourth distal phalanx of foot_.
-
-1. In row _[207](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=207:207)_, no term id was found for the name/label _head of fourth distal phalanx of foot_.
-
-1. In row _[208](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=208:208)_, no term id was found for the name/label _shaft of fourth distal phalanx of foot_.
-
-1. In row _[210](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=210:210)_, no term id was found for the name/label _base of fifth distal phalanx of foot_.
-
-1. In row _[211](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=211:211)_, no term id was found for the name/label _head of fifth distal phalanx of foot_.
-
-1. In row _[212](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=212:212)_, no term id was found for the name/label _shaft of fifth distal phalanx of foot_.
-
-1. In row _[217](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=217:217)_, no term id was found for the name/label _base of first metatarsal bone_.
-
-1. In row _[218](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=218:218)_, no term id was found for the name/label _head of first metatarsal bone_.
-
-1. In row _[219](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=219:219)_, no term id was found for the name/label _shaft of first metatarsal bone_.
-
-1. In row _[221](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=221:221)_, no term id was found for the name/label _base of second metatarsal bone_.
-
-1. In row _[222](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=222:222)_, no term id was found for the name/label _head of second metatarsal bone_.
-
-1. In row _[223](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=223:223)_, no term id was found for the name/label _shaft of second metatarsal bone_.
-
-1. In row _[225](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=225:225)_, no term id was found for the name/label _base of third metatarsal bone_.
-
-1. In row _[226](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=226:226)_, no term id was found for the name/label _head of third metatarsal bone_.
-
-1. In row _[227](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=227:227)_, no term id was found for the name/label _shaft of third metatarsal bone_.
-
-1. In row _[229](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=229:229)_, no term id was found for the name/label _base of fourth metatarsal bone_.
-
-1. In row _[230](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=230:230)_, no term id was found for the name/label _head of fourth metatarsal bone_.
-
-1. In row _[231](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=231:231)_, no term id was found for the name/label _shaft of fourth metatarsal bone_.
-
-1. In row _[233](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=233:233)_, no term id was found for the name/label _base of fifth metatarsal bone_.
-
-1. In row _[234](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=234:234)_, no term id was found for the name/label _head of fifth metatarsal bone_.
-
-1. In row _[235](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=235:235)_, no term id was found for the name/label _shaft of fifth metatarsal bone_.
-
-1. In row _[236](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=236:236)_, no term id was found for the name/label _tuberosity of fifth metatarsal bone_.
-
-1. In row _[238](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=238:238)_, no term id was found for the name/label _base of second middle phalanx of foot_.
-
 1. In row _[239](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=239:239)_, no term id was found for the name/label _head of second middle phalanx of foot_.
 
-1. In row _[240](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=240:240)_, no term id was found for the name/label _shaft of second middle phalanx of foot_.
-
-1. In row _[242](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=242:242)_, no term id was found for the name/label _base of third middle phalanx of foot_.
-
-1. In row _[243](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=243:243)_, no term id was found for the name/label _head of third middle phalanx of foot_.
-
-1. In row _[244](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=244:244)_, no term id was found for the name/label _shaft of third middle phalanx of foot_.
-
-1. In row _[246](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=246:246)_, no term id was found for the name/label _base of fourth middle phalanx of foot_.
-
-1. In row _[247](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=247:247)_, no term id was found for the name/label _head of fourth middle phalanx of foot_.
-
-1. In row _[248](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=248:248)_, no term id was found for the name/label _shaft of fourth middle phalanx of foot_.
-
-1. In row _[250](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=250:250)_, no term id was found for the name/label _base of fifth middle phalanx of foot_.
-
-1. In row _[251](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=251:251)_, no term id was found for the name/label _head of fifth middle phalanx of foot_.
-
-1. In row _[252](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=252:252)_, no term id was found for the name/label _shaft of fifth middle phalanx of foot_.
-
-1. In row _[254](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=254:254)_, no term id was found for the name/label _tuberosity of navicular_.
-
 1. In row _[256](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=256:256)_, no term id was found for the name/label _base of first proximal phalanx of foot_.
-
-1. In row _[257](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=257:257)_, no term id was found for the name/label _head of first proximal phalanx of foot_.
-
-1. In row _[258](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=258:258)_, no term id was found for the name/label _shaft of first proximal phalanx of foot_.
-
-1. In row _[260](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=260:260)_, no term id was found for the name/label _base of second proximal phalanx of foot_.
-
-1. In row _[261](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=261:261)_, no term id was found for the name/label _head of second proximal phalanx of foot_.
-
-1. In row _[262](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=262:262)_, no term id was found for the name/label _shaft of second proximal phalanx of foot_.
-
-1. In row _[264](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=264:264)_, no term id was found for the name/label _base of third proximal phalanx of foot_.
-
-1. In row _[265](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=265:265)_, no term id was found for the name/label _head of third proximal phalanx of foot_.
-
-1. In row _[266](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=266:266)_, no term id was found for the name/label _shaft of third proximal phalanx of foot_.
-
-1. In row _[268](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=268:268)_, no term id was found for the name/label _base of fourth proximal phalanx of foot_.
-
-1. In row _[269](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=269:269)_, no term id was found for the name/label _head of fourth proximal phalanx of foot_.
-
-1. In row _[270](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=270:270)_, no term id was found for the name/label _shaft of fourth proximal phalanx of foot_.
-
-1. In row _[272](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=272:272)_, no term id was found for the name/label _base of fifth proximal phalanx of foot_.
-
-1. In row _[273](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=273:273)_, no term id was found for the name/label _head of fifth proximal phalanx of foot_.
-
-1. In row _[274](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=274:274)_, no term id was found for the name/label _shaft of fifth proximal phalanx of foot_.
-
-1. In row _[276](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=276:276)_, no term id was found for the name/label _head of talus_.
-
-1. In row _[277](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=277:277)_, no term id was found for the name/label _lateral process of talus_.
-
-1. In row _[279](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=279:279)_, no term id was found for the name/label _posterior process of talus_.
-
-1. In row _[280](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=280:280)_, no term id was found for the name/label _trochlea of talus_.
 
 1. In row _[281](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=281:281)_, no term id was found for the name/label _free part of leg bone_.
 
@@ -528,21 +248,15 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[283](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=283:283)_, no term id was found for the name/label _free part of leg bone_.
 
-1. In row _[283](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=283:283)_, no term id was found for the name/label _adductor tubercle of femur_.
-
 1. In row _[284](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=284:284)_, no term id was found for the name/label _free part of leg bone_.
 
 1. In row _[284](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=284:284)_, no term id was found for the name/label _gluteal tuberosity of femur_.
 
 1. In row _[285](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=285:285)_, no term id was found for the name/label _free part of leg bone_.
 
-1. In row _[285](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=285:285)_, no term id was found for the name/label _greater trochanter of femur_.
-
 1. In row _[286](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=286:286)_, no term id was found for the name/label _free part of leg bone_.
 
 1. In row _[287](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=287:287)_, no term id was found for the name/label _free part of leg bone_.
-
-1. In row _[287](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=287:287)_, no term id was found for the name/label _intercondylar fossa of femur_.
 
 1. In row _[288](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=288:288)_, no term id was found for the name/label _free part of leg bone_.
 
@@ -550,31 +264,21 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[289](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=289:289)_, no term id was found for the name/label _free part of leg bone_.
 
-1. In row _[289](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=289:289)_, no term id was found for the name/label _intertrochanteric crest of femur_.
-
 1. In row _[290](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=290:290)_, no term id was found for the name/label _free part of leg bone_.
 
 1. In row _[291](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=291:291)_, no term id was found for the name/label _free part of leg bone_.
 
 1. In row _[292](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=292:292)_, no term id was found for the name/label _free part of leg bone_.
 
-1. In row _[292](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=292:292)_, no term id was found for the name/label _lateral lip of linea aspera of femur_.
-
 1. In row _[293](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=293:293)_, no term id was found for the name/label _free part of leg bone_.
 
-1. In row _[293](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=293:293)_, no term id was found for the name/label _lesser trochanter of femur_.
-
 1. In row _[294](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=294:294)_, no term id was found for the name/label _free part of leg bone_.
-
-1. In row _[294](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=294:294)_, no term id was found for the name/label _linea aspera of femur_.
 
 1. In row _[295](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=295:295)_, no term id was found for the name/label _free part of leg bone_.
 
 1. In row _[296](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=296:296)_, no term id was found for the name/label _free part of leg bone_.
 
 1. In row _[297](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=297:297)_, no term id was found for the name/label _free part of leg bone_.
-
-1. In row _[297](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=297:297)_, no term id was found for the name/label _medial lip of linea aspera of femur_.
 
 1. In row _[298](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=298:298)_, no term id was found for the name/label _free part of leg bone_.
 
@@ -584,33 +288,21 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[300](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=300:300)_, no term id was found for the name/label _free part of leg bone_.
 
-1. In row _[300](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=300:300)_, no term id was found for the name/label _popliteal surface of femur_.
-
 1. In row _[301](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=301:301)_, no term id was found for the name/label _free part of leg bone_.
-
-1. In row _[301](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=301:301)_, no term id was found for the name/label _quadrate tubercle of femur_.
 
 1. In row _[302](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=302:302)_, no term id was found for the name/label _free part of leg bone_.
 
-1. In row _[302](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=302:302)_, no term id was found for the name/label _shaft of femur_.
-
 1. In row _[303](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=303:303)_, no term id was found for the name/label _free part of leg bone_.
-
-1. In row _[303](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=303:303)_, no term id was found for the name/label _trochanteric fossa of femur_.
 
 1. In row _[304](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=304:304)_, no term id was found for the name/label _free part of leg bone_.
 
 1. In row _[305](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=305:305)_, no term id was found for the name/label _free part of leg bone_.
-
-1. In row _[305](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=305:305)_, no term id was found for the name/label _head of fibula_.
 
 1. In row _[306](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=306:306)_, no term id was found for the name/label _free part of leg bone_.
 
 1. In row _[307](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=307:307)_, no term id was found for the name/label _free part of leg bone_.
 
 1. In row _[308](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=308:308)_, no term id was found for the name/label _free part of leg bone_.
-
-1. In row _[308](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=308:308)_, no term id was found for the name/label _shaft of fibula_.
 
 1. In row _[309](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=309:309)_, no term id was found for the name/label _free part of leg bone_.
 
@@ -630,8 +322,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[314](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=314:314)_, no term id was found for the name/label _free part of leg bone_.
 
-1. In row _[314](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=314:314)_, no term id was found for the name/label _intercondylar eminence of tibia_.
-
 1. In row _[315](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=315:315)_, no term id was found for the name/label _free part of leg bone_.
 
 1. In row _[315](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=315:315)_, no term id was found for the name/label _interosseus border of tibia_.
@@ -645,8 +335,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[318](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=318:318)_, no term id was found for the name/label _medial malleolus of tibia_.
 
 1. In row _[319](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=319:319)_, no term id was found for the name/label _free part of leg bone_.
-
-1. In row _[319](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=319:319)_, no term id was found for the name/label _shaft of tibia_.
 
 1. In row _[320](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=320:320)_, no term id was found for the name/label _free part of leg bone_.
 
@@ -734,8 +422,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[363](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=363:363)_, no term id was found for the name/label _hyoid region bone_.
 
-1. In row _[363](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=363:363)_, no term id was found for the name/label _body of hyoid bone_.
-
 1. In row _[364](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=364:364)_, no term id was found for the name/label _hyoid region bone_.
 
 1. In row _[364](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=364:364)_, no term id was found for the name/label _greater cornu of hyoid bone_.
@@ -774,11 +460,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[383](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=383:383)_, no term id was found for the name/label _lacrimal fossa of frontal bone_.
 
-1. In row _[384](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=384:384)_, no term id was found for the name/label _orbital surface of frontal bone_.
-
 1. In row _[385](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=385:385)_, no term id was found for the name/label _supercilary arch of frontal bone_.
-
-1. In row _[386](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=386:386)_, no term id was found for the name/label _supraorbital margin of frontal bone_.
 
 1. In row _[387](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=387:387)_, no term id was found for the name/label _supraorbital notch or foramen of frontal bone_.
 
@@ -805,10 +487,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[401](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=401:401)_, no term id was found for the name/label _groove for middle meningeal a. of parietal bone_.
 
 1. In row _[402](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=402:402)_, no term id was found for the name/label _groove for superior sagittal sinus of parietal bone_.
-
-1. In row _[403](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=403:403)_, no term id was found for the name/label _inferior temporal line of parietal bone_.
-
-1. In row _[404](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=404:404)_, no term id was found for the name/label _superior temporal line of parietal bone_.
 
 1. In row _[405](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=405:405)_, no term id was found for the name/label _temporal fossa of parietal bone_.
 
@@ -843,8 +521,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[422](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=422:422)_, no term id was found for the name/label _pterygoid fossa of sphenoid bone_.
 
 1. In row _[423](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=423:423)_, no term id was found for the name/label _pterygoid hamulus of sphenoid bone_.
-
-1. In row _[424](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=424:424)_, no term id was found for the name/label _pterygoid process of sphenoid bone_.
 
 1. In row _[425](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=425:425)_, no term id was found for the name/label _sella turcica of sphenoid bone_.
 
@@ -898,13 +574,9 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[459](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=459:459)_, no term id was found for the name/label _alveolar border of mandible_.
 
-1. In row _[461](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=461:461)_, no term id was found for the name/label _coronoid process of mandible_.
-
 1. In row _[462](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=462:462)_, no term id was found for the name/label _digastric fossa of mandible_.
 
 1. In row _[463](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=463:463)_, no term id was found for the name/label _inferior mental spine of mandible_.
-
-1. In row _[464](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=464:464)_, no term id was found for the name/label _lingula of mandible_.
 
 1. In row _[465](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=465:465)_, no term id was found for the name/label _mandibular angle of mandible_.
 
@@ -928,15 +600,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[475](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=475:475)_, no term id was found for the name/label _pterygoid fovea of mandible_.
 
-1. In row _[476](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=476:476)_, no term id was found for the name/label _ramus of mandible_.
-
 1. In row _[477](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=477:477)_, no term id was found for the name/label _sublingual fossa of mandible_.
 
 1. In row _[478](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=478:478)_, no term id was found for the name/label _submandibular fossa of mandible_.
 
 1. In row _[479](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=479:479)_, no term id was found for the name/label _superior mental spine of mandible_.
-
-1. In row _[481](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=481:481)_, no term id was found for the name/label _alveolar canals of maxilla_.
 
 1. In row _[485](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=485:485)_, no term id was found for the name/label _greater palatine canal of maxilla_.
 
@@ -952,23 +620,13 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[491](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=491:491)_, no term id was found for the name/label _maxillary sinus of maxilla_.
 
-1. In row _[492](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=492:492)_, no term id was found for the name/label _nasal surface of maxilla_.
-
 1. In row _[493](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=493:493)_, no term id was found for the name/label _nasolacrimal canal of maxilla_.
 
 1. In row _[498](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=498:498)_, no term id was found for the name/label _greater palatine foramen of palatine bone_.
 
-1. In row _[499](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=499:499)_, no term id was found for the name/label _horizontal plate of palatine bone_.
-
 1. In row _[500](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=500:500)_, no term id was found for the name/label _lesser palatine foramen of palatine bone_.
 
-1. In row _[501](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=501:501)_, no term id was found for the name/label _perpendicular plate of palatine bone_.
-
-1. In row _[503](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=503:503)_, no term id was found for the name/label _ala of vomer_.
-
 1. In row _[504](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=504:504)_, no term id was found for the name/label _groove for nasopalatine nerve of vomer_.
-
-1. In row _[507](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=507:507)_, no term id was found for the name/label _maxillary process of zygomatic bone_.
 
 1. In row _[509](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=509:509)_, no term id was found for the name/label _zygomaticofacial foramen of zygomatic bone_.
 
@@ -978,15 +636,9 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[513](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=513:513)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[513](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=513:513)_, no term id was found for the name/label _angle of first rib_.
-
 1. In row _[514](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=514:514)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[514](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=514:514)_, no term id was found for the name/label _articular facet of tubercle of first rib_.
-
 1. In row _[515](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=515:515)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[515](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=515:515)_, no term id was found for the name/label _body of first rib_.
 
 1. In row _[516](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=516:516)_, no term id was found for the name/label _costal region bone_.
 
@@ -1006,11 +658,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[520](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=520:520)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[520](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=520:520)_, no term id was found for the name/label _head of first rib_.
-
 1. In row _[521](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=521:521)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[521](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=521:521)_, no term id was found for the name/label _neck of first rib_.
 
 1. In row _[522](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=522:522)_, no term id was found for the name/label _costal region bone_.
 
@@ -1026,25 +674,15 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[525](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=525:525)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[525](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=525:525)_, no term id was found for the name/label _tubercle of first rib_.
-
 1. In row _[526](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=526:526)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[527](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=527:527)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[527](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=527:527)_, no term id was found for the name/label _angle of tenth rib_.
-
 1. In row _[528](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=528:528)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[528](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=528:528)_, no term id was found for the name/label _articular facet of tubercle of tenth rib_.
 
 1. In row _[529](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=529:529)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[529](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=529:529)_, no term id was found for the name/label _body of tenth rib_.
-
 1. In row _[530](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=530:530)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[530](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=530:530)_, no term id was found for the name/label _costal groove of tenth rib_.
 
 1. In row _[531](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=531:531)_, no term id was found for the name/label _costal region bone_.
 
@@ -1052,11 +690,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[532](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=532:532)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[532](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=532:532)_, no term id was found for the name/label _head of tenth rib_.
-
 1. In row _[533](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=533:533)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[533](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=533:533)_, no term id was found for the name/label _neck of tenth rib_.
 
 1. In row _[534](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=534:534)_, no term id was found for the name/label _costal region bone_.
 
@@ -1068,25 +702,17 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[536](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=536:536)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[536](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=536:536)_, no term id was found for the name/label _tubercle of tenth rib_.
-
 1. In row _[537](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=537:537)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[538](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=538:538)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[538](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=538:538)_, no term id was found for the name/label _body of eleventh rib_.
-
 1. In row _[539](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=539:539)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[539](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=539:539)_, no term id was found for the name/label _costal groove of eleventh rib_.
 
 1. In row _[540](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=540:540)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[540](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=540:540)_, no term id was found for the name/label _facet of eleventh rib_.
 
 1. In row _[541](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=541:541)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[541](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=541:541)_, no term id was found for the name/label _head of eleventh rib_.
 
 1. In row _[542](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=542:542)_, no term id was found for the name/label _costal region bone_.
 
@@ -1095,8 +721,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[543](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=543:543)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[544](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=544:544)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[544](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=544:544)_, no term id was found for the name/label _body of twelfth rib_.
 
 1. In row _[545](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=545:545)_, no term id was found for the name/label _costal region bone_.
 
@@ -1108,8 +732,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[547](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=547:547)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[547](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=547:547)_, no term id was found for the name/label _head of twelfth rib_.
-
 1. In row _[548](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=548:548)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[548](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=548:548)_, no term id was found for the name/label _sternal end of twelfth rib_.
@@ -1118,31 +740,17 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[550](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=550:550)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[550](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=550:550)_, no term id was found for the name/label _angle of second rib_.
-
 1. In row _[551](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=551:551)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[551](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=551:551)_, no term id was found for the name/label _articular facet of tubercle of second rib_.
 
 1. In row _[552](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=552:552)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[552](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=552:552)_, no term id was found for the name/label _body of second rib_.
-
 1. In row _[553](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=553:553)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[553](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=553:553)_, no term id was found for the name/label _costal groove of second rib_.
 
 1. In row _[554](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=554:554)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[554](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=554:554)_, no term id was found for the name/label _head of second rib_.
-
 1. In row _[555](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=555:555)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[555](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=555:555)_, no term id was found for the name/label _inferior articular facet of second rib_.
-
 1. In row _[556](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=556:556)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[556](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=556:556)_, no term id was found for the name/label _neck of second rib_.
 
 1. In row _[557](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=557:557)_, no term id was found for the name/label _costal region bone_.
 
@@ -1154,45 +762,25 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[559](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=559:559)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[559](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=559:559)_, no term id was found for the name/label _superior articular facet of second rib_.
-
 1. In row _[560](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=560:560)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[560](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=560:560)_, no term id was found for the name/label _tubercle of second rib_.
 
 1. In row _[561](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=561:561)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[562](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=562:562)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[562](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=562:562)_, no term id was found for the name/label _angle of third rib_.
-
 1. In row _[563](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=563:563)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[563](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=563:563)_, no term id was found for the name/label _articular facet of tubercle of third rib_.
 
 1. In row _[564](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=564:564)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[564](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=564:564)_, no term id was found for the name/label _body of third rib_.
-
 1. In row _[565](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=565:565)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[565](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=565:565)_, no term id was found for the name/label _costal groove of third rib_.
 
 1. In row _[566](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=566:566)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[566](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=566:566)_, no term id was found for the name/label _crest of head of third rib_.
-
 1. In row _[567](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=567:567)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[567](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=567:567)_, no term id was found for the name/label _head of third rib_.
 
 1. In row _[568](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=568:568)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[568](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=568:568)_, no term id was found for the name/label _inferior articular facet of third rib_.
-
 1. In row _[569](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=569:569)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[569](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=569:569)_, no term id was found for the name/label _neck of third rib_.
 
 1. In row _[570](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=570:570)_, no term id was found for the name/label _costal region bone_.
 
@@ -1204,45 +792,25 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[572](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=572:572)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[572](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=572:572)_, no term id was found for the name/label _superior articular facet of third rib_.
-
 1. In row _[573](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=573:573)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[573](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=573:573)_, no term id was found for the name/label _tubercle of third rib_.
 
 1. In row _[574](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=574:574)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[575](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=575:575)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[575](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=575:575)_, no term id was found for the name/label _angle of fourth rib_.
-
 1. In row _[576](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=576:576)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[576](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=576:576)_, no term id was found for the name/label _articular facet of tubercle of fourth rib_.
 
 1. In row _[577](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=577:577)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[577](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=577:577)_, no term id was found for the name/label _body of fourth rib_.
-
 1. In row _[578](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=578:578)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[578](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=578:578)_, no term id was found for the name/label _costal groove of fourth rib_.
 
 1. In row _[579](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=579:579)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[579](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=579:579)_, no term id was found for the name/label _crest of head of fourth rib_.
-
 1. In row _[580](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=580:580)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[580](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=580:580)_, no term id was found for the name/label _head of fourth rib_.
 
 1. In row _[581](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=581:581)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[581](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=581:581)_, no term id was found for the name/label _inferior articular facet of fourth rib_.
-
 1. In row _[582](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=582:582)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[582](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=582:582)_, no term id was found for the name/label _neck of fourth rib_.
 
 1. In row _[583](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=583:583)_, no term id was found for the name/label _costal region bone_.
 
@@ -1254,45 +822,25 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[585](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=585:585)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[585](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=585:585)_, no term id was found for the name/label _superior articular facet of fourth rib_.
-
 1. In row _[586](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=586:586)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[586](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=586:586)_, no term id was found for the name/label _tubercle of fourth rib_.
 
 1. In row _[587](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=587:587)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[588](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=588:588)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[588](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=588:588)_, no term id was found for the name/label _angle of fifth rib_.
-
 1. In row _[589](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=589:589)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[589](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=589:589)_, no term id was found for the name/label _articular facet of tubercle of fifth rib_.
 
 1. In row _[590](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=590:590)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[590](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=590:590)_, no term id was found for the name/label _body of fifth rib_.
-
 1. In row _[591](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=591:591)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[591](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=591:591)_, no term id was found for the name/label _costal groove of fifth rib_.
 
 1. In row _[592](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=592:592)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[592](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=592:592)_, no term id was found for the name/label _crest of head of fifth rib_.
-
 1. In row _[593](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=593:593)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[593](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=593:593)_, no term id was found for the name/label _head of fifth rib_.
 
 1. In row _[594](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=594:594)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[594](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=594:594)_, no term id was found for the name/label _inferior articular facet of fifth rib_.
-
 1. In row _[595](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=595:595)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[595](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=595:595)_, no term id was found for the name/label _neck of fifth rib_.
 
 1. In row _[596](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=596:596)_, no term id was found for the name/label _costal region bone_.
 
@@ -1304,45 +852,25 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[598](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=598:598)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[598](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=598:598)_, no term id was found for the name/label _superior articular facet of fifth rib_.
-
 1. In row _[599](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=599:599)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[599](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=599:599)_, no term id was found for the name/label _tubercle of fifth rib_.
 
 1. In row _[600](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=600:600)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[601](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=601:601)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[601](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=601:601)_, no term id was found for the name/label _angle of sixth rib_.
-
 1. In row _[602](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=602:602)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[602](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=602:602)_, no term id was found for the name/label _articular facet of tubercle of sixth rib_.
 
 1. In row _[603](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=603:603)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[603](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=603:603)_, no term id was found for the name/label _body of sixth rib_.
-
 1. In row _[604](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=604:604)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[604](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=604:604)_, no term id was found for the name/label _costal groove of sixth rib_.
 
 1. In row _[605](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=605:605)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[605](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=605:605)_, no term id was found for the name/label _crest of head of sixth rib_.
-
 1. In row _[606](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=606:606)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[606](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=606:606)_, no term id was found for the name/label _head of sixth rib_.
 
 1. In row _[607](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=607:607)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[607](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=607:607)_, no term id was found for the name/label _inferior articular facet of sixth rib_.
-
 1. In row _[608](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=608:608)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[608](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=608:608)_, no term id was found for the name/label _neck of sixth rib_.
 
 1. In row _[609](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=609:609)_, no term id was found for the name/label _costal region bone_.
 
@@ -1354,45 +882,25 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[611](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=611:611)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[611](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=611:611)_, no term id was found for the name/label _superior articular facet of sixth rib_.
-
 1. In row _[612](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=612:612)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[612](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=612:612)_, no term id was found for the name/label _tubercle of sixth rib_.
 
 1. In row _[613](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=613:613)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[614](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=614:614)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[614](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=614:614)_, no term id was found for the name/label _angle of seventh rib_.
-
 1. In row _[615](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=615:615)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[615](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=615:615)_, no term id was found for the name/label _articular facet of tubercle of seventh rib_.
 
 1. In row _[616](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=616:616)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[616](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=616:616)_, no term id was found for the name/label _body of seventh rib_.
-
 1. In row _[617](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=617:617)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[617](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=617:617)_, no term id was found for the name/label _costal groove of seventh rib_.
 
 1. In row _[618](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=618:618)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[618](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=618:618)_, no term id was found for the name/label _crest of head of seventh rib_.
-
 1. In row _[619](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=619:619)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[619](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=619:619)_, no term id was found for the name/label _head of seventh rib_.
 
 1. In row _[620](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=620:620)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[620](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=620:620)_, no term id was found for the name/label _inferior articular facet of seventh rib_.
-
 1. In row _[621](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=621:621)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[621](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=621:621)_, no term id was found for the name/label _neck of seventh rib_.
 
 1. In row _[622](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=622:622)_, no term id was found for the name/label _costal region bone_.
 
@@ -1404,45 +912,25 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[624](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=624:624)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[624](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=624:624)_, no term id was found for the name/label _superior articular facet of seventh rib_.
-
 1. In row _[625](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=625:625)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[625](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=625:625)_, no term id was found for the name/label _tubercle of seventh rib_.
 
 1. In row _[626](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=626:626)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[627](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=627:627)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[627](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=627:627)_, no term id was found for the name/label _angle of eighth rib_.
-
 1. In row _[628](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=628:628)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[628](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=628:628)_, no term id was found for the name/label _articular facet of tubercle of eighth rib_.
 
 1. In row _[629](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=629:629)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[629](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=629:629)_, no term id was found for the name/label _body of eighth rib_.
-
 1. In row _[630](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=630:630)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[630](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=630:630)_, no term id was found for the name/label _costal groove of eighth rib_.
 
 1. In row _[631](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=631:631)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[631](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=631:631)_, no term id was found for the name/label _crest of head of eighth rib_.
-
 1. In row _[632](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=632:632)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[632](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=632:632)_, no term id was found for the name/label _head of eighth rib_.
 
 1. In row _[633](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=633:633)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[633](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=633:633)_, no term id was found for the name/label _inferior articular facet of eighth rib_.
-
 1. In row _[634](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=634:634)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[634](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=634:634)_, no term id was found for the name/label _neck of eighth rib_.
 
 1. In row _[635](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=635:635)_, no term id was found for the name/label _costal region bone_.
 
@@ -1454,45 +942,25 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[637](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=637:637)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[637](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=637:637)_, no term id was found for the name/label _superior articular facet of eighth rib_.
-
 1. In row _[638](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=638:638)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[638](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=638:638)_, no term id was found for the name/label _tubercle of eighth rib_.
 
 1. In row _[639](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=639:639)_, no term id was found for the name/label _costal region bone_.
 
 1. In row _[640](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=640:640)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[640](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=640:640)_, no term id was found for the name/label _angle of ninth rib_.
-
 1. In row _[641](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=641:641)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[641](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=641:641)_, no term id was found for the name/label _articular facet of tubercle of ninth rib_.
 
 1. In row _[642](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=642:642)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[642](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=642:642)_, no term id was found for the name/label _body of ninth rib_.
-
 1. In row _[643](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=643:643)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[643](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=643:643)_, no term id was found for the name/label _costal groove of ninth rib_.
 
 1. In row _[644](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=644:644)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[644](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=644:644)_, no term id was found for the name/label _crest of head of ninth rib_.
-
 1. In row _[645](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=645:645)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[645](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=645:645)_, no term id was found for the name/label _head of ninth rib_.
 
 1. In row _[646](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=646:646)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[646](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=646:646)_, no term id was found for the name/label _inferior articular facet of ninth rib_.
-
 1. In row _[647](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=647:647)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[647](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=647:647)_, no term id was found for the name/label _neck of ninth rib_.
 
 1. In row _[648](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=648:648)_, no term id was found for the name/label _costal region bone_.
 
@@ -1504,11 +972,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[650](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=650:650)_, no term id was found for the name/label _costal region bone_.
 
-1. In row _[650](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=650:650)_, no term id was found for the name/label _superior articular facet of ninth rib_.
-
 1. In row _[651](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=651:651)_, no term id was found for the name/label _costal region bone_.
-
-1. In row _[651](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=651:651)_, no term id was found for the name/label _tubercle of ninth rib_.
 
 1. In row _[652](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=652:652)_, no term id was found for the name/label _sternal region bone_.
 
@@ -1516,15 +980,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[654](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=654:654)_, no term id was found for the name/label _sternal region bone_.
 
-1. In row _[654](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=654:654)_, no term id was found for the name/label _clavicular notch of sternum_.
-
 1. In row _[655](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=655:655)_, no term id was found for the name/label _sternal region bone_.
 
 1. In row _[655](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=655:655)_, no term id was found for the name/label _costal notches of sternum_.
 
 1. In row _[656](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=656:656)_, no term id was found for the name/label _sternal region bone_.
-
-1. In row _[656](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=656:656)_, no term id was found for the name/label _jugular notch of sternum_.
 
 1. In row _[657](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=657:657)_, no term id was found for the name/label _sternal region bone_.
 
@@ -1541,8 +1001,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 1. In row _[660](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=660:660)_, no term id was found for the name/label _transverse ridges of sternum_.
 
 1. In row _[661](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=661:661)_, no term id was found for the name/label _sternal region bone_.
-
-1. In row _[661](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=661:661)_, no term id was found for the name/label _xiphoid process of sternum_.
 
 1. In row _[665](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=665:665)_, no term id was found for the name/label _coccygeal cornu of coccyx_.
 
@@ -1590,8 +1048,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[690](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=690:690)_, no term id was found for the name/label _inferior articular process of second cervical vertebra_.
 
-1. In row _[691](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=691:691)_, no term id was found for the name/label _inferior vertebral notch of second cervical vertebra_.
-
 1. In row _[692](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=692:692)_, no term id was found for the name/label _lamina of second cervical vertebra_.
 
 1. In row _[694](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=694:694)_, no term id was found for the name/label _pedicle of second cervical vertebra_.
@@ -1616,137 +1072,39 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[705](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=705:705)_, no term id was found for the name/label _inferior articular facet of third cervical vertebra_.
 
-1. In row _[706](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=706:706)_, no term id was found for the name/label _inferior articular process of third cervical vertebra_.
-
-1. In row _[707](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=707:707)_, no term id was found for the name/label _inferior vertebral notch of third cervical vertebra_.
-
-1. In row _[708](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=708:708)_, no term id was found for the name/label _lamina of third cervical vertebra_.
-
-1. In row _[709](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=709:709)_, no term id was found for the name/label _pedicle of third cervical vertebra_.
-
-1. In row _[710](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=710:710)_, no term id was found for the name/label _spinous process of third cervical vertebra_.
-
 1. In row _[711](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=711:711)_, no term id was found for the name/label _superior articular facet of third cervical vertebra_.
-
-1. In row _[712](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=712:712)_, no term id was found for the name/label _superior articular process of third cervical vertebra_.
-
-1. In row _[713](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=713:713)_, no term id was found for the name/label _superior vertebral notch of third cervical vertebra_.
-
-1. In row _[714](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=714:714)_, no term id was found for the name/label _transverse foramen of third cervical vertebra_.
-
-1. In row _[715](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=715:715)_, no term id was found for the name/label _transverse process of third cervical vertebra_.
 
 1. In row _[716](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=716:716)_, no term id was found for the name/label _vertebral arch of third cervical vertebra_.
 
 1. In row _[717](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=717:717)_, no term id was found for the name/label _vertebral body of third cervical vertebra_.
 
-1. In row _[718](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=718:718)_, no term id was found for the name/label _vertebral foramen of third cervical vertebra_.
-
 1. In row _[720](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=720:720)_, no term id was found for the name/label _inferior articular facet of fourth cervical vertebra_.
 
-1. In row _[721](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=721:721)_, no term id was found for the name/label _inferior articular process of fourth cervical vertebra_.
-
-1. In row _[722](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=722:722)_, no term id was found for the name/label _inferior vertebral notch of fourth cervical vertebra_.
-
-1. In row _[723](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=723:723)_, no term id was found for the name/label _lamina of fourth cervical vertebra_.
-
-1. In row _[724](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=724:724)_, no term id was found for the name/label _pedicle of fourth cervical vertebra_.
-
-1. In row _[725](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=725:725)_, no term id was found for the name/label _spinous process of fourth cervical vertebra_.
-
 1. In row _[726](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=726:726)_, no term id was found for the name/label _superior articular facet of fourth cervical vertebra_.
-
-1. In row _[727](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=727:727)_, no term id was found for the name/label _superior articular process of fourth cervical vertebra_.
-
-1. In row _[728](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=728:728)_, no term id was found for the name/label _superior vertebral notch of fourth cervical vertebra_.
-
-1. In row _[729](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=729:729)_, no term id was found for the name/label _transverse foramen of fourth cervical vertebra_.
-
-1. In row _[730](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=730:730)_, no term id was found for the name/label _transverse process of fourth cervical vertebra_.
 
 1. In row _[731](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=731:731)_, no term id was found for the name/label _vertebral arch of fourth cervical vertebra_.
 
 1. In row _[732](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=732:732)_, no term id was found for the name/label _vertebral body of fourth cervical vertebra_.
 
-1. In row _[733](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=733:733)_, no term id was found for the name/label _vertebral foramen of fourth cervical vertebra_.
-
 1. In row _[735](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=735:735)_, no term id was found for the name/label _inferior articular facet of fifth cervical vertebra_.
 
-1. In row _[736](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=736:736)_, no term id was found for the name/label _inferior articular process of fifth cervical vertebra_.
-
-1. In row _[737](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=737:737)_, no term id was found for the name/label _inferior vertebral notch of fifth cervical vertebra_.
-
-1. In row _[738](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=738:738)_, no term id was found for the name/label _lamina of fifth cervical vertebra_.
-
-1. In row _[739](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=739:739)_, no term id was found for the name/label _pedicle of fifth cervical vertebra_.
-
-1. In row _[740](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=740:740)_, no term id was found for the name/label _spinous process of fifth cervical vertebra_.
-
 1. In row _[741](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=741:741)_, no term id was found for the name/label _superior articular facet of fifth cervical vertebra_.
-
-1. In row _[742](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=742:742)_, no term id was found for the name/label _superior articular process of fifth cervical vertebra_.
-
-1. In row _[743](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=743:743)_, no term id was found for the name/label _superior vertebral notch of fifth cervical vertebra_.
-
-1. In row _[744](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=744:744)_, no term id was found for the name/label _transverse foramen of fifth cervical vertebra_.
-
-1. In row _[745](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=745:745)_, no term id was found for the name/label _transverse process of fifth cervical vertebra_.
 
 1. In row _[746](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=746:746)_, no term id was found for the name/label _vertebral arch of fifth cervical vertebra_.
 
 1. In row _[747](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=747:747)_, no term id was found for the name/label _vertebral body of fifth cervical vertebra_.
 
-1. In row _[748](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=748:748)_, no term id was found for the name/label _vertebral foramen of fifth cervical vertebra_.
-
 1. In row _[750](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=750:750)_, no term id was found for the name/label _inferior articular facet of sixth cervical vertebra_.
 
-1. In row _[751](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=751:751)_, no term id was found for the name/label _inferior articular process of sixth cervical vertebra_.
-
-1. In row _[752](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=752:752)_, no term id was found for the name/label _inferior vertebral notch of sixth cervical vertebra_.
-
-1. In row _[753](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=753:753)_, no term id was found for the name/label _lamina of sixth cervical vertebra_.
-
-1. In row _[754](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=754:754)_, no term id was found for the name/label _pedicle of sixth cervical vertebra_.
-
-1. In row _[755](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=755:755)_, no term id was found for the name/label _spinous process of sixth cervical vertebra_.
-
 1. In row _[756](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=756:756)_, no term id was found for the name/label _superior articular facet of sixth cervical vertebra_.
-
-1. In row _[757](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=757:757)_, no term id was found for the name/label _superior articular process of sixth cervical vertebra_.
-
-1. In row _[758](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=758:758)_, no term id was found for the name/label _superior vertebral notch of sixth cervical vertebra_.
-
-1. In row _[759](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=759:759)_, no term id was found for the name/label _transverse foramen of sixth cervical vertebra_.
-
-1. In row _[760](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=760:760)_, no term id was found for the name/label _transverse process of sixth cervical vertebra_.
 
 1. In row _[761](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=761:761)_, no term id was found for the name/label _vertebral arch of sixth cervical vertebra_.
 
 1. In row _[762](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=762:762)_, no term id was found for the name/label _vertebral body of sixth cervical vertebra_.
 
-1. In row _[763](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=763:763)_, no term id was found for the name/label _vertebral foramen of sixth cervical vertebra_.
-
 1. In row _[765](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=765:765)_, no term id was found for the name/label _inferior articular facet of seventh cervical vertebra_.
 
-1. In row _[766](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=766:766)_, no term id was found for the name/label _inferior articular process of seventh cervical vertebra_.
-
-1. In row _[767](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=767:767)_, no term id was found for the name/label _inferior vertebral notch of seventh cervical vertebra_.
-
-1. In row _[768](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=768:768)_, no term id was found for the name/label _lamina of seventh cervical vertebra_.
-
-1. In row _[769](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=769:769)_, no term id was found for the name/label _pedicle of seventh cervical vertebra_.
-
-1. In row _[770](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=770:770)_, no term id was found for the name/label _spinous process of seventh cervical vertebra_.
-
 1. In row _[771](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=771:771)_, no term id was found for the name/label _superior articular facet of seventh cervical vertebra_.
-
-1. In row _[772](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=772:772)_, no term id was found for the name/label _superior articular process of seventh cervical vertebra_.
-
-1. In row _[773](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=773:773)_, no term id was found for the name/label _superior vertebral notch of seventh cervical vertebra_.
-
-1. In row _[774](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=774:774)_, no term id was found for the name/label _transverse foramen of seventh cervical vertebra_.
-
-1. In row _[775](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=775:775)_, no term id was found for the name/label _transverse process of seventh cervical vertebra_.
 
 1. In row _[776](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=776:776)_, no term id was found for the name/label _vertebra prominens of seventh cervical vertebra_.
 
@@ -1754,163 +1112,49 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[778](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=778:778)_, no term id was found for the name/label _vertebral body of seventh cervical vertebra_.
 
-1. In row _[779](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=779:779)_, no term id was found for the name/label _vertebral foramen of seventh cervical vertebra_.
-
-1. In row _[782](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=782:782)_, no term id was found for the name/label _accessory process of first lumbar vertebra_.
-
-1. In row _[783](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=783:783)_, no term id was found for the name/label _inferior articular facet of first lumbar vertebra_.
-
-1. In row _[784](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=784:784)_, no term id was found for the name/label _inferior articular process of first lumbar vertebra_.
-
-1. In row _[785](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=785:785)_, no term id was found for the name/label _inferior vertebral notch of first lumbar vertebra_.
-
-1. In row _[786](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=786:786)_, no term id was found for the name/label _lamina of first lumbar vertebra_.
-
 1. In row _[787](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=787:787)_, no term id was found for the name/label _mammillary process of first lumbar vertebra_.
 
-1. In row _[788](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=788:788)_, no term id was found for the name/label _pedicle of first lumbar vertebra_.
-
-1. In row _[789](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=789:789)_, no term id was found for the name/label _spinous process of first lumbar vertebra_.
-
 1. In row _[790](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=790:790)_, no term id was found for the name/label _superior articular facet of first lumbar vertebra_.
-
-1. In row _[791](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=791:791)_, no term id was found for the name/label _superior articular process of first lumbar vertebra_.
-
-1. In row _[792](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=792:792)_, no term id was found for the name/label _superior vertebral notch of first lumbar vertebra_.
-
-1. In row _[793](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=793:793)_, no term id was found for the name/label _transverse process of first lumbar vertebra_.
 
 1. In row _[794](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=794:794)_, no term id was found for the name/label _vertebral arch of first lumbar vertebra_.
 
 1. In row _[795](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=795:795)_, no term id was found for the name/label _vertebral body of first lumbar vertebra_.
 
-1. In row _[796](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=796:796)_, no term id was found for the name/label _vertebral foramen of first lumbar vertebra_.
-
-1. In row _[798](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=798:798)_, no term id was found for the name/label _accessory process of second lumbar vertebra_.
-
-1. In row _[799](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=799:799)_, no term id was found for the name/label _inferior articular facet of second lumbar vertebra_.
-
-1. In row _[800](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=800:800)_, no term id was found for the name/label _inferior articular process of second lumbar vertebra_.
-
-1. In row _[801](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=801:801)_, no term id was found for the name/label _inferior vertebral notch of second lumbar vertebra_.
-
-1. In row _[802](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=802:802)_, no term id was found for the name/label _lamina of second lumbar vertebra_.
-
 1. In row _[803](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=803:803)_, no term id was found for the name/label _mammillary process of second lumbar vertebra_.
 
-1. In row _[804](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=804:804)_, no term id was found for the name/label _pedicle of second lumbar vertebra_.
-
-1. In row _[805](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=805:805)_, no term id was found for the name/label _spinous process of second lumbar vertebra_.
-
 1. In row _[806](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=806:806)_, no term id was found for the name/label _superior articular facet of second lumbar vertebra_.
-
-1. In row _[807](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=807:807)_, no term id was found for the name/label _superior articular process of second lumbar vertebra_.
-
-1. In row _[808](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=808:808)_, no term id was found for the name/label _superior vertebral notch of second lumbar vertebra_.
-
-1. In row _[809](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=809:809)_, no term id was found for the name/label _transverse process of second lumbar vertebra_.
 
 1. In row _[810](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=810:810)_, no term id was found for the name/label _vertebral arch of second lumbar vertebra_.
 
 1. In row _[811](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=811:811)_, no term id was found for the name/label _vertebral body of second lumbar vertebra_.
 
-1. In row _[812](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=812:812)_, no term id was found for the name/label _vertebral foramen of second lumbar vertebra_.
-
-1. In row _[814](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=814:814)_, no term id was found for the name/label _accessory process of third lumbar vertebra_.
-
-1. In row _[815](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=815:815)_, no term id was found for the name/label _inferior articular facet of third lumbar vertebra_.
-
-1. In row _[816](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=816:816)_, no term id was found for the name/label _inferior articular process of third lumbar vertebra_.
-
-1. In row _[817](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=817:817)_, no term id was found for the name/label _inferior vertebral notch of third lumbar vertebra_.
-
-1. In row _[818](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=818:818)_, no term id was found for the name/label _lamina of third lumbar vertebra_.
-
 1. In row _[819](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=819:819)_, no term id was found for the name/label _mammillary process of third lumbar vertebra_.
 
-1. In row _[820](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=820:820)_, no term id was found for the name/label _pedicle of third lumbar vertebra_.
-
-1. In row _[821](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=821:821)_, no term id was found for the name/label _spinous process of third lumbar vertebra_.
-
 1. In row _[822](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=822:822)_, no term id was found for the name/label _superior articular facet of third lumbar vertebra_.
-
-1. In row _[823](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=823:823)_, no term id was found for the name/label _superior articular process of third lumbar vertebra_.
-
-1. In row _[824](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=824:824)_, no term id was found for the name/label _superior vertebral notch of third lumbar vertebra_.
-
-1. In row _[825](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=825:825)_, no term id was found for the name/label _transverse process of third lumbar vertebra_.
 
 1. In row _[826](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=826:826)_, no term id was found for the name/label _vertebral arch of third lumbar vertebra_.
 
 1. In row _[827](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=827:827)_, no term id was found for the name/label _vertebral body of third lumbar vertebra_.
 
-1. In row _[828](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=828:828)_, no term id was found for the name/label _vertebral foramen of third lumbar vertebra_.
-
-1. In row _[830](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=830:830)_, no term id was found for the name/label _accessory process of fourth lumbar vertebra_.
-
-1. In row _[831](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=831:831)_, no term id was found for the name/label _inferior articular facet of fourth lumbar vertebra_.
-
-1. In row _[832](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=832:832)_, no term id was found for the name/label _inferior articular process of fourth lumbar vertebra_.
-
-1. In row _[833](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=833:833)_, no term id was found for the name/label _inferior vertebral notch of fourth lumbar vertebra_.
-
-1. In row _[834](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=834:834)_, no term id was found for the name/label _lamina of fourth lumbar vertebra_.
-
 1. In row _[835](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=835:835)_, no term id was found for the name/label _mammillary process of fourth lumbar vertebra_.
 
-1. In row _[836](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=836:836)_, no term id was found for the name/label _pedicle of fourth lumbar vertebra_.
-
-1. In row _[837](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=837:837)_, no term id was found for the name/label _spinous process of fourth lumbar vertebra_.
-
 1. In row _[838](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=838:838)_, no term id was found for the name/label _superior articular facet of fourth lumbar vertebra_.
-
-1. In row _[839](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=839:839)_, no term id was found for the name/label _superior articular process of fourth lumbar vertebra_.
-
-1. In row _[840](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=840:840)_, no term id was found for the name/label _superior vertebral notch of fourth lumbar vertebra_.
-
-1. In row _[841](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=841:841)_, no term id was found for the name/label _transverse process of fourth lumbar vertebra_.
 
 1. In row _[842](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=842:842)_, no term id was found for the name/label _vertebral arch of fourth lumbar vertebra_.
 
 1. In row _[843](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=843:843)_, no term id was found for the name/label _vertebral body of fourth lumbar vertebra_.
 
-1. In row _[844](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=844:844)_, no term id was found for the name/label _vertebral foramen of fourth lumbar vertebra_.
-
-1. In row _[846](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=846:846)_, no term id was found for the name/label _accessory process of fifth lumbar vertebra_.
-
-1. In row _[847](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=847:847)_, no term id was found for the name/label _inferior articular facet of fifth lumbar vertebra_.
-
-1. In row _[848](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=848:848)_, no term id was found for the name/label _inferior articular process of fifth lumbar vertebra_.
-
-1. In row _[849](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=849:849)_, no term id was found for the name/label _inferior vertebral notch of fifth lumbar vertebra_.
-
-1. In row _[850](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=850:850)_, no term id was found for the name/label _lamina of fifth lumbar vertebra_.
-
 1. In row _[851](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=851:851)_, no term id was found for the name/label _mammillary process of fifth lumbar vertebra_.
 
-1. In row _[852](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=852:852)_, no term id was found for the name/label _pedicle of fifth lumbar vertebra_.
-
-1. In row _[853](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=853:853)_, no term id was found for the name/label _spinous process of fifth lumbar vertebra_.
-
 1. In row _[854](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=854:854)_, no term id was found for the name/label _superior articular facet of fifth lumbar vertebra_.
-
-1. In row _[855](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=855:855)_, no term id was found for the name/label _superior articular process of fifth lumbar vertebra_.
-
-1. In row _[856](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=856:856)_, no term id was found for the name/label _superior vertebral notch of fifth lumbar vertebra_.
-
-1. In row _[857](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=857:857)_, no term id was found for the name/label _transverse process of fifth lumbar vertebra_.
 
 1. In row _[858](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=858:858)_, no term id was found for the name/label _vertebral arch of fifth lumbar vertebra_.
 
 1. In row _[859](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=859:859)_, no term id was found for the name/label _vertebral body of fifth lumbar vertebra_.
 
-1. In row _[860](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=860:860)_, no term id was found for the name/label _vertebral foramen of fifth lumbar vertebra_.
-
 1. In row _[863](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=863:863)_, no term id was found for the name/label _alae of sacrum_.
 
 1. In row _[864](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=864:864)_, no term id was found for the name/label _anterior sacral foramina of sacrum_.
-
-1. In row _[865](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=865:865)_, no term id was found for the name/label _auricular surface of sacrum_.
 
 1. In row _[866](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=866:866)_, no term id was found for the name/label _intermediate sacral crest of sacrum_.
 
@@ -1936,37 +1180,11 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[877](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=877:877)_, no term id was found for the name/label _sacral tuberosity of sacrum_.
 
-1. In row _[878](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=878:878)_, no term id was found for the name/label _superior articular facet of sacrum_.
-
-1. In row _[879](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=879:879)_, no term id was found for the name/label _superior articular process of sacrum_.
-
-1. In row _[880](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=880:880)_, no term id was found for the name/label _transverse ridges of sacrum_.
-
 1. In row _[883](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=883:883)_, no term id was found for the name/label _inferior articular facet of first thoracic vertebra_.
-
-1. In row _[884](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=884:884)_, no term id was found for the name/label _inferior articular process of first thoracic vertebra_.
-
-1. In row _[885](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=885:885)_, no term id was found for the name/label _inferior costal facet of first thoracic vertebra_.
-
-1. In row _[886](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=886:886)_, no term id was found for the name/label _inferior vertebral notch of first thoracic vertebra_.
-
-1. In row _[887](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=887:887)_, no term id was found for the name/label _lamina of first thoracic vertebra_.
-
-1. In row _[888](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=888:888)_, no term id was found for the name/label _pedicle of first thoracic vertebra_.
-
-1. In row _[889](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=889:889)_, no term id was found for the name/label _spinous process of first thoracic vertebra_.
 
 1. In row _[890](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=890:890)_, no term id was found for the name/label _superior articular facet of first thoracic vertebra_.
 
-1. In row _[891](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=891:891)_, no term id was found for the name/label _superior articular process of first thoracic vertebra_.
-
-1. In row _[892](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=892:892)_, no term id was found for the name/label _superior costal facet of first thoracic vertebra_.
-
-1. In row _[893](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=893:893)_, no term id was found for the name/label _superior vertebral notch of first thoracic vertebra_.
-
 1. In row _[894](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=894:894)_, no term id was found for the name/label _transverse costal facet of first thoracic vertebra_.
-
-1. In row _[895](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=895:895)_, no term id was found for the name/label _transverse process of first thoracic vertebra_.
 
 1. In row _[896](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=896:896)_, no term id was found for the name/label _vertebral arch of first thoracic vertebra_.
 
@@ -1976,351 +1194,117 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[900](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=900:900)_, no term id was found for the name/label _inferior articular facet of tenth thoracic vertebra_.
 
-1. In row _[901](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=901:901)_, no term id was found for the name/label _inferior articular process of tenth thoracic vertebra_.
-
 1. In row _[902](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=902:902)_, no term id was found for the name/label _inferior costal facet of tenth thoracic vertebra_.
-
-1. In row _[903](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=903:903)_, no term id was found for the name/label _inferior vertebral notch of tenth thoracic vertebra_.
-
-1. In row _[904](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=904:904)_, no term id was found for the name/label _lamina of tenth thoracic vertebra_.
-
-1. In row _[905](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=905:905)_, no term id was found for the name/label _pedicle of tenth thoracic vertebra_.
-
-1. In row _[906](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=906:906)_, no term id was found for the name/label _spinous process of tenth thoracic vertebra_.
 
 1. In row _[907](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=907:907)_, no term id was found for the name/label _superior articular facet of tenth thoracic vertebra_.
 
-1. In row _[908](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=908:908)_, no term id was found for the name/label _superior articular process of tenth thoracic vertebra_.
-
-1. In row _[909](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=909:909)_, no term id was found for the name/label _superior costal facet of tenth thoracic vertebra_.
-
-1. In row _[910](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=910:910)_, no term id was found for the name/label _superior vertebral notch of tenth thoracic vertebra_.
-
 1. In row _[911](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=911:911)_, no term id was found for the name/label _transverse costal facet of tenth thoracic vertebra_.
-
-1. In row _[912](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=912:912)_, no term id was found for the name/label _transverse process of tenth thoracic vertebra_.
 
 1. In row _[913](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=913:913)_, no term id was found for the name/label _vertebral arch of tenth thoracic vertebra_.
 
 1. In row _[914](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=914:914)_, no term id was found for the name/label _vertebral body of tenth thoracic vertebra_.
 
-1. In row _[915](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=915:915)_, no term id was found for the name/label _vertebral foramen of tenth thoracic vertebra_.
-
 1. In row _[917](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=917:917)_, no term id was found for the name/label _inferior articular facet of eleventh thoracic vertebra_.
-
-1. In row _[918](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=918:918)_, no term id was found for the name/label _inferior articular process of eleventh thoracic vertebra_.
 
 1. In row _[919](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=919:919)_, no term id was found for the name/label _inferior costal facet of eleventh thoracic vertebra_.
 
-1. In row _[920](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=920:920)_, no term id was found for the name/label _inferior vertebral notch of eleventh thoracic vertebra_.
-
-1. In row _[921](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=921:921)_, no term id was found for the name/label _lamina of eleventh thoracic vertebra_.
-
-1. In row _[922](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=922:922)_, no term id was found for the name/label _pedicle of eleventh thoracic vertebra_.
-
-1. In row _[923](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=923:923)_, no term id was found for the name/label _spinous process of eleventh thoracic vertebra_.
-
 1. In row _[924](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=924:924)_, no term id was found for the name/label _superior articular facet of eleventh thoracic vertebra_.
-
-1. In row _[925](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=925:925)_, no term id was found for the name/label _superior articular process of eleventh thoracic vertebra_.
 
 1. In row _[926](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=926:926)_, no term id was found for the name/label _superior costal facet of eleventh thoracic vertebra_.
 
-1. In row _[927](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=927:927)_, no term id was found for the name/label _superior vertebral notch of eleventh thoracic vertebra_.
-
 1. In row _[928](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=928:928)_, no term id was found for the name/label _transverse costal facet of eleventh thoracic vertebra_.
-
-1. In row _[929](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=929:929)_, no term id was found for the name/label _transverse process of eleventh thoracic vertebra_.
 
 1. In row _[930](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=930:930)_, no term id was found for the name/label _vertebral arch of eleventh thoracic vertebra_.
 
 1. In row _[931](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=931:931)_, no term id was found for the name/label _vertebral body of eleventh thoracic vertebra_.
 
-1. In row _[932](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=932:932)_, no term id was found for the name/label _vertebral foramen of eleventh thoracic vertebra_.
-
-1. In row _[934](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=934:934)_, no term id was found for the name/label _costal facet of twelfth thoracic vertebra_.
-
 1. In row _[935](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=935:935)_, no term id was found for the name/label _inferior articular facet of twelfth thoracic vertebra_.
 
-1. In row _[936](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=936:936)_, no term id was found for the name/label _inferior articular process of twelfth thoracic vertebra_.
-
-1. In row _[937](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=937:937)_, no term id was found for the name/label _inferior vertebral notch of twelfth thoracic vertebra_.
-
-1. In row _[938](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=938:938)_, no term id was found for the name/label _lamina of twelfth thoracic vertebra_.
-
-1. In row _[939](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=939:939)_, no term id was found for the name/label _pedicle of twelfth thoracic vertebra_.
-
-1. In row _[940](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=940:940)_, no term id was found for the name/label _spinous process of twelfth thoracic vertebra_.
-
 1. In row _[941](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=941:941)_, no term id was found for the name/label _superior articular facet of twelfth thoracic vertebra_.
-
-1. In row _[942](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=942:942)_, no term id was found for the name/label _superior articular process of twelfth thoracic vertebra_.
-
-1. In row _[943](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=943:943)_, no term id was found for the name/label _superior vertebral notch of twelfth thoracic vertebra_.
-
-1. In row _[944](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=944:944)_, no term id was found for the name/label _transverse process of twelfth thoracic vertebra_.
 
 1. In row _[945](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=945:945)_, no term id was found for the name/label _vertebral arch of twelfth thoracic vertebra_.
 
 1. In row _[946](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=946:946)_, no term id was found for the name/label _vertebral body of twelfth thoracic vertebra_.
 
-1. In row _[947](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=947:947)_, no term id was found for the name/label _vertebral foramen of twelfth thoracic vertebra_.
-
 1. In row _[949](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=949:949)_, no term id was found for the name/label _inferior articular facet of second thoracic vertebra_.
-
-1. In row _[950](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=950:950)_, no term id was found for the name/label _inferior articular process of second thoracic vertebra_.
-
-1. In row _[951](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=951:951)_, no term id was found for the name/label _inferior costal facet of second thoracic vertebra_.
-
-1. In row _[952](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=952:952)_, no term id was found for the name/label _inferior vertebral notch of second thoracic vertebra_.
-
-1. In row _[953](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=953:953)_, no term id was found for the name/label _lamina of second thoracic vertebra_.
-
-1. In row _[954](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=954:954)_, no term id was found for the name/label _pedicle of second thoracic vertebra_.
-
-1. In row _[955](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=955:955)_, no term id was found for the name/label _spinous process of second thoracic vertebra_.
 
 1. In row _[956](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=956:956)_, no term id was found for the name/label _superior articular facet of second thoracic vertebra_.
 
-1. In row _[957](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=957:957)_, no term id was found for the name/label _superior articular process of second thoracic vertebra_.
-
-1. In row _[958](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=958:958)_, no term id was found for the name/label _superior costal facet of second thoracic vertebra_.
-
-1. In row _[959](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=959:959)_, no term id was found for the name/label _superior vertebral notch of second thoracic vertebra_.
-
 1. In row _[960](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=960:960)_, no term id was found for the name/label _transverse costal facet of second thoracic vertebra_.
-
-1. In row _[961](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=961:961)_, no term id was found for the name/label _transverse process of second thoracic vertebra_.
 
 1. In row _[962](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=962:962)_, no term id was found for the name/label _vertebral arch of second thoracic vertebra_.
 
 1. In row _[963](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=963:963)_, no term id was found for the name/label _vertebral body of second thoracic vertebra_.
 
-1. In row _[964](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=964:964)_, no term id was found for the name/label _vertebral foramen of second thoracic vertebra_.
-
 1. In row _[966](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=966:966)_, no term id was found for the name/label _inferior articular facet of third thoracic vertebra_.
-
-1. In row _[967](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=967:967)_, no term id was found for the name/label _inferior articular process of third thoracic vertebra_.
-
-1. In row _[968](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=968:968)_, no term id was found for the name/label _inferior costal facet of third thoracic vertebra_.
-
-1. In row _[969](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=969:969)_, no term id was found for the name/label _inferior vertebral notch of third thoracic vertebra_.
-
-1. In row _[970](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=970:970)_, no term id was found for the name/label _lamina of third thoracic vertebra_.
-
-1. In row _[971](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=971:971)_, no term id was found for the name/label _pedicle of third thoracic vertebra_.
-
-1. In row _[972](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=972:972)_, no term id was found for the name/label _spinous process of third thoracic vertebra_.
 
 1. In row _[973](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=973:973)_, no term id was found for the name/label _superior articular facet of third thoracic vertebra_.
 
-1. In row _[974](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=974:974)_, no term id was found for the name/label _superior articular process of third thoracic vertebra_.
-
-1. In row _[975](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=975:975)_, no term id was found for the name/label _superior costal facet of third thoracic vertebra_.
-
-1. In row _[976](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=976:976)_, no term id was found for the name/label _superior vertebral notch of third thoracic vertebra_.
-
 1. In row _[977](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=977:977)_, no term id was found for the name/label _transverse costal facet of third thoracic vertebra_.
-
-1. In row _[978](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=978:978)_, no term id was found for the name/label _transverse process of third thoracic vertebra_.
 
 1. In row _[979](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=979:979)_, no term id was found for the name/label _vertebral arch of third thoracic vertebra_.
 
 1. In row _[980](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=980:980)_, no term id was found for the name/label _vertebral body of third thoracic vertebra_.
 
-1. In row _[981](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=981:981)_, no term id was found for the name/label _vertebral foramen of third thoracic vertebra_.
-
 1. In row _[983](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=983:983)_, no term id was found for the name/label _inferior articular facet of fourth thoracic vertebra_.
-
-1. In row _[984](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=984:984)_, no term id was found for the name/label _inferior articular process of fourth thoracic vertebra_.
-
-1. In row _[985](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=985:985)_, no term id was found for the name/label _inferior costal facet of fourth thoracic vertebra_.
-
-1. In row _[986](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=986:986)_, no term id was found for the name/label _inferior vertebral notch of fourth thoracic vertebra_.
-
-1. In row _[987](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=987:987)_, no term id was found for the name/label _lamina of fourth thoracic vertebra_.
-
-1. In row _[988](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=988:988)_, no term id was found for the name/label _pedicle of fourth thoracic vertebra_.
-
-1. In row _[989](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=989:989)_, no term id was found for the name/label _spinous process of fourth thoracic vertebra_.
 
 1. In row _[990](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=990:990)_, no term id was found for the name/label _superior articular facet of fourth thoracic vertebra_.
 
-1. In row _[991](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=991:991)_, no term id was found for the name/label _superior articular process of fourth thoracic vertebra_.
-
-1. In row _[992](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=992:992)_, no term id was found for the name/label _superior costal facet of fourth thoracic vertebra_.
-
-1. In row _[993](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=993:993)_, no term id was found for the name/label _superior vertebral notch of fourth thoracic vertebra_.
-
 1. In row _[994](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=994:994)_, no term id was found for the name/label _transverse costal facet of fourth thoracic vertebra_.
-
-1. In row _[995](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=995:995)_, no term id was found for the name/label _transverse process of fourth thoracic vertebra_.
 
 1. In row _[996](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=996:996)_, no term id was found for the name/label _vertebral arch of fourth thoracic vertebra_.
 
 1. In row _[997](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=997:997)_, no term id was found for the name/label _vertebral body of fourth thoracic vertebra_.
 
-1. In row _[998](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=998:998)_, no term id was found for the name/label _vertebral foramen of fourth thoracic vertebra_.
-
 1. In row _[1000](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1000:1000)_, no term id was found for the name/label _inferior articular facet of fifth thoracic vertebra_.
-
-1. In row _[1001](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1001:1001)_, no term id was found for the name/label _inferior articular process of fifth thoracic vertebra_.
-
-1. In row _[1002](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1002:1002)_, no term id was found for the name/label _inferior costal facet of fifth thoracic vertebra_.
-
-1. In row _[1003](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1003:1003)_, no term id was found for the name/label _inferior vertebral notch of fifth thoracic vertebra_.
-
-1. In row _[1004](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1004:1004)_, no term id was found for the name/label _lamina of fifth thoracic vertebra_.
-
-1. In row _[1005](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1005:1005)_, no term id was found for the name/label _pedicle of fifth thoracic vertebra_.
-
-1. In row _[1006](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1006:1006)_, no term id was found for the name/label _spinous process of fifth thoracic vertebra_.
 
 1. In row _[1007](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1007:1007)_, no term id was found for the name/label _superior articular facet of fifth thoracic vertebra_.
 
-1. In row _[1008](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1008:1008)_, no term id was found for the name/label _superior articular process of fifth thoracic vertebra_.
-
-1. In row _[1009](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1009:1009)_, no term id was found for the name/label _superior costal facet of fifth thoracic vertebra_.
-
-1. In row _[1010](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1010:1010)_, no term id was found for the name/label _superior vertebral notch of fifth thoracic vertebra_.
-
 1. In row _[1011](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1011:1011)_, no term id was found for the name/label _transverse costal facet of fifth thoracic vertebra_.
-
-1. In row _[1012](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1012:1012)_, no term id was found for the name/label _transverse process of fifth thoracic vertebra_.
 
 1. In row _[1013](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1013:1013)_, no term id was found for the name/label _vertebral arch of fifth thoracic vertebra_.
 
 1. In row _[1014](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1014:1014)_, no term id was found for the name/label _vertebral body of fifth thoracic vertebra_.
 
-1. In row _[1015](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1015:1015)_, no term id was found for the name/label _vertebral foramen of fifth thoracic vertebra_.
-
 1. In row _[1017](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1017:1017)_, no term id was found for the name/label _inferior articular facet of sixth thoracic vertebra_.
-
-1. In row _[1018](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1018:1018)_, no term id was found for the name/label _inferior articular process of sixth thoracic vertebra_.
-
-1. In row _[1019](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1019:1019)_, no term id was found for the name/label _inferior costal facet of sixth thoracic vertebra_.
-
-1. In row _[1020](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1020:1020)_, no term id was found for the name/label _inferior vertebral notch of sixth thoracic vertebra_.
-
-1. In row _[1021](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1021:1021)_, no term id was found for the name/label _lamina of sixth thoracic vertebra_.
-
-1. In row _[1022](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1022:1022)_, no term id was found for the name/label _pedicle of sixth thoracic vertebra_.
-
-1. In row _[1023](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1023:1023)_, no term id was found for the name/label _spinous process of sixth thoracic vertebra_.
 
 1. In row _[1024](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1024:1024)_, no term id was found for the name/label _superior articular facet of sixth thoracic vertebra_.
 
-1. In row _[1025](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1025:1025)_, no term id was found for the name/label _superior articular process of sixth thoracic vertebra_.
-
-1. In row _[1026](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1026:1026)_, no term id was found for the name/label _superior costal facet of sixth thoracic vertebra_.
-
-1. In row _[1027](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1027:1027)_, no term id was found for the name/label _superior vertebral notch of sixth thoracic vertebra_.
-
 1. In row _[1028](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1028:1028)_, no term id was found for the name/label _transverse costal facet of sixth thoracic vertebra_.
-
-1. In row _[1029](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1029:1029)_, no term id was found for the name/label _transverse process of sixth thoracic vertebra_.
 
 1. In row _[1030](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1030:1030)_, no term id was found for the name/label _vertebral arch of sixth thoracic vertebra_.
 
 1. In row _[1031](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1031:1031)_, no term id was found for the name/label _vertebral body of sixth thoracic vertebra_.
 
-1. In row _[1032](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1032:1032)_, no term id was found for the name/label _vertebral foramen of sixth thoracic vertebra_.
-
 1. In row _[1034](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1034:1034)_, no term id was found for the name/label _inferior articular facet of seventh thoracic vertebra_.
-
-1. In row _[1035](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1035:1035)_, no term id was found for the name/label _inferior articular process of seventh thoracic vertebra_.
-
-1. In row _[1036](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1036:1036)_, no term id was found for the name/label _inferior costal facet of seventh thoracic vertebra_.
-
-1. In row _[1037](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1037:1037)_, no term id was found for the name/label _inferior vertebral notch of seventh thoracic vertebra_.
-
-1. In row _[1038](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1038:1038)_, no term id was found for the name/label _lamina of seventh thoracic vertebra_.
-
-1. In row _[1039](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1039:1039)_, no term id was found for the name/label _pedicle of seventh thoracic vertebra_.
-
-1. In row _[1040](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1040:1040)_, no term id was found for the name/label _spinous process of seventh thoracic vertebra_.
 
 1. In row _[1041](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1041:1041)_, no term id was found for the name/label _superior articular facet of seventh thoracic vertebra_.
 
-1. In row _[1042](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1042:1042)_, no term id was found for the name/label _superior articular process of seventh thoracic vertebra_.
-
-1. In row _[1043](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1043:1043)_, no term id was found for the name/label _superior costal facet of seventh thoracic vertebra_.
-
-1. In row _[1044](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1044:1044)_, no term id was found for the name/label _superior vertebral notch of seventh thoracic vertebra_.
-
 1. In row _[1045](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1045:1045)_, no term id was found for the name/label _transverse costal facet of seventh thoracic vertebra_.
-
-1. In row _[1046](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1046:1046)_, no term id was found for the name/label _transverse process of seventh thoracic vertebra_.
 
 1. In row _[1047](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1047:1047)_, no term id was found for the name/label _vertebral arch of seventh thoracic vertebra_.
 
 1. In row _[1048](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1048:1048)_, no term id was found for the name/label _vertebral body of seventh thoracic vertebra_.
 
-1. In row _[1049](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1049:1049)_, no term id was found for the name/label _vertebral foramen of seventh thoracic vertebra_.
-
 1. In row _[1051](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1051:1051)_, no term id was found for the name/label _inferior articular facet of eighth thoracic vertebra_.
-
-1. In row _[1052](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1052:1052)_, no term id was found for the name/label _inferior articular process of eighth thoracic vertebra_.
-
-1. In row _[1053](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1053:1053)_, no term id was found for the name/label _inferior costal facet of eighth thoracic vertebra_.
-
-1. In row _[1054](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1054:1054)_, no term id was found for the name/label _inferior vertebral notch of eighth thoracic vertebra_.
-
-1. In row _[1055](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1055:1055)_, no term id was found for the name/label _lamina of eighth thoracic vertebra_.
-
-1. In row _[1056](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1056:1056)_, no term id was found for the name/label _pedicle of eighth thoracic vertebra_.
-
-1. In row _[1057](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1057:1057)_, no term id was found for the name/label _spinous process of eighth thoracic vertebra_.
 
 1. In row _[1058](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1058:1058)_, no term id was found for the name/label _superior articular facet of eighth thoracic vertebra_.
 
-1. In row _[1059](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1059:1059)_, no term id was found for the name/label _superior articular process of eighth thoracic vertebra_.
-
-1. In row _[1060](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1060:1060)_, no term id was found for the name/label _superior costal facet of eighth thoracic vertebra_.
-
-1. In row _[1061](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1061:1061)_, no term id was found for the name/label _superior vertebral notch of eighth thoracic vertebra_.
-
 1. In row _[1062](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1062:1062)_, no term id was found for the name/label _transverse costal facet of eighth thoracic vertebra_.
-
-1. In row _[1063](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1063:1063)_, no term id was found for the name/label _transverse process of eighth thoracic vertebra_.
 
 1. In row _[1064](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1064:1064)_, no term id was found for the name/label _vertebral arch of eighth thoracic vertebra_.
 
 1. In row _[1065](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1065:1065)_, no term id was found for the name/label _vertebral body of eighth thoracic vertebra_.
 
-1. In row _[1066](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1066:1066)_, no term id was found for the name/label _vertebral foramen of eighth thoracic vertebra_.
-
 1. In row _[1068](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1068:1068)_, no term id was found for the name/label _inferior articular facet of ninth thoracic vertebra_.
-
-1. In row _[1069](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1069:1069)_, no term id was found for the name/label _inferior articular process of ninth thoracic vertebra_.
-
-1. In row _[1070](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1070:1070)_, no term id was found for the name/label _inferior costal facet of ninth thoracic vertebra_.
-
-1. In row _[1071](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1071:1071)_, no term id was found for the name/label _inferior vertebral notch of ninth thoracic vertebra_.
-
-1. In row _[1072](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1072:1072)_, no term id was found for the name/label _lamina of ninth thoracic vertebra_.
-
-1. In row _[1073](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1073:1073)_, no term id was found for the name/label _pedicle of ninth thoracic vertebra_.
-
-1. In row _[1074](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1074:1074)_, no term id was found for the name/label _spinous process of ninth thoracic vertebra_.
 
 1. In row _[1075](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1075:1075)_, no term id was found for the name/label _superior articular facet of ninth thoracic vertebra_.
 
-1. In row _[1076](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1076:1076)_, no term id was found for the name/label _superior articular process of ninth thoracic vertebra_.
-
-1. In row _[1077](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1077:1077)_, no term id was found for the name/label _superior costal facet of ninth thoracic vertebra_.
-
-1. In row _[1078](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1078:1078)_, no term id was found for the name/label _superior vertebral notch of ninth thoracic vertebra_.
-
 1. In row _[1079](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1079:1079)_, no term id was found for the name/label _transverse costal facet of ninth thoracic vertebra_.
-
-1. In row _[1080](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1080:1080)_, no term id was found for the name/label _transverse process of ninth thoracic vertebra_.
 
 1. In row _[1081](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1081:1081)_, no term id was found for the name/label _vertebral arch of ninth thoracic vertebra_.
 
 1. In row _[1082](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1082:1082)_, no term id was found for the name/label _vertebral body of ninth thoracic vertebra_.
-
-1. In row _[1083](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1083:1083)_, no term id was found for the name/label _vertebral foramen of ninth thoracic vertebra_.
 
 
 ## Blank ontology ID missing parent
@@ -2336,7 +1320,1021 @@ This report provides a list of CT terms with blank ontology ID without an upper 
 
 This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-- No issues found.
+1. In row _[17](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=17:17)_, the term _FMA:23356_ is from another ontology that is not validated in this process.
+
+1. In row _[20](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=20:20)_, the term _FMA:23418_ is from another ontology that is not validated in this process.
+
+1. In row _[21](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=21:21)_, the term _FMA:23390_ is from another ontology that is not validated in this process.
+
+1. In row _[22](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=22:22)_, the term _FMA:13304_ is from another ontology that is not validated in this process.
+
+1. In row _[23](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=23:23)_, the term _FMA:23396_ is from another ontology that is not validated in this process.
+
+1. In row _[24](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=24:24)_, the term _FMA:23442_ is from another ontology that is not validated in this process.
+
+1. In row _[25](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=25:25)_, the term _FMA:23436_ is from another ontology that is not validated in this process.
+
+1. In row _[27](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=27:27)_, the term _FMA:23441_ is from another ontology that is not validated in this process.
+
+1. In row _[28](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=28:28)_, the term _FMA:23435_ is from another ontology that is not validated in this process.
+
+1. In row _[32](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=32:32)_, the term _FMA:13305_ is from another ontology that is not validated in this process.
+
+1. In row _[33](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=33:33)_, the term _FMA:23359_ is from another ontology that is not validated in this process.
+
+1. In row _[37](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=37:37)_, the term _FMA:39682_ is from another ontology that is not validated in this process.
+
+1. In row _[41](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=41:41)_, the term _FMA:23524_ is from another ontology that is not validated in this process.
+
+1. In row _[42](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=42:42)_, the term _FMA:23530_ is from another ontology that is not validated in this process.
+
+1. In row _[46](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=46:46)_, the term _FMA:39685_ is from another ontology that is not validated in this process.
+
+1. In row _[48](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=48:48)_, the term _FMA:23618_ is from another ontology that is not validated in this process.
+
+1. In row _[51](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=51:51)_, the term _FMA:23626_ is from another ontology that is not validated in this process.
+
+1. In row _[60](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=60:60)_, the term _FMA:39978_ is from another ontology that is not validated in this process.
+
+1. In row _[63](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=63:63)_, the term _FMA:37609_ is from another ontology that is not validated in this process.
+
+1. In row _[67](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=67:67)_, the term _FMA:37505_ is from another ontology that is not validated in this process.
+
+1. In row _[69](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=69:69)_, the term _FMA:37563_ is from another ontology that is not validated in this process.
+
+1. In row _[72](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=72:72)_, the term _FMA:37517_ is from another ontology that is not validated in this process.
+
+1. In row _[73](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=73:73)_, the term _FMA:37633_ is from another ontology that is not validated in this process.
+
+1. In row _[74](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=74:74)_, the term _FMA:37575_ is from another ontology that is not validated in this process.
+
+1. In row _[77](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=77:77)_, the term _FMA:37529_ is from another ontology that is not validated in this process.
+
+1. In row _[78](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=78:78)_, the term _FMA:37645_ is from another ontology that is not validated in this process.
+
+1. In row _[79](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=79:79)_, the term _FMA:37587_ is from another ontology that is not validated in this process.
+
+1. In row _[82](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=82:82)_, the term _FMA:37541_ is from another ontology that is not validated in this process.
+
+1. In row _[83](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=83:83)_, the term _FMA:37657_ is from another ontology that is not validated in this process.
+
+1. In row _[84](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=84:84)_, the term _FMA:37599_ is from another ontology that is not validated in this process.
+
+1. In row _[88](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=88:88)_, the term _FMA:42788_ is from another ontology that is not validated in this process.
+
+1. In row _[89](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=89:89)_, the term _FMA:42803_ is from another ontology that is not validated in this process.
+
+1. In row _[90](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=90:90)_, the term _FMA:42869_ is from another ontology that is not validated in this process.
+
+1. In row _[92](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=92:92)_, the term _FMA:42791_ is from another ontology that is not validated in this process.
+
+1. In row _[93](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=93:93)_, the term _FMA:42806_ is from another ontology that is not validated in this process.
+
+1. In row _[94](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=94:94)_, the term _FMA:42872_ is from another ontology that is not validated in this process.
+
+1. In row _[96](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=96:96)_, the term _FMA:42794_ is from another ontology that is not validated in this process.
+
+1. In row _[97](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=97:97)_, the term _FMA:42809_ is from another ontology that is not validated in this process.
+
+1. In row _[98](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=98:98)_, the term _FMA:42875_ is from another ontology that is not validated in this process.
+
+1. In row _[100](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=100:100)_, the term _FMA:42797_ is from another ontology that is not validated in this process.
+
+1. In row _[101](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=101:101)_, the term _FMA:42812_ is from another ontology that is not validated in this process.
+
+1. In row _[102](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=102:102)_, the term _FMA:42878_ is from another ontology that is not validated in this process.
+
+1. In row _[104](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=104:104)_, the term _FMA:42800_ is from another ontology that is not validated in this process.
+
+1. In row _[105](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=105:105)_, the term _FMA:42815_ is from another ontology that is not validated in this process.
+
+1. In row _[106](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=106:106)_, the term _FMA:42881_ is from another ontology that is not validated in this process.
+
+1. In row _[108](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=108:108)_, the term _FMA:37502_ is from another ontology that is not validated in this process.
+
+1. In row _[110](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=110:110)_, the term _FMA:37560_ is from another ontology that is not validated in this process.
+
+1. In row _[112](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=112:112)_, the term _FMA:37514_ is from another ontology that is not validated in this process.
+
+1. In row _[114](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=114:114)_, the term _FMA:37572_ is from another ontology that is not validated in this process.
+
+1. In row _[116](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=116:116)_, the term _FMA:37526_ is from another ontology that is not validated in this process.
+
+1. In row _[117](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=117:117)_, the term _FMA:37642_ is from another ontology that is not validated in this process.
+
+1. In row _[118](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=118:118)_, the term _FMA:37584_ is from another ontology that is not validated in this process.
+
+1. In row _[120](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=120:120)_, the term _FMA:37538_ is from another ontology that is not validated in this process.
+
+1. In row _[121](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=121:121)_, the term _FMA:37654_ is from another ontology that is not validated in this process.
+
+1. In row _[122](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=122:122)_, the term _FMA:37596_ is from another ontology that is not validated in this process.
+
+1. In row _[126](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=126:126)_, the term _FMA:37606_ is from another ontology that is not validated in this process.
+
+1. In row _[129](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=129:129)_, the term _FMA:37499_ is from another ontology that is not validated in this process.
+
+1. In row _[130](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=130:130)_, the term _FMA:37615_ is from another ontology that is not validated in this process.
+
+1. In row _[131](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=131:131)_, the term _FMA:37557_ is from another ontology that is not validated in this process.
+
+1. In row _[133](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=133:133)_, the term _FMA:37511_ is from another ontology that is not validated in this process.
+
+1. In row _[134](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=134:134)_, the term _FMA:37627_ is from another ontology that is not validated in this process.
+
+1. In row _[135](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=135:135)_, the term _FMA:37569_ is from another ontology that is not validated in this process.
+
+1. In row _[137](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=137:137)_, the term _FMA:37523_ is from another ontology that is not validated in this process.
+
+1. In row _[138](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=138:138)_, the term _FMA:37639_ is from another ontology that is not validated in this process.
+
+1. In row _[139](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=139:139)_, the term _FMA:37581_ is from another ontology that is not validated in this process.
+
+1. In row _[141](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=141:141)_, the term _FMA:37535_ is from another ontology that is not validated in this process.
+
+1. In row _[142](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=142:142)_, the term _FMA:37651_ is from another ontology that is not validated in this process.
+
+1. In row _[143](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=143:143)_, the term _FMA:37593_ is from another ontology that is not validated in this process.
+
+1. In row _[149](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=149:149)_, the term _FMA:23300_ is from another ontology that is not validated in this process.
+
+1. In row _[150](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=150:150)_, the term _FMA:23340_ is from another ontology that is not validated in this process.
+
+1. In row _[151](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=151:151)_, the term _FMA:23322_ is from another ontology that is not validated in this process.
+
+1. In row _[152](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=152:152)_, the term _FMA:23294_ is from another ontology that is not validated in this process.
+
+1. In row _[154](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=154:154)_, the term _FMA:23334_ is from another ontology that is not validated in this process.
+
+1. In row _[155](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=155:155)_, the term _FMA:23343_ is from another ontology that is not validated in this process.
+
+1. In row _[156](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=156:156)_, the term _FMA:23325_ is from another ontology that is not validated in this process.
+
+1. In row _[159](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=159:159)_, the term _FMA:23303_ is from another ontology that is not validated in this process.
+
+1. In row _[172](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=172:172)_, the term _FMA:296241_ is from another ontology that is not validated in this process.
+
+1. In row _[178](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=178:178)_, the term _FMA:75330_ is from another ontology that is not validated in this process.
+
+1. In row _[187](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=187:187)_, the term _FMA:75331_ is from another ontology that is not validated in this process.
+
+1. In row _[188](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=188:188)_, the term _FMA:75332_ is from another ontology that is not validated in this process.
+
+1. In row _[192](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=192:192)_, the term _FMA:76642_ is from another ontology that is not validated in this process.
+
+1. In row _[195](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=195:195)_, the term _FMA:33036_ is from another ontology that is not validated in this process.
+
+1. In row _[196](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=196:196)_, the term _FMA:32994_ is from another ontology that is not validated in this process.
+
+1. In row _[198](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=198:198)_, the term _FMA:32961_ is from another ontology that is not validated in this process.
+
+1. In row _[200](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=200:200)_, the term _FMA:33003_ is from another ontology that is not validated in this process.
+
+1. In row _[202](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=202:202)_, the term _FMA:32970_ is from another ontology that is not validated in this process.
+
+1. In row _[203](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=203:203)_, the term _FMA:33054_ is from another ontology that is not validated in this process.
+
+1. In row _[204](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=204:204)_, the term _FMA:33012_ is from another ontology that is not validated in this process.
+
+1. In row _[206](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=206:206)_, the term _FMA:32979_ is from another ontology that is not validated in this process.
+
+1. In row _[207](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=207:207)_, the term _FMA:33091_ is from another ontology that is not validated in this process.
+
+1. In row _[208](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=208:208)_, the term _FMA:33021_ is from another ontology that is not validated in this process.
+
+1. In row _[210](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=210:210)_, the term _FMA:32988_ is from another ontology that is not validated in this process.
+
+1. In row _[211](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=211:211)_, the term _FMA:33106_ is from another ontology that is not validated in this process.
+
+1. In row _[212](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=212:212)_, the term _FMA:33030_ is from another ontology that is not validated in this process.
+
+1. In row _[217](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=217:217)_, the term _FMA:42963_ is from another ontology that is not validated in this process.
+
+1. In row _[218](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=218:218)_, the term _FMA:42983_ is from another ontology that is not validated in this process.
+
+1. In row _[219](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=219:219)_, the term _FMA:43007_ is from another ontology that is not validated in this process.
+
+1. In row _[221](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=221:221)_, the term _FMA:42964_ is from another ontology that is not validated in this process.
+
+1. In row _[222](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=222:222)_, the term _FMA:42986_ is from another ontology that is not validated in this process.
+
+1. In row _[223](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=223:223)_, the term _FMA:43008_ is from another ontology that is not validated in this process.
+
+1. In row _[225](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=225:225)_, the term _FMA:42965_ is from another ontology that is not validated in this process.
+
+1. In row _[226](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=226:226)_, the term _FMA:42998_ is from another ontology that is not validated in this process.
+
+1. In row _[227](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=227:227)_, the term _FMA:43009_ is from another ontology that is not validated in this process.
+
+1. In row _[229](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=229:229)_, the term _FMA:42966_ is from another ontology that is not validated in this process.
+
+1. In row _[230](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=230:230)_, the term _FMA:42999_ is from another ontology that is not validated in this process.
+
+1. In row _[231](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=231:231)_, the term _FMA:43010_ is from another ontology that is not validated in this process.
+
+1. In row _[233](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=233:233)_, the term _FMA:42967_ is from another ontology that is not validated in this process.
+
+1. In row _[234](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=234:234)_, the term _FMA:43000_ is from another ontology that is not validated in this process.
+
+1. In row _[235](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=235:235)_, the term _FMA:43011_ is from another ontology that is not validated in this process.
+
+1. In row _[236](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=236:236)_, the term _FMA:76644_ is from another ontology that is not validated in this process.
+
+1. In row _[238](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=238:238)_, the term _FMA:32958_ is from another ontology that is not validated in this process.
+
+1. In row _[240](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=240:240)_, the term _FMA:33000_ is from another ontology that is not validated in this process.
+
+1. In row _[242](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=242:242)_, the term _FMA:32967_ is from another ontology that is not validated in this process.
+
+1. In row _[243](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=243:243)_, the term _FMA:33051_ is from another ontology that is not validated in this process.
+
+1. In row _[244](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=244:244)_, the term _FMA:33009_ is from another ontology that is not validated in this process.
+
+1. In row _[246](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=246:246)_, the term _FMA:32976_ is from another ontology that is not validated in this process.
+
+1. In row _[247](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=247:247)_, the term _FMA:33088_ is from another ontology that is not validated in this process.
+
+1. In row _[248](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=248:248)_, the term _FMA:33018_ is from another ontology that is not validated in this process.
+
+1. In row _[250](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=250:250)_, the term _FMA:32985_ is from another ontology that is not validated in this process.
+
+1. In row _[251](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=251:251)_, the term _FMA:33103_ is from another ontology that is not validated in this process.
+
+1. In row _[252](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=252:252)_, the term _FMA:33027_ is from another ontology that is not validated in this process.
+
+1. In row _[254](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=254:254)_, the term _FMA:34782_ is from another ontology that is not validated in this process.
+
+1. In row _[257](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=257:257)_, the term _FMA:33033_ is from another ontology that is not validated in this process.
+
+1. In row _[258](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=258:258)_, the term _FMA:32991_ is from another ontology that is not validated in this process.
+
+1. In row _[260](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=260:260)_, the term _FMA:32955_ is from another ontology that is not validated in this process.
+
+1. In row _[261](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=261:261)_, the term _FMA:33039_ is from another ontology that is not validated in this process.
+
+1. In row _[262](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=262:262)_, the term _FMA:32997_ is from another ontology that is not validated in this process.
+
+1. In row _[264](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=264:264)_, the term _FMA:32964_ is from another ontology that is not validated in this process.
+
+1. In row _[265](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=265:265)_, the term _FMA:33048_ is from another ontology that is not validated in this process.
+
+1. In row _[266](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=266:266)_, the term _FMA:33006_ is from another ontology that is not validated in this process.
+
+1. In row _[268](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=268:268)_, the term _FMA:32973_ is from another ontology that is not validated in this process.
+
+1. In row _[269](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=269:269)_, the term _FMA:33085_ is from another ontology that is not validated in this process.
+
+1. In row _[270](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=270:270)_, the term _FMA:33015_ is from another ontology that is not validated in this process.
+
+1. In row _[272](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=272:272)_, the term _FMA:32982_ is from another ontology that is not validated in this process.
+
+1. In row _[273](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=273:273)_, the term _FMA:33100_ is from another ontology that is not validated in this process.
+
+1. In row _[274](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=274:274)_, the term _FMA:33024_ is from another ontology that is not validated in this process.
+
+1. In row _[276](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=276:276)_, the term _FMA:33635_ is from another ontology that is not validated in this process.
+
+1. In row _[277](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=277:277)_, the term _FMA:33651_ is from another ontology that is not validated in this process.
+
+1. In row _[279](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=279:279)_, the term _FMA:33650_ is from another ontology that is not validated in this process.
+
+1. In row _[280](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=280:280)_, the term _FMA:33638_ is from another ontology that is not validated in this process.
+
+1. In row _[283](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=283:283)_, the term _FMA:32870_ is from another ontology that is not validated in this process.
+
+1. In row _[285](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=285:285)_, the term _FMA:32852_ is from another ontology that is not validated in this process.
+
+1. In row _[287](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=287:287)_, the term _FMA:43748_ is from another ontology that is not validated in this process.
+
+1. In row _[289](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=289:289)_, the term _FMA:43706_ is from another ontology that is not validated in this process.
+
+1. In row _[292](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=292:292)_, the term _FMA:43718_ is from another ontology that is not validated in this process.
+
+1. In row _[293](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=293:293)_, the term _FMA:32853_ is from another ontology that is not validated in this process.
+
+1. In row _[294](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=294:294)_, the term _FMA:43715_ is from another ontology that is not validated in this process.
+
+1. In row _[297](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=297:297)_, the term _FMA:43719_ is from another ontology that is not validated in this process.
+
+1. In row _[300](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=300:300)_, the term _FMA:75328_ is from another ontology that is not validated in this process.
+
+1. In row _[301](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=301:301)_, the term _FMA:43709_ is from another ontology that is not validated in this process.
+
+1. In row _[302](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=302:302)_, the term _FMA:32847_ is from another ontology that is not validated in this process.
+
+1. In row _[303](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=303:303)_, the term _FMA:43703_ is from another ontology that is not validated in this process.
+
+1. In row _[305](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=305:305)_, the term _FMA:33729_ is from another ontology that is not validated in this process.
+
+1. In row _[308](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=308:308)_, the term _FMA:33738_ is from another ontology that is not validated in this process.
+
+1. In row _[314](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=314:314)_, the term _FMA:43761_ is from another ontology that is not validated in this process.
+
+1. In row _[319](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=319:319)_, the term _FMA:33125_ is from another ontology that is not validated in this process.
+
+1. In row _[363](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=363:363)_, the term _FMA:59495_ is from another ontology that is not validated in this process.
+
+1. In row _[384](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=384:384)_, the term _FMA:57131_ is from another ontology that is not validated in this process.
+
+1. In row _[386](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=386:386)_, the term _FMA:53097_ is from another ontology that is not validated in this process.
+
+1. In row _[403](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=403:403)_, the term _FMA:53132_ is from another ontology that is not validated in this process.
+
+1. In row _[404](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=404:404)_, the term _FMA:53130_ is from another ontology that is not validated in this process.
+
+1. In row _[424](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=424:424)_, the term _FMA:54682_ is from another ontology that is not validated in this process.
+
+1. In row _[461](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=461:461)_, the term _FMA:52833_ is from another ontology that is not validated in this process.
+
+1. In row _[464](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=464:464)_, the term _FMA:59470_ is from another ontology that is not validated in this process.
+
+1. In row _[476](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=476:476)_, the term _FMA:52828_ is from another ontology that is not validated in this process.
+
+1. In row _[481](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=481:481)_, the term _FMA:75360_ is from another ontology that is not validated in this process.
+
+1. In row _[492](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=492:492)_, the term _FMA:57703_ is from another ontology that is not validated in this process.
+
+1. In row _[499](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=499:499)_, the term _FMA:52901_ is from another ontology that is not validated in this process.
+
+1. In row _[501](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=501:501)_, the term _FMA:52899_ is from another ontology that is not validated in this process.
+
+1. In row _[503](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=503:503)_, the term _FMA:57674_ is from another ontology that is not validated in this process.
+
+1. In row _[507](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=507:507)_, the term _FMA:289670_ is from another ontology that is not validated in this process.
+
+1. In row _[513](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=513:513)_, the term _FMA:7608_ is from another ontology that is not validated in this process.
+
+1. In row _[514](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=514:514)_, the term _FMA:7606_ is from another ontology that is not validated in this process.
+
+1. In row _[515](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=515:515)_, the term _FMA:7602_ is from another ontology that is not validated in this process.
+
+1. In row _[520](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=520:520)_, the term _FMA:7600_ is from another ontology that is not validated in this process.
+
+1. In row _[521](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=521:521)_, the term _FMA:7601_ is from another ontology that is not validated in this process.
+
+1. In row _[525](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=525:525)_, the term _FMA:7605_ is from another ontology that is not validated in this process.
+
+1. In row _[527](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=527:527)_, the term _FMA:8430_ is from another ontology that is not validated in this process.
+
+1. In row _[528](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=528:528)_, the term _FMA:8428_ is from another ontology that is not validated in this process.
+
+1. In row _[529](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=529:529)_, the term _FMA:8426_ is from another ontology that is not validated in this process.
+
+1. In row _[530](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=530:530)_, the term _FMA:8433_ is from another ontology that is not validated in this process.
+
+1. In row _[532](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=532:532)_, the term _FMA:8419_ is from another ontology that is not validated in this process.
+
+1. In row _[533](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=533:533)_, the term _FMA:8424_ is from another ontology that is not validated in this process.
+
+1. In row _[536](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=536:536)_, the term _FMA:8427_ is from another ontology that is not validated in this process.
+
+1. In row _[538](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=538:538)_, the term _FMA:8501_ is from another ontology that is not validated in this process.
+
+1. In row _[539](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=539:539)_, the term _FMA:8506_ is from another ontology that is not validated in this process.
+
+1. In row _[541](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=541:541)_, the term _FMA:8500_ is from another ontology that is not validated in this process.
+
+1. In row _[544](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=544:544)_, the term _FMA:8517_ is from another ontology that is not validated in this process.
+
+1. In row _[547](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=547:547)_, the term _FMA:8516_ is from another ontology that is not validated in this process.
+
+1. In row _[550](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=550:550)_, the term _FMA:7630_ is from another ontology that is not validated in this process.
+
+1. In row _[551](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=551:551)_, the term _FMA:7627_ is from another ontology that is not validated in this process.
+
+1. In row _[552](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=552:552)_, the term _FMA:7623_ is from another ontology that is not validated in this process.
+
+1. In row _[553](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=553:553)_, the term _FMA:7636_ is from another ontology that is not validated in this process.
+
+1. In row _[554](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=554:554)_, the term _FMA:7621_ is from another ontology that is not validated in this process.
+
+1. In row _[555](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=555:555)_, the term _FMA:7628_ is from another ontology that is not validated in this process.
+
+1. In row _[556](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=556:556)_, the term _FMA:7622_ is from another ontology that is not validated in this process.
+
+1. In row _[559](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=559:559)_, the term _FMA:7624_ is from another ontology that is not validated in this process.
+
+1. In row _[560](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=560:560)_, the term _FMA:7626_ is from another ontology that is not validated in this process.
+
+1. In row _[562](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=562:562)_, the term _FMA:7711_ is from another ontology that is not validated in this process.
+
+1. In row _[563](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=563:563)_, the term _FMA:7709_ is from another ontology that is not validated in this process.
+
+1. In row _[564](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=564:564)_, the term _FMA:7700_ is from another ontology that is not validated in this process.
+
+1. In row _[565](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=565:565)_, the term _FMA:7714_ is from another ontology that is not validated in this process.
+
+1. In row _[566](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=566:566)_, the term _FMA:7640_ is from another ontology that is not validated in this process.
+
+1. In row _[567](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=567:567)_, the term _FMA:7639_ is from another ontology that is not validated in this process.
+
+1. In row _[568](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=568:568)_, the term _FMA:7706_ is from another ontology that is not validated in this process.
+
+1. In row _[569](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=569:569)_, the term _FMA:7699_ is from another ontology that is not validated in this process.
+
+1. In row _[572](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=572:572)_, the term _FMA:7705_ is from another ontology that is not validated in this process.
+
+1. In row _[573](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=573:573)_, the term _FMA:7708_ is from another ontology that is not validated in this process.
+
+1. In row _[575](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=575:575)_, the term _FMA:7761_ is from another ontology that is not validated in this process.
+
+1. In row _[576](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=576:576)_, the term _FMA:7759_ is from another ontology that is not validated in this process.
+
+1. In row _[577](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=577:577)_, the term _FMA:7757_ is from another ontology that is not validated in this process.
+
+1. In row _[578](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=578:578)_, the term _FMA:7764_ is from another ontology that is not validated in this process.
+
+1. In row _[579](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=579:579)_, the term _FMA:7751_ is from another ontology that is not validated in this process.
+
+1. In row _[580](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=580:580)_, the term _FMA:7750_ is from another ontology that is not validated in this process.
+
+1. In row _[581](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=581:581)_, the term _FMA:7754_ is from another ontology that is not validated in this process.
+
+1. In row _[582](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=582:582)_, the term _FMA:7755_ is from another ontology that is not validated in this process.
+
+1. In row _[585](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=585:585)_, the term _FMA:7753_ is from another ontology that is not validated in this process.
+
+1. In row _[586](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=586:586)_, the term _FMA:7758_ is from another ontology that is not validated in this process.
+
+1. In row _[588](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=588:588)_, the term _FMA:7788_ is from another ontology that is not validated in this process.
+
+1. In row _[589](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=589:589)_, the term _FMA:7786_ is from another ontology that is not validated in this process.
+
+1. In row _[590](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=590:590)_, the term _FMA:7784_ is from another ontology that is not validated in this process.
+
+1. In row _[591](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=591:591)_, the term _FMA:7791_ is from another ontology that is not validated in this process.
+
+1. In row _[592](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=592:592)_, the term _FMA:7778_ is from another ontology that is not validated in this process.
+
+1. In row _[593](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=593:593)_, the term _FMA:7777_ is from another ontology that is not validated in this process.
+
+1. In row _[594](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=594:594)_, the term _FMA:7781_ is from another ontology that is not validated in this process.
+
+1. In row _[595](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=595:595)_, the term _FMA:7782_ is from another ontology that is not validated in this process.
+
+1. In row _[598](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=598:598)_, the term _FMA:7780_ is from another ontology that is not validated in this process.
+
+1. In row _[599](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=599:599)_, the term _FMA:7785_ is from another ontology that is not validated in this process.
+
+1. In row _[601](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=601:601)_, the term _FMA:7815_ is from another ontology that is not validated in this process.
+
+1. In row _[602](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=602:602)_, the term _FMA:7813_ is from another ontology that is not validated in this process.
+
+1. In row _[603](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=603:603)_, the term _FMA:7811_ is from another ontology that is not validated in this process.
+
+1. In row _[604](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=604:604)_, the term _FMA:7818_ is from another ontology that is not validated in this process.
+
+1. In row _[605](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=605:605)_, the term _FMA:7805_ is from another ontology that is not validated in this process.
+
+1. In row _[606](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=606:606)_, the term _FMA:7804_ is from another ontology that is not validated in this process.
+
+1. In row _[607](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=607:607)_, the term _FMA:7808_ is from another ontology that is not validated in this process.
+
+1. In row _[608](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=608:608)_, the term _FMA:7809_ is from another ontology that is not validated in this process.
+
+1. In row _[611](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=611:611)_, the term _FMA:7807_ is from another ontology that is not validated in this process.
+
+1. In row _[612](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=612:612)_, the term _FMA:7812_ is from another ontology that is not validated in this process.
+
+1. In row _[614](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=614:614)_, the term _FMA:7842_ is from another ontology that is not validated in this process.
+
+1. In row _[615](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=615:615)_, the term _FMA:7840_ is from another ontology that is not validated in this process.
+
+1. In row _[616](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=616:616)_, the term _FMA:7838_ is from another ontology that is not validated in this process.
+
+1. In row _[617](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=617:617)_, the term _FMA:7845_ is from another ontology that is not validated in this process.
+
+1. In row _[618](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=618:618)_, the term _FMA:7832_ is from another ontology that is not validated in this process.
+
+1. In row _[619](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=619:619)_, the term _FMA:7831_ is from another ontology that is not validated in this process.
+
+1. In row _[620](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=620:620)_, the term _FMA:7835_ is from another ontology that is not validated in this process.
+
+1. In row _[621](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=621:621)_, the term _FMA:7836_ is from another ontology that is not validated in this process.
+
+1. In row _[624](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=624:624)_, the term _FMA:7834_ is from another ontology that is not validated in this process.
+
+1. In row _[625](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=625:625)_, the term _FMA:7839_ is from another ontology that is not validated in this process.
+
+1. In row _[627](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=627:627)_, the term _FMA:8132_ is from another ontology that is not validated in this process.
+
+1. In row _[628](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=628:628)_, the term _FMA:8130_ is from another ontology that is not validated in this process.
+
+1. In row _[629](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=629:629)_, the term _FMA:8128_ is from another ontology that is not validated in this process.
+
+1. In row _[630](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=630:630)_, the term _FMA:8135_ is from another ontology that is not validated in this process.
+
+1. In row _[631](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=631:631)_, the term _FMA:8122_ is from another ontology that is not validated in this process.
+
+1. In row _[632](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=632:632)_, the term _FMA:8121_ is from another ontology that is not validated in this process.
+
+1. In row _[633](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=633:633)_, the term _FMA:8125_ is from another ontology that is not validated in this process.
+
+1. In row _[634](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=634:634)_, the term _FMA:8126_ is from another ontology that is not validated in this process.
+
+1. In row _[637](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=637:637)_, the term _FMA:8124_ is from another ontology that is not validated in this process.
+
+1. In row _[638](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=638:638)_, the term _FMA:8129_ is from another ontology that is not validated in this process.
+
+1. In row _[640](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=640:640)_, the term _FMA:8349_ is from another ontology that is not validated in this process.
+
+1. In row _[641](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=641:641)_, the term _FMA:8347_ is from another ontology that is not validated in this process.
+
+1. In row _[642](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=642:642)_, the term _FMA:8345_ is from another ontology that is not validated in this process.
+
+1. In row _[643](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=643:643)_, the term _FMA:8352_ is from another ontology that is not validated in this process.
+
+1. In row _[644](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=644:644)_, the term _FMA:8339_ is from another ontology that is not validated in this process.
+
+1. In row _[645](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=645:645)_, the term _FMA:8338_ is from another ontology that is not validated in this process.
+
+1. In row _[646](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=646:646)_, the term _FMA:8342_ is from another ontology that is not validated in this process.
+
+1. In row _[647](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=647:647)_, the term _FMA:8343_ is from another ontology that is not validated in this process.
+
+1. In row _[650](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=650:650)_, the term _FMA:8341_ is from another ontology that is not validated in this process.
+
+1. In row _[651](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=651:651)_, the term _FMA:8346_ is from another ontology that is not validated in this process.
+
+1. In row _[654](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=654:654)_, the term _FMA:7541_ is from another ontology that is not validated in this process.
+
+1. In row _[656](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=656:656)_, the term _FMA:7542_ is from another ontology that is not validated in this process.
+
+1. In row _[661](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=661:661)_, the term _FMA:7488_ is from another ontology that is not validated in this process.
+
+1. In row _[691](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=691:691)_, the term _FMA:26527_ is from another ontology that is not validated in this process.
+
+1. In row _[706](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=706:706)_, the term _FMA:24283_ is from another ontology that is not validated in this process.
+
+1. In row _[707](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=707:707)_, the term _FMA:24768_ is from another ontology that is not validated in this process.
+
+1. In row _[708](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=708:708)_, the term _FMA:24242_ is from another ontology that is not validated in this process.
+
+1. In row _[709](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=709:709)_, the term _FMA:24239_ is from another ontology that is not validated in this process.
+
+1. In row _[710](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=710:710)_, the term _FMA:24245_ is from another ontology that is not validated in this process.
+
+1. In row _[712](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=712:712)_, the term _FMA:24280_ is from another ontology that is not validated in this process.
+
+1. In row _[713](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=713:713)_, the term _FMA:24766_ is from another ontology that is not validated in this process.
+
+1. In row _[714](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=714:714)_, the term _FMA:24300_ is from another ontology that is not validated in this process.
+
+1. In row _[715](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=715:715)_, the term _FMA:24246_ is from another ontology that is not validated in this process.
+
+1. In row _[718](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=718:718)_, the term _FMA:24295_ is from another ontology that is not validated in this process.
+
+1. In row _[721](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=721:721)_, the term _FMA:26348_ is from another ontology that is not validated in this process.
+
+1. In row _[722](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=722:722)_, the term _FMA:26528_ is from another ontology that is not validated in this process.
+
+1. In row _[723](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=723:723)_, the term _FMA:26316_ is from another ontology that is not validated in this process.
+
+1. In row _[724](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=724:724)_, the term _FMA:26310_ is from another ontology that is not validated in this process.
+
+1. In row _[725](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=725:725)_, the term _FMA:26354_ is from another ontology that is not validated in this process.
+
+1. In row _[727](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=727:727)_, the term _FMA:26342_ is from another ontology that is not validated in this process.
+
+1. In row _[728](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=728:728)_, the term _FMA:26515_ is from another ontology that is not validated in this process.
+
+1. In row _[729](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=729:729)_, the term _FMA:24303_ is from another ontology that is not validated in this process.
+
+1. In row _[730](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=730:730)_, the term _FMA:26322_ is from another ontology that is not validated in this process.
+
+1. In row _[733](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=733:733)_, the term _FMA:24296_ is from another ontology that is not validated in this process.
+
+1. In row _[736](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=736:736)_, the term _FMA:26401_ is from another ontology that is not validated in this process.
+
+1. In row _[737](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=737:737)_, the term _FMA:26529_ is from another ontology that is not validated in this process.
+
+1. In row _[738](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=738:738)_, the term _FMA:26366_ is from another ontology that is not validated in this process.
+
+1. In row _[739](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=739:739)_, the term _FMA:26360_ is from another ontology that is not validated in this process.
+
+1. In row _[740](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=740:740)_, the term _FMA:26407_ is from another ontology that is not validated in this process.
+
+1. In row _[742](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=742:742)_, the term _FMA:26394_ is from another ontology that is not validated in this process.
+
+1. In row _[743](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=743:743)_, the term _FMA:26518_ is from another ontology that is not validated in this process.
+
+1. In row _[744](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=744:744)_, the term _FMA:24306_ is from another ontology that is not validated in this process.
+
+1. In row _[745](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=745:745)_, the term _FMA:26372_ is from another ontology that is not validated in this process.
+
+1. In row _[748](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=748:748)_, the term _FMA:24297_ is from another ontology that is not validated in this process.
+
+1. In row _[751](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=751:751)_, the term _FMA:26451_ is from another ontology that is not validated in this process.
+
+1. In row _[752](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=752:752)_, the term _FMA:26530_ is from another ontology that is not validated in this process.
+
+1. In row _[753](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=753:753)_, the term _FMA:26419_ is from another ontology that is not validated in this process.
+
+1. In row _[754](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=754:754)_, the term _FMA:26413_ is from another ontology that is not validated in this process.
+
+1. In row _[755](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=755:755)_, the term _FMA:26457_ is from another ontology that is not validated in this process.
+
+1. In row _[757](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=757:757)_, the term _FMA:26445_ is from another ontology that is not validated in this process.
+
+1. In row _[758](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=758:758)_, the term _FMA:26519_ is from another ontology that is not validated in this process.
+
+1. In row _[759](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=759:759)_, the term _FMA:24309_ is from another ontology that is not validated in this process.
+
+1. In row _[760](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=760:760)_, the term _FMA:26425_ is from another ontology that is not validated in this process.
+
+1. In row _[763](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=763:763)_, the term _FMA:24298_ is from another ontology that is not validated in this process.
+
+1. In row _[766](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=766:766)_, the term _FMA:26501_ is from another ontology that is not validated in this process.
+
+1. In row _[767](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=767:767)_, the term _FMA:26531_ is from another ontology that is not validated in this process.
+
+1. In row _[768](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=768:768)_, the term _FMA:26469_ is from another ontology that is not validated in this process.
+
+1. In row _[769](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=769:769)_, the term _FMA:26463_ is from another ontology that is not validated in this process.
+
+1. In row _[770](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=770:770)_, the term _FMA:26507_ is from another ontology that is not validated in this process.
+
+1. In row _[772](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=772:772)_, the term _FMA:26495_ is from another ontology that is not validated in this process.
+
+1. In row _[773](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=773:773)_, the term _FMA:26520_ is from another ontology that is not validated in this process.
+
+1. In row _[774](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=774:774)_, the term _FMA:24312_ is from another ontology that is not validated in this process.
+
+1. In row _[775](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=775:775)_, the term _FMA:26475_ is from another ontology that is not validated in this process.
+
+1. In row _[779](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=779:779)_, the term _FMA:24299_ is from another ontology that is not validated in this process.
+
+1. In row _[782](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=782:782)_, the term _FMA:16309_ is from another ontology that is not validated in this process.
+
+1. In row _[783](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=783:783)_, the term _FMA:16349_ is from another ontology that is not validated in this process.
+
+1. In row _[784](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=784:784)_, the term _FMA:16137_ is from another ontology that is not validated in this process.
+
+1. In row _[785](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=785:785)_, the term _FMA:16289_ is from another ontology that is not validated in this process.
+
+1. In row _[786](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=786:786)_, the term _FMA:16164_ is from another ontology that is not validated in this process.
+
+1. In row _[788](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=788:788)_, the term _FMA:16094_ is from another ontology that is not validated in this process.
+
+1. In row _[789](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=789:789)_, the term _FMA:16196_ is from another ontology that is not validated in this process.
+
+1. In row _[791](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=791:791)_, the term _FMA:16128_ is from another ontology that is not validated in this process.
+
+1. In row _[792](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=792:792)_, the term _FMA:16272_ is from another ontology that is not validated in this process.
+
+1. In row _[793](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=793:793)_, the term _FMA:16179_ is from another ontology that is not validated in this process.
+
+1. In row _[796](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=796:796)_, the term _FMA:24827_ is from another ontology that is not validated in this process.
+
+1. In row _[798](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=798:798)_, the term _FMA:16310_ is from another ontology that is not validated in this process.
+
+1. In row _[799](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=799:799)_, the term _FMA:16350_ is from another ontology that is not validated in this process.
+
+1. In row _[800](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=800:800)_, the term _FMA:16138_ is from another ontology that is not validated in this process.
+
+1. In row _[801](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=801:801)_, the term _FMA:16290_ is from another ontology that is not validated in this process.
+
+1. In row _[802](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=802:802)_, the term _FMA:16165_ is from another ontology that is not validated in this process.
+
+1. In row _[804](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=804:804)_, the term _FMA:16095_ is from another ontology that is not validated in this process.
+
+1. In row _[805](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=805:805)_, the term _FMA:16197_ is from another ontology that is not validated in this process.
+
+1. In row _[807](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=807:807)_, the term _FMA:16129_ is from another ontology that is not validated in this process.
+
+1. In row _[808](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=808:808)_, the term _FMA:16273_ is from another ontology that is not validated in this process.
+
+1. In row _[809](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=809:809)_, the term _FMA:16180_ is from another ontology that is not validated in this process.
+
+1. In row _[812](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=812:812)_, the term _FMA:24828_ is from another ontology that is not validated in this process.
+
+1. In row _[814](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=814:814)_, the term _FMA:16311_ is from another ontology that is not validated in this process.
+
+1. In row _[815](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=815:815)_, the term _FMA:16351_ is from another ontology that is not validated in this process.
+
+1. In row _[816](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=816:816)_, the term _FMA:16139_ is from another ontology that is not validated in this process.
+
+1. In row _[817](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=817:817)_, the term _FMA:16291_ is from another ontology that is not validated in this process.
+
+1. In row _[818](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=818:818)_, the term _FMA:16166_ is from another ontology that is not validated in this process.
+
+1. In row _[820](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=820:820)_, the term _FMA:16096_ is from another ontology that is not validated in this process.
+
+1. In row _[821](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=821:821)_, the term _FMA:16198_ is from another ontology that is not validated in this process.
+
+1. In row _[823](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=823:823)_, the term _FMA:16130_ is from another ontology that is not validated in this process.
+
+1. In row _[824](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=824:824)_, the term _FMA:16274_ is from another ontology that is not validated in this process.
+
+1. In row _[825](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=825:825)_, the term _FMA:16181_ is from another ontology that is not validated in this process.
+
+1. In row _[828](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=828:828)_, the term _FMA:24829_ is from another ontology that is not validated in this process.
+
+1. In row _[830](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=830:830)_, the term _FMA:16312_ is from another ontology that is not validated in this process.
+
+1. In row _[831](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=831:831)_, the term _FMA:16352_ is from another ontology that is not validated in this process.
+
+1. In row _[832](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=832:832)_, the term _FMA:16140_ is from another ontology that is not validated in this process.
+
+1. In row _[833](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=833:833)_, the term _FMA:16292_ is from another ontology that is not validated in this process.
+
+1. In row _[834](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=834:834)_, the term _FMA:16167_ is from another ontology that is not validated in this process.
+
+1. In row _[836](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=836:836)_, the term _FMA:16097_ is from another ontology that is not validated in this process.
+
+1. In row _[837](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=837:837)_, the term _FMA:16199_ is from another ontology that is not validated in this process.
+
+1. In row _[839](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=839:839)_, the term _FMA:16131_ is from another ontology that is not validated in this process.
+
+1. In row _[840](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=840:840)_, the term _FMA:16275_ is from another ontology that is not validated in this process.
+
+1. In row _[841](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=841:841)_, the term _FMA:16182_ is from another ontology that is not validated in this process.
+
+1. In row _[844](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=844:844)_, the term _FMA:24830_ is from another ontology that is not validated in this process.
+
+1. In row _[846](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=846:846)_, the term _FMA:16313_ is from another ontology that is not validated in this process.
+
+1. In row _[847](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=847:847)_, the term _FMA:16353_ is from another ontology that is not validated in this process.
+
+1. In row _[848](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=848:848)_, the term _FMA:16141_ is from another ontology that is not validated in this process.
+
+1. In row _[849](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=849:849)_, the term _FMA:16293_ is from another ontology that is not validated in this process.
+
+1. In row _[850](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=850:850)_, the term _FMA:16168_ is from another ontology that is not validated in this process.
+
+1. In row _[852](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=852:852)_, the term _FMA:16098_ is from another ontology that is not validated in this process.
+
+1. In row _[853](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=853:853)_, the term _FMA:16200_ is from another ontology that is not validated in this process.
+
+1. In row _[855](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=855:855)_, the term _FMA:16132_ is from another ontology that is not validated in this process.
+
+1. In row _[856](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=856:856)_, the term _FMA:16276_ is from another ontology that is not validated in this process.
+
+1. In row _[857](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=857:857)_, the term _FMA:16183_ is from another ontology that is not validated in this process.
+
+1. In row _[860](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=860:860)_, the term _FMA:24831_ is from another ontology that is not validated in this process.
+
+1. In row _[865](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=865:865)_, the term _FMA:31730_ is from another ontology that is not validated in this process.
+
+1. In row _[878](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=878:878)_, the term _FMA:31733_ is from another ontology that is not validated in this process.
+
+1. In row _[879](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=879:879)_, the term _FMA:16215_ is from another ontology that is not validated in this process.
+
+1. In row _[880](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=880:880)_, the term _FMA:75796_ is from another ontology that is not validated in this process.
+
+1. In row _[884](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=884:884)_, the term _FMA:9183_ is from another ontology that is not validated in this process.
+
+1. In row _[885](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=885:885)_, the term _FMA:9172_ is from another ontology that is not validated in this process.
+
+1. In row _[886](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=886:886)_, the term _FMA:9177_ is from another ontology that is not validated in this process.
+
+1. In row _[887](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=887:887)_, the term _FMA:9178_ is from another ontology that is not validated in this process.
+
+1. In row _[888](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=888:888)_, the term _FMA:9175_ is from another ontology that is not validated in this process.
+
+1. In row _[889](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=889:889)_, the term _FMA:9179_ is from another ontology that is not validated in this process.
+
+1. In row _[891](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=891:891)_, the term _FMA:9182_ is from another ontology that is not validated in this process.
+
+1. In row _[892](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=892:892)_, the term _FMA:9171_ is from another ontology that is not validated in this process.
+
+1. In row _[893](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=893:893)_, the term _FMA:9176_ is from another ontology that is not validated in this process.
+
+1. In row _[895](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=895:895)_, the term _FMA:9180_ is from another ontology that is not validated in this process.
+
+1. In row _[901](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=901:901)_, the term _FMA:10056_ is from another ontology that is not validated in this process.
+
+1. In row _[903](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=903:903)_, the term _FMA:10048_ is from another ontology that is not validated in this process.
+
+1. In row _[904](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=904:904)_, the term _FMA:10049_ is from another ontology that is not validated in this process.
+
+1. In row _[905](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=905:905)_, the term _FMA:10046_ is from another ontology that is not validated in this process.
+
+1. In row _[906](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=906:906)_, the term _FMA:10050_ is from another ontology that is not validated in this process.
+
+1. In row _[908](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=908:908)_, the term _FMA:10054_ is from another ontology that is not validated in this process.
+
+1. In row _[909](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=909:909)_, the term _FMA:10042_ is from another ontology that is not validated in this process.
+
+1. In row _[910](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=910:910)_, the term _FMA:10047_ is from another ontology that is not validated in this process.
+
+1. In row _[912](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=912:912)_, the term _FMA:10051_ is from another ontology that is not validated in this process.
+
+1. In row _[915](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=915:915)_, the term _FMA:13490_ is from another ontology that is not validated in this process.
+
+1. In row _[918](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=918:918)_, the term _FMA:10078_ is from another ontology that is not validated in this process.
+
+1. In row _[920](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=920:920)_, the term _FMA:10070_ is from another ontology that is not validated in this process.
+
+1. In row _[921](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=921:921)_, the term _FMA:10071_ is from another ontology that is not validated in this process.
+
+1. In row _[922](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=922:922)_, the term _FMA:10068_ is from another ontology that is not validated in this process.
+
+1. In row _[923](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=923:923)_, the term _FMA:10072_ is from another ontology that is not validated in this process.
+
+1. In row _[925](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=925:925)_, the term _FMA:10076_ is from another ontology that is not validated in this process.
+
+1. In row _[927](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=927:927)_, the term _FMA:10069_ is from another ontology that is not validated in this process.
+
+1. In row _[929](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=929:929)_, the term _FMA:10073_ is from another ontology that is not validated in this process.
+
+1. In row _[932](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=932:932)_, the term _FMA:13491_ is from another ontology that is not validated in this process.
+
+1. In row _[934](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=934:934)_, the term _FMA:11994_ is from another ontology that is not validated in this process.
+
+1. In row _[936](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=936:936)_, the term _FMA:10099_ is from another ontology that is not validated in this process.
+
+1. In row _[937](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=937:937)_, the term _FMA:10092_ is from another ontology that is not validated in this process.
+
+1. In row _[938](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=938:938)_, the term _FMA:10093_ is from another ontology that is not validated in this process.
+
+1. In row _[939](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=939:939)_, the term _FMA:10090_ is from another ontology that is not validated in this process.
+
+1. In row _[940](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=940:940)_, the term _FMA:10094_ is from another ontology that is not validated in this process.
+
+1. In row _[942](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=942:942)_, the term _FMA:10097_ is from another ontology that is not validated in this process.
+
+1. In row _[943](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=943:943)_, the term _FMA:10091_ is from another ontology that is not validated in this process.
+
+1. In row _[944](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=944:944)_, the term _FMA:10095_ is from another ontology that is not validated in this process.
+
+1. In row _[947](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=947:947)_, the term _FMA:13492_ is from another ontology that is not validated in this process.
+
+1. In row _[950](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=950:950)_, the term _FMA:9207_ is from another ontology that is not validated in this process.
+
+1. In row _[951](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=951:951)_, the term _FMA:9193_ is from another ontology that is not validated in this process.
+
+1. In row _[952](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=952:952)_, the term _FMA:9199_ is from another ontology that is not validated in this process.
+
+1. In row _[953](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=953:953)_, the term _FMA:9200_ is from another ontology that is not validated in this process.
+
+1. In row _[954](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=954:954)_, the term _FMA:9197_ is from another ontology that is not validated in this process.
+
+1. In row _[955](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=955:955)_, the term _FMA:9201_ is from another ontology that is not validated in this process.
+
+1. In row _[957](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=957:957)_, the term _FMA:9205_ is from another ontology that is not validated in this process.
+
+1. In row _[958](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=958:958)_, the term _FMA:9192_ is from another ontology that is not validated in this process.
+
+1. In row _[959](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=959:959)_, the term _FMA:9198_ is from another ontology that is not validated in this process.
+
+1. In row _[961](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=961:961)_, the term _FMA:9202_ is from another ontology that is not validated in this process.
+
+1. In row _[964](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=964:964)_, the term _FMA:13482_ is from another ontology that is not validated in this process.
+
+1. In row _[967](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=967:967)_, the term _FMA:9229_ is from another ontology that is not validated in this process.
+
+1. In row _[968](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=968:968)_, the term _FMA:9215_ is from another ontology that is not validated in this process.
+
+1. In row _[969](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=969:969)_, the term _FMA:9221_ is from another ontology that is not validated in this process.
+
+1. In row _[970](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=970:970)_, the term _FMA:9222_ is from another ontology that is not validated in this process.
+
+1. In row _[971](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=971:971)_, the term _FMA:9219_ is from another ontology that is not validated in this process.
+
+1. In row _[972](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=972:972)_, the term _FMA:9223_ is from another ontology that is not validated in this process.
+
+1. In row _[974](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=974:974)_, the term _FMA:9227_ is from another ontology that is not validated in this process.
+
+1. In row _[975](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=975:975)_, the term _FMA:9214_ is from another ontology that is not validated in this process.
+
+1. In row _[976](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=976:976)_, the term _FMA:9220_ is from another ontology that is not validated in this process.
+
+1. In row _[978](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=978:978)_, the term _FMA:9224_ is from another ontology that is not validated in this process.
+
+1. In row _[981](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=981:981)_, the term _FMA:13483_ is from another ontology that is not validated in this process.
+
+1. In row _[984](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=984:984)_, the term _FMA:9268_ is from another ontology that is not validated in this process.
+
+1. In row _[985](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=985:985)_, the term _FMA:9254_ is from another ontology that is not validated in this process.
+
+1. In row _[986](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=986:986)_, the term _FMA:9260_ is from another ontology that is not validated in this process.
+
+1. In row _[987](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=987:987)_, the term _FMA:9261_ is from another ontology that is not validated in this process.
+
+1. In row _[988](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=988:988)_, the term _FMA:9258_ is from another ontology that is not validated in this process.
+
+1. In row _[989](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=989:989)_, the term _FMA:9262_ is from another ontology that is not validated in this process.
+
+1. In row _[991](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=991:991)_, the term _FMA:9266_ is from another ontology that is not validated in this process.
+
+1. In row _[992](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=992:992)_, the term _FMA:9253_ is from another ontology that is not validated in this process.
+
+1. In row _[993](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=993:993)_, the term _FMA:9259_ is from another ontology that is not validated in this process.
+
+1. In row _[995](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=995:995)_, the term _FMA:9263_ is from another ontology that is not validated in this process.
+
+1. In row _[998](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=998:998)_, the term _FMA:13484_ is from another ontology that is not validated in this process.
+
+1. In row _[1001](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1001:1001)_, the term _FMA:9942_ is from another ontology that is not validated in this process.
+
+1. In row _[1002](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1002:1002)_, the term _FMA:9928_ is from another ontology that is not validated in this process.
+
+1. In row _[1003](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1003:1003)_, the term _FMA:9934_ is from another ontology that is not validated in this process.
+
+1. In row _[1004](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1004:1004)_, the term _FMA:9935_ is from another ontology that is not validated in this process.
+
+1. In row _[1005](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1005:1005)_, the term _FMA:9932_ is from another ontology that is not validated in this process.
+
+1. In row _[1006](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1006:1006)_, the term _FMA:9936_ is from another ontology that is not validated in this process.
+
+1. In row _[1008](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1008:1008)_, the term _FMA:9940_ is from another ontology that is not validated in this process.
+
+1. In row _[1009](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1009:1009)_, the term _FMA:9927_ is from another ontology that is not validated in this process.
+
+1. In row _[1010](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1010:1010)_, the term _FMA:9933_ is from another ontology that is not validated in this process.
+
+1. In row _[1012](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1012:1012)_, the term _FMA:9937_ is from another ontology that is not validated in this process.
+
+1. In row _[1015](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1015:1015)_, the term _FMA:13485_ is from another ontology that is not validated in this process.
+
+1. In row _[1018](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1018:1018)_, the term _FMA:9965_ is from another ontology that is not validated in this process.
+
+1. In row _[1019](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1019:1019)_, the term _FMA:9951_ is from another ontology that is not validated in this process.
+
+1. In row _[1020](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1020:1020)_, the term _FMA:9957_ is from another ontology that is not validated in this process.
+
+1. In row _[1021](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1021:1021)_, the term _FMA:9958_ is from another ontology that is not validated in this process.
+
+1. In row _[1022](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1022:1022)_, the term _FMA:9955_ is from another ontology that is not validated in this process.
+
+1. In row _[1023](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1023:1023)_, the term _FMA:9959_ is from another ontology that is not validated in this process.
+
+1. In row _[1025](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1025:1025)_, the term _FMA:9963_ is from another ontology that is not validated in this process.
+
+1. In row _[1026](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1026:1026)_, the term _FMA:9950_ is from another ontology that is not validated in this process.
+
+1. In row _[1027](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1027:1027)_, the term _FMA:9956_ is from another ontology that is not validated in this process.
+
+1. In row _[1029](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1029:1029)_, the term _FMA:9960_ is from another ontology that is not validated in this process.
+
+1. In row _[1032](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1032:1032)_, the term _FMA:13486_ is from another ontology that is not validated in this process.
+
+1. In row _[1035](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1035:1035)_, the term _FMA:9988_ is from another ontology that is not validated in this process.
+
+1. In row _[1036](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1036:1036)_, the term _FMA:9974_ is from another ontology that is not validated in this process.
+
+1. In row _[1037](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1037:1037)_, the term _FMA:9980_ is from another ontology that is not validated in this process.
+
+1. In row _[1038](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1038:1038)_, the term _FMA:9981_ is from another ontology that is not validated in this process.
+
+1. In row _[1039](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1039:1039)_, the term _FMA:9978_ is from another ontology that is not validated in this process.
+
+1. In row _[1040](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1040:1040)_, the term _FMA:9982_ is from another ontology that is not validated in this process.
+
+1. In row _[1042](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1042:1042)_, the term _FMA:9986_ is from another ontology that is not validated in this process.
+
+1. In row _[1043](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1043:1043)_, the term _FMA:9973_ is from another ontology that is not validated in this process.
+
+1. In row _[1044](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1044:1044)_, the term _FMA:9979_ is from another ontology that is not validated in this process.
+
+1. In row _[1046](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1046:1046)_, the term _FMA:9983_ is from another ontology that is not validated in this process.
+
+1. In row _[1049](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1049:1049)_, the term _FMA:13487_ is from another ontology that is not validated in this process.
+
+1. In row _[1052](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1052:1052)_, the term _FMA:10011_ is from another ontology that is not validated in this process.
+
+1. In row _[1053](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1053:1053)_, the term _FMA:9997_ is from another ontology that is not validated in this process.
+
+1. In row _[1054](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1054:1054)_, the term _FMA:10003_ is from another ontology that is not validated in this process.
+
+1. In row _[1055](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1055:1055)_, the term _FMA:10004_ is from another ontology that is not validated in this process.
+
+1. In row _[1056](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1056:1056)_, the term _FMA:10001_ is from another ontology that is not validated in this process.
+
+1. In row _[1057](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1057:1057)_, the term _FMA:10005_ is from another ontology that is not validated in this process.
+
+1. In row _[1059](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1059:1059)_, the term _FMA:10009_ is from another ontology that is not validated in this process.
+
+1. In row _[1060](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1060:1060)_, the term _FMA:9996_ is from another ontology that is not validated in this process.
+
+1. In row _[1061](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1061:1061)_, the term _FMA:10002_ is from another ontology that is not validated in this process.
+
+1. In row _[1063](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1063:1063)_, the term _FMA:10006_ is from another ontology that is not validated in this process.
+
+1. In row _[1066](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1066:1066)_, the term _FMA:13488_ is from another ontology that is not validated in this process.
+
+1. In row _[1069](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1069:1069)_, the term _FMA:10034_ is from another ontology that is not validated in this process.
+
+1. In row _[1070](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1070:1070)_, the term _FMA:13610_ is from another ontology that is not validated in this process.
+
+1. In row _[1071](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1071:1071)_, the term _FMA:10026_ is from another ontology that is not validated in this process.
+
+1. In row _[1072](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1072:1072)_, the term _FMA:10027_ is from another ontology that is not validated in this process.
+
+1. In row _[1073](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1073:1073)_, the term _FMA:10024_ is from another ontology that is not validated in this process.
+
+1. In row _[1074](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1074:1074)_, the term _FMA:10028_ is from another ontology that is not validated in this process.
+
+1. In row _[1076](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1076:1076)_, the term _FMA:10032_ is from another ontology that is not validated in this process.
+
+1. In row _[1077](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1077:1077)_, the term _FMA:10019_ is from another ontology that is not validated in this process.
+
+1. In row _[1078](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1078:1078)_, the term _FMA:10025_ is from another ontology that is not validated in this process.
+
+1. In row _[1080](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1080:1080)_, the term _FMA:10029_ is from another ontology that is not validated in this process.
+
+1. In row _[1083](https://docs.google.com/spreadsheets/d/1eJEvULtrtEZWWpZWW2Vu7l7ykgbenm_tv2ZnPlAxs5w/edit#gid=0&range=1083:1083)_, the term _FMA:13489_ is from another ontology that is not validated in this process.
 
 
 # Relationship reports

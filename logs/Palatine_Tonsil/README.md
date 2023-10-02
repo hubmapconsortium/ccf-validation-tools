@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Palatine_Tonsil (2023-09-27)
+ASCT+B Validation Reports for Palatine_Tonsil (2023-10-02)
 ==========================================================
 
 Table of contents
@@ -52,15 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17)_, the term _[CL:0000624](http://purl.obolibrary.org/obo/CL_0000624)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD4-positive alpha-beta T cells_ and the one in the **ontology** is _CD4-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD4 T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[30](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=30:30)_, the term _[UBERON:0001070](http://purl.obolibrary.org/obo/UBERON_0001070)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lesser palatine artery_ and the one in the **ontology** is _external carotid artery_. For reference, the given name/label **by SMEs** is _lesser palatine artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[26](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=26:26)_, the term _[UBERON:0001610](http://purl.obolibrary.org/obo/UBERON_0001610)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _dorsal lingual artery_ and the one in the **ontology** is _lingual artery_. For reference, the given name/label **by SMEs** is _lingual artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18)_, the term _[CL:0000625](http://purl.obolibrary.org/obo/CL_0000625)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD8-positive alpha-beta T cells_ and the one in the **ontology** is _CD8-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD8 T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=28:28)_, the term _[UBERON:0001612](http://purl.obolibrary.org/obo/UBERON_0001612)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _tonsillar branch of the facial artery_ and the one in the **ontology** is _facial artery_. For reference, the given name/label **by SMEs** is _facial artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
@@ -140,8 +132,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, no term id was found for the name/label _tonsil secondary follicle_.
 
-1. In row _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, no term id was found for the name/label _germinal center B cell_.
-
 1. In row _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, no term id was found for the name/label _tonsil follicle_.
 
 1. In row _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, no term id was found for the name/label _tonsil secondary follicle_.
@@ -206,8 +196,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 1. In row _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, no term id was found for the name/label _tonsil secondary follicle_.
 
-1. In row _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, no term id was found for the name/label _germinal center B cell_.
-
 1. In row _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, no term id was found for the name/label _tonsil follicle_.
 
 1. In row _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, no term id was found for the name/label _tonsil secondary follicle_.
@@ -232,23 +220,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25)_, the term _plasma cell CD21_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, the term _Cycling B_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, the term _Cycling B_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, the term _germinal center B cell_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, the term _germinal center B cell CD21_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, the term _Centroblast_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, the term _Cycling B_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, the term _germinal center B cell_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, the term _germinal center B cell CD21_ without ontology ID has no parent that is from the CL ontology.
+- No issue found.
 
 
 ## Terms from another ontology
@@ -334,12 +306,12 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel       | user_slabel   | o              | olabel   | user_olabel   | row_number                                                                                                       |   deltaIC |
 |----|----------------|--------------|---------------|----------------|----------|---------------|------------------------------------------------------------------------------------------------------------------|-----------|
-| 13 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [26](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=26:26) |       nan |
-| 14 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [27](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=27:27) |       nan |
-| 15 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [28](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=28:28) |       nan |
-| 16 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [29](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=29:29) |       nan |
-| 17 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [30](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=30:30) |       nan |
-| 18 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [31](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=31:31) |       nan |
+| 16 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [26](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=26:26) |       nan |
+| 17 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [27](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=27:27) |       nan |
+| 18 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [28](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=28:28) |       nan |
+| 19 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [29](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=29:29) |       nan |
+| 20 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [30](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=30:30) |       nan |
+| 21 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [31](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=31:31) |       nan |
 
 
 
@@ -365,24 +337,29 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 
 
-|    | s          | slabel                          | user_slabel       | o              | olabel                 | user_olabel            | row_number                                                                                                       |   deltaIC |
-|----|------------|---------------------------------|-------------------|----------------|------------------------|------------------------|------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | CL:0000815 | regulatory T cell               | regulatory T cell | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57) |  100      |
-|  1 | CL:0000236 | B cell                          | B cell            | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58) |  100      |
-|  2 | CL:0000786 | Plasma Cell                     | plasma cell       | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59) |  100      |
-|  3 | CL:0000084 | T Cell                          | T Cell            | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60) |  100      |
-|  4 | CL:0000624 | CD4-positive, alpha-beta T cell | CD4 T cell        | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56) |  100      |
-|  5 | CL:0000235 | Macrophage                      | macrophage        | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61) |   66.4327 |
-|  6 | CL:0000084 | T cell                          | T cell            | UBERON:0002372 | tonsil                 | tonsil                 | [16](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=16:16) |  nan      |
-|  7 | CL:0000624 | CD4-positive, alpha-beta T cell | CD4 T cell        | UBERON:0002372 | tonsil                 | tonsil                 | [17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17) |  nan      |
-|  8 | CL:0000625 | CD8-positive, alpha-beta T cell | CD8 T cell        | UBERON:0002372 | tonsil                 | tonsil                 | [18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18) |  nan      |
-|  9 | CL:0000057 | Fibroblast                      | fibroblast        | UBERON:0002372 | tonsil                 | tonsil                 | [19](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=19:19) |  nan      |
-| 10 | CL:0000432 | Reticular cell                  | reticular cells   | UBERON:0002372 | tonsil                 | tonsil                 | [20](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=20:20) |  nan      |
-| 11 | CL:0000451 | Dendritic Cell                  | dendritic cell    | UBERON:0002372 | tonsil                 | tonsil                 | [22](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=22:22) |  nan      |
-| 12 | CL:0000786 | Plasma Cell                     | plasma cell       | UBERON:0002372 | tonsil                 | tonsil                 | [24](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=24:24) |  nan      |
-| 19 | CL:0000815 | regulatory T cell               | regulatory T cell | UBERON:0010754 | germinal center        | germinal center        | [44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44) |  nan      |
-| 20 | CL:0000786 | Plasma Cell                     | plasma cell       | UBERON:0010754 | germinal center        | germinal center        | [46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46) |  nan      |
-| 21 | CL:0000235 | Macrophage                      | macrophage        | UBERON:0010754 | germinal center        | germinal center        | [48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48) |  nan      |
+|    | s          | slabel                          | user_slabel            | o              | olabel                 | user_olabel            | row_number                                                                                                       |   deltaIC |
+|----|------------|---------------------------------|------------------------|----------------|------------------------|------------------------|------------------------------------------------------------------------------------------------------------------|-----------|
+|  0 | CL:0000236 | B cell                          | B cell                 | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54) |  100      |
+|  1 | CL:0000236 | B cell                          | B cell                 | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55) |  100      |
+|  2 | CL:0000815 | regulatory T cell               | regulatory T cell      | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57) |  100      |
+|  3 | CL:0000236 | B cell                          | B cell                 | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58) |  100      |
+|  4 | CL:0000786 | Plasma Cell                     | plasma cell            | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59) |  100      |
+|  5 | CL:0000084 | T Cell                          | T Cell                 | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60) |  100      |
+|  6 | CL:0000624 | CD4-positive alpha-beta T cells | CD4 T cell             | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56) |  100      |
+|  7 | CL:0000235 | Macrophage                      | macrophage             | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61) |   66.4327 |
+|  8 | CL:0000084 | T cell                          | T cell                 | UBERON:0002372 | tonsil                 | tonsil                 | [16](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=16:16) |  nan      |
+|  9 | CL:0000624 | CD4-positive, alpha-beta T cell | CD4 T cell             | UBERON:0002372 | tonsil                 | tonsil                 | [17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17) |  nan      |
+| 10 | CL:0000625 | CD8-positive, alpha-beta T cell | CD8 T cell             | UBERON:0002372 | tonsil                 | tonsil                 | [18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18) |  nan      |
+| 11 | CL:0000057 | Fibroblast                      | fibroblast             | UBERON:0002372 | tonsil                 | tonsil                 | [19](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=19:19) |  nan      |
+| 12 | CL:0000432 | Reticular cell                  | reticular cells        | UBERON:0002372 | tonsil                 | tonsil                 | [20](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=20:20) |  nan      |
+| 13 | CL:0000451 | Dendritic Cell                  | dendritic cell         | UBERON:0002372 | tonsil                 | tonsil                 | [22](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=22:22) |  nan      |
+| 14 | CL:0000786 | Plasma Cell                     | plasma cell            | UBERON:0002372 | tonsil                 | tonsil                 | [24](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=24:24) |  nan      |
+| 15 | CL:0000786 | Plasma Cell                     | plasma cell            | UBERON:0002372 | tonsil                 | tonsil                 | [25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25) |  nan      |
+| 22 | CL:0000815 | regulatory T cell               | regulatory T cell      | UBERON:0010754 | germinal center        | germinal center        | [44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44) |  nan      |
+| 23 | CL:0000786 | Plasma Cell                     | plasma cell            | UBERON:0010754 | germinal center        | germinal center        | [46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46) |  nan      |
+| 24 | CL:0000235 | Macrophage                      | macrophage             | UBERON:0010754 | germinal center        | germinal center        | [48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48) |  nan      |
+| 25 | CL:0000844 | germinal center B cell          | germinal center B cell | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62) |  nan      |
+| 26 | CL:0000844 | germinal center B cell          | germinal center B cell | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63) |  nan      |
 
 
 
