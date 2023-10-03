@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Eye (2023-10-02)
+ASCT+B Validation Reports for Eye (2023-10-03)
 ==============================================
 
 Table of contents
@@ -92,15 +92,9 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[16](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=16:16)_, the term _polyaxonal amacrine cell_ without ontology ID has no parent that is from the CL ontology.
-
 1. In row _[16](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=16:16)_, the term _semilunar type 1 cell_ without ontology ID has no parent that is from the CL ontology.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=17:17)_, the term _polyaxonal amacrine cell_ without ontology ID has no parent that is from the CL ontology.
-
 1. In row _[17](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=17:17)_, the term _semilunar type 3 cell_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[18](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=18:18)_, the term _polyaxonal amacrine cell_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology

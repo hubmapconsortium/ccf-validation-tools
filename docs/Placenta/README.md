@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Placenta (2023-10-02)
+ASCT+B Validation Reports for Placenta (2023-10-03)
 ===================================================
 
 Table of contents
@@ -32,7 +32,11 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
+1. UBERON:8600019
+
+1. UBERON:8600020
+
+1. UBERON:8600021
 
 
 ## Typos or punctuation mistakes
@@ -52,7 +56,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-- No issues found.
+1. In row _[34](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=34:34)_, the term _[CL:2000091](http://purl.obolibrary.org/obo/CL_2000091)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _endometrial microvascular endothelial cells_ and the one in the **ontology** is _endometrial microvascular endothelial cell_. For reference, the given name/label **by SMEs** is _endometrial microvascular endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -62,147 +66,401 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
   
 1. In row _[19](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=19:19)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=19:19)_, no term id was found for the name/label _basal plate_.
+1. In row _[19](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=19:19)_, no term id was found for the name/label _interstitial extravillous trophoblast_.
 
 1. In row _[22](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=22:22)_, no term id was found for the name/label _placental disc_.
 
 1. In row _[23](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=23:23)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=24:24)_, no term id was found for the name/label _fetal membranes_.
+1. In row _[24](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=24:24)_, no term id was found for the name/label _chorionic mesoderm (from chorion)_.
 
-1. In row _[25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25)_, no term id was found for the name/label _fetal membranes_.
+1. In row _[25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25)_, no term id was found for the name/label _chorionic ectoderm (from chorion)_.
 
-1. In row _[26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=27:27)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=28:28)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[29](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=29:29)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[29](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=29:29)_, no term id was found for the name/label _uterine NK cell_.
-
-1. In row _[30](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=30:30)_, no term id was found for the name/label _fetal membranes_.
+1. In row _[26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26)_, no term id was found for the name/label _chorionic ectoderm (from chorion)_.
 
 1. In row _[30](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=30:30)_, no term id was found for the name/label _uterine macrophage_.
 
-1. In row _[31](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=31:31)_, no term id was found for the name/label _fetal membranes_.
+1. In row _[35](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=35:35)_, no term id was found for the name/label _endovascular extravillous trophoblast_.
 
-1. In row _[32](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=32:32)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[33](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=33:33)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[34](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=34:34)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[35](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=35:35)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[36](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=36:36)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[36](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=36:36)_, no term id was found for the name/label _decidual lymphatic vessel_.
-
-1. In row _[37](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=37:37)_, no term id was found for the name/label _fetal membranes_.
-
-1. In row _[38](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=38:38)_, no term id was found for the name/label _fetal membranes_.
+1. In row _[36](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=36:36)_, no term id was found for the name/label _endometrial lymphatic vessel_.
 
 1. In row _[39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39)_, no term id was found for the name/label _placental disc_.
 
+1. In row _[39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39)_, no term id was found for the name/label _chorionic mesoderm (from chorionic plate)_.
+
 1. In row _[40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
 
 1. In row _[41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41)_, no term id was found for the name/label _placental disc_.
 
+1. In row _[41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
 1. In row _[42](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=42:42)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[42](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=42:42)_, no term id was found for the name/label _chorionic plate vessel_.
+1. In row _[42](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=42:42)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
 
 1. In row _[43](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=43:43)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[43](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=43:43)_, no term id was found for the name/label _chorionic plate vessel_.
+1. In row _[43](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=43:43)_, no term id was found for the name/label _trophoblast island_.
 
 1. In row _[44](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=44:44)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[44](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=44:44)_, no term id was found for the name/label _chorionic plate vessel_.
+1. In row _[44](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=44:44)_, no term id was found for the name/label _trophoblast island_.
 
 1. In row _[45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45)_, no term id was found for the name/label _placental disc_.
 
+1. In row _[45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45)_, no term id was found for the name/label _trophoblast island_.
+
 1. In row _[46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46)_, no term id was found for the name/label _trophoblast island_.
 
 1. In row _[47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[48](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=48:48)_, no term id was found for the name/label _placental disc_.
+1. In row _[47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47)_, no term id was found for the name/label _trophoblast island_.
 
-1. In row _[48](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=48:48)_, no term id was found for the name/label _villous mesenchyme_.
+1. In row _[48](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=48:48)_, no term id was found for the name/label _placental disc_.
 
 1. In row _[49](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=49:49)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[49](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=49:49)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=49:49)_, no term id was found for the name/label _placental stromal cell (PSC)_.
+1. In row _[49](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=49:49)_, no term id was found for the name/label _chorionic mesoderm (from chorionic plate)_.
 
 1. In row _[50](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=50:50)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[50](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=50:50)_, no term id was found for the name/label _stem villous vessel_.
+1. In row _[50](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=50:50)_, no term id was found for the name/label _chorionic mesoderm (from chorionic plate)_.
 
 1. In row _[51](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=51:51)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[51](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=51:51)_, no term id was found for the name/label _stem villous vessel_.
+1. In row _[51](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=51:51)_, no term id was found for the name/label _chorionic mesoderm (from chorionic plate)_.
 
 1. In row _[52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52)_, no term id was found for the name/label _stem villous vessel_.
+1. In row _[52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52)_, no term id was found for the name/label _anchoring villus_.
+
+1. In row _[52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
 
 1. In row _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, no term id was found for the name/label _villous capillary_.
+1. In row _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, no term id was found for the name/label _anchoring villus_.
+
+1. In row _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
 
 1. In row _[54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54)_, no term id was found for the name/label _villous capillary_.
+1. In row _[54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54)_, no term id was found for the name/label _anchoring villus_.
+
+1. In row _[54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
 
 1. In row _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, no term id was found for the name/label _basal plate_.
+1. In row _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, no term id was found for the name/label _anchoring villus_.
+
+1. In row _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, no term id was found for the name/label _villous mesenchyme_.
 
 1. In row _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, no term id was found for the name/label _basal plate_.
+1. In row _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, no term id was found for the name/label _anchoring villus_.
+
+1. In row _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, no term id was found for the name/label _villous mesenchyme_.
 
 1. In row _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, no term id was found for the name/label _basal plate_.
+1. In row _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, no term id was found for the name/label _anchoring villus_.
 
-1. In row _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, no term id was found for the name/label _uterine NK cell_.
+1. In row _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, no term id was found for the name/label _villous capillary_.
 
 1. In row _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, no term id was found for the name/label _basal plate_.
+1. In row _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, no term id was found for the name/label _anchoring villus_.
 
-1. In row _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, no term id was found for the name/label _uterine macrophage_.
+1. In row _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, no term id was found for the name/label _villous capillary_.
 
 1. In row _[59](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=59:59)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[59](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=59:59)_, no term id was found for the name/label _basal plate_.
-
 1. In row _[60](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=60:60)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[60](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=60:60)_, no term id was found for the name/label _basal plate_.
 
 1. In row _[61](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=61:61)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[61](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=61:61)_, no term id was found for the name/label _basal plate_.
-
 1. In row _[62](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=62:62)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[62](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=62:62)_, no term id was found for the name/label _basal plate_.
+1. In row _[62](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=62:62)_, no term id was found for the name/label _uterine macrophage_.
 
 1. In row _[63](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=63:63)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[63](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=63:63)_, no term id was found for the name/label _basal plate_.
-
 1. In row _[64](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=64:64)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[64](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=64:64)_, no term id was found for the name/label _basal plate_.
+1. In row _[65](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=65:65)_, no term id was found for the name/label _placental disc_.
 
-1. In row _[64](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=64:64)_, no term id was found for the name/label _decidual lymphatic vessel_.
+1. In row _[66](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=66:66)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[67](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=67:67)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[67](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=67:67)_, no term id was found for the name/label _endovascular extravillous trophoblast_.
+
+1. In row _[68](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=68:68)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[68](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=68:68)_, no term id was found for the name/label _endometrial lymphatic vessel_.
+
+1. In row _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, no term id was found for the name/label _stem villus_.
+
+1. In row _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, no term id was found for the name/label _stem villus_.
+
+1. In row _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, no term id was found for the name/label _stem villus_.
+
+1. In row _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, no term id was found for the name/label _stem villus_.
+
+1. In row _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, no term id was found for the name/label _villous mesenchyme_.
+
+1. In row _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, no term id was found for the name/label _stem villus_.
+
+1. In row _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, no term id was found for the name/label _villous mesenchyme_.
+
+1. In row _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, no term id was found for the name/label _stem villus_.
+
+1. In row _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, no term id was found for the name/label _stem villous vessel_.
+
+1. In row _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, no term id was found for the name/label _stem villus_.
+
+1. In row _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, no term id was found for the name/label _stem villous vessel_.
+
+1. In row _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_, no term id was found for the name/label _stem villus_.
+
+1. In row _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_, no term id was found for the name/label _stem villous vessel_.
+
+1. In row _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, no term id was found for the name/label _immature intermediate villus_.
+
+1. In row _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, no term id was found for the name/label _immature intermediate villus_.
+
+1. In row _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, no term id was found for the name/label _immature intermediate villus_.
+
+1. In row _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, no term id was found for the name/label _immature intermediate villus_.
+
+1. In row _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, no term id was found for the name/label _villous mesenchyme_.
+
+1. In row _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, no term id was found for the name/label _immature intermediate villus_.
+
+1. In row _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, no term id was found for the name/label _villous mesenchyme_.
+
+1. In row _[82](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=82:82)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[82](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=82:82)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[82](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=82:82)_, no term id was found for the name/label _immature intermediate villus_.
+
+1. In row _[83](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=83:83)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[83](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=83:83)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[83](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=83:83)_, no term id was found for the name/label _immature intermediate villus_.
+
+1. In row _[84](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=84:84)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[84](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=84:84)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[84](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=84:84)_, no term id was found for the name/label _immature intermediate villus_.
+
+1. In row _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, no term id was found for the name/label _mature intermediate villus_.
+
+1. In row _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, no term id was found for the name/label _mature intermediate villus_.
+
+1. In row _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, no term id was found for the name/label _mature intermediate villus_.
+
+1. In row _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, no term id was found for the name/label _mature intermediate villus_.
+
+1. In row _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, no term id was found for the name/label _villous mesenchyme_.
+
+1. In row _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, no term id was found for the name/label _mature intermediate villus_.
+
+1. In row _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, no term id was found for the name/label _villous mesenchyme_.
+
+1. In row _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, no term id was found for the name/label _mature intermediate villus_.
+
+1. In row _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, no term id was found for the name/label _villous capillary_.
+
+1. In row _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, no term id was found for the name/label _mature intermediate villus_.
+
+1. In row _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, no term id was found for the name/label _villous capillary_.
+
+1. In row _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, no term id was found for the name/label _terminal villus_.
+
+1. In row _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, no term id was found for the name/label _terminal villus_.
+
+1. In row _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, no term id was found for the name/label _terminal villus_.
+
+1. In row _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+
+1. In row _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, no term id was found for the name/label _terminal villus_.
+
+1. In row _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, no term id was found for the name/label _villous mesenchyme_.
+
+1. In row _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, no term id was found for the name/label _terminal villus_.
+
+1. In row _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, no term id was found for the name/label _villous mesenchyme_.
+
+1. In row _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, no term id was found for the name/label _terminal villus_.
+
+1. In row _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, no term id was found for the name/label _villous capillary_.
+
+1. In row _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_, no term id was found for the name/label _floating villus_.
+
+1. In row _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_, no term id was found for the name/label _terminal villus_.
+
+1. In row _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_, no term id was found for the name/label _villous capillary_.
+
+1. In row _[99](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=99:99)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[100](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=100:100)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[101](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=101:101)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[102](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=102:102)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[102](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=102:102)_, no term id was found for the name/label _uterine macrophage_.
+
+1. In row _[103](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=103:103)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[104](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=104:104)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[105](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=105:105)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[106](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=106:106)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[107](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=107:107)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[107](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=107:107)_, no term id was found for the name/label _endovascular extravillous trophoblast_.
+
+1. In row _[108](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=108:108)_, no term id was found for the name/label _placental disc_.
+
+1. In row _[108](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=108:108)_, no term id was found for the name/label _endometrial lymphatic vessel_.
 
 
 ## Blank ontology ID missing parent
@@ -210,15 +468,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[29](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=29:29)_, the term _uterine NK cell_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[30](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=30:30)_, the term _uterine macrophage_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=49:49)_, the term _placental stromal cell (PSC)_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, the term _uterine NK cell_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, the term _uterine macrophage_ without ontology ID has no parent that is from the CL ontology.
+- No issue found.
 
 
 ## Terms from another ontology
@@ -272,47 +522,51 @@ This table contains terms for anatomical structures that are related to each oth
 
 
 
-|    | s              | slabel                   | user_slabel                                | o              | olabel           | user_olabel       | row_number                                                                                                               |       deltaIC |
-|----|----------------|--------------------------|--------------------------------------------|----------------|------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------|---------------|
-|  0 | UBERON:0000305 | amnion                   | amnion                                     | UBERON:0002331 | umbilical cord   | umbilical cord    | [20](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=20:20) |   2.67779e+08 |
-|  1 | UBERON:0000305 | amnion                   | amnion                                     | UBERON:0002331 | umbilical cord   | umbilical cord    | [21](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=21:21) |   2.67779e+08 |
-| 13 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [33](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=33:33) |   1.20547e-15 |
-| 14 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [59](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=59:59) |   1.20547e-15 |
-| 15 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [31](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=31:31) |   1.20547e-15 |
-| 16 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [61](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=61:61) |   1.20547e-15 |
-| 17 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [30](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=30:30) |   1.20547e-15 |
-| 18 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [29](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=29:29) |   1.20547e-15 |
-| 19 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [28](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=28:28) |   1.20547e-15 |
-| 20 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [32](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=32:32) |   1.20547e-15 |
-| 21 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [60](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=60:60) |   1.20547e-15 |
-| 22 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56) |   1.20547e-15 |
-| 23 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57) |   1.20547e-15 |
-| 24 | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | UBERON:0002450 | decidua          | decidua           | [58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58) |   1.20547e-15 |
-| 29 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [12](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=12:12) | nan           |
-| 30 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [13](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=13:13) | nan           |
-| 31 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [14](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=14:14) | nan           |
-| 32 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [15](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=15:15) | nan           |
-| 33 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [16](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=16:16) | nan           |
-| 34 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [17](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=17:17) | nan           |
-| 35 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [18](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=18:18) | nan           |
-| 36 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [20](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=20:20) | nan           |
-| 38 | UBERON:0002331 | umbilical cord           | umbilical cord                             | UBERON:0001987 | placenta         | Placenta          | [21](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=21:21) | nan           |
-| 40 | UBERON:0003254 | amniotic ectoderm        | amniotic ectoderm                          | UBERON:0004027 | chorionic plate  | chorionic plate   | [22](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=22:22) | nan           |
-| 42 | UBERON:0003262 | amniotic mesoderm        | amniotic mesoderm                          | UBERON:0004027 | chorionic plate  | chorionic plate   | [23](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=23:23) | nan           |
-| 45 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorion membrane) | UBERON:0003124 | chorion membrane | chorion membrane  | [25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25) | nan           |
-| 46 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorion membrane) | UBERON:0003124 | chorion membrane | chorion membrane  | [26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26) | nan           |
-| 47 | UBERON:0002451 | endometrial gland        | endometrial gland                          | UBERON:0002450 | decidua          | decidua           | [27](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=27:27) | nan           |
-| 51 | UBERON:0015172 | endometrial blood vessel | decidual blood vessel                      | UBERON:0002450 | decidua          | decidua           | [34](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=34:34) | nan           |
-| 52 | UBERON:0015172 | endometrial blood vessel | decidual blood vessel                      | UBERON:0002450 | decidua          | decidua           | [35](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=35:35) | nan           |
-| 56 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0004027 | chorionic plate  | chorionic plate   | [39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39) | nan           |
-| 57 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0004027 | chorionic plate  | chorionic plate   | [40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40) | nan           |
-| 58 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0004027 | chorionic plate  | chorionic plate   | [41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41) | nan           |
-| 61 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0007106 | chorionic villus | chorionic villous | [45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45) | nan           |
-| 62 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0007106 | chorionic villus | chorionic villous | [46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46) | nan           |
-| 63 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | UBERON:0007106 | chorionic villus | chorionic villous | [47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47) | nan           |
-| 68 | UBERON:0002451 | endometrial gland        | endometrial gland                          | UBERON:0002450 | decidua          | decidua           | [55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55) | nan           |
-| 72 | UBERON:0015172 | endometrial blood vessel | decidual blood vessel                      | UBERON:0002450 | decidua          | decidua           | [62](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=62:62) | nan           |
-| 73 | UBERON:0015172 | endometrial blood vessel | decidual blood vessel                      | UBERON:0002450 | decidua          | decidua           | [63](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=63:63) | nan           |
+|    | s              | slabel            | user_slabel       | o              | olabel          | user_olabel     | row_number                                                                                                               |       deltaIC |
+|----|----------------|-------------------|-------------------|----------------|-----------------|-----------------|--------------------------------------------------------------------------------------------------------------------------|---------------|
+|  0 | UBERON:0000305 | amnion            | amnion            | UBERON:0002331 | umbilical cord  | umbilical cord  | [20](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=20:20) |   2.67779e+08 |
+|  1 | UBERON:0000305 | amnion            | amnion            | UBERON:0002331 | umbilical cord  | umbilical cord  | [21](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=21:21) |   2.67779e+08 |
+|  2 | UBERON:0000305 | amnion            | amnion            | UBERON:0005630 | fetal membrane  | fetal membranes | [37](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=37:37) |   2.67779e+08 |
+|  3 | UBERON:0000305 | amnion            | amnion            | UBERON:0005630 | fetal membrane  | fetal membranes | [38](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=38:38) |   2.67779e+08 |
+| 12 | UBERON:0002331 | umbilical cord    | umbilical cord    | UBERON:0001987 | placenta        | placenta        | [12](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=12:12) | nan           |
+| 13 | UBERON:0002331 | umbilical cord    | umbilical cord    | UBERON:0001987 | placenta        | placenta        | [13](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=13:13) | nan           |
+| 14 | UBERON:0002331 | umbilical cord    | umbilical cord    | UBERON:0001987 | placenta        | placenta        | [14](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=14:14) | nan           |
+| 15 | UBERON:0002331 | umbilical cord    | umbilical cord    | UBERON:0001987 | placenta        | placenta        | [15](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=15:15) | nan           |
+| 16 | UBERON:0002331 | umbilical cord    | umbilical cord    | UBERON:0001987 | placenta        | placenta        | [16](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=16:16) | nan           |
+| 17 | UBERON:0002331 | umbilical cord    | umbilical cord    | UBERON:0001987 | placenta        | placenta        | [17](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=17:17) | nan           |
+| 18 | UBERON:0002331 | umbilical cord    | umbilical cord    | UBERON:0001987 | placenta        | placenta        | [18](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=18:18) | nan           |
+| 19 | UBERON:0002331 | umbilical cord    | umbilical cord    | UBERON:0001987 | placenta        | placenta        | [20](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=20:20) | nan           |
+| 21 | UBERON:0002331 | umbilical cord    | umbilical cord    | UBERON:0001987 | placenta        | placenta        | [21](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=21:21) | nan           |
+| 23 | UBERON:0003254 | amniotic ectoderm | amniotic ectoderm | UBERON:0004027 | chorionic plate | chorionic plate | [22](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=22:22) | nan           |
+| 25 | UBERON:0003262 | amniotic mesoderm | amniotic mesoderm | UBERON:0004027 | chorionic plate | chorionic plate | [23](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=23:23) | nan           |
+| 27 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [24](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=24:24) | nan           |
+| 28 | UBERON:0003124 | chorion membrane  | chorion           | UBERON:0005630 | fetal membrane  | fetal membranes | [24](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=24:24) | nan           |
+| 29 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25) | nan           |
+| 30 | UBERON:0003124 | chorion membrane  | chorion           | UBERON:0005630 | fetal membrane  | fetal membranes | [25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25) | nan           |
+| 32 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26) | nan           |
+| 33 | UBERON:0003124 | chorion membrane  | chorion           | UBERON:0005630 | fetal membrane  | fetal membranes | [26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26) | nan           |
+| 35 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [27](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=27:27) | nan           |
+| 36 | UBERON:0001295 | endometrium       | endometrium       | UBERON:0005630 | fetal membrane  | fetal membranes | [27](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=27:27) | nan           |
+| 37 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [28](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=28:28) | nan           |
+| 38 | UBERON:0001295 | endometrium       | endometrium       | UBERON:0005630 | fetal membrane  | fetal membranes | [28](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=28:28) | nan           |
+| 39 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [29](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=29:29) | nan           |
+| 40 | UBERON:0001295 | endometrium       | endometrium       | UBERON:0005630 | fetal membrane  | fetal membranes | [29](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=29:29) | nan           |
+| 42 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [30](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=30:30) | nan           |
+| 43 | UBERON:0001295 | endometrium       | endometrium       | UBERON:0005630 | fetal membrane  | fetal membranes | [30](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=30:30) | nan           |
+| 45 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [31](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=31:31) | nan           |
+| 46 | UBERON:0001295 | endometrium       | endometrium       | UBERON:0005630 | fetal membrane  | fetal membranes | [31](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=31:31) | nan           |
+| 48 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [32](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=32:32) | nan           |
+| 49 | UBERON:0001295 | endometrium       | endometrium       | UBERON:0005630 | fetal membrane  | fetal membranes | [32](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=32:32) | nan           |
+| 51 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [33](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=33:33) | nan           |
+| 52 | UBERON:0001295 | endometrium       | endometrium       | UBERON:0005630 | fetal membrane  | fetal membranes | [33](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=33:33) | nan           |
+| 54 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [34](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=34:34) | nan           |
+| 55 | UBERON:0001295 | endometrium       | endometrium       | UBERON:0005630 | fetal membrane  | fetal membranes | [34](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=34:34) | nan           |
+| 56 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [35](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=35:35) | nan           |
+| 57 | UBERON:0001295 | endometrium       | endometrium       | UBERON:0005630 | fetal membrane  | fetal membranes | [35](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=35:35) | nan           |
+| 58 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [36](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=36:36) | nan           |
+| 59 | UBERON:0001295 | endometrium       | endometrium       | UBERON:0005630 | fetal membrane  | fetal membranes | [36](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=36:36) | nan           |
+| 60 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [37](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=37:37) | nan           |
+| 62 | UBERON:0005630 | fetal membrane    | fetal membranes   | UBERON:0001987 | placenta        | placenta        | [38](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=38:38) | nan           |
 
 
 
@@ -338,44 +592,50 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 
 
-|    | s          | slabel                                      | user_slabel                               | o              | olabel                   | user_olabel                                | row_number                                                                                                               |       deltaIC |
-|----|------------|---------------------------------------------|-------------------------------------------|----------------|--------------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------------|
-|  2 | CL:0000525 | syncytiotrophoblast cell                    | syncytiotrophoblast (STB)                 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | [40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40) |   9.196e+06   |
-|  3 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast (EVT)            | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorion membrane) | [26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26) |   9.196e+06   |
-|  4 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast (EVT)            | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | [47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47) |   9.196e+06   |
-|  5 | CL:0000525 | syncytiotrophoblast cell                    | syncytiotrophoblast (STB)                 | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | [46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46) |   9.196e+06   |
-|  6 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast (EVT)            | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | [41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41) |   9.196e+06   |
-|  7 | CL:0000523 | mononuclear cytotrophoblast cell            | cytotrophoblast (CTB)                     | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorion membrane) | [25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25) |   9.1959e+06  |
-|  8 | CL:0000523 | mononuclear cytotrophoblast cell            | cytotrophoblast (CTB)                     | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | [45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45) |   9.1959e+06  |
-|  9 | CL:0000523 | mononuclear cytotrophoblast cell            | cytotrophoblast (CTB)                     | UBERON:0000088 | trophoblast              | chorionic ectoderm (from chorionic plate)  | [39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39) |   9.1959e+06  |
-| 10 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast (endovascular)   | UBERON:0015172 | endometrial blood vessel | decidual blood vessel                      | [35](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=35:35) |   2.59986e-14 |
-| 11 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast (endovascular)   | UBERON:0015172 | endometrial blood vessel | decidual blood vessel                      | [63](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=63:63) |   2.59986e-14 |
-| 12 | CL:0000669 | pericyte cell                               | pericytes                                 | UBERON:0001310 | umbilical artery         | umbilical arteries                         | [16](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=16:16) |   1.57509e-14 |
-| 25 | CL:0000669 | pericyte                                    | pericytes                                 | UBERON:0007106 | chorionic villus         | chorionic villous                          | [51](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=51:51) |   5.04377e-17 |
-| 26 | CL:0000669 | pericyte                                    | pericytes                                 | UBERON:0007106 | chorionic villus         | chorionic villous                          | [54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54) |   5.04377e-17 |
-| 27 | CL:0000669 | pericyte                                    | pericytes                                 | UBERON:0004027 | chorionic plate          | chorionic plate                            | [43](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=43:43) |   5.04377e-17 |
-| 28 | CL:0000669 | pericyte                                    | pericytes                                 | UBERON:0002066 | umbilical vein           | umbilical vein                             | [13](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=13:13) |   5.04377e-17 |
-| 37 | CL:0002536 | epithelial cell of amnion                   | amnion epithelial cell (AEC)              | UBERON:0003254 | amniotic ectoderm        | amniotic ectoderm                          | [20](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=20:20) | nan           |
-| 39 | CL:2000061 | placental amniotic mesenchymal stromal cell | amnion mesenchymal stromal cell (AMSC)    | UBERON:0003262 | amniotic mesoderm        | amniotic mesoderm                          | [21](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=21:21) | nan           |
-| 41 | CL:0002536 | epithelial cell of amnion                   | amnion epithelial cell (AEC)              | UBERON:0003254 | amniotic ectoderm        | amniotic ectoderm                          | [22](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=22:22) | nan           |
-| 43 | CL:2000061 | placental amniotic mesenchymal stromal cell | amnion mesenchymal stromal cell (AMSC)    | UBERON:0003262 | amniotic mesoderm        | amniotic mesoderm                          | [23](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=23:23) | nan           |
-| 44 | CL:0002541 | chorionic membrane mesenchymal stem cell    | chorionic mesenchymal stromal cell (CMSC) | UBERON:0003265 | chorionic mesenchyme     | chorionic mesoderm                         | [24](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=24:24) | nan           |
-| 48 | CL:0000815 | regulatory T cell                           | regulatory T cell                         | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | [31](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=31:31) | nan           |
-| 49 | CL:0000910 | cytotoxic T cell                            | cytotoxic T cell                          | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | [32](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=32:32) | nan           |
-| 50 | CL:0000236 | B cell                                      | B cell                                    | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | [33](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=33:33) | nan           |
-| 53 | CL:0002138 | endothelial cell of lymphatic vessel        | lymphatic endothelial cell                | UBERON:0002450 | decidua                  | decidua                                    | [36](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=36:36) | nan           |
-| 54 | CL:0002536 | epithelial cell of amnion                   | amnion epithelial cell (AEC)              | UBERON:0003254 | amniotic ectoderm        | amniotic ectoderm                          | [37](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=37:37) | nan           |
-| 55 | CL:2000061 | placental amniotic mesenchymal stromal cell | amnion mesenchymal stromal cell (AMSC)    | UBERON:0003262 | amniotic mesoderm        | amniotic mesoderm                          | [38](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=38:38) | nan           |
-| 59 | CL:0000071 | blood vessel endothelial cell               | vascular endothelial cells                | UBERON:0004027 | chorionic plate          | chorionic plate                            | [42](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=42:42) | nan           |
-| 60 | CL:0000359 | vascular associated smooth muscle cell      | vascular smooth muscle cells              | UBERON:0004027 | chorionic plate          | chorionic plate                            | [44](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=44:44) | nan           |
-| 64 | CL:3000001 | Hofbauer cell                               | Hofbauer cell (HC)                        | UBERON:0007106 | chorionic villus         | chorionic villous                          | [48](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=48:48) | nan           |
-| 65 | CL:0000071 | blood vessel endothelial cell               | vascular endothelial cells                | UBERON:0007106 | chorionic villus         | chorionic villous                          | [50](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=50:50) | nan           |
-| 66 | CL:0000359 | vascular associated smooth muscle cell      | vascular smooth muscle cells              | UBERON:0007106 | chorionic villus         | chorionic villous                          | [52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52) | nan           |
-| 67 | CL:2000062 | placental villus capillary endothelial cell | placental microvascular endothelial cells | UBERON:0007106 | chorionic villus         | chorionic villous                          | [53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53) | nan           |
-| 69 | CL:0000815 | regulatory T cell                           | regulatory T cell                         | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | [59](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=59:59) | nan           |
-| 70 | CL:0000910 | cytotoxic T cell                            | cytotoxic T cell                          | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | [60](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=60:60) | nan           |
-| 71 | CL:0000236 | B cell                                      | B cell                                    | UBERON:0002337 | endometrial stroma       | endometrial stroma                         | [61](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=61:61) | nan           |
-| 74 | CL:0002138 | endothelial cell of lymphatic vessel        | lymphatic endothelial cell                | UBERON:0002450 | decidua                  | decidua                                    | [64](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=64:64) | nan           |
+|    | s          | slabel                                      | user_slabel                     | o              | olabel                   | user_olabel              | row_number                                                                                                                  |       deltaIC |
+|----|------------|---------------------------------------------|---------------------------------|----------------|--------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------|---------------|
+|  4 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast        | UBERON:0015172 | endometrial blood vessel | endometrial blood vessel | [35](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=35:35)    |   2.59986e-14 |
+|  5 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast        | UBERON:0015172 | endometrial blood vessel | endometrial blood vessel | [67](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=67:67)    |   2.59986e-14 |
+|  6 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast        | UBERON:0015172 | endometrial blood vessel | endometrial blood vessel | [107](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=107:107) |   2.59986e-14 |
+|  7 | CL:0000669 | pericyte                                    | pericyte                        | UBERON:0001310 | umbilical artery         | umbilical arteries       | [16](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=16:16)    |   1.57509e-14 |
+|  8 | CL:0000669 | pericyte                                    | pericyte                        | UBERON:0002066 | umbilical vein           | umbilical vein           | [13](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=13:13)    |   5.04377e-17 |
+|  9 | CL:0002138 | endothelial cell of lymphatic vessel        | lymphatic endothelial cell      | UBERON:0001295 | endometrium              | endometrium              | [36](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=36:36)    |   5.04459e-37 |
+| 10 | CL:0002138 | endothelial cell of lymphatic vessel        | lymphatic endothelial cell      | UBERON:0001295 | endometrium              | endometrium              | [68](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=68:68)    |   5.04459e-37 |
+| 11 | CL:0002138 | endothelial cell of lymphatic vessel        | lymphatic endothelial cell      | UBERON:0001295 | endometrium              | endometrium              | [108](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=108:108) |   5.04459e-37 |
+| 20 | CL:0002536 | epithelial cell of amnion                   | amnion epithelial cell          | UBERON:0003254 | amniotic ectoderm        | amniotic ectoderm        | [20](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=20:20)    | nan           |
+| 22 | CL:2000061 | placental amniotic mesenchymal stromal cell | amnion mesenchymal stromal cell | UBERON:0003262 | amniotic mesoderm        | amniotic mesoderm        | [21](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=21:21)    | nan           |
+| 24 | CL:0002536 | epithelial cell of amnion                   | amnion epithelial cell          | UBERON:0003254 | amniotic ectoderm        | amniotic ectoderm        | [22](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=22:22)    | nan           |
+| 26 | CL:2000061 | placental amniotic mesenchymal stromal cell | amnion mesenchymal stromal cell | UBERON:0003262 | amniotic mesoderm        | amniotic mesoderm        | [23](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=23:23)    | nan           |
+| 31 | CL:0000523 | mononuclear cytotrophoblast cell            | cytotrophoblast                 | UBERON:0003124 | chorion membrane         | chorion                  | [25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25)    | nan           |
+| 34 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast        | UBERON:0003124 | chorion membrane         | chorion                  | [26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26)    | nan           |
+| 41 | CL:0002343 | decidual natural killer cell, human         | uterine NK cell                 | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [29](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=29:29)    | nan           |
+| 44 | CL:0000864 | tissue-resident macrophage                  | tissue-resident macrophage      | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [30](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=30:30)    | nan           |
+| 47 | CL:0000815 | regulatory T cell                           | regulatory T cell               | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [31](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=31:31)    | nan           |
+| 50 | CL:0000910 | cytotoxic T cell                            | cytotoxic T cell                | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [32](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=32:32)    | nan           |
+| 53 | CL:0000236 | B cell                                      | B cell                          | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [33](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=33:33)    | nan           |
+| 61 | CL:0002536 | epithelial cell of amnion                   | amnion epithelial cell          | UBERON:0003254 | amniotic ectoderm        | amniotic ectoderm        | [37](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=37:37)    | nan           |
+| 63 | CL:2000061 | placental amniotic mesenchymal stromal cell | amnion mesenchymal stromal cell | UBERON:0003262 | amniotic mesoderm        | amniotic mesoderm        | [38](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=38:38)    | nan           |
+| 64 | CL:0002558 | fibroblast of villous mesenchyme            | placental stromal cell          | UBERON:0004027 | chorionic plate          | chorionic plate          | [39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39)    | nan           |
+| 65 | CL:0000523 | mononuclear cytotrophoblast cell            | cytotrophoblast                 | UBERON:0004027 | chorionic plate          | chorionic plate          | [40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)    | nan           |
+| 66 | CL:0000525 | syncytiotrophoblast cell                    | syncytiotrophoblast             | UBERON:0004027 | chorionic plate          | chorionic plate          | [41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41)    | nan           |
+| 67 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast        | UBERON:0004027 | chorionic plate          | chorionic plate          | [42](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=42:42)    | nan           |
+| 68 | CL:0008036 | extravillous trophoblast                    | extravillous trophoblast        | UBERON:0004027 | chorionic plate          | chorionic plate          | [43](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=43:43)    | nan           |
+| 69 | CL:0000523 | mononuclear cytotrophoblast cell            | cytotrophoblast                 | UBERON:0004027 | chorionic plate          | chorionic plate          | [44](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=44:44)    | nan           |
+| 70 | CL:0000525 | syncytiotrophoblast cell                    | syncytiotrophoblast             | UBERON:0004027 | chorionic plate          | chorionic plate          | [45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45)    | nan           |
+| 71 | CL:0000071 | blood vessel endothelial cell               | vascular endothelial cell       | UBERON:0004027 | chorionic plate          | chorionic plate          | [46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46)    | nan           |
+| 72 | CL:0002558 | fibroblast of villous mesenchyme            | placental stromal cell          | UBERON:0004027 | chorionic plate          | chorionic plate          | [47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47)    | nan           |
+| 73 | CL:0002343 | decidual natural killer cell, human         | uterine NK cell                 | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [61](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=61:61)    | nan           |
+| 74 | CL:0000864 | tissue-resident macrophage                  | tissue-resident macrophage      | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [62](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=62:62)    | nan           |
+| 75 | CL:0000815 | regulatory T cell                           | regulatory T cell               | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [63](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=63:63)    | nan           |
+| 76 | CL:0000910 | cytotoxic T cell                            | cytotoxic T cell                | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [64](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=64:64)    | nan           |
+| 77 | CL:0000236 | B cell                                      | B cell                          | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [65](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=65:65)    | nan           |
+| 78 | CL:0000669 | pericyte                                    | pericyte                        | UBERON:0022358 | placenta blood vessel    | placental blood vessel   | [83](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=83:83)    | nan           |
+| 79 | CL:0000359 | vascular associated smooth muscle cell      | vascular smooth muscle cell     | UBERON:0022358 | placenta blood vessel    | placental blood vessel   | [84](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=84:84)    | nan           |
+| 80 | CL:0002343 | decidual natural killer cell, human         | uterine NK cell                 | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [101](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=101:101) | nan           |
+| 81 | CL:0000864 | tissue-resident macrophage                  | tissue-resident macrophage      | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [102](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=102:102) | nan           |
+| 82 | CL:0000815 | regulatory T cell                           | regulatory T cell               | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [103](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=103:103) | nan           |
+| 83 | CL:0000910 | cytotoxic T cell                            | cytotoxic T cell                | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [104](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=104:104) | nan           |
+| 84 | CL:0000236 | B cell                                      | B cell                          | UBERON:0002337 | endometrial stroma       | endometrial stroma       | [105](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=105:105) | nan           |
 
 
 

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2023-10-02)
+ASCT+B Validation Reports for Prostate (2023-10-03)
 ===================================================
 
 Table of contents
@@ -32,9 +32,9 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. UBERON:000570
-
 1. UBERON:0000766
+
+1. UBERON:000570
 
 1. UBERON:0000752
 
@@ -56,19 +56,19 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001085](http://purl.obolibrary.org/obo/UBERON_0001085)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _vascular system_ and the one in the **ontology** is _skin of trunk_. For reference, the given name/label **by SMEs** is _vascular system_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26)_, the term _[CL:4032000](http://purl.obolibrary.org/obo/CL_4032000)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _club cell of prostatic urethral epithelium_ and the one in the **ontology** is _club-like cell of the urethral epithelium_. For reference, the given name/label **by SMEs** is _club epithelia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001102](http://purl.obolibrary.org/obo/UBERON_0001102)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _blood vessel_ and the one in the **ontology** is _cartilage of main bronchus_. For reference, the given name/label **by SMEs** is _blood vessel_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23)_, the term _[UBERON:0001431](http://purl.obolibrary.org/obo/UBERON_0001431)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _vascular smooth muscle_ and the one in the **ontology** is _distal carpal bone 2_. For reference, the given name/label **by SMEs** is _vascular smooth muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001489](http://purl.obolibrary.org/obo/UBERON_0001489)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _whole body_ and the one in the **ontology** is _manus joint_. For reference, the given name/label **by SMEs** is _whole body_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001102](http://purl.obolibrary.org/obo/UBERON_0001102)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _blood vessel_ and the one in the **ontology** is _cartilage of main bronchus_. For reference, the given name/label **by SMEs** is _blood vessel_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26)_, the term _[CL:4032000](http://purl.obolibrary.org/obo/CL_4032000)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _club cell of prostatic urethral epithelium_ and the one in the **ontology** is _club-like cell of the urethral epithelium_. For reference, the given name/label **by SMEs** is _club epithelia_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_, the term _[UBERON:0004167](http://purl.obolibrary.org/obo/UBERON_0004167)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _orbitofrontal cortex_. For reference, the given name/label **by SMEs** is _lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24)_, the term _[UBERON:0002441](http://purl.obolibrary.org/obo/UBERON_0002441)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _pericyte_ and the one in the **ontology** is _cervicothoracic ganglion_. For reference, the given name/label **by SMEs** is _pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001085](http://purl.obolibrary.org/obo/UBERON_0001085)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _vascular system_ and the one in the **ontology** is _skin of trunk_. For reference, the given name/label **by SMEs** is _vascular system_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. In row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_, the term _[UBERON:0001489](http://purl.obolibrary.org/obo/UBERON_0001489)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _whole body_ and the one in the **ontology** is _manus joint_. For reference, the given name/label **by SMEs** is _whole body_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -92,7 +92,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[25](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=25:25)_, the term _basal cell of prostatic urethra_ without ontology ID has no parent that is from the CL ontology.
+- No issue found.
 
 
 ## Terms from another ontology
@@ -197,7 +197,8 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 |  9 | CL:1000299 | fibroblast of connective tissue of prostate                      | interstitial fibroblast                | UBERON:0004184 | prostate gland stroma    | prostate stroma            | [18](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=18:18) | nan           |
 | 18 | CL:0000359 | vascular associated smooth muscle cell                           | vascular associated smooth muscle cell | UBERON:0001431 | distal carpal bone 2     | vascular smooth muscle     | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) | nan           |
 | 21 | CL:0000669 | pericyte                                                         | perictye                               | UBERON:0002441 | cervicothoracic ganglion | pericyte                   | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) | nan           |
-| 22 | CL:4032000 | club-like cell of the urethral epithelium                        | club epithelia                         | UBERON:0001335 | prostatic urethra        | prostatic urethra          | [26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26) | nan           |
+| 22 | CL:1000486 | basal cell of urothelium                                         | basal cell of urothelium               | UBERON:0001335 | prostatic urethra        | prostatic urethra          | [25](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=25:25) | nan           |
+| 23 | CL:4032000 | club-like cell of the urethral epithelium                        | club epithelia                         | UBERON:0001335 | prostatic urethra        | prostatic urethra          | [26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26) | nan           |
 
 
 

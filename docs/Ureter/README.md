@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Ureter (2023-10-02)
+ASCT+B Validation Reports for Ureter (2023-10-03)
 =================================================
 
 Table of contents
@@ -92,7 +92,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15)_, the term _detrusor smooth muscle cell of ureter_ without ontology ID has no parent that is from the CL ontology.
+- No issue found.
 
 
 ## Terms from another ontology
@@ -152,13 +152,13 @@ This table contains terms for anatomical structures that are related to each oth
 |  6 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12) |       100 |
 |  7 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [13](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=13:13) |       100 |
 |  8 | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | UBERON:0005005 | mucosa of left ureter | mucosa of left ureter | [14](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=14:14) |       100 |
-| 12 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [16](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=16:16) |       nan |
-| 13 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [17](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=17:17) |       nan |
-| 15 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [18](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=18:18) |       nan |
-| 17 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [19](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=19:19) |       nan |
-| 18 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [20](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=20:20) |       nan |
-| 19 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [21](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=21:21) |       nan |
-| 20 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [22](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=22:22) |       nan |
+| 13 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [16](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=16:16) |       nan |
+| 14 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [17](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=17:17) |       nan |
+| 16 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [18](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=18:18) |       nan |
+| 18 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [19](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=19:19) |       nan |
+| 19 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [20](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=20:20) |       nan |
+| 20 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [21](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=21:21) |       nan |
+| 21 | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | UBERON:0036376 | wall of left ureter   | wall of left ureter   | [22](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=22:22) |       nan |
 
 
 
@@ -184,18 +184,19 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 
 
-|    | s          | slabel                            | user_slabel   | o              | olabel                   | user_olabel              | row_number                                                                                                              |       deltaIC |
-|----|------------|-----------------------------------|---------------|----------------|--------------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------|---------------|
-|  0 | CL:1000708 | ureter adventitial cell           | myofibroblast | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [16](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=16:16) | 100           |
-|  1 | CL:1000708 | ureter adventitial cell           | fibroblast    | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [19](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=19:19) | 100           |
-|  2 | CL:1000708 | ureter adventitial cell           | endothelium   | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [20](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=20:20) | 100           |
-|  3 | CL:1000708 | ureter adventitial cell           | smooth muscle | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [21](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=21:21) | 100           |
-|  4 | CL:1000708 | ureter adventitial cell           | smooth muscle | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [22](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=22:22) | 100           |
-|  9 | CL:1001428 | bladder urothelial cell           | urothelium    | UBERON:0001254 | urothelium of ureter     | urothelium of ureter     | [12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12) |   4.05207e-10 |
-| 10 | CL:1001428 | bladder urothelial cell           | urothelium    | UBERON:0001254 | urothelium of ureter     | urothelium of ureter     | [13](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=13:13) |   4.05207e-10 |
-| 11 | CL:1001428 | bladder urothelial cell           | urothelium    | UBERON:0001254 | urothelium of ureter     | urothelium of ureter     | [14](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=14:14) |   4.05207e-10 |
-| 14 | CL:1000308 | fibrocyte of adventitia of ureter | fibroblast    | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [17](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=17:17) | nan           |
-| 16 | CL:1000308 | fibrocyte of adventitia of ureter | fibroblast    | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter | [18](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=18:18) | nan           |
+|    | s          | slabel                            | user_slabel               | o              | olabel                   | user_olabel                   | row_number                                                                                                              |       deltaIC |
+|----|------------|-----------------------------------|---------------------------|----------------|--------------------------|-------------------------------|-------------------------------------------------------------------------------------------------------------------------|---------------|
+|  0 | CL:1000708 | ureter adventitial cell           | myofibroblast             | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | [16](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=16:16) | 100           |
+|  1 | CL:1000708 | ureter adventitial cell           | fibroblast                | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | [19](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=19:19) | 100           |
+|  2 | CL:1000708 | ureter adventitial cell           | endothelium               | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | [20](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=20:20) | 100           |
+|  3 | CL:1000708 | ureter adventitial cell           | smooth muscle             | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | [21](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=21:21) | 100           |
+|  4 | CL:1000708 | ureter adventitial cell           | smooth muscle             | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | [22](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=22:22) | 100           |
+|  9 | CL:1001428 | bladder urothelial cell           | urothelium                | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | [12](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=12:12) |   4.05207e-10 |
+| 10 | CL:1001428 | bladder urothelial cell           | urothelium                | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | [13](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=13:13) |   4.05207e-10 |
+| 11 | CL:1001428 | bladder urothelial cell           | urothelium                | UBERON:0001254 | urothelium of ureter     | urothelium of ureter          | [14](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=14:14) |   4.05207e-10 |
+| 12 | CL:1000979 | ureter smooth muscle cell         | ureter smooth muscle cell | UBERON:0009919 | ureter smooth muscle     | ureter detrusor smooth muscle | [15](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=15:15) |   2.59986e-14 |
+| 15 | CL:1000308 | fibrocyte of adventitia of ureter | fibroblast                | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | [17](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=17:17) | nan           |
+| 17 | CL:1000308 | fibrocyte of adventitia of ureter | fibroblast                | UBERON:0001253 | lamina propria of ureter | lamina propria of ureter      | [18](https://docs.google.com/spreadsheets/d/1ZUmHX22NYMfBgFoni4zK6bsEYFn4rGSk9oYBNPcebZQ/edit#gid=73126811&range=18:18) | nan           |
 
 
 

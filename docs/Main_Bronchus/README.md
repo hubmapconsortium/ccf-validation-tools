@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2023-10-02)
+ASCT+B Validation Reports for Main_Bronchus (2023-10-03)
 ========================================================
 
 Table of contents
@@ -60,9 +60,7 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[25](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=25:25)_, no term id was found for the name/label _respiratory suprabasal cell_.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=28:28)_, no term id was found for the name/label _airway deuterosomal cell_.
+- No issues found.
 
 
 ## Blank ontology ID missing parent
@@ -71,10 +69,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
 1. In row _[15](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=15:15)_, the term _ciliated cell of terminal ciliated ducts of submucosal glands_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[25](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=25:25)_, the term _respiratory suprabasal cell_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=28:28)_, the term _airway deuterosomal cell_ without ontology ID has no parent that is from the CL ontology.
 
 
 ## Terms from another ontology
@@ -142,8 +136,8 @@ This table contains terms for anatomical structures that are related to each oth
 | 16 | UBERON:8410043 | bronchus submucosal gland               | bronchial submucosal gland            | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [20](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=20:20) |       nan |
 | 17 | UBERON:8600013 | submucosal gland collecting duct        | submucosal gland collecting duct      | UBERON:8410043 | bronchus submucosal gland | bronchial submucosal gland | [20](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=20:20) |       nan |
 | 19 | UBERON:0001956 | cartilage of bronchus                   | cartilage of bronchus                 | UBERON:0002182 | main bronchus             | extrapulmonary bronchus    | [21](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=21:21) |       nan |
-| 27 | UBERON:0004849 | respiratory system venous endothelium   | respiratory system venous endothelium | UBERON:0001592 | bronchial vein            | bronchial vein             | [33](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=33:33) |       nan |
-| 29 | UBERON:0012418 | respiratory system venous smooth muscle | venous system smooth muscle           | UBERON:0001592 | bronchial vein            | bronchial vein             | [34](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=34:34) |       nan |
+| 29 | UBERON:0004849 | respiratory system venous endothelium   | respiratory system venous endothelium | UBERON:0001592 | bronchial vein            | bronchial vein             | [33](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=33:33) |       nan |
+| 31 | UBERON:0012418 | respiratory system venous smooth muscle | venous system smooth muscle           | UBERON:0001592 | bronchial vein            | bronchial vein             | [34](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=34:34) |       nan |
 
 
 
@@ -181,12 +175,14 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 18 | CL:4033024 | airway submucosal gland duct basal cell                 | airway submucosal gland duct basal cell                 | UBERON:8600013 | submucosal gland collecting duct          | submucosal gland collecting duct        | [20](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=20:20) | nan         |
 | 20 | CL:0017000 | pulmonary ionocyte                                      | pulmonary ionocyte                                      | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [23](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=23:23) | nan         |
 | 21 | CL:4033010 | neuroendocrine cell of epithelium of lobar bronchus     | neuroendocrine cell of epithelium of lobar bronchus     | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [24](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=24:24) | nan         |
-| 22 | CL:0002332 | ciliated cell of the bronchus                           | ciliated cell of the bronchus                           | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [26](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=26:26) | nan         |
-| 23 | CL:4033007 | brush cell of epithelium of lobar bronchus              | tuft cell                                               | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [27](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=27:27) | nan         |
-| 24 | CL:4033009 | goblet cell of epithelium of lobar bronchus             | goblet cell of epithelium of lobar bronchus             | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [29](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=29:29) | nan         |
-| 25 | CL:1000413 | endothelial cell of artery                              | endothelial cell of artery                              | UBERON:0004848 | respiratory system arterial endothelium   | respiratory system arterial endothelium | [31](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=31:31) | nan         |
-| 26 | CL:0019018 | blood vessel smooth muscle cell                         | blood vessel smooth muscle cell                         | UBERON:0012416 | respiratory system arterial smooth muscle | arterial system smooth muscle           | [32](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=32:32) | nan         |
-| 28 | CL:4033008 | vein endothelial cell of respiratory system             | vein endothelial cell of respiratory system             | UBERON:0004849 | respiratory system venous endothelium     | respiratory system venous endothelium   | [33](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=33:33) | nan         |
+| 22 | CL:4033048 | respiratory suprabasal cell                             | respiratory suprabasal cell                             | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [25](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=25:25) | nan         |
+| 23 | CL:0002332 | ciliated cell of the bronchus                           | ciliated cell of the bronchus                           | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [26](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=26:26) | nan         |
+| 24 | CL:4033007 | brush cell of epithelium of lobar bronchus              | tuft cell                                               | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [27](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=27:27) | nan         |
+| 25 | CL:4033044 | deuterosomal cell                                       | airway deuterosomal cell                                | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [28](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=28:28) | nan         |
+| 26 | CL:4033009 | goblet cell of epithelium of lobar bronchus             | goblet cell of epithelium of lobar bronchus             | UBERON:0002340 | epithelium of main bronchus               | epithelium of main bronchus             | [29](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=29:29) | nan         |
+| 27 | CL:1000413 | endothelial cell of artery                              | endothelial cell of artery                              | UBERON:0004848 | respiratory system arterial endothelium   | respiratory system arterial endothelium | [31](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=31:31) | nan         |
+| 28 | CL:0019018 | blood vessel smooth muscle cell                         | blood vessel smooth muscle cell                         | UBERON:0012416 | respiratory system arterial smooth muscle | arterial system smooth muscle           | [32](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=32:32) | nan         |
+| 30 | CL:4033008 | vein endothelial cell of respiratory system             | vein endothelial cell of respiratory system             | UBERON:0004849 | respiratory system venous endothelium     | respiratory system venous endothelium   | [33](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=33:33) | nan         |
 
 
 

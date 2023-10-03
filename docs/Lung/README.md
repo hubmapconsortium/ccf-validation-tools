@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2023-10-02)
+ASCT+B Validation Reports for Lung (2023-10-03)
 ===============================================
 
 Table of contents
@@ -32,7 +32,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
+1. CL:4033055
 
 
 ## Typos or punctuation mistakes
@@ -60,11 +60,7 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
   
-1. In row _[13](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=13:13)_, no term id was found for the name/label _airway submucosal gland ciliated duct cell_.
-
-1. In row _[31](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=31:31)_, no term id was found for the name/label _airway submucosal gland ciliated duct cells_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=51:51)_, no term id was found for the name/label _airway submucosal gland ciliated duct cells_.
+- No issues found.
 
 
 ## Blank ontology ID missing parent
@@ -72,11 +68,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[13](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=13:13)_, the term _airway submucosal gland ciliated duct cell_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[31](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=31:31)_, the term _airway submucosal gland ciliated duct cells_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=51:51)_, the term _airway submucosal gland ciliated duct cells_ without ontology ID has no parent that is from the CL ontology.
+- No issue found.
 
 
 ## Terms from another ontology
