@@ -26,7 +26,8 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
     'percent_invalid_CT-CT_relationship': [0],
     'percent_indirect_CT-CT_relationship': [0],
     'number_of_CT-AS_relationships': [0],
-    'percent_invalid_CT-AS_relationship': [0]
+    'percent_invalid_CT-AS_relationship': [0],
+    'number_of_no_parent_relationships': [len(log_dict["no_parent"])],
   }
   seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
           'isa': 'SC %',
