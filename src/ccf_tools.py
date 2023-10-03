@@ -139,9 +139,7 @@ def parse_asctb(path):
             unique_terms.add(next['name'])
             
           if not check_id(current['id']) and (check_id(next['id']) or not check_id(next['id'])):
-            log_dict = no_parent(log_dict, current, row['rowNumber'])
-            if not check_id(next['id']):
-              log_dict = no_parent(log_dict, next, row['rowNumber'])
+            log_dict = no_parent(log_dict, next, row['rowNumber'])
 
       # CT-AS RELATIONSHIP
       if len(anatomical_structures) > 0 and len(cell_types) > 0:
