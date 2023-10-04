@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Knee (2023-10-03)
+ASCT+B Validation Reports for Knee (2023-10-04)
 ===============================================
 
 Table of contents
@@ -52,11 +52,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, the term _[CL:1001607](http://purl.obolibrary.org/obo/CL_1001607)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _articular chondrocyte of the femur_ and the one in the **ontology** is _articular chondrocyte_. For reference, the given name/label **by SMEs** is _articular chondrocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[21](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=21:21)_, the term _[CL:0000743](http://purl.obolibrary.org/obo/CL_0000743)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _hypertrophic chondrocyte_. For reference, the given name/label **by SMEs** is _Hypertrophic Chondrocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, the term _[UBERON:0010996](http://purl.obolibrary.org/obo/UBERON_0010996)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Articular Cartilage of femur_ and the one in the **ontology** is _articular cartilage of joint_. For reference, the given name/label **by SMEs** is _Articular cartilage of a joint_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=21:21)_, the term _[CL:0000743](http://purl.obolibrary.org/obo/CL_0000743)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _hypertrophic chondrocyte_. For reference, the given name/label **by SMEs** is _Hypertrophic Chondrocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, the term _[CL:1001607](http://purl.obolibrary.org/obo/CL_1001607)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _articular chondrocyte of the femur_ and the one in the **ontology** is _articular chondrocyte_. For reference, the given name/label **by SMEs** is _articular chondrocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

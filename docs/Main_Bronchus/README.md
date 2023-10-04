@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2023-10-03)
+ASCT+B Validation Reports for Main_Bronchus (2023-10-04)
 ========================================================
 
 Table of contents
@@ -32,7 +32,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
+1. CL:4033055
 
 
 ## Typos or punctuation mistakes
@@ -68,7 +68,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[15](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=15:15)_, the term _ciliated cell of terminal ciliated ducts of submucosal glands_ without ontology ID has no parent that is from the CL ontology.
+- No issue found.
 
 
 ## Terms from another ontology
@@ -76,7 +76,7 @@ This report provides a list of CT terms with blank ontology ID without an upper 
 
 This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-1. In row _[15](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=15:15)_, the term _LMHA:00142_ is from another ontology that is not validated in this process.
+- No issues found.
 
 
 # Relationship reports

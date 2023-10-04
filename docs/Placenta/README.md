@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Placenta (2023-10-03)
+ASCT+B Validation Reports for Placenta (2023-10-04)
 ===================================================
 
 Table of contents
@@ -32,9 +32,9 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. UBERON:8600019
-
 1. UBERON:8600020
+
+1. UBERON:8600019
 
 1. UBERON:8600021
 
@@ -56,7 +56,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[34](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=34:34)_, the term _[CL:2000091](http://purl.obolibrary.org/obo/CL_2000091)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _endometrial microvascular endothelial cells_ and the one in the **ontology** is _endometrial microvascular endothelial cell_. For reference, the given name/label **by SMEs** is _endometrial microvascular endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
