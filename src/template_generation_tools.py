@@ -149,13 +149,13 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   for term, label in terms_labels:
     row = ccf_tools_df[(ccf_tools_df['s'] == term) | (ccf_tools_df['o'] == term)].iloc[0]
     if row['s'] == term and row['slabel'].lower() != label.lower():
-      log_dict["diff_label"].append({"id": term, "label": label, "asct_label": row['slabel'], "user_label": row['user_slabel'], "rowNumber": int(row['row_number'])})
+      log_dict["diff_label"].append({"id": term, "label": label, "asct_label": row['slabel'], "user_label": row['user_slabel'], "row_number": int(row['row_number'])})
       # logger.warning(f"Different labels found for {term}. Uberongraph: {label} ; ASCT+b table: {row['slabel']}")
       ccf_tools_df.loc[(ccf_tools_df['s'] == term), 'slabel'] = label
       ccf_tools_df.loc[(ccf_tools_df['o'] == term), 'olabel'] = label
         
     if row['o'] == term and row['olabel'].lower() != label.lower():
-      log_dict["diff_label"].append({"id": term, "label": label, "asct_label": row['olabel'], "user_label": row['user_olabel'], "rowNumber": int(row['row_number'])})
+      log_dict["diff_label"].append({"id": term, "label": label, "asct_label": row['olabel'], "user_label": row['user_olabel'], "row_number": int(row['row_number'])})
       # logger.warning(f"Different labels found for {term}. Uberongraph: {label} ; ASCT+b table: {row['olabel']}")
       ccf_tools_df.loc[(ccf_tools_df['o'] == term), 'olabel'] = label
       ccf_tools_df.loc[(ccf_tools_df['s'] == term), 'slabel'] = label
