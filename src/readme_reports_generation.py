@@ -59,7 +59,7 @@ def generate_template_readme(file_name, table):
   markers_dict["no_parent"] = m_parent
 
   template.new_header(level=2, title="Terms from another ontology")
-  template.new_paragraph(text="This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).")
+  template.new_paragraph(text="This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).")
   template.new_line()
   template.new_line()
   
@@ -148,7 +148,7 @@ def generate_invalid_terms_report(log_dict, table):
       terms_report["blank"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, no term id was found for the name/label _{issue["user_label"]}_.\n\n'
     elif 'uberon' in issue["id"] or 'UBERON' in issue["id"] or 'cl' in issue["id"] or 'CL' in issue["id"]:
       terms_report["typos"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, it might have a typo in the term _{issue["id"]}_. The term id should have this pattern: UBERON:NNNNNNN or CL:NNNNNNN or PCL:NNNNNNN. The ontology name in upper case. N is a number and it should have exact 7 numbers after the colon. Please change it in the ASCT+B table.\n\n'
-    elif 'FMA' in issue["id"] or 'fma' in issue["id"] or 'LMHA' in issue["id"] or 'lmha' in issue["id"]:
+    elif 'FMA' in issue["id"] or 'fma' in issue["id"] or 'LMHA' in issue["id"] or 'lmha' in issue["id"] or 'ILX' in issue["id"]:
       terms_report["external"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, the term _{issue["id"]}_ is from another ontology that is not validated in this process.\n\n'
   
   if terms_report["blank"] == "":
