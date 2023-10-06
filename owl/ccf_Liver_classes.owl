@@ -171,6 +171,28 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002174 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002174">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S dubious_for_taxon T if it is probably the case that no instances of S can be found in any instance of T.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22293552"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002174</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dubious_for_taxon</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dubious_for_taxon</oboInOwl:shorthand>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation lacks a strong logical interpretation, but can be used in place of never_in_taxon where it is desirable to state that the definition of the class is too strict for the taxon under consideration, but placing a never_in_taxon link would result in a chain of inconsistencies that will take ongoing coordinated effort to resolve. Example: metencephalon in teleost</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this relation lacks a strong logical interpretation, but can be used in place of never_in_taxon where it is desirable to state that the definition of the class is too strict for the taxon under consideration, but placing a never_in_taxon link would result in a chain of inconsistencies that will take time to resolve. Example: metencephalon in teleost</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:label xml:lang="en">dubious for taxon</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dubious_for_taxon</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175">
@@ -437,6 +459,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
         <rdfs:label>in_subset</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_class_level -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_class_level"/>
     
 
 
@@ -722,7 +750,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">columnar/cuboidal epithelial cell</rdfs:label>
-        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">columnar cell ( larger cholangiocytes are more columnar) has ciliae</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">columnar cell (larger cholangiocytes are more columnar) has ciliae</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000075"/>
@@ -769,7 +797,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:13.760556</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:35.238462</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000091"/>
@@ -867,6 +895,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural killer cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NK</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural killer cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000623"/>
@@ -943,6 +972,35 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0000738 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000738">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An achromatic cell of the myeloid or lymphoid lineages capable of ameboid movement, found in blood or other tissue.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000751</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0549</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62852</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D007962</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12529</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leucocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">white blood cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leukocyte</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leukocyte</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000738"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An achromatic cell of the myeloid or lymphoid lineages capable of ameboid movement, found in blood or other tissue.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:add</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0-323-05290-0</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000784 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000784">
@@ -1010,6 +1068,31 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gd T cell</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/cl#abbreviation"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000909 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000909">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD8-positive, alpha-beta T cell that has differentiated into a memory T cell.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta memory T lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta memory T-cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta memory T-lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T.8Mem.Sp</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta memory T cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta memory T cell </skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000909"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD8-positive, alpha-beta T cell that has differentiated into a memory T cell.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:add</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20146720</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1129,6 +1212,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/CL_0002138 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002138">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A endothelial cell of a lymphatic vessel. The border of the oak leaf-shaped endothelial cell of initial lymphatics are joined by specialized buttons. The discontinuous feature of buttons distinguishes them from zippers in collecting lymphatics, but both types of junctions are composed of proteins typical of adherens junctions and tight junctions found in the endothelium of blood vessels. Buttons seal the sides of flaps of the oak leaf-shaped endothelial cell, leaving open the tips of flaps as routes for fluid entry without disassembly and reformation of intercellular junctions.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
@@ -1142,6 +1231,18 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of lymphatic vessel</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hepatic lymphatic endothelial cell</skos:prefLabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002138"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:34.354994</dc:date>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002138"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -1246,6 +1347,28 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endothelial cell that is part of the vein.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0009100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0009100">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fibroblast located in the portal triad. Hepatic portal fibroblast are a non-parenchymal cell population located adjacent to bile duct epithelia in liver and are distinct from stellate cells. They differentiate into fibrogenic myofibroblasts during chronic injury states producing high levels of collagen.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2825-0621"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-17T12:00:44+00:00</terms:date>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">portal fibroblast</oboInOwl:hasBroadSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hepatic portal fibroblast</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">portal fibroblast</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0009100"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fibroblast located in the portal triad. Hepatic portal fibroblast are a non-parenchymal cell population located adjacent to bile duct epithelia in liver and are distinct from stellate cells. They differentiate into fibrogenic myofibroblasts during chronic injury states producing high levels of collagen.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20209607</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:24814904</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-7655-4833</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1387,7 +1510,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:12.161664</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:34.354997</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000398"/>
@@ -1467,7 +1590,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:13.760539</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:35.238478</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000054"/>
@@ -1484,6 +1607,113 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:label>Homo sapiens</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001021">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An enclosed, cable-like bundle of axons in the peripheral nervous system originating in a nerve root in the central nervous system (or a condensed nervous structure) connecting with peripheral structures.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of tissue which is a fasiculated group of axons.[TAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous</obo:UBPROP_0000007>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0011070</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AEO:0000137</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAMS:n</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BIRNLEX:1615</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSA:0000098</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000925</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001027</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0772</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EHDAA2:0003137</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EHDAA:2851</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EHDAA:3776</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EHDAA:4657</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:32808</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:32815</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV:0100371</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBbt:00005105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:65132</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:65239</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAID:747</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAID:758</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0000217</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0000228</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D010525</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12466</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12768</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NLX:147826</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:244457007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:256864008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0007009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0027740</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0031119</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0000901</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Nervous_system</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:0000204</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:0003047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0007009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galen:Nerve</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerves</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peripheral nerve</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neural subtree</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001021</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001021"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An enclosed, cable-like bundle of axons in the peripheral nervous system originating in a nerve root in the central nervous system (or a condensed nervous structure) connecting with peripheral structures.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBbt:00005105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001021"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of tissue which is a fasiculated group of axons.[TAO]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-08-14</oboInOwl:date_retrieved>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0007009</oboInOwl:external_class>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO</oboInOwl:ontology>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001021"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0027740</owl:annotatedTarget>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Nerve</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001021"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0031119</owl:annotatedTarget>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Peripheral_Nerve</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001021"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerves</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0007009</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#PLURAL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001021"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peripheral nerve</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001021"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neural subtree</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:65132</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1534,7 +1764,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:15.464452</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:36.328089</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001193"/>
@@ -1674,7 +1904,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:12.161669</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:34.354991</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001281"/>
@@ -1778,7 +2008,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:12.161644</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:34.354983</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001282"/>
@@ -1835,6 +2065,102 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001473">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vessel that contains or conveys lymph, that originates as an interfibrillar or intercellular cleft or space in a tissue or organ, and that if small has no distinct walls or walls composed only of endothelial cells and if large resembles a vein in structure[BTO].</obo:IAO_0000115>
+        <obo:RO_0002174 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_8342"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A network of blunt ended vessels lacking direct connection to the blood vascular system. These vessels collect and drain fluids and macromolecules from interstitial spaces throughout the animal. They derive from a subpopulation of endothelial cells and have walls that are much thinner than the blood carrying vessels. Lymphatic vessels are usually classified as either superficial or deep.[TAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vessel that contains or conveys lymph.[AAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000003 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tetrapods have evolved distinct lymphatic systems, in which lymphatic capillaries help drain most of the tissues of the body.[well established][VHOG]</obo:UBPROP_0000003>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0011005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000752</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-2102</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000873</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:35532</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:30315</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0000138</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAT:0000443</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D042601</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C33038</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:279089004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0005105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0229889</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001249</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Lymphatic_vessel</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:0000375</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymph vessel</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vas lymphaticum</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001473</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphatic vessel</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphatic vessel</skos:prefLabel>
+        <foaf:depicted_by rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://upload.wikimedia.org/wikipedia/commons/4/44/Illu_lymph_capillary.jpg</foaf:depicted_by>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0229889</owl:annotatedTarget>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Lymphatic_Vessel</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vas lymphaticum</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Lymphatic_vessel</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vessel that contains or conveys lymph, that originates as an interfibrillar or intercellular cleft or space in a tissue or organ, and that if small has no distinct walls or walls composed only of endothelial cells and if large resembles a vein in structure[BTO].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000752</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Lymphatic_vessel</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002174"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_8342"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1152/japplphysiol.00201.2013</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A network of blunt ended vessels lacking direct connection to the blood vascular system. These vessels collect and drain fluids and macromolecules from interstitial spaces throughout the animal. They derive from a subpopulation of endothelial cells and have walls that are much thinner than the blood carrying vessels. Lymphatic vessels are usually classified as either superficial or deep.[TAO]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-08-14</oboInOwl:date_retrieved>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0005105</oboInOwl:external_class>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO</oboInOwl:ontology>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vessel that contains or conveys lymph.[AAO]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0011005</oboInOwl:external_class>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:EJS</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tetrapods have evolved distinct lymphatic systems, in which lymphatic capillaries help drain most of the tissues of the body.[well established][VHOG]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001249</oboInOwl:external_class>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.627</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://bgee.unil.ch/</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002017">
@@ -1882,7 +2208,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:15.464450</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:36.328105</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002017"/>
@@ -2071,6 +2397,37 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0016478"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:36.328107</dc:date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue with cells that deposit non-polarized extracellular matrix including connective tissue fibers and ground substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000034</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSPUB:0000170</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dx.plos.org/10.1371/journal.pone.0051070</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/obophenotype/uberon/issues/23</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the four types of tissue in traditional classifications. It is largely a category of exclusion rather than one with a precise definition, but there are certain characteristics shared by all or most tissues in this category, such as involvement in structure and support, derived from mesoderm, and characterized largely by the traits of non-living tissue.[AAO]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000098</oboInOwl:external_class>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:LAP</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portion of tissue that consists of mesodermally derived cells and intercellular matrix comprised of protein fibers and carbohydrates, which supports, ensheathes and binds together other tissues.[TAO]</owl:annotatedTarget>
         <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-08-14</oboInOwl:date_retrieved>
@@ -2111,37 +2468,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bindegewebe</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000421</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0016478"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:15.464434</dc:date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue with cells that deposit non-polarized extracellular matrix including connective tissue fibers and ground substance.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000034</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSPUB:0000170</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VSAO:0000017</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dx.plos.org/10.1371/journal.pone.0051070</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/obophenotype/uberon/issues/23</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the four types of tissue in traditional classifications. It is largely a category of exclusion rather than one with a precise definition, but there are certain characteristics shared by all or most tissues in this category, such as involvement in structure and support, derived from mesoderm, and characterized largely by the traits of non-living tissue.[AAO]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
-        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000098</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:LAP</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -2277,7 +2603,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:12.161667</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:34.354961</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004647"/>
@@ -2391,7 +2717,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:15.198310</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:36.125880</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005452"/>
@@ -2481,7 +2807,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:12.161671</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:34.354986</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006729"/>
@@ -2575,7 +2901,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-04T07:02:12.161674</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-10-06T09:09:34.354989</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006841"/>

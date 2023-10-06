@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Heart (2023-10-04)
+ASCT+B Validation Reports for Heart (2023-10-06)
 ================================================
 
 Table of contents
@@ -32,8 +32,6 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
-
 
 ## Typos or punctuation mistakes
 
@@ -58,13 +56,11 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[131](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=131:131)_, no term id was found for the name/label _septal perforating arteries_.
-
-1. In row _[132](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=132:132)_, no term id was found for the name/label _septal perforating arteries_.
-
-1. In row _[133](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=133:133)_, no term id was found for the name/label _septal perforating arteries_.
+1. No term id was found for the name/label _septal perforating arteries_ in the following 3 rows _[131](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=131:131)_, _[132](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=132:132)_, _[133](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=133:133)_.
 
 
 ## Blank ontology ID missing parent
@@ -72,223 +68,57 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-- No issue found.
+- No issues found.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-1. In row _[13](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=13:13)_, the term _FMA:3823_ is from another ontology that is not validated in this process.
+1. The term _FMA:3823_ in the following 3 rows _[13](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=13:13)_, _[14](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=14:14)_, _[15](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=15:15)_ is from another ontology that is not validated in this process.
 
-1. In row _[14](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=14:14)_, the term _FMA:3823_ is from another ontology that is not validated in this process.
+1. The term _FMA:76767_ in the following 6 rows _[31](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=31:31)_, _[32](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=32:32)_, _[33](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=33:33)_, _[174](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=174:174)_, _[175](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=175:175)_, _[176](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=176:176)_ is from another ontology that is not validated in this process.
 
-1. In row _[15](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=15:15)_, the term _FMA:3823_ is from another ontology that is not validated in this process.
+1. The term _FMA:83531_ in the following 4 rows _[34](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=34:34)_, _[35](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=35:35)_, _[36](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=36:36)_, _[37](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=37:37)_ is from another ontology that is not validated in this process.
 
-1. In row _[31](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=31:31)_, the term _FMA:76767_ is from another ontology that is not validated in this process.
+1. The term _FMA:3851_ in the following 3 rows _[41](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=41:41)_, _[42](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=42:42)_, _[43](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=43:43)_ is from another ontology that is not validated in this process.
 
-1. In row _[32](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=32:32)_, the term _FMA:76767_ is from another ontology that is not validated in this process.
+1. The term _FMA:83532_ in the following 9 rows _[55](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=59:59)_, _[87](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=87:87)_, _[88](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=88:88)_, _[89](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=89:89)_, _[90](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=90:90)_ is from another ontology that is not validated in this process.
 
-1. In row _[33](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=33:33)_, the term _FMA:76767_ is from another ontology that is not validated in this process.
+1. The term _FMA:83539_ in the following 24 rows _[60](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=65:65)_, _[144](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=144:144)_, _[145](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=145:145)_, _[146](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=146:146)_, _[147](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=147:147)_, _[148](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=148:148)_, _[149](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=149:149)_, _[150](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=150:150)_, _[151](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=151:151)_, _[152](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=152:152)_, _[153](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=153:153)_, _[154](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=154:154)_, _[155](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=155:155)_, _[156](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=156:156)_, _[157](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=157:157)_, _[212](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=212:212)_, _[213](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=213:213)_, _[214](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=214:214)_, _[215](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=215:215)_ is from another ontology that is not validated in this process.
 
-1. In row _[34](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=34:34)_, the term _FMA:83531_ is from another ontology that is not validated in this process.
+1. The term _FMA:49913_ in the following 3 rows _[72](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=72:72)_, _[73](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=73:73)_, _[74](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=74:74)_ is from another ontology that is not validated in this process.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=35:35)_, the term _FMA:83531_ is from another ontology that is not validated in this process.
+1. The term _FMA:49916_ in the following 3 rows _[75](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=75:75)_, _[76](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=76:76)_, _[77](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=77:77)_ is from another ontology that is not validated in this process.
 
-1. In row _[36](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=36:36)_, the term _FMA:83531_ is from another ontology that is not validated in this process.
+1. The term _FMA:49911_ in the following 3 rows _[78](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=79:79)_, _[80](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=80:80)_ is from another ontology that is not validated in this process.
 
-1. In row _[37](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=37:37)_, the term _FMA:83531_ is from another ontology that is not validated in this process.
+1. The term _FMA:49914_ in the following 3 rows _[81](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=81:81)_, _[82](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=82:82)_, _[83](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=83:83)_ is from another ontology that is not validated in this process.
 
-1. In row _[41](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=41:41)_, the term _FMA:3851_ is from another ontology that is not validated in this process.
+1. The term _FMA:4715_ in the following 3 rows _[84](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=84:84)_, _[85](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=85:85)_, _[86](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=86:86)_ is from another ontology that is not validated in this process.
 
-1. In row _[42](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=42:42)_, the term _FMA:3851_ is from another ontology that is not validated in this process.
+1. The term _FMA:3860_ in the following 3 rows _[110](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=110:110)_, _[111](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=111:111)_, _[112](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=112:112)_ is from another ontology that is not validated in this process.
 
-1. In row _[43](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=43:43)_, the term _FMA:3851_ is from another ontology that is not validated in this process.
+1. The term _FMA:3902_ in the following 3 rows _[113](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=113:113)_, _[114](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=114:114)_, _[115](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=115:115)_ is from another ontology that is not validated in this process.
 
-1. In row _[55](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=55:55)_, the term _FMA:83532_ is from another ontology that is not validated in this process.
+1. The term _FMA:3835_ in the following 3 rows _[116](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=116:116)_, _[117](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=117:117)_, _[118](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=118:118)_ is from another ontology that is not validated in this process.
 
-1. In row _[56](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=56:56)_, the term _FMA:83532_ is from another ontology that is not validated in this process.
+1. The term _FMA:4708_ in the following 3 rows _[119](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=119:119)_, _[120](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=120:120)_, _[121](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=121:121)_ is from another ontology that is not validated in this process.
 
-1. In row _[57](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=57:57)_, the term _FMA:83532_ is from another ontology that is not validated in this process.
+1. The term _FMA:4712_ in the following 3 rows _[122](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=122:122)_, _[123](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=123:123)_, _[124](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=124:124)_ is from another ontology that is not validated in this process.
 
-1. In row _[58](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=58:58)_, the term _FMA:83532_ is from another ontology that is not validated in this process.
+1. The term _FMA:3862_ in the following 3 rows _[125](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=125:125)_, _[126](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=126:126)_, _[127](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=127:127)_ is from another ontology that is not validated in this process.
 
-1. In row _[59](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=59:59)_, the term _FMA:83532_ is from another ontology that is not validated in this process.
+1. The term _FMA:3840_ in the following 3 rows _[128](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=128:128)_, _[129](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=129:129)_, _[130](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=130:130)_ is from another ontology that is not validated in this process.
 
-1. In row _[60](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=60:60)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
+1. The term _FMA:15736_ in the following 3 rows _[168](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=168:168)_, _[169](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=169:169)_, _[170](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=170:170)_ is from another ontology that is not validated in this process.
 
-1. In row _[61](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=61:61)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
+1. The term _FMA:3818_ in the following 3 rows _[171](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=171:171)_, _[172](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=172:172)_, _[173](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=173:173)_ is from another ontology that is not validated in this process.
 
-1. In row _[62](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=62:62)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
+1. The term _FMA:9535_ in the following 4 rows _[183](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=183:183)_, _[184](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=184:184)_, _[185](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=185:185)_, _[186](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=186:186)_ is from another ontology that is not validated in this process.
 
-1. In row _[63](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=63:63)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=64:64)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=65:65)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=72:72)_, the term _FMA:49913_ is from another ontology that is not validated in this process.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=73:73)_, the term _FMA:49913_ is from another ontology that is not validated in this process.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=74:74)_, the term _FMA:49913_ is from another ontology that is not validated in this process.
-
-1. In row _[75](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=75:75)_, the term _FMA:49916_ is from another ontology that is not validated in this process.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=76:76)_, the term _FMA:49916_ is from another ontology that is not validated in this process.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=77:77)_, the term _FMA:49916_ is from another ontology that is not validated in this process.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=78:78)_, the term _FMA:49911_ is from another ontology that is not validated in this process.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=79:79)_, the term _FMA:49911_ is from another ontology that is not validated in this process.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=80:80)_, the term _FMA:49911_ is from another ontology that is not validated in this process.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=81:81)_, the term _FMA:49914_ is from another ontology that is not validated in this process.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=82:82)_, the term _FMA:49914_ is from another ontology that is not validated in this process.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=83:83)_, the term _FMA:49914_ is from another ontology that is not validated in this process.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=84:84)_, the term _FMA:4715_ is from another ontology that is not validated in this process.
-
-1. In row _[85](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=85:85)_, the term _FMA:4715_ is from another ontology that is not validated in this process.
-
-1. In row _[86](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=86:86)_, the term _FMA:4715_ is from another ontology that is not validated in this process.
-
-1. In row _[87](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=87:87)_, the term _FMA:83532_ is from another ontology that is not validated in this process.
-
-1. In row _[88](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=88:88)_, the term _FMA:83532_ is from another ontology that is not validated in this process.
-
-1. In row _[89](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=89:89)_, the term _FMA:83532_ is from another ontology that is not validated in this process.
-
-1. In row _[90](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=90:90)_, the term _FMA:83532_ is from another ontology that is not validated in this process.
-
-1. In row _[110](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=110:110)_, the term _FMA:3860_ is from another ontology that is not validated in this process.
-
-1. In row _[111](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=111:111)_, the term _FMA:3860_ is from another ontology that is not validated in this process.
-
-1. In row _[112](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=112:112)_, the term _FMA:3860_ is from another ontology that is not validated in this process.
-
-1. In row _[113](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=113:113)_, the term _FMA:3902_ is from another ontology that is not validated in this process.
-
-1. In row _[114](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=114:114)_, the term _FMA:3902_ is from another ontology that is not validated in this process.
-
-1. In row _[115](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=115:115)_, the term _FMA:3902_ is from another ontology that is not validated in this process.
-
-1. In row _[116](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=116:116)_, the term _FMA:3835_ is from another ontology that is not validated in this process.
-
-1. In row _[117](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=117:117)_, the term _FMA:3835_ is from another ontology that is not validated in this process.
-
-1. In row _[118](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=118:118)_, the term _FMA:3835_ is from another ontology that is not validated in this process.
-
-1. In row _[119](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=119:119)_, the term _FMA:4708_ is from another ontology that is not validated in this process.
-
-1. In row _[120](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=120:120)_, the term _FMA:4708_ is from another ontology that is not validated in this process.
-
-1. In row _[121](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=121:121)_, the term _FMA:4708_ is from another ontology that is not validated in this process.
-
-1. In row _[122](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=122:122)_, the term _FMA:4712_ is from another ontology that is not validated in this process.
-
-1. In row _[123](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=123:123)_, the term _FMA:4712_ is from another ontology that is not validated in this process.
-
-1. In row _[124](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=124:124)_, the term _FMA:4712_ is from another ontology that is not validated in this process.
-
-1. In row _[125](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=125:125)_, the term _FMA:3862_ is from another ontology that is not validated in this process.
-
-1. In row _[126](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=126:126)_, the term _FMA:3862_ is from another ontology that is not validated in this process.
-
-1. In row _[127](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=127:127)_, the term _FMA:3862_ is from another ontology that is not validated in this process.
-
-1. In row _[128](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=128:128)_, the term _FMA:3840_ is from another ontology that is not validated in this process.
-
-1. In row _[129](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=129:129)_, the term _FMA:3840_ is from another ontology that is not validated in this process.
-
-1. In row _[130](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=130:130)_, the term _FMA:3840_ is from another ontology that is not validated in this process.
-
-1. In row _[144](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=144:144)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[145](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=145:145)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[146](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=146:146)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[147](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=147:147)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[148](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=148:148)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[149](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=149:149)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[150](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=150:150)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[151](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=151:151)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[152](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=152:152)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[153](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=153:153)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[154](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=154:154)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[155](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=155:155)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[156](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=156:156)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[157](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=157:157)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[168](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=168:168)_, the term _FMA:15736_ is from another ontology that is not validated in this process.
-
-1. In row _[169](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=169:169)_, the term _FMA:15736_ is from another ontology that is not validated in this process.
-
-1. In row _[170](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=170:170)_, the term _FMA:15736_ is from another ontology that is not validated in this process.
-
-1. In row _[171](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=171:171)_, the term _FMA:3818_ is from another ontology that is not validated in this process.
-
-1. In row _[172](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=172:172)_, the term _FMA:3818_ is from another ontology that is not validated in this process.
-
-1. In row _[173](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=173:173)_, the term _FMA:3818_ is from another ontology that is not validated in this process.
-
-1. In row _[174](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=174:174)_, the term _FMA:76767_ is from another ontology that is not validated in this process.
-
-1. In row _[175](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=175:175)_, the term _FMA:76767_ is from another ontology that is not validated in this process.
-
-1. In row _[176](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=176:176)_, the term _FMA:76767_ is from another ontology that is not validated in this process.
-
-1. In row _[183](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=183:183)_, the term _FMA:9535_ is from another ontology that is not validated in this process.
-
-1. In row _[184](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=184:184)_, the term _FMA:9535_ is from another ontology that is not validated in this process.
-
-1. In row _[185](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=185:185)_, the term _FMA:9535_ is from another ontology that is not validated in this process.
-
-1. In row _[186](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=186:186)_, the term _FMA:9535_ is from another ontology that is not validated in this process.
-
-1. In row _[187](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=187:187)_, the term _FMA:7272_ is from another ontology that is not validated in this process.
-
-1. In row _[188](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=188:188)_, the term _FMA:7272_ is from another ontology that is not validated in this process.
-
-1. In row _[189](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=189:189)_, the term _FMA:7272_ is from another ontology that is not validated in this process.
-
-1. In row _[190](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=190:190)_, the term _FMA:7272_ is from another ontology that is not validated in this process.
-
-1. In row _[191](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=191:191)_, the term _FMA:7272_ is from another ontology that is not validated in this process.
-
-1. In row _[192](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=192:192)_, the term _FMA:7272_ is from another ontology that is not validated in this process.
-
-1. In row _[193](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=193:193)_, the term _FMA:7272_ is from another ontology that is not validated in this process.
-
-1. In row _[194](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=194:194)_, the term _FMA:7272_ is from another ontology that is not validated in this process.
-
-1. In row _[195](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=195:195)_, the term _FMA:7272_ is from another ontology that is not validated in this process.
-
-1. In row _[196](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=196:196)_, the term _FMA:7272_ is from another ontology that is not validated in this process.
-
-1. In row _[212](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=212:212)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[213](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=213:213)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[214](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=214:214)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
-
-1. In row _[215](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=215:215)_, the term _FMA:83539_ is from another ontology that is not validated in this process.
+1. The term _FMA:7272_ in the following 10 rows _[187](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=187:187)_, _[188](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=188:188)_, _[189](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=189:189)_, _[190](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=190:190)_, _[191](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=191:191)_, _[192](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=192:192)_, _[193](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=193:193)_, _[194](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=194:194)_, _[195](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=195:195)_, _[196](https://docs.google.com/spreadsheets/d/107Mt6KUlHxQIv3nuly6Mv8XdmxBCmgA7xjv1PEcfrqk/edit#gid=1759721736&range=196:196)_ is from another ontology that is not validated in this process.
 
 
 # Relationship reports

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Skin (2023-10-04)
+ASCT+B Validation Reports for Skin (2023-10-06)
 ===============================================
 
 Table of contents
@@ -32,8 +32,6 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
-
 
 ## Typos or punctuation mistakes
 
@@ -52,17 +50,17 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[50](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=50:50)_, the term _[CL:0000359](http://purl.obolibrary.org/obo/CL_0000359)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _vascular associated smooth muscle cell._ and the one in the **ontology** is _vascular associated smooth muscle cell_. For reference, the given name/label **by SMEs** is _Perivascular smooth muscle cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[24](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=24:24)_, the term _[CL:0000151](http://purl.obolibrary.org/obo/CL_0000151)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _sebum secreting cell_ and the one in the **ontology** is _secretory cell_. For reference, the given name/label **by SMEs** is _Germinative (epithelial) cell, Sebocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[22](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=22:22)_, no term id was found for the name/label _Keratinocyte (Onychocyte)_.
+1. No term id was found for the name/label _Keratinocyte (Onychocyte)_ in the following 1 row _[22](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=22:22)_.
 
 
 ## Blank ontology ID missing parent
@@ -70,13 +68,13 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-- No issue found.
+- No issues found.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 
@@ -184,7 +182,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 |  5 | CL:0002620 | skin fibroblast                        | Fibroblast                                   | UBERON:0002072 | hypodermis                      | Subcutaneous            | [57](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=57:57) |   3.03534e+06 |
 |  6 | CL:0000910 | cytotoxic T cell                       | T killer                                     | UBERON:0002072 | hypodermis                      | Subcutaneous            | [61](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=61:61) |   3.03534e+06 |
 |  7 | CL:0002138 | endothelial cell of lymphatic vessel   | Lymphatic                                    | UBERON:0002072 | hypodermis                      | Subcutaneous            | [55](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=55:55) |   3.03534e+06 |
-|  8 | CL:0000359 | vascular associated smooth muscle cell | Perivascular smooth muscle cell              | UBERON:0002072 | hypodermis                      | Subcutaneous            | [70](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=70:70) |   3.03534e+06 |
+|  8 | CL:0000359 | smooth muscle cell                     | Perivascular smooth muscle cell              | UBERON:0002072 | hypodermis                      | Subcutaneous            | [70](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=70:70) |   3.03534e+06 |
 | 10 | CL:0000771 | eosinophil                             | Eosinophil                                   | UBERON:0002072 | hypodermis                      | Subcutaneous            | [65](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=65:65) |   3.03534e+06 |
 | 11 | CL:0000236 | B cell                                 | B cell                                       | UBERON:0002072 | hypodermis                      | Subcutaneous            | [63](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=63:63) |   3.03534e+06 |
 | 12 | CL:0000815 | regulatory T cell                      | T reg                                        | UBERON:0002072 | hypodermis                      | Subcutaneous            | [62](https://docs.google.com/spreadsheets/d/1q2tYQ_uNh5O_eLOMUZm64ncCUeJc8mrern3zkRX3Ppw/edit#gid=269383687&range=62:62) |   3.03534e+06 |

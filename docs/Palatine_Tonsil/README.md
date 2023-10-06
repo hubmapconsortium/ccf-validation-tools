@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Palatine_Tonsil (2023-10-04)
+ASCT+B Validation Reports for Palatine_Tonsil (2023-10-06)
 ==========================================================
 
 Table of contents
@@ -32,8 +32,6 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
-
 
 ## Typos or punctuation mistakes
 
@@ -58,161 +56,31 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25)_, no term id was found for the name/label _plasma cell CD21_.
+1. No term id was found for the name/label _plasma cell CD21_ in the following 1 row _[25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25)_.
 
-1. In row _[31](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=31:31)_, no term id was found for the name/label _peritonsillar plexus of veins_.
+1. No term id was found for the name/label _peritonsillar plexus of veins_ in the following 1 row _[31](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=31:31)_.
 
-1. In row _[32](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=32:32)_, no term id was found for the name/label _tonsil T cell zone_.
+1. No term id was found for the name/label _tonsil T cell zone_ in the following 4 rows _[32](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=32:32)_, _[33](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=33:33)_, _[34](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=34:34)_, _[35](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=35:35)_.
 
-1. In row _[33](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=33:33)_, no term id was found for the name/label _tonsil T cell zone_.
+1. No term id was found for the name/label _tonsil follicle_ in the following 30 rows _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, _[37](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=37:37)_, _[38](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=38:38)_, _[39](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=39:39)_, _[40](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=40:40)_, _[41](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=41:41)_, _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, _[43](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=43:43)_, _[44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=45:45)_, _[46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=47:47)_, _[48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48)_, _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_.
 
-1. In row _[34](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=34:34)_, no term id was found for the name/label _tonsil T cell zone_.
+1. No term id was found for the name/label _tonsil secondary follicle_ in the following 30 rows _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, _[37](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=37:37)_, _[38](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=38:38)_, _[39](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=39:39)_, _[40](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=40:40)_, _[41](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=41:41)_, _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, _[43](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=43:43)_, _[44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=45:45)_, _[46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=47:47)_, _[48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48)_, _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=35:35)_, no term id was found for the name/label _tonsil T cell zone_.
+1. No term id was found for the name/label _Cycling B_ in the following 3 rows _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_.
 
-1. In row _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, no term id was found for the name/label _tonsil follicle_.
+1. No term id was found for the name/label _germinal center B cell CD21_ in the following 2 rows _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_.
 
-1. In row _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, no term id was found for the name/label _tonsil secondary follicle_.
+1. No term id was found for the name/label _tonsil germinal center mantle zone_ in the following 3 rows _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_.
 
-1. In row _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, no term id was found for the name/label _Cycling B_.
+1. No term id was found for the name/label _Centroblast_ in the following 1 row _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_.
 
-1. In row _[37](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=37:37)_, no term id was found for the name/label _tonsil follicle_.
+1. No term id was found for the name/label _tonsil germinal center light zone_ in the following 1 row _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_.
 
-1. In row _[37](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=37:37)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[38](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=38:38)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[38](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=38:38)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[39](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=39:39)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[39](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=39:39)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[40](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=40:40)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[40](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=40:40)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[41](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=41:41)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[41](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=41:41)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, no term id was found for the name/label _Cycling B_.
-
-1. In row _[43](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=43:43)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[43](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=43:43)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=45:45)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=45:45)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[47](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=47:47)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[47](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=47:47)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, no term id was found for the name/label _germinal center B cell CD21_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, no term id was found for the name/label _tonsil germinal center mantle zone_.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, no term id was found for the name/label _tonsil germinal center mantle zone_.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_, no term id was found for the name/label _tonsil germinal center mantle zone_.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, no term id was found for the name/label _Centroblast_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, no term id was found for the name/label _Cycling B_.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, no term id was found for the name/label _germinal center B cell CD21_.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_, no term id was found for the name/label _tonsil germinal center light zone_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_, no term id was found for the name/label _tonsil germinal center dark zone_.
+1. No term id was found for the name/label _tonsil germinal center dark zone_ in the following 1 row _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_.
 
 
 ## Blank ontology ID missing parent
@@ -220,45 +88,19 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-- No issue found.
+- No issues found.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-1. In row _[16](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=16:16)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
+1. The term _FMA:55221_ in the following 14 rows _[16](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=16:16)_, _[17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17)_, _[18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18)_, _[19](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=19:19)_, _[20](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=20:20)_, _[21](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=21:21)_, _[22](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=22:22)_, _[23](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=23:23)_, _[24](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=24:24)_, _[25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25)_, _[32](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=32:32)_, _[33](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=33:33)_, _[34](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=34:34)_, _[35](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=35:35)_ is from another ontology that is not validated in this process.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
+1. The term _FMA:49555_ in the following 1 row _[27](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=27:27)_ is from another ontology that is not validated in this process.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[19](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=19:19)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[20](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=20:20)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[21](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=21:21)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[22](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=22:22)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[23](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=23:23)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[24](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=24:24)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=27:27)_, the term _FMA:49555_ is from another ontology that is not validated in this process.
-
-1. In row _[29](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=29:29)_, the term _FMA:49497_ is from another ontology that is not validated in this process.
-
-1. In row _[32](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=32:32)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[33](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=33:33)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[34](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=34:34)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[35](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=35:35)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
+1. The term _FMA:49497_ in the following 1 row _[29](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=29:29)_ is from another ontology that is not validated in this process.
 
 
 # Relationship reports

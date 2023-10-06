@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_vasculature (2023-10-04)
+ASCT+B Validation Reports for Lymph_vasculature (2023-10-06)
 ============================================================
 
 Table of contents
@@ -32,8 +32,6 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
-
 
 ## Typos or punctuation mistakes
 
@@ -58,315 +56,115 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[44](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=44:44)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+1. No term id was found for the name/label _medial lymphatic pathway of upper arm_ in the following 8 rows _[44](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=45:45)_, _[46](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_.
 
-1. In row _[45](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=45:45)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+1. No term id was found for the name/label _epitrochlear lymph node_ in the following 7 rows _[45](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=45:45)_, _[46](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_.
 
-1. In row _[45](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=45:45)_, no term id was found for the name/label _epitrochlear lymph node_.
+1. No term id was found for the name/label _superficial ulnar lymphatic channel_ in the following 6 rows _[46](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_.
 
-1. In row _[46](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=46:46)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+1. No term id was found for the name/label _little finger lateral lymphatic channel_ in the following 1 row _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_.
 
-1. In row _[46](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=46:46)_, no term id was found for the name/label _epitrochlear lymph node_.
+1. No term id was found for the name/label _little finger medial lymphatic channel_ in the following 1 row _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_.
 
-1. In row _[46](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=46:46)_, no term id was found for the name/label _superficial ulnar lymphatic channel_.
+1. No term id was found for the name/label _ring finger lateral lymphatic channel_ in the following 1 row _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_.
 
-1. In row _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+1. No term id was found for the name/label _ring finger medial lymphatic channel_ in the following 1 row _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_.
 
-1. In row _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, no term id was found for the name/label _epitrochlear lymph node_.
+1. No term id was found for the name/label _middle finger medial lymphatic channel_ in the following 1 row _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_.
 
-1. In row _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, no term id was found for the name/label _superficial ulnar lymphatic channel_.
+1. No term id was found for the name/label _epitrochlear lymph node #2_ in the following 1 row _[54](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=54:54)_.
 
-1. In row _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, no term id was found for the name/label _little finger lateral lymphatic channel_.
+1. No term id was found for the name/label _superior ulnar lymph node_ in the following 20 rows _[55](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_.
 
-1. In row _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+1. No term id was found for the name/label _deep ulnar lymphatic channel_ in the following 5 rows _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_.
 
-1. In row _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, no term id was found for the name/label _epitrochlear lymph node_.
+1. No term id was found for the name/label _ring finger medial lymphatic channel #2_ in the following 1 row _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_.
 
-1. In row _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, no term id was found for the name/label _superficial ulnar lymphatic channel_.
+1. No term id was found for the name/label _little finger medial lymphatic channel #2_ in the following 1 row _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_.
 
-1. In row _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, no term id was found for the name/label _little finger medial lymphatic channel_.
+1. No term id was found for the name/label _little finger lateral lymphatic channel #2_ in the following 1 row _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_.
 
-1. In row _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+1. No term id was found for the name/label _palmar arch lymphatic channel #3_ in the following 1 row _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_.
 
-1. In row _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, no term id was found for the name/label _epitrochlear lymph node_.
+1. No term id was found for the name/label _anterior interosseous lymphatic channel_ in the following 12 rows _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_.
 
-1. In row _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, no term id was found for the name/label _superficial ulnar lymphatic channel_.
+1. No term id was found for the name/label _palmar arch lymphatic channel_ in the following 11 rows _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_.
 
-1. In row _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, no term id was found for the name/label _ring finger lateral lymphatic channel_.
+1. No term id was found for the name/label _ring finger medial lymphatic channel #3_ in the following 1 row _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_.
 
-1. In row _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+1. No term id was found for the name/label _little finger medial lymphatic channel #3_ in the following 1 row _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_.
 
-1. In row _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, no term id was found for the name/label _epitrochlear lymph node_.
+1. No term id was found for the name/label _little finger lateral lymphatic channel #3_ in the following 1 row _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_.
 
-1. In row _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, no term id was found for the name/label _superficial ulnar lymphatic channel_.
+1. No term id was found for the name/label _middle finger lateral lymphatic channel #3_ in the following 1 row _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_.
 
-1. In row _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, no term id was found for the name/label _ring finger medial lymphatic channel_.
+1. No term id was found for the name/label _index finger lateral lymphatic channel #3_ in the following 1 row _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_.
 
-1. In row _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_, no term id was found for the name/label _medial lymphatic pathway of upper arm_.
+1. No term id was found for the name/label _index finger medial lymphatic channel #3_ in the following 1 row _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_.
 
-1. In row _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_, no term id was found for the name/label _epitrochlear lymph node_.
+1. No term id was found for the name/label _thumb lateral lymphatic channel #3_ in the following 1 row _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_.
 
-1. In row _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_, no term id was found for the name/label _superficial ulnar lymphatic channel_.
+1. No term id was found for the name/label _thumb medial lymphatic channel #3_ in the following 1 row _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_.
 
-1. In row _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_, no term id was found for the name/label _middle finger medial lymphatic channel_.
+1. No term id was found for the name/label _middle finger medial lymphatic channel #3_ in the following 1 row _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_.
 
-1. In row _[54](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=54:54)_, no term id was found for the name/label _epitrochlear lymph node #2_.
+1. No term id was found for the name/label _ring finger lateral lymphatic channel #3_ in the following 1 row _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_.
 
-1. In row _[55](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=55:55)_, no term id was found for the name/label _superior ulnar lymph node_.
+1. No term id was found for the name/label _posterior interosseous lymphatic channel_ in the following 2 rows _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_.
 
-1. In row _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, no term id was found for the name/label _superior ulnar lymph node_.
+1. No term id was found for the name/label _palmar arch lymphatic channel #2_ in the following 1 row _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_.
 
-1. In row _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, no term id was found for the name/label _deep ulnar lymphatic channel_.
+1. No term id was found for the name/label _cubital fossa lymph node_ in the following 10 rows _[75](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=75:75)_, _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_.
 
-1. In row _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, no term id was found for the name/label _superior ulnar lymph node_.
+1. No term id was found for the name/label _deep radial lymphatic channel_ in the following 9 rows _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_.
 
-1. In row _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, no term id was found for the name/label _deep ulnar lymphatic channel_.
+1. No term id was found for the name/label _middle finger lateral lymphatic channel #2_ in the following 1 row _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_.
 
-1. In row _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, no term id was found for the name/label _ring finger medial lymphatic channel #2_.
+1. No term id was found for the name/label _index finger lateral lymphatic channel #2_ in the following 1 row _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_.
 
-1. In row _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, no term id was found for the name/label _superior ulnar lymph node_.
+1. No term id was found for the name/label _index finger medial lymphatic channel #2_ in the following 1 row _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_.
 
-1. In row _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, no term id was found for the name/label _deep ulnar lymphatic channel_.
+1. No term id was found for the name/label _thumb lateral lymphatic channel #2_ in the following 1 row _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_.
 
-1. In row _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, no term id was found for the name/label _little finger medial lymphatic channel #2_.
+1. No term id was found for the name/label _thumb medial lymphatic channel #2_ in the following 1 row _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_.
 
-1. In row _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, no term id was found for the name/label _superior ulnar lymph node_.
+1. No term id was found for the name/label _middle finger medial lymphatic channel #2_ in the following 1 row _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_.
 
-1. In row _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, no term id was found for the name/label _deep ulnar lymphatic channel_.
+1. No term id was found for the name/label _ring finger lateral lymphatic channel #2_ in the following 1 row _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_.
 
-1. In row _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, no term id was found for the name/label _little finger lateral lymphatic channel #2_.
+1. No term id was found for the name/label _palmar arch lymphatic channel #4_ in the following 1 row _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_.
 
-1. In row _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, no term id was found for the name/label _superior ulnar lymph node_.
+1. No term id was found for the name/label _lateral lymphatic pathway of upper arm_ in the following 7 rows _[89](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=89:89)_, _[90](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=90:90)_, _[91](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=91:91)_, _[92](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=92:92)_, _[93](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=93:93)_, _[94](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=94:94)_, _[95](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=95:95)_.
 
-1. In row _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, no term id was found for the name/label _deep ulnar lymphatic channel_.
+1. No term id was found for the name/label _radial lymphatic channel_ in the following 6 rows _[90](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=90:90)_, _[91](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=91:91)_, _[92](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=92:92)_, _[93](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=93:93)_, _[94](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=94:94)_, _[95](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=95:95)_.
 
-1. In row _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, no term id was found for the name/label _palmar arch lymphatic channel #3_.
+1. No term id was found for the name/label _middle finger lateral lymphatic channel_ in the following 1 row _[91](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=91:91)_.
 
-1. In row _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, no term id was found for the name/label _superior ulnar lymph node_.
+1. No term id was found for the name/label _index finger lateral lymphatic channel_ in the following 1 row _[92](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=92:92)_.
 
-1. In row _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
+1. No term id was found for the name/label _index finger medial lymphatic channel_ in the following 1 row _[93](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=93:93)_.
 
-1. In row _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, no term id was found for the name/label _superior ulnar lymph node_.
+1. No term id was found for the name/label _thumb lateral lymphatic channel_ in the following 1 row _[94](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=94:94)_.
 
-1. In row _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
+1. No term id was found for the name/label _thumb medial lymphatic channel_ in the following 1 row _[95](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=95:95)_.
 
-1. In row _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, no term id was found for the name/label _palmar arch lymphatic channel_.
+1. No term id was found for the name/label _subclavicular lymph node_ in the following 2 rows _[96](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=96:96)_, _[97](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=97:97)_.
 
-1. In row _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, no term id was found for the name/label _superior ulnar lymph node_.
+1. No term id was found for the name/label _lateral lymphatic pathway of upper arm #2_ in the following 1 row _[97](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=97:97)_.
 
-1. In row _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
+1. No term id was found for the name/label _posterior extrathoracic lymph node_ in the following 7 rows _[99](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=99:99)_, _[100](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=100:100)_, _[101](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=101:101)_, _[102](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=102:102)_, _[103](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=103:103)_, _[104](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=104:104)_, _[105](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=105:105)_.
 
-1. In row _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, no term id was found for the name/label _palmar arch lymphatic channel_.
+1. No term id was found for the name/label _circumflex lymphatic channel_ in the following 1 row _[102](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=102:102)_.
 
-1. In row _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, no term id was found for the name/label _ring finger medial lymphatic channel #3_.
+1. No term id was found for the name/label _deep lymph node of neck_ in the following 3 rows _[103](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=103:103)_, _[104](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=104:104)_, _[105](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=105:105)_.
 
-1. In row _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, no term id was found for the name/label _superior ulnar lymph node_.
+1. No term id was found for the name/label _supraspinatus fossa lymph node_ in the following 2 rows _[104](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=104:104)_, _[105](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=105:105)_.
 
-1. In row _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, no term id was found for the name/label _palmar arch lymphatic channel_.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, no term id was found for the name/label _little finger medial lymphatic channel #3_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, no term id was found for the name/label _superior ulnar lymph node_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, no term id was found for the name/label _palmar arch lymphatic channel_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, no term id was found for the name/label _little finger lateral lymphatic channel #3_.
-
-1. In row _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, no term id was found for the name/label _superior ulnar lymph node_.
-
-1. In row _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
-
-1. In row _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, no term id was found for the name/label _palmar arch lymphatic channel_.
-
-1. In row _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, no term id was found for the name/label _middle finger lateral lymphatic channel #3_.
-
-1. In row _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, no term id was found for the name/label _superior ulnar lymph node_.
-
-1. In row _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
-
-1. In row _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, no term id was found for the name/label _palmar arch lymphatic channel_.
-
-1. In row _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, no term id was found for the name/label _index finger lateral lymphatic channel #3_.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, no term id was found for the name/label _superior ulnar lymph node_.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, no term id was found for the name/label _palmar arch lymphatic channel_.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, no term id was found for the name/label _index finger medial lymphatic channel #3_.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, no term id was found for the name/label _superior ulnar lymph node_.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, no term id was found for the name/label _palmar arch lymphatic channel_.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, no term id was found for the name/label _thumb lateral lymphatic channel #3_.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, no term id was found for the name/label _superior ulnar lymph node_.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, no term id was found for the name/label _palmar arch lymphatic channel_.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, no term id was found for the name/label _thumb medial lymphatic channel #3_.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, no term id was found for the name/label _superior ulnar lymph node_.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, no term id was found for the name/label _palmar arch lymphatic channel_.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, no term id was found for the name/label _middle finger medial lymphatic channel #3_.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, no term id was found for the name/label _superior ulnar lymph node_.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, no term id was found for the name/label _anterior interosseous lymphatic channel_.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, no term id was found for the name/label _palmar arch lymphatic channel_.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, no term id was found for the name/label _ring finger lateral lymphatic channel #3_.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, no term id was found for the name/label _superior ulnar lymph node_.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, no term id was found for the name/label _posterior interosseous lymphatic channel_.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, no term id was found for the name/label _superior ulnar lymph node_.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, no term id was found for the name/label _posterior interosseous lymphatic channel_.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, no term id was found for the name/label _palmar arch lymphatic channel #2_.
-
-1. In row _[75](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=75:75)_, no term id was found for the name/label _cubital fossa lymph node_.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, no term id was found for the name/label _cubital fossa lymph node_.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, no term id was found for the name/label _deep radial lymphatic channel_.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, no term id was found for the name/label _cubital fossa lymph node_.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, no term id was found for the name/label _deep radial lymphatic channel_.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, no term id was found for the name/label _middle finger lateral lymphatic channel #2_.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, no term id was found for the name/label _cubital fossa lymph node_.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, no term id was found for the name/label _deep radial lymphatic channel_.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, no term id was found for the name/label _index finger lateral lymphatic channel #2_.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, no term id was found for the name/label _cubital fossa lymph node_.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, no term id was found for the name/label _deep radial lymphatic channel_.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, no term id was found for the name/label _index finger medial lymphatic channel #2_.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, no term id was found for the name/label _cubital fossa lymph node_.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, no term id was found for the name/label _deep radial lymphatic channel_.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, no term id was found for the name/label _thumb lateral lymphatic channel #2_.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, no term id was found for the name/label _cubital fossa lymph node_.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, no term id was found for the name/label _deep radial lymphatic channel_.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, no term id was found for the name/label _thumb medial lymphatic channel #2_.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, no term id was found for the name/label _cubital fossa lymph node_.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, no term id was found for the name/label _deep radial lymphatic channel_.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, no term id was found for the name/label _middle finger medial lymphatic channel #2_.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, no term id was found for the name/label _cubital fossa lymph node_.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, no term id was found for the name/label _deep radial lymphatic channel_.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, no term id was found for the name/label _ring finger lateral lymphatic channel #2_.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_, no term id was found for the name/label _cubital fossa lymph node_.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_, no term id was found for the name/label _deep radial lymphatic channel_.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_, no term id was found for the name/label _palmar arch lymphatic channel #4_.
-
-1. In row _[89](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=89:89)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
-
-1. In row _[90](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=90:90)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
-
-1. In row _[90](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=90:90)_, no term id was found for the name/label _radial lymphatic channel_.
-
-1. In row _[91](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=91:91)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
-
-1. In row _[91](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=91:91)_, no term id was found for the name/label _radial lymphatic channel_.
-
-1. In row _[91](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=91:91)_, no term id was found for the name/label _middle finger lateral lymphatic channel_.
-
-1. In row _[92](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=92:92)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
-
-1. In row _[92](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=92:92)_, no term id was found for the name/label _radial lymphatic channel_.
-
-1. In row _[92](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=92:92)_, no term id was found for the name/label _index finger lateral lymphatic channel_.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=93:93)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=93:93)_, no term id was found for the name/label _radial lymphatic channel_.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=93:93)_, no term id was found for the name/label _index finger medial lymphatic channel_.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=94:94)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=94:94)_, no term id was found for the name/label _radial lymphatic channel_.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=94:94)_, no term id was found for the name/label _thumb lateral lymphatic channel_.
-
-1. In row _[95](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=95:95)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm_.
-
-1. In row _[95](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=95:95)_, no term id was found for the name/label _radial lymphatic channel_.
-
-1. In row _[95](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=95:95)_, no term id was found for the name/label _thumb medial lymphatic channel_.
-
-1. In row _[96](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=96:96)_, no term id was found for the name/label _subclavicular lymph node_.
-
-1. In row _[97](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=97:97)_, no term id was found for the name/label _subclavicular lymph node_.
-
-1. In row _[97](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=97:97)_, no term id was found for the name/label _lateral lymphatic pathway of upper arm #2_.
-
-1. In row _[99](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=99:99)_, no term id was found for the name/label _posterior extrathoracic lymph node_.
-
-1. In row _[100](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=100:100)_, no term id was found for the name/label _posterior extrathoracic lymph node_.
-
-1. In row _[101](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=101:101)_, no term id was found for the name/label _posterior extrathoracic lymph node_.
-
-1. In row _[102](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=102:102)_, no term id was found for the name/label _posterior extrathoracic lymph node_.
-
-1. In row _[102](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=102:102)_, no term id was found for the name/label _circumflex lymphatic channel_.
-
-1. In row _[103](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=103:103)_, no term id was found for the name/label _posterior extrathoracic lymph node_.
-
-1. In row _[103](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=103:103)_, no term id was found for the name/label _deep lymph node of neck_.
-
-1. In row _[104](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=104:104)_, no term id was found for the name/label _posterior extrathoracic lymph node_.
-
-1. In row _[104](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=104:104)_, no term id was found for the name/label _deep lymph node of neck_.
-
-1. In row _[104](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=104:104)_, no term id was found for the name/label _supraspinatus fossa lymph node_.
-
-1. In row _[105](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=105:105)_, no term id was found for the name/label _posterior extrathoracic lymph node_.
-
-1. In row _[105](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=105:105)_, no term id was found for the name/label _deep lymph node of neck_.
-
-1. In row _[105](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=105:105)_, no term id was found for the name/label _supraspinatus fossa lymph node_.
-
-1. In row _[105](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=105:105)_, no term id was found for the name/label _supraescapular lymphatic channel_.
+1. No term id was found for the name/label _supraescapular lymphatic channel_ in the following 1 row _[105](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=105:105)_.
 
 
 ## Blank ontology ID missing parent
@@ -374,489 +172,65 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-- No issue found.
+- No issues found.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=12:12)_, the term _FMA:5832_ is from another ontology that is not validated in this process.
+1. The term _FMA:5832_ in the following 5 rows _[12](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=12:12)_, _[13](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=13:13)_, _[14](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=14:14)_, _[15](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=15:15)_, _[16](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=16:16)_ is from another ontology that is not validated in this process.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=13:13)_, the term _FMA:5832_ is from another ontology that is not validated in this process.
+1. The term _FMA:5831_ in the following 1 row _[13](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=13:13)_ is from another ontology that is not validated in this process.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=13:13)_, the term _FMA:5831_ is from another ontology that is not validated in this process.
+1. The term _FMA:12251_ in the following 1 row _[14](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=14:14)_ is from another ontology that is not validated in this process.
 
-1. In row _[14](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=14:14)_, the term _FMA:5832_ is from another ontology that is not validated in this process.
+1. The term _FMA:5830_ in the following 1 row _[15](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=15:15)_ is from another ontology that is not validated in this process.
 
-1. In row _[14](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=14:14)_, the term _FMA:12251_ is from another ontology that is not validated in this process.
+1. The term _FMA:276805_ in the following 9 rows _[16](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=16:16)_, _[98](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=98:98)_, _[99](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=99:99)_, _[100](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=100:100)_, _[101](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=101:101)_, _[102](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=102:102)_, _[103](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=103:103)_, _[104](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=104:104)_, _[105](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=105:105)_ is from another ontology that is not validated in this process.
 
-1. In row _[15](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=15:15)_, the term _FMA:5832_ is from another ontology that is not validated in this process.
+1. The term _FMA:9585_ in the following 1 row _[18](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=18:18)_ is from another ontology that is not validated in this process.
 
-1. In row _[15](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=15:15)_, the term _FMA:5830_ is from another ontology that is not validated in this process.
+1. The term _FMA:5841_ in the following 1 row _[20](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=20:20)_ is from another ontology that is not validated in this process.
 
-1. In row _[16](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=16:16)_, the term _FMA:5832_ is from another ontology that is not validated in this process.
+1. The term _FMA:12765_ in the following 16 rows _[21](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=21:21)_, _[22](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=22:22)_, _[23](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=23:23)_, _[24](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=24:24)_, _[25](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=25:25)_, _[26](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=26:26)_, _[27](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=27:27)_, _[28](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=28:28)_, _[29](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=29:29)_, _[30](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=30:30)_, _[31](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=31:31)_, _[32](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=32:32)_, _[33](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=33:33)_, _[34](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=34:34)_, _[35](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=35:35)_, _[36](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=36:36)_ is from another ontology that is not validated in this process.
 
-1. In row _[16](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=16:16)_, the term _FMA:276805_ is from another ontology that is not validated in this process.
+1. The term _FMA:5842_ in the following 8 rows _[22](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=22:22)_, _[23](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=23:23)_, _[24](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=24:24)_, _[25](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=25:25)_, _[26](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=26:26)_, _[27](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=27:27)_, _[28](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=28:28)_, _[29](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=29:29)_ is from another ontology that is not validated in this process.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=18:18)_, the term _FMA:9585_ is from another ontology that is not validated in this process.
+1. The term _FMA:323951_ in the following 7 rows _[23](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=23:23)_, _[24](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=24:24)_, _[25](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=25:25)_, _[26](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=26:26)_, _[27](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=27:27)_, _[28](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=28:28)_, _[29](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=29:29)_ is from another ontology that is not validated in this process.
 
-1. In row _[20](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=20:20)_, the term _FMA:5841_ is from another ontology that is not validated in this process.
+1. The term _FMA:71813_ in the following 2 rows _[26](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=26:26)_, _[27](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=27:27)_ is from another ontology that is not validated in this process.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=21:21)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
+1. The term _FMA:71841_ in the following 1 row _[27](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=27:27)_ is from another ontology that is not validated in this process.
 
-1. In row _[22](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=22:22)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
+1. The term _FMA:233577_ in the following 1 row _[36](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=36:36)_ is from another ontology that is not validated in this process.
 
-1. In row _[22](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=22:22)_, the term _FMA:5842_ is from another ontology that is not validated in this process.
+1. The term _FMA:5840_ in the following 1 row _[37](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=37:37)_ is from another ontology that is not validated in this process.
 
-1. In row _[23](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=23:23)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
+1. The term _FMA:12250_ in the following 1 row _[38](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=38:38)_ is from another ontology that is not validated in this process.
 
-1. In row _[23](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=23:23)_, the term _FMA:5842_ is from another ontology that is not validated in this process.
+1. The term _FMA:5834_ in the following 1 row _[39](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=39:39)_ is from another ontology that is not validated in this process.
 
-1. In row _[23](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=23:23)_, the term _FMA:323951_ is from another ontology that is not validated in this process.
+1. The term _FMA:5032_ in the following 1 row _[40](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=40:40)_ is from another ontology that is not validated in this process.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=24:24)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
+1. The term _FMA:5033_ in the following 1 row _[41](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=41:41)_ is from another ontology that is not validated in this process.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=24:24)_, the term _FMA:5842_ is from another ontology that is not validated in this process.
+1. The term _FMA:12252_ in the following 56 rows _[42](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=42:42)_, _[43](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=43:43)_, _[44](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=45:45)_, _[46](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_, _[52](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=54:54)_, _[55](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, _[75](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=75:75)_, _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_, _[85](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=85:85)_, _[86](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=86:86)_, _[87](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=87:87)_, _[88](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=88:88)_, _[89](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=89:89)_, _[90](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=90:90)_, _[91](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=91:91)_, _[92](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=92:92)_, _[93](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=93:93)_, _[94](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=94:94)_, _[95](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=95:95)_, _[96](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=96:96)_, _[97](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=97:97)_ is from another ontology that is not validated in this process.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=24:24)_, the term _FMA:323951_ is from another ontology that is not validated in this process.
+1. The term _FMA:71749_ in the following 42 rows _[43](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=43:43)_, _[44](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=45:45)_, _[46](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_, _[52](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=54:54)_, _[55](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, _[75](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=75:75)_, _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_ is from another ontology that is not validated in this process.
 
-1. In row _[25](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=25:25)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
+1. The term _FMA:71743_ in the following 34 rows _[52](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=54:54)_, _[55](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, _[75](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=75:75)_, _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_, _[86](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=86:86)_ is from another ontology that is not validated in this process.
 
-1. In row _[25](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=25:25)_, the term _FMA:5842_ is from another ontology that is not validated in this process.
+1. The term _FMA:234924_ in the following 32 rows _[53](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=54:54)_, _[55](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, _[75](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=75:75)_, _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_ is from another ontology that is not validated in this process.
 
-1. In row _[25](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=25:25)_, the term _FMA:323951_ is from another ontology that is not validated in this process.
+1. The term _FMA:323948_ in the following 2 rows _[85](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=85:85)_, _[86](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=86:86)_ is from another ontology that is not validated in this process.
 
-1. In row _[26](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=26:26)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
+1. The term _FMA:234912_ in the following 9 rows _[87](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=87:87)_, _[88](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=88:88)_, _[89](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=89:89)_, _[90](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=90:90)_, _[91](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=91:91)_, _[92](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=92:92)_, _[93](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=93:93)_, _[94](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=94:94)_, _[95](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=95:95)_ is from another ontology that is not validated in this process.
 
-1. In row _[26](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=26:26)_, the term _FMA:5842_ is from another ontology that is not validated in this process.
+1. The term _FMA:14187_ in the following 3 rows _[100](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=100:100)_, _[101](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=101:101)_, _[102](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=102:102)_ is from another ontology that is not validated in this process.
 
-1. In row _[26](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=26:26)_, the term _FMA:323951_ is from another ontology that is not validated in this process.
-
-1. In row _[26](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=26:26)_, the term _FMA:71813_ is from another ontology that is not validated in this process.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=27:27)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=27:27)_, the term _FMA:5842_ is from another ontology that is not validated in this process.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=27:27)_, the term _FMA:323951_ is from another ontology that is not validated in this process.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=27:27)_, the term _FMA:71813_ is from another ontology that is not validated in this process.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=27:27)_, the term _FMA:71841_ is from another ontology that is not validated in this process.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=28:28)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=28:28)_, the term _FMA:5842_ is from another ontology that is not validated in this process.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=28:28)_, the term _FMA:323951_ is from another ontology that is not validated in this process.
-
-1. In row _[29](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=29:29)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
-
-1. In row _[29](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=29:29)_, the term _FMA:5842_ is from another ontology that is not validated in this process.
-
-1. In row _[29](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=29:29)_, the term _FMA:323951_ is from another ontology that is not validated in this process.
-
-1. In row _[30](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=30:30)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
-
-1. In row _[31](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=31:31)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
-
-1. In row _[32](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=32:32)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
-
-1. In row _[33](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=33:33)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
-
-1. In row _[34](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=34:34)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
-
-1. In row _[35](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=35:35)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
-
-1. In row _[36](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=36:36)_, the term _FMA:12765_ is from another ontology that is not validated in this process.
-
-1. In row _[36](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=36:36)_, the term _FMA:233577_ is from another ontology that is not validated in this process.
-
-1. In row _[37](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=37:37)_, the term _FMA:5840_ is from another ontology that is not validated in this process.
-
-1. In row _[38](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=38:38)_, the term _FMA:12250_ is from another ontology that is not validated in this process.
-
-1. In row _[39](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=39:39)_, the term _FMA:5834_ is from another ontology that is not validated in this process.
-
-1. In row _[40](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=40:40)_, the term _FMA:5032_ is from another ontology that is not validated in this process.
-
-1. In row _[41](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=41:41)_, the term _FMA:5033_ is from another ontology that is not validated in this process.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=42:42)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[43](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=43:43)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[43](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=43:43)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[44](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=44:44)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[44](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=44:44)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=45:45)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=45:45)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[46](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=46:46)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[46](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=46:46)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[47](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=47:47)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[48](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=48:48)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=49:49)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=50:50)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=51:51)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=52:52)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=52:52)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=52:52)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=53:53)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=53:53)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=53:53)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=53:53)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=54:54)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=54:54)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=54:54)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=54:54)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=55:55)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=55:55)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=55:55)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=55:55)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=56:56)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=57:57)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=58:58)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[59](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=59:59)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[60](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=60:60)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[61](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=61:61)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=62:62)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=63:63)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=64:64)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=65:65)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[66](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=66:66)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[67](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=67:67)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=68:68)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=69:69)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=70:70)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=71:71)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=72:72)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=73:73)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=74:74)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[75](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=75:75)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[75](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=75:75)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[75](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=75:75)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[75](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=75:75)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=76:76)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=77:77)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=78:78)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=79:79)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=80:80)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=81:81)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=82:82)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=83:83)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_, the term _FMA:71749_ is from another ontology that is not validated in this process.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=84:84)_, the term _FMA:234924_ is from another ontology that is not validated in this process.
-
-1. In row _[85](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=85:85)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[85](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=85:85)_, the term _FMA:323948_ is from another ontology that is not validated in this process.
-
-1. In row _[86](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=86:86)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[86](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=86:86)_, the term _FMA:323948_ is from another ontology that is not validated in this process.
-
-1. In row _[86](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=86:86)_, the term _FMA:71743_ is from another ontology that is not validated in this process.
-
-1. In row _[87](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=87:87)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[87](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=87:87)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
-
-1. In row _[88](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=88:88)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[88](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=88:88)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
-
-1. In row _[89](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=89:89)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[89](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=89:89)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
-
-1. In row _[90](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=90:90)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[90](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=90:90)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
-
-1. In row _[91](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=91:91)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[91](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=91:91)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
-
-1. In row _[92](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=92:92)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[92](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=92:92)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=93:93)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=93:93)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=94:94)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=94:94)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
-
-1. In row _[95](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=95:95)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[95](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=95:95)_, the term _FMA:234912_ is from another ontology that is not validated in this process.
-
-1. In row _[96](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=96:96)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[97](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=97:97)_, the term _FMA:12252_ is from another ontology that is not validated in this process.
-
-1. In row _[98](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=98:98)_, the term _FMA:276805_ is from another ontology that is not validated in this process.
-
-1. In row _[99](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=99:99)_, the term _FMA:276805_ is from another ontology that is not validated in this process.
-
-1. In row _[100](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=100:100)_, the term _FMA:276805_ is from another ontology that is not validated in this process.
-
-1. In row _[100](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=100:100)_, the term _FMA:14187_ is from another ontology that is not validated in this process.
-
-1. In row _[101](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=101:101)_, the term _FMA:276805_ is from another ontology that is not validated in this process.
-
-1. In row _[101](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=101:101)_, the term _FMA:14187_ is from another ontology that is not validated in this process.
-
-1. In row _[101](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=101:101)_, the term _FMA:234863_ is from another ontology that is not validated in this process.
-
-1. In row _[102](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=102:102)_, the term _FMA:276805_ is from another ontology that is not validated in this process.
-
-1. In row _[102](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=102:102)_, the term _FMA:14187_ is from another ontology that is not validated in this process.
-
-1. In row _[103](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=103:103)_, the term _FMA:276805_ is from another ontology that is not validated in this process.
-
-1. In row _[104](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=104:104)_, the term _FMA:276805_ is from another ontology that is not validated in this process.
-
-1. In row _[105](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=105:105)_, the term _FMA:276805_ is from another ontology that is not validated in this process.
+1. The term _FMA:234863_ in the following 1 row _[101](https://docs.google.com/spreadsheets/d/18Bk3AGcVzabS6DEUZlJzA59lt9q_ZefHJxcklwWqf6M/edit#gid=2087685463&range=101:101)_ is from another ontology that is not validated in this process.
 
 
 # Relationship reports

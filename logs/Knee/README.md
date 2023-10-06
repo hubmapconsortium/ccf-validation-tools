@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Knee (2023-10-04)
+ASCT+B Validation Reports for Knee (2023-10-06)
 ===============================================
 
 Table of contents
@@ -32,8 +32,6 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
-
 
 ## Typos or punctuation mistakes
 
@@ -52,53 +50,33 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[21](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=21:21)_, the term _[CL:0000743](http://purl.obolibrary.org/obo/CL_0000743)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _hypertrophic chondrocyte_. For reference, the given name/label **by SMEs** is _Hypertrophic Chondrocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, the term _[UBERON:0010996](http://purl.obolibrary.org/obo/UBERON_0010996)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _Articular Cartilage of femur_ and the one in the **ontology** is _articular cartilage of joint_. For reference, the given name/label **by SMEs** is _Articular cartilage of a joint_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, the term _[CL:1001607](http://purl.obolibrary.org/obo/CL_1001607)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _articular chondrocyte of the femur_ and the one in the **ontology** is _articular chondrocyte_. For reference, the given name/label **by SMEs** is _articular chondrocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _CL:1001607_ has a different name/label in the source ontology in the following 1 row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_. The name/label in the **ASCT+B table** is _articular chondrocyte of the femur_ and the one in the **ontology** is _articular chondrocyte_. For reference, the given name/label **by SMEs** is _articular chondrocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, no term id was found for the name/label _Regulatory Chondrocyte 1_.
+1. No term id was found for the name/label _Regulatory Chondrocyte 1_ in the following 2 rows _[12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12)_, _[22](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=22:22)_.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13)_, no term id was found for the name/label _Regulatory Chondrocyte 2_.
+1. No term id was found for the name/label _Regulatory Chondrocyte 2_ in the following 2 rows _[13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13)_, _[23](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=23:23)_.
 
-1. In row _[14](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=14:14)_, no term id was found for the name/label _Effector Chondrocyte_.
+1. No term id was found for the name/label _Effector Chondrocyte_ in the following 2 rows _[14](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=14:14)_, _[24](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=24:24)_.
 
-1. In row _[15](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=15:15)_, no term id was found for the name/label _Prefibrocartilage Chondrocyte_.
+1. No term id was found for the name/label _Prefibrocartilage Chondrocyte_ in the following 2 rows _[15](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=15:15)_, _[25](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=25:25)_.
 
-1. In row _[16](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=16:16)_, no term id was found for the name/label _Fibrocartilage Chondrocyte 1_.
+1. No term id was found for the name/label _Fibrocartilage Chondrocyte 1_ in the following 2 rows _[16](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=16:16)_, _[26](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=26:26)_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=17:17)_, no term id was found for the name/label _Fibrocartilage Chondrocyte 2_.
+1. No term id was found for the name/label _Fibrocartilage Chondrocyte 2_ in the following 2 rows _[17](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=17:17)_, _[27](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=27:27)_.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=18:18)_, no term id was found for the name/label _Homeostatic Chodrocyte_.
+1. No term id was found for the name/label _Homeostatic Chodrocyte_ in the following 2 rows _[18](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=18:18)_, _[28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28)_.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=19:19)_, no term id was found for the name/label _Reparative Chondrocyte_.
+1. No term id was found for the name/label _Reparative Chondrocyte_ in the following 2 rows _[19](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=19:19)_, _[29](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=29:29)_.
 
-1. In row _[20](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=20:20)_, no term id was found for the name/label _Prehypertrophic Chondrocyte_.
-
-1. In row _[22](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=22:22)_, no term id was found for the name/label _Regulatory Chondrocyte 1_.
-
-1. In row _[23](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=23:23)_, no term id was found for the name/label _Regulatory Chondrocyte 2_.
-
-1. In row _[24](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=24:24)_, no term id was found for the name/label _Effector Chondrocyte_.
-
-1. In row _[25](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=25:25)_, no term id was found for the name/label _Prefibrocartilage Chondrocyte_.
-
-1. In row _[26](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=26:26)_, no term id was found for the name/label _Fibrocartilage Chondrocyte 1_.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=27:27)_, no term id was found for the name/label _Fibrocartilage Chondrocyte 2_.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28)_, no term id was found for the name/label _Homeostatic Chodrocyte_.
-
-1. In row _[29](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=29:29)_, no term id was found for the name/label _Reparative Chondrocyte_.
-
-1. In row _[30](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=30:30)_, no term id was found for the name/label _Prehypertrophic Chondrocyte_.
+1. No term id was found for the name/label _Prehypertrophic Chondrocyte_ in the following 2 rows _[20](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=20:20)_, _[30](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=30:30)_.
 
 
 ## Blank ontology ID missing parent
@@ -106,13 +84,13 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-- No issue found.
+- No issues found.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 
@@ -160,48 +138,48 @@ This table contains terms for anatomical structures that are related to each oth
 
 
 
-|    | s              | slabel                       | user_slabel                    | o              | olabel                   | user_olabel     | row_number                                                                                                                |       deltaIC |
-|----|----------------|------------------------------|--------------------------------|----------------|--------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------|---------------|
-|  0 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12) |   1.23343e-15 |
-|  1 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13) |   1.23343e-15 |
-|  2 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [30](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=30:30) |   1.23343e-15 |
-|  3 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [29](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=29:29) |   1.23343e-15 |
-|  4 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28) |   1.23343e-15 |
-|  5 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [27](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=27:27) |   1.23343e-15 |
-|  6 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [26](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=26:26) |   1.23343e-15 |
-|  7 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [25](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=25:25) |   1.23343e-15 |
-|  8 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [24](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=24:24) |   1.23343e-15 |
-|  9 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [23](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=23:23) |   1.23343e-15 |
-| 10 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [22](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=22:22) |   1.23343e-15 |
-| 11 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [21](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=21:21) |   1.23343e-15 |
-| 12 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [20](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=20:20) |   1.23343e-15 |
-| 13 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [19](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=19:19) |   1.23343e-15 |
-| 14 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [18](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=18:18) |   1.23343e-15 |
-| 15 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [17](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=17:17) |   1.23343e-15 |
-| 16 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [16](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=16:16) |   1.23343e-15 |
-| 17 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [15](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=15:15) |   1.23343e-15 |
-| 18 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [14](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=14:14) |   1.23343e-15 |
-| 19 | UBERON:0009980 | condyle of femur             | Distal Femur                   | UBERON:0001485 | Knee Joint               | knee joint      | [31](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=31:31) |   1.23343e-15 |
-| 20 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12) | nan           |
-| 21 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13) | nan           |
-| 22 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [14](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=14:14) | nan           |
-| 23 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [15](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=15:15) | nan           |
-| 24 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [16](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=16:16) | nan           |
-| 25 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [17](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=17:17) | nan           |
-| 26 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [18](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=18:18) | nan           |
-| 27 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [19](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=19:19) | nan           |
-| 28 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [20](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=20:20) | nan           |
-| 29 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [21](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=21:21) | nan           |
-| 32 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [22](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=22:22) | nan           |
-| 33 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [23](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=23:23) | nan           |
-| 34 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [24](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=24:24) | nan           |
-| 35 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [25](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=25:25) | nan           |
-| 36 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [26](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=26:26) | nan           |
-| 37 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [27](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=27:27) | nan           |
-| 38 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28) | nan           |
-| 39 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [29](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=29:29) | nan           |
-| 40 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [30](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=30:30) | nan           |
-| 41 | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [31](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=31:31) | nan           |
+|    | s              | slabel                       | user_slabel                  | o              | olabel                   | user_olabel     | row_number                                                                                                                |       deltaIC |
+|----|----------------|------------------------------|------------------------------|----------------|--------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------|---------------|
+|  0 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12) |   1.23343e-15 |
+|  1 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13) |   1.23343e-15 |
+|  2 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [30](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=30:30) |   1.23343e-15 |
+|  3 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [29](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=29:29) |   1.23343e-15 |
+|  4 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28) |   1.23343e-15 |
+|  5 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [27](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=27:27) |   1.23343e-15 |
+|  6 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [26](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=26:26) |   1.23343e-15 |
+|  7 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [25](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=25:25) |   1.23343e-15 |
+|  8 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [24](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=24:24) |   1.23343e-15 |
+|  9 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [23](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=23:23) |   1.23343e-15 |
+| 10 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [22](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=22:22) |   1.23343e-15 |
+| 11 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [21](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=21:21) |   1.23343e-15 |
+| 12 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [20](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=20:20) |   1.23343e-15 |
+| 13 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [19](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=19:19) |   1.23343e-15 |
+| 14 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [18](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=18:18) |   1.23343e-15 |
+| 15 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [17](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=17:17) |   1.23343e-15 |
+| 16 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [16](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=16:16) |   1.23343e-15 |
+| 17 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [15](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=15:15) |   1.23343e-15 |
+| 18 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [14](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=14:14) |   1.23343e-15 |
+| 19 | UBERON:0009980 | condyle of femur             | Distal Femur                 | UBERON:0001485 | Knee Joint               | knee joint      | [31](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=31:31) |   1.23343e-15 |
+| 20 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [12](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=12:12) | nan           |
+| 21 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [13](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=13:13) | nan           |
+| 22 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [14](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=14:14) | nan           |
+| 23 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [15](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=15:15) | nan           |
+| 24 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [16](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=16:16) | nan           |
+| 25 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [17](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=17:17) | nan           |
+| 26 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [18](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=18:18) | nan           |
+| 27 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [19](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=19:19) | nan           |
+| 28 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [20](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=20:20) | nan           |
+| 29 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009984 | medial condyle of femur  | Medial Condyle  | [21](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=21:21) | nan           |
+| 32 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [22](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=22:22) | nan           |
+| 33 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [23](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=23:23) | nan           |
+| 34 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [24](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=24:24) | nan           |
+| 35 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [25](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=25:25) | nan           |
+| 36 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [26](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=26:26) | nan           |
+| 37 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [27](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=27:27) | nan           |
+| 38 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [28](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=28:28) | nan           |
+| 39 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [29](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=29:29) | nan           |
+| 40 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [30](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=30:30) | nan           |
+| 41 | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | UBERON:0009985 | lateral condyle of femur | Lateral Condyle | [31](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=31:31) | nan           |
 
 
 
@@ -228,10 +206,10 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 
 
-|    | s          | slabel                   | user_slabel              | o              | olabel                       | user_olabel                    | row_number                                                                                                                |   deltaIC |
-|----|------------|--------------------------|--------------------------|----------------|------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-| 31 | CL:0000743 | hypertrophic chondrocyte | Hypertrophic Chondrocyte | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | [21](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=21:21) |       nan |
-| 43 | CL:0000743 | hypertrophic chondrocyte | Hypertrophic Chondrocyte | UBERON:0010996 | articular cartilage of joint | Articular cartilage of a joint | [31](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=31:31) |       nan |
+|    | s          | slabel                   | user_slabel              | o              | olabel                       | user_olabel                  | row_number                                                                                                                |   deltaIC |
+|----|------------|--------------------------|--------------------------|----------------|------------------------------|------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+| 31 | CL:0000743 | hypertrophic chondrocyte | Hypertrophic Chondrocyte | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | [21](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=21:21) |       nan |
+| 43 | CL:0000743 | hypertrophic chondrocyte | Hypertrophic Chondrocyte | UBERON:0010996 | articular cartilage of joint | Articular Cartilage of femur | [31](https://docs.google.com/spreadsheets/d/1v3BfUp55Ty8Bl9ufHursLN9hXmyRcj0MHDbEpPwgFZc/edit#gid=1815525900&range=31:31) |       nan |
 
 
 

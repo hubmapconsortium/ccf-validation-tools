@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Placenta (2023-10-04)
+ASCT+B Validation Reports for Placenta (2023-10-06)
 ===================================================
 
 Table of contents
@@ -32,11 +32,11 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. UBERON:8600020
+1. UBERON:8600021
 
 1. UBERON:8600019
 
-1. UBERON:8600021
+1. UBERON:8600020
 
 
 ## Typos or punctuation mistakes
@@ -62,405 +62,47 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[19](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=19:19)_, no term id was found for the name/label _placental disc_.
+1. No term id was found for the name/label _placental disc_ in the following 73 rows _[19](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=19:19)_, _[22](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=22:22)_, _[23](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=23:23)_, _[39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39)_, _[40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)_, _[41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41)_, _[42](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=42:42)_, _[43](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=43:43)_, _[44](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45)_, _[46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47)_, _[48](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=48:48)_, _[49](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=51:51)_, _[52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54)_, _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=65:65)_, _[66](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=66:66)_, _[67](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=67:67)_, _[68](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=68:68)_, _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_, _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, _[82](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=82:82)_, _[83](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=83:83)_, _[84](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=84:84)_, _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_, _[99](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=99:99)_, _[100](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=100:100)_, _[101](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=101:101)_, _[102](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=102:102)_, _[103](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=103:103)_, _[104](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=104:104)_, _[105](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=105:105)_, _[106](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=106:106)_, _[107](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=107:107)_, _[108](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=108:108)_.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=19:19)_, no term id was found for the name/label _interstitial extravillous trophoblast_.
+1. No term id was found for the name/label _interstitial extravillous trophoblast_ in the following 1 row _[19](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=19:19)_.
 
-1. In row _[22](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=22:22)_, no term id was found for the name/label _placental disc_.
+1. No term id was found for the name/label _chorionic mesoderm (from chorion)_ in the following 1 row _[24](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=24:24)_.
 
-1. In row _[23](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=23:23)_, no term id was found for the name/label _placental disc_.
+1. No term id was found for the name/label _chorionic ectoderm (from chorion)_ in the following 2 rows _[25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25)_, _[26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26)_.
 
-1. In row _[24](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=24:24)_, no term id was found for the name/label _chorionic mesoderm (from chorion)_.
+1. No term id was found for the name/label _uterine macrophage_ in the following 3 rows _[30](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=30:30)_, _[62](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=62:62)_, _[102](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=102:102)_.
 
-1. In row _[25](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=25:25)_, no term id was found for the name/label _chorionic ectoderm (from chorion)_.
+1. No term id was found for the name/label _endovascular extravillous trophoblast_ in the following 3 rows _[35](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=35:35)_, _[67](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=67:67)_, _[107](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=107:107)_.
 
-1. In row _[26](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=26:26)_, no term id was found for the name/label _chorionic ectoderm (from chorion)_.
+1. No term id was found for the name/label _endometrial lymphatic vessel_ in the following 3 rows _[36](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=36:36)_, _[68](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=68:68)_, _[108](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=108:108)_.
 
-1. In row _[30](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=30:30)_, no term id was found for the name/label _uterine macrophage_.
+1. No term id was found for the name/label _chorionic mesoderm (from chorionic plate)_ in the following 4 rows _[39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39)_, _[49](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=51:51)_.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=35:35)_, no term id was found for the name/label _endovascular extravillous trophoblast_.
+1. No term id was found for the name/label _chorionic ectoderm (from chorionic plate)_ in the following 18 rows _[40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)_, _[41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41)_, _[42](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=42:42)_, _[52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54)_, _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_.
 
-1. In row _[36](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=36:36)_, no term id was found for the name/label _endometrial lymphatic vessel_.
+1. No term id was found for the name/label _trophoblast island_ in the following 5 rows _[43](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=43:43)_, _[44](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45)_, _[46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47)_.
 
-1. In row _[39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39)_, no term id was found for the name/label _placental disc_.
+1. No term id was found for the name/label _anchoring villus_ in the following 7 rows _[52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54)_, _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_.
 
-1. In row _[39](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=39:39)_, no term id was found for the name/label _chorionic mesoderm (from chorionic plate)_.
+1. No term id was found for the name/label _villous mesenchyme_ in the following 10 rows _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_.
 
-1. In row _[40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)_, no term id was found for the name/label _placental disc_.
+1. No term id was found for the name/label _villous capillary_ in the following 6 rows _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_.
 
-1. In row _[40](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=40:40)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+1. No term id was found for the name/label _floating villus_ in the following 30 rows _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_, _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, _[82](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=82:82)_, _[83](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=83:83)_, _[84](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=84:84)_, _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_.
 
-1. In row _[41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41)_, no term id was found for the name/label _placental disc_.
+1. No term id was found for the name/label _stem villus_ in the following 8 rows _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_.
 
-1. In row _[41](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=41:41)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+1. No term id was found for the name/label _stem villous vessel_ in the following 3 rows _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_.
 
-1. In row _[42](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=42:42)_, no term id was found for the name/label _placental disc_.
+1. No term id was found for the name/label _immature intermediate villus_ in the following 8 rows _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, _[82](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=82:82)_, _[83](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=83:83)_, _[84](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=84:84)_.
 
-1. In row _[42](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=42:42)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
+1. No term id was found for the name/label _mature intermediate villus_ in the following 7 rows _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_.
 
-1. In row _[43](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=43:43)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[43](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=43:43)_, no term id was found for the name/label _trophoblast island_.
-
-1. In row _[44](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=44:44)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[44](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=44:44)_, no term id was found for the name/label _trophoblast island_.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=45:45)_, no term id was found for the name/label _trophoblast island_.
-
-1. In row _[46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[46](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=46:46)_, no term id was found for the name/label _trophoblast island_.
-
-1. In row _[47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[47](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=47:47)_, no term id was found for the name/label _trophoblast island_.
-
-1. In row _[48](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=48:48)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=49:49)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=49:49)_, no term id was found for the name/label _chorionic mesoderm (from chorionic plate)_.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=50:50)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=50:50)_, no term id was found for the name/label _chorionic mesoderm (from chorionic plate)_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=51:51)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=51:51)_, no term id was found for the name/label _chorionic mesoderm (from chorionic plate)_.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52)_, no term id was found for the name/label _anchoring villus_.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=52:52)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, no term id was found for the name/label _anchoring villus_.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=53:53)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54)_, no term id was found for the name/label _anchoring villus_.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=54:54)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, no term id was found for the name/label _anchoring villus_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=55:55)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, no term id was found for the name/label _anchoring villus_.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=56:56)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, no term id was found for the name/label _anchoring villus_.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=57:57)_, no term id was found for the name/label _villous capillary_.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, no term id was found for the name/label _anchoring villus_.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=58:58)_, no term id was found for the name/label _villous capillary_.
-
-1. In row _[59](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=59:59)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[60](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=60:60)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[61](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=61:61)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=62:62)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=62:62)_, no term id was found for the name/label _uterine macrophage_.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=63:63)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=64:64)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=65:65)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[66](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=66:66)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[67](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=67:67)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[67](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=67:67)_, no term id was found for the name/label _endovascular extravillous trophoblast_.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=68:68)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[68](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=68:68)_, no term id was found for the name/label _endometrial lymphatic vessel_.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, no term id was found for the name/label _stem villus_.
-
-1. In row _[69](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=69:69)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, no term id was found for the name/label _stem villus_.
-
-1. In row _[70](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=70:70)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, no term id was found for the name/label _stem villus_.
-
-1. In row _[71](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=71:71)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, no term id was found for the name/label _stem villus_.
-
-1. In row _[72](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=72:72)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, no term id was found for the name/label _stem villus_.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=73:73)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, no term id was found for the name/label _stem villus_.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=74:74)_, no term id was found for the name/label _stem villous vessel_.
-
-1. In row _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, no term id was found for the name/label _stem villus_.
-
-1. In row _[75](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=75:75)_, no term id was found for the name/label _stem villous vessel_.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_, no term id was found for the name/label _stem villus_.
-
-1. In row _[76](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=76:76)_, no term id was found for the name/label _stem villous vessel_.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, no term id was found for the name/label _immature intermediate villus_.
-
-1. In row _[77](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=77:77)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, no term id was found for the name/label _immature intermediate villus_.
-
-1. In row _[78](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=78:78)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, no term id was found for the name/label _immature intermediate villus_.
-
-1. In row _[79](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=79:79)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, no term id was found for the name/label _immature intermediate villus_.
-
-1. In row _[80](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=80:80)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, no term id was found for the name/label _immature intermediate villus_.
-
-1. In row _[81](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=81:81)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=82:82)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=82:82)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[82](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=82:82)_, no term id was found for the name/label _immature intermediate villus_.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=83:83)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=83:83)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=83:83)_, no term id was found for the name/label _immature intermediate villus_.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=84:84)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=84:84)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[84](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=84:84)_, no term id was found for the name/label _immature intermediate villus_.
-
-1. In row _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, no term id was found for the name/label _mature intermediate villus_.
-
-1. In row _[85](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=85:85)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, no term id was found for the name/label _mature intermediate villus_.
-
-1. In row _[86](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=86:86)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, no term id was found for the name/label _mature intermediate villus_.
-
-1. In row _[87](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=87:87)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, no term id was found for the name/label _mature intermediate villus_.
-
-1. In row _[88](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=88:88)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, no term id was found for the name/label _mature intermediate villus_.
-
-1. In row _[89](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=89:89)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, no term id was found for the name/label _mature intermediate villus_.
-
-1. In row _[90](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=90:90)_, no term id was found for the name/label _villous capillary_.
-
-1. In row _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, no term id was found for the name/label _mature intermediate villus_.
-
-1. In row _[91](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=91:91)_, no term id was found for the name/label _villous capillary_.
-
-1. In row _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, no term id was found for the name/label _terminal villus_.
-
-1. In row _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, no term id was found for the name/label _terminal villus_.
-
-1. In row _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, no term id was found for the name/label _terminal villus_.
-
-1. In row _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, no term id was found for the name/label _chorionic ectoderm (from chorionic plate)_.
-
-1. In row _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, no term id was found for the name/label _terminal villus_.
-
-1. In row _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, no term id was found for the name/label _terminal villus_.
-
-1. In row _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, no term id was found for the name/label _villous mesenchyme_.
-
-1. In row _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, no term id was found for the name/label _terminal villus_.
-
-1. In row _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, no term id was found for the name/label _villous capillary_.
-
-1. In row _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_, no term id was found for the name/label _floating villus_.
-
-1. In row _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_, no term id was found for the name/label _terminal villus_.
-
-1. In row _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_, no term id was found for the name/label _villous capillary_.
-
-1. In row _[99](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=99:99)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[100](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=100:100)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[101](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=101:101)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[102](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=102:102)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[102](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=102:102)_, no term id was found for the name/label _uterine macrophage_.
-
-1. In row _[103](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=103:103)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[104](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=104:104)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[105](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=105:105)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[106](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=106:106)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[107](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=107:107)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[107](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=107:107)_, no term id was found for the name/label _endovascular extravillous trophoblast_.
-
-1. In row _[108](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=108:108)_, no term id was found for the name/label _placental disc_.
-
-1. In row _[108](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=108:108)_, no term id was found for the name/label _endometrial lymphatic vessel_.
+1. No term id was found for the name/label _terminal villus_ in the following 7 rows _[92](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=92:92)_, _[93](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=93:93)_, _[94](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=94:94)_, _[95](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=95:95)_, _[96](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=96:96)_, _[97](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=97:97)_, _[98](https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207&range=98:98)_.
 
 
 ## Blank ontology ID missing parent
@@ -468,13 +110,13 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-- No issue found.
+- No issues found.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 

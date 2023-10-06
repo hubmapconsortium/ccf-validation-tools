@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Trachea (2023-10-04)
+ASCT+B Validation Reports for Trachea (2023-10-06)
 ==================================================
 
 Table of contents
@@ -52,15 +52,17 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[20](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=20:20)_, the term _[UBERON:8600011](http://purl.obolibrary.org/obo/UBERON_8600011)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _terminal ciliated ducts for tracheal submucosal gland_ and the one in the **ontology** is _tracheal submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _terminal ciliated ducts for tracheal submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _UBERON:8600012_ has a different name/label in the source ontology in the following 1 row _[18](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=18:18)_. The name/label in the **ASCT+B table** is _submucosal gland acini_ and the one in the **ontology** is _submucosal gland acinus_. For reference, the given name/label **by SMEs** is _submucosal gland acini_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=18:18)_, the term _[UBERON:8600012](http://purl.obolibrary.org/obo/UBERON_8600012)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _submucosal gland acini_ and the one in the **ontology** is _submucosal gland acinus_. For reference, the given name/label **by SMEs** is _submucosal gland acini_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _UBERON:8600011_ has a different name/label in the source ontology in the following 1 row _[20](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=20:20)_. The name/label in the **ASCT+B table** is _terminal ciliated ducts for tracheal submucosal gland_ and the one in the **ontology** is _tracheal submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _terminal ciliated ducts for tracheal submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
 - No issues found.
 
@@ -70,13 +72,13 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-- No issue found.
+- No issues found.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 

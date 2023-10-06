@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Urinary_bladder (2023-10-04)
+ASCT+B Validation Reports for Urinary_bladder (2023-10-06)
 ==========================================================
 
 Table of contents
@@ -32,8 +32,6 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
-
 
 ## Typos or punctuation mistakes
 
@@ -52,107 +50,71 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16)_, the term _[CL:0000186](http://purl.obolibrary.org/obo/CL_0000186)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _myofibroblast_ and the one in the **ontology** is _myofibroblast cell_. For reference, the given name/label **by SMEs** is _myofibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _CL:0000186_ has a different name/label in the source ontology in the following 1 row _[16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16)_. The name/label in the **ASCT+B table** is _myofibroblast_ and the one in the **ontology** is _myofibroblast cell_. For reference, the given name/label **by SMEs** is _myofibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=12:12)_, no term id was found for the name/label _basal cell of bladder urothelium_.
+1. No term id was found for the name/label _basal cell of bladder urothelium_ in the following 1 row _[12](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=12:12)_.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=13:13)_, no term id was found for the name/label _intermediate cell of bladder urothelium_.
+1. No term id was found for the name/label _intermediate cell of bladder urothelium_ in the following 1 row _[13](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=13:13)_.
 
-1. In row _[14](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=14:14)_, no term id was found for the name/label _superficial cell of bladder urothelium_.
+1. No term id was found for the name/label _superficial cell of bladder urothelium_ in the following 1 row _[14](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=14:14)_.
 
-1. In row _[15](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=15:15)_, no term id was found for the name/label _detrusor smooth muscle cell of bladder_.
+1. No term id was found for the name/label _detrusor smooth muscle cell of bladder_ in the following 1 row _[15](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=15:15)_.
 
-1. In row _[16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16)_, no term id was found for the name/label _myofibroblast cell of bladder_.
+1. No term id was found for the name/label _myofibroblast cell of bladder_ in the following 1 row _[16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16)_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17)_, no term id was found for the name/label _fibroblast of urinary bladder_.
+1. No term id was found for the name/label _fibroblast of urinary bladder_ in the following 2 rows _[17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17)_, _[18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18)_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17)_, no term id was found for the name/label _PI16+ fibroblast cell of bladder_.
+1. No term id was found for the name/label _PI16+ fibroblast cell of bladder_ in the following 1 row _[17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17)_.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18)_, no term id was found for the name/label _fibroblast of urinary bladder_.
+1. No term id was found for the name/label _DPT+ fibroblast cell of bladder_ in the following 1 row _[18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18)_.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18)_, no term id was found for the name/label _DPT+ fibroblast cell of bladder_.
+1. No term id was found for the name/label _lipofibroblast cell of bladder_ in the following 2 rows _[19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19)_, _[39](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=39:39)_.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=19:19)_, no term id was found for the name/label _lipofibroblast cell of bladder_.
+1. No term id was found for the name/label _endothelial cell of bladder_ in the following 1 row _[20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20)_.
 
-1. In row _[20](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=20:20)_, no term id was found for the name/label _endothelial cell of bladder_.
+1. No term id was found for the name/label _vascular smooth muscle cell of urinary bladder_ in the following 2 rows _[21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21)_, _[40](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=40:40)_.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=21:21)_, no term id was found for the name/label _vascular smooth muscle cell of urinary bladder_.
+1. No term id was found for the name/label _pericyte cell of urinary bladder_ in the following 2 rows _[22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22)_, _[41](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=41:41)_.
 
-1. In row _[22](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=22:22)_, no term id was found for the name/label _pericyte cell of urinary bladder_.
+1. No term id was found for the name/label _superficial epithelial cell of urinary bladder_ in the following 1 row _[29](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=29:29)_.
 
-1. In row _[29](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=29:29)_, no term id was found for the name/label _superficial epithelial cell of urinary bladder_.
+1. No term id was found for the name/label _basal epithelia_ in the following 1 row _[30](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=30:30)_.
 
-1. In row _[30](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=30:30)_, no term id was found for the name/label _basal epithelia_.
+1. No term id was found for the name/label _intermediate epithelia_ in the following 1 row _[31](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=31:31)_.
 
-1. In row _[31](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=31:31)_, no term id was found for the name/label _intermediate epithelia_.
+1. No term id was found for the name/label _urinary bladder stroma_ in the following 14 rows _[32](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=32:32)_, _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_, _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_, _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_, _[36](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=36:36)_, _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_, _[38](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=38:38)_, _[39](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=39:39)_, _[40](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=40:40)_, _[41](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=41:41)_, _[42](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=42:42)_, _[43](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=43:43)_, _[44](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=45:45)_.
 
-1. In row _[32](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=32:32)_, no term id was found for the name/label _urinary bladder stroma_.
+1. No term id was found for the name/label _fibroblast cell of urinary bladder_ in the following 2 rows _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_, _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_.
 
-1. In row _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_, no term id was found for the name/label _urinary bladder stroma_.
+1. No term id was found for the name/label _CXCL14 fibroblast_ in the following 1 row _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_.
 
-1. In row _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_, no term id was found for the name/label _fibroblast cell of urinary bladder_.
+1. No term id was found for the name/label _urinary bladder interstitial fibroblast_ in the following 2 rows _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_, _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_.
 
-1. In row _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_, no term id was found for the name/label _CXCL14 fibroblast_.
+1. No term id was found for the name/label _minor interstitial fibroblast_ in the following 1 row _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_.
 
-1. In row _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_, no term id was found for the name/label _urinary bladder stroma_.
+1. No term id was found for the name/label _periurothelial fibroblast_ in the following 1 row _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_.
 
-1. In row _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_, no term id was found for the name/label _urinary bladder interstitial fibroblast_.
+1. No term id was found for the name/label _myofibroblast cell of urinary bladder_ in the following 1 row _[36](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=36:36)_.
 
-1. In row _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_, no term id was found for the name/label _minor interstitial fibroblast_.
+1. No term id was found for the name/label _major interstitial fibroblast_ in the following 1 row _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_, no term id was found for the name/label _urinary bladder stroma_.
+1. No term id was found for the name/label _neruofibroblast of urinary bladder_ in the following 1 row _[38](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=38:38)_.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_, no term id was found for the name/label _fibroblast cell of urinary bladder_.
+1. No term id was found for the name/label _vascular arterial endothelial cell of urinary bladder_ in the following 1 row _[42](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=42:42)_.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_, no term id was found for the name/label _periurothelial fibroblast_.
+1. No term id was found for the name/label _vascular capillary endothelial cell of urinary bladder_ in the following 1 row _[43](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=43:43)_.
 
-1. In row _[36](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=36:36)_, no term id was found for the name/label _urinary bladder stroma_.
+1. No term id was found for the name/label _vascular venous endothelial cell of urinary bladder_ in the following 1 row _[44](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=44:44)_.
 
-1. In row _[36](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=36:36)_, no term id was found for the name/label _myofibroblast cell of urinary bladder_.
-
-1. In row _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_, no term id was found for the name/label _urinary bladder stroma_.
-
-1. In row _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_, no term id was found for the name/label _urinary bladder interstitial fibroblast_.
-
-1. In row _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_, no term id was found for the name/label _major interstitial fibroblast_.
-
-1. In row _[38](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=38:38)_, no term id was found for the name/label _urinary bladder stroma_.
-
-1. In row _[38](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=38:38)_, no term id was found for the name/label _neruofibroblast of urinary bladder_.
-
-1. In row _[39](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=39:39)_, no term id was found for the name/label _urinary bladder stroma_.
-
-1. In row _[39](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=39:39)_, no term id was found for the name/label _lipofibroblast cell of bladder_.
-
-1. In row _[40](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=40:40)_, no term id was found for the name/label _urinary bladder stroma_.
-
-1. In row _[40](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=40:40)_, no term id was found for the name/label _vascular smooth muscle cell of urinary bladder_.
-
-1. In row _[41](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=41:41)_, no term id was found for the name/label _urinary bladder stroma_.
-
-1. In row _[41](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=41:41)_, no term id was found for the name/label _pericyte cell of urinary bladder_.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=42:42)_, no term id was found for the name/label _urinary bladder stroma_.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=42:42)_, no term id was found for the name/label _vascular arterial endothelial cell of urinary bladder_.
-
-1. In row _[43](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=43:43)_, no term id was found for the name/label _urinary bladder stroma_.
-
-1. In row _[43](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=43:43)_, no term id was found for the name/label _vascular capillary endothelial cell of urinary bladder_.
-
-1. In row _[44](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=44:44)_, no term id was found for the name/label _urinary bladder stroma_.
-
-1. In row _[44](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=44:44)_, no term id was found for the name/label _vascular venous endothelial cell of urinary bladder_.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=45:45)_, no term id was found for the name/label _urinary bladder stroma_.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=45:45)_, no term id was found for the name/label _lymphatic endothelial cell of urinary bladder_.
+1. No term id was found for the name/label _lymphatic endothelial cell of urinary bladder_ in the following 1 row _[45](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=45:45)_.
 
 
 ## Blank ontology ID missing parent
@@ -160,23 +122,23 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17)_, the term _PI16+ fibroblast cell of bladder_ without ontology ID has no parent that is from the CL ontology.
+1. The term _PI16+ fibroblast cell of bladder_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[17](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=17:17)_.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18)_, the term _DPT+ fibroblast cell of bladder_ without ontology ID has no parent that is from the CL ontology.
+1. The term _DPT+ fibroblast cell of bladder_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[18](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=18:18)_.
 
-1. In row _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_, the term _CXCL14 fibroblast_ without ontology ID has no parent that is from the CL ontology.
+1. The term _CXCL14 fibroblast_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[33](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=33:33)_.
 
-1. In row _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_, the term _minor interstitial fibroblast_ without ontology ID has no parent that is from the CL ontology.
+1. The term _minor interstitial fibroblast_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[34](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=34:34)_.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_, the term _periurothelial fibroblast_ without ontology ID has no parent that is from the CL ontology.
+1. The term _periurothelial fibroblast_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[35](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=35:35)_.
 
-1. In row _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_, the term _major interstitial fibroblast_ without ontology ID has no parent that is from the CL ontology.
+1. The term _major interstitial fibroblast_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[37](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=37:37)_.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 

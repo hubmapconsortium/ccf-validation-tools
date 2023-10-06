@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Eye (2023-10-04)
+ASCT+B Validation Reports for Eye (2023-10-06)
 ==============================================
 
 Table of contents
@@ -32,8 +32,6 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
-
 
 ## Typos or punctuation mistakes
 
@@ -58,33 +56,29 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[13](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=13:13)_, no term id was found for the name/label _glutamic acid decarboxylase 65 cell_.
+1. No term id was found for the name/label _glutamic acid decarboxylase 65 cell_ in the following 1 row _[13](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=13:13)_.
 
-1. In row _[14](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=14:14)_, no term id was found for the name/label _A8 bistratified small-field cell_.
+1. No term id was found for the name/label _A8 bistratified small-field cell_ in the following 1 row _[14](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=14:14)_.
 
-1. In row _[16](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=16:16)_, no term id was found for the name/label _polyaxonal amacrine cell_.
+1. No term id was found for the name/label _polyaxonal amacrine cell_ in the following 3 rows _[16](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=16:16)_, _[17](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=17:17)_, _[18](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=18:18)_.
 
-1. In row _[16](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=16:16)_, no term id was found for the name/label _semilunar type 1 cell_.
+1. No term id was found for the name/label _semilunar type 1 cell_ in the following 1 row _[16](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=16:16)_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=17:17)_, no term id was found for the name/label _polyaxonal amacrine cell_.
+1. No term id was found for the name/label _semilunar type 3 cell_ in the following 1 row _[17](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=17:17)_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=17:17)_, no term id was found for the name/label _semilunar type 3 cell_.
+1. No term id was found for the name/label _semilunar cell_ in the following 1 row _[18](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=18:18)_.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=18:18)_, no term id was found for the name/label _polyaxonal amacrine cell_.
+1. No term id was found for the name/label _Inner cortex_ in the following 1 row _[46](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=46:46)_.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=18:18)_, no term id was found for the name/label _semilunar cell_.
+1. No term id was found for the name/label _Outer cortex_ in the following 2 rows _[47](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=47:47)_, _[53](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=53:53)_.
 
-1. In row _[46](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=46:46)_, no term id was found for the name/label _Inner cortex_.
+1. No term id was found for the name/label _conjuctival epithelium_ in the following 1 row _[73](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=73:73)_.
 
-1. In row _[47](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=47:47)_, no term id was found for the name/label _Outer cortex_.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=53:53)_, no term id was found for the name/label _Outer cortex_.
-
-1. In row _[73](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=73:73)_, no term id was found for the name/label _conjuctival epithelium_.
-
-1. In row _[74](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=74:74)_, no term id was found for the name/label _limbal stem cells_.
+1. No term id was found for the name/label _limbal stem cells_ in the following 1 row _[74](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=74:74)_.
 
 
 ## Blank ontology ID missing parent
@@ -92,15 +86,15 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[16](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=16:16)_, the term _semilunar type 1 cell_ without ontology ID has no parent that is from the CL ontology.
+1. The term _semilunar type 1 cell_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[16](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=16:16)_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=17:17)_, the term _semilunar type 3 cell_ without ontology ID has no parent that is from the CL ontology.
+1. The term _semilunar type 3 cell_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[17](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=17:17)_.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 

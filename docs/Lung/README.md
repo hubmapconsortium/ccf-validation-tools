@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2023-10-04)
+ASCT+B Validation Reports for Lung (2023-10-06)
 ===============================================
 
 Table of contents
@@ -52,13 +52,15 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[85](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=85:85)_, the term _[CL:4028006](http://purl.obolibrary.org/obo/CL_4028006)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _adventitial fibroblast_ and the one in the **ontology** is _alveolar type 2 fibroblast cell_. For reference, the given name/label **by SMEs** is _adventitial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _CL:4028006_ has a different name/label in the source ontology in the following 1 row _[85](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=85:85)_. The name/label in the **ASCT+B table** is _adventitial fibroblast_ and the one in the **ontology** is _alveolar type 2 fibroblast cell_. For reference, the given name/label **by SMEs** is _adventitial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
 - No issues found.
 
@@ -68,19 +70,15 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-- No issue found.
+- No issues found.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-1. In row _[101](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=101:101)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
-
-1. In row _[102](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=102:102)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
-
-1. In row _[103](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=103:103)_, the term _FMA:84472_ is from another ontology that is not validated in this process.
+1. The term _FMA:84472_ in the following 3 rows _[101](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=101:101)_, _[102](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=102:102)_, _[103](https://docs.google.com/spreadsheets/d/1StCXeg1J9YZaxRb-nnKsso3Dfv5pkH0DxF_8sz_DVMA/edit#gid=1109843030&range=103:103)_ is from another ontology that is not validated in this process.
 
 
 # Relationship reports

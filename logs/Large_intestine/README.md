@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Large_intestine (2023-10-04)
+ASCT+B Validation Reports for Large_intestine (2023-10-06)
 ==========================================================
 
 Table of contents
@@ -32,8 +32,6 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
-
 
 ## Typos or punctuation mistakes
 
@@ -52,229 +50,29 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[15](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=15:15)_, the term _[CL:0009009](http://purl.obolibrary.org/obo/CL_0009009)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _paneth cell of epithelium of large intestine_ and the one in the **ontology** is _paneth cell of colon_. For reference, the given name/label **by SMEs** is _Paneth_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _CL:0000244_ has a different name/label in the source ontology in the following 1 row _[1196](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1196:1196)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _transitional epithelial cell_. For reference, the given name/label **by SMEs** is _transitional_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. In row _[1196](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1196:1196)_, the term _[CL:0000244](http://purl.obolibrary.org/obo/CL_0000244)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _transitional epithelial cell_. For reference, the given name/label **by SMEs** is _transitional_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _CL:0009009_ has a different name/label in the source ontology in the following 1 row _[15](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=15:15)_. The name/label in the **ASCT+B table** is _paneth cell of epithelium of large intestine_ and the one in the **ontology** is _paneth cell of colon_. For reference, the given name/label **by SMEs** is _Paneth_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[27](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=27:27)_, no term id was found for the name/label _subepithelial membrane_.
+1. No term id was found for the name/label _subepithelial membrane_ in the following 13 rows _[27](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=27:27)_, _[134](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=134:134)_, _[240](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=240:240)_, _[346](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=346:346)_, _[455](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=455:455)_, _[564](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=564:564)_, _[673](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=673:673)_, _[782](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=782:782)_, _[891](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=891:891)_, _[1000](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1000:1000)_, _[1106](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1106:1106)_, _[1203](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1203:1203)_, _[1266](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1266:1266)_.
 
-1. In row _[28](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=28:28)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
+1. No term id was found for the name/label _pericryptal fibroblastic sheath_ in the following 11 rows _[28](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=28:28)_, _[135](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=135:135)_, _[241](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=241:241)_, _[347](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=347:347)_, _[456](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=456:456)_, _[565](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=565:565)_, _[674](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=674:674)_, _[783](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=783:783)_, _[892](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=892:892)_, _[1001](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1001:1001)_, _[1107](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1107:1107)_.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=35:35)_, no term id was found for the name/label _ganglion_.
+1. No term id was found for the name/label _ganglion_ in the following 65 rows _[35](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=35:35)_, _[83](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=83:83)_, _[85](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=85:85)_, _[87](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=87:87)_, _[97](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=97:97)_, _[142](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=142:142)_, _[189](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=189:189)_, _[191](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=191:191)_, _[193](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=193:193)_, _[203](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=203:203)_, _[248](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=248:248)_, _[295](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=295:295)_, _[297](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=297:297)_, _[299](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=299:299)_, _[309](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=309:309)_, _[354](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=354:354)_, _[401](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=401:401)_, _[403](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=403:403)_, _[405](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=405:405)_, _[415](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=415:415)_, _[463](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=463:463)_, _[510](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=510:510)_, _[512](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=512:512)_, _[514](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=514:514)_, _[524](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=524:524)_, _[572](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=572:572)_, _[619](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=619:619)_, _[621](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=621:621)_, _[623](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=623:623)_, _[633](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=633:633)_, _[681](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=681:681)_, _[728](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=728:728)_, _[730](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=730:730)_, _[732](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=732:732)_, _[742](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=742:742)_, _[790](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=790:790)_, _[837](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=837:837)_, _[839](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=839:839)_, _[841](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=841:841)_, _[851](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=851:851)_, _[899](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=899:899)_, _[946](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=946:946)_, _[948](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=948:948)_, _[950](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=950:950)_, _[960](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=960:960)_, _[1008](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1008:1008)_, _[1055](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1055:1055)_, _[1057](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1057:1057)_, _[1059](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1059:1059)_, _[1069](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1069:1069)_, _[1114](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1114:1114)_, _[1161](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1161:1161)_, _[1163](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1163:1163)_, _[1165](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1165:1165)_, _[1175](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1175:1175)_, _[1210](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1210:1210)_, _[1222](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1222:1222)_, _[1224](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1224:1224)_, _[1226](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1226:1226)_, _[1236](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1236:1236)_, _[1273](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1273:1273)_, _[1282](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1282:1282)_, _[1284](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1284:1284)_, _[1286](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1286:1286)_, _[1296](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1296:1296)_.
 
-1. In row _[83](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=83:83)_, no term id was found for the name/label _ganglion_.
+1. No term id was found for the name/label _mesocolic coli_ in the following 6 rows _[436](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=436:436)_, _[545](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=545:545)_, _[654](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=654:654)_, _[763](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=763:763)_, _[872](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=872:872)_, _[981](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=981:981)_.
 
-1. In row _[85](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=85:85)_, no term id was found for the name/label _ganglion_.
+1. No term id was found for the name/label _free coli_ in the following 6 rows _[437](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=437:437)_, _[546](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=546:546)_, _[655](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=655:655)_, _[764](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=764:764)_, _[873](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=873:873)_, _[982](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=982:982)_.
 
-1. In row _[87](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=87:87)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[97](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=97:97)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[134](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=134:134)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[135](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=135:135)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
-
-1. In row _[142](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=142:142)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[189](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=189:189)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[191](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=191:191)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[193](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=193:193)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[203](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=203:203)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[240](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=240:240)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[241](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=241:241)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
-
-1. In row _[248](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=248:248)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[295](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=295:295)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[297](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=297:297)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[299](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=299:299)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[309](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=309:309)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[346](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=346:346)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[347](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=347:347)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
-
-1. In row _[354](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=354:354)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[401](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=401:401)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[403](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=403:403)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[405](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=405:405)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[415](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=415:415)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[436](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=436:436)_, no term id was found for the name/label _mesocolic coli_.
-
-1. In row _[437](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=437:437)_, no term id was found for the name/label _free coli_.
-
-1. In row _[438](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=438:438)_, no term id was found for the name/label _omental coli_.
-
-1. In row _[455](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=455:455)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[456](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=456:456)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
-
-1. In row _[463](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=463:463)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[510](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=510:510)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[512](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=512:512)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[514](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=514:514)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[524](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=524:524)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[545](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=545:545)_, no term id was found for the name/label _mesocolic coli_.
-
-1. In row _[546](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=546:546)_, no term id was found for the name/label _free coli_.
-
-1. In row _[547](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=547:547)_, no term id was found for the name/label _omental coli_.
-
-1. In row _[564](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=564:564)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[565](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=565:565)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
-
-1. In row _[572](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=572:572)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[619](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=619:619)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[621](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=621:621)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[623](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=623:623)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[633](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=633:633)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[654](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=654:654)_, no term id was found for the name/label _mesocolic coli_.
-
-1. In row _[655](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=655:655)_, no term id was found for the name/label _free coli_.
-
-1. In row _[656](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=656:656)_, no term id was found for the name/label _omental coli_.
-
-1. In row _[673](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=673:673)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[674](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=674:674)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
-
-1. In row _[681](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=681:681)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[728](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=728:728)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[730](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=730:730)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[732](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=732:732)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[742](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=742:742)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[763](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=763:763)_, no term id was found for the name/label _mesocolic coli_.
-
-1. In row _[764](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=764:764)_, no term id was found for the name/label _free coli_.
-
-1. In row _[765](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=765:765)_, no term id was found for the name/label _omental coli_.
-
-1. In row _[782](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=782:782)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[783](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=783:783)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
-
-1. In row _[790](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=790:790)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[837](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=837:837)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[839](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=839:839)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[841](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=841:841)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[851](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=851:851)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[872](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=872:872)_, no term id was found for the name/label _mesocolic coli_.
-
-1. In row _[873](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=873:873)_, no term id was found for the name/label _free coli_.
-
-1. In row _[874](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=874:874)_, no term id was found for the name/label _omental coli_.
-
-1. In row _[891](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=891:891)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[892](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=892:892)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
-
-1. In row _[899](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=899:899)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[946](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=946:946)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[948](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=948:948)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[950](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=950:950)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[960](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=960:960)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[981](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=981:981)_, no term id was found for the name/label _mesocolic coli_.
-
-1. In row _[982](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=982:982)_, no term id was found for the name/label _free coli_.
-
-1. In row _[983](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=983:983)_, no term id was found for the name/label _omental coli_.
-
-1. In row _[1000](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1000:1000)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[1001](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1001:1001)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
-
-1. In row _[1008](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1008:1008)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1055](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1055:1055)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1057](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1057:1057)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1059](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1059:1059)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1069](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1069:1069)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1106](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1106:1106)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[1107](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1107:1107)_, no term id was found for the name/label _pericryptal fibroblastic sheath_.
-
-1. In row _[1114](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1114:1114)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1161](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1161:1161)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1163](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1163:1163)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1165](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1165:1165)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1175](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1175:1175)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1203](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1203:1203)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[1210](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1210:1210)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1222](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1222:1222)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1224](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1224:1224)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1226](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1226:1226)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1236](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1236:1236)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1266](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1266:1266)_, no term id was found for the name/label _subepithelial membrane_.
-
-1. In row _[1273](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1273:1273)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1282](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1282:1282)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1284](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1284:1284)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1286](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1286:1286)_, no term id was found for the name/label _ganglion_.
-
-1. In row _[1296](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1296:1296)_, no term id was found for the name/label _ganglion_.
+1. No term id was found for the name/label _omental coli_ in the following 6 rows _[438](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=438:438)_, _[547](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=547:547)_, _[656](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=656:656)_, _[765](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=765:765)_, _[874](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=874:874)_, _[983](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=983:983)_.
 
 
 ## Blank ontology ID missing parent
@@ -282,189 +80,17 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. In row _[27](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=27:27)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
+1. The term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology in the following 13 rows _[27](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=27:27)_, _[134](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=134:134)_, _[240](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=240:240)_, _[346](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=346:346)_, _[455](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=455:455)_, _[564](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=564:564)_, _[673](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=673:673)_, _[782](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=782:782)_, _[891](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=891:891)_, _[1000](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1000:1000)_, _[1106](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1106:1106)_, _[1203](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1203:1203)_, _[1266](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1266:1266)_.
 
-1. In row _[28](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=28:28)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
+1. The term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology in the following 11 rows _[28](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=28:28)_, _[135](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=135:135)_, _[241](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=241:241)_, _[347](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=347:347)_, _[456](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=456:456)_, _[565](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=565:565)_, _[674](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=674:674)_, _[783](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=783:783)_, _[892](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=892:892)_, _[1001](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1001:1001)_, _[1107](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1107:1107)_.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=35:35)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[83](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=83:83)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[85](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=85:85)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[87](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=87:87)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[97](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=97:97)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[134](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=134:134)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[135](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=135:135)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[142](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=142:142)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[189](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=189:189)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[191](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=191:191)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[193](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=193:193)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[203](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=203:203)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[240](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=240:240)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[241](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=241:241)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[248](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=248:248)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[295](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=295:295)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[297](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=297:297)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[299](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=299:299)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[309](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=309:309)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[346](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=346:346)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[347](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=347:347)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[354](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=354:354)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[401](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=401:401)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[403](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=403:403)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[405](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=405:405)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[415](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=415:415)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[455](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=455:455)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[456](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=456:456)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[463](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=463:463)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[510](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=510:510)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[512](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=512:512)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[514](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=514:514)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[524](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=524:524)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[564](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=564:564)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[565](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=565:565)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[572](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=572:572)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[619](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=619:619)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[621](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=621:621)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[623](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=623:623)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[633](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=633:633)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[673](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=673:673)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[674](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=674:674)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[681](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=681:681)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[728](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=728:728)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[730](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=730:730)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[732](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=732:732)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[742](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=742:742)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[782](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=782:782)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[783](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=783:783)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[790](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=790:790)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[837](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=837:837)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[839](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=839:839)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[841](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=841:841)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[851](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=851:851)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[891](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=891:891)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[892](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=892:892)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[899](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=899:899)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[946](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=946:946)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[948](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=948:948)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[950](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=950:950)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[960](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=960:960)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1000](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1000:1000)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1001](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1001:1001)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1008](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1008:1008)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1055](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1055:1055)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1057](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1057:1057)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1059](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1059:1059)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1069](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1069:1069)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1106](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1106:1106)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1107](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1107:1107)_, the term _pericryptal fibroblastic sheath_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1114](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1114:1114)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1161](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1161:1161)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1163](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1163:1163)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1165](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1165:1165)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1175](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1175:1175)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1203](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1203:1203)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1210](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1210:1210)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1222](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1222:1222)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1224](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1224:1224)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1226](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1226:1226)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1236](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1236:1236)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1266](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1266:1266)_, the term _subepithelial membrane_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1273](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1273:1273)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1282](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1282:1282)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1284](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1284:1284)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1286](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1286:1286)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
-
-1. In row _[1296](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1296:1296)_, the term _ganglion_ without ontology ID has no parent that is from the CL ontology.
+1. The term _ganglion_ without ontology ID has no parent that is from the CL ontology in the following 65 rows _[35](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=35:35)_, _[83](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=83:83)_, _[85](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=85:85)_, _[87](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=87:87)_, _[97](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=97:97)_, _[142](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=142:142)_, _[189](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=189:189)_, _[191](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=191:191)_, _[193](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=193:193)_, _[203](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=203:203)_, _[248](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=248:248)_, _[295](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=295:295)_, _[297](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=297:297)_, _[299](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=299:299)_, _[309](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=309:309)_, _[354](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=354:354)_, _[401](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=401:401)_, _[403](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=403:403)_, _[405](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=405:405)_, _[415](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=415:415)_, _[463](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=463:463)_, _[510](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=510:510)_, _[512](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=512:512)_, _[514](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=514:514)_, _[524](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=524:524)_, _[572](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=572:572)_, _[619](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=619:619)_, _[621](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=621:621)_, _[623](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=623:623)_, _[633](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=633:633)_, _[681](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=681:681)_, _[728](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=728:728)_, _[730](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=730:730)_, _[732](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=732:732)_, _[742](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=742:742)_, _[790](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=790:790)_, _[837](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=837:837)_, _[839](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=839:839)_, _[841](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=841:841)_, _[851](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=851:851)_, _[899](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=899:899)_, _[946](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=946:946)_, _[948](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=948:948)_, _[950](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=950:950)_, _[960](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=960:960)_, _[1008](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1008:1008)_, _[1055](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1055:1055)_, _[1057](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1057:1057)_, _[1059](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1059:1059)_, _[1069](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1069:1069)_, _[1114](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1114:1114)_, _[1161](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1161:1161)_, _[1163](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1163:1163)_, _[1165](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1165:1165)_, _[1175](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1175:1175)_, _[1210](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1210:1210)_, _[1222](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1222:1222)_, _[1224](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1224:1224)_, _[1226](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1226:1226)_, _[1236](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1236:1236)_, _[1273](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1273:1273)_, _[1282](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1282:1282)_, _[1284](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1284:1284)_, _[1286](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1286:1286)_, _[1296](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1296:1296)_.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 
