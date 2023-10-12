@@ -12,11 +12,11 @@ Please, add a comment below if you want to address any of the actions to be take
 
 **1 - stroma of pancreas --> pancreas mesenchyme**
 
-
+A `part of` relationship needs to be added in Uberon.
 
 **2 - extrapancreatic duct --> common bile duct**
 
-
+A `connected to` relationship can be added, especially with the `hepatopancreatic ampulla`.
 
 **3 - uncinate process of pancreas --> pancreatic lobule**
 
@@ -24,11 +24,11 @@ Please, add a comment below if you want to address any of the actions to be take
 
 **4 - ventral pancreas --> head of pancreas**
 
-
+I can add an `overlaps` relationship.
 
 **5 - dorsal pancreas --> head of pancreas**
 
-
+I can add an `overlaps` relationship.
 
 **6 - pancreatic lobule --> parenchyma of pancreas**
 
@@ -64,7 +64,7 @@ Please, add a comment below if you want to address any of the actions to be take
 
 **14 - Dorsal pancreatic duct --> dorsal pancreatic duct**
 
-
+It is the same term (use for Papilla of Santorini)
 
 **15 - parenchyma of pancreas --> endocrine pancreas**
 
@@ -88,7 +88,7 @@ Please, add a comment below if you want to address any of the actions to be take
 
 **20 - dorsal pancreas --> body of pancreas**
 
-
+I can add an `overlaps` relationship.
 
 **21 - body of pancreas --> pancreatic lobule**
 
