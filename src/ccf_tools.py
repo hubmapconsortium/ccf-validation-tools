@@ -43,6 +43,11 @@ def parse_asctb(path):
         return log_dict, terms_set
     def check_id(id):
       return re.match("(CL|UBERON|PCL)\:[0-9]+", id)
+  
+    def no_parent(log_dict, cell_type, row_number):
+      if not check_id(cell_type["id"]):
+        log_dict["no_parent"].append({"id": cell_type["id"], "label": cell_type["rdfs_label"], "user_label": cell_type["name"], "row_number": row_number})
+      return log_dict
 
     asct_b_tab = json.load(open(path))
     as_invalid_terms = set()
@@ -52,7 +57,7 @@ def parse_asctb(path):
     ct_valid_terms = set()
     rt = []
     rut = []
-    log_dict = {"no_valid_id": [], "no_found_id": [], "diff_label": []}
+    log_dict = {"no_valid_id": [], "no_found_id": [], "diff_label": [], "no_parent": []}
     terms_set = set()
 
     #   out = pd.DataFrame(columns=['o', 's', 'olabel', 'slabel', 'user_olabel', 'user_slabel', 'row_number'])
@@ -97,6 +102,8 @@ def parse_asctb(path):
       
       # CT-CT RELATIONSHIP
       cell_types = row['cell_types']
+      if len(cell_types) == 1:
+        log_dict = no_parent(log_dict, cell_types[0], row["rowNumber"])
       for current, next in zip(cell_types, cell_types[1:]):
         log_dict, terms_set = is_valid_id(log_dict, current, row["rowNumber"], terms_set)
         log_dict, terms_set = is_valid_id(log_dict, next, row["rowNumber"], terms_set)
@@ -130,6 +137,9 @@ def parse_asctb(path):
           elif not check_id(next['id']) and next['name'] != '':
             ct_invalid_terms.add(next['name'])
             unique_terms.add(next['name'])
+            
+          if not check_id(current['id']) and (check_id(next['id']) or not check_id(next['id'])):
+            log_dict = no_parent(log_dict, next, row['rowNumber'])
 
       # CT-AS RELATIONSHIP
       if len(anatomical_structures) > 0 and len(cell_types) > 0:

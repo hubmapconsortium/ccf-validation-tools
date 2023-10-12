@@ -5,10 +5,11 @@ comments: true
 # Suggestions to make valid relationships in the Pancreas table v1.3 (12/09/2023)
 
 Please, add a comment below if you want to address any of the actions to be taken. Please, indicate the number before the comment.
+**IMPORTANT** The order of the two classes in these pages is the same as it is found in the tables (e.g. AS4 --> AS5)
 
 
 
-## AS-AS
+## AS-->AS
 
 **1 - stroma of pancreas --> pancreas mesenchyme**
 
@@ -99,7 +100,7 @@ I can add an `overlaps` relationship.
 
 
 
-## CT-CT
+## CT-->CT
 
 **1 - pancreatic endocrine cell --> gastrin secreting cell**
 
@@ -130,7 +131,7 @@ This is a very general term, a specific term needs to be created, together with 
 The relationship needs to be added in CL.
 
 
-## CT-AS
+## CT-->AS
 
 **1 - intercalated duct of pancreas --> epithelial cell of exocrine pancreas**
 

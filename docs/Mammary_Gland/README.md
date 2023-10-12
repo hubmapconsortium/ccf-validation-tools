@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Mammary_Gland (2023-09-06)
+ASCT+B Validation Reports for Mammary_Gland (2023-10-11)
 ========================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -31,8 +32,6 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
-
 
 ## Typos or punctuation mistakes
 
@@ -57,33 +56,61 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[12](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=12:12)_, no term id was found for the name/label _Basal cell_.
+1. No term id was found for the name/label _Basal cell_ in the following 1 row _[12](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=12:12)_.
 
-1. In row _[13](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=13:13)_, no term id was found for the name/label _estrogen receptor negative luminal progenitor cell_.
+1. No term id was found for the name/label _estrogen receptor negative luminal progenitor cell_ in the following 1 row _[13](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=13:13)_.
 
-1. In row _[14](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=14:14)_, no term id was found for the name/label _mature luminal cell_.
+1. No term id was found for the name/label _mature luminal cell_ in the following 1 row _[14](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=14:14)_.
 
-1. In row _[15](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=15:15)_, no term id was found for the name/label _Endothelial cell 1_.
+1. No term id was found for the name/label _Endothelial cell 1_ in the following 1 row _[15](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=15:15)_.
 
-1. In row _[16](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=16:16)_, no term id was found for the name/label _Endothelial cell 2_.
+1. No term id was found for the name/label _Endothelial cell 2_ in the following 1 row _[16](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=16:16)_.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=17:17)_, no term id was found for the name/label _Adipocyte 1_.
+1. No term id was found for the name/label _Adipocyte 1_ in the following 1 row _[17](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=17:17)_.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=18:18)_, no term id was found for the name/label _Adipocyte 2_.
+1. No term id was found for the name/label _Adipocyte 2_ in the following 1 row _[18](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=18:18)_.
 
-1. In row _[19](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=19:19)_, no term id was found for the name/label _Fibroblast_.
+1. No term id was found for the name/label _Fibroblast_ in the following 1 row _[19](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=19:19)_.
 
-1. In row _[20](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=20:20)_, no term id was found for the name/label _T-cell_.
+1. No term id was found for the name/label _T-cell_ in the following 1 row _[20](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=20:20)_.
 
-1. In row _[21](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=21:21)_, no term id was found for the name/label _Macrophage_.
+1. No term id was found for the name/label _Macrophage_ in the following 1 row _[21](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=21:21)_.
+
+
+## Blank ontology ID missing parent
+
+
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+1. The term _Basal cell_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[12](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=12:12)_.
+
+1. The term _estrogen receptor negative luminal progenitor cell_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[13](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=13:13)_.
+
+1. The term _mature luminal cell_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[14](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=14:14)_.
+
+1. The term _Endothelial cell 1_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[15](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=15:15)_.
+
+1. The term _Endothelial cell 2_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[16](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=16:16)_.
+
+1. The term _Adipocyte 1_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[17](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=17:17)_.
+
+1. The term _Adipocyte 2_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[18](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=18:18)_.
+
+1. The term _Fibroblast_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[19](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=19:19)_.
+
+1. The term _T-cell_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[20](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=20:20)_.
+
+1. The term _Macrophage_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[21](https://docs.google.com/spreadsheets/d/1Ac7C4dX7eYSMyR75AA2uVY9ZgNGOZZgbqgR8wmp-wdk/edit#gid=928286522&range=21:21)_.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
 - No issues found.
 

@@ -6,7 +6,6 @@ from datetime import date
 import pandas as pd
 
 from ccf_tools import parse_asctb
-from hra_wrapper import get_images_link
 from template_generation_tools import (generate_class_graph_template,
                                        generate_vasculature_template)
 
@@ -78,8 +77,5 @@ if not eval(args.old_version):
   else:
     report_r.to_csv(report_r_path, sep='\t', index=False)
       
-images_link = get_images_link()
-
-images_link.serialize('../owl/hra_uberon_3d_images.owl', format='xml')                       
 
 

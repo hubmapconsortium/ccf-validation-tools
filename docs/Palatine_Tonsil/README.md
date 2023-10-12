@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Palatine_Tonsil (2023-09-06)
+ASCT+B Validation Reports for Palatine_Tonsil (2023-10-11)
 ==========================================================
 
 Table of contents
@@ -10,6 +10,7 @@ Table of contents
 	* [Typos or punctuation mistakes](#typos-or-punctuation-mistakes)
 	* [Different labels](#different-labels)
 	* [Blank ontology ID](#blank-ontology-id)
+	* [Blank ontology ID missing parent](#blank-ontology-id-missing-parent)
 	* [Terms from another ontology](#terms-from-another-ontology)
 * [Relationship reports](#relationship-reports)
 	* [How to read a table entry](#how-to-read-a-table-entry)
@@ -31,8 +32,6 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
-
 
 ## Typos or punctuation mistakes
 
@@ -51,217 +50,57 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. In row _[17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17)_, the term _[CL:0000624](http://purl.obolibrary.org/obo/CL_0000624)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD4-positive alpha-beta T cells_ and the one in the **ontology** is _CD4-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD4 T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18)_, the term _[CL:0000625](http://purl.obolibrary.org/obo/CL_0000625)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _CD8-positive alpha-beta T cells_ and the one in the **ontology** is _CD8-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD8 T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[30](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=30:30)_, the term _[UBERON:0001070](http://purl.obolibrary.org/obo/UBERON_0001070)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _lesser palatine artery_ and the one in the **ontology** is _external carotid artery_. For reference, the given name/label **by SMEs** is _lesser palatine artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[28](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=28:28)_, the term _[UBERON:0001612](http://purl.obolibrary.org/obo/UBERON_0001612)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _tonsillar branch of the facial artery_ and the one in the **ontology** is _facial artery_. For reference, the given name/label **by SMEs** is _facial artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. In row _[26](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=26:26)_, the term _[UBERON:0001610](http://purl.obolibrary.org/obo/UBERON_0001610)_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _dorsal lingual artery_ and the one in the **ontology** is _lingual artery_. For reference, the given name/label **by SMEs** is _lingual artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).  
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+
+You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. In row _[25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25)_, no term id was found for the name/label _plasma cell CD21_.
+1. No term id was found for the name/label _plasma cell CD21_ in the following 1 row _[25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25)_.
 
-1. In row _[31](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=31:31)_, no term id was found for the name/label _peritonsillar plexus of veins_.
+1. No term id was found for the name/label _peritonsillar plexus of veins_ in the following 1 row _[31](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=31:31)_.
 
-1. In row _[32](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=32:32)_, no term id was found for the name/label _tonsil T cell zone_.
+1. No term id was found for the name/label _tonsil T cell zone_ in the following 4 rows _[32](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=32:32)_, _[33](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=33:33)_, _[34](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=34:34)_, _[35](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=35:35)_.
 
-1. In row _[33](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=33:33)_, no term id was found for the name/label _tonsil T cell zone_.
+1. No term id was found for the name/label _tonsil follicle_ in the following 30 rows _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, _[37](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=37:37)_, _[38](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=38:38)_, _[39](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=39:39)_, _[40](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=40:40)_, _[41](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=41:41)_, _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, _[43](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=43:43)_, _[44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=45:45)_, _[46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=47:47)_, _[48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48)_, _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_.
 
-1. In row _[34](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=34:34)_, no term id was found for the name/label _tonsil T cell zone_.
+1. No term id was found for the name/label _tonsil secondary follicle_ in the following 30 rows _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, _[37](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=37:37)_, _[38](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=38:38)_, _[39](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=39:39)_, _[40](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=40:40)_, _[41](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=41:41)_, _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, _[43](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=43:43)_, _[44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=45:45)_, _[46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46)_, _[47](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=47:47)_, _[48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48)_, _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_, _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, _[56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57)_, _[58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58)_, _[59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59)_, _[60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60)_, _[61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61)_, _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_, _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_.
 
-1. In row _[35](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=35:35)_, no term id was found for the name/label _tonsil T cell zone_.
+1. No term id was found for the name/label _Cycling B_ in the following 3 rows _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_.
 
-1. In row _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, no term id was found for the name/label _tonsil follicle_.
+1. No term id was found for the name/label _germinal center B cell CD21_ in the following 2 rows _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_.
 
-1. In row _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, no term id was found for the name/label _tonsil secondary follicle_.
+1. No term id was found for the name/label _tonsil germinal center mantle zone_ in the following 3 rows _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_.
 
-1. In row _[36](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=36:36)_, no term id was found for the name/label _Cycling B_.
+1. No term id was found for the name/label _Centroblast_ in the following 1 row _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_.
 
-1. In row _[37](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=37:37)_, no term id was found for the name/label _tonsil follicle_.
+1. No term id was found for the name/label _tonsil germinal center light zone_ in the following 1 row _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_.
 
-1. In row _[37](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=37:37)_, no term id was found for the name/label _tonsil secondary follicle_.
+1. No term id was found for the name/label _tonsil germinal center dark zone_ in the following 1 row _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_.
 
-1. In row _[38](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=38:38)_, no term id was found for the name/label _tonsil follicle_.
 
-1. In row _[38](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=38:38)_, no term id was found for the name/label _tonsil secondary follicle_.
+## Blank ontology ID missing parent
 
-1. In row _[39](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=39:39)_, no term id was found for the name/label _tonsil follicle_.
 
-1. In row _[39](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=39:39)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[40](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=40:40)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[40](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=40:40)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[41](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=41:41)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[41](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=41:41)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[42](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=42:42)_, no term id was found for the name/label _Cycling B_.
-
-1. In row _[43](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=43:43)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[43](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=43:43)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=45:45)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[45](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=45:45)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[47](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=47:47)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[47](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=47:47)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[49](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=49:49)_, no term id was found for the name/label _germinal center B cell_.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[50](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=50:50)_, no term id was found for the name/label _germinal center B cell CD21_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[51](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=51:51)_, no term id was found for the name/label _tonsil germinal center mantle zone_.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[52](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=52:52)_, no term id was found for the name/label _tonsil germinal center mantle zone_.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[53](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=53:53)_, no term id was found for the name/label _tonsil germinal center mantle zone_.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54)_, no term id was found for the name/label _Centroblast_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55)_, no term id was found for the name/label _Cycling B_.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62)_, no term id was found for the name/label _germinal center B cell_.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63)_, no term id was found for the name/label _germinal center B cell CD21_.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[64](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=64:64)_, no term id was found for the name/label _tonsil germinal center light zone_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_, no term id was found for the name/label _tonsil follicle_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_, no term id was found for the name/label _tonsil secondary follicle_.
-
-1. In row _[65](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=65:65)_, no term id was found for the name/label _tonsil germinal center dark zone_.
+This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
+  
+- No issues found.
 
 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
   
-1. In row _[16](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=16:16)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
+1. The term _FMA:55221_ in the following 14 rows _[16](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=16:16)_, _[17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17)_, _[18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18)_, _[19](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=19:19)_, _[20](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=20:20)_, _[21](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=21:21)_, _[22](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=22:22)_, _[23](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=23:23)_, _[24](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=24:24)_, _[25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25)_, _[32](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=32:32)_, _[33](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=33:33)_, _[34](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=34:34)_, _[35](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=35:35)_ is from another ontology that is not validated in this process.
 
-1. In row _[17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
+1. The term _FMA:49555_ in the following 1 row _[27](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=27:27)_ is from another ontology that is not validated in this process.
 
-1. In row _[18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[19](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=19:19)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[20](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=20:20)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[21](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=21:21)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[22](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=22:22)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[23](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=23:23)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[24](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=24:24)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[27](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=27:27)_, the term _FMA:49555_ is from another ontology that is not validated in this process.
-
-1. In row _[29](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=29:29)_, the term _FMA:49497_ is from another ontology that is not validated in this process.
-
-1. In row _[32](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=32:32)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[33](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=33:33)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[34](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=34:34)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
-
-1. In row _[35](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=35:35)_, the term _FMA:55221_ is from another ontology that is not validated in this process.
+1. The term _FMA:49497_ in the following 1 row _[29](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=29:29)_ is from another ontology that is not validated in this process.
 
 
 # Relationship reports
@@ -309,12 +148,12 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel       | user_slabel   | o              | olabel   | user_olabel   | row_number                                                                                                       |   deltaIC |
 |----|----------------|--------------|---------------|----------------|----------|---------------|------------------------------------------------------------------------------------------------------------------|-----------|
-| 13 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [26](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=26:26) |       nan |
-| 14 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [27](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=27:27) |       nan |
-| 15 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [28](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=28:28) |       nan |
-| 16 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [29](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=29:29) |       nan |
-| 17 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [30](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=30:30) |       nan |
-| 18 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [31](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=31:31) |       nan |
+| 17 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [26](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=26:26) |       nan |
+| 18 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [27](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=27:27) |       nan |
+| 19 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [28](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=28:28) |       nan |
+| 20 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [29](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=29:29) |       nan |
+| 21 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [30](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=30:30) |       nan |
+| 22 | UBERON:0001981 | blood vessel | blood vessel  | UBERON:0002372 | tonsil   | tonsil        | [31](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=31:31) |       nan |
 
 
 
@@ -340,24 +179,29 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 
 
-|    | s          | slabel                          | user_slabel       | o              | olabel                 | user_olabel            | row_number                                                                                                       |   deltaIC |
-|----|------------|---------------------------------|-------------------|----------------|------------------------|------------------------|------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | CL:0000815 | regulatory T cell               | regulatory T cell | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57) |  100      |
-|  1 | CL:0000236 | B cell                          | B cell            | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58) |  100      |
-|  2 | CL:0000786 | Plasma Cell                     | plasma cell       | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59) |  100      |
-|  3 | CL:0000084 | T Cell                          | T Cell            | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60) |  100      |
-|  4 | CL:0000624 | CD4-positive, alpha-beta T cell | CD4 T cell        | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56) |  100      |
-|  5 | CL:0000235 | Macrophage                      | macrophage        | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61) |   77.8462 |
-|  6 | CL:0000084 | T cell                          | T cell            | UBERON:0002372 | tonsil                 | tonsil                 | [16](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=16:16) |  nan      |
-|  7 | CL:0000624 | CD4-positive, alpha-beta T cell | CD4 T cell        | UBERON:0002372 | tonsil                 | tonsil                 | [17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17) |  nan      |
-|  8 | CL:0000625 | CD8-positive, alpha-beta T cell | CD8 T cell        | UBERON:0002372 | tonsil                 | tonsil                 | [18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18) |  nan      |
-|  9 | CL:0000057 | Fibroblast                      | fibroblast        | UBERON:0002372 | tonsil                 | tonsil                 | [19](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=19:19) |  nan      |
-| 10 | CL:0000432 | Reticular cell                  | reticular cells   | UBERON:0002372 | tonsil                 | tonsil                 | [20](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=20:20) |  nan      |
-| 11 | CL:0000451 | Dendritic Cell                  | dendritic cell    | UBERON:0002372 | tonsil                 | tonsil                 | [22](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=22:22) |  nan      |
-| 12 | CL:0000786 | Plasma Cell                     | plasma cell       | UBERON:0002372 | tonsil                 | tonsil                 | [24](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=24:24) |  nan      |
-| 19 | CL:0000815 | regulatory T cell               | regulatory T cell | UBERON:0010754 | germinal center        | germinal center        | [44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44) |  nan      |
-| 20 | CL:0000786 | Plasma Cell                     | plasma cell       | UBERON:0010754 | germinal center        | germinal center        | [46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46) |  nan      |
-| 21 | CL:0000235 | Macrophage                      | macrophage        | UBERON:0010754 | germinal center        | germinal center        | [48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48) |  nan      |
+|    | s          | slabel                          | user_slabel            | o              | olabel                 | user_olabel            | row_number                                                                                                       |   deltaIC |
+|----|------------|---------------------------------|------------------------|----------------|------------------------|------------------------|------------------------------------------------------------------------------------------------------------------|-----------|
+|  0 | CL:0000815 | regulatory T cell               | regulatory T cell      | UBERON:0010754 | germinal center        | germinal center        | [44](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=44:44) |       inf |
+|  1 | CL:0000786 | Plasma Cell                     | plasma cell            | UBERON:0010754 | germinal center        | germinal center        | [46](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=46:46) |       inf |
+|  2 | CL:0000236 | B cell                          | B cell                 | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [54](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=54:54) |       inf |
+|  3 | CL:0000236 | B cell                          | B cell                 | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [55](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=55:55) |       inf |
+|  4 | CL:0000624 | CD4-positive alpha-beta T cells | CD4 T cell             | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [56](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=56:56) |       inf |
+|  5 | CL:0000815 | regulatory T cell               | regulatory T cell      | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [57](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=57:57) |       inf |
+|  6 | CL:0000236 | B cell                          | B cell                 | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [58](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=58:58) |       inf |
+|  7 | CL:0000786 | Plasma Cell                     | plasma cell            | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [59](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=59:59) |       inf |
+|  8 | CL:0000084 | T Cell                          | T Cell                 | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [60](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=60:60) |       inf |
+|  9 | CL:0000084 | T cell                          | T cell                 | UBERON:0002372 | tonsil                 | tonsil                 | [16](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=16:16) |       nan |
+| 10 | CL:0000624 | CD4-positive, alpha-beta T cell | CD4 T cell             | UBERON:0002372 | tonsil                 | tonsil                 | [17](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=17:17) |       nan |
+| 11 | CL:0000625 | CD8-positive, alpha-beta T cell | CD8 T cell             | UBERON:0002372 | tonsil                 | tonsil                 | [18](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=18:18) |       nan |
+| 12 | CL:0000057 | Fibroblast                      | fibroblast             | UBERON:0002372 | tonsil                 | tonsil                 | [19](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=19:19) |       nan |
+| 13 | CL:0000432 | Reticular cell                  | reticular cells        | UBERON:0002372 | tonsil                 | tonsil                 | [20](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=20:20) |       nan |
+| 14 | CL:0000451 | Dendritic Cell                  | dendritic cell         | UBERON:0002372 | tonsil                 | tonsil                 | [22](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=22:22) |       nan |
+| 15 | CL:0000786 | Plasma Cell                     | plasma cell            | UBERON:0002372 | tonsil                 | tonsil                 | [24](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=24:24) |       nan |
+| 16 | CL:0000786 | Plasma Cell                     | plasma cell            | UBERON:0002372 | tonsil                 | tonsil                 | [25](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=25:25) |       nan |
+| 23 | CL:0000235 | Macrophage                      | macrophage             | UBERON:0010754 | germinal center        | germinal center        | [48](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=48:48) |       nan |
+| 24 | CL:0000235 | Macrophage                      | macrophage             | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [61](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=61:61) |       nan |
+| 25 | CL:0000844 | germinal center B cell          | germinal center B cell | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [62](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=62:62) |       nan |
+| 26 | CL:0000844 | germinal center B cell          | germinal center B cell | UBERON:0013688 | tonsil germinal center | tonsil germinal center | [63](https://docs.google.com/spreadsheets/d/14VTmaZyxa68uEl9sDKE7N8VBGL8893WlrxnTPBhcjBM/edit#gid=0&range=63:63) |       nan |
 
 
 

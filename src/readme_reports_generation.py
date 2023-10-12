@@ -44,15 +44,23 @@ def generate_template_readme(file_name, table):
 
   template.new_header(level=2, title="Blank ontology ID", add_table_of_contents='y')
   template.new_paragraph(text="This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).")
+  template.new_paragraph(text="You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.")
   template.new_line()
   template.new_line()
   
-
   m_blank = template.create_marker(text_marker="blank")
   markers_dict["blank"] = m_blank
+  
+  template.new_header(level=2, title="Blank ontology ID missing parent", add_table_of_contents="y")
+  template.new_paragraph(text="This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.")
+  template.new_line()
+  template.new_line()
+  
+  m_parent = template.create_marker(text_marker="no_parent")
+  markers_dict["no_parent"] = m_parent
 
   template.new_header(level=2, title="Terms from another ontology")
-  template.new_paragraph(text="This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Also Anatomic Ontology for Human Lung Maturation (LMHA). You can also request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).")
+  template.new_paragraph(text="This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).")
   template.new_line()
   template.new_line()
   
@@ -132,40 +140,83 @@ def get_row_link(table, row):
 
   return URL
 
+def compact_issues(items: list, element: str):
+    compacted_items = {}
+    
+    for item in items:
+        key = item[element]
+        
+        if key not in compacted_items:
+            compacted_items[key] = item.copy()
+            compacted_items[key]["rows"] = [item["row_number"]]
+            compacted_items[key].pop("row_number")
+        else:
+            compacted_items[key]["rows"].append(item["row_number"])
+    
+    return list(compacted_items.values())
+
+def list_rows_link(table: str, rows: list):
+    return (", ").join(list(map(lambda x: f'_[{x}]({get_row_link(table, x)})_', rows)))
+
 def generate_invalid_terms_report(log_dict, table):
+    terms_report = {
+        "no_found_id": "",
+        "typos": "",
+        "diff_label": "",
+        "blank": "",
+        "external": "",
+        "no_parent": ""
+    }
+    
+    blank = []
+    typos = []
+    external = []
 
-  terms_report = {"no_found_id": "", "typos": "", "diff_label": "", "blank": "", "external": ""}
+    def add_issue_to_report(issue_list, report_key, message_template):
+        if issue_list:
+            compacted_issues = compact_issues(issue_list, "id" if report_key == "typos" or report_key == "external" else "user_label")
+            for issue in compacted_issues:
+                rows = list_rows_link(table, issue["rows"])
+                terms_report[report_key] += message_template.format(
+                    issue_id=issue.get("id", ""),
+                    user_label=issue.get("user_label", ""),
+                    asct_label=issue.get("asct_label", ""),
+                    label=issue.get("label", ""),
+                    rows_count=len(issue["rows"]),
+                    rows_s_or_p="rows" if len(issue["rows"]) > 1 else "row",
+                    rows=rows
+                )
+        else:
+            terms_report[report_key] = "- No issues found.\n\n"
+    
+    for issue in log_dict["no_valid_id"]:
+        if issue["id"] == "":
+            blank.append(issue)
+        elif 'uberon' in issue["id"] or 'UBERON' in issue["id"] or 'cl' in issue["id"] or 'CL' in issue["id"]:
+            typos.append(issue)
+        elif 'FMA' in issue["id"] or 'fma' in issue["id"] or 'LMHA' in issue["id"] or 'lmha' in issue["id"] or 'ILX' in issue["id"]:
+            external.append(issue)
 
-  for issue in log_dict["no_valid_id"]:
-    if issue["id"] == "": 
-      terms_report["blank"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, no term id was found for the name/label _{issue["user_label"]}_.\n\n'
-    elif 'uberon' in issue["id"] or 'UBERON' in issue["id"] or 'cl' in issue["id"] or 'CL' in issue["id"]:
-      terms_report["typos"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, it might have a typo in the term _{issue["id"]}_. The term id should have this pattern: UBERON:NNNNNNN or CL:NNNNNNN or PCL:NNNNNNN. The ontology name in upper case. N is a number and it should have exact 7 numbers after the colon. Please change it in the ASCT+B table.\n\n'
-    elif 'FMA' in issue["id"] or 'fma' in issue["id"] or 'LMHA' in issue["id"] or 'lmha' in issue["id"]:
-      terms_report["external"] += f'1. In row _[{issue["row_number"]}]({get_row_link(table, issue["row_number"])})_, the term _{issue["id"]}_ is from another ontology that is not validated in this process.\n\n'
-  
-  if terms_report["blank"] == "":
-    terms_report["blank"] = "- No issues found.\n\n"
+    add_issue_to_report(blank, "blank",
+                        "1. No term id was found for the name/label _{user_label}_ in the following {rows_count} {rows_s_or_p} {rows}.\n\n")
+    
+    add_issue_to_report(typos, "typos",
+                        "1. It might have a typo in the term _{issue_id}_ in the following {rows_count} {rows_s_or_p} {rows}. The term id should have this pattern: UBERON:NNNNNNN or CL:NNNNNNN or PCL:NNNNNNN. The ontology name in upper case. N is a number, and it should have exactly 7 numbers after the colon. Please change it in the ASCT+B table.\n\n")
+    
+    add_issue_to_report(external, "external",
+                        "1. The term _{issue_id}_ in the following {rows_count} {rows_s_or_p} {rows} is from another ontology that is not validated in this process.\n\n")
 
-  if terms_report["typos"] == "":
-    terms_report["typos"] = "- No issues found.\n\n"
+    add_issue_to_report(log_dict["diff_label"], "diff_label",
+                        "1. The term _{issue_id}_ has a different name/label in the source ontology in the following {rows_count} {rows_s_or_p} {rows}. The name/label in the **ASCT+B table** is _{asct_label}_ and the one in the **ontology** is _{label}_. For reference, the given name/label **by SMEs** is _{user_label}_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.\n\n")
 
-  if terms_report["external"] == "":
-    terms_report["external"] = "- No issues found.\n\n"
-  
-  for issue in log_dict["no_found_id"]:
-    terms_report["no_found_id"] += f'1. {issue["id"]}\n\n'
+    add_issue_to_report(log_dict["no_parent"], "no_parent",
+                        "1. The term _{user_label}_ without ontology ID has no parent that is from the CL ontology in the following {rows_count} {rows_s_or_p} {rows}.\n\n")
+    
+    for issue in log_dict["no_found_id"]:
+        terms_report["no_found_id"] += f'1. {issue["id"]}\n\n'
 
-  if terms_report["no_found_id"] == "":
-    terms_report["no_found_id"] = "- No issues found.\n\n"
-  
-  for issue in log_dict["diff_label"]:       
-    terms_report["diff_label"] += f'1. In row _[{issue["rowNumber"]}]({get_row_link(table, issue["rowNumber"])})_, the term _{add_base_iri(issue["id"])}_ has different name/label in the source ontology. The name/label in the **ASCT+B table** is _{issue["asct_label"]}_ and the one in the **ontology** is _{issue["label"]}_. For reference, the given name/label **by SMEs** is _{issue["user_label"]}_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.\n\n'
-  
-  if terms_report["diff_label"] == "":
-    terms_report["diff_label"] = "- No issues found.\n\n"
+    return terms_report
 
-  return terms_report
 
 def add_base_iri(content):
   UBERON_BASE = "http://purl.obolibrary.org/obo/UBERON_"
@@ -189,6 +240,8 @@ def generate_readme(file, data, table):
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["diff_label"], marker=markers_dict["diff_label"])
 
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["blank"], marker=markers_dict["blank"])
+  
+  readme.file_data_text = readme.place_text_using_marker(text=terms_report["no_parent"], marker=markers_dict["no_parent"])
 
   readme.file_data_text = readme.place_text_using_marker(text=terms_report["external"], marker=markers_dict["external"])
 
