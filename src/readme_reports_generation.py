@@ -196,6 +196,8 @@ def generate_invalid_terms_report(log_dict, table):
             typos.append(issue)
         elif 'FMA' in issue["id"] or 'fma' in issue["id"] or 'LMHA' in issue["id"] or 'lmha' in issue["id"] or 'ILX' in issue["id"]:
             external.append(issue)
+        else:
+            typos.append(issue)
 
     add_issue_to_report(blank, "blank",
                         "1. No term id was found for the name/label _{user_label}_ in the following {rows_count} {rows_s_or_p} {rows}.\n\n")
