@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Trachea (2023-10-18)
+ASCT+B Validation Reports for Trachea (2023-10-25)
 ==================================================
 
 Table of contents
@@ -52,9 +52,9 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
   
 1. The term _UBERON:8600012_ has a different name/label in the source ontology in the following 1 row _[18](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=18:18)_. The name/label in the **ASCT+B table** is _submucosal gland acini_ and the one in the **ontology** is _submucosal gland acinus_. For reference, the given name/label **by SMEs** is _submucosal gland acini_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. The term _UBERON:8600011_ has a different name/label in the source ontology in the following 1 row _[20](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=20:20)_. The name/label in the **ASCT+B table** is _terminal ciliated ducts for tracheal submucosal gland_ and the one in the **ontology** is _tracheal submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _terminal ciliated ducts for tracheal submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _CL:4033055_ has a different name/label in the source ontology in the following 1 row _[20](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=20:20)_. The name/label in the **ASCT+B table** is _airway submucosal gland duct ciliated cell _ and the one in the **ontology** is _airway submucosal gland duct ciliated cell_. For reference, the given name/label **by SMEs** is _airway submucosal gland duct ciliated cell _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _UBERON:8600011_ has a different name/label in the source ontology in the following 1 row _[20](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=20:20)_. The name/label in the **ASCT+B table** is _terminal ciliated ducts for tracheal submucosal gland_ and the one in the **ontology** is _tracheal submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _terminal ciliated ducts for tracheal submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

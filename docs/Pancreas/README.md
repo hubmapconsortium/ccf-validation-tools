@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Pancreas (2023-10-18)
+ASCT+B Validation Reports for Pancreas (2023-10-25)
 ===================================================
 
 Table of contents
@@ -38,7 +38,7 @@ This report provides a list of terms not found neither in UBERON nor in CL. Plea
 
 This report provides a general quality check of the terms used in the ASCT+B table. Typos, font case (upper case), punctuation mistakes in IDs: two colons, spaces, underscore instead of a colon.  
   
-- No issues found.
+1. It might have a typo in the term _GO:0031012_ in the following 12 rows _[44](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=45:45)_, _[56](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=56:56)_, _[57](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=57:57)_, _[66](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=66:66)_, _[67](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=67:67)_, _[77](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=77:77)_, _[78](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=78:78)_, _[84](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=84:84)_, _[85](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=85:85)_, _[91](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=91:91)_, _[92](https://docs.google.com/spreadsheets/d/1dAnjj6RMzIcaV0t_njMhVHtDlLkEDCqtLteY9YdF7iM/edit#gid=439021026&range=92:92)_. The term id should have this pattern: UBERON:NNNNNNN or CL:NNNNNNN or PCL:NNNNNNN. The ontology name in upper case. N is a number, and it should have exactly 7 numbers after the colon. Please change it in the ASCT+B table.
 
 
 ## Different labels

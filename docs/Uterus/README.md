@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Uterus (2023-10-18)
+ASCT+B Validation Reports for Uterus (2023-10-25)
 =================================================
 
 Table of contents
@@ -50,27 +50,27 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _UBERON:0011949_ has a different name/label in the source ontology in the following 1 row _[429](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=429:429)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _endometrium luminal epithelium_. For reference, the given name/label **by SMEs** is _endometrium luminal epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _UBERON:0002493_ has a different name/label in the source ontology in the following 1 row _[22](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=22:22)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _uterine artery_. For reference, the given name/label **by SMEs** is _uterine artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _UBERON:0006922_ has a different name/label in the source ontology in the following 1 row _[43](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=43:43)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _cervix squamous epithelium_. For reference, the given name/label **by SMEs** is _cervix squamous epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _UBERON:0001295_ has a different name/label in the source ontology in the following 1 row _[54](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=54:54)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _endometrium_. For reference, the given name/label **by SMEs** is _endometrium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _UBERON:0012252_ has a different name/label in the source ontology in the following 1 row _[35](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=35:35)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _endocervical epithelium_. For reference, the given name/label **by SMEs** is _endocervical epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _UBERON:0012276_ has a different name/label in the source ontology in the following 1 row _[428](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=428:428)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _endometrium glandular epithelium_. For reference, the given name/label **by SMEs** is _endometrium glandular epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _UBERON:0002337_ has a different name/label in the source ontology in the following 1 row _[410](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=410:410)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _endometrial stroma_. For reference, the given name/label **by SMEs** is _endometrial stroma_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _UBERON:0012250_ has a different name/label in the source ontology in the following 1 row _[42](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=42:42)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _cervix glandular epithelium_. For reference, the given name/label **by SMEs** is _cervix glandular epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
+1. The term _UBERON:0002493_ has a different name/label in the source ontology in the following 1 row _[22](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=22:22)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _uterine artery_. For reference, the given name/label **by SMEs** is _uterine artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _UBERON:0012276_ has a different name/label in the source ontology in the following 1 row _[428](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=428:428)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _endometrium glandular epithelium_. For reference, the given name/label **by SMEs** is _endometrium glandular epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
 1. The term _UBERON:0002451_ has a different name/label in the source ontology in the following 1 row _[428](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=428:428)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _endometrial gland_. For reference, the given name/label **by SMEs** is _endometrial gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _UBERON:0011949_ has a different name/label in the source ontology in the following 1 row _[429](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=429:429)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _endometrium luminal epithelium_. For reference, the given name/label **by SMEs** is _endometrium luminal epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _UBERON:0003885_ has a different name/label in the source ontology in the following 1 row _[21](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=21:21)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _mesometrium_. For reference, the given name/label **by SMEs** is _mesometrium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _UBERON:0008889_ has a different name/label in the source ontology in the following 1 row _[13](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=13:13)_. The name/label in the **ASCT+B table** is _uterine venous plexsus_ and the one in the **ontology** is _uterine venous plexus_. For reference, the given name/label **by SMEs** is _uterine venous plexsus_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _UBERON:0012252_ has a different name/label in the source ontology in the following 1 row _[35](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=35:35)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _endocervical epithelium_. For reference, the given name/label **by SMEs** is _endocervical epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _UBERON:0006922_ has a different name/label in the source ontology in the following 1 row _[43](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=43:43)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _cervix squamous epithelium_. For reference, the given name/label **by SMEs** is _cervix squamous epithelium_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _UBERON:0002337_ has a different name/label in the source ontology in the following 1 row _[410](https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642&range=410:410)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _endometrial stroma_. For reference, the given name/label **by SMEs** is _endometrial stroma_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

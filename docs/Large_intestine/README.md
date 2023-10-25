@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Large_intestine (2023-10-18)
+ASCT+B Validation Reports for Large_intestine (2023-10-25)
 ==========================================================
 
 Table of contents
@@ -38,7 +38,7 @@ This report provides a list of terms not found neither in UBERON nor in CL. Plea
 
 This report provides a general quality check of the terms used in the ASCT+B table. Typos, font case (upper case), punctuation mistakes in IDs: two colons, spaces, underscore instead of a colon.  
   
-- No issues found.
+1. It might have a typo in the term _GLAND_ in the following 1 row _[1213](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1213:1213)_. The term id should have this pattern: UBERON:NNNNNNN or CL:NNNNNNN or PCL:NNNNNNN. The ontology name in upper case. N is a number, and it should have exactly 7 numbers after the colon. Please change it in the ASCT+B table.
 
 
 ## Different labels
@@ -50,9 +50,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _CL:0000244_ has a different name/label in the source ontology in the following 1 row _[1196](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1196:1196)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _transitional epithelial cell_. For reference, the given name/label **by SMEs** is _transitional_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _CL:0009009_ has a different name/label in the source ontology in the following 1 row _[15](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=15:15)_. The name/label in the **ASCT+B table** is _paneth cell of epithelium of large intestine_ and the one in the **ontology** is _paneth cell of colon_. For reference, the given name/label **by SMEs** is _Paneth_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _CL:0000244_ has a different name/label in the source ontology in the following 1 row _[1196](https://docs.google.com/spreadsheets/d/1zzyJg9zL_mbSfcqXWNbQgf9KMsxZViVgugm79H9fUp8/edit#gid=2043181688&range=1196:1196)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _transitional epithelial cell_. For reference, the given name/label **by SMEs** is _transitional_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
