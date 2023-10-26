@@ -131,7 +131,7 @@ This is a very general term, a specific term needs to be created, together with 
 The relationship needs to be added in CL.
 
 
-## CT-->AS
+## AS-->CT
 
 **1 - intercalated duct of pancreas --> epithelial cell of exocrine pancreas**
 
