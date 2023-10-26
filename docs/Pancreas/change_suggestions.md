@@ -13,7 +13,8 @@ Please, add a comment below if you want to address any of the actions to be take
 
 **1 - stroma of pancreas --> pancreas mesenchyme**
 
-A `part of` relationship needs to be added in Uberon.
+Given the definition of 'pancreas mesenchyme', it might no be suitable to be included on the table, as it refers to an embryonic tissue:
+> The embryonic connective tissue made up of loosely aggregated mesenchymal cells, supported by interlaminar jelly, that gives rise to the developing pancreas.
 
 **2 - extrapancreatic duct --> common bile duct**
 
@@ -21,7 +22,7 @@ A `connected to` relationship can be added, especially with the `hepatopancreati
 
 **3 - uncinate process of pancreas --> pancreatic lobule**
 
-
+I can add an axiom to 'uncinate process of pancreas' `has part some pancreatic lobule`
 
 **4 - ventral pancreas --> head of pancreas**
 
@@ -49,11 +50,11 @@ I can add an `overlaps` relationship.
 
 **10 - head of pancreas --> pancreatic lobule**
 
-
+I can add an axiom to 'uncinate process of pancreas' `has part some pancreatic lobule`
 
 **11 - parenchyma of pancreas --> exocrine pancreas**
 
-
+There might be an overlaps relation, but it would be better that this relationship is not added and that exocrine pancreas only has a direct relationship with pancreas. It needs discussion.
 
 **12 - Ventral pancreatic duct --> major duodenal papilla**
 
@@ -69,19 +70,22 @@ It is the same term (use for Papilla of Santorini)
 
 **15 - parenchyma of pancreas --> endocrine pancreas**
 
-
+There might be an overlaps relation, but it would be better that this relationship is not added and that endocrine pancreas only has a direct relationship with pancreas. It needs discussion.
 
 **16 - pancreatic lobule --> stroma of pancreas**
 
-
+While 'overlaps' could be used, it might be preferable to not add.
 
 **17 - pancreas mesenchyme --> basal lamina of epithelium**
 
-
+'basal lamina of epithelium' is too general, but a new term specific for pancreas can be used and be mapped to strom (in #1 I reccommend to remove 'pancreas mesenchyme' from the table)
 
 **18 - pancreas mesenchyme --> connective tissue**
 
+'connective tissue' is a very general term. The definition of 'pancreas mesenchyme' is:
+> The embryonic connective tissue made up of loosely aggregated mesenchymal cells, supported by interlaminar jelly, that gives rise to the developing pancreas.
 
+Maybe this term is not appropriate for this table and there should be a new term 'pancreatic connective tissue'. If so, the subparts in the table should be evaluated to also be added in the ontology.
 
 **19 - common bile duct --> major duodenal papilla**
 
@@ -93,11 +97,11 @@ I can add an `overlaps` relationship.
 
 **21 - body of pancreas --> pancreatic lobule**
 
-
+I can add an axiom to 'uncinate process of pancreas' `has part some pancreatic lobule`
 
 **22 - tail of pancreas --> pancreatic lobule**
 
-
+I can add an axiom to 'uncinate process of pancreas' `has part some pancreatic lobule`
 
 
 ## CT-->CT
