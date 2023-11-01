@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Placenta (2023-10-25)
+ASCT+B Validation Reports for Placenta (2023-11-01)
 ===================================================
 
 Table of contents
@@ -32,11 +32,11 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
+1. UBERON:8600020
+
 1. UBERON:8600021
 
 1. UBERON:8600019
-
-1. UBERON:8600020
 
 
 ## Typos or punctuation mistakes
