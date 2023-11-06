@@ -139,15 +139,15 @@ The relationship needs to be added in CL.
 
 **1 - intercalated duct of pancreas --> epithelial cell of exocrine pancreas**
 
-
+This should be solved by CT-CT2. A new problem will arise as `pancreatic ductal cell` is a general term present in all pancreatic ducts. We need to discuss if this specific cell is different to all the other pancreatic ductal cells. From the tables it seems there are subtypes, therefore I could add new classes.
 
 **2 - common bile duct --> epithelial cell of exocrine pancreas**
 
-
+This should be solved by CT-CT2. A new problem will arise as `pancreatic ductal cell` is a general term present in all pancreatic ducts. We need to discuss if this specific cell is different to all the other pancreatic ductal cells. From the tables it seems there are subtypes, therefore I could add new classes.
 
 **3 - hepatopancreatic ampulla --> epithelial cell of exocrine pancreas**
 
-
+This should be solved by CT-CT2. A new problem will arise as `pancreatic ductal cell` is a general term present in all pancreatic ducts. We need to discuss if this specific cell is different to all the other pancreatic ductal cells. From the tables it seems there are subtypes, therefore I could add new classes.
 
 **4 - intercalated duct of pancreas --> pancreatic centro-acinar cell**
 
@@ -159,15 +159,15 @@ The relationship needs to be added in CL.
 
 **6 - stroma of pancreas --> pancreatic stellate cell**
 
-
+The solution of CT-CT5 should resolve it.
 
 **7 - stroma of pancreas --> fat cell**
 
-
+`fat cell` is a very general term, a new cell type can be added.
 
 **8 - dorsal pancreatic duct --> smooth muscle cell**
 
-
+`smooth muscle cell` is a very general term. It probably needs a new term.
 
 **9 - major duodenal papilla --> simple columnar epithelial cell**
 
@@ -195,7 +195,7 @@ Immune system*
 
 **15 - sphincter of hepatopancreatic ampulla --> smooth muscle cell**
 
-
+`smooth muscle cell` is a very general term. It probably needs a new term.
 
 **16 - intercalated duct of pancreas --> pancreatic goblet cell**
 
