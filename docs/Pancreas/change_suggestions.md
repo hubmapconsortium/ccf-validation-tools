@@ -203,7 +203,7 @@ Immune system*
 
 **17 - intercalated duct of pancreas --> pancreatic ductal cell**
 
-
+There are multiple cells that are subclasses of `pancreatic ductal cell`. Are the markers for this cell common in all other cells that are ductall cells and part of the `intercalated duct of pancreas`?
 
 **18 - exocrine pancreas --> neutrophil**
 
