@@ -199,7 +199,7 @@ Immune system*
 
 **16 - intercalated duct of pancreas --> pancreatic goblet cell**
 
-
+These cells are present in all pancreatic ducts, and all produce mucin. Is there a specific reason why is it only present in this structure?
 
 **17 - intercalated duct of pancreas --> pancreatic ductal cell**
 
@@ -223,7 +223,7 @@ Immune system*
 
 **22 - islet of Langerhans --> macrophage**
 
-Immune system*
+This needs a new term, as it is a resident macrophage that doesn't exchange with blood monocytes. PMID:27710840
 
 **23 - islet of Langerhans --> dendritic cell**
 
