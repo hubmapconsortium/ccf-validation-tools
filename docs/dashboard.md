@@ -1,5 +1,5 @@
 
-Validation Dashboard (2023-11-01)
+Validation Dashboard (2023-11-08)
 =================================
 
 # Terms
@@ -74,7 +74,7 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 | 19 | [Palatine_Tonsil](Palatine_Tonsil/README.md)                     |                   9 | <font color='green'>11.11</font> |                   0 | <font color='green'>0.0</font>   |                  28 | <font color='red'>60.71</font>   | <font color='green'>0</font>   |
 | 20 | [Pancreas](Pancreas/README.md)                                   |                  33 | <font color='red'>66.67</font>   |                  18 | <font color='green'>44.44</font> |                  28 | <font color='red'>82.14</font>   | <font color='green'>0</font>   |
 | 21 | [Peripheral_nervous_system](Peripheral_nervous_system/README.md) |                  95 | <font color='green'>9.47</font>  |                   0 | <font color='green'>0.0</font>   |                  30 | <font color='red'>83.33</font>   | <font color='green'>0</font>   |
-| 22 | [Placenta](Placenta/README.md)                                   |                  16 | <font color='red'>50.0</font>    |                   0 | <font color='green'>0.0</font>   |                  30 | <font color='red'>66.67</font>   | <font color='green'>0</font>   |
+| 22 | [Placenta](Placenta/README.md)                                   |                  19 | <font color='red'>52.63</font>   |                   0 | <font color='green'>0.0</font>   |                  35 | <font color='red'>68.57</font>   | <font color='green'>0</font>   |
 | 23 | [Prostate](Prostate/README.md)                                   |                  11 | <font color='green'>45.45</font> |                   4 | <font color='red'>50.0</font>    |                  13 | <font color='red'>53.85</font>   | <font color='green'>0</font>   |
 | 24 | [Skeleton](Skeleton/README.md)                                   |                 152 | <font color='green'>15.79</font> |                   0 | <font color='green'>0.0</font>   |                 174 | <font color='red'>95.98</font>   | <font color='green'>0</font>   |
 | 25 | [Skin](Skin/README.md)                                           |                  16 | <font color='red'>50.0</font>    |                   0 | <font color='green'>0.0</font>   |                  54 | <font color='red'>81.48</font>   | <font color='green'>0</font>   |

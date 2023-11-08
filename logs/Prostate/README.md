@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2023-11-01)
+ASCT+B Validation Reports for Prostate (2023-11-08)
 ===================================================
 
 Table of contents
@@ -54,9 +54,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _UBERON:0004167_ has a different name/label in the source ontology in the following 1 row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _orbitofrontal cortex_. For reference, the given name/label **by SMEs** is _lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _CL:0000413_ has a different name/label in the source ontology in the following 1 row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_. The name/label in the **ASCT+B table** is _endothelial cell of artery_ and the one in the **ontology** is _haploid cell_. For reference, the given name/label **by SMEs** is _endothelial cell of artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _UBERON:0004167_ has a different name/label in the source ontology in the following 1 row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _orbitofrontal cortex_. For reference, the given name/label **by SMEs** is _lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _UBERON:0001085_ has a different name/label in the source ontology in the following 1 row _[23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23)_. The name/label in the **ASCT+B table** is _vascular system_ and the one in the **ontology** is _skin of trunk_. For reference, the given name/label **by SMEs** is _vascular system_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
@@ -134,16 +134,16 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s              | slabel                       | user_slabel                  | o              | olabel                | user_olabel     | row_number                                                                                                                |   deltaIC |
 |----|----------------|------------------------------|------------------------------|----------------|-----------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | UBERON:0001981 | blood vessel                 | blood vessel                 | UBERON:0001085 | skin of trunk         | vascular system | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |   29.1692 |
-|  1 | UBERON:0001981 | blood vessel                 | blood vessel                 | UBERON:0001085 | skin of trunk         | vascular system | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |   29.1692 |
-|  3 | UBERON:0004243 | prostate gland smooth muscle | prostate gland smooth muscle | UBERON:0004184 | prostate gland stroma | prostate stroma | [16](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=16:16) |  nan      |
-|  6 | UBERON:0004537 | blood vasculature            | vascular system              | UBERON:0013702 | body proper           | whole body      | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |  nan      |
-|  8 | UBERON:0004537 | blood vasculature            | vascular system              | UBERON:0013702 | body proper           | whole body      | [20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20) |  nan      |
-|  9 | UBERON:0004537 | blood vasculature            | vascular system              | UBERON:0013702 | body proper           | whole body      | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) |  nan      |
-| 10 | UBERON:0004167 | orbitofrontal cortex         | lymphatic endothelial cell   | UBERON:0001473 | lymphatic vessel      | lymph vessel    | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |  nan      |
-| 14 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland        | prostate gland  | [25](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=25:25) |  nan      |
-| 16 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland        | prostate gland  | [26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26) |  nan      |
-| 18 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland        | prostate gland  | [27](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=27:27) |  nan      |
+|  0 | UBERON:0001981 | blood vessel                 | blood vessel                 | UBERON:0001085 | skin of trunk         | vascular system | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |    29.194 |
+|  1 | UBERON:0001981 | blood vessel                 | blood vessel                 | UBERON:0001085 | skin of trunk         | vascular system | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |    29.194 |
+|  3 | UBERON:0004243 | prostate gland smooth muscle | prostate gland smooth muscle | UBERON:0004184 | prostate gland stroma | prostate stroma | [16](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=16:16) |   nan     |
+|  6 | UBERON:0004537 | blood vasculature            | vascular system              | UBERON:0013702 | body proper           | whole body      | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |   nan     |
+|  8 | UBERON:0004537 | blood vasculature            | vascular system              | UBERON:0013702 | body proper           | whole body      | [20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20) |   nan     |
+|  9 | UBERON:0004537 | blood vasculature            | vascular system              | UBERON:0013702 | body proper           | whole body      | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) |   nan     |
+| 10 | UBERON:0004167 | orbitofrontal cortex         | lymphatic endothelial cell   | UBERON:0001473 | lymphatic vessel      | lymph vessel    | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |   nan     |
+| 14 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland        | prostate gland  | [25](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=25:25) |   nan     |
+| 16 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland        | prostate gland  | [26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26) |   nan     |
+| 18 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland        | prostate gland  | [27](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=27:27) |   nan     |
 
 
 
