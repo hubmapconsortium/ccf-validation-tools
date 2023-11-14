@@ -278,3 +278,13 @@ def add_rows(records, valid_as, valid_ct, pairs, relation, inverse=False):
     elif 'CL' in s and 'CL' in o:
       valid_ct.add((s,o))
   return records, valid_as, valid_ct
+
+def add_indirect_nb(valid_error_log, indirect_as, indirect_ct, report):
+    valid_error_log = pd.concat([valid_error_log, report])
+    for _, r in report.iterrows():
+      if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+        indirect_as.add((r['s'], r['o']))
+      elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+        indirect_ct.add((r['s'], r['o']))
+        
+    return valid_error_log, indirect_as, indirect_ct

@@ -1,7 +1,7 @@
 import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 from uberongraph_tools import UberonGraph
-from ccf_tools import chunks, split_terms, transform_to_str, add_rows
+from ccf_tools import chunks, split_terms, transform_to_str, add_rows, add_indirect_nb
 import logging
 
 # logger = logging.getLogger('ASCT-b Tables Log')
@@ -177,20 +177,22 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_subclass.union(valid_ct_as_subclass), 'isa')
 
   # INDIRECT SUBCLASS CHECK
-  valid_subclass_onto, _ = ug.verify_relationship(transform_to_str(valid_subclass), ug.select_subclass_ontology)
+  terms_s, terms_o = ug.check_indirect_rel(valid_subclass, ug.select_subclass_ontology)
+#   valid_subclass_onto, _ = ug.verify_relationship(transform_to_str(valid_subclass), ug.select_subclass_ontology)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_subclass - valid_subclass_onto))
+#   terms_s, terms_o = split_terms(transform_to_str(valid_subclass_onto))
 
   rows_nvso = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
   # ADD RESULTS TO INDIRECT LOG
-  valid_error_log = pd.concat([valid_error_log, rows_nvso])
+  valid_error_log, indirect_as, indirect_ct = add_indirect_nb(valid_error_log, indirect_as, indirect_ct, rows_nvso)
+#   valid_error_log = pd.concat([valid_error_log, rows_nvso])
 
-  for _, r in rows_nvso.iterrows():
-    if 'UBERON' in r['s'] and 'UBERON' in r['o']:
-      indirect_as.add((r['s'], r['o']))
-    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
-      indirect_ct.add((r['s'], r['o']))
+#   for _, r in rows_nvso.iterrows():
+#     if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+#       indirect_as.add((r['s'], r['o']))
+#     elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+#       indirect_ct.add((r['s'], r['o']))
 
   # PART OF CHECK
   valid_po, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_po)
@@ -203,7 +205,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
 
   valid_po_nr, _ = ug.verify_relationship(terms_valid_po, ug.select_po_nonredundant)
   
-  terms_s, terms_o = split_terms(transform_to_str(valid_po - valid_po_nr))
+  terms_s, terms_o = split_terms(transform_to_str(valid_po_nr))
 
   rows_nvponr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
@@ -225,7 +227,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # INDIRECT OVERLAPS CHECK
   valid_o_nr, _ = ug.verify_relationship(transform_to_str(valid_overlaps), ug.select_overlaps_nonredundant)
 
-  terms_s, terms_o = split_terms(transform_to_str(valid_overlaps - valid_o_nr))
+  terms_s, terms_o = split_terms(transform_to_str(valid_o_nr))
 
   rows_nvonr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
 
@@ -243,17 +245,65 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_ct_as_locatedin, 'located_in')
 
   terms_ct_as = terms_ct_as - transform_to_str(valid_ct_as_locatedin)
+  
+  # INDIRECT LOCATED IN CHECK
+  valid_loc_in_nr, _ = ug.verify_relationship(transform_to_str(valid_ct_as_locatedin), ug.select_li_nonredundant)
+
+  terms_s, terms_o = split_terms(transform_to_str(valid_loc_in_nr))
+
+  rows_vlinr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+
+  # ADD RESULTS TO INDIRECT LOG
+  valid_error_log = pd.concat([valid_error_log, rows_vlinr])
+
+  for _, r in rows_vlinr.iterrows():
+    if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+      indirect_as.add((r['s'], r['o']))
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+      indirect_ct.add((r['s'], r['o']))
 
   # CONNECTED TO CHECK
   valid_conn_to, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_ct)
   valid_ct_as_conn_to, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_ct)
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_conn_to.union(valid_ct_as_conn_to), 'connected_to')
+  
+  # INDIRECT CONNECTED TO CHECK
+  valid_conn_to_nr, _ = ug.verify_relationship(transform_to_str(valid_conn_to), ug.select_ct_nonredundant)
+
+  terms_s, terms_o = split_terms(transform_to_str(valid_conn_to_nr))
+
+  rows_vctnr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+
+  # ADD RESULTS TO INDIRECT LOG
+  valid_error_log = pd.concat([valid_error_log, rows_vctnr])
+
+  for _, r in rows_vctnr.iterrows():
+    if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+      indirect_as.add((r['s'], r['o']))
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+      indirect_ct.add((r['s'], r['o']))
 
   # CONTINUOUS WITH CHECK
   valid_cont_with, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_continuous_with)
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_cont_with, 'continuous_with')
+  
+  # INDIRECT CONTINUOUS WITH CHECK
+  valid_cont_with_nr, _ = ug.verify_relationship(transform_to_str(valid_cont_with), ug.select_cw_nonredundant)
+
+  terms_s, terms_o = split_terms(transform_to_str(valid_cont_with_nr))
+
+  rows_vctnr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+
+  # ADD RESULTS TO INDIRECT LOG
+  valid_error_log = pd.concat([valid_error_log, rows_vctnr])
+
+  for _, r in rows_vctnr.iterrows():
+    if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+      indirect_as.add((r['s'], r['o']))
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+      indirect_ct.add((r['s'], r['o']))
 
   # STRICT CT-AS REPORT
   terms_s, terms_o = split_terms(terms_ct_as)
@@ -265,6 +315,22 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # DEVELOPS FROM CHECK
   valid_dev_from, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_develops_from)
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_dev_from, 'develops_from')
+  
+  # INDIRECT DEVELOPS FROM CHECK
+  valid_dev_nr, _ = ug.verify_relationship(transform_to_str(valid_dev_from), ug.select_dev_from_nonredundant)
+  print(valid_dev_from, valid_dev_nr)
+  terms_s, terms_o = split_terms(transform_to_str(valid_dev_nr))
+  
+  rows_vdfnr = ccf_tools_df[ccf_tools_df[["s","o"]].apply(tuple, 1).isin(zip(terms_s, terms_o))]
+
+  # ADD RESULTS TO INDIRECT LOG
+  valid_error_log = pd.concat([valid_error_log, rows_vdfnr])
+
+  for _, r in rows_vdfnr.iterrows():
+    if 'UBERON' in r['s'] and 'UBERON' in r['o']:
+      indirect_as.add((r['s'], r['o']))
+    elif ('CL' in r['s'] or 'PCL' in r['s']) and ('CL' in r['o'] or 'PCL' in r['o']):
+      indirect_ct.add((r['s'], r['o']))
 
   # AS-CT HAS PART
   valid_has_part, terms_ct_as = ug.verify_relationship(terms_ct_as, ug.select_has_part)

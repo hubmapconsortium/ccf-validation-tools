@@ -1,6 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
 from rdflib.graph import ConjunctiveGraph
-from ccf_tools import chunks, transform_to_str
+from ccf_tools import chunks, transform_to_str, split_terms
 
 class UberonGraph():
     def __init__(self):
@@ -71,8 +71,21 @@ class UberonGraph():
           PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
           PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object
-          FROM <http://reasoner.renci.org/ontology>
           FROM <http://reasoner.renci.org/redundant> 
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject connected_to: ?object .
+          }"""
+          
+        self.select_ct_nonredundant = """
+          PREFIX connected_to: <http://purl.obolibrary.org/obo/RO_0002170> 
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/nonredundant> 
           { 
             VALUES (?subject ?object) {
               %s
@@ -103,6 +116,22 @@ class UberonGraph():
           PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
           SELECT ?subject ?object 
           FROM <http://reasoner.renci.org/redundant> 
+          {
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject develops_from: ?object .
+          }
+        """
+        
+        self.select_dev_from_nonredundant = """
+          PREFIX develops_from: <http://purl.obolibrary.org/obo/RO_0002202>
+          PREFIX owl: <http://www.w3.org/2002/07/owl#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
+          SELECT ?subject ?object 
+          FROM <http://reasoner.renci.org/nonredundant> 
           {
             VALUES (?subject ?object) {
               %s
@@ -234,7 +263,24 @@ class UberonGraph():
             }
             ?subject located_in: ?object .
           }
-        """     
+        """   
+        
+        self.select_li_nonredundant = """
+          PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
+          PREFIX located_in: <http://purl.obolibrary.org/obo/RO_0001025>
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/nonredundant>
+          { 
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject located_in: ?object .
+          }
+        """   
+          
         self.select_normalized_ic = """
           PREFIX normalizedIC: <http://reasoner.renci.org/vocab/normalizedInformationContent>
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
@@ -258,6 +304,20 @@ class UberonGraph():
 
           SELECT ?subject ?object
           FROM <http://reasoner.renci.org/redundant>
+          {
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject continuous_with: ?object .
+          }
+        """
+        self.select_cw_nonredundant = """
+          PREFIX continuous_with: <http://purl.obolibrary.org/obo/RO_0002150>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/nonredundant>
           {
             VALUES (?subject ?object) {
               %s
@@ -461,3 +521,14 @@ class UberonGraph():
         annotations = self.construct_annotation(terms)
 
       return annotations
+  
+    def check_indirect_rel(self, valid_rel, query):
+      valid_indirect, _ = self.verify_relationship(transform_to_str(valid_rel), query)
+
+      terms_s, terms_o = split_terms(transform_to_str(valid_indirect))
+
+      return terms_s, terms_o
+
+      
+
+    
