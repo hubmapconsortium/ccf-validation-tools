@@ -13,23 +13,36 @@ Please, add a comment below if you want to address any of the actions to be take
 
 **1 - Secondary Pulmonary Lobule --> terminal bronchiole**
 
-`secondary pulmonary lobule` should have a `'has part' some 'terminal bronchiole'` PMID:3259815
+`secondary pulmonary lobule` should be `'part of' some 'terminal bronchiole'` PMID:3259815 Status: [#2953](https://github.com/obophenotype/uberon/pull/2953)
 
 **2 - subsegmental bronchus --> cartilage of bronchus**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **3 - pulmonary alveolar duct --> alveolus of lung**
 
 This relationship is difficult to validate, because single alveolus can be found as scattered outpockets of the respiratory bronchiole. I would recommend to have the `alveolus of lung` in the next column of `pulmonary acinus`. [See issue 286](https://github.com/obophenotype/uberon/issues/2864)
 
+New hierarchy proposed (03/06/2023): 
+*Secondary pulmonary lobule -> terminal bronchiole —> with cells and ECM that compose that structure*
+
+*Secondary pulmonary lobule ->terminal bronchiole -> pulmonary acinus -> respiratory bronchiole —> with the cells and ECM that compose the respiratory bronchiole*
+
+*Secondary pulmonary lobule ->terminal bronchiole -> pulmonary acinus -> respiratory bronchiole -> alveolus of respiratory bronchiole (new term - or leave as alveolus of lung but this will come up again as part for the pulmonary acinus) —> with the cells and ECM that compose that simple alveolar structure*
+
+*Secondary pulmonary lobule ->terminal bronchiole -> pulmonary acinus -> alveolar duct (that are vital to but not part for respiratory bronchioles) —> with the cells and ECM that compose the alveolar ducts*
+
+*Secondary pulmonary lobule ->terminal bronchiole -> pulmonary acinus -> alveolus of lung ->pulmonary alveolar parenchyma —> with the cells and ECM that compose the parenchyma*
+
+
+
 **4 - subsegmental bronchus --> lobar bronchus mesenchyme**
 
-It needs a new term (either general `bronchus mesenchyme` and add 'has part' axiom, or `subsegmental bronchus mesenchyme`).
+It needs a new term (either general `bronchus mesenchyme` and add 'has part' axiom, or `subsegmental bronchus mesenchyme`).  Status: temporally it has been added 'has part' some 'lung mesenchyme' [PR 204](https://github.com/obophenotype/uberon/issues/2904). However, GP requested NTR “mesenchyme of subsegmental bronchus”.
 
 **5 - subsegmental bronchus --> bronchus smooth muscle**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **6 - lung --> immune system**
 
@@ -37,43 +50,43 @@ No actions for now.
 
 **7 - epithelium of segmental bronchus --> bronchus submucosal gland**
 
-The `bronchus submucosal gland` are not part of an epithelium. I can add a `'has part' some 'bronchus sumucosal gland'` to `segmental bronchus`, and this term replaces `epithelium of segmental bronchus`.
+The `bronchus submucosal gland` are not part of an epithelium. I can add a `'has part' some 'bronchus sumucosal gland'` to `segmental bronchus`, and this term replaces `epithelium of segmental bronchus`. Status: Has part completed, class needs to be changed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **8 - pulmonary alveolar duct --> pulmonary alveolar parenchyma**
 
-`pulmonary alveolar parenchyma` is `parenchyma and (part of some alveolus of lung)`. Therefore, mapping to `alveolus of lung` instead of `pulmonary alveolar duct` will validate.
+`pulmonary alveolar parenchyma` is `parenchyma and (part of some alveolus of lung)`. Therefore, mapping to `alveolus of lung` instead of `pulmonary alveolar duct` will validate. Status: completed
 
 **9 - Tracheobronchial tree --> pulmonary nerve plexus**
 
-It should have a `part of`.
+It should have an `overlaps` relation.
 
 **10 - lobar bronchus --> bronchus submucosal gland**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **11 - lobar bronchus --> bronchus connective tissue**
 
-There is a `lobar bronchus connective tissue` UBERON:0003591.
+There is a `lobar bronchus connective tissue` UBERON:0003591. Status: completed
 
 **12 - lobar bronchus --> bronchus smooth muscle**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **13 - lobar bronchus --> cartilage of bronchus**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **14 - Segmental Bronchus --> bronchus smooth muscle**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
-**25 - Segmental Bronchus --> cartilage of bronchus**
+**15 - Segmental Bronchus --> cartilage of bronchus**
 
-I can add for both structures a `'has part' some 'cartilage of bronchus'` axiom (UBERON:0001956) (also for subsegmental bronchus).
+I can add for both structures a `'has part' some 'cartilage of bronchus'` axiom (UBERON:0001956) (also for subsegmental bronchus). Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **16 - Segmental Bronchus --> lobar bronchus mesenchyme**
 
-This can't validate, as the `lobar bronchus masenchyme` should map to `lobar bronchus` only. This problem will also occur for `subsegmental bronchus` once Ubergraph gets the new release. I can add for both structures a `'has part' some 'lung mesenchyme'` axiom (UBERON:0004883) and that terms substitutes `lobar bronchus mesenchyme`.
+This can't validate, as the `lobar bronchus masenchyme` should map to `lobar bronchus` only. This problem will also occur for `subsegmental bronchus` once Ubergraph gets the new release. I can add for both structures a `'has part' some 'lung mesenchyme'` axiom (UBERON:0004883) and that terms substitutes `lobar bronchus mesenchyme`. Second part  Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **17 - subsegmental bronchus --> epithelium of segmental bronchus**
 
@@ -93,7 +106,7 @@ Not sure of the expected relationship expected.
 
 **21 - pulmonary lymphatic vessel --> respiratory system lymphatic vessel endothelium**
 
-It needs a 'has part' relationship.
+It needs a 'has part' relationship. Status: Completed [PR 204](https://github.com/obophenotype/uberon/issues/2904)
 
 **22 - immune system --> Pulmonary Acinus**
 
