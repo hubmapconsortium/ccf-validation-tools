@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Brain (2023-11-08)
+ASCT+B Validation Reports for Brain (2023-11-15)
 ================================================
 
 Table of contents
@@ -50,13 +50,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _UBERON:0002705_ has a different name/label in the source ontology in the following 1 row _[102](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=102:102)_. The name/label in the **ASCT+B table** is _midline nuclear complex_ and the one in the **ontology** is _midline nuclear group_. For reference, the given name/label **by SMEs** is _midline nuclear complex_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _PCL:0015079_ has a different name/label in the source ontology in the following 1 row _[736](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=736:736)_. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN MAP6D1_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _PCL:0015120_ has a different name/label in the source ontology in the following 1 row _[738](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=738:738)_. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN FTH1P3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _PCL:0015119_ has a different name/label in the source ontology in the following 1 row _[737](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=737:737)_. The name/label in the **ASCT+B table** is _Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L3-6 OPALIN ENPP6_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
@@ -81,6 +75,8 @@ You can find more information on the [New CL terms](#new-cl-terms) or [New UBERO
 1. No term id was found for the name/label _body of hippocampus_ in the following 1 row _[67](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=67:67)_.
 
 1. No term id was found for the name/label _septal nuclei_ in the following 1 row _[87](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=87:87)_.
+
+1. No term id was found for the name/label _tuberal region_ in the following 1 row _[111](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=111:111)_.
 
 1. No term id was found for the name/label _atrium of lateral ventricle_ in the following 1 row _[123](https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441&range=123:123)_.
 
