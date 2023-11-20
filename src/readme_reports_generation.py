@@ -14,7 +14,7 @@ def generate_template_readme(file_name, table):
   template = MdUtils(file_name=file_name, title=f'ASCT+B Validation Reports for {table} ({date})')
 
   template.new_header(level=1, title="Invalid terms", add_table_of_contents='y')
-  template.new_paragraph(text="These are the reports related to issues in the terms found in the ASCT+B table. We validate only [CL](https://www.ebi.ac.uk/ols/ontologies/cl), [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) and [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl) terms.")
+  template.new_paragraph(text="These are the reports related to issues in the terms found in the ASCT+B table. We validate only [CL](https://www.ebi.ac.uk/ols4/ontologies/cl), [UBERON](https://www.ebi.ac.uk/ols4/ontologies/uberon) and [PCL](https://www.ebi.ac.uk/ols4/ontologies/pcl) terms.")
   
   template.new_header(level=2, title="Terms not found", add_table_of_contents='y')
   template.new_paragraph(text="This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.")
@@ -43,7 +43,7 @@ def generate_template_readme(file_name, table):
   markers_dict["diff_label"] = m_label
 
   template.new_header(level=2, title="Blank ontology ID", add_table_of_contents='y')
-  template.new_paragraph(text="This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).")
+  template.new_paragraph(text="This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols4/index).")
   template.new_paragraph(text="You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.")
   template.new_line()
   template.new_line()
@@ -60,7 +60,7 @@ def generate_template_readme(file_name, table):
   markers_dict["no_parent"] = m_parent
 
   template.new_header(level=2, title="Terms from another ontology")
-  template.new_paragraph(text="This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).")
+  template.new_paragraph(text="This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols4/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols4/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols4/ontologies/pcl).")
   template.new_line()
   template.new_line()
   
@@ -178,7 +178,7 @@ def generate_invalid_terms_report(log_dict, table):
             for issue in compacted_issues:
                 rows = list_rows_link(table, issue["rows"])
                 terms_report[report_key] += message_template.format(
-                    issue_id=issue.get("id", ""),
+                    issue_id=issue.get("id", "") if report_key != "diff_label" else add_base_iri(issue["id"]),
                     user_label=issue.get("user_label", ""),
                     asct_label=issue.get("asct_label", ""),
                     label=issue.get("label", ""),
@@ -216,15 +216,16 @@ def generate_invalid_terms_report(log_dict, table):
     
     for issue in log_dict["no_found_id"]:
         terms_report["no_found_id"] += f'1. {issue["id"]}\n\n'
+        
+    if not log_dict["no_found_id"]:
+      terms_report["no_found_id"] = "- No issues found.\n\n"
 
     return terms_report
 
 
 def add_base_iri(content):
-  UBERON_BASE = "http://purl.obolibrary.org/obo/UBERON_"
-  CL_BASE = "http://purl.obolibrary.org/obo/CL_"
-
-  content_uri = content.replace("UBERON:", UBERON_BASE).replace("CL:", CL_BASE)
+  BASE = "http://purl.obolibrary.org/obo/"
+  content_uri = f"{BASE}{content.replace(':', '_')}"
 
   return f'[{content}]({content_uri})'
 
@@ -293,12 +294,17 @@ def generate_graph_page(file, table):
 
   graph_page.create_md_file()
 
-def add_row_link(report, table):
+def add_row_n_term_link(report, table):
   for row in report.itertuples():
     row_n = row.row_number
+    term_s = row.s
+    term_o = row.o
     report.at[row.Index, "row_number"] = f'[{row_n}]({get_row_link(table, row_n)})'
+    report.at[row.Index, "s"] = add_base_iri(term_s)
+    report.at[row.Index, "o"] = add_base_iri(term_o)
 
   return report
+
 
 def split_report(report):
   report_as = report[report['s'].str.contains('UBERON') & report['o'].str.contains('UBERON')]
@@ -316,7 +322,7 @@ def generate_relationship_md(table):
   BASE_PATH = f"../docs/{table}/"
   try:
     report = pd.read_csv(f"{BASE_PATH}class_{table}_log.tsv", sep='\t')
-    report_as, report_ct, report_ct_as = split_report(add_row_link(report, table))
+    report_as, report_ct, report_ct_as = split_report(add_row_n_term_link(report, table))
   except:
     report_as = report_ct = report_ct_as = []
   
