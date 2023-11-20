@@ -295,13 +295,21 @@ def generate_graph_page(file, table):
   graph_page = generate_graph_template(file, table)
 
   graph_page.create_md_file()
+  
+def expand_term(term):
+  return f"http://purl.obolibrary.org/obo/{term.replace(':', '_')}"
 
-def add_row_link(report, table):
+def add_row_n_term_link(report, table):
   for row in report.itertuples():
     row_n = row.row_number
+    term_s = row.s
+    term_o = row.o
     report.at[row.Index, "row_number"] = f'[{row_n}]({get_row_link(table, row_n)})'
+    report.at[row.Index, "s"] = f'[{term_s}]({expand_term(term_s)})'
+    report.at[row.Index, "o"] = f'[{term_o}]({expand_term(term_o)})'
 
   return report
+
 
 def split_report(report):
   report_as = report[report['s'].str.contains('UBERON') & report['o'].str.contains('UBERON')]
@@ -319,7 +327,7 @@ def generate_relationship_md(table):
   BASE_PATH = f"../docs/{table}/"
   try:
     report = pd.read_csv(f"{BASE_PATH}class_{table}_log.tsv", sep='\t')
-    report_as, report_ct, report_ct_as = split_report(add_row_link(report, table))
+    report_as, report_ct, report_ct_as = split_report(add_row_n_term_link(report, table))
   except:
     report_as = report_ct = report_ct_as = []
   
