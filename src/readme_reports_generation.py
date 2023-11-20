@@ -216,6 +216,9 @@ def generate_invalid_terms_report(log_dict, table):
     
     for issue in log_dict["no_found_id"]:
         terms_report["no_found_id"] += f'1. {issue["id"]}\n\n'
+        
+    if not log_dict["no_found_id"]:
+      terms_report["no_found_id"] = "- No issues found.\n\n"
 
     return terms_report
 
