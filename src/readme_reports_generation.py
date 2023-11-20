@@ -178,7 +178,7 @@ def generate_invalid_terms_report(log_dict, table):
             for issue in compacted_issues:
                 rows = list_rows_link(table, issue["rows"])
                 terms_report[report_key] += message_template.format(
-                    issue_id=issue.get("id", ""),
+                    issue_id=issue.get("id", "") if report_key != "diff_label" else add_base_iri(issue["id"]),
                     user_label=issue.get("user_label", ""),
                     asct_label=issue.get("asct_label", ""),
                     label=issue.get("label", ""),
@@ -224,10 +224,8 @@ def generate_invalid_terms_report(log_dict, table):
 
 
 def add_base_iri(content):
-  UBERON_BASE = "http://purl.obolibrary.org/obo/UBERON_"
-  CL_BASE = "http://purl.obolibrary.org/obo/CL_"
-
-  content_uri = content.replace("UBERON:", UBERON_BASE).replace("CL:", CL_BASE)
+  BASE = "http://purl.obolibrary.org/obo/"
+  content_uri = f"{BASE}{content.replace(':', '_')}"
 
   return f'[{content}]({content_uri})'
 
@@ -295,9 +293,6 @@ def generate_graph_page(file, table):
   graph_page = generate_graph_template(file, table)
 
   graph_page.create_md_file()
-  
-def expand_term(term):
-  return f"http://purl.obolibrary.org/obo/{term.replace(':', '_')}"
 
 def add_row_n_term_link(report, table):
   for row in report.itertuples():
@@ -305,8 +300,8 @@ def add_row_n_term_link(report, table):
     term_s = row.s
     term_o = row.o
     report.at[row.Index, "row_number"] = f'[{row_n}]({get_row_link(table, row_n)})'
-    report.at[row.Index, "s"] = f'[{term_s}]({expand_term(term_s)})'
-    report.at[row.Index, "o"] = f'[{term_o}]({expand_term(term_o)})'
+    report.at[row.Index, "s"] = add_base_iri(term_s)
+    report.at[row.Index, "o"] = add_base_iri(term_o)
 
   return report
 
