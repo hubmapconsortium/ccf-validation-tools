@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Anatomical_Systems (2023-11-15)
+ASCT+B Validation Reports for Anatomical_Systems (2023-11-22)
 =============================================================
 
 Table of contents
@@ -26,12 +26,14 @@ Table of contents
 # Invalid terms
 
 
-These are the reports related to issues in the terms found in the ASCT+B table. We validate only [CL](https://www.ebi.ac.uk/ols/ontologies/cl), [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) and [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl) terms.
+These are the reports related to issues in the terms found in the ASCT+B table. We validate only [CL](https://www.ebi.ac.uk/ols4/ontologies/cl), [UBERON](https://www.ebi.ac.uk/ols4/ontologies/uberon) and [PCL](https://www.ebi.ac.uk/ols4/ontologies/pcl) terms.
 ## Terms not found
 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
+- No issues found.
+
 
 ## Typos or punctuation mistakes
 
@@ -56,7 +58,7 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols4/index).
 
 You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
@@ -74,7 +76,7 @@ This report provides a list of CT terms with blank ontology ID without an upper 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols4/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols4/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols4/ontologies/pcl).  
   
 - No issues found.
 
@@ -122,14 +124,14 @@ This table contains terms for anatomical structures that are related to each oth
 
 
 
-|    | s              | slabel        | user_slabel   | o              | olabel            | user_olabel       | row_number                                                                                                                |   deltaIC |
-|----|----------------|---------------|---------------|----------------|-------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | UBERON:0002405 | immune system | immune system | UBERON:0000467 | anatomical system | anatomical system | [24](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=24:24) |       nan |
-|  1 | UBERON:0002405 | immune system | immune system | UBERON:0000467 | anatomical system | anatomical system | [25](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=25:25) |       nan |
-|  2 | UBERON:0002405 | immune system | immune system | UBERON:0000467 | anatomical system | anatomical system | [26](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=26:26) |       nan |
-|  3 | UBERON:0002405 | immune system | immune system | UBERON:0000467 | anatomical system | anatomical system | [27](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=27:27) |       nan |
-|  4 | UBERON:0002405 | immune system | immune system | UBERON:0000467 | anatomical system | anatomical system | [28](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=28:28) |       nan |
-|  5 | UBERON:0002405 | immune system | immune system | UBERON:0000467 | anatomical system | anatomical system | [29](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=29:29) |       nan |
+|    | s                                                               | slabel        | user_slabel   | o                                                               | olabel            | user_olabel       | row_number                                                                                                                |   deltaIC |
+|----|-----------------------------------------------------------------|---------------|---------------|-----------------------------------------------------------------|-------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+|  0 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system | immune system | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system | anatomical system | [24](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=24:24) |       nan |
+|  1 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system | immune system | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system | anatomical system | [25](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=25:25) |       nan |
+|  2 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system | immune system | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system | anatomical system | [26](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=26:26) |       nan |
+|  3 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system | immune system | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system | anatomical system | [27](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=27:27) |       nan |
+|  4 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system | immune system | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system | anatomical system | [28](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=28:28) |       nan |
+|  5 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system | immune system | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system | anatomical system | [29](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=29:29) |       nan |
 
 
 

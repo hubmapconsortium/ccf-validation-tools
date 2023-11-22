@@ -6,9 +6,9 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|PCL|2023-02-27|
 |CL|2023-10-19|
 |UBERON|2023-10-27|
+|PCL|2023-02-27|
 
 ### ASCT+b Tables
 
@@ -24,7 +24,7 @@ Release Notes
 |Kidney|v1.4|December 15, 2023|
 |Knee|v1.1|December 15, 2023|
 |Large_intestine|v1.4|revise for October, 2023|
-|Liver|v1.2|revise for October 1, 2023|
+|Liver|v1.2|December 15, 2023|
 |Lung|v1.4|December 15, 2023|
 |Lymph_node|v1.3|revise for October 1, 2023|
 |Lymph_vasculature|v1.4|September 27, 2023|
@@ -35,14 +35,14 @@ Release Notes
 |Pancreas|v1.3|revise for October 1, 2023|
 |Palatine_Tonsil|V1.0|revise for October 1, 2023|
 |Peripheral_nervous_system|v1.1|revise for Oct 1, 2023|
-|Placenta|v1.1|10/1/23|
+|Placenta|v1.1|December 1, 2023|
 |Prostate|v1.1|revise for Oct 1, 2023|
-|Skeleton|v1.1|September 27, 2023|
-|Skin|v1.3|revise for October 1, 2023|
+|Skeleton|v1.1|December 15, 2023|
+|Skin|v1.3|December 15, 2023|
 |Small_intestine|v1.2|revise for April 1, 2023|
 |Spinal_Cord|v1.0|revise for October 1, 2023|
 |Spleen|v1.4|revise for October 1, 2023|
-|Thymus|v1.4|revise for October 1, 2023|
+|Thymus|v1.4|December 15, 2023|
 |Trachea|v1.1|revise for October 1|
 |Ureter|NA|revise for April 2023|
 |Urinary_bladder|v1.1|revise for April 2024|

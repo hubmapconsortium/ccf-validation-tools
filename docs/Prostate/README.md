@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2023-11-15)
+ASCT+B Validation Reports for Prostate (2023-11-22)
 ===================================================
 
 Table of contents
@@ -26,15 +26,15 @@ Table of contents
 # Invalid terms
 
 
-These are the reports related to issues in the terms found in the ASCT+B table. We validate only [CL](https://www.ebi.ac.uk/ols/ontologies/cl), [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) and [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl) terms.
+These are the reports related to issues in the terms found in the ASCT+B table. We validate only [CL](https://www.ebi.ac.uk/ols4/ontologies/cl), [UBERON](https://www.ebi.ac.uk/ols4/ontologies/uberon) and [PCL](https://www.ebi.ac.uk/ols4/ontologies/pcl) terms.
 ## Terms not found
 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. UBERON:0000766
-
 1. UBERON:000570
+
+1. UBERON:0000766
 
 
 ## Typos or punctuation mistakes
@@ -54,17 +54,17 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _UBERON:0004167_ has a different name/label in the source ontology in the following 1 row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _orbitofrontal cortex_. For reference, the given name/label **by SMEs** is _lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _[UBERON:0001085](http://purl.obolibrary.org/obo/UBERON_0001085)_ has a different name/label in the source ontology in the following 1 row _[23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23)_. The name/label in the **ASCT+B table** is _vascular system_ and the one in the **ontology** is _skin of trunk_. For reference, the given name/label **by SMEs** is _vascular system_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. The term _CL:0000413_ has a different name/label in the source ontology in the following 1 row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_. The name/label in the **ASCT+B table** is _endothelial cell of artery_ and the one in the **ontology** is _haploid cell_. For reference, the given name/label **by SMEs** is _endothelial cell of artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _[UBERON:0004167](http://purl.obolibrary.org/obo/UBERON_0004167)_ has a different name/label in the source ontology in the following 1 row _[22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22)_. The name/label in the **ASCT+B table** is _lymphatic endothelial cell_ and the one in the **ontology** is _orbitofrontal cortex_. For reference, the given name/label **by SMEs** is _lymphatic endothelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. The term _UBERON:0001085_ has a different name/label in the source ontology in the following 1 row _[23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23)_. The name/label in the **ASCT+B table** is _vascular system_ and the one in the **ontology** is _skin of trunk_. For reference, the given name/label **by SMEs** is _vascular system_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _[CL:0000413](http://purl.obolibrary.org/obo/CL_0000413)_ has a different name/label in the source ontology in the following 1 row _[19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19)_. The name/label in the **ASCT+B table** is _endothelial cell of artery_ and the one in the **ontology** is _haploid cell_. For reference, the given name/label **by SMEs** is _endothelial cell of artery_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
 
 
-This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols/index).
+This report provides a list of blank spreadsheet cells that often mean no ontology mapping found by the author. However, in some cases, a term with a synonym already exists. Please search in [OLS](https://www.ebi.ac.uk/ols4/index).
 
 You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
@@ -84,7 +84,7 @@ This report provides a list of CT terms with blank ontology ID without an upper 
 ## Terms from another ontology
 
 
-This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols/ontologies/pcl).  
+This report provides a list of terms from another ontologies that we do not validate. Foundational Model of Anatomy (FMA) ontology IDs are provided when an adequate term is not found in UBERON. Same case for Anatomic Ontology for Human Lung Maturation (LMHA) and Interlex IDs (ILX) from Stimulating Peripheral Activity to Relieve Conditions (SPARC). You can request cross-database request the same way a new term request. Please be sure if a term with a related synonym is already in the source ontologies [CL](https://www.ebi.ac.uk/ols4/ontologies/cl) or [UBERON](https://www.ebi.ac.uk/ols4/ontologies/uberon) or [PCL](https://www.ebi.ac.uk/ols4/ontologies/pcl).  
   
 - No issues found.
 
@@ -132,18 +132,18 @@ This table contains terms for anatomical structures that are related to each oth
 
 
 
-|    | s              | slabel                       | user_slabel                  | o              | olabel                | user_olabel     | row_number                                                                                                                |   deltaIC |
-|----|----------------|------------------------------|------------------------------|----------------|-----------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | UBERON:0001981 | blood vessel                 | blood vessel                 | UBERON:0001085 | skin of trunk         | vascular system | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |    29.194 |
-|  1 | UBERON:0001981 | blood vessel                 | blood vessel                 | UBERON:0001085 | skin of trunk         | vascular system | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |    29.194 |
-|  3 | UBERON:0004243 | prostate gland smooth muscle | prostate gland smooth muscle | UBERON:0004184 | prostate gland stroma | prostate stroma | [16](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=16:16) |   nan     |
-|  6 | UBERON:0004537 | blood vasculature            | vascular system              | UBERON:0013702 | body proper           | whole body      | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |   nan     |
-|  8 | UBERON:0004537 | blood vasculature            | vascular system              | UBERON:0013702 | body proper           | whole body      | [20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20) |   nan     |
-|  9 | UBERON:0004537 | blood vasculature            | vascular system              | UBERON:0013702 | body proper           | whole body      | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) |   nan     |
-| 10 | UBERON:0004167 | orbitofrontal cortex         | lymphatic endothelial cell   | UBERON:0001473 | lymphatic vessel      | lymph vessel    | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |   nan     |
-| 14 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland        | prostate gland  | [25](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=25:25) |   nan     |
-| 16 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland        | prostate gland  | [26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26) |   nan     |
-| 18 | UBERON:0001335 | prostatic urethra            | prostatic urethra            | UBERON:0002367 | prostate gland        | prostate gland  | [27](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=27:27) |   nan     |
+|    | s                                                               | slabel                       | user_slabel                  | o                                                               | olabel                | user_olabel     | row_number                                                                                                                |   deltaIC |
+|----|-----------------------------------------------------------------|------------------------------|------------------------------|-----------------------------------------------------------------|-----------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+|  0 | [UBERON:0001981](http://purl.obolibrary.org/obo/UBERON_0001981) | blood vessel                 | blood vessel                 | [UBERON:0001085](http://purl.obolibrary.org/obo/UBERON_0001085) | skin of trunk         | vascular system | [23](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=23:23) |   29.1939 |
+|  1 | [UBERON:0001981](http://purl.obolibrary.org/obo/UBERON_0001981) | blood vessel                 | blood vessel                 | [UBERON:0001085](http://purl.obolibrary.org/obo/UBERON_0001085) | skin of trunk         | vascular system | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |   29.1939 |
+|  3 | [UBERON:0004243](http://purl.obolibrary.org/obo/UBERON_0004243) | prostate gland smooth muscle | prostate gland smooth muscle | [UBERON:0004184](http://purl.obolibrary.org/obo/UBERON_0004184) | prostate gland stroma | prostate stroma | [16](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=16:16) |  nan      |
+|  6 | [UBERON:0004537](http://purl.obolibrary.org/obo/UBERON_0004537) | blood vasculature            | vascular system              | [UBERON:0013702](http://purl.obolibrary.org/obo/UBERON_0013702) | body proper           | whole body      | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |  nan      |
+|  8 | [UBERON:0004537](http://purl.obolibrary.org/obo/UBERON_0004537) | blood vasculature            | vascular system              | [UBERON:0013702](http://purl.obolibrary.org/obo/UBERON_0013702) | body proper           | whole body      | [20](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=20:20) |  nan      |
+|  9 | [UBERON:0004537](http://purl.obolibrary.org/obo/UBERON_0004537) | blood vasculature            | vascular system              | [UBERON:0013702](http://purl.obolibrary.org/obo/UBERON_0013702) | body proper           | whole body      | [21](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=21:21) |  nan      |
+| 10 | [UBERON:0004167](http://purl.obolibrary.org/obo/UBERON_0004167) | orbitofrontal cortex         | lymphatic endothelial cell   | [UBERON:0001473](http://purl.obolibrary.org/obo/UBERON_0001473) | lymphatic vessel      | lymph vessel    | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |  nan      |
+| 14 | [UBERON:0001335](http://purl.obolibrary.org/obo/UBERON_0001335) | prostatic urethra            | prostatic urethra            | [UBERON:0002367](http://purl.obolibrary.org/obo/UBERON_0002367) | prostate gland        | prostate gland  | [25](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=25:25) |  nan      |
+| 16 | [UBERON:0001335](http://purl.obolibrary.org/obo/UBERON_0001335) | prostatic urethra            | prostatic urethra            | [UBERON:0002367](http://purl.obolibrary.org/obo/UBERON_0002367) | prostate gland        | prostate gland  | [26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26) |  nan      |
+| 18 | [UBERON:0001335](http://purl.obolibrary.org/obo/UBERON_0001335) | prostatic urethra            | prostatic urethra            | [UBERON:0002367](http://purl.obolibrary.org/obo/UBERON_0002367) | prostate gland        | prostate gland  | [27](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=27:27) |  nan      |
 
 
 
@@ -155,10 +155,10 @@ In the case of the CT-CT relationship, for each couple of terms, we verify for _
 
 
 
-|    | s          | slabel                                       | user_slabel                                  | o          | olabel                               | user_olabel                          | row_number                                                                                                                |   deltaIC |
-|----|------------|----------------------------------------------|----------------------------------------------|------------|--------------------------------------|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  7 | CL:0000413 | haploid cell                                 | endothelial cell of artery                   | CL:0000071 | blood vessel endothelial cell        | blood vessel endothelial cell        | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |       nan |
-| 11 | CL:0009115 | lymph node lymphatic vessel endothelial cell | lymph node lymphatic vessel endothelial cell | CL:0002138 | endothelial cell of lymphatic vessel | endothelial cell of lymphatic vessel | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |       nan |
+|    | s                                                       | slabel                                       | user_slabel                                  | o                                                       | olabel                               | user_olabel                          | row_number                                                                                                                |   deltaIC |
+|----|---------------------------------------------------------|----------------------------------------------|----------------------------------------------|---------------------------------------------------------|--------------------------------------|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+|  7 | [CL:0000413](http://purl.obolibrary.org/obo/CL_0000413) | haploid cell                                 | endothelial cell of artery                   | [CL:0000071](http://purl.obolibrary.org/obo/CL_0000071) | blood vessel endothelial cell        | blood vessel endothelial cell        | [19](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=19:19) |       nan |
+| 11 | [CL:0009115](http://purl.obolibrary.org/obo/CL_0009115) | lymph node lymphatic vessel endothelial cell | lymph node lymphatic vessel endothelial cell | [CL:0002138](http://purl.obolibrary.org/obo/CL_0002138) | endothelial cell of lymphatic vessel | endothelial cell of lymphatic vessel | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |       nan |
 
 
 
@@ -170,15 +170,15 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 
 
-|    | s          | slabel                                                           | user_slabel                                  | o              | olabel                | user_olabel                | row_number                                                                                                                |   deltaIC |
-|----|------------|------------------------------------------------------------------|----------------------------------------------|----------------|-----------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  2 | CL:0005006 | ionocyte                                                         | ionocyte epithelia                           | UBERON:0000428 | prostate epithelium   | prostate epithelium        | [15](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=15:15) |       nan |
-|  4 | CL:1000301 | fibroblast of subepithelial connective tissue of prostatic gland | periprostatic fibroblast                     | UBERON:0004184 | prostate gland stroma | prostate stroma            | [17](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=17:17) |       nan |
-|  5 | CL:1000299 | fibroblast of connective tissue of prostate                      | interstitial fibroblast                      | UBERON:0004184 | prostate gland stroma | prostate stroma            | [18](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=18:18) |       nan |
-| 12 | CL:0009115 | lymph node lymphatic vessel endothelial cell                     | lymph node lymphatic vessel endothelial cell | UBERON:0004167 | orbitofrontal cortex  | lymphatic endothelial cell | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |       nan |
-| 13 | CL:0000669 | pericyte                                                         | perictye                                     | UBERON:0001981 | blood vessel          | blood vessel               | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |       nan |
-| 15 | CL:1000486 | basal cell of urothelium                                         | basal cell of urothelium                     | UBERON:0001335 | prostatic urethra     | prostatic urethra          | [25](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=25:25) |       nan |
-| 17 | CL:4032000 | club-like cell of the urethral epithelium                        | club epithelia                               | UBERON:0001335 | prostatic urethra     | prostatic urethra          | [26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26) |       nan |
+|    | s                                                       | slabel                                                           | user_slabel                                  | o                                                               | olabel                | user_olabel                | row_number                                                                                                                |   deltaIC |
+|----|---------------------------------------------------------|------------------------------------------------------------------|----------------------------------------------|-----------------------------------------------------------------|-----------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+|  2 | [CL:0005006](http://purl.obolibrary.org/obo/CL_0005006) | ionocyte                                                         | ionocyte epithelia                           | [UBERON:0000428](http://purl.obolibrary.org/obo/UBERON_0000428) | prostate epithelium   | prostate epithelium        | [15](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=15:15) |       nan |
+|  4 | [CL:1000301](http://purl.obolibrary.org/obo/CL_1000301) | fibroblast of subepithelial connective tissue of prostatic gland | periprostatic fibroblast                     | [UBERON:0004184](http://purl.obolibrary.org/obo/UBERON_0004184) | prostate gland stroma | prostate stroma            | [17](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=17:17) |       nan |
+|  5 | [CL:1000299](http://purl.obolibrary.org/obo/CL_1000299) | fibroblast of connective tissue of prostate                      | interstitial fibroblast                      | [UBERON:0004184](http://purl.obolibrary.org/obo/UBERON_0004184) | prostate gland stroma | prostate stroma            | [18](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=18:18) |       nan |
+| 12 | [CL:0009115](http://purl.obolibrary.org/obo/CL_0009115) | lymph node lymphatic vessel endothelial cell                     | lymph node lymphatic vessel endothelial cell | [UBERON:0004167](http://purl.obolibrary.org/obo/UBERON_0004167) | orbitofrontal cortex  | lymphatic endothelial cell | [22](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=22:22) |       nan |
+| 13 | [CL:0000669](http://purl.obolibrary.org/obo/CL_0000669) | pericyte                                                         | perictye                                     | [UBERON:0001981](http://purl.obolibrary.org/obo/UBERON_0001981) | blood vessel          | blood vessel               | [24](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=24:24) |       nan |
+| 15 | [CL:1000486](http://purl.obolibrary.org/obo/CL_1000486) | basal cell of urothelium                                         | basal cell of urothelium                     | [UBERON:0001335](http://purl.obolibrary.org/obo/UBERON_0001335) | prostatic urethra     | prostatic urethra          | [25](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=25:25) |       nan |
+| 17 | [CL:4032000](http://purl.obolibrary.org/obo/CL_4032000) | club-like cell of the urethral epithelium                        | club epithelia                               | [UBERON:0001335](http://purl.obolibrary.org/obo/UBERON_0001335) | prostatic urethra     | prostatic urethra          | [26](https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370&range=26:26) |       nan |
 
 
 
