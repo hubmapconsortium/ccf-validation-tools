@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2023-11-29)
+ASCT+B Validation Reports for Main_Bronchus (2023-12-06)
 ========================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:4033023](http://purl.obolibrary.org/obo/CL_4033023)_ has a different name/label in the source ontology in the following 1 row _[16](https://docs.google.com/spreadsheets/d/13O5Bb5_ki6uj4NcrFYoZPCHbYwrsPcyPJtdamUeZWZA/edit#gid=0&range=16:16)_. The name/label in the **ASCT+B table** is __ and the one in the **ontology** is _airway submucosal gland collecting duct epithelial cell_. For reference, the given name/label **by SMEs** is _airway submucosal gland collecting duct epithelial cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
