@@ -1,9 +1,9 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 LABEL maintainer="anitac@ebi.ac.uk" 
 
 WORKDIR /tools
 
-ENV ROBOT v1.9.0
+ENV ROBOT v1.9.5
 ARG ROBOT_JAR=https://github.com/ontodev/robot/releases/download/$ROBOT/robot.jar
 ENV ROBOT_JAR ${ROBOT_JAR}
 
@@ -16,12 +16,10 @@ RUN apt-get update && \
         make \
         unzip \
         curl \
-        jq
-
-###### nodejs #####
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
-RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y nodejs \
-      graphviz
+        jq \
+        nodejs \
+        npm \
+        graphviz
 
 ###### robot ######
 RUN curl -L $ROBOT_JAR -o /tools/robot.jar &&\
