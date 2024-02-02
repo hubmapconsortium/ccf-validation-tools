@@ -62,9 +62,13 @@ def get_reports(date):
     ter_report = add_color(ter_report.reset_index(drop=True), "terms")
     ter_report.rename(columns={
         "AS_valid_term_number": "# VALID AS TERMS",
+        "AS_temp_term_number": "# AS TEMP TERMS",
+        "AS_out_ub": "# AS NOT UBERON TERMS",
         "AS_invalid_term_number": "# INVALID AS TERMS",
         "AS_invalid_term_percent": "% INVALID AS TERMS",
         "CT_valid_term_number": "# VALID CT TERMS",
+        "CT_temp_term_number": "# CT TEMP TERMS",
+        "CT_out_ub": "# CT NOT CL TERMS",
         "CT_invalid_term_number": "# INVALID CT TERMS",
         "CT_invalid_term_percent": "% INVALID CT TERMS",
         "invalid_terms_percent": "% INVALID TERMS"
