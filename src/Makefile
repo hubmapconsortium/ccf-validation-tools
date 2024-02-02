@@ -163,3 +163,41 @@ dashboard:
 
 3d-images_component:
 	python hra_wrapper.py
+
+CCF_CURRENT = http://purl.org/ccf/releases/2.3.0/ccf.owl
+CCF_PREVIOUS = http://purl.org/ccf/releases/2.2.1/ccf.owl
+
+ccf_current.owl: 
+	curl -L $(CCF_CURRENT) -o $@.tmp.owl
+	$(ROBOT) filter --input $@.tmp.owl \
+	--term "BFO:0000050" \
+	--term "BFO:0000051" \
+	--term "RO:0002170" \
+	--term "RO:0002150" \
+	--term "RO:0002202" \
+	--term "RO:0001025" \
+	--term "RO:0002131" \
+	--term "UBERON:0001062" \
+	--term "CL:0000000" \
+	--term "rdfs:label" \
+	--select "self descendants" --axioms all --output $@
+	rm $@.tmp.owl
+
+ccf_previous.owl:
+	curl -L $(CCF_PREVIOUS) -o $@.tmp.owl
+	$(ROBOT) filter --input $@.tmp.owl \
+	--term "BFO:0000050" \
+	--term "BFO:0000051" \
+	--term "RO:0002170" \
+	--term "RO:0002150" \
+	--term "RO:0002202" \
+	--term "RO:0001025" \
+	--term "RO:0002131" \
+	--term "UBERON:0001062" \
+	--term "CL:0000000" \
+	--term "rdfs:label" \
+	--select "self descendants" --axioms all --output $@
+	rm $@.tmp.owl
+
+diff_ccf.md: ccf_current.owl ccf_previous.owl
+	$(ROBOT) diff --labels True -f markdown --left ccf_previous.owl --right ccf_current.owl --output $@
