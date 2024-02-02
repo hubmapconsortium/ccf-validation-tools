@@ -30,8 +30,7 @@ RUN curl -L $ROBOT_JAR -o /tools/robot.jar &&\
 ENV PATH "/tools/:$PATH"
 
 ###### obographviz #####
-RUN npm install obographviz && \
-    ln -s /tools/node_modules/obographviz/bin/og2dot.js /tools/og2dot.js
+RUN npm install -g obographviz
 
 ##### ontobio ######
 RUN cd /tools \
