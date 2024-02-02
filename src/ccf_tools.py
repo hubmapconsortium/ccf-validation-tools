@@ -51,7 +51,11 @@ def parse_asctb(path):
 
     asct_b_tab = json.load(open(path))
     as_invalid_terms = set()
+    as_temp_terms = set()
+    as_out_ub = set()
     ct_invalid_terms = set()
+    ct_temp_terms = set()
+    ct_out_ct = set()
     unique_terms = set()
     as_valid_terms = set()
     ct_valid_terms = set()
@@ -87,16 +91,32 @@ def parse_asctb(path):
           as_valid_terms.add(next['id'])
         else:
           if not check_id(current['id']) and current['rdfs_label'] != '':
+            if current['id'] != '':
+                as_out_ub.add(current['id'])
+            else:
+                as_temp_terms.add(current['rdfs_label'])
             as_invalid_terms.add(current['rdfs_label'])
             unique_terms.add(current['rdfs_label'])
           elif not check_id(current['id']) and current['name'] != '':
+            if current['id'] != '':
+                as_out_ub.add(current['id'])
+            else:
+                as_temp_terms.add(current['name'])
             as_invalid_terms.add(current['name'])
             unique_terms.add(current['name'])
 
           if not check_id(next['id']) and next['rdfs_label'] != '':
+            if next['id'] != '':
+              as_out_ub.add(next['id'])
+            else:
+              as_temp_terms.add(next['rdfs_label'])
             as_invalid_terms.add(next['rdfs_label'])
             unique_terms.add(next['rdfs_label'])
           elif not check_id(next['id']) and next['name'] != '':
+            if next['id'] != '':
+              as_out_ub.add(next['id'])
+            else:
+              as_temp_terms.add(next['name'])
             as_invalid_terms.add(next['name'])
             unique_terms.add(next['name'])
       
@@ -125,16 +145,32 @@ def parse_asctb(path):
           ct_valid_terms.add(next['id'])
         else:
           if not check_id(current['id']) and current['rdfs_label'] != '':
+            if current['id'] != '':
+              ct_out_ct.add(current['id'])
+            else:
+              ct_temp_terms.add(current['rdfs_label'])
             ct_invalid_terms.add(current['rdfs_label'])
             unique_terms.add(current['rdfs_label'])
           elif not check_id(current['id']) and current['name'] != '':
+            if current['id'] != '':
+              ct_out_ct.add(current['id'])
+            else:
+              ct_temp_terms.add(current['name'])
             ct_invalid_terms.add(current['name'])
             unique_terms.add(current['name'])
           
           if not check_id(next['id']) and next['rdfs_label'] != '':
+            if next['id'] != '':
+              ct_out_ct.add(next['id'])
+            else:
+              ct_temp_terms.add(next['rdfs_label'])
             ct_invalid_terms.add(next['rdfs_label'])
             unique_terms.add(next['rdfs_label'])
           elif not check_id(next['id']) and next['name'] != '':
+            if next['id'] != '':
+              ct_out_ct.add(next['id'])
+            else:
+              ct_temp_terms.add(next['name'])
             ct_invalid_terms.add(next['name'])
             unique_terms.add(next['name'])
             
@@ -171,16 +207,32 @@ def parse_asctb(path):
           if check_id(last_ct['id']):
             ct_valid_terms.add(last_ct['id'])
           if not check_id(last_as['id']) and last_as['rdfs_label'] != '':
+            if last_as['id'] != '':
+              as_out_ub.add(last_as['id'])
+            else:
+              as_temp_terms.add(last_as['rdfs_label'])
             as_invalid_terms.add(last_as['rdfs_label'])
             unique_terms.add(last_as['rdfs_label'])
           elif not check_id(last_as['id']) and last_as['name'] != '':
+            if last_as['id'] != '':
+              as_out_ub.add(last_as['id'])
+            else:
+              as_temp_terms.add(last_as['name'])
             as_invalid_terms.add(last_as['name'])
             unique_terms.add(last_as['name'])
           
           if not check_id(last_ct['id']) and last_ct['rdfs_label'] != '':
+            if last_ct['id'] != '':
+              ct_out_ct.add(last_ct['id'])
+            else:
+              ct_temp_terms.add(last_ct['rdfs_label'])
             ct_invalid_terms.add(last_ct['rdfs_label'])
             unique_terms.add(last_ct['rdfs_label'])
           elif not check_id(last_ct['id']) and last_ct['name'] != '':
+            if last_ct['id'] != '':
+              ct_out_ct.add(last_ct['id'])
+            else:
+              ct_temp_terms.add(last_ct['name'])
             ct_invalid_terms.add(last_ct['name'])
             unique_terms.add(last_ct['name'])
       
@@ -218,6 +270,7 @@ def parse_asctb(path):
 
     as_invalid_term_percent = 0
     ct_invalid_terms_percent = 0
+    invalid_terms_percent = 0
     if len(as_valid_terms) + len(ct_invalid_terms) > 0:
       as_invalid_term_percent = round((len(as_invalid_terms)*100)/(len(as_valid_terms)+len(as_invalid_terms)), 2)
     if len(ct_valid_terms) + len(ct_invalid_terms) > 0:
@@ -227,10 +280,14 @@ def parse_asctb(path):
 
     report_terms = {
       'Table': '',
-      'AS_valid_term_number': [len(as_valid_terms)], 
-      'AS_invalid_term_number': [len(as_invalid_terms)], 
+      'AS_valid_term_number': [len(as_valid_terms)],
+      'AS_temp_term_number': [len(as_temp_terms)],
+      'AS_out_ub': [len(as_out_ub)],
+      'AS_invalid_term_number': [len(as_invalid_terms)],
       'AS_invalid_term_percent': [as_invalid_term_percent],
       'CT_valid_term_number': [len(ct_valid_terms)],
+      'CT_temp_term_number': [len(ct_temp_terms)],
+      'CT_out_ub': [len(ct_out_ct)],
       'CT_invalid_term_number': [len(ct_invalid_terms)],
       'CT_invalid_term_percent': [ct_invalid_terms_percent],
       'invalid_terms_percent': [invalid_terms_percent]    

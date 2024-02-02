@@ -13,7 +13,8 @@ def clean_up(report):
 def add_link(report):
     for row in report.itertuples():
         row_table = row.Table
-        report.at[row.Index, "Table"] = f"[{row_table}]({row_table}/README.md)"
+        if row_table != "Total":
+            report.at[row.Index, "Table"] = f"[{row_table}]({row_table}/README.md)"
 
     return report
 
@@ -50,24 +51,38 @@ def add_color(report, report_type):
 
 def get_reports(date):
     BASE_PATH = "../reports/report_"
-    
+
     ter_report = pd.read_csv(f"{BASE_PATH}terms_{date}.tsv", sep='\t')
     ter_report.sort_values(by=["Table"], inplace=True)
+    ter_report.loc["Total"] = ter_report.sum()
+    ter_report.loc[ter_report.index[-1], "Table"] = "Total"
+    ter_report.loc[ter_report.index[-1], "AS_invalid_term_percent"] = ""
+    ter_report.loc[ter_report.index[-1], "CT_invalid_term_percent"] = ""
+    ter_report.loc[ter_report.index[-1], "invalid_terms_percent"] = ""
     ter_report = add_color(ter_report.reset_index(drop=True), "terms")
     ter_report.rename(columns={
         "AS_valid_term_number": "# VALID AS TERMS",
+        "AS_temp_term_number": "# AS TEMP TERMS",
+        "AS_out_ub": "# AS NOT UBERON TERMS",
         "AS_invalid_term_number": "# INVALID AS TERMS",
         "AS_invalid_term_percent": "% INVALID AS TERMS",
         "CT_valid_term_number": "# VALID CT TERMS",
+        "CT_temp_term_number": "# CT TEMP TERMS",
+        "CT_out_ub": "# CT NOT CL TERMS",
         "CT_invalid_term_number": "# INVALID CT TERMS",
         "CT_invalid_term_percent": "% INVALID CT TERMS",
         "invalid_terms_percent": "% INVALID TERMS"
     }, inplace=True)
     ter_report = add_link(ter_report)
     ter_report_md = tsv2md(ter_report)
-    
+
     rel_report = pd.read_csv(f"{BASE_PATH}relationship_{date}.tsv", sep='\t')
     rel_report.sort_values(by=["Table"], inplace=True)
+    rel_report.loc["Total"] = rel_report.sum()
+    rel_report.loc[rel_report.index[-1], "Table"] = "Total"
+    rel_report.loc[rel_report.index[-1], "percent_invalid_AS-AS_relationship"] = ""
+    rel_report.loc[rel_report.index[-1], "percent_invalid_CT-CT_relationship"] = ""
+    rel_report.loc[rel_report.index[-1], "percent_invalid_CT-AS_relationship"] = ""
     rel_report = clean_up(rel_report.reset_index(drop=True))
     rel_report = add_color(rel_report, "relations")
     rel_report.rename(columns={
