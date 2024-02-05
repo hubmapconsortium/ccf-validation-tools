@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Anatomical_Systems (2023-12-07)
+ASCT+B Validation Reports for Anatomical_Systems (2024-02-05)
 =============================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-- No issues found.
+1. The term _[UBERON:0014892](http://purl.obolibrary.org/obo/UBERON_0014892)_ has a different name/label in the source ontology in the following 1 row _[49](https://docs.google.com/spreadsheets/d/1oB3m_IOMEcDsdQoDicXd9KXXz7oytIPIPiu9lq88quU/edit#gid=2028977062&range=49:49)_. The name/label in the **ASCT+B table** is _skeletal muscle organ_ and the one in the **ontology** is _skeletal muscle organ, vertebrate_. For reference, the given name/label **by SMEs** is _skeletal muscle organ_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
