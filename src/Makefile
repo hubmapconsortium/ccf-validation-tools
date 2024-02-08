@@ -163,3 +163,75 @@ dashboard:
 
 3d-images_component:
 	python hra_wrapper.py
+
+FIRST_RELEASE=
+LAST_RELEASE=
+ID=
+
+ONTOLOGIES=cl uberon
+
+ontologies/latest_%.obo:
+	mkdir -p ontologies/
+	wget "http://purl.obolibrary.org/obo/$*.obo" -O $@
+
+ontologies/uberon_%.obo:
+	mkdir -p ontologies/
+	wget "http://purl.obolibrary.org/obo/uberon/releases/$*/uberon-base.obo" -O $@
+
+ontologies/cl_%.obo:
+	mkdir -p ontologies/
+	wget "http://purl.obolibrary.org/obo/cl/releases/$*/cl-base.obo" -O $@
+
+stats/uberon_$(LAST_RELEASE)_diff.txt:
+	$(eval ID := uberon)
+	mkdir -p stats/
+	$(MAKE) ontologies/$(ID)_$(FIRST_RELEASE).obo ontologies/$(ID)_$(LAST_RELEASE).obo
+	runoak -i simpleobo:ontologies/$(ID)_$(FIRST_RELEASE).obo diff -X simpleobo:ontologies/$(ID)_$(LAST_RELEASE).obo --statistics -o $@.yaml
+	robot diff --left ontologies/$(ID)_$(FIRST_RELEASE).obo --right ontologies/$(ID)_$(LAST_RELEASE).obo -o $@
+.PRECIOUS: stats/uberon_$(LAST_RELEASE)_diff.txt
+
+stats/cl_$(LAST_RELEASE)_diff.txt:
+	$(eval ID := cl)
+	mkdir -p stats/
+	$(MAKE) ontologies/$(ID)_$(FIRST_RELEASE).obo ontologies/$(ID)_$(LAST_RELEASE).obo
+	runoak -i simpleobo:ontologies/$(ID)_$(FIRST_RELEASE).obo diff -X simpleobo:ontologies/$(ID)_$(LAST_RELEASE).obo --statistics -o $@.yaml
+	robot diff --left ontologies/$(ID)_$(FIRST_RELEASE).obo --right ontologies/$(ID)_$(LAST_RELEASE).obo -o $@
+.PRECIOUS: stats/cl_$(LAST_RELEASE)_diff.txt
+
+.PHONY: stats/cl_$(LAST_RELEASE)_diff_summary.txt
+stats/cl_$(LAST_RELEASE)_diff_summary.txt: stats/cl_$(LAST_RELEASE)_diff.txt
+	echo "Release $(LAST_RELEASE)" > $@
+	echo "New Terms: " >> $@
+	grep "+ Declaration.*CL" $< | wc -l >> $@
+	echo "New or updated definitions: " >> $@
+	grep -E "[+] AnnotationAssertion.*IAO_0000115" $< | wc -l >> $@
+	echo "New or updated synonyms: " >> $@
+	grep -E "[+] AnnotationAssertion.*Synonym" $< | wc -l >> $@
+	echo "New or updated part of relationship: " >> $@
+	grep -E "[+] SubClassOf.*CL.*BFO_0000050" $< | wc -l >> $@
+	echo "New or updated has part relationship: " >> $@
+	grep -E "[+] SubClassOf.*CL.*BFO_0000051" $< | wc -l >> $@
+	echo "New or updated subclassof relationship: " >> $@
+	grep -E "[+] SubClassOf" $< | grep -E -v "BFO|RO" | wc -l >> $@
+
+.PHONY: stats/uberon_$(LAST_RELEASE)_diff_summary.txt
+stats/uberon_$(LAST_RELEASE)_diff_summary.txt: stats/uberon_$(LAST_RELEASE)_diff.txt
+	echo "Release $(LAST_RELEASE)" > $@
+	echo "New Terms: " >> $@
+	grep "+ Declaration.*UBERON" $< | wc -l >> $@
+	echo "New or updated definitions: " >> $@
+	grep -E "[+] AnnotationAssertion.*IAO_0000115" $< | wc -l >> $@
+	echo "New or updated synonyms: " >> $@
+	grep -E "[+] AnnotationAssertion.*Synonym" $< | wc -l >> $@
+	echo "New or updated 'part of' relationship: " >> $@
+	grep -E "[+] SubClassOf.*UBERON.*BFO_0000050.*UBERON" $< | wc -l >> $@
+	echo "New or updated 'has part' relationship: " >> $@
+	grep -E "[+] SubClassOf.*UBERON.*BFO_0000051.*UBERON" $< | wc -l >> $@
+	echo "New or updated 'connecting branch of' relationship: " >> $@
+	grep -E "[+] SubClassOf.*UBERON.*RO_0002252.*UBERON" $< | wc -l >> $@
+	echo "New or updated 'connected to' relationship: " >> $@
+	grep -E "[+] SubClassOf.*UBERON.*RO_0002170" $< | wc -l >> $@
+	echo "New or updated subclassof relationship:" >> $@
+	grep -E "[+] SubClassOf.*UBERON.*UBERON" $< | grep -E -v "BFO|RO_" | wc -l >> $@
+	echo "New or updated surrounds relationship:" >> $@
+	grep -E "[+] SubClassOf.*UBERON.*RO_0002221.*UBERON" $< | wc -l >> $@
