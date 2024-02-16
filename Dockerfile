@@ -29,6 +29,23 @@ RUN curl -L $ROBOT_JAR -o /tools/robot.jar &&\
   
 ENV PATH "/tools/:$PATH"
 
+###### Update Node version #####
+# nvm environment variables
+ENV NODE_VERSION 20.9.0
+ENV NVM_VERSION 0.39.7
+
+ENV NVM_DIR /usr/local/nvm
+RUN mkdir $NVM_DIR
+
+RUN curl --silent -o- https://raw.githubusercontent.com/creationix/nvm/v$NVM_VERSION/install.sh | bash && \
+    . $NVM_DIR/nvm.sh && \
+    nvm install $NODE_VERSION && \
+    nvm alias default $NODE_VERSION && \
+    nvm use default
+
+ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
+ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
+
 ###### obographviz #####
 RUN npm install -g obographviz
 
