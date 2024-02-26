@@ -1,7 +1,7 @@
 ROBOT = robot # Set this to your local path (Need to switch this to take input!)
 
-# JOBS = Quadriceps_Femoris Triceps_Surae White_Adipose  don't have data in table # Mammary_Gland not included in the 6th release
-JOBS = Anatomical_Systems Blood Bone-Marrow Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Main_Bronchus Muscular_System Ovary Pancreas Palatine_Tonsil Peripheral_nervous_system Placenta Prostate Skeleton Skin Small_intestine Spinal_Cord Spleen Thymus Trachea Ureter Urinary_bladder Uterus Blood_vasculature
+# JOBS = Quadriceps_Femoris Triceps_Surae White_Adipose  don't have data in table
+JOBS = Anatomical_Systems Blood Bone-Marrow Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Main_Bronchus Mammary_Gland Muscular_System Ovary Pancreas Palatine_Tonsil Peripheral_nervous_system Placenta Prostate Skeleton Skin Small_intestine Spinal_Cord Spleen Thymus Trachea Ureter Urinary_bladder Uterus Blood_vasculature
 JOBS_OLD = Bone-Marrow Blood Brain Eye Fallopian_tube Heart Kidney Knee Large_intestine Liver Lung Lymph_node Lymph_vasculature Ovary Pancreas Placenta Peripheral_nervous_system Prostate Skin Small_intestine Spleen Thymus Ureter Urinary_bladder Uterus Blood_vasculature 
 OLD_VERSION = False
 
