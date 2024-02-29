@@ -56,7 +56,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
           'validation_date_continuous_with': '>A dc:date',
           'connects': "SC 'connects' some %",
           'OBO_Validated_connects': '>A CCFH:IN_OBO',
-          'validation_date_connects': '>A dc:date'}
+          'validation_date_connects': '>A dc:date',
+          'surrounds': "SC 'surrounds' some %",
+          'OBO_Validated_surrounds': '>A CCFH:IN_OBO',
+          'validation_date_surrounds': '>A dc:date'}
 
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
   seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
@@ -262,6 +265,11 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   valid_connects, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_connects)
 
   records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_connects, 'connects')
+  
+  # SURROUNDS CHECK
+  valid_surrounds, terms_pairs = ug.verify_relationship(terms_pairs, ug.select_surrounds)
+
+  records, valid_as, valid_ct = add_rows(records, valid_as, valid_ct, valid_surrounds, 'surrounds')
 
   # STRICT CT-AS REPORT
   terms_s, terms_o = split_terms(terms_ct_as)

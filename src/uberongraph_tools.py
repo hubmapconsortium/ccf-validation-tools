@@ -280,6 +280,21 @@ class UberonGraph():
             ?subject connects: ?object .
           }
         """
+        self.select_surrounds = """
+          PREFIX surrounds: <http://purl.obolibrary.org/obo/RO_0002221>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
+
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/redundant>
+          {
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject surrounds: ?object .
+          }
+        """
 
     def ask_uberon(self, r, q, urls=True):
         """"""
