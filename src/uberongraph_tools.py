@@ -265,6 +265,21 @@ class UberonGraph():
             ?subject continuous_with: ?object .
           }
         """
+        self.select_connects = """
+          PREFIX connects: <http://purl.obolibrary.org/obo/RO_0002176>
+          PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+          PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
+          PREFIX PCL: <http://purl.obolibrary.org/obo/PCL_>
+
+          SELECT ?subject ?object
+          FROM <http://reasoner.renci.org/redundant>
+          {
+            VALUES (?subject ?object) {
+              %s
+            }
+            ?subject connects: ?object .
+          }
+        """
 
     def ask_uberon(self, r, q, urls=True):
         """"""
