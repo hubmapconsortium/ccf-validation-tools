@@ -340,12 +340,6 @@ WHERE {
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-    
-
-
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
@@ -355,6 +349,12 @@ WHERE {
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
@@ -524,12 +524,6 @@ WHERE {
     
 
 
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-    
-
-
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
@@ -612,6 +606,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <rdfs:label>part of</rdfs:label>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
@@ -641,6 +636,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <rdfs:label>has part</rdfs:label>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -662,7 +658,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000116 xml:lang="en">Most location relations will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</dc:source>
+        <terms:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</terms:source>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
         <rdfs:label xml:lang="en">located in</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Located_in</rdfs:seeAlso>
@@ -721,10 +717,30 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/RO_0002170 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002170">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002176"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002176"/>
+        </owl:propertyChainAxiom>
         <obo:IAO_0000112>a &apos;toe distal phalanx bone&apos; that is connected to a &apos;toe medial phalanx bone&apos; (an interphalangeal joint *connects* these two bones).</obo:IAO_0000112>
         <obo:IAO_0000115>a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22293552"/>
         <rdfs:label xml:lang="en">connected to</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/wiki/Connectivity-Design-Pattern</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/wiki/Modeling-articulations-Design-Pattern</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002176 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002176">
+        <obo:IAO_0000112>The M8 connects Glasgow and Edinburgh</obo:IAO_0000112>
+        <obo:IAO_0000112>a &apos;toe distal phalanx bone&apos; that is connected to a &apos;toe medial phalanx bone&apos; (an interphalangeal joint *connects* these two bones).</obo:IAO_0000112>
+        <obo:IAO_0000115>c connects a if and only if there exist some b such that a and b are similar parts of the same system, and c connects b, specifically, c connects a with b. When one structure connects two others it unites some aspect of the function or role they play within the system.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22293552"/>
+        <rdfs:label xml:lang="en">connects</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/wiki/Connectivity-Design-Pattern</rdfs:seeAlso>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/wiki/Modeling-articulations-Design-Pattern</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -743,6 +759,19 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <rdfs:comment>This is the transitive form of the develops from relation</rdfs:comment>
         <rdfs:label xml:lang="en">develops from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002221 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002221">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>inverse of surrounded by</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <rdfs:label xml:lang="en">surrounds</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -779,6 +808,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000036">
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial stem cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial fate stem cell</rdfs:label>
@@ -799,6 +829,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:66768</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBbt:0003672</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epitheliocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -827,6 +858,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBbt:00005125</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67313</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBbt:0005113</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interneuron</rdfs:label>
@@ -837,7 +869,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269626</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822394</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000099"/>
@@ -859,6 +891,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:54536</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroglial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroglia</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not all glial cells develop from glioblasts, with microglia developing from the mesoderm instead. See https://github.com/obophenotype/cell-ontology/issues/1571</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -888,6 +921,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microgliocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MF.microglia.CNS</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microglia</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unlike macroglial cells, microglial cells  arise from hematopoietic stem cells in the yolk sac during early embryogenesis that populate the central nervous system. They derive from embryonic mesoderm and are not from neuroectoderm where glioblast develops from. Markers: Mouse: CD11b+, F4/80+, CD68+. They represent ~12% of the cells in the CNS, but they are not uniformly distributed within the CNS. A normal adult mouse brain has approximately 3.5x10e6 microglia. Microglia are also reportedly CD3-negative, CD4-positive, CD8-negative, CD11b-positive, CD11c-high, CD14-negative, CD19-negative, CD45-low, CD56-negative, CD163-negative, CD200R-positive, CD281-positive, CD282-positive, CD283-positive, CD284-positive, CD285-positive, CD286-positive, CD287-positive, CD288-positive, CD289-positive, Gr1-negative, nestin-positive, and PU.1-positive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -931,12 +965,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.1038/s41598-020-66092-9</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003004"/>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000129"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unlike macroglial cells, microglial cells  arise from hematopoietic stem cells in the yolk sac during early embryogenesis that populate the central nervous system. They derive from embryonic mesoderm and are not from neuroectoderm where glioblast develops from. Markers: Mouse: CD11b+, F4/80+, CD68+. They represent ~12% of the cells in the CNS, but they are not uniformly distributed within the CNS. A normal adult mouse brain has approximately 3.5x10e6 microglia. Microglia are also reportedly CD3-negative, CD4-positive, CD8-negative, CD11b-positive, CD11c-high, CD14-negative, CD19-negative, CD45-low, CD56-negative, CD163-negative, CD200R-positive, CD281-positive, CD282-positive, CD283-positive, CD284-positive, CD285-positive, CD286-positive, CD287-positive, CD288-positive, CD289-positive, Gr1-negative, nestin-positive, and PU.1-positive.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:23616747</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -953,6 +981,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0172</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70614</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -969,7 +998,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003480</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562369</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000132"/>
@@ -989,6 +1018,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000287">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1001,7 +1031,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269628</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822357</dc:date>
     </owl:Axiom>
     
 
@@ -1018,6 +1048,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001483</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBbt:0003679</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These cells are also reportedly CD4-negative and CD200-positive. They are also capable of producing CD40L and IFN-gamma.</rdfs:comment>
@@ -1047,6 +1078,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amacrine neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AC</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACs</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1059,7 +1091,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000099"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269585</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822375</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000561"/>
@@ -1097,6 +1129,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0866</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67748</oboInOwl:hasDbXref>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cone</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal cone cell</rdfs:label>
@@ -1107,7 +1140,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000287"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269587</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822371</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000573"/>
@@ -1139,6 +1172,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0173</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70551</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell of cornea</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1155,7 +1189,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003503</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562413</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000575"/>
@@ -1182,6 +1216,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0870</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67747</oboInOwl:hasDbXref>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal rod cell</rdfs:label>
@@ -1192,7 +1227,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000287"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269621</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822378</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000604"/>
@@ -1218,6 +1253,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muller cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muller glia</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Müller cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1255,6 +1291,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte of Rouget</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adventitial cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pericytes are CD10-positive, CD13-positive, CD31-negative, CD45-negative, CD106-positive, CD117-negative, CD140-positive, CD144-negative, CD146-positive, CD271-positive, CD325-positive, NG2-positive, RGS5-positive, SMA-positive, and desmin-positive. A subpopulation is CD248-positive. They are also capable of producing angiopoietin 1, CXCL12, TGF-beta, and VEGF-A.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1266,7 +1303,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0008034"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269636</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822364</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000669"/>
@@ -1302,6 +1339,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ganglion cell of retina</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RGC</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RGCs</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1313,7 +1351,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269592</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822387</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000740"/>
@@ -1349,6 +1387,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horizontal cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HC</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCs</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1360,7 +1399,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269577</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822392</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000745"/>
@@ -1401,6 +1440,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BC</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCs</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BPs</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1413,7 +1453,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269613</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822324</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000748"/>
@@ -1425,7 +1465,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746212</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307409</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000748"/>
@@ -1471,6 +1511,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bipolar neuron found in the retina and having connections with photoreceptors cells and neurons in the inner half of the inner plexiform layer. These cells depolarize in response to light stimulation of their corresponding photoreceptors.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ON-bipolar cell</rdfs:label>
@@ -1481,7 +1522,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000748"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269634</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822385</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000749"/>
@@ -1493,7 +1534,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746217</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307418</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000749"/>
@@ -1510,6 +1551,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000748"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bipolar neuron found in the retina and having connections with photoreceptors cells and neurons in the outer half of the inner plexiform layer. These cells depolarize in response to light to dark transition.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OFF-bipolar cell</rdfs:label>
@@ -1520,7 +1562,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000748"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269568</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822346</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000750"/>
@@ -1544,6 +1586,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bipolar neuron found in the retina that is synapsed by rod photoreceptor cells but not by cone photoreceptor cells.  These neurons depolarize in response to light.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67750</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod bipolar cell</rdfs:label>
@@ -1554,7 +1597,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000749"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269548</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822362</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000751"/>
@@ -1566,7 +1609,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746214</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307399</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000751"/>
@@ -1592,6 +1635,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-09-07T10:45:47Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67559</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens epithelial cell</rdfs:label>
@@ -1607,7 +1651,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003467</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562364</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002224"/>
@@ -1629,6 +1673,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-09-07T10:53:39Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary lens fibre</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary lens fiber</rdfs:label>
@@ -1639,7 +1684,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0011004"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269619</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822380</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002225"/>
@@ -1671,7 +1716,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0011004"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269606</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822400</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002228"/>
@@ -1698,6 +1743,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-09-13T04:09:27Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70606</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PE cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In a consensus model of unidirectional secretion, aqueous humour is formed by transferring solute, principally NaCl, from stroma to posterior chamber, with water passively following the osmotic gradient. Unidirectional secretion comprises three sequential steps. First, NaCl is transferred from the stromal interstitium into the pigmented ciliary epithelial (PE) cells. Second, solute passes from the PE into the non-pigmented ciliary epithelial (NPE) cells through gap junctions. Finally, NPE cells release Na+ and Cl− into the aqueous humour.</rdfs:comment>
@@ -1715,7 +1761,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003436</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562394</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002303"/>
@@ -1727,12 +1773,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002303"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PE cell</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/j.exer.2003.09.021</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002303"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In a consensus model of unidirectional secretion, aqueous humour is formed by transferring solute, principally NaCl, from stroma to posterior chamber, with water passively following the osmotic gradient. Unidirectional secretion comprises three sequential steps. First, NaCl is transferred from the stromal interstitium into the pigmented ciliary epithelial (PE) cells. Second, solute passes from the PE into the non-pigmented ciliary epithelial (NPE) cells through gap junctions. Finally, NPE cells release Na+ and Cl− into the aqueous humour.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/j.exer.2003.09.021</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1754,6 +1794,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70607</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPE cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nonpigmented ciliary epithelial cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In a consensus model of unidirectional secretion, aqueous humour is formed by transferring solute, principally NaCl, from stroma to posterior chamber, with water passively following the osmotic gradient. Unidirectional secretion comprises three sequential steps. First, NaCl is transferred from the stromal interstitium into the pigmented ciliary epithelial (PE) cells. Second, solute passes from the PE into the non-pigmented ciliary epithelial (NPE) cells through gap junctions. Finally, NPE cells release Na+ and Cl− into the aqueous humour.</rdfs:comment>
@@ -1771,7 +1812,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003456</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562428</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002304"/>
@@ -1792,12 +1833,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nonpigmented ciliary epithelial cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10913011</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002304"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In a consensus model of unidirectional secretion, aqueous humour is formed by transferring solute, principally NaCl, from stroma to posterior chamber, with water passively following the osmotic gradient. Unidirectional secretion comprises three sequential steps. First, NaCl is transferred from the stromal interstitium into the pigmented ciliary epithelial (PE) cells. Second, solute passes from the PE into the non-pigmented ciliary epithelial (NPE) cells through gap junctions. Finally, NPE cells release Na+ and Cl− into the aqueous humour.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/j.exer.2003.09.021</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -1810,6 +1845,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-09-22T01:57:40Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corneal fibroblast</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corneal keratocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1855,7 +1891,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003442</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562401</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002565"/>
@@ -1873,6 +1909,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-03-06T03:28:27Z</oboInOwl:creation_date>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1903,6 +1940,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-03-06T03:37:09Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004910</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:75802</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1919,7 +1957,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003509</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562379</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002586"/>
@@ -1939,6 +1977,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-5260-9315</terms:contributor>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0004219</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A2 amacrine cell</rdfs:label>
@@ -1964,6 +2003,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-5260-9315</terms:contributor>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0004232</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">starburst amacrine cell</rdfs:label>
@@ -1974,7 +2014,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000561"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269597</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822398</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0004232"/>
@@ -2006,7 +2046,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000561"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269574</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822360</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0004252"/>
@@ -2048,6 +2088,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-29T17:33:55+00:00</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#added_for_HCA"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label xml:lang="en">mural cell</rdfs:label>
@@ -2068,6 +2109,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vetebrate lens cell that is any of the elongated, tightly packed cells that make up the bulk of the mature lens in a camera-type eye.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens fibre cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens fiber cell</rdfs:label>
@@ -2156,12 +2198,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstitial neuron</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:31311805</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0017004"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telocytes manage to develop complex networks in almost all organs of the human body. Although staining positively for vimentin antibody, some uncertainty still persists over the mesenchymal origin of these cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1016/B978-0-12-818561-2.00001-1"/>
-    </owl:Axiom>
     
 
 
@@ -2185,7 +2221,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000740"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269604</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822340</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4023188"/>
@@ -2218,7 +2254,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000740"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269623</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822389</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4023189"/>
@@ -2238,6 +2274,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-10-17T12:40:06+00:00</terms:date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amacrine cell, glycinergic</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycinergic amacrine cell</rdfs:label>
@@ -2248,7 +2285,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000561"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269595</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822355</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030028"/>
@@ -2285,7 +2322,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000749"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269616</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822383</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033019"/>
@@ -2297,7 +2334,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746193</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307416</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033019"/>
@@ -2311,12 +2348,6 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BB cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32032773</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033019"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The axons of a blue cone bipolar cell terminate close to the ganglion cell layer, where they transfer the S-cone ON signal to small bistratified ganglion cells. Other targets of a blue cone bipolar cell include amacrine cells and possibly large bistratified ganglion cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32032773</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2350,7 +2381,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000750"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269599</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822351</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033027"/>
@@ -2362,7 +2393,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746209</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307407</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033027"/>
@@ -2397,13 +2428,6 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32032773</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033027"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In primates, a diffuse bipolar 1 cell on average makes 81 ribbon (output) synapses, 13 contacts are with OFF parasol cells and 47 contacts are with OFF midget cells. This cell might make flat contacts at both triad-associated and non-triad-associated positions on the cone pedicle.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22006647</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32032773</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -2433,7 +2457,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000750"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269608</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822369</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033028"/>
@@ -2445,7 +2469,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746221</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307411</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033028"/>
@@ -2461,12 +2485,6 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DB2 cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32032773</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033028"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In primates, a diffuse bipolar 2 cell makes an average of 133 ribbon synapses, 47 contacts are with OFF parasol cells and 4 contacts are with OFF midget cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32032773</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2498,7 +2516,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000750"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269590</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822373</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033029"/>
@@ -2510,7 +2528,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746232</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307420</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033029"/>
@@ -2533,13 +2551,6 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DB3a cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32032773</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033029"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Originally, DB3a cells were termed diffuse bipolar 3 (DB3) cells. When an additional bipolar type which stratifies slightly more vitread and is calbindin negative was detected, this cell was renamed diffuse bipolar 3a cell. The axons of neighboring DB3a cells make homologous gap junctions. The DB3a cells provide the majority of their output to OFF parasol cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fnana.2015.00122</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32032773</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2570,7 +2581,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000750"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269602</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822353</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033030"/>
@@ -2582,7 +2593,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746219</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307402</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033030"/>
@@ -2597,14 +2608,6 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DB3b cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32032773</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033030"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In humans, a DB3b cell is CD15 positive. A DB3b cell might make sparse contacts to rod photoreceptors.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:24107939</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32032773</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:33009001</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2634,7 +2637,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000749"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269582</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822348</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033031"/>
@@ -2646,7 +2649,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746223</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307386</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033031"/>
@@ -2691,7 +2694,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000749"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269630</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822366</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033032"/>
@@ -2703,7 +2706,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746229</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307404</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033032"/>
@@ -2747,7 +2750,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000750"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269579</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822343</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033033"/>
@@ -2759,7 +2762,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746225</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307396</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033033"/>
@@ -2803,7 +2806,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000749"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269611</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822396</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033034"/>
@@ -2815,7 +2818,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.746227</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:33.307413</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033034"/>
@@ -2951,7 +2954,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003478</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562415</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000389"/>
@@ -3004,7 +3007,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003482</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562420</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000390"/>
@@ -3169,7 +3172,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003444</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562432</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000964"/>
@@ -3263,7 +3266,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003465</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562423</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000965"/>
@@ -3406,7 +3409,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003475</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562435</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000966"/>
@@ -3567,7 +3570,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003454</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562399</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001605"/>
@@ -3666,7 +3669,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003507</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562387</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001769"/>
@@ -3782,7 +3785,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003447</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562383</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001772"/>
@@ -3998,7 +4001,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003525</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562372</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001775"/>
@@ -4089,7 +4092,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002203"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:08.269572</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:31.822402</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001776"/>
@@ -4201,7 +4204,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003420</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562396</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001778"/>
@@ -4299,7 +4302,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003440</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562418</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001782"/>
@@ -4446,7 +4449,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003487</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562392</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001783"/>
@@ -4580,7 +4583,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003505</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562376</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001789"/>
@@ -4722,7 +4725,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003484</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562367</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001791"/>
@@ -4734,7 +4737,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:11.458532</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:35.492690</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001791"/>
@@ -4746,7 +4749,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:11.458530</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:35.492685</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001791"/>
@@ -4758,7 +4761,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:11.953354</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:35.978172</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001791"/>
@@ -4890,7 +4893,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003458</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562361</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001792"/>
@@ -4902,7 +4905,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:11.458528</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:35.492682</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001792"/>
@@ -5022,7 +5025,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003452</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562381</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001803"/>
@@ -5129,7 +5132,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003515</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562410</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001811"/>
@@ -5222,7 +5225,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003520</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562389</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001985"/>
@@ -5427,7 +5430,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003461</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562425</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002444"/>
@@ -5439,7 +5442,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:11.458508</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:35.492670</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002444"/>
@@ -5541,7 +5544,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003470</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562347</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002506"/>
@@ -5553,7 +5556,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:11.458525</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:35.492687</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002506"/>
@@ -5746,7 +5749,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003449</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562430</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003952"/>
@@ -5816,7 +5819,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003473</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562374</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004864"/>
@@ -5966,7 +5969,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:09.003500</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:32.562358</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005336"/>
@@ -6179,7 +6182,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:10:10.963119</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:56:34.507013</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006762"/>

@@ -283,12 +283,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-    
-
-
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
@@ -298,6 +292,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
@@ -455,12 +455,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-    
-
-
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
@@ -537,6 +531,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <rdfs:label>part of</rdfs:label>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
@@ -566,6 +561,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <rdfs:label>has part</rdfs:label>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -587,7 +583,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000116 xml:lang="en">Most location relations will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</dc:source>
+        <terms:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</terms:source>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
         <rdfs:label xml:lang="en">located in</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Located_in</rdfs:seeAlso>
@@ -646,10 +642,30 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/RO_0002170 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002170">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002176"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002176"/>
+        </owl:propertyChainAxiom>
         <obo:IAO_0000112>a &apos;toe distal phalanx bone&apos; that is connected to a &apos;toe medial phalanx bone&apos; (an interphalangeal joint *connects* these two bones).</obo:IAO_0000112>
         <obo:IAO_0000115>a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22293552"/>
         <rdfs:label xml:lang="en">connected to</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/wiki/Connectivity-Design-Pattern</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/wiki/Modeling-articulations-Design-Pattern</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002176 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002176">
+        <obo:IAO_0000112>The M8 connects Glasgow and Edinburgh</obo:IAO_0000112>
+        <obo:IAO_0000112>a &apos;toe distal phalanx bone&apos; that is connected to a &apos;toe medial phalanx bone&apos; (an interphalangeal joint *connects* these two bones).</obo:IAO_0000112>
+        <obo:IAO_0000115>c connects a if and only if there exist some b such that a and b are similar parts of the same system, and c connects b, specifically, c connects a with b. When one structure connects two others it unites some aspect of the function or role they play within the system.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22293552"/>
+        <rdfs:label xml:lang="en">connects</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/wiki/Connectivity-Design-Pattern</rdfs:seeAlso>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/wiki/Modeling-articulations-Design-Pattern</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -668,6 +684,19 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <rdfs:comment>This is the transitive form of the develops from relation</rdfs:comment>
         <rdfs:label xml:lang="en">develops from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002221 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002221">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>inverse of surrounded by</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <rdfs:label xml:lang="en">surrounds</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -714,6 +743,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immature T cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mature T cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -744,6 +774,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mastocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue basophil</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mast cells are generally integrin beta-7-negative and positive for TLR2, TLR3, TLR4, TLR5, TLR7, TLR9, C3aR, C5aR, CR3, CR4, VEGF, FGF2, and renin. They can express MHC Class I and II on their surface. Activated murine mast cells (IgE+Antigen) were capable of expressing the following co-stimulatory molecules: CD95 (Fas), CD120b, CD137 (4-1BB), CD153 (CD30L), CD154 (CD40L), GITR, ICOSL, OX40L, PD-L1, and PD-L2. Note that there was some mouse strain variation. Mast cells have also been demonstrated to produce bFGF, CCL2, CCL4, CCL5, CCL11, CCL20, CXCL2, CXCL8, CXCL10, GM-CSF, IFN-gamma, IL-1, IL-2, IL-3, IL-8, IL-10, IL-11, IL-12, IL-13, IL-16, IL-25, IL-18, MIP-1, prostaglandin D2, SCF, TGF-beta, TNF-alpha, TSLP, VEGF, and XCL1. They express the transcription factors Transcription factors AP-1, GATA1, MITF, Notch2, PIAS3, PU.1, and STAT5.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -794,6 +825,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vertebrate phagocyte with a single nucleus.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001433</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mononuclear phagocyte</rdfs:label>
@@ -819,6 +851,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0278</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:66772</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endotheliocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From FMA: 9.07.2001: Endothelial cell has always been classified as a kind of epithelial cell, specifically a squamous cell but that is not true. First, endothelial cell can either be squamous or cuboidal (e.g. high-endothelial cell) and secondly, it has different embryological derivation (mesodermal) than a true epithelial cell (ectodermal and endodermal). The basis for present classification is the fact that it comprises the outermost layer or lining of anatomical structures (location-based) but a better structural basis for the differentia is the cytoskeleton of the cell. Endothelial cell has vimentin filaments while an epithelial cell has keratin filaments. [Onard].</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -852,6 +885,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -877,6 +911,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002064</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83624</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -902,6 +937,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0638</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62864</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morphology: Mononuclear cell, diameter, 14 to 20 _M, N/C ratio 2:1-1:1. Nucleus may appear in variety of shapes: round, kidney, lobulated, or convoluted. Fine azurophilic granules present; markers: CD11b (shared with other myeloid cells), human: CD14, mouse: F4/80-mid,GR1-low; location: Blood, but can be recruited into tissues; role or process: immune &amp; tissue remodelling; lineage: hematopoietic, myeloid.</rdfs:comment>
@@ -934,6 +970,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D007694</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001697</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NK cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -981,7 +1018,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599114</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117338</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000648"/>
@@ -1012,6 +1049,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glomerular visceral epithelial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney podocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">renal podocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">podocyte</rdfs:label>
@@ -1028,7 +1066,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599120</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117306</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000653"/>
@@ -1065,6 +1103,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leucocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">white blood cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leukocyte</rdfs:label>
@@ -1103,6 +1142,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophilic leucocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophilic leukocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophil</rdfs:label>
@@ -1135,6 +1175,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector B cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector B-cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma cells develop in the spleen and migrate to the bone marrow. Plasma cells are also reportedly CD5-negative, CD10-negative, CD19-positive, CD20-negative, CD21-negative, CD22-negative, CD23-negative, CD24-negative, CD25-negative, CD27-positive, CD34-negative, CD38-positive, CD40-positive, CD43-positive, CD45-positive, CD48-positive, CD53-low, CD80-negative, CD81-positive, CD86-positive, CD95-positive, CD196-negative, CD229-positive, CD270-positive, CD352-positive, CD361-positive, and IgD-negative. Transcription factors: BLIMP1-positive, IRF4-positive, PAX5-negative, SpiB-negative, Ets1-negative, and XBP1-positive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1172,6 +1213,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mature natural killer T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mature natural killer T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mature natural killer T-lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mature NK T cell</rdfs:label>
@@ -1203,6 +1245,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type may express FoxP3 and CD25 and secretes IL-10 and TGF-beta.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1226,6 +1269,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patrolling monocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resident monocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Markers: CCR2-CX3CCR1+ (human, mouse, rat); human: CD16+, CCR5+, CD32/FcgRII-high, MHCII+, CD86+; mouse: CD62L-Ly6C-.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1257,6 +1301,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T-lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T cell</rdfs:label>
@@ -1288,6 +1333,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic reticular cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 1 DC</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#blood_and_immune_upper_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Originally described in the dendritic cell ontology (DC_CL:0000003)(PMID:19243617) These cells are also CD20-negative, MHCII-positive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1311,6 +1357,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dendritic cell with the phenotype HLA-DRA-positive.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic cell</oboInOwl:hasBroadSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;dendritic cell&apos;. The inclusion of HLA-DRA in the definition restricts this definition to human dendritic cells.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1339,6 +1386,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plasmacytoid dendritic cell with the phenotype HLA-DRA-positive, CD123-positive, and CD11c-negative.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasmacytoid dendritic cell</oboInOwl:hasBroadSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;plasmacytoid dendritic cell&apos;. The inclusion of HLA-DRA in the definition restricts this definition to human plasmacytoid dendritic cells.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1372,6 +1420,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:68458</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphatic endothelial cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of lymphatic vessel</rdfs:label>
@@ -1396,6 +1445,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-09-02T01:43:55Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type B intercalated cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type B-IC</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">renal beta-intercalated cell</rdfs:label>
@@ -1438,6 +1488,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70973</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001044</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney proximal tubule epithelial cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#kidney_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1454,7 +1505,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599109</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117399</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002306"/>
@@ -1502,6 +1553,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70968</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001035</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell of parietal layer of glomerular capsule</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parietal epithelial cell</rdfs:label>
@@ -1517,7 +1569,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599151</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117374</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000452"/>
@@ -1548,6 +1600,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70982</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001059</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell of renal collecting tubule</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#kidney_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1565,7 +1618,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599168</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117316</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000454"/>
@@ -1594,6 +1647,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that is part of a tip of a renal papilla.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001112</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papillary tips cell</rdfs:label>
@@ -1609,7 +1663,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599210</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117278</dc:date>
     </owl:Axiom>
     
 
@@ -1640,7 +1694,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599245</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117379</dc:date>
     </owl:Axiom>
     
 
@@ -1656,6 +1710,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </rdfs:subClassOf>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001102</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney interstitial fibroblast</rdfs:label>
@@ -1671,7 +1726,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599124</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117387</dc:date>
     </owl:Axiom>
     
 
@@ -1702,7 +1757,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599070</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117386</dc:date>
     </owl:Axiom>
     
 
@@ -1733,7 +1788,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599247</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117406</dc:date>
     </owl:Axiom>
     
 
@@ -1765,7 +1820,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599153</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117396</dc:date>
     </owl:Axiom>
     
 
@@ -1797,7 +1852,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599122</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117367</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000716"/>
@@ -1835,7 +1890,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599212</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117292</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000717"/>
@@ -1896,7 +1951,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599257</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117356</dc:date>
     </owl:Axiom>
     
 
@@ -1930,7 +1985,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599135</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117290</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000742"/>
@@ -1944,13 +1999,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intraglomerular mesangial cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:cjm</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000742"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Like smooth muscle, a glomerular mesangial cell is contractile and possesses the filaments actin and myosin. The contractile mechanism is also similar to that of smooth muscle, with Ca2+/calmodulin-activated myosin light-chain kinase instigating myosin-actin cross-bridge cycling. Mesangial cell phagocytosis of apoptotic neutrophils involves a novel CD36-independent, alpha(v)beta3/TSP-mediated mechanism that is uncoupled from chemokine secretion, emphasizing the injury-limiting potential of mesangial cell phagocytosis of apoptotic cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9127003</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1152/physrev.1998.78.3.723</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1966,6 +2014,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </rdfs:subClassOf>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001058</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#kidney_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1982,7 +2031,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599091</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117358</dc:date>
     </owl:Axiom>
     
 
@@ -1998,6 +2047,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </rdfs:subClassOf>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001056</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#kidney_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -2014,7 +2064,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599193</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117382</dc:date>
     </owl:Axiom>
     
 
@@ -2030,6 +2080,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </rdfs:subClassOf>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001057</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macula densa epithelial cell</rdfs:label>
@@ -2045,7 +2096,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599185</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117311</dc:date>
     </owl:Axiom>
     
 
@@ -2061,6 +2112,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </rdfs:subClassOf>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001037</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glomerular capillary endothelial cell</rdfs:label>
@@ -2076,7 +2128,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599093</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117249</dc:date>
     </owl:Axiom>
     
 
@@ -2093,6 +2145,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endothelial cell that is part of some peritubular capillary.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001065</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peritubular capillary endothelial cell</rdfs:label>
@@ -2108,7 +2161,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599228</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117334</dc:date>
     </owl:Axiom>
     
 
@@ -2124,6 +2177,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </rdfs:subClassOf>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001039</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney afferent arteriole endothelial cell</rdfs:label>
@@ -2139,7 +2193,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599222</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117361</dc:date>
     </owl:Axiom>
     
 
@@ -2155,6 +2209,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </rdfs:subClassOf>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001042</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney efferent arteriole endothelial cell</rdfs:label>
@@ -2170,7 +2225,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599174</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117287</dc:date>
     </owl:Axiom>
     
 
@@ -2187,6 +2242,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An epithelial cell that is part of some loop of Henle thick ascending limb. It is known in some mammalian species that this cell may express the Na+-K+-2Cl− cotransporter (NKCC2) apically.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001049</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney loop of Henle thick ascending limb epithelial cell</rdfs:label>
@@ -2202,7 +2258,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599098</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117353</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001106"/>
@@ -2225,6 +2281,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An epithelial cell that is part of some loop of Henle thin ascending limb.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001050</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney loop of Henle thin ascending limb epithelial cell</rdfs:label>
@@ -2240,7 +2297,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599214</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117351</dc:date>
     </owl:Axiom>
     
 
@@ -2257,6 +2314,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An epithelial cell that is part of some loop of Henle thick ascending limb segment located in the renal medulla.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001051</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney loop of Henle medullary thick ascending limb epithelial cell</rdfs:label>
@@ -2272,7 +2330,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599249</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117280</dc:date>
     </owl:Axiom>
     
 
@@ -2289,6 +2347,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An epithelial cell that is part of some loop of Henle thick ascending limb segment located in the renal cortex.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001052</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney loop of Henle cortical thick ascending limb epithelial cell</rdfs:label>
@@ -2304,7 +2363,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599118</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117321</dc:date>
     </owl:Axiom>
     
 
@@ -2321,6 +2380,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An epithelial cell that is part of some loop of Henle thin descending limb.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001054</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney loop of Henle thin descending limb epithelial cell</rdfs:label>
@@ -2336,7 +2396,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599235</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117348</dc:date>
     </owl:Axiom>
     
 
@@ -2353,6 +2413,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that is part of some vasa recta ascending limb.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001074</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is known in some mammalian species that this cell may express PV-1, a component of the fenestral diaphragm.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -2369,15 +2430,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599231</dc:date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001131"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is known in some mammalian species that this cell may express PV-1, a component of the fenestral diaphragm.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20392798</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20392799</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:26062876</oboInOwl:hasDbXref>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117312</dc:date>
     </owl:Axiom>
     
 
@@ -2400,6 +2453,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that is part of some vasa recta descending limb.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001071</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is known in some mammalian species that this cell may express the urea transporter B.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -2416,7 +2470,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599216</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117343</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001285"/>
@@ -2428,15 +2482,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599155</dc:date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001285"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is known in some mammalian species that this cell may express the urea transporter B.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20392798</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20392799</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:26062876</oboInOwl:hasDbXref>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117299</dc:date>
     </owl:Axiom>
     
 
@@ -2453,6 +2499,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pericyte cell located in the kidney interstitium.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001104</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">renal interstitial pericyte</rdfs:label>
@@ -2472,6 +2519,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </rdfs:subClassOf>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001128</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney collecting duct principal cell</rdfs:label>
@@ -2487,7 +2535,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599172</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117336</dc:date>
     </owl:Axiom>
     
 
@@ -2504,6 +2552,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001129</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Collecting_duct_system#Intercalated_cells</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney collecting duct intercalated cell</rdfs:label>
@@ -2519,7 +2568,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599195</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117389</dc:date>
     </owl:Axiom>
     
 
@@ -2561,6 +2610,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-10T13:14:00+00:00</terms:date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell of segment 1 of proximal tubule</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell of proximal tubule segment 1</rdfs:label>
@@ -2663,6 +2713,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-10T13:31:06+00:00</terms:date>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell of segment 3 of proximal tubule</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell of proximal tubule segment 3</rdfs:label>
@@ -2705,7 +2756,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599126</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117322</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030012"/>
@@ -2745,7 +2796,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599146</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117341</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030013"/>
@@ -2785,7 +2836,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599259</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117326</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030014"/>
@@ -2826,7 +2877,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599088</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117369</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030015"/>
@@ -2873,7 +2924,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599182</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117380</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030016"/>
@@ -2920,7 +2971,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599103</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117259</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030017"/>
@@ -2933,12 +2984,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030017"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DCT2 cell</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:24855283</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030017"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Although mineralocorticoid receptors are expressed throughout the entire [distal convoluted tubule], the DCT2 is sensitive to the actions of aldosterone, because it expresses an enzyme called 11-β hydroxysteroid dehydrogenase 2 (11-βHSD2)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:24855283</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2956,6 +3001,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A renal principal cell located in the connecting tubule.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-27T15:25:10+00:00</terms:date>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kidney connecting tubule principal cell</rdfs:label>
@@ -2971,7 +3017,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599191</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117401</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030018"/>
@@ -3011,7 +3057,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599251</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117377</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030019"/>
@@ -3051,7 +3097,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599189</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117285</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030020"/>
@@ -3105,7 +3151,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599220</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117355</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030021"/>
@@ -3158,19 +3204,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599157</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117297</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030022"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fibroblast that is located in the renal medulla interstitium.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1101/2021.07.28.454201"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10559635</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4030022"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It has been noted that inner medullary fibroblasts are involved in the regulation of water and electrolyte homeostasis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10559635</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3243,7 +3283,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599140</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117295</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000074"/>
@@ -3374,7 +3414,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599203</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117346</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000362"/>
@@ -3514,7 +3554,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599264</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117264</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001225"/>
@@ -3592,7 +3632,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599208</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117392</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001228"/>
@@ -3604,7 +3644,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599112</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117350</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001228"/>
@@ -3683,7 +3723,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599232</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117274</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001229"/>
@@ -3819,7 +3859,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599128</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117307</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
@@ -3936,7 +3976,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599187</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117283</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001232"/>
@@ -3948,7 +3988,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:18.556919</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:35.522926</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001232"/>
@@ -4166,7 +4206,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599160</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117270</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001285"/>
@@ -4268,7 +4308,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807618</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326401</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001289"/>
@@ -4334,7 +4374,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599131</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117324</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001290"/>
@@ -4438,7 +4478,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807620</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326394</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001291"/>
@@ -4523,7 +4563,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807608</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326381</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001292"/>
@@ -4602,7 +4642,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599137</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117314</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001294"/>
@@ -4689,7 +4729,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:18.062032</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:35.044481</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001986"/>
@@ -4757,7 +4797,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599241</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117345</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002015"/>
@@ -4841,7 +4881,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:18.062054</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:35.044493</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002042"/>
@@ -4894,12 +4934,14 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/UBERON_0002113 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002113">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A paired organ of the urinary tract which has the production of urine as its primary function.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A paired organ of the urinary tract that produces urine and maintains bodily fluid homeostasis, blood pressure, pH levels, red blood cell production and skeleton mineralization.</obo:IAO_0000115>
         <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000160"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of either of a pair of structures lying on either side of the dorsal aorta in which fluid balance is regulated and waste is excreted out in the form of urine.[AAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">renal</obo:UBPROP_0000007>
         <obo:UBPROP_0000202 rdf:resource="http://purl.obolibrary.org/obo/FMA_264815"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-7655-4833"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-2804-127X"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000250</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000671</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0510</oboInOwl:hasDbXref>
@@ -4935,9 +4977,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A paired organ of the urinary tract which has the production of urine as its primary function.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A paired organ of the urinary tract that produces urine and maintains bodily fluid homeostasis, blood pressure, pH levels, red blood cell production and skeleton mineralization.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:25140012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:35003210</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Kidney</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://anatomy.uams.edu/anatomyhtml/kidney.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.kidney.org/kidneydisease/top-5-jobs-kidneys-do</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
@@ -4990,7 +5035,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001225"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807613</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326387</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002189"/>
@@ -5113,7 +5158,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599255</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117281</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002319"/>
@@ -5181,7 +5226,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599163</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117360</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002320"/>
@@ -5298,7 +5343,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599262</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117370</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003517"/>
@@ -5310,7 +5355,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:18.556922</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:35.522945</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003517"/>
@@ -5371,7 +5416,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599144</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117304</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003527"/>
@@ -5454,7 +5499,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599199</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117276</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004100"/>
@@ -5513,7 +5558,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807585</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326396</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004134"/>
@@ -5603,7 +5648,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599224</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117375</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004188"/>
@@ -5659,7 +5704,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599206</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117272</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004190"/>
@@ -5731,7 +5776,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807625</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326359</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004193"/>
@@ -5797,7 +5842,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599243</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117339</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004196"/>
@@ -5863,7 +5908,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599095</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117262</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004197"/>
@@ -5950,7 +5995,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599176</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117309</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004200"/>
@@ -6075,7 +6120,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599197</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117403</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004201"/>
@@ -6162,7 +6207,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599165</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117390</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004202"/>
@@ -6258,7 +6303,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599226</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117372</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004203"/>
@@ -6305,7 +6350,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001232"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807630</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326399</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004204"/>
@@ -6353,7 +6398,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001232"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807632</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326392</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004205"/>
@@ -6416,7 +6461,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599201</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117398</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004294"/>
@@ -6859,7 +6904,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599148</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117289</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005096"/>
@@ -6941,7 +6986,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001231"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807623</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326389</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005097"/>
@@ -7039,7 +7084,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599105</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117266</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005215"/>
@@ -7051,7 +7096,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:18.556927</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:35.522939</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005215"/>
@@ -7063,7 +7108,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:18.556904</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:35.522942</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005215"/>
@@ -7075,7 +7120,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:18.556925</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:35.522947</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005215"/>
@@ -7147,7 +7192,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599237</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117300</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005271"/>
@@ -7204,7 +7249,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003527"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807616</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326384</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005272"/>
@@ -7261,7 +7306,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004188"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807628</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326378</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005750"/>
@@ -7390,7 +7435,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004188"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:14.807611</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:31.326403</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005751"/>
@@ -7483,7 +7528,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599116</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117268</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006544"/>
@@ -7523,7 +7568,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599142</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117302</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009091"/>
@@ -7565,7 +7610,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599133</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117365</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009095"/>
@@ -7618,7 +7663,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599170</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117319</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009202"/>
@@ -7667,7 +7712,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599100</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117294</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0009883"/>
@@ -7739,7 +7784,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599239</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117384</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012441"/>
@@ -7779,7 +7824,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-28T07:11:15.599107</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-03-06T09:57:32.117404</dc:date>
     </owl:Axiom>
 </rdf:RDF>
 
