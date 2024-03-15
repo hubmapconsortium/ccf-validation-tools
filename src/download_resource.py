@@ -31,7 +31,7 @@ def get_table_version_n_date(metadata):
 def main(args):
   version = get_sheet_gid(args.job, args.old_version)
 
-  API_URL = f'https://mmpyikxkcp.us-east-2.awsapprunner.com/v2/{version["sheetId"]}/{version["gid"]}'
+  API_URL = f'https://apps.humanatlas.io/asctb-api/v2/{version["sheetId"]}/{version["gid"]}'
 
   data = requests.get(API_URL).text
   data = json.loads(data)
