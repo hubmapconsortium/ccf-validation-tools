@@ -23,6 +23,7 @@ all: last_official_release official_release
 	python download_resource.py $* $@ $(OLD_VERSION)
 
 ../owl/%_annotations.owl ../owl/%_sec.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv ../logs/%/logs_dict.json: ../resources/ASCT-b_tables/%.json
+	mkdir -p ../logs/$*
 	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION)
 
 validation_reports_release_%: ../logs/%/logs_dict.json
@@ -71,6 +72,7 @@ validation_reports_release_%: ../logs/%/logs_dict.json
 		rm ../owl/$*_sec.owl; fi
 
 ../owl/ccf_%_classes.owl: ../owl/ccf_%_classes_t.owl ../owl/%_annotations.owl ../owl/%_no-valid.owl ../owl/%_sec_reduced.owl
+	mkdir -p ../graphs
 	if [ $(OLD_VERSION) = False ]; then $(ROBOT) $(CATALOG) merge --input helper.owl -i ../owl/ccf_$*_classes_t.owl -i ../owl/$*_annotations.owl -o $@ \
 					 merge --input ../owl/$*_sec_reduced.owl -o ../owl/$*_extended.owl \
 					 reduce --reasoner ELK \
