@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Brain (2024-03-13)
+ASCT+B Validation Reports for Brain (2024-03-20)
 ================================================
 
 Table of contents
@@ -52,13 +52,13 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[UBERON:0002705](http://purl.obolibrary.org/obo/UBERON_0002705)_ has a different name/label in the source ontology in the following 1 row _[102](https://docs.google.com/spreadsheets/d/1_esnpxPeXtZ-XNt2H1-TfEzJidBEt_prlXMsG33z9I8/edit#gid=2056967441&range=102:102)_. The name/label in the **ASCT+B table** is _midline nuclear complex_ and the one in the **ontology** is _midline nuclear group_. For reference, the given name/label **by SMEs** is _midline nuclear complex_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _[PCL:0015120](http://purl.obolibrary.org/obo/PCL_0015120)_ has a different name/label in the source ontology in the following 1 row _[738](https://docs.google.com/spreadsheets/d/1_esnpxPeXtZ-XNt2H1-TfEzJidBEt_prlXMsG33z9I8/edit#gid=2056967441&range=738:738)_. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN FTH1P3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _[PCL:0015079](http://purl.obolibrary.org/obo/PCL_0015079)_ has a different name/label in the source ontology in the following 1 row _[736](https://docs.google.com/spreadsheets/d/1_esnpxPeXtZ-XNt2H1-TfEzJidBEt_prlXMsG33z9I8/edit#gid=2056967441&range=736:736)_. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN MAP6D1_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. The term _[PCL:0015120](http://purl.obolibrary.org/obo/PCL_0015120)_ has a different name/label in the source ontology in the following 1 row _[738](https://docs.google.com/spreadsheets/d/1_esnpxPeXtZ-XNt2H1-TfEzJidBEt_prlXMsG33z9I8/edit#gid=2056967441&range=738:738)_. The name/label in the **ASCT+B table** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L2-6 OPALIN FTH1P3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[PCL:0015119](http://purl.obolibrary.org/obo/PCL_0015119)_ has a different name/label in the source ontology in the following 1 row _[737](https://docs.google.com/spreadsheets/d/1_esnpxPeXtZ-XNt2H1-TfEzJidBEt_prlXMsG33z9I8/edit#gid=2056967441&range=737:737)_. The name/label in the **ASCT+B table** is _Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte (Hsap)_ and the one in the **ontology** is _Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte precursor cell (Hsap)_. For reference, the given name/label **by SMEs** is _Oligo L3-6 OPALIN ENPP6_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[UBERON:0002705](http://purl.obolibrary.org/obo/UBERON_0002705)_ has a different name/label in the source ontology in the following 1 row _[102](https://docs.google.com/spreadsheets/d/1_esnpxPeXtZ-XNt2H1-TfEzJidBEt_prlXMsG33z9I8/edit#gid=2056967441&range=102:102)_. The name/label in the **ASCT+B table** is _midline nuclear complex_ and the one in the **ontology** is _midline nuclear group_. For reference, the given name/label **by SMEs** is _midline nuclear complex_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
