@@ -87,4 +87,4 @@ if __name__ == '__main__':
     )
 
     images_link.serialize('../owl/hra_uberon_3d_images.owl', format='xml')
-    pd.DataFrame.from_records(images_link_table).to_csv("../logs/hra_uberon_3d_ref_objects.csv", index=False)
+    pd.DataFrame.from_records(images_link_table).to_csv("../reports/hra_uberon_3d_ref_objects.csv", index=False)
