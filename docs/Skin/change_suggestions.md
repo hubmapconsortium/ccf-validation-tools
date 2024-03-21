@@ -21,15 +21,15 @@ This relationship exists in Uberon, but is not reflected in Ubergraph and OLS.
 
 **3 - dermis &rarr; sebaceous gland**
 
-This looks correct, but both in Uberon and FMA is part of the epidermis. It will need to bed edited.
+This looks correct, but both in Uberon and FMA is part of the epidermis. It will need to be edited.
 
 **4 - dermis &rarr; eccrine sweat gland**
 
-This looks correct, but both in Uberon and FMA is part of the epidermis. It will need to bed edited.
+This looks correct, but both in Uberon and FMA is part of the epidermis. It will need to be edited.
 
 **5 - dermis &rarr; apocrine gland**
 
-This looks correct, but both in Uberon and FMA is part of the epidermis. It will need to bed edited.
+This looks correct, but both in Uberon and FMA is part of the epidermis. It will need to be edited.
 
 **6 - dermis &rarr; vasculature of integument**
 
@@ -41,7 +41,7 @@ I have found conflicting information. There are sources [that support this relat
 
 **8 - hypodermis &rarr; skin nerve field**
 
-The author's lable 'nerve' and the Uberon term 'skin nerve field' are not equivalent.
+The author's lable 'nerve' and the Uberon term 'skin nerve field' are not equivalent. The 'skin nerve field' is innerveted by nerves.
 
 
 ## CT&rarr;CT
@@ -56,15 +56,15 @@ The author's lable 'nerve' and the Uberon term 'skin nerve field' are not equiva
 
 **1 - skin nerve field &rarr; Neuron**
 
-
+Neuron is too broad. Is the relationship expected `innervates`? There has been some discussion recently about using relationships that are not 'part of' and they are discouraged.
 
 **2 - vasculature of integument &rarr; endothelial cell**
 
-
+'endothelial cell' is too broad. A compund term would be the best solution, otherwise a new term is required.
 
 **3 - hypodermis &rarr; B cell**
 
-
+For immune system no action is planned yet. Compund terms can be a solution.
 
 **4 - stratum granulosum of epidermis &rarr; keratinocyte**
 
@@ -72,23 +72,23 @@ The specific keratinocyte for the stratum granulosum in CL is `granular cell of 
 
 **5 - hypodermis &rarr; macrophage**
 
-
+For immune system no action is planned yet. Compund terms can be a solution.
 
 **6 - hypodermis &rarr; neutrophil**
 
-
+For immune system no action is planned yet. Compund terms can be a solution.
 
 **7 - hypodermis &rarr; mast cell**
 
-
+For immune system no action is planned yet. Compund terms can be a solution.
 
 **8 - stratum granulosum of epidermis &rarr; epidermal Langerhans cell**
 
-
+A 'has part' axiom can be added. Need to confirm that they are present across species in the stratum granulosum.
 
 **9 - stratum spinosum of epidermis &rarr; epidermal Langerhans cell**
 
-
+A 'has part' axiom can be added.
 
 **10 - stratum spinosum of epidermis &rarr; Merkel cell**
 
@@ -96,15 +96,17 @@ Merkel cells are only found in the stratum basale.
 
 **11 - stratum basale of epidermis &rarr; epidermal Langerhans cell**
 
-
+A 'has part' axiom can be added. Need to confirm that they are present across species in the stratum basale.
 
 **12 - stratum basale of epidermis &rarr; melanocyte of skin**
 
+That is correct, it should be edited (overlaps [Cichorek et al., 2013](https://pubmed.ncbi.nlm.nih.gov/24278043)) or add 'has part'.
 
+![alt text](image.png)
 
 **13 - hair follicle &rarr; keratinocyte stem cell**
 
-
+This relationship is reflected in the 'keratinocyte stem cell' textual definition, but it is missing the axiom.
 
 **14 - eccrine sweat gland &rarr; myoepithelial cell of sweat gland**
 
@@ -144,15 +146,15 @@ For immune system no action is planned yet. Compund terms can be a solution.
 
 **23 - dermis &rarr; group 1 innate lymphoid cell**
 
-
+A compund term woul be a good solution, otherwise a new cell term will be the best solution.
 
 **24 - dermis &rarr; group 2 innate lymphoid cell**
 
-
+A compund term woul be a good solution, otherwise a new cell term will be the best solution.
 
 **25 - dermis &rarr; group 3 innate lymphoid cell**
 
-
+A compund term woul be a good solution, otherwise a new cell term will be the best solution.
 
 **26 - dermis &rarr; B cell**
 
@@ -172,7 +174,7 @@ For immune system no action is planned yet. Compund terms can be a solution.
 
 **30 - dermis &rarr; Schwann cell**
 
-
+This is a very broad term, not specific for skin. A compund term would be a good solution, or ad a 'has part' axiom.
 
 **31 - dermis &rarr; perineurial cell**
 
@@ -180,11 +182,11 @@ This might be resolved either with compound terms or with 'has part' axioms.
 
 **32 - dermis &rarr; vascular associated smooth muscle cell**
 
-
+A compund term woul be a good solution, otherwise a new cell term will be the best solution.
 
 **33 - dermis &rarr; type I cell of carotid body**
 
-
+Is [glomus body](http://purl.obolibrary.org/obo/UBERON_8410076) (aka [glomus coccygeum](http://purl.obolibrary.org/obo/UBERON_8410076)) the structure that the SME was thinking of? All the markers and literature are for [glomus cell](http://purl.obolibrary.org/obo/CL_0002292), but it isn't located in the skin.
 
 **34 - dermis &rarr; pericyte**
 
@@ -232,8 +234,8 @@ For immune system no action is planned yet. Compund terms can be a solution.
 
 **45 - hypodermis &rarr; type I cell of carotid body**
 
-
+Is [glomus body](http://purl.obolibrary.org/obo/UBERON_8410076) (aka [glomus coccygeum](http://purl.obolibrary.org/obo/UBERON_8410076)) the structure that the SME was thinking of? All the markers and literature are for [glomus cell](http://purl.obolibrary.org/obo/CL_0002292), but it isn't located in the skin.
 
 **46 - dermis &rarr; skin fibroblast**
 
-There is a more specific term: `fibroblast of dermis` (CL:0002551)
+There is a more specific term: `fibroblast of dermis` (CL:0002551). Currently it validates with 'has part'.
