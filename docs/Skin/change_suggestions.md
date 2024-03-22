@@ -17,7 +17,7 @@ vasculature of integument is too general. A new term is needed.
 
 **2 - skin epidermis &rarr; stratum corneum of epidermis**
 
-This relationship exists in Uberon, but is not reflected in Ubergraph and OLS.
+This has been solved with the last release in https://github.com/obophenotype/uberon/pull/3231
 
 **3 - dermis &rarr; sebaceous gland**
 
@@ -110,15 +110,15 @@ This relationship is reflected in the 'keratinocyte stem cell' textual definitio
 
 **14 - eccrine sweat gland &rarr; myoepithelial cell of sweat gland**
 
-
+A more specific new term can be created.
 
 **15 - apocrine gland &rarr; myoepithelial cell of sweat gland**
 
-
+A more specific new term can be created.
 
 **16 - dermis &rarr; myoepithelial cell of sweat gland**
 
-
+A more specific new term can be created.
 
 **17 - dermis &rarr; mast cell**
 
@@ -174,7 +174,7 @@ For immune system no action is planned yet. Compund terms can be a solution.
 
 **30 - dermis &rarr; Schwann cell**
 
-This is a very broad term, not specific for skin. A compund term would be a good solution, or ad a 'has part' axiom.
+This is a very broad term, not specific for skin. A compund term would be a good solution, or add a 'has part' axiom.
 
 **31 - dermis &rarr; perineurial cell**
 
@@ -222,15 +222,15 @@ For immune system no action is planned yet. Compund terms can be a solution.
 
 **42 - hypodermis &rarr; Schwann cell**
 
-
+This is a very broad term, not specific for hypodermis. A compund term would be a good solution, or add a 'has part' axiom.
 
 **43 - hypodermis &rarr; perineurial cell**
 
-
+This is a very broad term, not specific for hypodermis. A compund term would be a good solution, or add a 'has part' axiom.
 
 **44 - hypodermis &rarr; smooth muscle cell**
 
-
+A compound terms would be the best solution, if not I could create a new term.
 
 **45 - hypodermis &rarr; type I cell of carotid body**
 
