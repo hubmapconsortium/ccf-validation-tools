@@ -102,7 +102,7 @@ A 'has part' axiom can be added. Need to confirm that they are present across sp
 
 That is correct, it should be edited (overlaps [Cichorek et al., 2013](https://pubmed.ncbi.nlm.nih.gov/24278043)) or add 'has part'.
 
-![alt text](image.png)
+![alt text](assets/melanocyte.png)
 
 **13 - hair follicle &rarr; keratinocyte stem cell**
 
