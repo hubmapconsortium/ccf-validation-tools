@@ -17,7 +17,7 @@ vasculature of integument is too general. A new term is needed.
 
 **2 - skin epidermis &rarr; stratum corneum of epidermis**
 
-This has been solved with the last release in https://github.com/obophenotype/uberon/pull/3231
+This has been solved with the last release in [PR #3231](https://github.com/obophenotype/uberon/pull/3231)
 
 **3 - dermis &rarr; sebaceous gland**
 
@@ -146,15 +146,15 @@ For immune system no action is planned yet. Compound terms can be a solution.
 
 **23 - dermis &rarr; group 1 innate lymphoid cell**
 
-A compound term woul be a good solution, otherwise a new cell term will be the best solution.
+A compound term would be a good solution, otherwise a new cell term will be the best solution.
 
 **24 - dermis &rarr; group 2 innate lymphoid cell**
 
-A compound term woul be a good solution, otherwise a new cell term will be the best solution.
+A compound term would be a good solution, otherwise a new cell term will be the best solution.
 
 **25 - dermis &rarr; group 3 innate lymphoid cell**
 
-A compound term woul be a good solution, otherwise a new cell term will be the best solution.
+A compound term would be a good solution, otherwise a new cell term will be the best solution.
 
 **26 - dermis &rarr; B cell**
 
@@ -182,7 +182,7 @@ This might be resolved either with compound terms or with 'has part' axioms.
 
 **32 - dermis &rarr; vascular associated smooth muscle cell**
 
-A compound term woul be a good solution, otherwise a new cell term will be the best solution.
+A compound term would be a good solution, otherwise a new cell term will be the best solution.
 
 **33 - dermis &rarr; type I cell of carotid body**
 
