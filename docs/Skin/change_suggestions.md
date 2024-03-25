@@ -60,11 +60,11 @@ Neuron is too broad. Is the relationship expected `innervates`? There has been s
 
 **2 - vasculature of integument &rarr; endothelial cell**
 
-'endothelial cell' is too broad. A compund term would be the best solution, otherwise a new term is required.
+'endothelial cell' is too broad. A compound term would be the best solution, otherwise a new term is required.
 
 **3 - hypodermis &rarr; B cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **4 - stratum granulosum of epidermis &rarr; keratinocyte**
 
@@ -72,15 +72,15 @@ The specific keratinocyte for the stratum granulosum in CL is `granular cell of 
 
 **5 - hypodermis &rarr; macrophage**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **6 - hypodermis &rarr; neutrophil**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **7 - hypodermis &rarr; mast cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **8 - stratum granulosum of epidermis &rarr; epidermal Langerhans cell**
 
@@ -122,59 +122,59 @@ A more specific new term can be created.
 
 **17 - dermis &rarr; mast cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **18 - dermis &rarr; macrophage**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **19 - dermis &rarr; T-helper 1 cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **20 - dermis &rarr; cytotoxic T cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **21 - dermis &rarr; regulatory T cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **22 - dermis &rarr; natural killer cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **23 - dermis &rarr; group 1 innate lymphoid cell**
 
-A compund term woul be a good solution, otherwise a new cell term will be the best solution.
+A compound term woul be a good solution, otherwise a new cell term will be the best solution.
 
 **24 - dermis &rarr; group 2 innate lymphoid cell**
 
-A compund term woul be a good solution, otherwise a new cell term will be the best solution.
+A compound term woul be a good solution, otherwise a new cell term will be the best solution.
 
 **25 - dermis &rarr; group 3 innate lymphoid cell**
 
-A compund term woul be a good solution, otherwise a new cell term will be the best solution.
+A compound term woul be a good solution, otherwise a new cell term will be the best solution.
 
 **26 - dermis &rarr; B cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **27 - dermis &rarr; plasma cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **28 - dermis &rarr; neutrophil**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **29 - dermis &rarr; eosinophil**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **30 - dermis &rarr; Schwann cell**
 
-This is a very broad term, not specific for skin. A compund term would be a good solution, or add a 'has part' axiom.
+This is a very broad term, not specific for skin. A compound term would be a good solution, or add a 'has part' axiom.
 
 **31 - dermis &rarr; perineurial cell**
 
@@ -182,7 +182,7 @@ This might be resolved either with compound terms or with 'has part' axioms.
 
 **32 - dermis &rarr; vascular associated smooth muscle cell**
 
-A compund term woul be a good solution, otherwise a new cell term will be the best solution.
+A compound term woul be a good solution, otherwise a new cell term will be the best solution.
 
 **33 - dermis &rarr; type I cell of carotid body**
 
@@ -206,27 +206,27 @@ This might be resolved either with compound terms or with 'has part' axioms.
 
 **38 - hypodermis &rarr; T-helper 1 cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **39 - hypodermis &rarr; cytotoxic T cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **40 - hypodermis &rarr; regulatory T cell**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **41 - hypodermis &rarr; eosinophil**
 
-For immune system no action is planned yet. Compund terms can be a solution.
+For immune system no action is planned yet. Compound terms can be a solution.
 
 **42 - hypodermis &rarr; Schwann cell**
 
-This is a very broad term, not specific for hypodermis. A compund term would be a good solution, or add a 'has part' axiom.
+This is a very broad term, not specific for hypodermis. A compound term would be a good solution, or add a 'has part' axiom.
 
 **43 - hypodermis &rarr; perineurial cell**
 
-This is a very broad term, not specific for hypodermis. A compund term would be a good solution, or add a 'has part' axiom.
+This is a very broad term, not specific for hypodermis. A compound term would be a good solution, or add a 'has part' axiom.
 
 **44 - hypodermis &rarr; smooth muscle cell**
 
