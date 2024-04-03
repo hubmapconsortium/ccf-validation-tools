@@ -27,7 +27,7 @@ Release Notes
 |Liver|v1.3|Revise for April 1, 2024|
 |Lung|v1.5|NA|
 |Lymph_node|v1.4|revise for April 1, 2024|
-|Lymph_vasculature|v1.5|revise for April 1, 2024|
+|Lymph_vasculature|v1.5|March 29, 2024|
 |Main_Bronchus|v1.2|revise for April 1, 2024|
 |Mammary_Gland|v1.0|revise for April 1, 2024|
 |Muscular_System|v1.2|revise for April 1, 2024|
