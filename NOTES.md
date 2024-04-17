@@ -6,15 +6,15 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|CL|2024-02-13|
-|PCL|2024-01-04|
 |UBERON|2024-03-22|
+|PCL|2024-01-04|
+|CL|2024-02-13|
 
 ### ASCT+b Tables
 
 |Organ|Version|Date|
 | :---: | :---: | :---: |
-|Anatomical_Systems|v1.1|revise for April 1, 2024|
+|Anatomical_Systems|v1.1|June 15, 2024|
 |Blood|v1.4|revise for April 1, 2024|
 |Bone-Marrow|v1.5|revise for April 1, 2024|
 |Brain|v1.6|Revise for April 1, 2024|

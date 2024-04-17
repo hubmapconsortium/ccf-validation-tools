@@ -1,5 +1,5 @@
 
-Validation Dashboard (2024-04-10)
+Validation Dashboard (2024-04-17)
 =================================
 
 # Terms
@@ -9,7 +9,7 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 
 |    | Table                                                            |   # VALID AS TERMS |   # AS TEMP TERMS |   # AS NOT UBERON TERMS |   # INVALID AS TERMS | % INVALID AS TERMS               |   # VALID CT TERMS |   # CT TEMP TERMS |   # CT NOT CL TERMS |   # INVALID CT TERMS | % INVALID CT TERMS               | % INVALID TERMS                  |
 |----|------------------------------------------------------------------|--------------------|-------------------|-------------------------|----------------------|----------------------------------|--------------------|-------------------|---------------------|----------------------|----------------------------------|----------------------------------|
-|  0 | [Anatomical_Systems](Anatomical_Systems/README.md)               |                 82 |                 0 |                       0 |                    0 | <font color='green'>0.0</font>   |                  0 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>0.0</font>   |
+|  0 | [Anatomical_Systems](Anatomical_Systems/README.md)               |                 81 |                 0 |                       0 |                    0 | <font color='green'>0.0</font>   |                  0 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>0.0</font>   |
 |  1 | [Blood](Blood/README.md)                                         |                  1 |                 0 |                       0 |                    0 | <font color='green'>0.0</font>   |                 29 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>0.0</font>   |
 |  2 | [Blood_vasculature](Blood_vasculature/README.md)                 |                377 |               224 |                     454 |                  678 | <font color='red'>64.27</font>   |                 10 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>44.63</font> |
 |  3 | [Bone-Marrow](Bone-Marrow/README.md)                             |                  1 |                 0 |                       0 |                    0 | <font color='green'>0.0</font>   |                 47 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>0.0</font>   |
@@ -43,7 +43,7 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 | 31 | [Ureter](Ureter/README.md)                                       |                 10 |                 1 |                       0 |                    1 | <font color='green'>9.09</font>  |                  4 |                11 |                   0 |                   11 | <font color='red'>73.33</font>   | <font color='green'>46.15</font> |
 | 32 | [Urinary_bladder](Urinary_bladder/README.md)                     |                 18 |                 1 |                       0 |                    1 | <font color='green'>5.26</font>  |                 17 |                26 |                   0 |                   26 | <font color='red'>60.47</font>   | <font color='green'>42.86</font> |
 | 33 | [Uterus](Uterus/README.md)                                       |                 24 |                34 |                       2 |                   36 | <font color='red'>60.0</font>    |                  0 |                18 |                   0 |                   18 | <font color='red'>100.0</font>   | <font color='red'>66.67</font>   |
-| 34 | Total                                                            |               1796 |               973 |                    2117 |                 3098 |                                  |                933 |               714 |                   2 |                  716 |                                  |                                  |
+| 34 | Total                                                            |               1795 |               973 |                    2117 |                 3098 |                                  |                933 |               714 |                   2 |                  716 |                                  |                                  |
 
 
 
@@ -53,7 +53,7 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 
 |    | Table                                                            |   # AS-AS RELATIONS | % INVALID AS-AS RELATIONS        |   # CT-CT RELATIONS | % INVALID CT-CT RELATIONS        |   # CT-AS RELATIONS | % INVALID CT-AS RELATIONS        | # CASES NO PARENT LINK TO CL   |
 |----|------------------------------------------------------------------|---------------------|----------------------------------|---------------------|----------------------------------|---------------------|----------------------------------|--------------------------------|
-|  0 | [Anatomical_Systems](Anatomical_Systems/README.md)               |                  88 | <font color='green'>3.41</font>  |                   0 | <font color='green'>0.0</font>   |                   0 | <font color='green'>0.0</font>   | <font color='green'>0</font>   |
+|  0 | [Anatomical_Systems](Anatomical_Systems/README.md)               |                  86 | <font color='green'>2.33</font>  |                   0 | <font color='green'>0.0</font>   |                   0 | <font color='green'>0.0</font>   | <font color='green'>0</font>   |
 |  1 | [Blood](Blood/README.md)                                         |                   0 | <font color='green'>0.0</font>   |                  23 | <font color='green'>26.09</font> |                  23 | <font color='red'>100.0</font>   | <font color='green'>0</font>   |
 |  2 | [Blood_vasculature](Blood_vasculature/README.md)                 |                 341 | <font color='green'>2.35</font>  |                   0 | <font color='green'>0.0</font>   |                1159 | <font color='red'>66.61</font>   | <font color='green'>0</font>   |
 |  3 | [Bone-Marrow](Bone-Marrow/README.md)                             |                   0 | <font color='green'>0.0</font>   |                  42 | <font color='green'>38.1</font>  |                  42 | <font color='red'>95.24</font>   | <font color='green'>0</font>   |
@@ -87,7 +87,7 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 | 31 | [Ureter](Ureter/README.md)                                       |                   9 | <font color='green'>33.33</font> |                   0 | <font color='green'>0.0</font>   |                   4 | <font color='red'>100.0</font>   | <font color='green'>0</font>   |
 | 32 | [Urinary_bladder](Urinary_bladder/README.md)                     |                  18 | <font color='green'>22.22</font> |                   5 | <font color='red'>100.0</font>   |                  19 | <font color='red'>89.47</font>   | <font color='red'>6</font>     |
 | 33 | [Uterus](Uterus/README.md)                                       |                  20 | <font color='green'>35.0</font>  |                   0 | <font color='green'>0.0</font>   |                   0 | <font color='green'>0.0</font>   | <font color='red'>397</font>   |
-| 34 | Total                                                            |                1821 |                                  |                 258 |                                  |                2972 |                                  | <font color='red'>855</font>   |
+| 34 | Total                                                            |                1819 |                                  |                 258 |                                  |                2972 |                                  | <font color='red'>855</font>   |
 
 
 
