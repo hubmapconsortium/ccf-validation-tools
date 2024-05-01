@@ -473,10 +473,19 @@ class UberonGraph():
         
 
       if len(terms_ct_d) > 20:
-        for chunk in chunks(list(terms_ct_d), 30):
-          sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
+        for chunk in chunks(list(terms_ct_d), 20):
+          if len(all_ct) > 90:
+            for chunck in chunks(list(all_ct), 90):
+              sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(chunck)), property="rdfs:subClassOf")
+          else:
+            sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
       else:
-        sec_graph += self.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
+        if len(all_ct) > 90:
+            for chunck in chunks(list(all_ct), 90):
+              sec_graph += self.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(chunck)), property="rdfs:subClassOf")
+        else:
+          sec_graph += self.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
+        
 
       return sec_graph
 
