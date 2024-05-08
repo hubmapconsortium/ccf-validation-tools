@@ -1,5 +1,5 @@
 
-Validation Dashboard (2024-05-01)
+Validation Dashboard (2024-05-08)
 =================================
 
 # Terms
@@ -13,7 +13,7 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 |  1 | [Blood](Blood/README.md)                                         |                  1 |                 0 |                       0 |                    0 | <font color='green'>0.0</font>   |                 29 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>0.0</font>   |
 |  2 | [Blood_vasculature](Blood_vasculature/README.md)                 |                377 |               224 |                     454 |                  678 | <font color='red'>64.27</font>   |                 10 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>44.63</font> |
 |  3 | [Bone-Marrow](Bone-Marrow/README.md)                             |                  1 |                 0 |                       0 |                    0 | <font color='green'>0.0</font>   |                 47 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>0.0</font>   |
-|  4 | [Brain](Brain/README.md)                                         |                172 |                18 |                       0 |                   18 | <font color='green'>9.47</font>  |                620 |                 0 |                   1 |                    1 | <font color='green'>0.16</font>  | <font color='green'>2.34</font>  |
+|  4 | [Brain](Brain/README.md)                                         |                172 |                18 |                       0 |                   18 | <font color='green'>9.47</font>  |                620 |                 1 |                   0 |                    1 | <font color='green'>0.16</font>  | <font color='green'>2.34</font>  |
 |  5 | [Eye](Eye/README.md)                                             |                 38 |                 3 |                       0 |                    3 | <font color='green'>7.32</font>  |                 49 |                 7 |                   0 |                    7 | <font color='green'>12.5</font>  | <font color='green'>10.31</font> |
 |  6 | [Fallopian_tube](Fallopian_tube/README.md)                       |                  9 |                63 |                       0 |                   63 | <font color='red'>87.5</font>    |                 18 |                 1 |                   0 |                    1 | <font color='green'>5.26</font>  | <font color='red'>70.33</font>   |
 |  7 | [Heart](Heart/README.md)                                         |                 29 |                 1 |                      22 |                   23 | <font color='green'>44.23</font> |                 28 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>22.55</font> |
@@ -43,7 +43,7 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 | 31 | [Ureter](Ureter/README.md)                                       |                 10 |                 1 |                       0 |                    1 | <font color='green'>9.09</font>  |                  4 |                11 |                   0 |                   11 | <font color='red'>73.33</font>   | <font color='green'>46.15</font> |
 | 32 | [Urinary_bladder](Urinary_bladder/README.md)                     |                 18 |                 1 |                       0 |                    1 | <font color='green'>5.26</font>  |                 17 |                26 |                   0 |                   26 | <font color='red'>60.47</font>   | <font color='green'>42.86</font> |
 | 33 | [Uterus](Uterus/README.md)                                       |                 24 |                34 |                       2 |                   36 | <font color='red'>60.0</font>    |                  0 |                18 |                   0 |                   18 | <font color='red'>100.0</font>   | <font color='red'>66.67</font>   |
-| 34 | Total                                                            |               1795 |               973 |                    2117 |                 3098 |                                  |               1389 |               253 |                   3 |                  256 |                                  |                                  |
+| 34 | Total                                                            |               1795 |               973 |                    2117 |                 3098 |                                  |               1389 |               254 |                   2 |                  256 |                                  |                                  |
 
 
 
