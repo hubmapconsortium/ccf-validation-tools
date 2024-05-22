@@ -1,5 +1,5 @@
 
-Validation Dashboard (2024-05-15)
+Validation Dashboard (2024-05-22)
 =================================
 
 # Terms
@@ -38,12 +38,12 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 | 26 | [Small_intestine](Small_intestine/README.md)                     |                 22 |                16 |                       9 |                   25 | <font color='red'>53.19</font>   |                 25 |                10 |                   0 |                   10 | <font color='green'>28.57</font> | <font color='green'>39.33</font> |
 | 27 | [Spinal_Cord](Spinal_Cord/README.md)                             |                 86 |                 0 |                       0 |                    0 | <font color='green'>0.0</font>   |                  8 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>0.0</font>   |
 | 28 | [Spleen](Spleen/README.md)                                       |                 24 |                12 |                       1 |                   14 | <font color='green'>36.84</font> |                 46 |                15 |                   0 |                   15 | <font color='green'>24.59</font> | <font color='green'>29.0</font>  |
-| 29 | [Thymus](Thymus/README.md)                                       |                 18 |                 0 |                       0 |                    0 | <font color='green'>0.0</font>   |                 49 |                 0 |                   1 |                    1 | <font color='green'>2.0</font>   | <font color='green'>1.47</font>  |
+| 29 | [Thymus](Thymus/README.md)                                       |                 18 |                 0 |                       0 |                    0 | <font color='green'>0.0</font>   |                 50 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>0.0</font>   |
 | 30 | [Trachea](Trachea/README.md)                                     |                 20 |                 0 |                       0 |                    0 | <font color='green'>0.0</font>   |                 17 |                 0 |                   0 |                    0 | <font color='green'>0.0</font>   | <font color='green'>0.0</font>   |
 | 31 | [Ureter](Ureter/README.md)                                       |                 10 |                 1 |                       0 |                    1 | <font color='green'>9.09</font>  |                  4 |                11 |                   0 |                   11 | <font color='red'>73.33</font>   | <font color='green'>46.15</font> |
 | 32 | [Urinary_bladder](Urinary_bladder/README.md)                     |                 18 |                 1 |                       0 |                    1 | <font color='green'>5.26</font>  |                 17 |                26 |                   0 |                   26 | <font color='red'>60.47</font>   | <font color='green'>42.86</font> |
 | 33 | [Uterus](Uterus/README.md)                                       |                 24 |                34 |                       2 |                   36 | <font color='red'>60.0</font>    |                  0 |                18 |                   0 |                   18 | <font color='red'>100.0</font>   | <font color='red'>66.67</font>   |
-| 34 | Total                                                            |               1795 |               973 |                    2117 |                 3098 |                                  |               1389 |               254 |                   2 |                  256 |                                  |                                  |
+| 34 | Total                                                            |               1795 |               973 |                    2117 |                 3098 |                                  |               1390 |               254 |                   1 |                  255 |                                  |                                  |
 
 
 
@@ -82,12 +82,12 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 | 26 | [Small_intestine](Small_intestine/README.md)                     |                  18 | <font color='green'>5.56</font>  |                   0 | <font color='green'>0.0</font>   |                  50 | <font color='red'>88.0</font>    | <font color='red'>37</font>    |
 | 27 | [Spinal_Cord](Spinal_Cord/README.md)                             |                 100 | <font color='green'>14.0</font>  |                   0 | <font color='green'>0.0</font>   |                  22 | <font color='red'>86.36</font>   | <font color='green'>0</font>   |
 | 28 | [Spleen](Spleen/README.md)                                       |                  29 | <font color='green'>41.38</font> |                   0 | <font color='green'>0.0</font>   |                  95 | <font color='red'>92.63</font>   | <font color='red'>24</font>    |
-| 29 | [Thymus](Thymus/README.md)                                       |                  29 | <font color='red'>72.41</font>   |                   0 | <font color='green'>0.0</font>   |                  63 | <font color='red'>73.02</font>   | <font color='red'>1</font>     |
+| 29 | [Thymus](Thymus/README.md)                                       |                  29 | <font color='red'>72.41</font>   |                   0 | <font color='green'>0.0</font>   |                  64 | <font color='red'>73.44</font>   | <font color='green'>0</font>   |
 | 30 | [Trachea](Trachea/README.md)                                     |                  17 | <font color='green'>29.41</font> |                   0 | <font color='green'>0.0</font>   |                  19 | <font color='red'>84.21</font>   | <font color='green'>0</font>   |
 | 31 | [Ureter](Ureter/README.md)                                       |                   9 | <font color='green'>33.33</font> |                   0 | <font color='green'>0.0</font>   |                   4 | <font color='red'>100.0</font>   | <font color='green'>0</font>   |
 | 32 | [Urinary_bladder](Urinary_bladder/README.md)                     |                  18 | <font color='green'>22.22</font> |                   5 | <font color='red'>100.0</font>   |                  19 | <font color='red'>89.47</font>   | <font color='red'>6</font>     |
 | 33 | [Uterus](Uterus/README.md)                                       |                  20 | <font color='green'>35.0</font>  |                   0 | <font color='green'>0.0</font>   |                   0 | <font color='green'>0.0</font>   | <font color='red'>397</font>   |
-| 34 | Total                                                            |                1819 |                                  |                 714 |                                  |                3357 |                                  | <font color='red'>855</font>   |
+| 34 | Total                                                            |                1819 |                                  |                 714 |                                  |                3358 |                                  | <font color='red'>854</font>   |
 
 
 

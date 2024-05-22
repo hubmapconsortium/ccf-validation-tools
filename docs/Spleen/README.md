@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Spleen (2024-05-15)
+ASCT+B Validation Reports for Spleen (2024-05-22)
 =================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has a different name/label in the source ontology in the following 1 row _[55](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=55:55)_. The name/label in the **ASCT+B table** is _myeloid dendritic cell cDC2_ and the one in the **ontology** is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label **by SMEs** is _cDC2 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
@@ -343,7 +343,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 106 | [CL:1000489](http://purl.obolibrary.org/obo/CL_1000489) | reticular cell of splenic cord                       | Fibroblastic Reticular Cell (FRC)      | [UBERON:0001960](http://purl.obolibrary.org/obo/UBERON_0001960) | periarterial lymphatic sheath | Periarteriolar Lymphoid Sheath (PALS) | [117](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=117:117) | nan        |
 | 107 | [CL:0001058](http://purl.obolibrary.org/obo/CL_0001058) | plasmacytoid dendritic cell, human                   | Plasmacytoid Dendritic Cell            | [UBERON:0001960](http://purl.obolibrary.org/obo/UBERON_0001960) | periarterial lymphatic sheath | Periarteriolar Lymphoid Sheath (PALS) | [123](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=123:123) | nan        |
 | 108 | [CL:0002394](http://purl.obolibrary.org/obo/CL_0002394) | myeloid dendritic cell cDC1                          | cDC1 myeloid dendritic cell            | [UBERON:0001960](http://purl.obolibrary.org/obo/UBERON_0001960) | periarterial lymphatic sheath | Periarteriolar Lymphoid Sheath (PALS) | [125](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=125:125) | nan        |
-| 109 | [CL:0002399](http://purl.obolibrary.org/obo/CL_0002399) | CD1c-positive myeloid dendritic cell                 | cDC2 myeloid dendritic cell            | [UBERON:0001960](http://purl.obolibrary.org/obo/UBERON_0001960) | periarterial lymphatic sheath | Periarteriolar Lymphoid Sheath (PALS) | [126](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=126:126) | nan        |
+| 109 | [CL:0002399](http://purl.obolibrary.org/obo/CL_0002399) | myeloid dendritic cell cDC2                          | cDC2 myeloid dendritic cell            | [UBERON:0001960](http://purl.obolibrary.org/obo/UBERON_0001960) | periarterial lymphatic sheath | Periarteriolar Lymphoid Sheath (PALS) | [126](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=126:126) | nan        |
 | 110 | [CL:0011031](http://purl.obolibrary.org/obo/CL_0011031) | monocyte-derived dendritic cell                      | Monocyte-Derived DC                    | [UBERON:0001960](http://purl.obolibrary.org/obo/UBERON_0001960) | periarterial lymphatic sheath | Periarteriolar Lymphoid Sheath (PALS) | [128](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=128:128) | nan        |
 | 111 | [CL:2000053](http://purl.obolibrary.org/obo/CL_2000053) | splenic endothelial cell                             | Splenic endothelial cell               | [UBERON:0010399](http://purl.obolibrary.org/obo/UBERON_0010399) | Spleen Trabecular Artery      | Spleen Trabecular Artery              | [139](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=139:139) | nan        |
 | 112 | [CL:2000053](http://purl.obolibrary.org/obo/CL_2000053) | splenic endothelial cell                             | Splenic endothelial cell               | [UBERON:0010400](http://purl.obolibrary.org/obo/UBERON_0010400) | Spleen Trabecular Vein        | Spleen Trabecular Vein                | [140](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=140:140) | nan        |
