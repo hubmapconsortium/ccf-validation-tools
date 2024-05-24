@@ -56,7 +56,6 @@ def parse_asctb(path):
     ct_invalid_terms = set()
     ct_temp_terms = set()
     ct_out_ct = set()
-    unique_terms = set()
     as_valid_terms = set()
     ct_valid_terms = set()
     rt = []
@@ -73,10 +72,6 @@ def parse_asctb(path):
       for current, next in zip(anatomical_structures, anatomical_structures[1:]):
         log_dict, terms_set = is_valid_id(log_dict, current, row["rowNumber"], terms_set)
         log_dict, terms_set = is_valid_id(log_dict, next, row["rowNumber"], terms_set)
-        if current['id'] != '':
-          unique_terms.add(current['id'])
-        if next['id'] != '':
-          unique_terms.add(next['id'])
         if check_id(current['id']) and check_id(next['id']):
           d = {}
           d['s'] = next['id']
@@ -96,14 +91,12 @@ def parse_asctb(path):
             else:
                 as_temp_terms.add(current['rdfs_label'])
             as_invalid_terms.add(current['rdfs_label'])
-            unique_terms.add(current['rdfs_label'])
           elif not check_id(current['id']) and current['name'] != '':
             if current['id'] != '':
                 as_out_ub.add(current['id'])
             else:
                 as_temp_terms.add(current['name'])
             as_invalid_terms.add(current['name'])
-            unique_terms.add(current['name'])
 
           if not check_id(next['id']) and next['rdfs_label'] != '':
             if next['id'] != '':
@@ -111,14 +104,12 @@ def parse_asctb(path):
             else:
               as_temp_terms.add(next['rdfs_label'])
             as_invalid_terms.add(next['rdfs_label'])
-            unique_terms.add(next['rdfs_label'])
           elif not check_id(next['id']) and next['name'] != '':
             if next['id'] != '':
               as_out_ub.add(next['id'])
             else:
               as_temp_terms.add(next['name'])
             as_invalid_terms.add(next['name'])
-            unique_terms.add(next['name'])
       
       # CT-CT RELATIONSHIP
       cell_types = row['cell_types']
@@ -127,10 +118,6 @@ def parse_asctb(path):
       for current, next in zip(cell_types, cell_types[1:]):
         log_dict, terms_set = is_valid_id(log_dict, current, row["rowNumber"], terms_set)
         log_dict, terms_set = is_valid_id(log_dict, next, row["rowNumber"], terms_set)
-        if current['id'] != '':
-          unique_terms.add(current['id'])
-        if next['id'] != '':
-          unique_terms.add(next['id'])
         if check_id(current['id']) and check_id(next['id']):
           d = {}
           d['row_number'] = row['rowNumber']
@@ -150,14 +137,12 @@ def parse_asctb(path):
             else:
               ct_temp_terms.add(current['rdfs_label'])
             ct_invalid_terms.add(current['rdfs_label'])
-            unique_terms.add(current['rdfs_label'])
           elif not check_id(current['id']) and current['name'] != '':
             if current['id'] != '':
               ct_out_ct.add(current['id'])
             else:
               ct_temp_terms.add(current['name'])
             ct_invalid_terms.add(current['name'])
-            unique_terms.add(current['name'])
           
           if not check_id(next['id']) and next['rdfs_label'] != '':
             if next['id'] != '':
@@ -165,14 +150,12 @@ def parse_asctb(path):
             else:
               ct_temp_terms.add(next['rdfs_label'])
             ct_invalid_terms.add(next['rdfs_label'])
-            unique_terms.add(next['rdfs_label'])
           elif not check_id(next['id']) and next['name'] != '':
             if next['id'] != '':
               ct_out_ct.add(next['id'])
             else:
               ct_temp_terms.add(next['name'])
             ct_invalid_terms.add(next['name'])
-            unique_terms.add(next['name'])
             
           if not check_id(current['id']) and (check_id(next['id']) or not check_id(next['id'])):
             log_dict = no_parent(log_dict, next, row['rowNumber'])
@@ -199,8 +182,6 @@ def parse_asctb(path):
           dl.append(d)
           as_valid_terms.add(last_as['id'])
           ct_valid_terms.add(last_ct['id'])
-          unique_terms.add(last_as['id'])
-          unique_terms.add(last_ct['id'])
         else:
           if check_id(last_as['id']):
             as_valid_terms.add(last_as['id'])
@@ -212,14 +193,12 @@ def parse_asctb(path):
             else:
               as_temp_terms.add(last_as['rdfs_label'])
             as_invalid_terms.add(last_as['rdfs_label'])
-            unique_terms.add(last_as['rdfs_label'])
           elif not check_id(last_as['id']) and last_as['name'] != '':
             if last_as['id'] != '':
               as_out_ub.add(last_as['id'])
             else:
               as_temp_terms.add(last_as['name'])
             as_invalid_terms.add(last_as['name'])
-            unique_terms.add(last_as['name'])
           
           if not check_id(last_ct['id']) and last_ct['rdfs_label'] != '':
             if last_ct['id'] != '':
@@ -227,14 +206,12 @@ def parse_asctb(path):
             else:
               ct_temp_terms.add(last_ct['rdfs_label'])
             ct_invalid_terms.add(last_ct['rdfs_label'])
-            unique_terms.add(last_ct['rdfs_label'])
           elif not check_id(last_ct['id']) and last_ct['name'] != '':
             if last_ct['id'] != '':
               ct_out_ct.add(last_ct['id'])
             else:
               ct_temp_terms.add(last_ct['name'])
             ct_invalid_terms.add(last_ct['name'])
-            unique_terms.add(last_ct['name'])
       
       # NEW CL TERMS REPORT
       for cl in cell_types:
@@ -267,7 +244,7 @@ def parse_asctb(path):
           rut.append(r)
 
         
-
+    total_terms = len(as_valid_terms) + len(as_invalid_terms) + len(ct_valid_terms) + len(ct_invalid_terms)
     as_invalid_term_percent = 0
     ct_invalid_terms_percent = 0
     invalid_terms_percent = 0
@@ -275,8 +252,9 @@ def parse_asctb(path):
       as_invalid_term_percent = round((len(as_invalid_terms)*100)/(len(as_valid_terms)+len(as_invalid_terms)), 2)
     if len(ct_valid_terms) + len(ct_invalid_terms) > 0:
       ct_invalid_terms_percent = round((len(ct_invalid_terms)*100)/(len(ct_valid_terms)+len(ct_invalid_terms)), 2)
-    if len(unique_terms) > 0:
-      invalid_terms_percent = round((len(as_invalid_terms)+len(ct_invalid_terms))*100/len(unique_terms), 2)
+    if total_terms > 0:
+      print(total_terms)
+      invalid_terms_percent = round(((len(as_invalid_terms)+len(ct_invalid_terms))/total_terms)*100, 2)
 
     report_terms = {
       'Table': '',
