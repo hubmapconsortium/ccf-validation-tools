@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Liver (2024-05-22)
+ASCT+B Validation Reports for Liver (2024-05-24)
 ================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:0000909](http://purl.obolibrary.org/obo/CL_0000909)_ has a different name/label in the source ontology in the following 1 row _[36](https://docs.google.com/spreadsheets/d/14UaKKGzb8QUUj6LgGlOyHwzz2G3RrLprPPKzm7fLt2E/edit#gid=1694828397&range=36:36)_. The name/label in the **ASCT+B table** is _CD8-positive, alpha-beta memory T cell _ and the one in the **ontology** is _CD8-positive, alpha-beta memory T cell_. For reference, the given name/label **by SMEs** is _CD8-positive, alpha-beta memory T cell _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID

@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Knee (2024-05-22)
+ASCT+B Validation Reports for Knee (2024-05-24)
 ===============================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:1001607](http://purl.obolibrary.org/obo/CL_1001607)_ has a different name/label in the source ontology in the following 1 row _[12](https://docs.google.com/spreadsheets/d/1cQH2Pd2SGJcyUguaYgjqzXz7KwYnJmw1mZFd1WjbbgM/edit#gid=1815525900&range=12:12)_. The name/label in the **ASCT+B table** is _articular chondrocyte of the femur_ and the one in the **ontology** is _articular chondrocyte_. For reference, the given name/label **by SMEs** is _articular chondrocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
@@ -193,10 +193,10 @@ In the case of the CT-CT relationship, for each couple of terms, we verify for _
 
 
 
-|    | s                                                       | slabel                   | user_slabel              | o                                                       | olabel                | user_olabel           | row_number                                                                                                                |   deltaIC |
-|----|---------------------------------------------------------|--------------------------|--------------------------|---------------------------------------------------------|-----------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-| 30 | [CL:0000743](http://purl.obolibrary.org/obo/CL_0000743) | hypertrophic chondrocyte | Hypertrophic Chondrocyte | [CL:1001607](http://purl.obolibrary.org/obo/CL_1001607) | articular chondrocyte | articular chondrocyte | [21](https://docs.google.com/spreadsheets/d/1cQH2Pd2SGJcyUguaYgjqzXz7KwYnJmw1mZFd1WjbbgM/edit#gid=1815525900&range=21:21) |       nan |
-| 42 | [CL:0000743](http://purl.obolibrary.org/obo/CL_0000743) | hypertrophic chondrocyte | Hypertrophic Chondrocyte | [CL:1001607](http://purl.obolibrary.org/obo/CL_1001607) | articular chondrocyte | articular chondrocyte | [31](https://docs.google.com/spreadsheets/d/1cQH2Pd2SGJcyUguaYgjqzXz7KwYnJmw1mZFd1WjbbgM/edit#gid=1815525900&range=31:31) |       nan |
+|    | s                                                       | slabel                   | user_slabel              | o                                                       | olabel                | user_olabel                        | row_number                                                                                                                |   deltaIC |
+|----|---------------------------------------------------------|--------------------------|--------------------------|---------------------------------------------------------|-----------------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+| 30 | [CL:0000743](http://purl.obolibrary.org/obo/CL_0000743) | hypertrophic chondrocyte | Hypertrophic Chondrocyte | [CL:1001607](http://purl.obolibrary.org/obo/CL_1001607) | articular chondrocyte | articular chondrocyte of the femur | [21](https://docs.google.com/spreadsheets/d/1cQH2Pd2SGJcyUguaYgjqzXz7KwYnJmw1mZFd1WjbbgM/edit#gid=1815525900&range=21:21) |       nan |
+| 42 | [CL:0000743](http://purl.obolibrary.org/obo/CL_0000743) | hypertrophic chondrocyte | Hypertrophic Chondrocyte | [CL:1001607](http://purl.obolibrary.org/obo/CL_1001607) | articular chondrocyte | articular chondrocyte of the femur | [31](https://docs.google.com/spreadsheets/d/1cQH2Pd2SGJcyUguaYgjqzXz7KwYnJmw1mZFd1WjbbgM/edit#gid=1815525900&range=31:31) |       nan |
 
 
 
