@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Peripheral_nervous_system (2024-05-29)
+ASCT+B Validation Reports for Peripheral_nervous_system (2024-06-05)
 ====================================================================
 
 Table of contents
@@ -52,9 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[UBERON:0001813](http://purl.obolibrary.org/obo/UBERON_0001813)_ has a different name/label in the source ontology in the following 1 row _[76](https://docs.google.com/spreadsheets/d/1ufuw7PGcOVU1sxfIB4E_jesk8Hk0zJVGPPlNeuU0gzY/edit#gid=917578386&range=76:76)_. The name/label in the **ASCT+B table** is _spinal nerve plexus_ and the one in the **ontology** is _spinal nerve plexus_. For reference, the given name/label **by SMEs** is _spinal nerve plexus_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _[UBERON:0005360](http://purl.obolibrary.org/obo/UBERON_0005360)_ has a different name/label in the source ontology in the following 1 row _[1239](https://docs.google.com/spreadsheets/d/1ufuw7PGcOVU1sxfIB4E_jesk8Hk0zJVGPPlNeuU0gzY/edit#gid=917578386&range=1239:1239)_. The name/label in the **ASCT+B table** is _inferior glossopharyngeal IX ganglion (petrosal ganglion)_ and the one in the **ontology** is _inferior glossopharyngeal IX ganglion_. For reference, the given name/label **by SMEs** is _inferior glossopharyngeal IX ganglion (petrosal ganglion)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
