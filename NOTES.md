@@ -7,8 +7,8 @@ Release Notes
 |Ontology|Version|
 | :---: | :---: |
 |CL|2024-05-15|
-|UBERON|2024-05-13|
 |PCL|2024-01-04|
+|UBERON|2024-05-13|
 
 ### ASCT+b Tables
 
@@ -37,7 +37,7 @@ Release Notes
 |Peripheral_nervous_system|v1.2|June 15, 2024|
 |Placenta|v1.2|June 15, 2024|
 |Prostate|v1.2|NA|
-|Skeleton|v1.1|April 29, 2024|
+|Skeleton|v1.2|June 15, 2024|
 |Skin|v1.4|Revise for April 1, 2024|
 |Small_intestine|v1.2|revise for April 1, 2024|
 |Spinal_Cord|v1.0|revise for April 1, 2024|
