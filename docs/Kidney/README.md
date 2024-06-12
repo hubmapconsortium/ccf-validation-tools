@@ -52,9 +52,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[UBERON:8600036](http://purl.obolibrary.org/obo/UBERON_8600036)_ has a different name/label in the source ontology in the following 1 row _[17](https://docs.google.com/spreadsheets/d/1SqNmcPDB8PrZF1BhzgdKBxkfLcCR8VYMAkSIbnK_AXA/edit#gid=949267305&range=17:17)_. The name/label in the **ASCT+B table** is _long descending limb of the loop of Henle in the outer medulla _ and the one in the **ontology** is _kidney loop of Henle long descending thin limb outer medulla_. For reference, the given name/label **by SMEs** is _descending thin limb of loop of Henle 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[UBERON:8600037](http://purl.obolibrary.org/obo/UBERON_8600037)_ has a different name/label in the source ontology in the following 1 row _[33](https://docs.google.com/spreadsheets/d/1SqNmcPDB8PrZF1BhzgdKBxkfLcCR8VYMAkSIbnK_AXA/edit#gid=949267305&range=33:33)_. The name/label in the **ASCT+B table** is _long descending limb of the loop of Henle in the inner medulla_ and the one in the **ontology** is _kidney loop of Henle long descending thin limb inner medulla_. For reference, the given name/label **by SMEs** is _descending thin limb of loop of Henle 3_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[UBERON:8600036](http://purl.obolibrary.org/obo/UBERON_8600036)_ has a different name/label in the source ontology in the following 1 row _[17](https://docs.google.com/spreadsheets/d/1SqNmcPDB8PrZF1BhzgdKBxkfLcCR8VYMAkSIbnK_AXA/edit#gid=949267305&range=17:17)_. The name/label in the **ASCT+B table** is _long descending limb of the loop of Henle in the outer medulla _ and the one in the **ontology** is _kidney loop of Henle long descending thin limb outer medulla_. For reference, the given name/label **by SMEs** is _descending thin limb of loop of Henle 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
