@@ -7,8 +7,8 @@ Release Notes
 |Ontology|Version|
 | :---: | :---: |
 |CL|2024-05-15|
-|PCL|2024-01-04|
 |UBERON|2024-05-13|
+|PCL|2024-01-04|
 
 ### ASCT+b Tables
 
