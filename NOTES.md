@@ -6,9 +6,9 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2024-05-13|
-|PCL|2024-01-04|
 |CL|2024-05-15|
+|PCL|2024-01-04|
+|UBERON|2024-05-13|
 
 ### ASCT+b Tables
 
@@ -47,4 +47,4 @@ Release Notes
 |Ureter|NA|revise for April 2023|
 |Urinary_bladder|v1.1|revise for April 2024|
 |Uterus|v1.2|revise for April 1, 2024|
-|Blood_vasculature|v1.7|NA|
+|Blood_vasculature|v1.7|Revise for October 1, 2024|
