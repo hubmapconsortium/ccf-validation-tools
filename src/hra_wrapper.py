@@ -1,8 +1,15 @@
+"""
+Description: This script is used to query the Human Reference Atlas (HRA)
+SPARQL endpoint to get the 3D images of the reference organs.
+"""
 import pandas as pd
 from SPARQLWrapper import JSON, RDFXML, SPARQLWrapper
 
 
 class HRAWrapper():
+    """
+    Class to query the Human Reference Atlas (HRA) SPARQL endpoint.
+    """
     def __init__(self):
         self.sparql = SPARQLWrapper("https://lod.humanatlas.io/sparql")
         self.construct_images_uberon = """
@@ -59,15 +66,21 @@ class HRAWrapper():
             }
             ORDER BY ?representation_of
         """
-    
-    def query_hra(self, query, format):
+
+    def query_hra(self, query, format_result):
+        """
+        Query the HRA SPARQL endpoint and return the results.
+        """
         self.sparql.setQuery(query)
-        self.sparql.setReturnFormat(format=format)
+        self.sparql.setReturnFormat(format=format_result)
         result = self.sparql.query().convert()
-        
+
         return result
-    
+
     def extract_result(self, results):
+        """
+        Extract the results from the query in a simplified format.
+        """
         results_simplified = []
         for res in results:
             r = {}
@@ -87,4 +100,7 @@ if __name__ == '__main__':
     )
 
     images_link.serialize('../owl/hra_uberon_3d_images.owl', format='xml')
-    pd.DataFrame.from_records(images_link_table).to_csv("../reports/hra_uberon_3d_ref_objects.csv", index=False)
+    pd.DataFrame.from_records(images_link_table).to_csv(
+        "../reports/hra_uberon_3d_ref_objects.csv",
+        index=False
+    )
