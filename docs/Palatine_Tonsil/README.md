@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Palatine_Tonsil (2024-07-10)
+ASCT+B Validation Reports for Palatine_Tonsil (2024-07-11)
 ==========================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-- No issues found.
+1. The term _[CL:0000624](http://purl.obolibrary.org/obo/CL_0000624)_ has a different name/label in the source ontology in the following 2 rows _[43](https://docs.google.com/spreadsheets/d/1r7zKA586gGTeMNapM4UHZNLDL-egFgc_wDzGKeV--LU/edit#gid=0&range=43:43)_, _[56](https://docs.google.com/spreadsheets/d/1r7zKA586gGTeMNapM4UHZNLDL-egFgc_wDzGKeV--LU/edit#gid=0&range=56:56)_. The name/label in the **ASCT+B table** is _CD4-positive alpha-beta T cells_ and the one in the **ontology** is _CD4-positive, alpha-beta T cell_. For reference, the given name/label **by SMEs** is _CD4 T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -194,7 +194,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 10 | [CL:0000084](http://purl.obolibrary.org/obo/CL_0000084) | T cell                          | T cell                 | [UBERON:0002373](http://purl.obolibrary.org/obo/UBERON_0002373) | palatine tonsil        | palatine tonsil        | [16](https://docs.google.com/spreadsheets/d/1r7zKA586gGTeMNapM4UHZNLDL-egFgc_wDzGKeV--LU/edit#gid=0&range=16:16) |  35.2294  |
 | 11 | [CL:0000236](http://purl.obolibrary.org/obo/CL_0000236) | B cell                          | B cell                 | [UBERON:0002373](http://purl.obolibrary.org/obo/UBERON_0002373) | palatine tonsil        | palatine tonsil        | [21](https://docs.google.com/spreadsheets/d/1r7zKA586gGTeMNapM4UHZNLDL-egFgc_wDzGKeV--LU/edit#gid=0&range=21:21) |  35.2136  |
 | 12 | [CL:0000235](http://purl.obolibrary.org/obo/CL_0000235) | Macrophage                      | macrophage             | [UBERON:0013688](http://purl.obolibrary.org/obo/UBERON_0013688) | tonsil germinal center | tonsil germinal center | [61](https://docs.google.com/spreadsheets/d/1r7zKA586gGTeMNapM4UHZNLDL-egFgc_wDzGKeV--LU/edit#gid=0&range=61:61) |  35.1978  |
-| 13 | [CL:0000624](http://purl.obolibrary.org/obo/CL_0000624) | CD4-positive alpha-beta T cells | CD4 T cell             | [UBERON:0013688](http://purl.obolibrary.org/obo/UBERON_0013688) | tonsil germinal center | tonsil germinal center | [56](https://docs.google.com/spreadsheets/d/1r7zKA586gGTeMNapM4UHZNLDL-egFgc_wDzGKeV--LU/edit#gid=0&range=56:56) |  34.1335  |
+| 13 | [CL:0000624](http://purl.obolibrary.org/obo/CL_0000624) | CD4-positive, alpha-beta T cell | CD4 T cell             | [UBERON:0013688](http://purl.obolibrary.org/obo/UBERON_0013688) | tonsil germinal center | tonsil germinal center | [56](https://docs.google.com/spreadsheets/d/1r7zKA586gGTeMNapM4UHZNLDL-egFgc_wDzGKeV--LU/edit#gid=0&range=56:56) |  34.1335  |
 | 14 | [CL:0000057](http://purl.obolibrary.org/obo/CL_0000057) | Fibroblast                      | fibroblast             | [UBERON:0002373](http://purl.obolibrary.org/obo/UBERON_0002373) | palatine tonsil        | palatine tonsil        | [19](https://docs.google.com/spreadsheets/d/1r7zKA586gGTeMNapM4UHZNLDL-egFgc_wDzGKeV--LU/edit#gid=0&range=19:19) |  33.0421  |
 | 15 | [CL:0000451](http://purl.obolibrary.org/obo/CL_0000451) | Dendritic Cell                  | dendritic cell         | [UBERON:0002373](http://purl.obolibrary.org/obo/UBERON_0002373) | palatine tonsil        | palatine tonsil        | [22](https://docs.google.com/spreadsheets/d/1r7zKA586gGTeMNapM4UHZNLDL-egFgc_wDzGKeV--LU/edit#gid=0&range=22:22) |  26.1816  |
 | 16 | [CL:0000786](http://purl.obolibrary.org/obo/CL_0000786) | Plasma Cell                     | plasma cell            | [UBERON:0013688](http://purl.obolibrary.org/obo/UBERON_0013688) | tonsil germinal center | tonsil germinal center | [59](https://docs.google.com/spreadsheets/d/1r7zKA586gGTeMNapM4UHZNLDL-egFgc_wDzGKeV--LU/edit#gid=0&range=59:59) |  26.1816  |

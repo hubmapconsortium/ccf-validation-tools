@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Anatomical_Systems (2024-07-10)
+ASCT+B Validation Reports for Anatomical_Systems (2024-07-11)
 =============================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-- No issues found.
+1. The term _[UBERON:0011143](http://purl.obolibrary.org/obo/UBERON_0011143)_ has a different name/label in the source ontology in the following 2 rows _[40](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=40:40)_, _[40](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=40:40)_. The name/label in the **ASCT+B table** is _kidney_ and the one in the **ontology** is _upper urinary tract_. For reference, the given name/label **by SMEs** is _kidney_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

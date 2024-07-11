@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lymph_node (2024-07-10)
+ASCT+B Validation Reports for Lymph_node (2024-07-11)
 =====================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-- No issues found.
+1. The term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has a different name/label in the source ontology in the following 1 row _[92](https://docs.google.com/spreadsheets/d/130Q491MKJWv8eZdEgx8x0ysmVrr1-5MHi_gyUNjTAdc/edit#gid=1223566381&range=92:92)_. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -243,7 +243,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 82 | [CL:0000235](http://purl.obolibrary.org/obo/CL_0000235) | macrophage                                           | Macrophage                                    | [UBERON:0009745](http://purl.obolibrary.org/obo/UBERON_0009745) | lymph node medullary cord              | Medullary Cord            | [87](https://docs.google.com/spreadsheets/d/130Q491MKJWv8eZdEgx8x0ysmVrr1-5MHi_gyUNjTAdc/edit#gid=1223566381&range=87:87) | nan        |
 | 83 | [CL:0000980](http://purl.obolibrary.org/obo/CL_0000980) | plasmablast                                          | Plasmablast                                   | [UBERON:0009745](http://purl.obolibrary.org/obo/UBERON_0009745) | lymph node medullary cord              | Medullary Cord            | [88](https://docs.google.com/spreadsheets/d/130Q491MKJWv8eZdEgx8x0ysmVrr1-5MHi_gyUNjTAdc/edit#gid=1223566381&range=88:88) | nan        |
 | 84 | [CL:0000451](http://purl.obolibrary.org/obo/CL_0000451) | dendritic cell                                       | Dendritic Cell                                | [UBERON:0009745](http://purl.obolibrary.org/obo/UBERON_0009745) | lymph node medullary cord              | Medullary Cord            | [89](https://docs.google.com/spreadsheets/d/130Q491MKJWv8eZdEgx8x0ysmVrr1-5MHi_gyUNjTAdc/edit#gid=1223566381&range=89:89) | nan        |
-| 88 | [CL:0000669](http://purl.obolibrary.org/obo/CL_0000669) | pericyte cell                                        | Pericyte                                      | [UBERON:0002007](http://purl.obolibrary.org/obo/UBERON_0002007) | medulla of lymph node                  | Medulla                   | [92](https://docs.google.com/spreadsheets/d/130Q491MKJWv8eZdEgx8x0ysmVrr1-5MHi_gyUNjTAdc/edit#gid=1223566381&range=92:92) | nan        |
+| 88 | [CL:0000669](http://purl.obolibrary.org/obo/CL_0000669) | pericyte                                             | Pericyte                                      | [UBERON:0002007](http://purl.obolibrary.org/obo/UBERON_0002007) | medulla of lymph node                  | Medulla                   | [92](https://docs.google.com/spreadsheets/d/130Q491MKJWv8eZdEgx8x0ysmVrr1-5MHi_gyUNjTAdc/edit#gid=1223566381&range=92:92) | nan        |
 | 90 | [CL:0009110](http://purl.obolibrary.org/obo/CL_0009110) | lymphatic endothelial cell of medulla ceiling        | Lymphatic Endothelial Cell of Medulla Ceiling | [UBERON:0005463](http://purl.obolibrary.org/obo/UBERON_0005463) | subcapsular sinus of lymph node        | Subcapsular Sinus         | [93](https://docs.google.com/spreadsheets/d/130Q491MKJWv8eZdEgx8x0ysmVrr1-5MHi_gyUNjTAdc/edit#gid=1223566381&range=93:93) | nan        |
 | 91 | [CL:0019017](http://purl.obolibrary.org/obo/CL_0019017) | lymphatic vessel smooth muscle cell                  | Smooth Muscle Cell                            | [UBERON:0010397](http://purl.obolibrary.org/obo/UBERON_0010397) | efferent lymphatic vessel              | Efferent Lymphatics       | [95](https://docs.google.com/spreadsheets/d/130Q491MKJWv8eZdEgx8x0ysmVrr1-5MHi_gyUNjTAdc/edit#gid=1223566381&range=95:95) | nan        |
 | 92 | [CL:0011103](http://purl.obolibrary.org/obo/CL_0011103) | sympathetic neuron                                   | Sympathetic Neuron                            | [UBERON:0034729](http://purl.obolibrary.org/obo/UBERON_0034729) | sympathetic nerve                      | Sympathetic nerve         | [96](https://docs.google.com/spreadsheets/d/130Q491MKJWv8eZdEgx8x0ysmVrr1-5MHi_gyUNjTAdc/edit#gid=1223566381&range=96:96) | nan        |

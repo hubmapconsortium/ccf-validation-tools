@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Small_intestine (2024-07-10)
+ASCT+B Validation Reports for Small_intestine (2024-07-11)
 ==========================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-- No issues found.
+1. The term _[CL:0000186](http://purl.obolibrary.org/obo/CL_0000186)_ has a different name/label in the source ontology in the following 1 row _[232](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=232:232)_. The name/label in the **ASCT+B table** is _myofibroblast_ and the one in the **ontology** is _myofibroblast cell_. For reference, the given name/label **by SMEs** is _myofibroblasts_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -275,7 +275,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 41 | [CL:1000344](http://purl.obolibrary.org/obo/CL_1000344) | paneth cell of epithelium proper of small intestine | Paneth                      | [UBERON:0000400](http://purl.obolibrary.org/obo/UBERON_0000400) | jejunal epithelium      | Epithelium                                           | [224](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=224:224) | nan       |
 | 42 | [CL:0000212](http://purl.obolibrary.org/obo/CL_0000212) | absorptive cell                                     | absorptive                  | [UBERON:0000400](http://purl.obolibrary.org/obo/UBERON_0000400) | jejunal epithelium      | Epithelium                                           | [226](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=226:226) | nan       |
 | 43 | [CL:0009080](http://purl.obolibrary.org/obo/CL_0009080) | tuft cell of small intestine                        | Tuft cells                  | [UBERON:0000400](http://purl.obolibrary.org/obo/UBERON_0000400) | jejunal epithelium      | Epithelium                                           | [229](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=229:229) | nan       |
-| 44 | [CL:0000186](http://purl.obolibrary.org/obo/CL_0000186) | myofibroblast                                       | myofibroblasts              | [UBERON:0000399](http://purl.obolibrary.org/obo/UBERON_0000399) | jejunal mucosa          | mucosa                                               | [232](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=232:232) | nan       |
+| 44 | [CL:0000186](http://purl.obolibrary.org/obo/CL_0000186) | myofibroblast cell                                  | myofibroblasts              | [UBERON:0000399](http://purl.obolibrary.org/obo/UBERON_0000399) | jejunal mucosa          | mucosa                                               | [232](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=232:232) | nan       |
 | 45 | [CL:0000682](http://purl.obolibrary.org/obo/CL_0000682) | M cell of gut                                       | M cell                      | [UBERON:0000399](http://purl.obolibrary.org/obo/UBERON_0000399) | jejunal mucosa          | mucosa                                               | [235](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=235:235) | nan       |
 
 

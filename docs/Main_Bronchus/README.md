@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2024-07-10)
+ASCT+B Validation Reports for Main_Bronchus (2024-07-11)
 ========================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-- No issues found.
+1. The term _[CL:0019002](http://purl.obolibrary.org/obo/CL_0019002)_ has a different name/label in the source ontology in the following 1 row _[22](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=22:22)_. The name/label in the **ASCT+B table** is _lung perichondrial fibroblast_ and the one in the **ontology** is _tracheobronchial chondrocyte_. For reference, the given name/label **by SMEs** is _lung perichondrial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -178,7 +178,7 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 | 16 | [CL:4033022](http://purl.obolibrary.org/obo/CL_4033022) | mucus secreting cell of bronchus submucosal gland       | mucus secreting cell of bronchus submucosal gland       | [UBERON:8600012](http://purl.obolibrary.org/obo/UBERON_8600012) | submucosal gland acinus                   | submucosal gland acinus                  | [18](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=18:18) | nan       |
 | 19 | [CL:4033003](http://purl.obolibrary.org/obo/CL_4033003) | myoepithelial cell of bronchus submucosal gland         | myoepithelial cell of bronchus submucosal gland         | [UBERON:8600012](http://purl.obolibrary.org/obo/UBERON_8600012) | submucosal gland acinus                   | submucosal gland acinus                  | [19](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=19:19) | nan       |
 | 22 | [CL:4033024](http://purl.obolibrary.org/obo/CL_4033024) | airway submucosal gland duct basal cell                 | airway submucosal gland duct basal cell                 | [UBERON:8600013](http://purl.obolibrary.org/obo/UBERON_8600013) | submucosal gland collecting duct          | submucosal gland collecting duct         | [20](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=20:20) | nan       |
-| 23 | [CL:0019002](http://purl.obolibrary.org/obo/CL_0019002) | lung perichondrial fibroblast                           | lung perichondrial fibroblast                           | [UBERON:0002182](http://purl.obolibrary.org/obo/UBERON_0002182) | main bronchus                             | extrapulmonary bronchus                  | [22](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=22:22) | nan       |
+| 23 | [CL:0019002](http://purl.obolibrary.org/obo/CL_0019002) | tracheobronchial chondrocyte                            | lung perichondrial fibroblast                           | [UBERON:0002182](http://purl.obolibrary.org/obo/UBERON_0002182) | main bronchus                             | extrapulmonary bronchus                  | [22](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=22:22) | nan       |
 | 24 | [CL:4033010](http://purl.obolibrary.org/obo/CL_4033010) | neuroendocrine cell of epithelium of lobar bronchus     | neuroendocrine cell of epithelium of lobar bronchus     | [UBERON:0002340](http://purl.obolibrary.org/obo/UBERON_0002340) | epithelium of main bronchus               | epithelium of main bronchus              | [24](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=24:24) | nan       |
 | 25 | [CL:4033048](http://purl.obolibrary.org/obo/CL_4033048) | respiratory suprabasal cell                             | respiratory suprabasal cell                             | [UBERON:0002340](http://purl.obolibrary.org/obo/UBERON_0002340) | epithelium of main bronchus               | epithelium of main bronchus              | [25](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=25:25) | nan       |
 | 26 | [CL:4033007](http://purl.obolibrary.org/obo/CL_4033007) | brush cell of epithelium of lobar bronchus              | tuft cell                                               | [UBERON:0002340](http://purl.obolibrary.org/obo/UBERON_0002340) | epithelium of main bronchus               | epithelium of main bronchus              | [27](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=27:27) | nan       |
