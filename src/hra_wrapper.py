@@ -118,7 +118,7 @@ class HRAWrapper():
             PREFIX ccf: <http://purl.org/ccf/>
             PREFIX anatomical_entity: <http://purl.obolibrary.org/obo/UBERON_0001062>
 
-            SELECT ?representation_of ?glb_file
+            SELECT DISTINCT ?representation_of ?glb_file
             WHERE {{
                 GRAPH {graph_name} {{
                     ?uberon rdfs:subClassOf* anatomical_entity: .
@@ -132,7 +132,6 @@ class HRAWrapper():
                     BIND(?url as ?glb_file) .
                 }}
             }}
-            ORDER BY ?representation_of
         """
 
     def query_hra(self, query, format_result):
@@ -178,10 +177,9 @@ if __name__ == '__main__':
                 )["results"]["bindings"]
             )
         if ilt:
-            images_link_table.append(ilt)
+            images_link_table.extend(ilt)
 
-    images_link.serialize('../owl/hra_uberon_3d_images.owl', format='xml')
-    pd.DataFrame.from_records(images_link_table).to_csv(
-        "../reports/hra_uberon_3d_ref_objects.csv",
-        index=False
-    )
+    images_link.serialize("../owl/hra_uberon_3d_images.owl", format="xml")
+    pd.DataFrame.from_records(images_link_table)\
+        .sort_values(by="representation_of")\
+        .to_csv("../reports/hra_uberon_3d_ref_objects.csv", index=False)
