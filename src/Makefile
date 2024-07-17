@@ -166,6 +166,8 @@ dashboard:
 
 3d-images_component:
 	python hra_wrapper.py
+	$(ROBOT) convert -i ../owl/hra_uberon_3d_images.owl -f ofn -o ../owl/3d_images.tmp.owl
+	mv ../owl/3d_images.tmp.owl ../owl/hra_uberon_3d_images.owl
 
 FIRST_RELEASE=
 LAST_RELEASE=
