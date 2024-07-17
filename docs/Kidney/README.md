@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Kidney (2024-07-11)
+ASCT+B Validation Reports for Kidney (2024-07-17)
 =================================================
 
 Table of contents
@@ -52,11 +52,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:1000718](http://purl.obolibrary.org/obo/CL_1000718)_ has a different name/label in the source ontology in the following 1 row _[51](https://docs.google.com/spreadsheets/d/1CS-Tplkosorg8q6Ci8oALTvt9ufvEyDmCNAI2LsKM_g/edit#gid=949267305&range=51:51)_. The name/label in the **ASCT+B table** is _kidney inner medulla collecting duct_ and the one in the **ontology** is _kidney inner medulla collecting duct principal cell_. For reference, the given name/label **by SMEs** is _Inner Medullary Collecting Duct Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[CL:1000454](http://purl.obolibrary.org/obo/CL_1000454)_ has a different name/label in the source ontology in the following 1 row _[52](https://docs.google.com/spreadsheets/d/1CS-Tplkosorg8q6Ci8oALTvt9ufvEyDmCNAI2LsKM_g/edit#gid=949267305&range=52:52)_. The name/label in the **ASCT+B table** is _kidney collecting duct epithelial cell _ and the one in the **ontology** is _kidney collecting duct epithelial cell_. For reference, the given name/label **by SMEs** is _kidney collecting duct epithelial cell _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _[CL:0000653](http://purl.obolibrary.org/obo/CL_0000653)_ has a different name/label in the source ontology in the following 2 rows _[14](https://docs.google.com/spreadsheets/d/1CS-Tplkosorg8q6Ci8oALTvt9ufvEyDmCNAI2LsKM_g/edit#gid=949267305&range=14:14)_, _[20](https://docs.google.com/spreadsheets/d/1CS-Tplkosorg8q6Ci8oALTvt9ufvEyDmCNAI2LsKM_g/edit#gid=949267305&range=20:20)_. The name/label in the **ASCT+B table** is _glomerular visceral epithelial cell_ and the one in the **ontology** is _podocyte_. For reference, the given name/label **by SMEs** is _Podocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[CL:1000718](http://purl.obolibrary.org/obo/CL_1000718)_ has a different name/label in the source ontology in the following 1 row _[51](https://docs.google.com/spreadsheets/d/1CS-Tplkosorg8q6Ci8oALTvt9ufvEyDmCNAI2LsKM_g/edit#gid=949267305&range=51:51)_. The name/label in the **ASCT+B table** is _kidney inner medulla collecting duct_ and the one in the **ontology** is _kidney inner medulla collecting duct principal cell_. For reference, the given name/label **by SMEs** is _Inner Medullary Collecting Duct Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _[UBERON:8600036](http://purl.obolibrary.org/obo/UBERON_8600036)_ has a different name/label in the source ontology in the following 4 rows _[17](https://docs.google.com/spreadsheets/d/1CS-Tplkosorg8q6Ci8oALTvt9ufvEyDmCNAI2LsKM_g/edit#gid=949267305&range=17:17)_, _[17](https://docs.google.com/spreadsheets/d/1CS-Tplkosorg8q6Ci8oALTvt9ufvEyDmCNAI2LsKM_g/edit#gid=949267305&range=17:17)_, _[32](https://docs.google.com/spreadsheets/d/1CS-Tplkosorg8q6Ci8oALTvt9ufvEyDmCNAI2LsKM_g/edit#gid=949267305&range=32:32)_, _[32](https://docs.google.com/spreadsheets/d/1CS-Tplkosorg8q6Ci8oALTvt9ufvEyDmCNAI2LsKM_g/edit#gid=949267305&range=32:32)_. The name/label in the **ASCT+B table** is _long descending limb of the loop of Henle in the outer medulla _ and the one in the **ontology** is _kidney loop of Henle long descending thin limb outer medulla_. For reference, the given name/label **by SMEs** is _descending thin limb of loop of Henle 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
