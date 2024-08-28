@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Heart (2024-08-21)
+ASCT+B Validation Reports for Heart (2024-08-28)
 ================================================
 
 Table of contents
@@ -52,9 +52,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:0000097](http://purl.obolibrary.org/obo/CL_0000097)_ has a different name/label in the source ontology in the following 4 rows _[104](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=104:104)_, _[152](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=152:152)_, _[158](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=158:158)_, _[212](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=212:212)_. The name/label in the **ASCT+B table** is _mast cell _ and the one in the **ontology** is _mast cell_. For reference, the given name/label **by SMEs** is _mast cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[CL:0000136](http://purl.obolibrary.org/obo/CL_0000136)_ has a different name/label in the source ontology in the following 5 rows _[37](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=37:37)_, _[48](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=48:48)_, _[90](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=90:90)_, _[103](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=103:103)_, _[186](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=186:186)_. The name/label in the **ASCT+B table** is _fat cell_ and the one in the **ontology** is _adipocyte_. For reference, the given name/label **by SMEs** is _adipocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[CL:0000097](http://purl.obolibrary.org/obo/CL_0000097)_ has a different name/label in the source ontology in the following 4 rows _[104](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=104:104)_, _[152](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=152:152)_, _[158](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=158:158)_, _[212](https://docs.google.com/spreadsheets/d/1kDn3zoY_5NmGCfemBLdshDT7JVUWtEMSGBrD4jsHeK0/edit#gid=1759721736&range=212:212)_. The name/label in the **ASCT+B table** is _mast cell _ and the one in the **ontology** is _mast cell_. For reference, the given name/label **by SMEs** is _mast cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
