@@ -30,6 +30,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
     'number_of_CT-AS_relationships': [0],
     'percent_invalid_CT-AS_relationship': [0],
     'number_of_no_parent_relationships': [len(log_dict["no_parent"])],
+    'unique_no_parent_relationships': [len(set([elem["user_label"] for elem in log_dict["no_parent"]]))],
   }
   seed = {'ID': 'ID', 'Label': 'LABEL', 'User_label': 'A skos:prefLabel',
           'isa': 'SC %',
@@ -385,6 +386,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
     'number_of_CT-AS_relationships': [terms_ct_as_start],
     'percent_invalid_CT-AS_relationship': [perc_inv_ct_as],
     'number_of_no_parent_relationships': [len(log_dict["no_parent"])],
+    'unique_no_parent_relationships': [len(set([elem["user_label"] for elem in log_dict["no_parent"]]))],
   }
 
   # ANNOTATION 
