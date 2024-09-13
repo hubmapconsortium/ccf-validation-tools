@@ -114,6 +114,11 @@ def add_color(report, report_type):
             report.at[row.Index, "number_of_no_parent_relationships"] = (
                 check_number_n_get_color(row.number_of_no_parent_relationships)
             )
+            report.at[row.Index, "unique_no_parent_relationships"] = (
+                check_number_n_get_color(
+                    int(row.unique_no_parent_relationships)
+                )
+            )
 
     return report
 
@@ -177,7 +182,8 @@ def get_reports():
         "percent_invalid_CT-CT_relationship": "% INVALID CT-CT RELATIONS",
         "number_of_CT-AS_relationships": "# CT-AS RELATIONS",
         "percent_invalid_CT-AS_relationship": "% INVALID CT-AS RELATIONS",
-        "number_of_no_parent_relationships": "# CASES NO PARENT LINK TO CL"
+        "number_of_no_parent_relationships": "# CASES NO PARENT LINK TO CL",
+        "unique_no_parent_relationships": "# UNIQUE NO PARENT LINK TO CL"
     }, inplace=True)
     rel_report = add_link(rel_report)
     rel_report_md = tsv2md(rel_report)
