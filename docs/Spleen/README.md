@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Spleen (2024-09-18)
+ASCT+B Validation Reports for Spleen (2024-09-25)
 =================================================
 
 Table of contents
@@ -56,9 +56,9 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
 
 1. The term _[CL:0002399](http://purl.obolibrary.org/obo/CL_0002399)_ has a different name/label in the source ontology in the following 1 row _[126](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=126:126)_. The name/label in the **ASCT+B table** is _myeloid dendritic cell cDC2_ and the one in the **ontology** is _CD1c-positive myeloid dendritic cell_. For reference, the given name/label **by SMEs** is _cDC2 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. The term _[CL:0000499](http://purl.obolibrary.org/obo/CL_0000499)_ has a different name/label in the source ontology in the following 1 row _[53](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=53:53)_. The name/label in the **ASCT+B table** is _stromal cell _ and the one in the **ontology** is _stromal cell_. For reference, the given name/label **by SMEs** is _Stromal Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[CL:0002394](http://purl.obolibrary.org/obo/CL_0002394)_ has a different name/label in the source ontology in the following 1 row _[125](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=125:125)_. The name/label in the **ASCT+B table** is _myeloid dendritic cell cDC1_ and the one in the **ontology** is _CD141-positive myeloid dendritic cell_. For reference, the given name/label **by SMEs** is _cDC1 myeloid dendritic cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[CL:0000499](http://purl.obolibrary.org/obo/CL_0000499)_ has a different name/label in the source ontology in the following 1 row _[53](https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346&range=53:53)_. The name/label in the **ASCT+B table** is _stromal cell _ and the one in the **ontology** is _stromal cell_. For reference, the given name/label **by SMEs** is _Stromal Cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
