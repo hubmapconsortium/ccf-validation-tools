@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Anatomical_Systems (2024-10-16)
+ASCT+B Validation Reports for Anatomical_Systems (2024-10-23)
 =============================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[UBERON:0011143](http://purl.obolibrary.org/obo/UBERON_0011143)_ has a different name/label in the source ontology in the following 2 rows _[40](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=40:40)_, _[40](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=40:40)_. The name/label in the **ASCT+B table** is _kidney_ and the one in the **ontology** is _upper urinary tract_. For reference, the given name/label **by SMEs** is _kidney_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _[UBERON:0011143](http://purl.obolibrary.org/obo/UBERON_0011143)_ has a different name/label in the source ontology in the following 2 rows _[33](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=33:33)_, _[33](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=33:33)_. The name/label in the **ASCT+B table** is _kidney_ and the one in the **ontology** is _upper urinary tract_. For reference, the given name/label **by SMEs** is _kidney_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
@@ -126,15 +126,8 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s                                                               | slabel             | user_slabel        | o                                                               | olabel                     | user_olabel                | row_number                                                                                                                |   deltaIC |
 |----|-----------------------------------------------------------------|--------------------|--------------------|-----------------------------------------------------------------|----------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | [UBERON:0002106](http://purl.obolibrary.org/obo/UBERON_0002106) | spleen             | spleen             | [UBERON:0001007](http://purl.obolibrary.org/obo/UBERON_0001007) | digestive system           | digestive system           | [19](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=19:19) |       nan |
-|  1 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system      | immune system      | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system          | anatomical system          | [24](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=24:24) |       nan |
-|  2 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system      | immune system      | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system          | anatomical system          | [25](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=25:25) |       nan |
-|  3 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system      | immune system      | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system          | anatomical system          | [26](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=26:26) |       nan |
-|  4 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system      | immune system      | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system          | anatomical system          | [27](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=27:27) |       nan |
-|  5 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system      | immune system      | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system          | anatomical system          | [28](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=28:28) |       nan |
-|  6 | [UBERON:0002405](http://purl.obolibrary.org/obo/UBERON_0002405) | immune system      | immune system      | [UBERON:0000467](http://purl.obolibrary.org/obo/UBERON_0000467) | anatomical system          | anatomical system          | [29](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=29:29) |       nan |
-|  7 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [45](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=45:45) |       nan |
-|  8 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [46](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=46:46) |       nan |
+|  0 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [38](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=38:38) |       nan |
+|  1 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [39](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=39:39) |       nan |
 
 
 
