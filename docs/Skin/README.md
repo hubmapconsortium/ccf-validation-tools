@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Skin (2024-10-23)
+ASCT+B Validation Reports for Skin (2024-10-30)
 ===============================================
 
 Table of contents
@@ -52,11 +52,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[UBERON:0002073](http://purl.obolibrary.org/obo/UBERON_0002073)_ has a different name/label in the source ontology in the following 1 row _[34](https://docs.google.com/spreadsheets/d/1_xLnPyGyQy9fae7DrWkeyEN-iLTP8JQMxTL7HHkxG6o/edit#gid=269383687&range=34:34)_. The name/label in the **ASCT+B table** is _hair follicle bulge_ and the one in the **ontology** is _hair follicle_. For reference, the given name/label **by SMEs** is _hair bulge_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _[UBERON:0002033](http://purl.obolibrary.org/obo/UBERON_0002033)_ has a different name/label in the source ontology in the following 1 row _[31](https://docs.google.com/spreadsheets/d/1_xLnPyGyQy9fae7DrWkeyEN-iLTP8JQMxTL7HHkxG6o/edit#gid=269383687&range=31:31)_. The name/label in the **ASCT+B table** is _arrector pili muscle of vibrissa_ and the one in the **ontology** is _arrector muscle of hair_. For reference, the given name/label **by SMEs** is _Arrector pili muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _[CL:0000669](http://purl.obolibrary.org/obo/CL_0000669)_ has a different name/label in the source ontology in the following 1 row _[66](https://docs.google.com/spreadsheets/d/1_xLnPyGyQy9fae7DrWkeyEN-iLTP8JQMxTL7HHkxG6o/edit#gid=269383687&range=66:66)_. The name/label in the **ASCT+B table** is _pericyte cell_ and the one in the **ontology** is _pericyte_. For reference, the given name/label **by SMEs** is _Pericyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. The term _[UBERON:0002033](http://purl.obolibrary.org/obo/UBERON_0002033)_ has a different name/label in the source ontology in the following 1 row _[31](https://docs.google.com/spreadsheets/d/1_xLnPyGyQy9fae7DrWkeyEN-iLTP8JQMxTL7HHkxG6o/edit#gid=269383687&range=31:31)_. The name/label in the **ASCT+B table** is _arrector pili muscle of vibrissa_ and the one in the **ontology** is _arrector muscle of hair_. For reference, the given name/label **by SMEs** is _Arrector pili muscle_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _[UBERON:0002073](http://purl.obolibrary.org/obo/UBERON_0002073)_ has a different name/label in the source ontology in the following 1 row _[34](https://docs.google.com/spreadsheets/d/1_xLnPyGyQy9fae7DrWkeyEN-iLTP8JQMxTL7HHkxG6o/edit#gid=269383687&range=34:34)_. The name/label in the **ASCT+B table** is _hair follicle bulge_ and the one in the **ontology** is _hair follicle_. For reference, the given name/label **by SMEs** is _hair bulge_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
