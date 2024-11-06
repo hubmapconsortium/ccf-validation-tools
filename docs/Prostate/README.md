@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2024-10-30)
+ASCT+B Validation Reports for Prostate (2024-11-06)
 ===================================================
 
 Table of contents
@@ -52,11 +52,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
+1. The term _[CL:0009112](http://purl.obolibrary.org/obo/CL_0009112)_ has a different name/label in the source ontology in the following 1 row _[24](https://docs.google.com/spreadsheets/d/1jR_UpAkyn-cXNQXjpTBOWv1CTw1Z_5yi_UDoUMIHavw/edit#gid=1239199370&range=24:24)_. The name/label in the **ASCT+B table** is _pericyte_ and the one in the **ontology** is _centroblast_. For reference, the given name/label **by SMEs** is _perictye_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
 1. The term _[CL:0002573](http://purl.obolibrary.org/obo/CL_0002573)_ has a different name/label in the source ontology in the following 1 row _[25](https://docs.google.com/spreadsheets/d/1jR_UpAkyn-cXNQXjpTBOWv1CTw1Z_5yi_UDoUMIHavw/edit#gid=1239199370&range=25:25)_. The name/label in the **ASCT+B table** is _satellite glial cell_ and the one in the **ontology** is _Schwann cell_. For reference, the given name/label **by SMEs** is _Schwann cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _[CL:0002573](http://purl.obolibrary.org/obo/CL_0002573)_ has a different name/label in the source ontology in the following 1 row _[26](https://docs.google.com/spreadsheets/d/1jR_UpAkyn-cXNQXjpTBOWv1CTw1Z_5yi_UDoUMIHavw/edit#gid=1239199370&range=26:26)_. The name/label in the **ASCT+B table** is _endoneurial fibroblast_ and the one in the **ontology** is _Schwann cell_. For reference, the given name/label **by SMEs** is _endoneurial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _[CL:0009112](http://purl.obolibrary.org/obo/CL_0009112)_ has a different name/label in the source ontology in the following 1 row _[24](https://docs.google.com/spreadsheets/d/1jR_UpAkyn-cXNQXjpTBOWv1CTw1Z_5yi_UDoUMIHavw/edit#gid=1239199370&range=24:24)_. The name/label in the **ASCT+B table** is _pericyte_ and the one in the **ontology** is _centroblast_. For reference, the given name/label **by SMEs** is _perictye_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

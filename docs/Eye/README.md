@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Eye (2024-10-30)
+ASCT+B Validation Reports for Eye (2024-11-06)
 ==============================================
 
 Table of contents
@@ -52,9 +52,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[UBERON:0004904](http://purl.obolibrary.org/obo/UBERON_0004904)_ has a different name/label in the source ontology in the following 2 rows _[70](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=70:70)_, _[70](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=70:70)_. The name/label in the **ASCT+B table** is _optic nerve_ and the one in the **ontology** is _neuron projection bundle connecting eye with brain_. For reference, the given name/label **by SMEs** is _neuron projection bundle connecting eye with brain_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[UBERON:0000965](http://purl.obolibrary.org/obo/UBERON_0000965)_ has a different name/label in the source ontology in the following 2 rows _[59](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=59:59)_, _[59](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=59:59)_. The name/label in the **ASCT+B table** is _lens_ and the one in the **ontology** is _lens of camera-type eye_. For reference, the given name/label **by SMEs** is _lens_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[UBERON:0004904](http://purl.obolibrary.org/obo/UBERON_0004904)_ has a different name/label in the source ontology in the following 2 rows _[70](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=70:70)_, _[70](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=70:70)_. The name/label in the **ASCT+B table** is _optic nerve_ and the one in the **ontology** is _neuron projection bundle connecting eye with brain_. For reference, the given name/label **by SMEs** is _neuron projection bundle connecting eye with brain_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
