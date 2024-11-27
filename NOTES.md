@@ -6,9 +6,9 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2024-09-03|
-|PCL|2024-07-11|
 |CL|2024-09-26|
+|PCL|2024-07-11|
+|UBERON|2024-09-03|
 
 ### ASCT+b Tables
 
@@ -25,7 +25,7 @@ Release Notes
 |Knee|v1.3|revise for October 1, 2024|
 |Large_intestine|v1.4|revise for October 1, 2024|
 |Liver|v1.4|NA|
-|Lung|v1.6|revise for October 1, 2024|
+|Lung|v1.6|December 15, 2024|
 |Lymph_node|v1.5|revise for October 1, 2024|
 |Lymph_vasculature|v1.5|revise for October 1, 2024|
 |Main_Bronchus|v1.3|NA|
