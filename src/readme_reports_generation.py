@@ -151,7 +151,8 @@ def compact_issues(items: list, element: str):
             compacted_items[key]["rows"] = [item["row_number"]]
             compacted_items[key].pop("row_number")
         else:
-            compacted_items[key]["rows"].append(item["row_number"])
+            if item["row_number"] not in compacted_items[key]["rows"]:
+                compacted_items[key]["rows"].append(item["row_number"])
     
     return list(compacted_items.values())
 
