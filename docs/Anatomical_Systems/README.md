@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Anatomical_Systems (2024-12-04)
+ASCT+B Validation Reports for Anatomical_Systems (2024-12-11)
 =============================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[UBERON:0011143](http://purl.obolibrary.org/obo/UBERON_0011143)_ has a different name/label in the source ontology in the following 2 rows _[44](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=44:44)_, _[44](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=44:44)_. The name/label in the **ASCT+B table** is _kidney_ and the one in the **ontology** is _upper urinary tract_. For reference, the given name/label **by SMEs** is _kidney_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID
@@ -126,9 +126,9 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s                                                               | slabel             | user_slabel        | o                                                               | olabel                     | user_olabel                | row_number                                                                                                                |   deltaIC |
 |----|-----------------------------------------------------------------|--------------------|--------------------|-----------------------------------------------------------------|----------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | [UBERON:0001033](http://purl.obolibrary.org/obo/UBERON_0001033) | gustatory system   | gustatory system   | [UBERON:0001007](http://purl.obolibrary.org/obo/UBERON_0001007) | digestive system           | digestive system           | [30](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=30:30) |       nan |
-|  1 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [49](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=49:49) |       nan |
-|  2 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [50](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=50:50) |       nan |
+|  0 | [UBERON:0001033](http://purl.obolibrary.org/obo/UBERON_0001033) | gustatory system   | gustatory system   | [UBERON:0001007](http://purl.obolibrary.org/obo/UBERON_0001007) | digestive system           | digestive system           | [28](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=28:28) |       nan |
+|  1 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [47](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=47:47) |       nan |
+|  2 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [48](https://docs.google.com/spreadsheets/d/13qyyCHS4lxgIfVtQJ_aVxB-aWch7oJG-psrZn4ZoFEM/edit#gid=2028977062&range=48:48) |       nan |
 
 
 

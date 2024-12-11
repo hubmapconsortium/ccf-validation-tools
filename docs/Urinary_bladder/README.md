@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Urinary_bladder (2024-12-04)
+ASCT+B Validation Reports for Urinary_bladder (2024-12-11)
 ==========================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:0000186](http://purl.obolibrary.org/obo/CL_0000186)_ has a different name/label in the source ontology in the following 3 rows _[16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16)_, _[16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16)_, _[36](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=36:36)_. The name/label in the **ASCT+B table** is _myofibroblast_ and the one in the **ontology** is _myofibroblast cell_. For reference, the given name/label **by SMEs** is _myofibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+1. The term _[CL:0000186](http://purl.obolibrary.org/obo/CL_0000186)_ has a different name/label in the source ontology in the following 2 rows _[16](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=16:16)_, _[36](https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099&range=36:36)_. The name/label in the **ASCT+B table** is _myofibroblast_ and the one in the **ontology** is _myofibroblast cell_. For reference, the given name/label **by SMEs** is _myofibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
