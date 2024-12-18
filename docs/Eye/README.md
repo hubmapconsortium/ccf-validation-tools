@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Eye (2024-12-11)
+ASCT+B Validation Reports for Eye (2024-12-18)
 ==============================================
 
 Table of contents
@@ -62,8 +62,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. No term id was found for the name/label _conjuctival epithelium_ in the following 1 row _[15](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=15:15)_.
-
 1. No term id was found for the name/label _limbal stem cells_ in the following 1 row _[28](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=28:28)_.
 
 1. No term id was found for the name/label _Inner cortex_ in the following 1 row _[36](https://docs.google.com/spreadsheets/d/1tNNPZXL0ycw5gNksDUKHZJpRkKgRdVAUh9AZ6ohpgOA/edit#gid=695483621&range=36:36)_.

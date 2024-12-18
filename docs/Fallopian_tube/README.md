@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Fallopian_tube (2024-12-11)
+ASCT+B Validation Reports for Fallopian_tube (2024-12-18)
 =========================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[UBERON:8410010](http://purl.obolibrary.org/obo/UBERON_8410010)_ has a different name/label in the source ontology in the following 3 rows _[116](https://docs.google.com/spreadsheets/d/1yCfVQmd3-R8wEN6qolpBT3w7hN2ug6pHyoxnM4i-sws/edit#gid=991519552&range=116:116)_, _[127](https://docs.google.com/spreadsheets/d/1yCfVQmd3-R8wEN6qolpBT3w7hN2ug6pHyoxnM4i-sws/edit#gid=991519552&range=127:127)_, _[128](https://docs.google.com/spreadsheets/d/1yCfVQmd3-R8wEN6qolpBT3w7hN2ug6pHyoxnM4i-sws/edit#gid=991519552&range=128:128)_. The name/label in the **ASCT+B table** is _fimbria of uterine tube_ and the one in the **ontology** is _fimbria of fallopian tube_. For reference, the given name/label **by SMEs** is _fimbria of Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID

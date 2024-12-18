@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Kidney (2024-12-11)
+ASCT+B Validation Reports for Kidney (2024-12-18)
 =================================================
 
 Table of contents
@@ -52,7 +52,7 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:1000454](http://purl.obolibrary.org/obo/CL_1000454)_ has a different name/label in the source ontology in the following 1 row _[52](https://docs.google.com/spreadsheets/d/1CS-Tplkosorg8q6Ci8oALTvt9ufvEyDmCNAI2LsKM_g/edit#gid=949267305&range=52:52)_. The name/label in the **ASCT+B table** is _kidney collecting duct epithelial cell _ and the one in the **ontology** is _kidney collecting duct epithelial cell_. For reference, the given name/label **by SMEs** is _kidney collecting duct epithelial cell _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+- No issues found.
 
 
 ## Blank ontology ID

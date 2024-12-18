@@ -38,11 +38,11 @@ Release Notes
 |Placenta|v1.3|NA|
 |Prostate|v1.2|revise for October 1, 2024|
 |Skeleton|v1.3|revise for October 1, 2024|
-|Skin|v1.4|Revise for October 1, 2024|
+|Skin|v1.4|December 15, 2024|
 |Small_intestine|v1.2|revise for October 1, 2024|
 |Spinal_Cord|v1.1|December 15, 2024|
-|Spleen|v1.4|revise for April 1, 2024|
-|Thymus|v1.5|revise for April 1, 2024|
+|Spleen|v1.4|December 15, 2024|
+|Thymus|v1.5|December 15, 2024|
 |Trachea|v1.1|revise for October 1|
 |Ureter|NA|revise for April 2023|
 |Urinary_bladder|v1.1|revise for April 2024|
