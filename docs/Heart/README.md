@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Heart (2024-12-25)
+ASCT+B Validation Reports for Heart (2025-01-01)
 ================================================
 
 Table of contents
