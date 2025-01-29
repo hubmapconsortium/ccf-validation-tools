@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2024-11-25|
 |PCL|2025-01-08|
+|UBERON|2024-11-25|
 |CL|2025-01-08|
 
 ### ASCT+b Tables
@@ -32,7 +32,7 @@ Release Notes
 |Mammary_Gland|v1.0|revise for April 1, 2024|
 |Muscular_System|v1.3|revise for October 1, 2024|
 |Ovary|v1.4|revise for October 1, 2024|
-|Pancreas|v1.4|revise for October 1, 2024|
+|Pancreas|v1.4|revise for April 1, 2025|
 |Palatine_Tonsil|V1.1|June 15, 2024|
 |Peripheral_nervous_system|v1.3|NA|
 |Placenta|v1.3|NA|
