@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|PCL|2025-01-08|
 |UBERON|2024-11-25|
+|PCL|2025-01-08|
 |CL|2025-01-08|
 
 ### ASCT+b Tables
@@ -15,7 +15,7 @@ Release Notes
 |Organ|Version|Date|
 | :---: | :---: | :---: |
 |Anatomical_Systems|v1.1|December 15, 2024|
-|Blood|v1.5|NA|
+|Blood|v1.5|revise 2025|
 |Bone-Marrow|v1.6|NA|
 |Brain|v1.7|December 15, 2024|
 |Eye|v1.4|December 15, 2024|
