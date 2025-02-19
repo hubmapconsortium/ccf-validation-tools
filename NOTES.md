@@ -7,8 +7,8 @@ Release Notes
 |Ontology|Version|
 | :---: | :---: |
 |UBERON|2024-11-25|
-|CL|2025-01-08|
 |PCL|2025-01-08|
+|CL|2025-01-08|
 
 ### ASCT+b Tables
 
@@ -27,7 +27,7 @@ Release Notes
 |Liver|v1.4|NA|
 |Lung|v1.6|prepare for April 1, 2025|
 |Lymph_node|v1.5|revise for October 1, 2024|
-|Lymph_vasculature|v1.5|revise for October 1, 2024|
+|Lymph_vasculature|v1.5|revise for April 1, 2025|
 |Main_Bronchus|v1.3|NA|
 |Mammary_Gland|v1.0|revise for April 1, 2024|
 |Muscular_System|v1.3|revise for October 1, 2024|
