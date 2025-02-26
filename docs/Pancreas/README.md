@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Pancreas (2025-02-19)
+ASCT+B Validation Reports for Pancreas (2025-02-26)
 ===================================================
 
 Table of contents
@@ -52,14 +52,14 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
+1. The term _[CL:0000136](http://purl.obolibrary.org/obo/CL_0000136)_ has a different name/label in the source ontology in the following 1 row _[43](https://docs.google.com/spreadsheets/d/1QqIyxxTGn1FfEFnUnHrffWuq1bKT9a-j7XrYPdRC8zg/edit#gid=439021026&range=43:43)_. The name/label in the **ASCT+B table** is _fat cell_ and the one in the **ontology** is _adipocyte_. For reference, the given name/label **by SMEs** is _Adipocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
 1. The term _[UBERON:0002384](http://purl.obolibrary.org/obo/UBERON_0002384)_ has a different name/label in the source ontology in the following 1 row _[67](https://docs.google.com/spreadsheets/d/1QqIyxxTGn1FfEFnUnHrffWuq1bKT9a-j7XrYPdRC8zg/edit#gid=439021026&range=67:67)_. The name/label in the **ASCT+B table** is _connective tissue
 _ and the one in the **ontology** is _connective tissue_. For reference, the given name/label **by SMEs** is _Interlobular connective tissue_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _[UBERON:0002384](http://purl.obolibrary.org/obo/UBERON_0002384)_ has a different name/label in the source ontology in the following 3 rows _[78](https://docs.google.com/spreadsheets/d/1QqIyxxTGn1FfEFnUnHrffWuq1bKT9a-j7XrYPdRC8zg/edit#gid=439021026&range=78:78)_, _[85](https://docs.google.com/spreadsheets/d/1QqIyxxTGn1FfEFnUnHrffWuq1bKT9a-j7XrYPdRC8zg/edit#gid=439021026&range=85:85)_, _[92](https://docs.google.com/spreadsheets/d/1QqIyxxTGn1FfEFnUnHrffWuq1bKT9a-j7XrYPdRC8zg/edit#gid=439021026&range=92:92)_. The name/label in the **ASCT+B table** is _connective tissue
 _ and the one in the **ontology** is _connective tissue_. For reference, the given name/label **by SMEs** is _connective tissue
 _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _[CL:0000136](http://purl.obolibrary.org/obo/CL_0000136)_ has a different name/label in the source ontology in the following 1 row _[43](https://docs.google.com/spreadsheets/d/1QqIyxxTGn1FfEFnUnHrffWuq1bKT9a-j7XrYPdRC8zg/edit#gid=439021026&range=43:43)_. The name/label in the **ASCT+B table** is _fat cell_ and the one in the **ontology** is _adipocyte_. For reference, the given name/label **by SMEs** is _Adipocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
