@@ -25,11 +25,11 @@ Release Notes
 |Kidney|v1.7|prepare for April 1, 2025|
 |Knee|v1.3|revise for October 1, 2024|
 |Large_intestine|v1.4|revise for October 1, 2024|
-|Liver|v1.4|NA|
+|Liver|v1.4|April 1, 2025|
 |Lung|v1.6|prepare for April 1, 2025|
 |Lymph_node|v1.5|revise for October 1, 2024|
 |Lymph_vasculature|v1.5|revise for April 1, 2025|
-|Main_Bronchus|v1.3|NA|
+|Main_Bronchus|v1.3|April 1, 2025|
 |Mammary_Gland|v1.0|revise for April 1, 2024|
 |Mouth|v1.0|4/1/2025|
 |Muscular_System|v1.3|revise for October 1, 2024|
@@ -50,5 +50,5 @@ Release Notes
 |Trachea|v1.1|revise for October 1|
 |Ureter|NA|revise for April 2023|
 |Urinary_bladder|v1.1|revise for April 2024|
-|Uterus|v1.2|revise for April 1, 2024|
+|Uterus|v1.2|April 1, 2025|
 |Blood_vasculature|v1.8|revise April 2025|
