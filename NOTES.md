@@ -6,15 +6,15 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|CL|2025-01-08|
 |PCL|2025-01-08|
-|UBERON|2024-11-25|
+|CL|2025-02-13|
+|UBERON|2025-01-15|
 
 ### ASCT+b Tables
 
 |Organ|Version|Date|
 | :---: | :---: | :---: |
-|Anatomical_Systems|v1.2|revise April 1, 2025|
+|Anatomical_Systems|v1.2|March 7, 2025|
 |Blood|v1.5|revise 2025|
 |Bone-Marrow|v1.6|NA|
 |Brain|v1.7|revise for 2025|
@@ -51,4 +51,4 @@ Release Notes
 |Ureter|NA|revise for April 2023|
 |Urinary_bladder|v1.1|revise for April 2024|
 |Uterus|v1.2|April 1, 2025|
-|Blood_vasculature|v1.8|revise April 2025|
+|Blood_vasculature|v1.8|March 7, 2025|

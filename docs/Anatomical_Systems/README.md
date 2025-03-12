@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Anatomical_Systems (2025-03-05)
+ASCT+B Validation Reports for Anatomical_Systems (2025-03-12)
 =============================================================
 
 Table of contents
@@ -126,9 +126,8 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s                                                               | slabel             | user_slabel        | o                                                               | olabel                     | user_olabel                | row_number                                                                                                                |   deltaIC |
 |----|-----------------------------------------------------------------|--------------------|--------------------|-----------------------------------------------------------------|----------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | [UBERON:0001033](http://purl.obolibrary.org/obo/UBERON_0001033) | gustatory system   | gustatory system   | [UBERON:0001007](http://purl.obolibrary.org/obo/UBERON_0001007) | digestive system           | digestive system           | [28](https://docs.google.com/spreadsheets/d/1P4pZmCiU60QZvBtUbj0n3IItd8WMlzVjzNcmVYHa7Tw/edit#gid=2028977062&range=28:28) |       nan |
-|  1 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [47](https://docs.google.com/spreadsheets/d/1P4pZmCiU60QZvBtUbj0n3IItd8WMlzVjzNcmVYHa7Tw/edit#gid=2028977062&range=47:47) |       nan |
-|  2 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [48](https://docs.google.com/spreadsheets/d/1P4pZmCiU60QZvBtUbj0n3IItd8WMlzVjzNcmVYHa7Tw/edit#gid=2028977062&range=48:48) |       nan |
+|  0 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [44](https://docs.google.com/spreadsheets/d/1P4pZmCiU60QZvBtUbj0n3IItd8WMlzVjzNcmVYHa7Tw/edit#gid=2028977062&range=44:44) |       nan |
+|  1 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [45](https://docs.google.com/spreadsheets/d/1P4pZmCiU60QZvBtUbj0n3IItd8WMlzVjzNcmVYHa7Tw/edit#gid=2028977062&range=45:45) |       nan |
 
 
 
