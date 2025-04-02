@@ -6,9 +6,9 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|CL|2025-02-13|
-|UBERON|2025-01-15|
 |PCL|2025-01-08|
+|UBERON|2025-01-15|
+|CL|2025-02-13|
 
 ### ASCT+b Tables
 
@@ -32,7 +32,7 @@ Release Notes
 |Main_Bronchus|v1.3|April 1, 2025|
 |Mammary_Gland|v1.0|revise for April 1, 2024|
 |Mouth|v1.0|4/1/2025|
-|Muscular_System|v1.3|revise for October 1, 2024|
+|Muscular_System|v1.3|March 7, 2025|
 |Ovary|v1.4|revise for October 1, 2024|
 |Pancreas|v1.4|revise for April 1, 2025|
 |Palatine_Tonsil|V1.1|June 15, 2024|
