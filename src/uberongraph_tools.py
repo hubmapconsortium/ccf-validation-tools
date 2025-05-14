@@ -5,6 +5,7 @@ from ccf_tools import chunks, transform_to_str
 class UberonGraph():
     def __init__(self):
         self.sparql = SPARQLWrapper('https://ubergraph.apps.renci.org/sparql')
+        self.sparql.setMethod('POST')
         self.select_po = """
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
           PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
@@ -313,6 +314,8 @@ class UberonGraph():
       query = query % terms
       self.sparql.setReturnFormat(JSON)
       self.sparql.setQuery(query)
+
+      print(query)
       
       results = self.sparql.query().convert()
       if results["results"]["bindings"]:
