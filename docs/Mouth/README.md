@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Mouth (2025-04-09)
+ASCT+B Validation Reports for Mouth (2025-05-22)
 ================================================
 
 Table of contents
@@ -126,7 +126,7 @@ This table contains terms for anatomical structures that are related to each oth
 
 |    | s                                                               | slabel                | user_slabel       | o                                                               | olabel       | user_olabel   | row_number                                                                                                                |   deltaIC |
 |----|-----------------------------------------------------------------|-----------------------|-------------------|-----------------------------------------------------------------|--------------|---------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | [UBERON:0004923](http://purl.obolibrary.org/obo/UBERON_0004923) | organ component layer | mucosa of the lip | [UBERON:0003729](http://purl.obolibrary.org/obo/UBERON_0003729) | mouth mucosa | mouth mucosa  | [58](https://docs.google.com/spreadsheets/d/1F3AWx_miDX1i5zo7FKwmBqEHfhX34coeJqSc-qczUbY/edit#gid=1843863063&range=58:58) |   23.0995 |
+|  0 | [UBERON:0004923](http://purl.obolibrary.org/obo/UBERON_0004923) | organ component layer | mucosa of the lip | [UBERON:0003729](http://purl.obolibrary.org/obo/UBERON_0003729) | mouth mucosa | mouth mucosa  | [58](https://docs.google.com/spreadsheets/d/1F3AWx_miDX1i5zo7FKwmBqEHfhX34coeJqSc-qczUbY/edit#gid=1843863063&range=58:58) |   23.1326 |
 
 
 
