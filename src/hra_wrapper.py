@@ -42,6 +42,8 @@ GRAPH_NAME_LIST = [
     "main-bronchus-male",
     "mammary-gland-female-left",
     "mammary-gland-female-right",
+    "mouth-female",
+    "mouth-male",
     "ovary-female-left",
     "ovary-female-right",
     "palatine-tonsil-female-left",
