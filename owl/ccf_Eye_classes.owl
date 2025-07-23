@@ -344,7 +344,9 @@ WHERE {
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -534,7 +536,16 @@ WHERE {
 
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spatial</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -796,6 +807,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/CL_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000036">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A somatic stem cell that is committed to an epithelial fate, possessing the capacity for self-renewal and the ability to differentiate into one or more distinct mature cell types of the epithelial lineage. This cell is crucial for the development, homeostasis, repair, and regeneration of epithelial tissues.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial stem cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -804,6 +816,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial fate stem cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial fate stem cell</skos:prefLabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000036"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A somatic stem cell that is committed to an epithelial fate, possessing the capacity for self-renewal and the ability to differentiate into one or more distinct mature cell types of the epithelial lineage. This cell is crucial for the development, homeostasis, repair, and regeneration of epithelial tissues.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17289566</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:/10.1038/sj.eye.6700575</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -868,13 +887,14 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interneuron</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interneuron</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interneuron</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000099"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.006960</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066783</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000099"/>
@@ -915,7 +935,6 @@ Despite their overarching function in the support and protection of neurons, gli
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBbt:00005144</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:54536</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009073</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000125</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroglial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuroglia</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -924,6 +943,7 @@ Despite their overarching function in the support and protection of neurons, gli
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not all glial cells develop from glioblasts, with microglia developing from the mesoderm instead. See https://github.com/obophenotype/cell-ontology/issues/1571</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glial cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000125</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glial cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -931,6 +951,22 @@ Despite their overarching function in the support and protection of neurons, gli
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-neuronal cell of the nervous system. They not only provide physical support, but also respond to injury, regulate the ionic and chemical composition of the extracellular milieu. Guide neuronal migration during development, and exchange metabolites with neurons.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D009457</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glial cells, also known as neuroglia or simply glia, are non-neuronal cells in the central and peripheral nervous systems that provide support and protection for neurons. They constitute approximately half of the total cells in the human brain and more than half in other parts of the nervous system. Glial cells perform several key functions including, but not limited to, maintaining homeostasis, forming the myelin sheath around the neuron axons, and providing support and nutrition to neurons.
+These different functions are performed by various glial cell types, including astrocytes, oligodendrocytes, microglia and other specialized types. Astrocytes, for example, are the most abundant glial cells and provide metabolic and nutrient support to neurons, help regulate the extracellular ion and neurotransmitter levels, and play a role in the formation and maintenance of the blood-brain barrier, contributing to the overall homeostasis and functioning of the nervous system. Additionally, astrocytes are involved in synaptic communication and participate in processes such as synaptogenesis and synaptic pruning.
+Oligodendrocytes in the central nervous system function to insulate neurons by producing a fatty substance known as myelin. The myelin sheath enhances the speed and efficiency of nerve impulse conduction along the axons. 
+Microglia, the immune cells of the central nervous system, protect neurons from pathogens and clear away dead neurons through phagocytosis, a process also known as cellular eating. They also contribute to the regulation of inflammation in response to signals of tissue damage or infection in the central nervous system by releasing cytokines and other signaling molecules that modulate the immune response.
+Despite their overarching function in the support and protection of neurons, glial cells have also been shown to play significant roles in the pathophysiology of many psychiatric and neurodegenerative diseases, such as Alzheimer’s, Parkinson’s Disease and multiple sclerosis.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1002/glia.24343</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nn1988</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/cshperspect.a020602</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1126/science.aat0473</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fncel.2017.00024</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
@@ -943,6 +979,12 @@ Despite their overarching function in the support and protection of neurons, gli
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009073</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000125</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glial cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -964,7 +1006,6 @@ While their protective role generally benefits the brain, their over-activation 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000962</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:54539</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009077</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000129</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brain-resident macrophage</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hortega cells</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microgliocyte</oboInOwl:hasExactSynonym>
@@ -975,6 +1016,7 @@ While their protective role generally benefits the brain, their over-activation 
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unlike macroglial cells, microglial cells  arise from hematopoietic stem cells in the yolk sac during early embryogenesis that populate the central nervous system. They derive from embryonic mesoderm and are not from neuroectoderm where glioblast develops from. Markers: Mouse: CD11b+, F4/80+, CD68+. They represent ~12% of the cells in the CNS, but they are not uniformly distributed within the CNS. A normal adult mouse brain has approximately 3.5x10e6 microglia. Microglia are also reportedly CD3-negative, CD4-positive, CD8-negative, CD11b-positive, CD11c-high, CD14-negative, CD19-negative, CD45-low, CD56-negative, CD163-negative, CD200R-positive, CD281-positive, CD282-positive, CD283-positive, CD284-positive, CD285-positive, CD286-positive, CD287-positive, CD288-positive, CD289-positive, Gr1-negative, nestin-positive, and PU.1-positive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microglial cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000129</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microglial cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -994,6 +1036,22 @@ While their protective role generally benefits the brain, their over-activation 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19461673</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2089275</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Microglia</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000129"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microglial cells, sometimes referred to as microglia, are a type of glial cell that primarily exist within the central nervous system (CNS), notably in the brain and the spinal cord. Classified among the resident immune cells, microglial cells represent about 10% of all cells found within the CNS. These cells are derived from progenitor cells in the yolk sac, which differentiates them from other types of glial cells (such as astrocytes and oligodendrocytes) that are derived from neuroectodermal cell lineages. 
+The primary role of microglial cells is to act as the first and main active form of immune defense in the CNS. They express a vast repertoire of pattern recognition receptors, which allow them to sense and eliminate microbes invading the CNS parenchyma. They represent one of the macrophage populations of the CNS and are responsible for phagocytosis (engulfing and destroying cellular waste or pathogens) in the neural environment. 
+Microglial cells are particularly responsive to pathogens and injuries and change their morphology in reaction to inflammation or insult: In the normal state they are characterized by a ramified shape with small processes; in response to stimuli, some microglia mature and change to an amoeboid shape. 
+Beyond their macrophagic activity, they also perform synaptic pruning during brain development, eliminate unnecessarily produced neurons, and facilitate tissue regeneration and repair. they play integral roles in regulating neural development and supporting cell survival and are important for maintaining tissue homeostasis. 
+While their protective role generally benefits the brain, their over-activation can occasionally lead to neuro-inflammatory diseases, underlining the importance of balanced microglial cell functions. They have been extensively studied for their association with neurodegenerative diseases, such as Alzheimer&apos;s disease, Parkinson&apos;s disease, and multiple sclerosis.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.cell.2019.08.053</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.conb.2022.102674</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.tins.2021.11.001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nri3086</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fnins.2021.742065</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000129"/>
@@ -1019,6 +1077,12 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microglia</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.1038/s41598-020-66092-9</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003004"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000129"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000129</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microglial cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1054,7 +1118,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787159</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879564</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000132"/>
@@ -1088,6 +1152,7 @@ While their protective role generally benefits the brain, their over-activation 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eye photoreceptor cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photoreceptor</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eye photoreceptor cell</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoreceptor</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1095,7 +1160,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007017</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066765</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000287"/>
@@ -1132,6 +1197,7 @@ While their protective role generally benefits the brain, their over-activation 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuron</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuron</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuron</skos:prefLabel>
         <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.swissbiopics.org/api/image/Neuron_cells.svg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
@@ -1181,7 +1247,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000099"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007020</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066740</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000561"/>
@@ -1237,7 +1303,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000287"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007024</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066757</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000573"/>
@@ -1293,7 +1359,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787168</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879582</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000575"/>
@@ -1338,7 +1404,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000287"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007022</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066771</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000604"/>
@@ -1428,7 +1494,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0008034"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007005</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066773</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000669"/>
@@ -1477,13 +1543,14 @@ While their protective role generally benefits the brain, their over-activation 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ganglion cell</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal ganglion cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000740"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.006998</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066785</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000740"/>
@@ -1538,7 +1605,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007013</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066763</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000745"/>
@@ -1599,7 +1666,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007026</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066781</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000748"/>
@@ -1611,7 +1678,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:50.550735</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:28.697434</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000748"/>
@@ -1644,7 +1711,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000748"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BPs</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSE137537</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geo:GSE137537</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003004"/>
     </owl:Axiom>
@@ -1675,7 +1742,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000748"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007003</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066774</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000749"/>
@@ -1687,7 +1754,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:50.550738</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:28.697414</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000749"/>
@@ -1728,7 +1795,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000748"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.006992</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066767</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000750"/>
@@ -1740,7 +1807,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:50.550719</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:28.697431</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000750"/>
@@ -1787,7 +1854,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787139</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879580</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002224"/>
@@ -1813,12 +1880,12 @@ The fibers carry out their primary function of light refraction via a high conce
 
 (This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-07T10:53:39+00:00</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002225</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary lens fibre</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary lens fiber</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002225</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mature fiber cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1826,7 +1893,7 @@ The fibers carry out their primary function of light refraction via a high conce
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0011004"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007015</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066769</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002225"/>
@@ -1834,6 +1901,26 @@ The fibers carry out their primary function of light refraction via a high conce
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lens fiber cell that develops from primary lens fiber; located towards the center of lens; cell organelles are normally degraded or in the process of being degraded.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0517223651</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002225"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondary lens fibers are a specialized type of elongated cells located within the structure of the eye&apos;s lens. They play an essential role in vision by enabling light transmission and focus on the retina, which allows for clear, distinct vision. These cells are characterized by their lack of nuclei and organelles, their orderly alignment, and their high protein content, particularly crystallins. 
+Lens fibers are differentiated from equatorial epithelial cells of the lens in a process that involves cell elongation, denucleation and tight packing, which serve to reduce light scattering occurrences in the eye. This differentiation accelerates substantially after birth in comparison to during embryogenesis and continues throughout life, contributing to the growth of the eye lens. Secondary lens fibers are specifically those cells that are newly differentiated and cover the old lens fiber core. This process also leads to the removal of light-obstructing cellular components, mainly nuclei and organelles, making these fibers transparent and ideal for their function. 
+The fibers carry out their primary function of light refraction via a high concentration of specialized proteins known as crystallins, which form a gradient of refractive index together with the cytoplasm. This index manipulation facilitates precise light focus onto the retina. Secondary lens fibers also contribute to the lens&apos;s shape and biomechanical properties through intercellular interactions, particularly at the sutures where the ends of the fibers meet. Any disruption to secondary lens fibers can lead to vision problems, including cataracts, which is the clouding of the lens resulting from the aggregation of crystallin proteins.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/B978-1-4377-1926-0.10005-0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.biocel.2007.10.034</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1098/rstb.2010.0324</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1136/bmjophth-2020-000459</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.sciencedirect.com/topics/immunology-and-microbiology/lens-fiber</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002225"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002225</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary lens fiber on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1858,7 +1945,7 @@ The fibers carry out their primary function of light refraction via a high conce
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0011004"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007000</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066787</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002228"/>
@@ -1889,7 +1976,6 @@ Pigmented ciliary epithelial cells also contribute to the blood-aqueous barrier,
 (This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-13T04:09:27+00:00</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70606</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002303</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PE cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
@@ -1897,6 +1983,7 @@ Pigmented ciliary epithelial cells also contribute to the blood-aqueous barrier,
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In a consensus model of unidirectional secretion, aqueous humour is formed by transferring solute, principally NaCl, from stroma to posterior chamber, with water passively following the osmotic gradient. Unidirectional secretion comprises three sequential steps. First, NaCl is transferred from the stromal interstitium into the pigmented ciliary epithelial (PE) cells. Second, solute passes from the PE into the non-pigmented ciliary epithelial (NPE) cells through gap junctions. Finally, NPE cells release Na+ and Cl− into the aqueous humour.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pigmented ciliary epithelial cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002303</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pigmented ciliary epithelial cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1909,7 +1996,7 @@ Pigmented ciliary epithelial cells also contribute to the blood-aqueous barrier,
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787091</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879601</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002303"/>
@@ -1919,9 +2006,26 @@ Pigmented ciliary epithelial cells also contribute to the blood-aqueous barrier,
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002303"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pigmented ciliary epithelial cells, which are a type of pigment cell, have a crucial function within the eye&apos;s ciliary body. The ciliary body, located behind the iris, is one of the eye’s most vital structures and consists of two types of epithelial cells: the pigmented and the non-pigmented ciliary epithelial cells. The pigmented ciliary epithelial cells form the outer layer of the ciliary body and exhibit a black or brown pigmentation due to the melanin they contain.
+One key function of pigmented ciliary epithelial cells is to aid in the formation of aqueous humor, an intraocular fluid that nourishes the cornea and lens, and maintains intraocular pressure which is essential for the eye’s shape and light refraction. These cells facilitate this function in conjunction with the non-pigmented ciliary epithelial cells. Together, the pigmented and non-pigmented ciliary epithelial cells form a bilayer epithelium that allows the secretion of aqueous humor through a bi-directional fluid transport mechanism.
+Pigmented ciliary epithelial cells also contribute to the blood-aqueous barrier, a physiological frontier that controls the entry and exit of various substances from the blood to the aqueous humor and vice versa. The pigmentation in these cells, intensified by melanin, helps to absorb scattered light coming into the eye, reducing any potential damage and glare.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/S1569-2590(05)10005-6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/j.1444-0938.2002.tb02384.x</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002303"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PE cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/j.exer.2003.09.021</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002303"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002303</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pigmented ciliary epithelial cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1960,7 +2064,7 @@ Pigmented ciliary epithelial cells also contribute to the blood-aqueous barrier,
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787166</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879595</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002304"/>
@@ -2040,7 +2144,7 @@ Pigmented ciliary epithelial cells also contribute to the blood-aqueous barrier,
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787143</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879531</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002565"/>
@@ -2063,12 +2167,12 @@ The malfunction or dysfunction of retinal blood vessel endothelial cells is impl
 
 (This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-06T03:28:27+00:00</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002585</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal blood vessel endothelial cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002585</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial Cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -2076,6 +2180,25 @@ The malfunction or dysfunction of retinal blood vessel endothelial cells is impl
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blood vessel endothelial cell that is part of the retina.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002585"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retinal blood vessel endothelial cells constitute the innermost lining of the blood vessels found in the retina, the light-sensitive layer of tissue at the back of the eye. The primary role of these cells revolves around their location within the retinal vascular system, forming the structure of the blood-retinal barrier, a subset of the larger blood-ocular barrier system. 
+The endothelial cells are particularly involved in the growth of new retinal blood vessels from pre-existing ones (angiogenesis); this is critical in managing the amount of oxygen and essential nutrients delivered to the ocular tissues.  They are crucial for maintaining homeostasis in the retinal environment by controlling the exchange of molecules between the blood and the retina. Furthermore, they mediate immune cell trafficking, supporting the immune privilege of the eye by preventing the unrestricted infiltration of inflammatory cells into the retina, thus maintaining ocular health and normal vision.
+The malfunction or dysfunction of retinal blood vessel endothelial cells is implicated in numerous ocular pathologies, particularly diabetic retinopathy, which is one of the leading causes of blindness worldwide. In such conditions, the compromise in the integrity of the blood-retinal barrier and excess angiogenesis can lead to retinal edema and pathological neovascularization, resulting in vision loss.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:0.1016/j.preteyeres.2015.08.001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.preteyeres.2012.08.004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nature04482</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.5301/EJO.2010.6049</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002585"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002585</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal blood vessel endothelial cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -2101,12 +2224,12 @@ Beyond this, RPE cells take part in the phagocytosis process, where they digest 
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-06T03:37:09+00:00</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004910</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:75802</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002586</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#eye_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal pigment epithelial cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002586</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal pigmented epithelial cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -2119,13 +2242,33 @@ Beyond this, RPE cells take part in the phagocytosis process, where they digest 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787129</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879584</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002586"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An epithelial cell of the retinal pigmented epithelium.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002586"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retinal pigment epithelial (RPE) cells form a single layer of cells at the back of the eye sandwiched between the neurosensory retina and the choroid, playing a significant role in maintaining vision health. These pigment-laden cells are highly specialized and perform an array of metabolic and transport functions essential for the maintenance of the photoreceptor cells (rods and cones) in the retina. The pigmentation of RPE cells actively aids in the absorption of excess light and the prevention of light scattering, thus enhancing the eye&apos;s optical properties.
+The retinal pigment epithelium forms a key part of the blood/retina barrier. The cells have long sheet-like microvilli on their apical membrane that project into the light-sensitive outer segments of the photoreceptors, forming a close structural interaction. The basolateral membrane of the RPE interacts with the underlying Bruch’s membrane, which separates the RPE cells from fenestrated endothelium of the choriocapillaris. 
+RPE cells support the photoreceptor by providing them with oxygen and nutrients (such as glucose, retinol and fatty acids) and removing waste products. They also recycle the visual pigment, in a process called the &quot;visual cycle&quot;, where the RPE cells play a vital role in the regeneration of visual pigment (11-cis retinol) following the absorption of light. This is essential for the maintenance of photoreceptor excitability.
+Beyond this, RPE cells take part in the phagocytosis process, where they digest the shed ends of photoreceptor outer segments, thus, preventing the build-up of waste residue that could otherwise harm retinal health. They also secrete various factors, including growth factors required to maintain the structural integrity of choriocapillaris endothelium and photoreceptors, as well as immunosuppressive factors that play an important role in establishing the immune privilege of the eye.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/febs.16018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1152/physrev.00021.2004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fphar.2021.727870/full</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.sciencedirect.com/topics/chemistry/retinal-pigment</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002586"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002586</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retinal pigment epithelial cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -2171,12 +2314,12 @@ Lens fiber cells play pivotal roles in vision. Their primary function is to tran
 
 (This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009401</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0011004</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens fibre cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens fiber cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0011004</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens fiber cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -2188,9 +2331,29 @@ Lens fiber cells play pivotal roles in vision. Their primary function is to tran
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0011004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lens fiber cells are specialized, elongated cells located in the ocular lens, an important part of the eye responsible for focusing light onto the retina to create clear defined images. These cells are unique among body cells, as they are transparent and filled with a clear protein called crystallin to facilitate the passage of light.
+The entire life cycle of a lens fiber cell includes differentiation from lens epithelial cells, which are the progenitor cells lying at the anterior surface of the lens. In response to various signals, these cells elongate and migrate towards the posterior pole, while simultaneously undergoing a process of denucleation and degradation of cellular organelles. This unique process ensures that the cells do not scatter light, which is critical for the transparency of the lens. After reaching full maturity, lens fiber cells form tightly packed layers, known as laminae, to make up the distinctive architecture of the ocular lens. 
+Lens fiber cells play pivotal roles in vision. Their primary function is to transmit and focus the light that enters the eye onto the retina, providing the sharpness and clarity necessary for vision. The precise alignment and organization of these cells allow for optimal light transmittance and minimizes scattering, thereby maintaining the transparency of the lens. As such, disruptions or abnormalities in lens fiber cells can lead to serious vision impairment, including conditions like cataracts, a common condition characterized by the opacification of the lens.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.exer.2016.03.016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.pbiomolbio.2003.11.012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1098/rstb.2010.0300</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1242/dev.107953</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.sciencedirect.com/topics/immunology-and-microbiology/lens-fiber</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0011004"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009401</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0011004"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0011004</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens fiber cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -2269,7 +2432,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000740"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.006995</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066760</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4023188"/>
@@ -2303,7 +2466,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000740"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007010</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066776</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4023189"/>
@@ -2434,7 +2597,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787118</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879551</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000389"/>
@@ -2487,7 +2650,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787120</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879546</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000390"/>
@@ -2547,6 +2710,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal lamina of epithelium</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal epithelium</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal lamina of epithelium</skos:prefLabel>
         <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://upload.wikimedia.org/wikipedia/commons/6/65/Basal_lamina.jpg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
@@ -2559,7 +2723,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:53.666576</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:32.082906</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000482"/>
@@ -2676,6 +2840,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cranial nerve II</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cranial nerve II</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optic nerve</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -2688,7 +2853,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:52.646364</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:31.063555</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000941"/>
@@ -2859,6 +3024,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cornea</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cornea</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cornea</skos:prefLabel>
         <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://upload.wikimedia.org/wikipedia/commons/1/1e/Schematic_diagram_of_the_human_eye_en.svg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
@@ -2871,7 +3037,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787154</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879603</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000964"/>
@@ -2954,6 +3120,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens of camera-type eye</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lens of camera-type eye</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000965"/>
@@ -2965,7 +3132,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787175</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879588</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000965"/>
@@ -3108,7 +3275,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787122</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879592</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000966"/>
@@ -3269,7 +3436,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787152</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879594</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001605"/>
@@ -3368,7 +3535,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787113</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879555</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001769"/>
@@ -3484,7 +3651,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787134</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879597</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001772"/>
@@ -3700,7 +3867,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787141</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879562</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001775"/>
@@ -3791,7 +3958,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002203"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.007007</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.066778</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001776"/>
@@ -3903,7 +4070,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787149</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879559</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001778"/>
@@ -4001,7 +4168,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787162</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879566</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001782"/>
@@ -4148,7 +4315,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787124</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879568</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001783"/>
@@ -4282,7 +4449,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787157</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879553</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001789"/>
@@ -4418,7 +4585,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787131</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879590</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001791"/>
@@ -4430,7 +4597,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:52.898007</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:31.325814</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001791"/>
@@ -4442,7 +4609,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:52.898005</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:31.325816</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001791"/>
@@ -4574,7 +4741,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787107</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879573</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001792"/>
@@ -4586,7 +4753,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:52.898002</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:31.325818</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001792"/>
@@ -4706,7 +4873,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787110</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879586</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001803"/>
@@ -4812,7 +4979,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787170</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879577</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001811"/>
@@ -4905,7 +5072,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787164</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879557</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001985"/>
@@ -5110,7 +5277,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787115</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879579</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002444"/>
@@ -5122,7 +5289,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:52.898009</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:31.325796</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002444"/>
@@ -5224,7 +5391,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787145</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879599</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002506"/>
@@ -5236,7 +5403,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:52.897986</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:31.325812</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002506"/>
@@ -5429,7 +5596,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787172</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879575</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003952"/>
@@ -5498,7 +5665,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787127</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879570</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004864"/>
@@ -5605,7 +5772,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787147</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879549</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005336"/>
@@ -5818,7 +5985,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:51.886861</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:30.233340</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006762"/>
@@ -5928,7 +6095,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:17:49.787136</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:20:27.879561</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006763"/>
@@ -5996,6 +6163,7 @@ Midget bipolar cells (imb, fmb) have larger axon terminals at greater distances 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cranial neuron projection bundle</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cranial neuron projection bundle</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve bundle</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>

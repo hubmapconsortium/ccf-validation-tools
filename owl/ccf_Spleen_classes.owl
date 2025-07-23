@@ -392,7 +392,9 @@ WHERE {
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -569,7 +571,16 @@ WHERE {
 
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spatial</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -862,6 +873,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic stem cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoetic Stem Cell</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic stem cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000037"/>
@@ -937,7 +949,6 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-2159</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:14072</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009118</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000192</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMCs</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myocytes, smooth muscle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smooth muscle fiber</oboInOwl:hasExactSynonym>
@@ -946,6 +957,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smooth muscle cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000192</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smooth muscle cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -955,6 +967,20 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D032389</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9315361</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Smooth_muscle_cell</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000192"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smooth muscle cells are a specialized type of muscle cells that are primarily found within the walls of hollow organs such as the intestine, stomach, bladder, uterus, and blood vessels. These cells are an essential component of the autonomic nervous system controling involuntary movements within the body.
+Smooth muscle cells play a vital role in many physiological processes due to their unique functionality. They can contract and relax in a slow, sustained, and controlled manner to help modulate the size and shape of the lumens of the organs they surround. For example, in the digestive system, coordinated contraction and relaxation of smooth muscle cells propels food along the gastrointestinal tract - a process known as peristalsis. In the blood vessels, the smooth muscle cells, by contracting or relaxing, either constrict or dilate the vessels, which in turn, help regulate blood flow and pressure.
+On a cellular level, smooth muscle cells possess a single, centrally located nucleus and contain an arranged network of actin and myosin filaments, which are the proteins responsible for muscle contraction. Unlike their counterparts in skeletal or cardiac muscles, these cells lack specific contact points for these filaments, hence the lack of visible striations. Furthermore, the contraction of smooth muscle cells is regulated by hormones and neurotransmitters, such as acetylcholine and norepinephrine, adding an additional layer of complex regulation to these highly specialized cells.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1093/ptj/81.11.1810</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://training.seer.cancer.gov/anatomy/muscular/types.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/books/NBK10854/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/books/NBK526125</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/books/NBK556137/</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000192"/>
@@ -973,6 +999,12 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myocytes, smooth muscle</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D032389</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000192"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000192</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smooth muscle cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -993,6 +1025,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erythrocyte</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erythrocytes</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erythrocyte</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000232"/>
@@ -1671,7 +1704,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724617</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825020</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000845"/>
@@ -1714,7 +1747,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724610</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.824991</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000872"/>
@@ -1755,7 +1788,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724623</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.824998</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000874"/>
@@ -2270,13 +2303,13 @@ Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the b
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-24T02:05:28+00:00</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004167</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:68458</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002138</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphatic endothelial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of lymphatic vessel</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002138</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphatic Endothelium Cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -2289,7 +2322,7 @@ Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the b
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724630</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825003</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002138"/>
@@ -2297,6 +2330,26 @@ Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the b
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A endothelial cell of a lymphatic vessel. The border of the oak leaf-shaped endothelial cell of initial lymphatics are joined by specialized buttons. The discontinuous feature of buttons distinguishes them from zippers in collecting lymphatics, but both types of junctions are composed of proteins typical of adherens junctions and tight junctions found in the endothelium of blood vessels. Buttons seal the sides of flaps of the oak leaf-shaped endothelial cell, leaving open the tips of flaps as routes for fluid entry without disassembly and reformation of intercellular junctions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17846148</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002138"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial cells of lymphatic vessels are specialized type of cells that form the interior lining of the lymphatic system, which primarily comprises the lymph vessels and nodes. These cells play a critical role in creating a barrier between the lymphatic system and the surrounding tissues. They are structurally different from the endothelial cells of the blood vessels due to the presence of anchoring filaments and lack of a continuous basement membrane, and have a unique phenotype marked by the expression of various cell-specific markers such as Prox-1, VEGFR-3, and LYVE-1.
+A significant function of these endothelial cells is to maintain the fluid balance within the body. They facilitate the uptake of excess interstitial fluid that collects in the body tissues, and ensure its transport back into the bloodstream via the lymphatic vessels. These cells also enable the absorption of fats and fat-soluble vitamins from the digestive system, and their subsequent transport in the form of chyle, a milky fluid, to the blood.
+Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the body&apos;s immune response. They enable the passage of lymphocytes, that are crucial for the body&apos;s defense mechanism, from the tissues into the lymph where these cells are activated to fight against foreign bodies and infections. Also, they regulate inflammation reactions by controlling the migration of inflammatory cells, and are thus involved in pathological conditions with an inflammatory component. Lastly, these cells have been noted for their involvement in various disease states related to tissue edema, metastasis, and tumor growth, thus highlighting their importance in both health and disease states.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.it.2022.10.010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41577-020-0281-x</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2019.00036</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fphys.2020.00509/full</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3892/mco.2017.1356</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002138"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002138</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of lymphatic vessel on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -2369,16 +2422,35 @@ Another significant function of vein endothelial cells is the regulation of bloo
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-02-28T03:48:11+00:00</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62104</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001099</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002543</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of vein</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">venous endothelial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vein endothelial cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002543</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Endothelial Cells</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vein endothelial cell</skos:prefLabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002543"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vein endothelial cells form a thin layer of squamous cells, the endothelium, lining the interior surface of veins throughout the body. They shape the inner cellular lining of the entire vascular system, including the heart, playing a crucial role in blood circulation. The unique characteristic compact arrangement of these cells enables veins to act as a barrier between the blood (that can contain foreign substances) and the surrounding venous tissue and maintain the integrity of the vascular system.
+The primary function of vein endothelial cells is to control the exchange of substances between the bloodstream and the surrounding tissues. They facilitate selective transportation of molecules depending on their size and solubility, including gases, nutrients, hormones, and waste products. Vein endothelial cells also play a protective role by inhibiting the translocation of toxins or pathogens from blood to tissues. Additionally, these cells are involved in blood coagulation and inflammation response, primarily by producing substances that inhibit blood clot formation under normal conditions and initiating clotting when necessary.
+Another significant function of vein endothelial cells is the regulation of blood flow and blood pressure. They produce and release several substances, including nitric oxide and prostacyclin, which help in controlling vasodilation and vasoconstriction, thereby regulating blood pressure. These cells are also responsible for angiogenesis, the formation of new blood vessels, which is crucial during wound healing and in the formation of granulation tissue. Consequently, any dysfunction in vein endothelial cells can lead to severe health problems like atherosclerosis, hypertension, and thrombosis.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1007/s00441-008-0706-5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41569-022-00770-1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41598-021-01360-w</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3390/ijms20184411</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002543"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002543</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vein endothelial cell on CELLxGENE CellGuide</rdfs:label>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002543"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2451,12 +2523,12 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004758</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67761</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001095</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_1000413</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arterial endothelial cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of artery</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_1000413</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Endothelial Cells</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -2464,6 +2536,26 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blood vessel endothelial cell that is part of an arterial endothelium.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000413"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial cells of the artery, also referred to as arterial endothelial cells, form an integral part of the arterial system. They form a single layer, known as the endothelium, lining the interior surface of arteries, and are able to respond to the high-pressure and flow conditions present in arteries. The primary role of these cells is to provide a barrier between the vessel wall and the blood, exhibiting selective permeability to regulate the movement of liquids, gases, and blood-borne substances across the vascular wall.
+Arterial endothelial cells significantly contribute to maintaining vascular homeostasis. They are at the forefront of sensations and responses to mechanical stimuli, like shear stress and blood pressure changes. An additional key function pertains to the production of nitric oxide, which helps to regulate vascular tone and blood pressure, prevents platelet aggregation, limits leukocyte adhesion to the endothelium, and inhibits smooth muscle cell proliferation. These varied but connected functions help to preclude the development of atherosclerosis, ensuring normal circulation and arterial health.
+Moreover, these cells play a pivotal role in inflammation and coagulation processes. During inflammatory events, they express various adhesion molecules, aiding in leukocyte recruitment and rolling onto the vessel walls for immune response. They also produce anticoagulant and procoagulant substances, involved in blood clotting and clot dissolution, respectively. Dysregulation of the usual functions of arterial endothelial cells can result in serious pathophysiological conditions, such as atherosclerosis, hypertension, and other cardiovascular diseases.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1007/s00441-008-0706-5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1007/s10456-021-09785-7</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.ccm.2021.08.005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.jvs.2004.03.043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1177/153857440303700107</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000413"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_1000413</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of artery on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -2496,7 +2588,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724615</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825011</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000489"/>
@@ -2542,6 +2634,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">catecholaminergic neuron</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catecholaminergic Neuron</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">catecholaminergic neuron</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033050"/>
@@ -2672,7 +2765,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724626</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.824996</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001248"/>
@@ -2765,7 +2858,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:56.649225</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:53.707173</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001250"/>
@@ -2777,7 +2870,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:28:03.018363</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:31:00.095544</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001250"/>
@@ -2789,7 +2882,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:28:03.018379</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:31:00.095559</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001250"/>
@@ -2972,7 +3065,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724601</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825018</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001266"/>
@@ -2984,7 +3077,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:28:03.018382</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:31:00.095561</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001266"/>
@@ -3156,7 +3249,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:56.649207</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:53.707245</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001959"/>
@@ -3228,7 +3321,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724619</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825009</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001960"/>
@@ -3483,7 +3576,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724632</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.824986</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003910"/>
@@ -3569,7 +3662,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724624</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.824983</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004041"/>
@@ -3581,7 +3674,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:28:02.080247</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:59.206346</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004041"/>
@@ -3642,7 +3735,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724634</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825016</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004042"/>
@@ -3714,7 +3807,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724604</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.824993</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004641"/>
@@ -3821,7 +3914,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724614</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825023</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005196"/>
@@ -3929,7 +4022,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724628</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.824989</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010399"/>
@@ -3989,7 +4082,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724608</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825000</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010400"/>
@@ -4061,7 +4154,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724606</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.824967</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010401"/>
@@ -4073,7 +4166,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724621</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825014</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010401"/>
@@ -4136,7 +4229,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724585</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825007</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010421"/>
@@ -4273,7 +4366,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:28:00.487231</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:57.582881</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013132"/>
@@ -4335,7 +4428,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:57.724612</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:54.825005</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>

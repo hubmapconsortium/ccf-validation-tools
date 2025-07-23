@@ -288,7 +288,9 @@ WHERE {
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -330,14 +332,7 @@ WHERE {
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/information-artifact-ontology/ontology-metadata/issues/18</obo:IAO_0000233>
-        <rdfs:label xml:lang="en">has broad synonym</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/information-artifact-ontology/ontology-metadata/issues/18</rdfs:seeAlso>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
     
 
 
@@ -422,6 +417,12 @@ WHERE {
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_class_level -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_class_level"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
@@ -472,7 +473,16 @@ WHERE {
 
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spatial</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -751,6 +761,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ependymal cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ependymal Cell</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ependymal cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000065"/>
@@ -834,6 +845,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial Cell</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
@@ -950,7 +962,6 @@ While their protective role generally benefits the brain, their over-activation 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000962</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:54539</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009077</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000129</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brain-resident macrophage</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hortega cells</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microgliocyte</oboInOwl:hasExactSynonym>
@@ -961,6 +972,7 @@ While their protective role generally benefits the brain, their over-activation 
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unlike macroglial cells, microglial cells  arise from hematopoietic stem cells in the yolk sac during early embryogenesis that populate the central nervous system. They derive from embryonic mesoderm and are not from neuroectoderm where glioblast develops from. Markers: Mouse: CD11b+, F4/80+, CD68+. They represent ~12% of the cells in the CNS, but they are not uniformly distributed within the CNS. A normal adult mouse brain has approximately 3.5x10e6 microglia. Microglia are also reportedly CD3-negative, CD4-positive, CD8-negative, CD11b-positive, CD11c-high, CD14-negative, CD19-negative, CD45-low, CD56-negative, CD163-negative, CD200R-positive, CD281-positive, CD282-positive, CD283-positive, CD284-positive, CD285-positive, CD286-positive, CD287-positive, CD288-positive, CD289-positive, Gr1-negative, nestin-positive, and PU.1-positive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microglial cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000129</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microglia</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -980,6 +992,22 @@ While their protective role generally benefits the brain, their over-activation 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19461673</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2089275</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Microglia</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000129"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microglial cells, sometimes referred to as microglia, are a type of glial cell that primarily exist within the central nervous system (CNS), notably in the brain and the spinal cord. Classified among the resident immune cells, microglial cells represent about 10% of all cells found within the CNS. These cells are derived from progenitor cells in the yolk sac, which differentiates them from other types of glial cells (such as astrocytes and oligodendrocytes) that are derived from neuroectodermal cell lineages. 
+The primary role of microglial cells is to act as the first and main active form of immune defense in the CNS. They express a vast repertoire of pattern recognition receptors, which allow them to sense and eliminate microbes invading the CNS parenchyma. They represent one of the macrophage populations of the CNS and are responsible for phagocytosis (engulfing and destroying cellular waste or pathogens) in the neural environment. 
+Microglial cells are particularly responsive to pathogens and injuries and change their morphology in reaction to inflammation or insult: In the normal state they are characterized by a ramified shape with small processes; in response to stimuli, some microglia mature and change to an amoeboid shape. 
+Beyond their macrophagic activity, they also perform synaptic pruning during brain development, eliminate unnecessarily produced neurons, and facilitate tissue regeneration and repair. they play integral roles in regulating neural development and supporting cell survival and are important for maintaining tissue homeostasis. 
+While their protective role generally benefits the brain, their over-activation can occasionally lead to neuro-inflammatory diseases, underlining the importance of balanced microglial cell functions. They have been extensively studied for their association with neurodegenerative diseases, such as Alzheimer&apos;s disease, Parkinson&apos;s disease, and multiple sclerosis.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.cell.2019.08.053</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.conb.2022.102674</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.tins.2021.11.001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nri3086</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fnins.2021.742065</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000129"/>
@@ -1005,6 +1033,12 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microglia</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.1038/s41598-020-66092-9</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003004"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000129"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000129</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microglial cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1060,6 +1094,7 @@ While their protective role generally benefits the brain, their over-activation 
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ventral Inhibitory Neuron 1</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ventral Inhibitory Neuron 2</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ventral Inhibitory Neuron 3</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuron</skos:prefLabel>
         <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.swissbiopics.org/api/image/Neuron_cells.svg</foaf:depiction>
     </owl:Class>
     <owl:Axiom>
@@ -1087,16 +1122,16 @@ While their protective role generally benefits the brain, their over-activation 
     <!-- http://purl.obolibrary.org/obo/CL_0002453 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002453">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A progenitor cell of the central nervous system that can differentiate into oligodendrocytes or type-2 astrocytes. This cell originates from multiple structures within the developing brain including the medial ganglion eminence and the lateral ganglionic eminence. These cells migrate throughout the central nervous system and persist into adulthood where they play an important role in remyelination of injured neurons.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proliferative and migratory glial progenitor cell that derives from a neural stem cell and resides within the central nervous system. It possesses the capacity to differentiate into a committed oligodendrocyte progenitor (COP) through a well-defined series of maturation steps, ultimately giving rise to a myelinating oligodendrocyte (MOL). In mice and humans, it is characterized by the expression of specific molecular markers, including Pdgfra, Cspg4 (also known as NG2) and Olig2.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type can be purified from optic nerves and other regions of the embryonic, postnatal and adult rat CNS and can be differentiated in vitro to oligodendrocytes and type-2 astrocytes. Some references use the terms &apos;oligodendrocyte precursor cell&apos; and &apos;oligodendrocyte type-2 astrocyte (O-2A) progenitor&apos; to refer to the same entity (e.g., PMID:10704434), while others describe an oligodendrocyte type-2 astrocyte (O-2A) progenitor cell as the precurosr to oligodendrocyte- and type-2 astrocyte- progenitor cells (e.g, ISBN:9780702028991).</terms:description>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-10T02:51:34+00:00</oboInOwl:creation_date>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oligodendrocyte-type 2 astrocyte (O-2A) progenitor cell</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oligodendrocyte/type-2 astrocyte progenitor cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D000073637</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-2A/OPC</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O2A/OPC</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NG2 cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O2-A</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPC</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polydendrocyte</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -1106,41 +1141,47 @@ While their protective role generally benefits the brain, their over-activation 
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002453"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A progenitor cell of the central nervous system that can differentiate into oligodendrocytes or type-2 astrocytes. This cell originates from multiple structures within the developing brain including the medial ganglion eminence and the lateral ganglionic eminence. These cells migrate throughout the central nervous system and persist into adulthood where they play an important role in remyelination of injured neurons.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proliferative and migratory glial progenitor cell that derives from a neural stem cell and resides within the central nervous system. It possesses the capacity to differentiate into a committed oligodendrocyte progenitor (COP) through a well-defined series of maturation steps, ultimately giving rise to a myelinating oligodendrocyte (MOL). In mice and humans, it is characterized by the expression of specific molecular markers, including Pdgfra, Cspg4 (also known as NG2) and Olig2.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10704434</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11756508</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16367798</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20142420</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:31583586</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:31726662</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:37653126</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002453"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type can be purified from optic nerves and other regions of the embryonic, postnatal and adult rat CNS and can be differentiated in vitro to oligodendrocytes and type-2 astrocytes. Some references use the terms &apos;oligodendrocyte precursor cell&apos; and &apos;oligodendrocyte type-2 astrocyte (O-2A) progenitor&apos; to refer to the same entity (e.g., PMID:10704434), while others describe an oligodendrocyte type-2 astrocyte (O-2A) progenitor cell as the precurosr to oligodendrocyte- and type-2 astrocyte- progenitor cells (e.g, ISBN:9780702028991).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9780702028991</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10704434</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2182078</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:24133281</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9826671</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002453"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oligodendrocyte-type 2 astrocyte (O-2A) progenitor cell</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2253328</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002453"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oligodendrocyte/type-2 astrocyte progenitor cell</owl:annotatedTarget>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0819-0473"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:24133281</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002453"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-2A/OPC</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:24133281</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NG2 cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14501223</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002453"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O2-A</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2182078</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002453"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O2A/OPC</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11756508</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPC</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14501223</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002453"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polydendrocyte</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:23516142</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1359,7 +1400,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820475</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471231</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002726"/>
@@ -1468,7 +1509,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820425</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471274</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002792"/>
@@ -1575,7 +1616,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820489</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471294</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003038"/>
@@ -1668,7 +1709,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820482</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471279</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005839"/>
@@ -1733,24 +1774,6 @@ While their protective role generally benefits the brain, their over-activation 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005840"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005843"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820491</dc:date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005840"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subdivision of spinal cord dorsal column that is part of a sacral spinal cord.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005840"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sacral spinal cord posterior column</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BIRNLEX:1514</oboInOwl:hasDbXref>
@@ -1760,6 +1783,24 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sacral subsegment of dorsal funiculus of spinal cord</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:258198</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005840"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005843"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471290</dc:date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005840"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subdivision of spinal cord dorsal column that is part of a sacral spinal cord.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1799,7 +1840,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820521</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471175</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005841"/>
@@ -1879,7 +1920,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820418</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471239</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005843"/>
@@ -1961,7 +2002,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820416</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471266</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005847"/>
@@ -2007,7 +2048,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820466</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471296</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005848"/>
@@ -2048,7 +2089,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820406</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471313</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005849"/>
@@ -2094,7 +2135,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820493</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471286</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005850"/>
@@ -2136,7 +2177,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820503</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471264</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005852"/>
@@ -2188,7 +2229,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820511</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471330</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005853"/>
@@ -2231,7 +2272,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820446</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471322</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005854"/>
@@ -2288,7 +2329,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007716"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988504</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585850</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006447"/>
@@ -2351,7 +2392,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007716"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988568</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585875</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006448"/>
@@ -2414,7 +2455,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007716"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988534</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585829</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006449"/>
@@ -2477,7 +2518,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007716"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988522</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585877</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006450"/>
@@ -2540,7 +2581,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007716"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988554</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585858</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006451"/>
@@ -2604,7 +2645,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988551</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585811</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006452"/>
@@ -2667,7 +2708,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988515</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585827</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006453"/>
@@ -2730,7 +2771,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988594</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585839</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006454"/>
@@ -2793,7 +2834,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988577</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585819</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006455"/>
@@ -2856,7 +2897,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988531</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585833</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006456"/>
@@ -2919,7 +2960,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988570</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585841</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006457"/>
@@ -2982,7 +3023,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988590</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585837</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006458"/>
@@ -3045,7 +3086,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988527</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585846</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006459"/>
@@ -3108,7 +3149,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007717"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988486</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585862</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006460"/>
@@ -3171,7 +3212,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007717"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988556</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585825</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006461"/>
@@ -3234,7 +3275,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007717"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988549</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585813</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006462"/>
@@ -3297,7 +3338,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007717"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988541</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585866</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006463"/>
@@ -3359,7 +3400,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007717"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988507</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585831</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006464"/>
@@ -3422,7 +3463,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988510</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585852</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006465"/>
@@ -3485,7 +3526,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988566</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585860</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006466"/>
@@ -3548,7 +3589,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988561</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585856</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006467"/>
@@ -3611,7 +3652,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988596</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585809</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006468"/>
@@ -3675,7 +3716,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007714"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988575</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585815</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006469"/>
@@ -3739,7 +3780,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007714"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988536</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585784</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006470"/>
@@ -3802,7 +3843,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007714"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988517</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585823</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006488"/>
@@ -3866,7 +3907,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007714"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988529</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585871</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006489"/>
@@ -3930,7 +3971,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007714"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988539</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585864</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006490"/>
@@ -3994,7 +4035,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007714"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988573</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585844</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006491"/>
@@ -4058,7 +4099,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007714"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988519</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585806</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006492"/>
@@ -4122,7 +4163,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007714"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988564</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585835</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006493"/>
@@ -4189,7 +4230,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820431</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471195</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007714"/>
@@ -4220,7 +4261,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003038"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988546</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585868</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007715"/>
@@ -4252,7 +4293,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002792"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988544</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585821</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007716"/>
@@ -4294,7 +4335,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820464</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471270</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007717"/>
@@ -4364,7 +4405,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820433</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471280</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007835"/>
@@ -4411,7 +4452,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820468</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471242</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007836"/>
@@ -4458,7 +4499,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820449</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471311</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007837"/>
@@ -4620,7 +4661,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820472</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471326</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014607"/>
@@ -4689,7 +4730,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820519</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471282</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014609"/>
@@ -4753,7 +4794,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820451</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471300</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014610"/>
@@ -4821,7 +4862,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820386</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471317</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014611"/>
@@ -4879,7 +4920,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820421</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471262</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014612"/>
@@ -4947,7 +4988,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820459</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471324</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014613"/>
@@ -5003,7 +5044,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820414</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471193</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014614"/>
@@ -5061,7 +5102,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820477</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471320</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014619"/>
@@ -5130,7 +5171,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820470</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471246</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014620"/>
@@ -5195,7 +5236,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820516</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471284</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014621"/>
@@ -5270,7 +5311,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820441</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471332</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014622"/>
@@ -5327,7 +5368,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820498</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471335</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014623"/>
@@ -5389,7 +5430,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820513</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471307</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014632"/>
@@ -5447,7 +5488,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820457</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471277</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014633"/>
@@ -5515,7 +5556,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820461</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471304</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014636"/>
@@ -5572,7 +5613,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820423</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471257</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014637"/>
@@ -5634,7 +5675,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:37.023809</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:33.791951</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014638"/>
@@ -5693,7 +5734,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820506</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471250</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0026246"/>
@@ -5730,7 +5771,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014636"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988588</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585870</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0026293"/>
@@ -5742,7 +5783,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820479</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471259</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0026293"/>
@@ -5783,7 +5824,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820484</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471288</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0026386"/>
@@ -5824,7 +5865,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820496</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471268</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0029503"/>
@@ -5872,7 +5913,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820436</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471272</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0029538"/>
@@ -5884,7 +5925,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820412</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471315</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0029538"/>
@@ -5927,7 +5968,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014613"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988512</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585854</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0029626"/>
@@ -5939,7 +5980,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820525</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471254</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0029626"/>
@@ -5980,7 +6021,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820409</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471328</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0029636"/>
@@ -6034,7 +6075,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820454</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471298</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0030276"/>
@@ -6046,7 +6087,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:37.023788</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:33.791968</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0030276"/>
@@ -6058,7 +6099,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:37.023813</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:33.791971</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0030276"/>
@@ -6101,7 +6142,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0029503"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988559</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585817</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0031111"/>
@@ -6113,7 +6154,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820486</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471306</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0031111"/>
@@ -6155,7 +6196,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820508</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471302</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0031906"/>
@@ -6209,7 +6250,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820443</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471292</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0032748"/>
@@ -6221,7 +6262,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820438</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471333</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0032748"/>
@@ -6258,7 +6299,7 @@ While their protective role generally benefits the brain, their over-activation 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0029636"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:32.988524</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:29.585848</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0033483"/>
@@ -6306,7 +6347,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820428</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471309</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0033939"/>
@@ -6318,7 +6359,7 @@ While their protective role generally benefits the brain, their over-activation 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:27:33.820403</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:30:30.471235</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0033939"/>

@@ -440,7 +440,9 @@ WHERE {
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -630,7 +632,16 @@ WHERE {
 
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spatial</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -921,13 +932,14 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-2158</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:9727</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009115</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000188</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skeletal muscle cell</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell of skeletal muscle</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000188</rdfs:seeAlso>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell of skeletal muscle</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skeletal muscle cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -940,7 +952,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400972</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213644</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000188"/>
@@ -950,9 +962,29 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000188"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skeletal muscle cells, or myocytes, are essential for the musculoskeletal system, featuring a striated appearance from tightly packed sarcomeres. These elongated, multi-nucleated cells convert ATP into mechanical energ and are key for voluntary movement and posture. They also are responsible for maintaining body temperature, storing nutrients, and stabilizing joints.
+Skeletal muscle cells organize themselves tightly into bundles to form muscle fibers. Embedded within each of these cells are thousands of myofibrils, which are made up of the contractile proteins, actin (the thin filament), and myosin (the thick filament). Contraction of a skeletal muscle cell occurs when these myofibrils shorten, a process driven by the sliding of actin and myosin filaments over each other in a mechanism famously known as the sliding filament theory.
+Additionally, skeletal muscle cells exhibit a high degree of plasticity, which allows for their adaptation in response to alterations in functional demands or damages. They have an innate regenerative capacity due to the presence of satellite cells—quiescent muscle stem cells that reside within the muscle fibers. Upon muscle injury, these satellite cells become activated, proliferate, and differentiate into new muscle cells, thereby contributing to the repair and growth of injured skeletal muscle. With this, skeletal muscle cells serve not only a pivotal biomechanical function but also possess a great capacity for self-healing and regeneration.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1002/cphy.c160033</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3390/biology10101056</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nature.com/scitable/topicpage/the-sliding-filament-theory-of-muscle-contraction-14567666/</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/books/NBK537139</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/books/NBK9961/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000188"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009115</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000188"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000188</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell of skeletal muscle on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1006,7 +1038,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964207</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443158</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000303"/>
@@ -1082,7 +1114,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964218</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443179</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000368"/>
@@ -1139,7 +1171,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964249</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443240</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000370"/>
@@ -1209,7 +1241,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964294</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443038</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000372"/>
@@ -1269,6 +1301,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculature of body</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">muscular system</skos:prefLabel>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculature of body</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000383"/>
@@ -1373,7 +1406,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964384</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443261</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000950"/>
@@ -1445,7 +1478,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001495"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363204</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103129</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001100"/>
@@ -1457,7 +1490,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964275</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443085</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001100"/>
@@ -1530,7 +1563,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008523"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363237</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103102</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001107"/>
@@ -1626,7 +1659,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008523"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363131</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103107</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001108"/>
@@ -1711,7 +1744,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008523"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363156</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103153</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001109"/>
@@ -1798,10 +1831,22 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thyreohyoideus muscle</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Thyrohyoid_muscle</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thyrohyoideus</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Thyrohyoid_muscle</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001110"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008523"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363211</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103073</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001110"/>
@@ -1840,18 +1885,6 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001110"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thyreohyoideus</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Thyrohyoid_muscle</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001110"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thyreohyoideus muscle</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Thyrohyoid_muscle</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001110"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thyrohyoideus</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Thyrohyoid_muscle</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1907,7 +1940,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964472</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443002</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001112"/>
@@ -1979,7 +2012,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964401</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443059</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001122"/>
@@ -2060,7 +2093,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001482"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363215</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103138</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001125"/>
@@ -2072,7 +2105,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964237</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443069</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001125"/>
@@ -2168,7 +2201,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964220</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443088</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001128"/>
@@ -2321,7 +2354,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001482"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363172</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103083</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001129"/>
@@ -2333,7 +2366,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964212</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443170</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001129"/>
@@ -2423,7 +2456,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002461"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363230</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103140</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001221"/>
@@ -2435,7 +2468,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964241</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443029</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001221"/>
@@ -2596,7 +2629,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008549"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363160</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103109</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001298"/>
@@ -2608,7 +2641,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964348</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442990</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001298"/>
@@ -2677,7 +2710,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964226</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443052</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001327"/>
@@ -2756,7 +2789,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002379"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363228</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103111</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001339"/>
@@ -2768,7 +2801,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964307</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442997</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001339"/>
@@ -2876,7 +2909,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964452</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443254</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001369"/>
@@ -2958,7 +2991,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002000"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363195</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103061</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001370"/>
@@ -2970,7 +3003,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964399</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442986</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001370"/>
@@ -3043,7 +3076,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008549"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363213</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103088</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001372"/>
@@ -3055,7 +3088,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964233</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442995</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001372"/>
@@ -3212,7 +3245,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964284</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442982</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001374"/>
@@ -3284,7 +3317,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964197</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443016</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001375"/>
@@ -3352,7 +3385,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964216</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443078</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001379"/>
@@ -3415,7 +3448,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964442</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443011</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001380"/>
@@ -3472,7 +3505,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964189</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443113</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001381"/>
@@ -3545,7 +3578,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964446</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443150</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001382"/>
@@ -3643,7 +3676,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400970</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213652</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001383"/>
@@ -3655,7 +3688,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964393</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443116</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001383"/>
@@ -3760,7 +3793,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964380</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443111</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001386"/>
@@ -3849,7 +3882,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964339</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443118</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001388"/>
@@ -3947,7 +3980,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964261</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443155</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001389"/>
@@ -4026,7 +4059,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964395</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443166</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001391"/>
@@ -4101,7 +4134,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964423</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443243</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001392"/>
@@ -4166,7 +4199,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964321</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443250</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001400"/>
@@ -4247,7 +4280,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964337</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443224</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001401"/>
@@ -4347,7 +4380,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964364</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443109</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001402"/>
@@ -4425,7 +4458,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964388</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443026</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001405"/>
@@ -4526,7 +4559,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001482"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363232</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103119</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001476"/>
@@ -4538,7 +4571,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964431</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443007</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001476"/>
@@ -4649,7 +4682,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001482"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363187</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103131</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001477"/>
@@ -4661,7 +4694,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964450</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443122</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001477"/>
@@ -4742,7 +4775,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001482"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363185</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103121</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001478"/>
@@ -4754,7 +4787,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964194</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443165</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001478"/>
@@ -4824,7 +4857,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964436</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443039</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001482"/>
@@ -4905,7 +4938,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964352</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443015</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001495"/>
@@ -5008,7 +5041,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400980</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213634</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001499"/>
@@ -5020,7 +5053,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964382</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443082</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001499"/>
@@ -5110,7 +5143,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964448</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443008</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001500"/>
@@ -5187,7 +5220,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964247</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443153</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001505"/>
@@ -5274,7 +5307,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964468</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443106</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001506"/>
@@ -5367,7 +5400,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964460</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443060</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001509"/>
@@ -5450,7 +5483,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964265</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443156</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001521"/>
@@ -5528,7 +5561,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964280</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443160</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001522"/>
@@ -5604,7 +5637,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964271</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443114</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001523"/>
@@ -5679,7 +5712,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964370</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443171</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001524"/>
@@ -5747,7 +5780,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964317</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443140</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001525"/>
@@ -5821,7 +5854,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964409</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443067</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001526"/>
@@ -5882,7 +5915,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008571"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363170</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103091</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001564"/>
@@ -5974,7 +6007,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008571"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363225</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103081</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001565"/>
@@ -6062,7 +6095,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001568"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363176</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103069</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001566"/>
@@ -6074,7 +6107,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964327</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443173</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001566"/>
@@ -6146,7 +6179,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002377"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363152</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103079</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001568"/>
@@ -6158,7 +6191,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964421</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443054</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001568"/>
@@ -6233,7 +6266,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001575"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363207</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103071</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001571"/>
@@ -6245,7 +6278,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964403</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443101</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001571"/>
@@ -6354,7 +6387,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001575"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363241</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103054</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001572"/>
@@ -6366,7 +6399,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964407</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443064</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001572"/>
@@ -6453,7 +6486,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003682"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363164</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103115</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001574"/>
@@ -6465,7 +6498,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964333</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443072</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001574"/>
@@ -6531,6 +6564,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extrinsic muscle of tongue</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extrinsic muscle of tongue</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extrinsic tongue muscle</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -6543,7 +6577,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964301</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443023</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001575"/>
@@ -6623,7 +6657,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964224</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443186</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001576"/>
@@ -6762,7 +6796,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964456</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443130</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001582"/>
@@ -6857,7 +6891,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003681"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363178</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103076</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001597"/>
@@ -6869,7 +6903,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964203</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443062</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001597"/>
@@ -6965,7 +6999,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003681"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363168</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103094</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001598"/>
@@ -6977,7 +7011,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964462</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443184</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001598"/>
@@ -7083,7 +7117,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964368</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443174</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001599"/>
@@ -7172,7 +7206,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964323</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443056</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001600"/>
@@ -7295,7 +7329,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964358</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442998</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001601"/>
@@ -7440,7 +7474,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001601"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363193</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103151</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001602"/>
@@ -7452,7 +7486,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964243</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443259</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001602"/>
@@ -7561,7 +7595,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001601"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363180</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103128</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001603"/>
@@ -7573,7 +7607,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964476</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443074</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001603"/>
@@ -7913,7 +7947,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964201</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443021</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002000"/>
@@ -7982,7 +8016,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400967</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213642</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002324"/>
@@ -7994,7 +8028,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964172</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443125</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002324"/>
@@ -8076,7 +8110,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400985</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213654</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002376"/>
@@ -8088,7 +8122,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964313</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443036</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002376"/>
@@ -8194,7 +8228,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400975</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213640</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002377"/>
@@ -8206,7 +8240,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964356</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443005</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002377"/>
@@ -8299,7 +8333,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400977</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213659</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002378"/>
@@ -8311,7 +8345,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964346</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442988</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002378"/>
@@ -8390,7 +8424,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964444</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443000</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002379"/>
@@ -8473,7 +8507,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964415</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443124</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002380"/>
@@ -8554,7 +8588,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001495"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363183</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103056</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002381"/>
@@ -8566,7 +8600,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964235</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443194</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002381"/>
@@ -8636,7 +8670,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002461"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363221</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103096</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002382"/>
@@ -8648,7 +8682,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964228</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443010</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002382"/>
@@ -8722,7 +8756,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001482"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363236</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103067</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002383"/>
@@ -8734,7 +8768,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964360</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443161</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002383"/>
@@ -8867,7 +8901,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400988</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213647</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002426"/>
@@ -8879,7 +8913,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964478</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443152</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002426"/>
@@ -8976,7 +9010,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002378"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363158</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103123</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002461"/>
@@ -8988,7 +9022,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964270</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443230</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002461"/>
@@ -9053,7 +9087,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964288</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443003</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002962"/>
@@ -9123,7 +9157,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964470</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443192</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002989"/>
@@ -9200,7 +9234,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964342</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443137</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003222"/>
@@ -9262,7 +9296,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964331</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443100</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003228"/>
@@ -9323,7 +9357,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964231</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443138</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003234"/>
@@ -9392,7 +9426,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964263</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443091</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003250"/>
@@ -9473,7 +9507,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002376"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363210</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103058</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003681"/>
@@ -9485,7 +9519,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964427</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443083</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003681"/>
@@ -9569,7 +9603,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964354</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443051</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003682"/>
@@ -9813,7 +9847,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002461"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363226</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103144</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005442"/>
@@ -9825,7 +9859,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964286</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443142</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005442"/>
@@ -9998,7 +10032,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964419</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443093</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005461"/>
@@ -10089,7 +10123,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964192</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443188</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005467"/>
@@ -10198,7 +10232,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001601"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363174</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103126</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006320"/>
@@ -10210,7 +10244,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964438</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442984</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006320"/>
@@ -10333,7 +10367,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001601"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363206</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103157</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006321"/>
@@ -10345,7 +10379,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964303</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443176</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006321"/>
@@ -10475,7 +10509,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001601"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363234</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103063</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006322"/>
@@ -10487,7 +10521,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964255</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443031</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006322"/>
@@ -10598,7 +10632,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001601"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363223</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103022</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006323"/>
@@ -10610,7 +10644,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964290</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443057</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006323"/>
@@ -10721,7 +10755,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003681"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363166</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103143</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006718"/>
@@ -10733,7 +10767,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964239</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443129</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006718"/>
@@ -10865,7 +10899,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003681"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363200</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103155</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006719"/>
@@ -10877,7 +10911,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964429</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443233</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006719"/>
@@ -11040,7 +11074,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964386</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443108</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007614"/>
@@ -11115,7 +11149,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964454</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443041</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008446"/>
@@ -11198,7 +11232,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964335</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443191</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008454"/>
@@ -11292,7 +11326,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964315</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443044</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008464"/>
@@ -11351,7 +11385,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964299</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443080</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008465"/>
@@ -11412,6 +11446,18 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008488"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0224377</owl:annotatedTarget>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Cremaster_Muscle</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008488"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cremaster</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:21531</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008488"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">muscle of Riolan (cremaster)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:21531</oboInOwl:hasDbXref>
@@ -11451,18 +11497,6 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MP:0011833</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Cremaster_muscle</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008488"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0224377</owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Cremaster_Muscle</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008488"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cremaster</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:21531</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11501,7 +11535,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002000"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363202</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103146</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008521"/>
@@ -11513,7 +11547,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964311</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443181</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008521"/>
@@ -11672,7 +11706,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002000"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363189</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103105</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008529"/>
@@ -11684,7 +11718,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964319</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442992</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008529"/>
@@ -11766,7 +11800,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964466</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443246</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008549"/>
@@ -11877,7 +11911,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001568"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363197</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103149</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008572"/>
@@ -11889,7 +11923,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964464</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443020</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008572"/>
@@ -11973,7 +12007,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001568"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363191</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103051</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008573"/>
@@ -11985,7 +12019,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964282</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443025</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008573"/>
@@ -12079,7 +12113,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001568"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363162</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103065</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008577"/>
@@ -12091,7 +12125,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964278</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443127</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008577"/>
@@ -12161,7 +12195,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003682"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363219</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103086</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008586"/>
@@ -12173,7 +12207,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964425</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443090</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008586"/>
@@ -12261,7 +12295,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964372</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443049</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008593"/>
@@ -12362,7 +12396,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964205</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443028</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008594"/>
@@ -12439,7 +12473,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964440</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443042</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008595"/>
@@ -12516,7 +12550,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964267</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443034</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008596"/>
@@ -12583,7 +12617,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964434</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443070</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008597"/>
@@ -12661,7 +12695,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964214</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443147</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008598"/>
@@ -12719,7 +12753,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964292</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443095</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008609"/>
@@ -12818,7 +12852,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964222</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443104</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008618"/>
@@ -12895,7 +12929,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008571"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363154</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103098</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008712"/>
@@ -13048,7 +13082,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964417</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443178</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010234"/>
@@ -13131,7 +13165,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:50.094315</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:41.376077</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010379"/>
@@ -13214,7 +13248,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001482"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363217</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103117</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010496"/>
@@ -13226,7 +13260,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964413</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443018</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010496"/>
@@ -13387,7 +13421,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964397</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443236</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010933"/>
@@ -13550,7 +13584,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964374</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443075</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010943"/>
@@ -13652,7 +13686,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964309</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443168</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010944"/>
@@ -13803,7 +13837,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964411</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443163</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010953"/>
@@ -13891,7 +13925,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964376</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443077</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010990"/>
@@ -13976,7 +14010,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400962</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213649</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010995"/>
@@ -14047,7 +14081,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964253</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443013</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011011"/>
@@ -14105,7 +14139,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964350</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443047</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011012"/>
@@ -14163,7 +14197,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964245</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443148</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011014"/>
@@ -14225,7 +14259,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002461"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363239</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103100</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011016"/>
@@ -14237,7 +14271,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964210</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443087</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011016"/>
@@ -14311,7 +14345,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964378</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443257</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011022"/>
@@ -14389,7 +14423,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400982</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213657</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011140"/>
@@ -14468,7 +14502,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964474</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443145</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011218"/>
@@ -14527,7 +14561,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002379"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:46.363243</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:37.103113</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011389"/>
@@ -14539,7 +14573,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964405</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443132</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011389"/>
@@ -14632,7 +14666,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964296</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443065</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011511"/>
@@ -14720,7 +14754,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964329</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442966</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011512"/>
@@ -14791,7 +14825,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964305</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443098</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011528"/>
@@ -14901,7 +14935,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964251</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443143</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011532"/>
@@ -14954,7 +14988,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400945</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213617</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011907"/>
@@ -15021,7 +15055,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:47.400965</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:38.213637</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011908"/>
@@ -15087,7 +15121,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964366</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443134</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014379"/>
@@ -15159,7 +15193,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964344</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443183</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014380"/>
@@ -15230,7 +15264,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964199</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443096</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0016493"/>
@@ -15288,7 +15322,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964458</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443046</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0017618"/>
@@ -15355,7 +15389,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964325</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443135</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0019202"/>
@@ -15445,7 +15479,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964391</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443103</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0019203"/>
@@ -15544,7 +15578,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964274</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443189</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0036172"/>
@@ -15607,7 +15641,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964259</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.442993</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0036173"/>
@@ -15691,7 +15725,7 @@ Additionally, skeletal muscle cells exhibit a high degree of plasticity, which a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-16T07:22:51.964257</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-07-23T07:25:43.443033</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0036174"/>
