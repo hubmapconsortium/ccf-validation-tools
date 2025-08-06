@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Small_intestine (2025-07-23)
+ASCT+B Validation Reports for Small_intestine (2025-08-06)
 ==========================================================
 
 Table of contents
@@ -52,9 +52,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:0000186](http://purl.obolibrary.org/obo/CL_0000186)_ has a different name/label in the source ontology in the following 2 rows _[232](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=232:232)_, _[315](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=315:315)_. The name/label in the **ASCT+B table** is _myofibroblast_ and the one in the **ontology** is _myofibroblast cell_. For reference, the given name/label **by SMEs** is _myofibroblasts_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[CL:0000212](http://purl.obolibrary.org/obo/CL_0000212)_ has a different name/label in the source ontology in the following 3 rows _[58](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=58:58)_, _[226](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=226:226)_, _[309](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=309:309)_. The name/label in the **ASCT+B table** is _absorptive cell_ and the one in the **ontology** is _obsolete absorptive cell_. For reference, the given name/label **by SMEs** is _absorptive_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[CL:0000186](http://purl.obolibrary.org/obo/CL_0000186)_ has a different name/label in the source ontology in the following 2 rows _[232](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=232:232)_, _[315](https://docs.google.com/spreadsheets/d/1KMOjJj-bVAqo39KuIOo0SaIVRtW9-5C5Y65NwnXlGqw/edit#gid=247140941&range=315:315)_. The name/label in the **ASCT+B table** is _myofibroblast_ and the one in the **ontology** is _myofibroblast cell_. For reference, the given name/label **by SMEs** is _myofibroblasts_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID

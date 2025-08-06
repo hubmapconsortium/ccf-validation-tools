@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Skin (2025-07-23)
+ASCT+B Validation Reports for Skin (2025-08-06)
 ===============================================
 
 Table of contents
@@ -52,9 +52,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:0000649](http://purl.obolibrary.org/obo/CL_0000649)_ has a different name/label in the source ontology in the following 1 row _[15](https://docs.google.com/spreadsheets/d/1_xLnPyGyQy9fae7DrWkeyEN-iLTP8JQMxTL7HHkxG6o/edit#gid=269383687&range=15:15)_. The name/label in the **ASCT+B table** is _prickle cell_ and the one in the **ontology** is _spinous cell of epidermis_. For reference, the given name/label **by SMEs** is _Keratinocytes (Spinous)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[CL:0000317](http://purl.obolibrary.org/obo/CL_0000317)_ has a different name/label in the source ontology in the following 1 row _[35](https://docs.google.com/spreadsheets/d/1_xLnPyGyQy9fae7DrWkeyEN-iLTP8JQMxTL7HHkxG6o/edit#gid=269383687&range=35:35)_. The name/label in the **ASCT+B table** is _sebum secreting cell_ and the one in the **ontology** is _sebocyte_. For reference, the given name/label **by SMEs** is _Germinative (epithelial) cell, Sebocyte_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[CL:0000649](http://purl.obolibrary.org/obo/CL_0000649)_ has a different name/label in the source ontology in the following 1 row _[15](https://docs.google.com/spreadsheets/d/1_xLnPyGyQy9fae7DrWkeyEN-iLTP8JQMxTL7HHkxG6o/edit#gid=269383687&range=15:15)_. The name/label in the **ASCT+B table** is _prickle cell_ and the one in the **ontology** is _spinous cell of epidermis_. For reference, the given name/label **by SMEs** is _Keratinocytes (Spinous)_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
