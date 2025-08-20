@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Main_Bronchus (2025-08-13)
+ASCT+B Validation Reports for Main_Bronchus (2025-08-20)
 ========================================================
 
 Table of contents
@@ -54,11 +54,11 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
   
 1. The term _[CL:4033048](http://purl.obolibrary.org/obo/CL_4033048)_ has a different name/label in the source ontology in the following 1 row _[25](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=25:25)_. The name/label in the **ASCT+B table** is _respiratory suprabasal cell_ and the one in the **ontology** is _respiratory tract suprabasal cell_. For reference, the given name/label **by SMEs** is _respiratory suprabasal cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
+1. The term _[CL:0002332](http://purl.obolibrary.org/obo/CL_0002332)_ has a different name/label in the source ontology in the following 1 row _[26](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=26:26)_. The name/label in the **ASCT+B table** is _ciliated cell of the bronchus_ and the one in the **ontology** is _multiciliated epithelial cell of the bronchus_. For reference, the given name/label **by SMEs** is _ciliated cell of the bronchus_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
 1. The term _[CL:0019002](http://purl.obolibrary.org/obo/CL_0019002)_ has a different name/label in the source ontology in the following 1 row _[22](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=22:22)_. The name/label in the **ASCT+B table** is _lung perichondrial fibroblast_ and the one in the **ontology** is _tracheobronchial chondrocyte_. For reference, the given name/label **by SMEs** is _lung perichondrial fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _[CL:4033055](http://purl.obolibrary.org/obo/CL_4033055)_ has a different name/label in the source ontology in the following 1 row _[15](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=15:15)_. The name/label in the **ASCT+B table** is _airway submucosal gland duct ciliated cell_ and the one in the **ontology** is _airway submucosal gland duct multiciliated cell_. For reference, the given name/label **by SMEs** is _airway submucosal gland duct ciliated cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
-1. The term _[CL:0002332](http://purl.obolibrary.org/obo/CL_0002332)_ has a different name/label in the source ontology in the following 1 row _[26](https://docs.google.com/spreadsheets/d/1hEGxKzzMdThW0E8URYTMW-XXPrUfrL1Up3CkKbaafvs/edit#gid=0&range=26:26)_. The name/label in the **ASCT+B table** is _ciliated cell of the bronchus_ and the one in the **ontology** is _multiciliated epithelial cell of the bronchus_. For reference, the given name/label **by SMEs** is _ciliated cell of the bronchus_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
