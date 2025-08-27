@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2025-08-20)
+ASCT+B Validation Reports for Lung (2025-08-27)
 ===============================================
 
 # ASCT+B as Graph
