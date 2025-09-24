@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Heart (2025-09-10)
+ASCT+B Validation Reports for Heart (2025-09-24)
 ================================================
 
 # ASCT+B as Graph

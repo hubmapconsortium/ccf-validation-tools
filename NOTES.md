@@ -6,8 +6,8 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2025-05-28|
 |PCL|2025-07-07|
+|UBERON|2025-05-28|
 |CL|2025-07-30|
 
 ### ASCT+b Tables
@@ -17,7 +17,7 @@ Release Notes
 |Anatomical_Systems|v1.2|June 15, 2025|
 |Blood|v1.5|revise 2025|
 |Bone-Marrow|v1.6|NA|
-|Brain|v1.7|revise for 2025|
+|Brain|v1.8|revise for 2025|
 |Eye|v1.5|revise 2025|
 |Fallopian_tube|v1.5|prepare for April 1, 2025|
 |Gingiva|v1.0|Will be added for HRA release availability|
