@@ -4,6 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -293,7 +294,6 @@ WHERE {
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBPROP:0000001</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external_definition</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external_definition</oboInOwl:shorthand>
@@ -309,7 +309,6 @@ WHERE {
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000003">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notes on the homology status of this class.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBPROP:0000003</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homology_notes</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">homology_notes</oboInOwl:shorthand>
@@ -331,7 +330,6 @@ WHERE {
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000008">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notes on the how instances of this class vary across species.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBPROP:0000008</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxon_notes</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taxon_notes</oboInOwl:shorthand>
@@ -353,7 +351,6 @@ WHERE {
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notes on how similar or equivalent classes are represented in other ontologies.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBPROP:0000012</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external_ontology_notes</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external_ontology_notes</oboInOwl:shorthand>
@@ -398,9 +395,21 @@ WHERE {
     
 
 
+    <!-- http://purl.org/dc/terms/licence -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    
+
+
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/pav/authoredBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/authoredBy"/>
     
 
 
@@ -551,6 +560,12 @@ WHERE {
     
 
 
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
@@ -593,12 +608,6 @@ WHERE {
     <!-- http://xmlns.com/foaf/0.1/depiction -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
-    
-
-
-    <!-- https://w3id.org/sssom/author_id -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/author_id"/>
     
 
 
@@ -856,6 +865,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000037">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stem cell from which all cells of the lymphoid and myeloid lineages develop, including blood cells and cells of the immune system. Hematopoietic stem cells lack cell markers of effector cells (lin-negative). Lin-negative is defined by lacking one or more of the following cell surface markers: CD2, CD3 epsilon, CD4, CD5 ,CD8 alpha chain, CD11b, CD14, CD19, CD20, CD56, ly6G, ter119.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic stem cells (HSCs) are multipotent cells, capable of differentiating into a wide variety of specialized blood cells. During embryonic development hematopoietic stem cells emerge from the hemogenic endothelium, a specialized subset of endothelial cells with hematopoietic potential. HSCs can be found in several organs, in particular in bone marrow, as well as peripheral blood and umbilical cord blood.
+These stem cells have a distinctive ability to self-renew, and to differentiate into all lymphoid and myeloid cell types that together form the blood and immune systems including erythrocytes (red blood cells), leukocytes (white blood cells), and platelets. Their primary function is to ensure the continuous replenishment of the blood and immune system throughout an individual&apos;s lifespan.
+In response to various signals, hematopoietic stem cells can either remain dormant or actively divide and differentiate. Under normal conditions, the majority of these stem cells exist in a quiescent (inactive) state, making them somewhat resistant to chemotherapy or radiation therapy in the treatment of various diseases such as leukemia. However, when the body encounters stress such as infection, bleeding, or disease, hematopoietic stem cells can rapidly become active in order to replenish the affected cells and maintain homeostasis.
+Furthermore, hematopoietic stem cells are extremely important in the field of regenerative medicine and transplantation. Regarded as lifesaving in the field of oncology, they are often extracted, purified, and reinfused back into the same (autologous transplantation) or different (allogeneic transplantation) individuals to reestablish a healthy, functioning hematopoietic and immune system after high-dose chemotherapy or to replace dysfunctional bone marrow. Understanding and manipulating the behavior of these stem cells has immense potential in treating various blood disorders, autoimmune diseases, and cancers.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000725</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0448</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:86475</oboInOwl:hasDbXref>
@@ -872,6 +887,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Markers differ between species, and two sets of markers have been described for mice. HSCs are reportedly CD34-positive, CD45-positive, CD48-negative, CD150-positive, CD133-positive, and CD244-negative.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic stem cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000037</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoetic Stem Cell</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic stem cell</skos:prefLabel>
     </owl:Class>
@@ -887,6 +903,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic stem cells (HSCs) are multipotent cells, capable of differentiating into a wide variety of specialized blood cells. During embryonic development hematopoietic stem cells emerge from the hemogenic endothelium, a specialized subset of endothelial cells with hematopoietic potential. HSCs can be found in several organs, in particular in bone marrow, as well as peripheral blood and umbilical cord blood.
+These stem cells have a distinctive ability to self-renew, and to differentiate into all lymphoid and myeloid cell types that together form the blood and immune systems including erythrocytes (red blood cells), leukocytes (white blood cells), and platelets. Their primary function is to ensure the continuous replenishment of the blood and immune system throughout an individual&apos;s lifespan.
+In response to various signals, hematopoietic stem cells can either remain dormant or actively divide and differentiate. Under normal conditions, the majority of these stem cells exist in a quiescent (inactive) state, making them somewhat resistant to chemotherapy or radiation therapy in the treatment of various diseases such as leukemia. However, when the body encounters stress such as infection, bleeding, or disease, hematopoietic stem cells can rapidly become active in order to replenish the affected cells and maintain homeostasis.
+Furthermore, hematopoietic stem cells are extremely important in the field of regenerative medicine and transplantation. Regarded as lifesaving in the field of oncology, they are often extracted, purified, and reinfused back into the same (autologous transplantation) or different (allogeneic transplantation) individuals to reestablish a healthy, functioning hematopoietic and immune system after high-dose chemotherapy or to replace dysfunctional bone marrow. Understanding and manipulating the behavior of these stem cells has immense potential in treating various blood disorders, autoimmune diseases, and cancers.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41580-019-0103-9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/gr.192237.115</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1186/s12915-021-00955-z</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fcell.2022.664261</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000037"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009014</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
@@ -897,6 +927,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HSC</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000037"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000037</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic stem cell on CELLxGENE CellGuide</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -905,12 +941,18 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000186">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An animal cell that has characteristics of both a fibroblast cell and a smooth muscle cell.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myofibroblasts are specialized cells predominantly found within the connective tissues of the body, most notably in areas of injury or wound healing. They carry out a crucial role in many biological processes, including tissue repair and fibrosis, wound contraction, and organogenesis. Though similar to fibroblasts, myofibroblasts can be differentiated by their unique morphological features and the presence of specialized protein bundles called stress fibers.
+Myofibroblasts originate from several cell types based on the physiological condition or the injury context, including local fibroblasts, epithelial cells, and endothelial cells, shedding light onto their plasticity. Upon tissue injury or wound creation, myofibroblasts activate and undergo a transformation process whereby they develop contractile features. They express a type of protein called alpha-smooth muscle actin (α-SMA), allowing them to contract and aid in wound closure. These cells also produce extracellular matrix (ECM) components, primarily collagen, to support and provide structural integrity to the healing tissue.
+However, while myofibroblasts play a critical role in normal wound healing, their function can be detrimental in certain pathological conditions. For instance, in chronic diseases such as fibrosis or scarring, the extended presence or overactivity of myofibroblasts can lead to the excessive production of ECM and fibrous tissues, leading to hardened, rigid tissues and organ dysfunction.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MFB</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myofibroblasts are alpha-SMA-positive, CD34-negative, CD45-negative. They are reportedly capable of secreting IL-1beta, IL-6, and TNF-alpha.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myofibroblast cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000186</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myofibroblast</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myofibroblasts</skos:prefLabel>
     </owl:Class>
@@ -927,9 +969,29 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000186"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myofibroblasts are specialized cells predominantly found within the connective tissues of the body, most notably in areas of injury or wound healing. They carry out a crucial role in many biological processes, including tissue repair and fibrosis, wound contraction, and organogenesis. Though similar to fibroblasts, myofibroblasts can be differentiated by their unique morphological features and the presence of specialized protein bundles called stress fibers.
+Myofibroblasts originate from several cell types based on the physiological condition or the injury context, including local fibroblasts, epithelial cells, and endothelial cells, shedding light onto their plasticity. Upon tissue injury or wound creation, myofibroblasts activate and undergo a transformation process whereby they develop contractile features. They express a type of protein called alpha-smooth muscle actin (α-SMA), allowing them to contract and aid in wound closure. These cells also produce extracellular matrix (ECM) components, primarily collagen, to support and provide structural integrity to the healing tissue.
+However, while myofibroblasts play a critical role in normal wound healing, their function can be detrimental in certain pathological conditions. For instance, in chronic diseases such as fibrosis or scarring, the extended presence or overactivity of myofibroblasts can lead to the excessive production of ECM and fibrous tissues, leading to hardened, rigid tissues and organ dysfunction.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1002/path.4104</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nrm809</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.2147/CCID.S50046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3390/biom11081095</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.7860/JCDR/2014/7820.4231</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000186"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MFB</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:8731193</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000186"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000186</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myofibroblast cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1013,6 +1075,11 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000232">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A red blood cell. In mammals, mature erythrocytes are biconcave disks containing hemoglobin whose function is to transport oxygen.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erythrocytes, also known as red blood cells, are a type of specialized cell that make up the largest percentage of cells in the human body. Erythrocytes are biconcave in shape and lack nuclei and organelles, allowing them to carry oxygen and carbon dioxide through the bloodstream more efficiently. The main function of erythrocytes is to transport oxygen from the lungs to the body&apos;s tissues and organs, and to transport carbon dioxide from the body&apos;s tissues to the lungs, where it can be exhaled out of the body. Hemoglobin, a protein located inside erythrocytes, is responsible for binding to oxygen. 
+Erythrocytes are produced in the bone marrow and have a lifespan of approximately 120 days before they are broken down and recycled by the body. Erythrocytes are regulated by the hormone erythropoietin, which is produced by the kidneys and liver in response to low oxygen levels in the body, thereby stimulating erythrocyte production .
+In addition to their role in oxygen transport, erythrocytes also play a key role in regulating the body&apos;s pH levels. Without erythrocytes, oxygen would not be able to be transported efficiently throughout the body and tissues would not receive the necessary oxygen to function properly. Overall, erythrocytes are essential for maintaining the health and homeostasis of the body.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000424</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0290</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:81100</oboInOwl:hasDbXref>
@@ -1023,6 +1090,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erythrocyte</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000232</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erythrocytes</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erythrocyte</skos:prefLabel>
     </owl:Class>
@@ -1033,6 +1101,24 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D004912</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000232"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erythrocytes, also known as red blood cells, are a type of specialized cell that make up the largest percentage of cells in the human body. Erythrocytes are biconcave in shape and lack nuclei and organelles, allowing them to carry oxygen and carbon dioxide through the bloodstream more efficiently. The main function of erythrocytes is to transport oxygen from the lungs to the body&apos;s tissues and organs, and to transport carbon dioxide from the body&apos;s tissues to the lungs, where it can be exhaled out of the body. Hemoglobin, a protein located inside erythrocytes, is responsible for binding to oxygen. 
+Erythrocytes are produced in the bone marrow and have a lifespan of approximately 120 days before they are broken down and recycled by the body. Erythrocytes are regulated by the hormone erythropoietin, which is produced by the kidneys and liver in response to low oxygen levels in the body, thereby stimulating erythrocyte production .
+In addition to their role in oxygen transport, erythrocytes also play a key role in regulating the body&apos;s pH levels. Without erythrocytes, oxygen would not be able to be transported efficiently throughout the body and tissues would not receive the necessary oxygen to function properly. Overall, erythrocytes are essential for maintaining the health and homeostasis of the body.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.blre.2012.12.003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1056/NEJM199801223380407</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fphys.2021.655393</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000232"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000232</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erythrocyte on CELLxGENE CellGuide</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1041,6 +1127,11 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000233">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-nucleated disk-shaped cell formed by extrusion from megakaryocytes, found in the blood of all mammals, and mainly involved in blood coagulation.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platelets, also known as thrombocytes, are small, disc-shaped cell fragments devoid of a nucleus, yet remarkably intricate and multi-functional. They originate from the megakaryocytes in the bone marrow via a process called thrombopoiesis. Platelets are central to hemostasis, a process that prevents bleeding from broken or damaged blood vessels and facilitates wound healing. In their resting state, platelets are inactive but become quickly activated when an injury occurs.
+Platelets function in the initiation and regulation of coagulation or clotting, which is a complex process involving several bioactive molecules. When a blood vessel is injured, the inner lining of the vessel, the endothelium, gets disrupted, exposing the underlying tissue matrix. This leads to platelet activation and adhesion to the injury site, initiating the clotting cascade. Platelets release granules packed with clotting factors, proteins, enzymes, and more platelets, which further propagates the clotting process. When activated, platelets also change their shape from discoid to a spherical form with protruding pseudopods that enables them to adhere more readily to the site of injury and mesh with one another to form a &apos;platelet plug&apos;. 
+Additionally, platelets serve other physiological roles. They release growth factors enhancing tissue regeneration and wound healing. They also play a significant role in inflammation, innate immunity, and antimicrobial host defense, as they interact with leukocytes and may sequester microbes. Platelets are involved in maintaining the integrity of the blood vessels and angiogenesis, the formation of new blood vessels. Proper functioning of platelets is critical for maintaining homeostasis, while dysregulation can lead to conditions such as thrombosis or bleeding disorders.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000132</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0803</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62851</oboInOwl:hasDbXref>
@@ -1053,6 +1144,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platelets are reportedly CCR1-positive, CCR2-negative, CCR3-positive, CCR4-positive, CCR5-negative, CCR6-negative, CCR7-negative, CCR8-negative, CCR9-negative, CCR10-negative, CD16-positive, CD23-positive, CD32-positive, CD40-positive, CD41-positive CD42-positive, CD61-positive, CD62P-positive, CD64-positive, CD89-positive, CD102-positive, CD147-positive (activated platelets), CD154-positive (activated platelets), CD162-positive, CD209, CD282-positive, CD284-positive, CD289-positive, CD181-negative, CD182-negative, CD183-negative, CD184-positive, CLEC2-positive, GPVI-positive, JAMC-positive, PAR1-positive, PAR2-negative, PAR3-positive, PAR4-positive, TSP1-positive, and TXA2R-positive. Platelets can reportedly produce CCL2, CCL3, CCL5, CCL7, CCL17, CD40L, CXCL1, CXCL4, CXCL4L1, CXCL5, CXCL7, CXCL8, CXCL12, EGF, factor V, factor VII, factor XI, factor XIII, bFGF, histamine, IGF-1, IL-1beta, PAI-1, PDGF, plasminogen, protein S, serotonin, TGF-beta, TFPI, VEGF, and vWF.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">platelet</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000233</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platelet</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1069,6 +1161,25 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17479180</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20414831</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Platelet</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000233"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platelets, also known as thrombocytes, are small, disc-shaped cell fragments devoid of a nucleus, yet remarkably intricate and multi-functional. They originate from the megakaryocytes in the bone marrow via a process called thrombopoiesis. Platelets are central to hemostasis, a process that prevents bleeding from broken or damaged blood vessels and facilitates wound healing. In their resting state, platelets are inactive but become quickly activated when an injury occurs.
+Platelets function in the initiation and regulation of coagulation or clotting, which is a complex process involving several bioactive molecules. When a blood vessel is injured, the inner lining of the vessel, the endothelium, gets disrupted, exposing the underlying tissue matrix. This leads to platelet activation and adhesion to the injury site, initiating the clotting cascade. Platelets release granules packed with clotting factors, proteins, enzymes, and more platelets, which further propagates the clotting process. When activated, platelets also change their shape from discoid to a spherical form with protruding pseudopods that enables them to adhere more readily to the site of injury and mesh with one another to form a &apos;platelet plug&apos;. 
+Additionally, platelets serve other physiological roles. They release growth factors enhancing tissue regeneration and wound healing. They also play a significant role in inflammation, innate immunity, and antimicrobial host defense, as they interact with leukocytes and may sequester microbes. Platelets are involved in maintaining the integrity of the blood vessels and angiogenesis, the formation of new blood vessels. Proper functioning of platelets is critical for maintaining homeostasis, while dysregulation can lead to conditions such as thrombosis or bleeding disorders.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1007/s10555-017-9677-x</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.blre.2014.10.003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41569-018-0110-0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2019.01731</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000233"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000233</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">platelet on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1117,6 +1228,11 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000442">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell with extensive dendritic processes found in the B cell areas (primary follicles and germinal centers) of lymphoid tissue. They are unrelated to the dendritic cell associated with T cells. Follicular dendritic cells have Fc receptors and C3b receptors, but unlike other dendritic cells, they do not process or present antigen in a way that allows recognition by T cells. Instead, they hold antigen in the form of immune complexes on their surfaces for long periods and can present antigen to B cells during an immune response.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Follicular dendritic cells (FDCs) are specialized cells found in B cell follicles in secondary lymphoid organs such as lymph nodes and spleen. FDCs play a key role in the immune response by presenting antigens to B-cells, which are responsible for producing antibodies. They accomplish this by acquiring antigens via multiple pathways and retaining them in non-degradative endosomal vesicles which cycle to the cell surface, allowing B-cells to encounter and recognize native antigens. In addition, FDCs secrete various cytokines and chemokines that direct immune cells to sites of infection or inflammation.
+FDCs are unique among immune cells in that they do not originate from hematopoietic stem cells, but rather from stromal cells in the lymphoid tissues. They are characterized by their distinctive shape, with long, branching processes that form a network within the follicle. FDCs are also distinguished by the presence of complement receptors, Fc receptors, and other molecules that enable them to capture and present antigens to B-cells.
+Because of their important role in antigen presentation and immune regulation, FDCs have been studied extensively in the context of infectious diseases, autoimmunity, and cancer. Notably, FDCs appear to function as a reservoir for HIV, contribute to autoimmune pathology by presenting autoantigens, and drive FDC sarcoma.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004267</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83037</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D020566</oboInOwl:hasDbXref>
@@ -1125,6 +1241,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Due to its unique lineage and distinct function, this is not a type of dendritic cell; CL:0000451.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">follicular dendritic cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000442</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Follicular Dendritic Cell (FDC)</skos:prefLabel>
         <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.humanatlas.io/digital-objects/2d-ftu/spleen-red-pulp/v1.2/assets/2d-ftu-spleen-red-pulp.png</foaf:depiction>
         <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.humanatlas.io/digital-objects/2d-ftu/spleen-white-pulp/v1.2/assets/2d-ftu-spleen-white-pulp.png</foaf:depiction>
@@ -1135,6 +1252,38 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell with extensive dendritic processes found in the B cell areas (primary follicles and germinal centers) of lymphoid tissue. They are unrelated to the dendritic cell associated with T cells. Follicular dendritic cells have Fc receptors and C3b receptors, but unlike other dendritic cells, they do not process or present antigen in a way that allows recognition by T cells. Instead, they hold antigen in the form of immune complexes on their surfaces for long periods and can present antigen to B cells during an immune response.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:127520252</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000442"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Follicular dendritic cells (FDCs) are specialized cells found in B cell follicles in secondary lymphoid organs such as lymph nodes and spleen. FDCs play a key role in the immune response by presenting antigens to B-cells, which are responsible for producing antibodies. They accomplish this by acquiring antigens via multiple pathways and retaining them in non-degradative endosomal vesicles which cycle to the cell surface, allowing B-cells to encounter and recognize native antigens. In addition, FDCs secrete various cytokines and chemokines that direct immune cells to sites of infection or inflammation.
+FDCs are unique among immune cells in that they do not originate from hematopoietic stem cells, but rather from stromal cells in the lymphoid tissues. They are characterized by their distinctive shape, with long, branching processes that form a network within the follicle. FDCs are also distinguished by the presence of complement receptors, Fc receptors, and other molecules that enable them to capture and present antigens to B-cells.
+Because of their important role in antigen presentation and immune regulation, FDCs have been studied extensively in the context of infectious diseases, autoimmunity, and cancer. Notably, FDCs appear to function as a reservoir for HIV, contribute to autoimmune pathology by presenting autoantigens, and drive FDC sarcoma.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1002/jcp.30662</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nri3689</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2016.00225</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000442"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000442</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">follicular dendritic cell on CELLxGENE CellGuide</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000442"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.humanatlas.io/digital-objects/2d-ftu/spleen-red-pulp/v1.2/assets/2d-ftu-spleen-red-pulp.png</owl:annotatedTarget>
+        <terms:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.48539/HBM355.ZFMS.256</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000442"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.humanatlas.io/digital-objects/2d-ftu/spleen-white-pulp/v1.2/assets/2d-ftu-spleen-white-pulp.png</owl:annotatedTarget>
+        <terms:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.48539/HBM559.FNBB.6273</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1143,6 +1292,12 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000492">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD4-positive, alpha-beta T cell that cooperates with other lymphocytes via direct contact or cytokine release to initiate a variety of immune functions.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The CD4-positive helper T cells are a subpopulation of T lymphocytes, which are part of the adaptive immune system. These cells play a vital role in establishing and maximizing the capability of the immune system to combat infections. Like all T lymphocytes, CD4+ helper T cells are uniquely characterized by the expression of a T-cell receptor (TCR) complex on their cell surface. The subset of CD4+ cells express the CD4 glycoprotein on their cell surface that serves as a co-receptor for the T-cell receptor. The CD4 co-receptor enables these cells to interact with antigen-presenting cells and perform their influential role in adaptive immune response.
+CD4+ helper T cells are primarily responsible for assisting other cells in the immunological processes. This involves recognition, interaction, and processing of antigens. Once an antigen-presenting cell presents a foreign antigen such as peptides derived from pathogens or transformed cells to the CD4+ helper T cell, it becomes activated, proliferates, and differentiates into subtypes such as Th1, Th2, Th17, or Treg, each with a specific role in the immune response. Th1 cells produces various cytokines. including IFN‐γ, IL-2 and TNF-β, and aid cell-mediated immune responses against intracellular pathogens. Th2 cells produce IL-4, IL-5 and IL13 and assist in antibody-mediated immune responses. 
+Th17 cells release IL-17 and convey protective immunity against extracellular bacteria and fungi as well as contributing to inflammation and autoimmunity, while Treg cells are immunosuppressive cells and maintain immune homeostasis and provide tolerance to self-antigens. Finally, follicular T helper (Tfh) cells are thought to help B cells build up antibody responses by assisting germinal center formation, affinity maturation, and possibly immunoglobulin class switch recombination 
+In addition to their critical role in immune response, CD4+ helper T cells are notably the main target of HIV infection, where the virus depletes the number of these cells, resulting in the deterioration of the immune system, characterized in the progression to AIDS. Thus, the presence and functionality of CD4+ helper T cells are not only necessary for a healthy immune response but also crucial in the context of immunodeficiency diseases.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-1146</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70572</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD4-positive T-helper cell</oboInOwl:hasExactSynonym>
@@ -1153,6 +1308,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD4-positive helper T cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000492</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD4+ T Cell</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD4+ T cell</skos:prefLabel>
     </owl:Class>
@@ -1167,6 +1323,27 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0781735149</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D006377</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000492"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The CD4-positive helper T cells are a subpopulation of T lymphocytes, which are part of the adaptive immune system. These cells play a vital role in establishing and maximizing the capability of the immune system to combat infections. Like all T lymphocytes, CD4+ helper T cells are uniquely characterized by the expression of a T-cell receptor (TCR) complex on their cell surface. The subset of CD4+ cells express the CD4 glycoprotein on their cell surface that serves as a co-receptor for the T-cell receptor. The CD4 co-receptor enables these cells to interact with antigen-presenting cells and perform their influential role in adaptive immune response.
+CD4+ helper T cells are primarily responsible for assisting other cells in the immunological processes. This involves recognition, interaction, and processing of antigens. Once an antigen-presenting cell presents a foreign antigen such as peptides derived from pathogens or transformed cells to the CD4+ helper T cell, it becomes activated, proliferates, and differentiates into subtypes such as Th1, Th2, Th17, or Treg, each with a specific role in the immune response. Th1 cells produces various cytokines. including IFN‐γ, IL-2 and TNF-β, and aid cell-mediated immune responses against intracellular pathogens. Th2 cells produce IL-4, IL-5 and IL13 and assist in antibody-mediated immune responses. 
+Th17 cells release IL-17 and convey protective immunity against extracellular bacteria and fungi as well as contributing to inflammation and autoimmunity, while Treg cells are immunosuppressive cells and maintain immune homeostasis and provide tolerance to self-antigens. Finally, follicular T helper (Tfh) cells are thought to help B cells build up antibody responses by assisting germinal center formation, affinity maturation, and possibly immunoglobulin class switch recombination 
+In addition to their critical role in immune response, CD4+ helper T cells are notably the main target of HIV infection, where the virus depletes the number of these cells, resulting in the deterioration of the immune system, characterized in the progression to AIDS. Thus, the presence and functionality of CD4+ helper T cells are not only necessary for a healthy immune response but also crucial in the context of immunodeficiency diseases.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1002/ctd2.199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s43018-023-00521-2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/imcb.12662</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-103019-085803</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/t-helper-cell</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000492"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000492</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD4-positive helper T cell on CELLxGENE CellGuide</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1175,6 +1352,11 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000499">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A connective tissue cell of an organ found in the loose connective tissue.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stromal cells constitute a significant portion of the structural cellular milieu (stroma) that supports the function of parenchymal (functional) cells within an organ. The stroma is the connective, supportive framework of biological tissues with various functions depending on the specific organ and cell type. Stromal cells, derived from the mesenchymal lineage, play crucial roles in creating, maintaining, and repairing the tissue microenvironment in virtually all mammalian organs, making these cells indispensable to biological function.
+Additionally, stromal cells secrete growth factors, cytokines, and extracellular matrix (ECM) molecules to constitute an interactive cellular network and ensure an optimal environment for the functional cells. Beyond mere structural support, these cells are instrumental in wound healing, inflammation, and maintaining tissue integrity. They may also influence the behavior of other cell types through direct cell-cell interactions or paracrine signaling.
+Clinically and in research, stromal cells often draw attention due to their interaction with tumors in the cancer microenvironment. Over the past years, the role of stromal cells as facilitators of tumor growth and metastasis has been recognized increasingly. They contribute to cancer progression not only by modulating the ECM but also through the secretion of various bioactive molecules and interacting with immune cells, thereby influencing the immunologic responses to tumors.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002064</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83624</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009226</oboInOwl:hasDbXref>
@@ -1182,6 +1364,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stromal cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000499</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stromal Cell</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stromal cell</skos:prefLabel>
     </owl:Class>
@@ -1194,9 +1377,29 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000499"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stromal cells constitute a significant portion of the structural cellular milieu (stroma) that supports the function of parenchymal (functional) cells within an organ. The stroma is the connective, supportive framework of biological tissues with various functions depending on the specific organ and cell type. Stromal cells, derived from the mesenchymal lineage, play crucial roles in creating, maintaining, and repairing the tissue microenvironment in virtually all mammalian organs, making these cells indispensable to biological function.
+Additionally, stromal cells secrete growth factors, cytokines, and extracellular matrix (ECM) molecules to constitute an interactive cellular network and ensure an optimal environment for the functional cells. Beyond mere structural support, these cells are instrumental in wound healing, inflammation, and maintaining tissue integrity. They may also influence the behavior of other cell types through direct cell-cell interactions or paracrine signaling.
+Clinically and in research, stromal cells often draw attention due to their interaction with tumors in the cancer microenvironment. Over the past years, the role of stromal cells as facilitators of tumor growth and metastasis has been recognized increasingly. They contribute to cancer progression not only by modulating the ECM but also through the secretion of various bioactive molecules and interacting with immune cells, thereby influencing the immunologic responses to tumors.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nri2588</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41536-019-0083-6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1186/s13058-016-0740-2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1634/stemcells.2007-0637</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fcell.2020.555378</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000499"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009226</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000499"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000499</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stromal cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1245,6 +1448,12 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000625">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell expressing an alpha-beta T cell receptor and the CD8 coreceptor.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta T cells, also referred to as CD8+ T cells, are integral components of the body&apos;s adaptive immune system. They are characterized by the presence of the CD8 glycoprotein on their cell surface and the alpha and beta chains in their T cell receptors (TCRs). CD8+ T cells primarily function as cytotoxic T cells (CTLs), their specialized role in the immune response being to detect and eliminate cells presenting foreign or abnormal antigens on their surfaces.
+Naïve CD8+ T cells patrol the central lymphoid organs, checking peptide– MHC class I molecule complexes for the presence of their cognate antigen on antigen-presenting cells. Recognition of the foreign antigen by the TCR and interaction with MHC class I molecules triggers a series of events leading to the activation of the CD8+ T cell. Once activated, the CD8+ T cell divides, matures, and differentiates into effector T cells capable of destroying the target cells. This cytotoxic function is carried out by the release of substances like perforin and granzymes, which induce apoptosis, or programmed cell death, in the target cells.
+In addition to their cytotoxic function, CD8+ T cells are known to release various cytokines, including interferon-gamma (IFN-γ) and tumor necrosis factor-alpha (TNF-α). These are potent mediators of the immune response and have roles in shaping the immune response and the inflammatory reaction. 
+Following the resolution of an immune response, a small subset of activated CD8+ T cells persists as memory T cells, providing a quicker and more vigorous response upon subsequent encounters with the same antigen. These capabilities make CD8-positive, alpha-beta T cells indispensable for the body&apos;s defense against infections and malignant transformations.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
@@ -1252,6 +1461,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta T cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000625</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8+ T Cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1261,6 +1471,26 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:add</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0781735149</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000625"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta T cells, also referred to as CD8+ T cells, are integral components of the body&apos;s adaptive immune system. They are characterized by the presence of the CD8 glycoprotein on their cell surface and the alpha and beta chains in their T cell receptors (TCRs). CD8+ T cells primarily function as cytotoxic T cells (CTLs), their specialized role in the immune response being to detect and eliminate cells presenting foreign or abnormal antigens on their surfaces.
+Naïve CD8+ T cells patrol the central lymphoid organs, checking peptide– MHC class I molecule complexes for the presence of their cognate antigen on antigen-presenting cells. Recognition of the foreign antigen by the TCR and interaction with MHC class I molecules triggers a series of events leading to the activation of the CD8+ T cell. Once activated, the CD8+ T cell divides, matures, and differentiates into effector T cells capable of destroying the target cells. This cytotoxic function is carried out by the release of substances like perforin and granzymes, which induce apoptosis, or programmed cell death, in the target cells.
+In addition to their cytotoxic function, CD8+ T cells are known to release various cytokines, including interferon-gamma (IFN-γ) and tumor necrosis factor-alpha (TNF-α). These are potent mediators of the immune response and have roles in shaping the immune response and the inflammatory reaction. 
+Following the resolution of an immune response, a small subset of activated CD8+ T cells persists as memory T cells, providing a quicker and more vigorous response upon subsequent encounters with the same antigen. These capabilities make CD8-positive, alpha-beta T cells indispensable for the body&apos;s defense against infections and malignant transformations.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.immuni.2011.07.010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41577-021-00574-3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2018.02692</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2018.02826</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000625"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000625</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta T cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1307,6 +1537,12 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000775">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any of the immature or mature forms of a granular leukocyte that in its mature form has a nucleus with three to five lobes connected by slender threads of chromatin, and cytoplasm containing fine inconspicuous granules and stainable by neutral dyes.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutrophils are an essential component of the human immune system and belong to the category of white blood cells known as granulocytes. They constitute approximately 50-70% of all white blood cells, making them the most abundant type of immune cells in mammals. Neutrophils develop in the bone marrow from hematopoietic stem cells before being released into the bloodstream where they circulate before migration into tissues, thereby exhibiting a multi-step process that includes margination, rolling, adhesion, and transmigration.
+Phenotypically and functionally, neutrophils represent a heterogeneous cell population. They are the immune system’s immediate responders and are the first cells to migrate towards the site of an infection. They play a critical role in defending the body from potential pathogenic bacteria and fungi. Their primary mechanism of action involves phagocytosis, where they engulf and destroy these microbes. Neutrophils are characterized by the presence of large quantities of granules containing antimicrobial proteins and enzymes, including defensins and myeloperoxidase, which are released once the cell has recognized and attached to the microbes. The enzymes and other antimicrobial agents can also be released into the surrounding environment, a process known as degranulation.
+Neutrophils also possess the unique biological ability to eliminate pathogens through a process called neutrophil extracellular trap (NET) formation, or NETosis. In this process, neutrophils release a mixture of DNA, histones, and granule proteins that form a web-like structure which traps and kills microbes. Notably, this process usually leads to the death of the neutrophil itself, referred to as cell suicide or programmed cell death. 
+Neutrophils play a crucial role in the immune system by rapidly responding to infections and inflammation, excessive or dysregulated neutrophil activity can contribute to tissue damage and chronic inflammation, exacerbating various diseases such as rheumatoid arthritis, and neutrophils may contribute to tumor growth and progression.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMN</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polymorphonuclear leucocyte</oboInOwl:hasBroadSynonym>
@@ -1329,6 +1565,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophil</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000775</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutrophil</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1342,9 +1579,30 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutrophils are an essential component of the human immune system and belong to the category of white blood cells known as granulocytes. They constitute approximately 50-70% of all white blood cells, making them the most abundant type of immune cells in mammals. Neutrophils develop in the bone marrow from hematopoietic stem cells before being released into the bloodstream where they circulate before migration into tissues, thereby exhibiting a multi-step process that includes margination, rolling, adhesion, and transmigration.
+Phenotypically and functionally, neutrophils represent a heterogeneous cell population. They are the immune system’s immediate responders and are the first cells to migrate towards the site of an infection. They play a critical role in defending the body from potential pathogenic bacteria and fungi. Their primary mechanism of action involves phagocytosis, where they engulf and destroy these microbes. Neutrophils are characterized by the presence of large quantities of granules containing antimicrobial proteins and enzymes, including defensins and myeloperoxidase, which are released once the cell has recognized and attached to the microbes. The enzymes and other antimicrobial agents can also be released into the surrounding environment, a process known as degranulation.
+Neutrophils also possess the unique biological ability to eliminate pathogens through a process called neutrophil extracellular trap (NET) formation, or NETosis. In this process, neutrophils release a mixture of DNA, histones, and granule proteins that form a web-like structure which traps and kills microbes. Notably, this process usually leads to the death of the neutrophil itself, referred to as cell suicide or programmed cell death. 
+Neutrophils play a crucial role in the immune system by rapidly responding to infections and inflammation, excessive or dysregulated neutrophil activity can contribute to tissue damage and chronic inflammation, exacerbating various diseases such as rheumatoid arthritis, and neutrophils may contribute to tumor growth and progression.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1007/s10753-016-0458-4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41577-019-0141-8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41577-021-00571-6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/febs.15803</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fphys.2018.00113</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000775"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009327</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000775"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000775</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutrophil on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1480,6 +1738,11 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000794">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD8-positive, alpha-beta T cell that is capable of killing target cells in an antigen specific manner with the phenotype perforin-positive and granzyme B-positive.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The CD8-positive, alpha-beta cytotoxic T cell plays a crucial role in the immune response system of vertebrates. A key feature of these cells is the expression of CD8, a transmembrane glycoprotein that serves as a co-receptor for the T cell receptor (TCR). Notably, the alpha-beta refers to the TCR heterodimer on the T cell, utilized to recognize the antigens displayed by Major Histocompatibility Complex (MHC) class I molecules on antigen-presenting cells.
+Functioning primarily to combat intracellular pathogens, CD8+ T cells primarily seek and destroy cells infected by viruses or transformed by cancer. The TCR on the CD8+ T cell recognizes and binds to the antigen-MHC I complex displayed on the infected cell’s surface. Following this interaction, along with the engagement of co-stimulatory molecules, the T cell becomes activated. Upon activation, the CD8+ T cell proliferates and differentiates into cytotoxic T lymphocytes (CTL), ready to survey the body for the recognized antigen. 
+CTLs employ two major cytotoxic mechanisms: the release of cytotoxic granules and the expression of death-inducing ligands on their surface. Cytotoxic granules contain perforin, a protein that forms pores in the targeted cell membrane, and granzymes, enzymes that trigger apoptosis inside the targeted cell through the activation of caspases. The Fas ligand and TRAIL death-inducing ligands on CTLs also bind to their respective receptors on the target cell and initiate a caspase cascade leading to cell death of the target. This cytotoxic function of the CD8+ alpha-beta T cell is critical in the control of infections and in cancer surveillance.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T lymphocyte</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T-cell</oboInOwl:hasBroadSynonym>
@@ -1497,6 +1760,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that while T cells of this subset are loosely referred to &apos;cytotoxic T cells,&apos; as many other T cell types, including CD4-positive, alpha-beta T cells and gamma-delta T cells exhibit cytotoxicity in vitro and in vivo.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta cytotoxic T cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000794</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytotoxic T Cells</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1509,6 +1773,25 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0781735149</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000794"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The CD8-positive, alpha-beta cytotoxic T cell plays a crucial role in the immune response system of vertebrates. A key feature of these cells is the expression of CD8, a transmembrane glycoprotein that serves as a co-receptor for the T cell receptor (TCR). Notably, the alpha-beta refers to the TCR heterodimer on the T cell, utilized to recognize the antigens displayed by Major Histocompatibility Complex (MHC) class I molecules on antigen-presenting cells.
+Functioning primarily to combat intracellular pathogens, CD8+ T cells primarily seek and destroy cells infected by viruses or transformed by cancer. The TCR on the CD8+ T cell recognizes and binds to the antigen-MHC I complex displayed on the infected cell’s surface. Following this interaction, along with the engagement of co-stimulatory molecules, the T cell becomes activated. Upon activation, the CD8+ T cell proliferates and differentiates into cytotoxic T lymphocytes (CTL), ready to survey the body for the recognized antigen. 
+CTLs employ two major cytotoxic mechanisms: the release of cytotoxic granules and the expression of death-inducing ligands on their surface. Cytotoxic granules contain perforin, a protein that forms pores in the targeted cell membrane, and granzymes, enzymes that trigger apoptosis inside the targeted cell through the activation of caspases. The Fas ligand and TRAIL death-inducing ligands on CTLs also bind to their respective receptors on the target cell and initiate a caspase cascade leading to cell death of the target. This cytotoxic function of the CD8+ alpha-beta T cell is critical in the control of infections and in cancer surveillance.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s12276-023-01105-x</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2022.883010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fmolb.2021.628332</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/cytotoxic-t-cell</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000794"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000794</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta cytotoxic T cell on CELLxGENE CellGuide</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1517,6 +1800,12 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000798">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell that expresses a gamma-delta T cell receptor complex.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma-delta T cells, also referred to as γδ T cells, are a distinct subset of T lymphocytes that play unique roles in the immune system. They are defined by expression of heterodimeric T-cell receptors (TCRs) comprised of γ and δ chains. They share characteristics with both innate and adaptive immune cells, and unlike alpha-beta (αβ) T cells, they do not require antigen processing and Major Histocompatibility Complex (MHC) presentation for the recognition of antigens. This unique response mechanism allows them to contribute to rapid immune responses, particularly in the context of tissue injury and infection.
+Depending on the γδ TCR and the context, different subsets of gamma-delta T cells perform a variety of functions which range from regulating thermogenesis in adipose tissue to controlling the plasticity of neuronal synapses in the central nervous system. A key function is in tissue homeostasis and surveillance against infectious agents and tumors. 
+They can carry out their defense role through several mechanisms, such as cytokine production, killing of target cells, and regulation of other immune cell responses. In response to pathogens, these cells produce a wide range of cytokines, including interferon-gamma (IFN-γ), tumor necrosis factor-alpha (TNF-α), and interleukin-17 (IL-17), which help recruit and activate other immune cells to the site of infection. Furthermore, gamma-delta T cells can directly kill infected cells or cancerous cells, which is instrumental in preventing the spread of infection or malignancy.
+Despite the broadly generalized role in immunity, the function of gamma-delta T cells can vastly vary depending on their tissue location. In the skin and mucosal tissues, they provide quick response to pathogens, while in secondary lymphoid organs, their regulatory functions shape the adaptive immune response. In recent years, their role in the context of autoimmunity and cancer has gained attention, with emerging studies suggesting their potential for immunotherapeutic interventions. Thus, gamma-delta T cells serve as vital components of the immune system, providing a versatile defense mechanism against a range of pathogenic targets.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009336</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma-delta T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma-delta T-cell</oboInOwl:hasExactSynonym>
@@ -1529,6 +1818,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that gamma-delta T cells have both thymic and extrathymic differentiation pathways.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma-delta T cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000798</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma/Delta T cells</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1541,6 +1831,21 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000798"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma-delta T cells, also referred to as γδ T cells, are a distinct subset of T lymphocytes that play unique roles in the immune system. They are defined by expression of heterodimeric T-cell receptors (TCRs) comprised of γ and δ chains. They share characteristics with both innate and adaptive immune cells, and unlike alpha-beta (αβ) T cells, they do not require antigen processing and Major Histocompatibility Complex (MHC) presentation for the recognition of antigens. This unique response mechanism allows them to contribute to rapid immune responses, particularly in the context of tissue injury and infection.
+Depending on the γδ TCR and the context, different subsets of gamma-delta T cells perform a variety of functions which range from regulating thermogenesis in adipose tissue to controlling the plasticity of neuronal synapses in the central nervous system. A key function is in tissue homeostasis and surveillance against infectious agents and tumors. 
+They can carry out their defense role through several mechanisms, such as cytokine production, killing of target cells, and regulation of other immune cell responses. In response to pathogens, these cells produce a wide range of cytokines, including interferon-gamma (IFN-γ), tumor necrosis factor-alpha (TNF-α), and interleukin-17 (IL-17), which help recruit and activate other immune cells to the site of infection. Furthermore, gamma-delta T cells can directly kill infected cells or cancerous cells, which is instrumental in preventing the spread of infection or malignancy.
+Despite the broadly generalized role in immunity, the function of gamma-delta T cells can vastly vary depending on their tissue location. In the skin and mucosal tissues, they provide quick response to pathogens, while in secondary lymphoid organs, their regulatory functions shape the adaptive immune response. In recent years, their role in the context of autoimmunity and cancer has gained attention, with emerging studies suggesting their potential for immunotherapeutic interventions. Thus, gamma-delta T cells serve as vital components of the immune system, providing a versatile defense mechanism against a range of pathogenic targets.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41571-022-00722-1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41577-020-00452-4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1073/pnas.1818488116</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-032713-120216</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.mdpi.com/journal/cells/special_issues/delta_T</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000798"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009336</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
@@ -1550,6 +1855,12 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gd T cell</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000798"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000798</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma-delta T cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1702,7 +2013,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226565</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527789</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000845"/>
@@ -1746,7 +2057,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226559</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527767</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000872"/>
@@ -1755,6 +2066,13 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:ana</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16861066</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000872"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.humanatlas.io/digital-objects/2d-ftu/spleen-red-pulp/v1.2/assets/2d-ftu-spleen-red-pulp.png</owl:annotatedTarget>
+        <terms:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.48539/HBM355.ZFMS.256</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1788,7 +2106,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226552</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527795</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000874"/>
@@ -1797,6 +2115,13 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:ana</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19644016</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000874"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.humanatlas.io/digital-objects/2d-ftu/spleen-red-pulp/v1.2/assets/2d-ftu-spleen-red-pulp.png</owl:annotatedTarget>
+        <terms:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.48539/HBM355.ZFMS.256</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1822,6 +2147,13 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11207597</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000876"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.humanatlas.io/digital-objects/2d-ftu/spleen-white-pulp/v1.2/assets/2d-ftu-spleen-white-pulp.png</owl:annotatedTarget>
+        <terms:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.48539/HBM559.FNBB.6273</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1844,6 +2176,13 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19631584</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000877"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.humanatlas.io/digital-objects/2d-ftu/spleen-red-pulp/v1.2/assets/2d-ftu-spleen-red-pulp.png</owl:annotatedTarget>
+        <terms:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.48539/HBM355.ZFMS.256</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2047,6 +2386,11 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000990">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conventional dendritic cell is a dendritic cell that is CD11c-high.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conventional dendritic cells (cDCs) are primarily responsible for processing antigens and presenting them to T cells to initiate an immune response. Also known as classical dendritic cells, cDCs originate from hematopoietic stem cells in the bone marrow, maturing in peripheral tissues. They are characterized by their distinct morphology, which features a central body with numerous branching extensions known as dendrites.
+These cells have a pivotal role in adaptive immunity, bridging the gap between the innate and adaptive immune responses. They achieve this by capturing, processing, and presenting antigens to naive T-cells in the secondary lymphoid organs. This antigen presentation, in conjunction with co-stimulatory signals provided by the cDCs, instructs the T cells whether to mount an immune response against the antigen. cDCs are also very effective in the cross-presentation of antigens in the context of major histocompatibility complex (MHC) I, thereby activating CD8+ T cells an initiating a cytotoxic T cell response.
+In addition to their role in antigen presentation, cDCs have other important functions in maintaining immune homeostasis. They can perceive signals from the surrounding tissue microenvironment, responding to inflammation, and influencing or even polarizing T cell differentiation into various effector subtypes. Importantly, while cDCs are often associated with immunogenic responses, they also play a crucial role in immune tolerance, particularly towards self-antigens, thereby preventing autoimmune reactions. In conclusion, conventional dendritic cells serve as the sentinels of the immune system, monitoring for threat signals and coordinating the appropriate immune response.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interdigitating cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">veiled cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:84191</oboInOwl:hasDbXref>
@@ -2060,6 +2404,7 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Originally described in the dendritic cell ontology (DC_CL:0000003)(PMID:19243617) These cells are also CD20-negative, MHCII-positive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conventional dendritic cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000990</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conventional dendritic cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -2069,6 +2414,24 @@ On a cellular level, smooth muscle cells possess a single, centrally located nuc
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:amm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17850486</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000990"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conventional dendritic cells (cDCs) are primarily responsible for processing antigens and presenting them to T cells to initiate an immune response. Also known as classical dendritic cells, cDCs originate from hematopoietic stem cells in the bone marrow, maturing in peripheral tissues. They are characterized by their distinct morphology, which features a central body with numerous branching extensions known as dendrites.
+These cells have a pivotal role in adaptive immunity, bridging the gap between the innate and adaptive immune responses. They achieve this by capturing, processing, and presenting antigens to naive T-cells in the secondary lymphoid organs. This antigen presentation, in conjunction with co-stimulatory signals provided by the cDCs, instructs the T cells whether to mount an immune response against the antigen. cDCs are also very effective in the cross-presentation of antigens in the context of major histocompatibility complex (MHC) I, thereby activating CD8+ T cells an initiating a cytotoxic T cell response.
+In addition to their role in antigen presentation, cDCs have other important functions in maintaining immune homeostasis. They can perceive signals from the surrounding tissue microenvironment, responding to inflammation, and influencing or even polarizing T cell differentiation into various effector subtypes. Importantly, while cDCs are often associated with immunogenic responses, they also play a crucial role in immune tolerance, particularly towards self-antigens, thereby preventing autoimmune reactions. In conclusion, conventional dendritic cells serve as the sentinels of the immune system, monitoring for threat signals and coordinating the appropriate immune response.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/bs.ircmb.2019.07.004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-061020-053707</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2018.03176</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000990"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000990</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conventional dendritic cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -2324,7 +2687,7 @@ Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the b
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226557</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527796</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002138"/>
@@ -2436,6 +2799,12 @@ Another significant function of vein endothelial cells is the regulation of bloo
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002543"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endothelial cell that is part of the vein.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002543"/>
         <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vein endothelial cells form a thin layer of squamous cells, the endothelium, lining the interior surface of veins throughout the body. They shape the inner cellular lining of the entire vascular system, including the heart, playing a crucial role in blood circulation. The unique characteristic compact arrangement of these cells enables veins to act as a barrier between the blood (that can contain foreign substances) and the surrounding venous tissue and maintain the integrity of the vascular system.
 The primary function of vein endothelial cells is to control the exchange of substances between the bloodstream and the surrounding tissues. They facilitate selective transportation of molecules depending on their size and solubility, including gases, nutrients, hormones, and waste products. Vein endothelial cells also play a protective role by inhibiting the translocation of toxins or pathogens from blood to tissues. Additionally, these cells are involved in blood coagulation and inflammation response, primarily by producing substances that inhibit blood clot formation under normal conditions and initiating clotting when necessary.
@@ -2452,12 +2821,6 @@ Another significant function of vein endothelial cells is the regulation of bloo
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002543</owl:annotatedTarget>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vein endothelial cell on CELLxGENE CellGuide</rdfs:label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002543"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endothelial cell that is part of the vein.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2591,13 +2954,20 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226532</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527800</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000489"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reticular cell that is part of the splenic cord.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000489"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.humanatlas.io/digital-objects/2d-ftu/spleen-white-pulp/v1.2/assets/2d-ftu-spleen-white-pulp.png</owl:annotatedTarget>
+        <terms:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.48539/HBM559.FNBB.6273</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2623,6 +2993,13 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any endothelial cell that is part of a spleen.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000053"/>
+        <owl:annotatedProperty rdf:resource="http://xmlns.com/foaf/0.1/depiction"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.humanatlas.io/digital-objects/2d-ftu/spleen-white-pulp/v1.2/assets/2d-ftu-spleen-white-pulp.png</owl:annotatedTarget>
+        <terms:licence rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.48539/HBM559.FNBB.6273</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -2646,6 +3023,15 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neuron that releases catecholamine as a neurotransmitter.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0521442516</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12094209</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033050"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frequently used when describing the developing nervous system in zebrafish. A catecholaminergic neuron expresses tyrosine hydroxylase (TH), tyrosine hydroxylase 2 (TH2), aromatic amino acid decarboxylase (AADC), dopamine b-hydroxylase (DBH), and phenylethanolamine-N-methyl transferase (PEMT), which are enzymes necessary for catecholamine synthesis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10191060</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12128258</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:34880760</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-2244-7917</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2676,7 +3062,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galen:SplenicArtery</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arteria splenica</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lienal artery</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arteria lienalis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001194</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -2747,7 +3132,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hilum splenicum</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen hilum</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic hilum</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hilum splenicum</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001248</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -2769,7 +3153,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226541</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527783</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001248"/>
@@ -2846,7 +3230,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red pulp</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen red pulp</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic red pulp</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulpa splenica</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001250</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -2862,7 +3245,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:22:59.451046</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:46.763031</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001250"/>
@@ -2874,7 +3257,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:04.024539</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:51.129012</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001250"/>
@@ -2886,7 +3269,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:04.024542</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:51.129028</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001250"/>
@@ -2941,7 +3324,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Marginal_zone</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">junctional zone of spleen</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen marginal zone</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001251</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
@@ -2999,7 +3381,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen trabeculum</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic trabecula</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trabeculae of spleen</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001265</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
@@ -3052,7 +3433,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Cords_of_Billroth</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cord of Billroth</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cord of Bilroth</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001266</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
@@ -3069,7 +3449,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226522</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527806</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001266"/>
@@ -3081,7 +3461,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:04.024529</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:51.129026</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001266"/>
@@ -3141,7 +3521,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Lymphatic_vessel</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:0000375</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymph vessel</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vas lymphaticum</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001473</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
@@ -3199,9 +3578,9 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D042601</owl:annotatedTarget>
-        <sssom:author_id rdf:resource="https://orcid.org/0000-0001-9439-5346"/>
+        <pav:authoredBy rdf:resource="https://orcid.org/0000-0001-9439-5346"/>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
-        <sssom:mapping_provider rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/biopragmatics/biomappings</sssom:mapping_provider>
+        <sssom:mapping_provider rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/biopragmatics/biomappings</sssom:mapping_provider>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001473"/>
@@ -3237,7 +3616,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen white pulp</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic white pulp</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">white pulp</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noduli lymphoidei splenici</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001959</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -3253,7 +3631,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:22:59.451030</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:46.763011</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001959"/>
@@ -3306,7 +3684,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">periarterial lymphoid sheath</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">periarteriolar sheath</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen periarteriolar lymphatic sheath</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic periarteriolar lymphoid sheath</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001960</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -3325,7 +3702,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226563</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527808</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001960"/>
@@ -3406,7 +3783,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:0000328</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0000436</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galen:Spleen</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lien</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002106</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
@@ -3486,7 +3862,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Splenic_vein</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galen:SplenicVein</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vena splenica</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lienal vein</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vena lienalis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003713</oboInOwl:id>
@@ -3562,7 +3937,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCTID:9081000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Red_pulp#Sinusoids</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sinusoidal blood vessel of spleen</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sinusoid of red pulp of spleen</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0003910</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -3580,7 +3954,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226561</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527787</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003910"/>
@@ -3648,7 +4022,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:37960</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:15843</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary spleen B cell follicle</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004041</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
@@ -3666,7 +4039,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226543</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527798</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004041"/>
@@ -3678,7 +4051,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:03.263547</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:50.549053</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004041"/>
@@ -3721,7 +4094,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:37961</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary spleen B cell follicle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic secondary B cell follicle</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004042</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
@@ -3739,7 +4111,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226550</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527785</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004042"/>
@@ -3793,7 +4165,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic capsule</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tunica fibrosa (splen)(lien)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tunica fibrosa splenica</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0004641</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
@@ -3811,7 +4182,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226567</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527781</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004641"/>
@@ -3892,6 +4263,8 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A germinal center that is part of the spleen. The spleen germinal center is located in a secondary B follicle in the white pulp of the spleen.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:35803</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0000764</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C49760</oboInOwl:hasDbXref>
@@ -3900,7 +4273,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen GC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen follicle center</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic germinal center</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0005196</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
@@ -3918,7 +4290,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226548</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527804</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005196"/>
@@ -3962,7 +4334,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9989"/>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:UBPROP_0000008 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The perifollicular zone, which is present in human and not rodents, may be the functional equivalent of the marginal sinus in rodents.</obo:UBPROP_0000008>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0005353</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
@@ -4007,7 +4378,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C49775</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C1710159</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Trabecular_arteries</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trabecular artery</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0010399</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -4026,7 +4396,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226572</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527802</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010399"/>
@@ -4067,7 +4437,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C49779</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C1710160</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Trabecular_veins</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trabecular vein</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0010400</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -4086,7 +4455,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226535</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527793</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010400"/>
@@ -4139,7 +4508,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0000763</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">follicular arteriole</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic central arteriole</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0010401</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
@@ -4158,7 +4526,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226545</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527814</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010401"/>
@@ -4170,7 +4538,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226570</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527791</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010401"/>
@@ -4204,6 +4572,8 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The area of the (spleen) secondary B follicle that surrounds the germinal center and harbors the small recirculating B lymphocytes.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B cell domain of the spleen</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B lymphocyte domain of the spleen</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lymphocytic corona</oboInOwl:hasBroadSynonym>
@@ -4214,7 +4584,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen B-cell corona</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen lymphocytic corona</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic B cell corona</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen mantle zone</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0010421</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -4233,7 +4602,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226538</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527810</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010421"/>
@@ -4316,7 +4685,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:37617</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0001160</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0012373</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
@@ -4352,7 +4720,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:16038</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">penicilli</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">penicillus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">penicillar artery</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0013132</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
@@ -4370,7 +4737,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:02.136981</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:49.411843</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013132"/>
@@ -4415,7 +4782,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malpighian corpuscles</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulp of spleen</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">splenic pulp</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:1000023</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
@@ -4432,7 +4798,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-22T07:23:00.226554</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2025-10-29T07:23:47.527812</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000023"/>

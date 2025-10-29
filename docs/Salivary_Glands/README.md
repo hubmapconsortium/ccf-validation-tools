@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Salivary_Glands (2025-10-22)
+ASCT+B Validation Reports for Salivary_Glands (2025-10-29)
 ==========================================================
 
 Table of contents
@@ -154,9 +154,9 @@ In the case of the AS-CT relationship, for each couple of terms, we verify for _
 
 |    | s                                                       | slabel                              | user_slabel                         | o                                                               | olabel                      | user_olabel                 | row_number                                                                                                               |   deltaIC |
 |----|---------------------------------------------------------|-------------------------------------|-------------------------------------|-----------------------------------------------------------------|-----------------------------|-----------------------------|--------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | [CL:0002623](http://purl.obolibrary.org/obo/CL_0002623) | acinar cell of salivary gland       | acinar cell of salivary gland       | [UBERON:0011847](http://purl.obolibrary.org/obo/UBERON_0011847) | acinus of parotid gland     | acinus of parotid gland     | [12](https://docs.google.com/spreadsheets/d/14QpltdXoHBrMAFs7WpzrtKGmOQ_JKPgJ3xTBbguffE4/edit#gid=223508948&range=12:12) |       nan |
-|  1 | [CL:4052048](http://purl.obolibrary.org/obo/CL_4052048) | intercalated cell of salivary gland | intercalated cell of salivary gland | [UBERON:0003360](http://purl.obolibrary.org/obo/UBERON_0003360) | epithelium of parotid gland | epithelium of parotid gland | [13](https://docs.google.com/spreadsheets/d/14QpltdXoHBrMAFs7WpzrtKGmOQ_JKPgJ3xTBbguffE4/edit#gid=223508948&range=13:13) |       nan |
-|  2 | [CL:4052049](http://purl.obolibrary.org/obo/CL_4052049) | striated cell of salivary gland     | striated cell of salivary gland     | [UBERON:0003419](http://purl.obolibrary.org/obo/UBERON_0003419) | mesenchyme of parotid       | mesenchyme of parotid       | [14](https://docs.google.com/spreadsheets/d/14QpltdXoHBrMAFs7WpzrtKGmOQ_JKPgJ3xTBbguffE4/edit#gid=223508948&range=14:14) |       nan |
+|  0 | [CL:0002623](http://purl.obolibrary.org/obo/CL_0002623) | acinar cell of salivary gland       | acinar cell of salivary gland       | [UBERON:0011847](http://purl.obolibrary.org/obo/UBERON_0011847) | acinus of parotid gland     | acinus of parotid gland     | [12](https://docs.google.com/spreadsheets/d/14QpltdXoHBrMAFs7WpzrtKGmOQ_JKPgJ3xTBbguffE4/edit#gid=223508948&range=12:12) |   1.89606 |
+|  1 | [CL:4052048](http://purl.obolibrary.org/obo/CL_4052048) | intercalated cell of salivary gland | intercalated cell of salivary gland | [UBERON:0003360](http://purl.obolibrary.org/obo/UBERON_0003360) | epithelium of parotid gland | epithelium of parotid gland | [13](https://docs.google.com/spreadsheets/d/14QpltdXoHBrMAFs7WpzrtKGmOQ_JKPgJ3xTBbguffE4/edit#gid=223508948&range=13:13) | nan       |
+|  2 | [CL:4052049](http://purl.obolibrary.org/obo/CL_4052049) | striated cell of salivary gland     | striated cell of salivary gland     | [UBERON:0003419](http://purl.obolibrary.org/obo/UBERON_0003419) | mesenchyme of parotid       | mesenchyme of parotid       | [14](https://docs.google.com/spreadsheets/d/14QpltdXoHBrMAFs7WpzrtKGmOQ_JKPgJ3xTBbguffE4/edit#gid=223508948&range=14:14) | nan       |
 
 
 
