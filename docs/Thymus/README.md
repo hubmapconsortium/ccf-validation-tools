@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Thymus (2025-11-05)
+ASCT+B Validation Reports for Thymus (2025-11-12)
 =================================================
 
 Table of contents
@@ -54,9 +54,9 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
   
 1. The term _[CL:0002059](http://purl.obolibrary.org/obo/CL_0002059)_ has a different name/label in the source ontology in the following 2 rows _[58](https://docs.google.com/spreadsheets/d/1EPl6_WSbS2Kl6T7pKWKGt9UCHvOBnZ5RXm45IpMVLVA/edit#gid=863370556&range=58:58)_, _[79](https://docs.google.com/spreadsheets/d/1EPl6_WSbS2Kl6T7pKWKGt9UCHvOBnZ5RXm45IpMVLVA/edit#gid=863370556&range=79:79)_. The name/label in the **ASCT+B table** is _CD8alpha-positive thymic conventional dendritic cell_ and the one in the **ontology** is _CD8-alpha-positive thymic conventional dendritic cell_. For reference, the given name/label **by SMEs** is _conventional dendritic cell 1_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. The term _[CL:0002460](http://purl.obolibrary.org/obo/CL_0002460)_ has a different name/label in the source ontology in the following 2 rows _[59](https://docs.google.com/spreadsheets/d/1EPl6_WSbS2Kl6T7pKWKGt9UCHvOBnZ5RXm45IpMVLVA/edit#gid=863370556&range=59:59)_, _[80](https://docs.google.com/spreadsheets/d/1EPl6_WSbS2Kl6T7pKWKGt9UCHvOBnZ5RXm45IpMVLVA/edit#gid=863370556&range=80:80)_. The name/label in the **ASCT+B table** is _CD8alpha-negative thymic conventional dendritic cell_ and the one in the **ontology** is _CD8-alpha-negative thymic conventional dendritic cell_. For reference, the given name/label **by SMEs** is _conventional dendritic cell 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[CL:0000940](http://purl.obolibrary.org/obo/CL_0000940)_ has a different name/label in the source ontology in the following 1 row _[77](https://docs.google.com/spreadsheets/d/1EPl6_WSbS2Kl6T7pKWKGt9UCHvOBnZ5RXm45IpMVLVA/edit#gid=863370556&range=77:77)_. The name/label in the **ASCT+B table** is _mucosal invariant T cell_ and the one in the **ontology** is _mucosal-associated invariant T cell_. For reference, the given name/label **by SMEs** is _mucosal associated invariant T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[CL:0002460](http://purl.obolibrary.org/obo/CL_0002460)_ has a different name/label in the source ontology in the following 2 rows _[59](https://docs.google.com/spreadsheets/d/1EPl6_WSbS2Kl6T7pKWKGt9UCHvOBnZ5RXm45IpMVLVA/edit#gid=863370556&range=59:59)_, _[80](https://docs.google.com/spreadsheets/d/1EPl6_WSbS2Kl6T7pKWKGt9UCHvOBnZ5RXm45IpMVLVA/edit#gid=863370556&range=80:80)_. The name/label in the **ASCT+B table** is _CD8alpha-negative thymic conventional dendritic cell_ and the one in the **ontology** is _CD8-alpha-negative thymic conventional dendritic cell_. For reference, the given name/label **by SMEs** is _conventional dendritic cell 2_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
