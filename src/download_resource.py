@@ -1,23 +1,34 @@
 """
 Download ASCT+B table as JSON and extract its date and version
 """
+
 import argparse
 import json
 from ast import literal_eval
 
 import requests
 
-API_URL = "https://apps.humanatlas.io/asctb-api/v2/{sheetId}/{gid}"
+API_SHEET_CONFIG = "https://apps.humanatlas.io/api/v1/asctb-sheet-config"
+API_URL_GSHEET_CSV = (
+    "https://docs.google.com/spreadsheets/d/{sheetId}/export?format=csv"
+)
+API_URL_CSV = "https://apps.humanatlas.io/asctb-api/v2/csv?csvUrl={csv}"
 
 
 def get_config() -> list:
     """
-    Load config file where list all sheet id and gid per table
+    Download the latest ASCT+B sheet config from the HRA API
     """
-    with open("config_asct.json", "r", encoding="utf-8") as f:
-        data = json.load(f)
+    data = requests.get(API_SHEET_CONFIG).json()
 
     return data
+
+
+def normalize_name(name: str) -> str:
+    """
+    Normalize string for matching purposes
+    """
+    return name.upper().replace("-", "_")
 
 
 def get_sheet_gid(job: str, old_version: str) -> dict:
@@ -26,13 +37,16 @@ def get_sheet_gid(job: str, old_version: str) -> dict:
     """
     data = get_config()
 
+    name = normalize_name(job)
     element = next(
-        (element for element in data if element["name"] == job),
-        None
+        (element for element in data if normalize_name(element["name"]) == name), None
     )
-    if element:
-        return element["old"] if literal_eval(old_version) else element["new"]
-    return {}
+    if not element:
+        return {}
+    elif len(element["version"]) == 1 or not literal_eval(old_version):
+        return element["version"][-1]
+    else:
+        return element["version"][-2]
 
 
 def get_table_version_n_date(metadata: dict):
@@ -57,10 +71,12 @@ def main(params: dict):
     """
     version = get_sheet_gid(params.job, params.old_version)
 
-    data = requests.get(
-        API_URL.format(sheetId=version["sheetId"], gid=version["gid"]),
-        timeout=600
-    ).json()
+    if "csvUrl" in version:
+        csv_url = version["csvUrl"]
+    else:
+        csv_url = API_URL_GSHEET_CSV.format(sheetId=version["sheetId"])
+
+    data = requests.get(API_URL_CSV.format(csv=csv_url), timeout=600).json()
 
     table_date, table_version = get_table_version_n_date(data["metadata"])
 
