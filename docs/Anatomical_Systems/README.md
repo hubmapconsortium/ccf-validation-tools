@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Anatomical_Systems (2025-12-10)
+ASCT+B Validation Reports for Anatomical_Systems (2026-01-14)
 =============================================================
 
 Table of contents
@@ -124,10 +124,10 @@ This table contains terms for anatomical structures that are related to each oth
 
 
 
-|    | s                                                               | slabel             | user_slabel        | o                                                               | olabel                     | user_olabel                | row_number                                                                                                                |   deltaIC |
-|----|-----------------------------------------------------------------|--------------------|--------------------|-----------------------------------------------------------------|----------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
-|  0 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [44](https://docs.google.com/spreadsheets/d/1P4pZmCiU60QZvBtUbj0n3IItd8WMlzVjzNcmVYHa7Tw/edit#gid=2028977062&range=44:44) |       nan |
-|  1 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [45](https://docs.google.com/spreadsheets/d/1P4pZmCiU60QZvBtUbj0n3IItd8WMlzVjzNcmVYHa7Tw/edit#gid=2028977062&range=45:45) |       nan |
+|    | s                                                               | slabel             | user_slabel        | o                                                               | olabel                     | user_olabel                | row_number                                                                                                       |   deltaIC |
+|----|-----------------------------------------------------------------|--------------------|--------------------|-----------------------------------------------------------------|----------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------|-----------|
+|  0 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [43](https://docs.google.com/spreadsheets/d/1mRwvNYecTVaZDsg_UYBbOHr9GmKPKqLOTjHUeFdj25U/edit#gid=0&range=43:43) |       nan |
+|  1 | [UBERON:0004175](http://purl.obolibrary.org/obo/UBERON_0004175) | internal genitalia | internal genitalia | [UBERON:0000474](http://purl.obolibrary.org/obo/UBERON_0000474) | female reproductive system | female reproductive system | [44](https://docs.google.com/spreadsheets/d/1mRwvNYecTVaZDsg_UYBbOHr9GmKPKqLOTjHUeFdj25U/edit#gid=0&range=44:44) |       nan |
 
 
 

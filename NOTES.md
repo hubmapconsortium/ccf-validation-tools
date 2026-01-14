@@ -6,49 +6,49 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
+|CL|2025-10-16|
 |PCL|2025-07-07|
 |UBERON|2025-08-15|
-|CL|2025-10-16|
 
 ### ASCT+b Tables
 
 |Organ|Version|Date|
 | :---: | :---: | :---: |
-|Anatomical_Systems|v1.2|June 15, 2025|
+|Anatomical_Systems|v1.3|NA|
 |Blood|v1.5|revise 2025|
 |Bone-Marrow|v1.6|NA|
-|Brain|v1.8|revise for 2025|
+|Brain|v1.8|December 15, 2025|
 |Eye|v1.5|revise 2025|
 |Fallopian_tube|v1.5|prepare for April 1, 2025|
 |Gingiva|v1.0|Will be added for HRA release availability|
-|Heart|v1.6|revise 2025|
-|Kidney|v1.7|prepare for April 1, 2025|
+|Heart|v1.6|December 15, 2025|
+|Kidney|v1.8|NA|
 |Knee|v1.3|revise for October 1, 2024|
-|Large_intestine|v1.4|June 15, 2025|
-|Liver|v1.4|June 15, 2025|
+|Large_intestine|v1.5|December 15, 2025|
+|Liver|v1.5|December 15, 2025|
 |Lung|v1.6|prepare for April 1, 2025|
 |Lymph_node|v1.5|revise for October 1, 2024|
 |Lymph_vasculature|v1.5|revise for April 1, 2025|
-|Main_Bronchus|v1.3|June 15, 2025|
+|Main_Bronchus|v1.4|NA|
 |Mammary_Gland|v1.0|revise for April 1, 2024|
-|Mouth|v1.0|6/15/2025|
-|Muscular_System|v1.3|June 15, 2025|
+|Mouth|v1.1|10/30/2025|
+|Muscular_System|v1.4|NA|
 |Ovary|v1.4|revise for October 1, 2024|
-|Pancreas|v1.4|revise for April 1, 2025|
-|Palatine_Tonsil|V1.1|June 15, 2024|
+|Pancreas|v1.4|December 15, 2025|
+|Palatine_Tonsil|v1.2|NA|
 |Peripheral_nervous_system|v1.3|NA|
 |Placenta|v1.3|NA|
 |Prostate|v1.2|revise for October 1, 2024|
 |Salivary_Glands|v1.0|Will be added for HRA release availability|
 |Skeleton|v1.3|revise for October 1, 2024|
-|Skin|v1.4|December 15, 2024|
-|Small_intestine|v1.2|June 15, 2025|
-|Spinal_Cord|v1.1|December 15, 2024|
-|Spleen|v1.4|December 15, 2024|
-|Thymus|v1.5|December 15, 2024|
+|Skin|v1.6|December 15, 2025|
+|Small_intestine|v1.3|December 15, 2025|
+|Spinal_Cord|v1.2|NA|
+|Spleen|v1.6|NA|
+|Thymus|v1.6|NA|
 |Tongue|v|Will be added for HRA release availability|
 |Trachea|v1.1|revise for October 1|
 |Ureter|NA|revise for April 2023|
 |Urinary_bladder|v1.1|revise for April 2024|
-|Uterus|v1.2|June 15, 2025|
-|Blood_vasculature|v1.8|June 15, 2025|
+|Uterus|v1.3|NA|
+|Blood_vasculature|v1.9|September 28, 2025|
