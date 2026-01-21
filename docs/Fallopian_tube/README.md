@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Fallopian_tube (2026-01-14)
+ASCT+B Validation Reports for Fallopian_tube (2026-01-21)
 =========================================================
 
 Table of contents
@@ -52,9 +52,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[UBERON:8410010](http://purl.obolibrary.org/obo/UBERON_8410010)_ has a different name/label in the source ontology in the following 3 rows _[115](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=115:115)_, _[126](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=126:126)_, _[127](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=127:127)_. The name/label in the **ASCT+B table** is _fimbria of uterine tube_ and the one in the **ontology** is _fimbria of fallopian tube_. For reference, the given name/label **by SMEs** is _fimbria of Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[CL:4030007](http://purl.obolibrary.org/obo/CL_4030007)_ has a different name/label in the source ontology in the following 5 rows _[120](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=120:120)_, _[122](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=122:122)_, _[124](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=124:124)_, _[126](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=126:126)_, _[128](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=128:128)_. The name/label in the **ASCT+B table** is _fallopian tube ciliated cell_ and the one in the **ontology** is _fallopian tube multiciliated epithelial cell_. For reference, the given name/label **by SMEs** is _fallopian tube ciliated cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[UBERON:8410010](http://purl.obolibrary.org/obo/UBERON_8410010)_ has a different name/label in the source ontology in the following 3 rows _[115](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=115:115)_, _[126](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=126:126)_, _[127](https://docs.google.com/spreadsheets/d/1Zc9aWxK0lJDCemw9VElbk8brvCW4xZHH7CvJ-TZEGsM/edit#gid=0&range=127:127)_. The name/label in the **ASCT+B table** is _fimbria of uterine tube_ and the one in the **ontology** is _fimbria of fallopian tube_. For reference, the given name/label **by SMEs** is _fimbria of Fallopian tube_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
