@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Prostate (2026-01-21)
+ASCT+B Validation Reports for Prostate (2026-01-28)
 ===================================================
 
 Table of contents
@@ -40,7 +40,7 @@ This report provides a list of terms not found neither in UBERON nor in CL. Plea
 
 This report provides a general quality check of the terms used in the ASCT+B table. Typos, font case (upper case), punctuation mistakes in IDs: two colons, spaces, underscore instead of a colon.  
   
-1. It might have a typo in the term _NEED_ in the following 1 row _[25](https://docs.google.com/spreadsheets/d/1jR_UpAkyn-cXNQXjpTBOWv1CTw1Z_5yi_UDoUMIHavw/edit#gid=0&range=25:25)_. The term id should have this pattern: UBERON:NNNNNNN or CL:NNNNNNN or PCL:NNNNNNN. The ontology name in upper case. N is a number, and it should have exactly 7 numbers after the colon. Please change it in the ASCT+B table.
+- No issues found.
 
 
 ## Different labels
@@ -63,6 +63,8 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
 1. No term id was found for the name/label _ionocyte epithelia_ in the following 1 row _[14](https://docs.google.com/spreadsheets/d/1jR_UpAkyn-cXNQXjpTBOWv1CTw1Z_5yi_UDoUMIHavw/edit#gid=0&range=14:14)_.
+
+1. No term id was found for the name/label _endoneurial fibroblast_ in the following 1 row _[25](https://docs.google.com/spreadsheets/d/1jR_UpAkyn-cXNQXjpTBOWv1CTw1Z_5yi_UDoUMIHavw/edit#gid=0&range=25:25)_.
 
 
 ## Blank ontology ID missing parent
