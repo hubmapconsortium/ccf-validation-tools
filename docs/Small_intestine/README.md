@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Small_intestine (2026-01-28)
+ASCT+B Validation Reports for Small_intestine (2026-02-04)
 ==========================================================
 
 Table of contents
@@ -52,9 +52,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:0000212](http://purl.obolibrary.org/obo/CL_0000212)_ has a different name/label in the source ontology in the following 3 rows _[57](https://docs.google.com/spreadsheets/d/10WGdf1sMLkz3NTvyq9Rw28ZzcIEns2CuYOq8i3aoOHw/edit#gid=0&range=57:57)_, _[225](https://docs.google.com/spreadsheets/d/10WGdf1sMLkz3NTvyq9Rw28ZzcIEns2CuYOq8i3aoOHw/edit#gid=0&range=225:225)_, _[308](https://docs.google.com/spreadsheets/d/10WGdf1sMLkz3NTvyq9Rw28ZzcIEns2CuYOq8i3aoOHw/edit#gid=0&range=308:308)_. The name/label in the **ASCT+B table** is _absorptive cell_ and the one in the **ontology** is _obsolete absorptive cell_. For reference, the given name/label **by SMEs** is _absorptive_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[CL:0000186](http://purl.obolibrary.org/obo/CL_0000186)_ has a different name/label in the source ontology in the following 2 rows _[231](https://docs.google.com/spreadsheets/d/10WGdf1sMLkz3NTvyq9Rw28ZzcIEns2CuYOq8i3aoOHw/edit#gid=0&range=231:231)_, _[314](https://docs.google.com/spreadsheets/d/10WGdf1sMLkz3NTvyq9Rw28ZzcIEns2CuYOq8i3aoOHw/edit#gid=0&range=314:314)_. The name/label in the **ASCT+B table** is _myofibroblast_ and the one in the **ontology** is _myofibroblast cell_. For reference, the given name/label **by SMEs** is _myofibroblasts_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[CL:0000212](http://purl.obolibrary.org/obo/CL_0000212)_ has a different name/label in the source ontology in the following 3 rows _[57](https://docs.google.com/spreadsheets/d/10WGdf1sMLkz3NTvyq9Rw28ZzcIEns2CuYOq8i3aoOHw/edit#gid=0&range=57:57)_, _[225](https://docs.google.com/spreadsheets/d/10WGdf1sMLkz3NTvyq9Rw28ZzcIEns2CuYOq8i3aoOHw/edit#gid=0&range=225:225)_, _[308](https://docs.google.com/spreadsheets/d/10WGdf1sMLkz3NTvyq9Rw28ZzcIEns2CuYOq8i3aoOHw/edit#gid=0&range=308:308)_. The name/label in the **ASCT+B table** is _absorptive cell_ and the one in the **ontology** is _obsolete absorptive cell_. For reference, the given name/label **by SMEs** is _absorptive_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
