@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Knee (2026-02-04)
+ASCT+B Validation Reports for Knee (2026-02-12)
 ===============================================
 
 Table of contents
@@ -32,7 +32,9 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-- No issues found.
+1. CL:0020023
+
+1. CL:0020022
 
 
 ## Typos or punctuation mistakes
@@ -66,8 +68,6 @@ You can find more information on the [New CL terms](#new-cl-terms) or [New UBERO
 
 1. No term id was found for the name/label _Regulatory Chondrocyte 2_ in the following 2 rows _[12](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=12:12)_, _[22](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=22:22)_.
 
-1. No term id was found for the name/label _Effector Chondrocyte_ in the following 2 rows _[13](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=13:13)_, _[23](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=23:23)_.
-
 1. No term id was found for the name/label _Prefibrocartilage Chondrocyte_ in the following 2 rows _[14](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=14:14)_, _[24](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=24:24)_.
 
 1. No term id was found for the name/label _Fibrocartilage Chondrocyte 1_ in the following 2 rows _[15](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=15:15)_, _[25](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=25:25)_.
@@ -78,7 +78,9 @@ You can find more information on the [New CL terms](#new-cl-terms) or [New UBERO
 
 1. No term id was found for the name/label _Reparative Chondrocyte_ in the following 2 rows _[18](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=18:18)_, _[28](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=28:28)_.
 
-1. No term id was found for the name/label _Prehypertrophic Chondrocyte_ in the following 2 rows _[19](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=19:19)_, _[29](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=29:29)_.
+1. No term id was found for the name/label _Effector Chondrocyte_ in the following 1 row _[23](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=23:23)_.
+
+1. No term id was found for the name/label _Prehypertrophic Chondrocyte_ in the following 1 row _[29](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=29:29)_.
 
 
 ## Blank ontology ID missing parent

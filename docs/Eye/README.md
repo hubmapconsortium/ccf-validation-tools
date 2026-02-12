@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Eye (2026-02-04)
+ASCT+B Validation Reports for Eye (2026-02-12)
 ==============================================
 
 Table of contents
@@ -62,8 +62,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. No term id was found for the name/label _limbal stem cells_ in the following 1 row _[27](https://docs.google.com/spreadsheets/d/135dLXOHyEyeLQVTL7v1kHEmdQ4vR5Y5HAHo8NZ7Msck/edit#gid=0&range=27:27)_.
-
 1. No term id was found for the name/label _Inner cortex_ in the following 1 row _[35](https://docs.google.com/spreadsheets/d/135dLXOHyEyeLQVTL7v1kHEmdQ4vR5Y5HAHo8NZ7Msck/edit#gid=0&range=35:35)_.
 
 1. No term id was found for the name/label _Outer cortex_ in the following 2 rows _[36](https://docs.google.com/spreadsheets/d/135dLXOHyEyeLQVTL7v1kHEmdQ4vR5Y5HAHo8NZ7Msck/edit#gid=0&range=36:36)_, _[37](https://docs.google.com/spreadsheets/d/135dLXOHyEyeLQVTL7v1kHEmdQ4vR5Y5HAHo8NZ7Msck/edit#gid=0&range=37:37)_.
