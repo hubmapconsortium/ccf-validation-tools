@@ -64,14 +64,13 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
           'OBO_Validated_surrounds': '>A CCFH:IN_OBO',
           'validation_date_surrounds': '>A dc:date'}
 
-  seed_sub_ub = {'ID': 'ID', 'in_subset': 'AI in_subset', 'present_in_taxon': 'AI present_in_taxon'}
-  seed_sub_cl = {'ID': 'ID', 'in_subset': 'AI in_subset'}
+  seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset'}
   seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
   image_report = []
   ug = UberonGraph()
   records = [seed]
-  records_ub_sub = [seed_sub_ub]
-  records_cl_sub = [seed_sub_cl]
+  records_ub_sub = [seed_sub]
+  records_cl_sub = [seed_sub]
   no_valid_records = [seed_no_valid]
   if ccf_tools_df.empty:
     return (pd.DataFrame.from_records(records), pd.DataFrame.from_records(no_valid_records), error_log, ConjunctiveGraph(), valid_error_log, report_relationship, strict_log, 
@@ -121,9 +120,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
     records.append({'ID': r['o'], 'User_label': r['user_olabel']})
 
     if 'UBERON' in r['s']:
-      records_ub_sub.append({'ID': r['s'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
+      records_ub_sub.append({'ID': r['s'], 'in_subset': 'human_reference_atlas'})
     if 'UBERON' in r['o']:
-      records_ub_sub.append({'ID': r['o'], 'present_in_taxon': 'NCBITaxon:9606', 'in_subset': 'human_reference_atlas'})
+      records_ub_sub.append({'ID': r['o'], 'in_subset': 'human_reference_atlas'})
     if 'CL' in r['s'] and not 'PCL' in r['s']:
       records_cl_sub.append({'ID': r['s'], 'in_subset': 'human_reference_atlas'})
     if 'CL' in r['o'] and not 'PCL' in r['o']:
