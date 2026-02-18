@@ -353,7 +353,10 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   for _, r in error_log.iterrows():
     subj_ic = norm_ic_term(norm_ic_list, r["s"])
     obj_ic = norm_ic_term(norm_ic_list, r["o"])
-    if subj_ic < obj_ic:
+    if subj_ic is None or obj_ic is None:
+      # do something?
+      pass
+    elif subj_ic < obj_ic:
       r["deltaIC"] = abs(subj_ic - obj_ic)
     
 
