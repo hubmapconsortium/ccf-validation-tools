@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Knee (2026-02-12)
+ASCT+B Validation Reports for Knee (2026-02-18)
 ===============================================
 
 Table of contents
@@ -77,10 +77,6 @@ You can find more information on the [New CL terms](#new-cl-terms) or [New UBERO
 1. No term id was found for the name/label _Homeostatic Chodrocyte_ in the following 2 rows _[17](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=17:17)_, _[27](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=27:27)_.
 
 1. No term id was found for the name/label _Reparative Chondrocyte_ in the following 2 rows _[18](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=18:18)_, _[28](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=28:28)_.
-
-1. No term id was found for the name/label _Effector Chondrocyte_ in the following 1 row _[23](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=23:23)_.
-
-1. No term id was found for the name/label _Prehypertrophic Chondrocyte_ in the following 1 row _[29](https://docs.google.com/spreadsheets/d/15YnWDjFsbuMqStmEjCTA20ZoDzHVEYGh6lqYbeItj6w/edit#gid=0&range=29:29)_.
 
 
 ## Blank ontology ID missing parent
