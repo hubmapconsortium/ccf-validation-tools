@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Trachea (2026-02-18)
+ASCT+B Validation Reports for Trachea (2026-02-25)
 ==================================================
 
 Table of contents
@@ -52,11 +52,11 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:4033055](http://purl.obolibrary.org/obo/CL_4033055)_ has a different name/label in the source ontology in the following 1 row _[19](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=19:19)_. The name/label in the **ASCT+B table** is _airway submucosal gland duct ciliated cell _ and the one in the **ontology** is _airway submucosal gland duct multiciliated cell_. For reference, the given name/label **by SMEs** is _airway submucosal gland duct ciliated cell _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[UBERON:8600011](http://purl.obolibrary.org/obo/UBERON_8600011)_ has a different name/label in the source ontology in the following 1 row _[19](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=19:19)_. The name/label in the **ASCT+B table** is _terminal ciliated ducts for tracheal submucosal gland_ and the one in the **ontology** is _tracheal submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _terminal ciliated ducts for tracheal submucosal gland_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _[CL:0002145](http://purl.obolibrary.org/obo/CL_0002145)_ has a different name/label in the source ontology in the following 1 row _[11](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=11:11)_. The name/label in the **ASCT+B table** is _ciliated columnar cell of tracheobronchial tree_ and the one in the **ontology** is _multiciliated columnar cell of tracheobronchial tree_. For reference, the given name/label **by SMEs** is _ciliated columnar cell of tracheobronchial tree_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[CL:4033055](http://purl.obolibrary.org/obo/CL_4033055)_ has a different name/label in the source ontology in the following 1 row _[19](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=19:19)_. The name/label in the **ASCT+B table** is _airway submucosal gland duct ciliated cell _ and the one in the **ontology** is _airway submucosal gland duct multiciliated cell_. For reference, the given name/label **by SMEs** is _airway submucosal gland duct ciliated cell _. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 1. The term _[CL:1000223](http://purl.obolibrary.org/obo/CL_1000223)_ has a different name/label in the source ontology in the following 1 row _[12](https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0&range=12:12)_. The name/label in the **ASCT+B table** is _lung neuroendocrine cell_ and the one in the **ontology** is _pulmonary neuroendocrine cell_. For reference, the given name/label **by SMEs** is _lung neuroendocrine cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
