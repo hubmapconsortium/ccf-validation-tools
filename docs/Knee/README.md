@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Knee (2026-02-25)
+ASCT+B Validation Reports for Knee (2026-03-04)
 ===============================================
 
 Table of contents
@@ -32,9 +32,9 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. CL:0020023
-
 1. CL:0020022
+
+1. CL:0020023
 
 
 ## Typos or punctuation mistakes
