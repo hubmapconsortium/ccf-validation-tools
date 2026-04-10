@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Mouth (2026-04-01)
+ASCT+B Validation Reports for Mouth (2026-04-10)
 ================================================
 
 Table of contents
@@ -32,13 +32,29 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. UBERON:8000012
+1. CL:9900006
 
 1. UBERON:8000011
+
+1. CL:9900002
+
+1. CL:9900005
 
 1. UBERON:8000013
 
 1. UBERON:8000014
+
+1. UBERON:8000012
+
+1. CL:9900003
+
+1. CL:9900001
+
+1. CL:9900007
+
+1. CL:9900008
+
+1. CL:9900004
 
 
 ## Typos or punctuation mistakes
@@ -68,19 +84,7 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. No term id was found for the name/label _tongue_ in the following 1 row _[11](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=11:11)_.
-
-1. No term id was found for the name/label _junctional epithelium cell_ in the following 1 row _[29](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=29:29)_.
-
-1. No term id was found for the name/label _basal ductal cell_ in the following 2 rows _[34](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=34:34)_, _[68](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=68:68)_.
-
-1. No term id was found for the name/label _periacinar fibroblast_ in the following 3 rows _[43](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=43:43)_, _[62](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=62:62)_, _[79](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=79:79)_.
-
-1. No term id was found for the name/label _periductal fibroblast_ in the following 3 rows _[45](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=45:45)_, _[64](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=64:64)_, _[81](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=81:81)_.
-
 1. No term id was found for the name/label _excretory duct epithelial cell_ in the following 2 rows _[49](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=49:49)_, _[85](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=85:85)_.
-
-1. No term id was found for the name/label _demilune acinar cell_ in the following 2 rows _[52](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=52:52)_, _[69](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=69:69)_.
 
 1. No term id was found for the name/label _mucous acinar cell_ in the following 2 rows _[60](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=60:60)_, _[77](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=77:77)_.
 
@@ -96,17 +100,7 @@ You can find more information on the [New CL terms](#new-cl-terms) or [New UBERO
 
 This report provides a list of CT terms with blank ontology ID without an upper term from [Cell Ontology](https://www.ebi.ac.uk/ols4/ontologies/cl). Please, create an upper level in the ASCT+B table and add an upper term for them. Please, make sure the term without ontology ID _doesn't exist_ in the ontology.  
   
-1. The term _junctional epithelium cell_ without ontology ID has no parent that is from the CL ontology in the following 1 row _[29](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=29:29)_.
-
-1. The term _basal ductal cell_ without ontology ID has no parent that is from the CL ontology in the following 2 rows _[34](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=34:34)_, _[68](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=68:68)_.
-
-1. The term _periacinar fibroblast_ without ontology ID has no parent that is from the CL ontology in the following 3 rows _[43](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=43:43)_, _[62](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=62:62)_, _[79](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=79:79)_.
-
-1. The term _periductal fibroblast_ without ontology ID has no parent that is from the CL ontology in the following 3 rows _[45](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=45:45)_, _[64](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=64:64)_, _[81](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=81:81)_.
-
 1. The term _excretory duct epithelial cell_ without ontology ID has no parent that is from the CL ontology in the following 2 rows _[49](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=49:49)_, _[85](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=85:85)_.
-
-1. The term _demilune acinar cell_ without ontology ID has no parent that is from the CL ontology in the following 2 rows _[52](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=52:52)_, _[69](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=69:69)_.
 
 1. The term _mucous acinar cell_ without ontology ID has no parent that is from the CL ontology in the following 2 rows _[60](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=60:60)_, _[77](https://docs.google.com/spreadsheets/d/1HKK77M1QV2I3uJ6WwKHvVP0tVL7icVTxx25ZZ219Km8/edit#gid=0&range=77:77)_.
 
