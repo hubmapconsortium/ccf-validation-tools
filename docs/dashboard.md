@@ -1,5 +1,5 @@
 
-Validation Dashboard (2026-04-22)
+Validation Dashboard (2026-04-29)
 =================================
 
 # Terms
@@ -84,7 +84,7 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 | 24 | [Placenta](Placenta/README.md)                                   |                  40 | <font color='green'>47.5</font>  |                   0 | <font color='green'>0.0</font>   |                  57 | <font color='red'>80.7</font>    | <font color='green'>0</font>   | <font color='green'>0</font>    |
 | 25 | [Prostate](Prostate/README.md)                                   |                  18 | <font color='red'>50.0</font>    |                   4 | <font color='red'>75.0</font>    |                  14 | <font color='green'>35.71</font> | <font color='red'>1</font>     | <font color='red'>1</font>      |
 | 26 | [Salivary_Glands](Salivary_Glands/README.md)                     |                  25 | <font color='green'>0.0</font>   |                   0 | <font color='green'>0.0</font>   |                   3 | <font color='red'>100.0</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
-| 27 | [Skeleton](Skeleton/README.md)                                   |                 452 | <font color='red'>63.5</font>    |                   0 | <font color='green'>0.0</font>   |                 470 | <font color='red'>98.51</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
+| 27 | [Skeleton](Skeleton/README.md)                                   |                 459 | <font color='red'>64.05</font>   |                   0 | <font color='green'>0.0</font>   |                 477 | <font color='red'>98.53</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
 | 28 | [Skin](Skin/README.md)                                           |                  32 | <font color='green'>46.88</font> |                   1 | <font color='green'>0.0</font>   |                  57 | <font color='red'>80.7</font>    | <font color='green'>0</font>   | <font color='green'>0</font>    |
 | 29 | [Small_intestine](Small_intestine/README.md)                     |                  21 | <font color='green'>28.57</font> |                   3 | <font color='green'>0.0</font>   |                  71 | <font color='red'>80.28</font>   | <font color='red'>9</font>     | <font color='red'>4</font>      |
 | 30 | [Spinal_Cord](Spinal_Cord/README.md)                             |                 100 | <font color='green'>14.0</font>  |                   0 | <font color='green'>0.0</font>   |                  22 | <font color='red'>86.36</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
@@ -95,7 +95,7 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 | 35 | [Ureter](Ureter/README.md)                                       |                   9 | <font color='green'>33.33</font> |                   0 | <font color='green'>0.0</font>   |                   4 | <font color='red'>100.0</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
 | 36 | [Urinary_bladder](Urinary_bladder/README.md)                     |                  18 | <font color='green'>22.22</font> |                   5 | <font color='red'>100.0</font>   |                  19 | <font color='red'>89.47</font>   | <font color='red'>6</font>     | <font color='red'>6</font>      |
 | 37 | [Uterus](Uterus/README.md)                                       |                  20 | <font color='green'>35.0</font>  |                   0 | <font color='green'>0.0</font>   |                  12 | <font color='red'>83.33</font>   | <font color='red'>181</font>   | <font color='red'>8</font>      |
-| 38 | Total                                                            |                2338 |                                  |                 842 |                                  |                3981 |                                  | <font color='red'>521</font>   | <font color='red'>49</font>     |
+| 38 | Total                                                            |                2345 |                                  |                 842 |                                  |                3988 |                                  | <font color='red'>521</font>   | <font color='red'>49</font>     |
 
 
 
