@@ -6,9 +6,9 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2025-12-04|
-|PCL|2025-07-07|
 |CL|2025-12-17|
+|PCL|2025-07-07|
+|UBERON|2025-12-04|
 
 ### ASCT+b Tables
 
@@ -19,7 +19,7 @@ Release Notes
 |Bone-Marrow|v1.6|NA|
 |Brain|v1.9|April 1, 2026|
 |Eye|v1.5|revise February 5, 2026|
-|Fallopian_tube|v1.5|prepare for April 1, 2025|
+|Fallopian_tube|v1.5|prepare for April 1, 2025, revise April 30, 2026|
 |Gingiva|v1.0|Will be added for HRA release availability|
 |Heart|v1.7|March 30, 2026|
 |Kidney|v1.8|NA|
@@ -36,7 +36,7 @@ Release Notes
 |Ovary|v1.4|revise for February 6, 2026|
 |Pancreas|v1.4|December 15, 2025|
 |Palatine_Tonsil|v1.2|revise for February 6, 2026|
-|Peripheral_nervous_system|v1.3|revise for February 6, 2026|
+|Peripheral_nervous_system|v1.3|revise for April 29, 2026|
 |Placenta|v1.3|NA|
 |Prostate|v1.2|revise for October 1, 2024|
 |Salivary_Glands|v1.0|Will be added for HRA release availability|
