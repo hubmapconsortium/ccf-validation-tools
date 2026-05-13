@@ -1,5 +1,5 @@
 
-Validation Dashboard (2026-05-06)
+Validation Dashboard (2026-05-13)
 =================================
 
 # Terms
@@ -80,11 +80,11 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 | 20 | [Ovary](Ovary/README.md)                                         |                  19 | <font color='red'>68.42</font>   |                   0 | <font color='green'>0.0</font>   |                  14 | <font color='red'>71.43</font>   | <font color='red'>216</font>   | <font color='red'>10</font>     |
 | 21 | [Palatine_Tonsil](Palatine_Tonsil/README.md)                     |                  11 | <font color='green'>45.45</font> |                   2 | <font color='green'>0.0</font>   |                  33 | <font color='red'>66.67</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
 | 22 | [Pancreas](Pancreas/README.md)                                   |                  33 | <font color='red'>66.67</font>   |                  18 | <font color='green'>44.44</font> |                  28 | <font color='red'>82.14</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
-| 23 | [Peripheral_nervous_system](Peripheral_nervous_system/README.md) |                 163 | <font color='green'>10.43</font> |                  99 | <font color='green'>30.3</font>  |                 104 | <font color='green'>36.54</font> | <font color='green'>0</font>   | <font color='green'>0</font>    |
+| 23 | [Peripheral_nervous_system](Peripheral_nervous_system/README.md) |                 163 | <font color='green'>10.43</font> |                  93 | <font color='green'>25.81</font> |                  98 | <font color='green'>32.65</font> | <font color='green'>0</font>   | <font color='green'>0</font>    |
 | 24 | [Placenta](Placenta/README.md)                                   |                  40 | <font color='green'>47.5</font>  |                   0 | <font color='green'>0.0</font>   |                  57 | <font color='red'>80.7</font>    | <font color='green'>0</font>   | <font color='green'>0</font>    |
 | 25 | [Prostate](Prostate/README.md)                                   |                  18 | <font color='red'>50.0</font>    |                   4 | <font color='red'>75.0</font>    |                  14 | <font color='green'>35.71</font> | <font color='red'>1</font>     | <font color='red'>1</font>      |
 | 26 | [Salivary_Glands](Salivary_Glands/README.md)                     |                  25 | <font color='green'>0.0</font>   |                   0 | <font color='green'>0.0</font>   |                   3 | <font color='red'>100.0</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
-| 27 | [Skeleton](Skeleton/README.md)                                   |                 453 | <font color='red'>63.58</font>   |                   0 | <font color='green'>0.0</font>   |                 470 | <font color='red'>98.51</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
+| 27 | [Skeleton](Skeleton/README.md)                                   |                 455 | <font color='red'>63.74</font>   |                   0 | <font color='green'>0.0</font>   |                 473 | <font color='red'>98.52</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
 | 28 | [Skin](Skin/README.md)                                           |                  32 | <font color='green'>46.88</font> |                   1 | <font color='green'>0.0</font>   |                  57 | <font color='red'>80.7</font>    | <font color='green'>0</font>   | <font color='green'>0</font>    |
 | 29 | [Small_intestine](Small_intestine/README.md)                     |                  21 | <font color='green'>28.57</font> |                   3 | <font color='green'>0.0</font>   |                  71 | <font color='red'>80.28</font>   | <font color='red'>9</font>     | <font color='red'>4</font>      |
 | 30 | [Spinal_Cord](Spinal_Cord/README.md)                             |                 100 | <font color='green'>14.0</font>  |                   0 | <font color='green'>0.0</font>   |                  22 | <font color='red'>86.36</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
@@ -95,7 +95,7 @@ Invalid AS or CT terms include terms not from UBERON or CL ontologies. Also, it 
 | 35 | [Ureter](Ureter/README.md)                                       |                   9 | <font color='green'>33.33</font> |                   0 | <font color='green'>0.0</font>   |                   4 | <font color='red'>100.0</font>   | <font color='green'>0</font>   | <font color='green'>0</font>    |
 | 36 | [Urinary_bladder](Urinary_bladder/README.md)                     |                  18 | <font color='green'>22.22</font> |                   5 | <font color='red'>100.0</font>   |                  19 | <font color='red'>89.47</font>   | <font color='red'>6</font>     | <font color='red'>6</font>      |
 | 37 | [Uterus](Uterus/README.md)                                       |                  20 | <font color='green'>35.0</font>  |                   0 | <font color='green'>0.0</font>   |                  12 | <font color='red'>83.33</font>   | <font color='red'>181</font>   | <font color='red'>8</font>      |
-| 38 | Total                                                            |                2339 |                                  |                 870 |                                  |                4010 |                                  | <font color='red'>520</font>   | <font color='red'>48</font>     |
+| 38 | Total                                                            |                2341 |                                  |                 864 |                                  |                4007 |                                  | <font color='red'>520</font>   | <font color='red'>48</font>     |
 
 
 
