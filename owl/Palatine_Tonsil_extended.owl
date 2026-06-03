@@ -288,6 +288,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
@@ -354,10 +360,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing a reference to an identical or very similar object in another database.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
         <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</obo:NCIT_P108>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</terms:created>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has cross-reference</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -510,6 +522,23 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://w3id.org/sssom/mapping_justification -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -819,7 +848,7 @@ Blood vessel endothelial cells are sensitive to various stimuli, including shear
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.637877</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.580713</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
@@ -1220,6 +1249,11 @@ Following the resolution of an immune response, a small subset of activated CD8+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000815">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulatory T cells, or Tregs, represent a vital component of the immune system, functioning to maintain immune tolerance and homeostasis. Tregs prevent excessive immune responses and autoimmunity by suppressing or downregulating proliferation or activation of other immune cells. Originating in the thymus, Tregs belong to a larger group of T cells that express CD4 protein on their surface. They can be identified by their expression of the forkhead/winged-helix transcription factor Foxp3, which is a crucial intracellular marker that controls their development and function.
+Tregs are key players in preventing autoimmune diseases, allergies, and graft-versus-host disease, a potential complication of bone marrow transplantation. By suppressing the immune response, Tregs ensure that the immune system doesn&apos;t mistakenly attack the body&apos;s own healthy tissues, or harmless substances such as pollen, or transplanted tissue. Abnormalities in Treg number or function can result in a profound dysregulation of immune homeostasis, leading to the development of various immune-mediated diseases. However, Tregs also appear to contribute to tumor development.
+Developmentally, while Tregs may emerge directly from the thymus, Tregs may also arise peripherally from conventional T cells. Thymic or &quot;natural&quot; Tregs likely arise from thymocytes that strongly recognize self-antigen and contribute to self-tolerance. Peripherally induced Tregs likely recognize foreign antigen and are likely important in maintaining tolerance to non-host antigens, such as intestinal microbiota or food allergens. Understanding the precise functions and mechanisms of regulatory T cells is a continually evolving field, with potential implications for combating autoimmunity, enhancing cancer therapy, and preventing transplant rejection.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T lymphocyte</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T-cell</oboInOwl:hasBroadSynonym>
@@ -1236,6 +1270,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type may express FoxP3 and CD25 and secretes IL-10 and TGF-beta.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000815</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1244,6 +1279,26 @@ Following the resolution of an immune response, a small subset of activated CD8+
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:add</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulatory T cells, or Tregs, represent a vital component of the immune system, functioning to maintain immune tolerance and homeostasis. Tregs prevent excessive immune responses and autoimmunity by suppressing or downregulating proliferation or activation of other immune cells. Originating in the thymus, Tregs belong to a larger group of T cells that express CD4 protein on their surface. They can be identified by their expression of the forkhead/winged-helix transcription factor Foxp3, which is a crucial intracellular marker that controls their development and function.
+Tregs are key players in preventing autoimmune diseases, allergies, and graft-versus-host disease, a potential complication of bone marrow transplantation. By suppressing the immune response, Tregs ensure that the immune system doesn&apos;t mistakenly attack the body&apos;s own healthy tissues, or harmless substances such as pollen, or transplanted tissue. Abnormalities in Treg number or function can result in a profound dysregulation of immune homeostasis, leading to the development of various immune-mediated diseases. However, Tregs also appear to contribute to tumor development.
+Developmentally, while Tregs may emerge directly from the thymus, Tregs may also arise peripherally from conventional T cells. Thymic or &quot;natural&quot; Tregs likely arise from thymocytes that strongly recognize self-antigen and contribute to self-tolerance. Peripherally induced Tregs likely recognize foreign antigen and are likely important in maintaining tolerance to non-host antigens, such as intestinal microbiota or food allergens. Understanding the precise functions and mechanisms of regulatory T cells is a continually evolving field, with potential implications for combating autoimmunity, enhancing cancer therapy, and preventing transplant rejection.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nri2343</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/j.1600-065X.2011.01018.x</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-042718-041717</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-100219-020937</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2020.616949</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000815</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1289,7 +1344,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.637858</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.580696</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000844"/>
@@ -1331,7 +1386,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000236"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.362404</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.397841</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0009112"/>
@@ -1374,7 +1429,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.637879</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.580716</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001577"/>
@@ -1414,7 +1469,9 @@ Following the resolution of an immune response, a small subset of activated CD8+
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4033068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000236"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A(n) B cell that is cycling.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proliferating B cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cycling B cell</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cycling B</skos:prefLabel>
@@ -1424,7 +1481,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000236"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.362373</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.397865</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033068"/>
@@ -1497,7 +1554,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001981"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.362408</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.397874</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001070"/>
@@ -1509,7 +1566,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:15.652265</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:37.382427</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001070"/>
@@ -1573,7 +1630,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001981"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.362401</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.397868</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001612"/>
@@ -1585,7 +1642,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:15.652283</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:37.382429</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001612"/>
@@ -1902,6 +1959,20 @@ Following the resolution of an immune response, a small subset of activated CD8+
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010754"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of activated B cells at the center of a secondary follicle, formed after B cells become activated and migrate to the center.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:tm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Germinal_center</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010754"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0282491</owl:annotatedTarget>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Germinal_Center</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010754"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central zone of follice</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:tm</oboInOwl:hasDbXref>
@@ -1940,7 +2011,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:15.826145</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:37.551043</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010754"/>
@@ -1952,7 +2023,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:15.826122</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:37.551046</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010754"/>
@@ -1964,21 +2035,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:15.826143</dc:date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010754"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of activated B cells at the center of a secondary follicle, formed after B cells become activated and migrate to the center.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:tm</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Germinal_center</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010754"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0282491</owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Germinal_Center</oboInOwl:source>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:37.551025</dc:date>
     </owl:Axiom>
     
 
@@ -2052,7 +2109,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010754"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.362406</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.397870</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013688"/>
@@ -2135,7 +2192,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001981"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.362410</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.397876</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600078"/>
@@ -2147,7 +2204,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:15.652285</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:37.382406</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600078"/>
@@ -2183,7 +2240,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001981"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.362403</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.397873</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600095"/>
@@ -2195,7 +2252,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:15.652287</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:37.382425</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600095"/>
@@ -2231,7 +2288,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001981"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:14.362398</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:36.397878</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600098"/>
@@ -2243,7 +2300,7 @@ Following the resolution of an immune response, a small subset of activated CD8+
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:01:15.652280</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:00:37.382423</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600098"/>

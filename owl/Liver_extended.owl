@@ -317,6 +317,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
@@ -401,10 +407,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing a reference to an identical or very similar object in another database.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
         <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</obo:NCIT_P108>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</terms:created>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has cross-reference</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -544,6 +556,23 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://w3id.org/sssom/mapping_justification -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -856,7 +885,7 @@ Kupffer cells also play key roles in various immune responses and inflammatory p
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:52:59.669728</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:57.039568</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000091"/>
@@ -1175,6 +1204,7 @@ HSCs become highly active when the liver is damaged or diseased. They play a cru
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D007962</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12529</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009309</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leucocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">white blood cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune cell</oboInOwl:hasRelatedSynonym>
@@ -1197,6 +1227,13 @@ HSCs become highly active when the liver is damaged or diseased. They play a cru
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009309</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000738"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBC</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:40794848</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003000"/>
     </owl:Axiom>
     
 
@@ -1478,7 +1515,7 @@ In addition to their role in antigen presentation, cDCs have other important fun
     <!-- http://purl.obolibrary.org/obo/CL_0001203 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001203">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD8-positive, alpha-beta T cell with memory phenotype indicated by being CD45RO and CD127-positive. This cell type is also described as being CD25-negative, CD44-high, and CD122-high.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD8-positive, alpha-beta T cell with memory phenotype indicated by being CD45RO and CD127-positive. This cell type is also described as being CD25-negative.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta memory T lymphocyte, CD45RO-positive</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta memory T-cell, CD45RO-positive</oboInOwl:hasExactSynonym>
@@ -1492,10 +1529,12 @@ In addition to their role in antigen presentation, cDCs have other important fun
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001203"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD8-positive, alpha-beta T cell with memory phenotype indicated by being CD45RO and CD127-positive. This cell type is also described as being CD25-negative, CD44-high, and CD122-high.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD8-positive, alpha-beta T cell with memory phenotype indicated by being CD45RO and CD127-positive. This cell type is also described as being CD25-negative.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20146720</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21926977</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:24258910</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1539,7 +1578,7 @@ Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the b
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:52:59.186159</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:56.652278</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002138"/>
@@ -1632,12 +1671,18 @@ Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the b
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A myeloid dendritic cell that is CD1c-positive.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1c-positive myeloid dendritic cells represent one of the conventional myeloid dendritic cell subsets, which have been categorized based upon their expression of the cell surface markers CD1c and CD141. However, these markers have limitations as both may be expressed on multiple cell types. The more commonly accepted nomenclature of these cell types is conventional dendritic cell 1 (cDC1) for CD141+ dendritic cells and conventional dendritic cell 2 (cDC2) for CD1c+ dendritic cells.
+cDC2 cells are defined by high expression of the transcription factor IRF4 in addition to cell surface markers such as CD1c, CD11c, CD11b, and SIRPA, although the expression levels of different markers can vary across dendritic cells found in different tissues. cDC2 cells are the predominant population of myeloid or conventional dendritic cells in the body. They can be further subclassified into DC2 and DC3 cells, although the functional differences of these subsets are not well characterized.
+Dendritic cells are responsible for sensing antigens and presenting them to cells of the adaptive immune response to activate them. cDC2 cells can present glycolipid antigens in addition to protein antigens. cDC2 may also perform antigen cross-presentation, in which antigens derived from the extracellular environment may also be presented in the context of MHC I molecules, while typically intracellular antigens are presented in the context of MHC I molecules. cDC2 can also secrete a range of cytokines, such as IL-12, tumor necrosis factor-alpha, and IL-10, to further direct the immune response.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-04T02:39:01+00:00</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Normally represent 10-20% of peripheral blood mDCs (human). They are also CD281-positive (TLR1), CD282-positive (TLR2), CD283-positive (TLR3), CD284-positive (TLR4), CD285-positive (TLR5), CD286-positive (TLR6), CD288-positive (TLR8), and CD290-positive (TLR10) [PMID:20204387]. Upon TLR stimulation, these cells were potent producers of CXCL8 (IL-8), while producing little TNF-alpha.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1c-positive myeloid dendritic cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002399</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conventional DC 2</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1648,6 +1693,24 @@ Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the b
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20204387</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20628149</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002399"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1c-positive myeloid dendritic cells represent one of the conventional myeloid dendritic cell subsets, which have been categorized based upon their expression of the cell surface markers CD1c and CD141. However, these markers have limitations as both may be expressed on multiple cell types. The more commonly accepted nomenclature of these cell types is conventional dendritic cell 1 (cDC1) for CD141+ dendritic cells and conventional dendritic cell 2 (cDC2) for CD1c+ dendritic cells.
+cDC2 cells are defined by high expression of the transcription factor IRF4 in addition to cell surface markers such as CD1c, CD11c, CD11b, and SIRPA, although the expression levels of different markers can vary across dendritic cells found in different tissues. cDC2 cells are the predominant population of myeloid or conventional dendritic cells in the body. They can be further subclassified into DC2 and DC3 cells, although the functional differences of these subsets are not well characterized.
+Dendritic cells are responsible for sensing antigens and presenting them to cells of the adaptive immune response to activate them. cDC2 cells can present glycolipid antigens in addition to protein antigens. cDC2 may also perform antigen cross-presentation, in which antigens derived from the extracellular environment may also be presented in the context of MHC I molecules, while typically intracellular antigens are presented in the context of MHC I molecules. cDC2 can also secrete a range of cytokines, such as IL-12, tumor necrosis factor-alpha, and IL-10, to further direct the immune response.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/bs.ircmb.2019.07.004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.coi.2013.11.002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/imm.12888</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002399"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002399</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1c-positive myeloid dendritic cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1971,6 +2034,18 @@ HSECs further play a vital role in immune functionality in the liver. They act a
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000398"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liver sinusoidal endothelial cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:30348985</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000398"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_1000398</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of hepatic sinusoid on CELLxGENE CellGuide</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000398"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
@@ -1979,7 +2054,7 @@ HSECs further play a vital role in immune functionality in the liver. They act a
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:52:59.186123</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:56.652243</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000398"/>
@@ -2014,18 +2089,6 @@ HSECs further play a vital role in immune functionality in the liver. They act a
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endotheliocyte of hepatic sinusoid</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62911</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000398"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liver sinusoidal endothelial cell</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:30348985</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000398"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_1000398</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of hepatic sinusoid on CELLxGENE CellGuide</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -2052,6 +2115,12 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000413"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blood vessel endothelial cell that is part of an arterial endothelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000413"/>
         <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial cells of the artery, also referred to as arterial endothelial cells, form an integral part of the arterial system. They form a single layer, known as the endothelium, lining the interior surface of arteries, and are able to respond to the high-pressure and flow conditions present in arteries. The primary role of these cells is to provide a barrier between the vessel wall and the blood, exhibiting selective permeability to regulate the movement of liquids, gases, and blood-borne substances across the vascular wall.
 Arterial endothelial cells significantly contribute to maintaining vascular homeostasis. They are at the forefront of sensations and responses to mechanical stimuli, like shear stress and blood pressure changes. An additional key function pertains to the production of nitric oxide, which helps to regulate vascular tone and blood pressure, prevents platelet aggregation, limits leukocyte adhesion to the endothelium, and inhibits smooth muscle cell proliferation. These varied but connected functions help to preclude the development of atherosclerosis, ensuring normal circulation and arterial health.
@@ -2069,12 +2138,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_1000413</owl:annotatedTarget>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of artery on CELLxGENE CellGuide</rdfs:label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000413"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blood vessel endothelial cell that is part of an arterial endothelium.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2107,7 +2170,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:52:59.669709</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:57.039582</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000054"/>
@@ -2285,7 +2348,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:53:00.404677</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:57.630838</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001193"/>
@@ -2429,7 +2492,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:52:59.186149</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:56.652274</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001281"/>
@@ -2532,7 +2595,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:52:59.186152</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:56.652271</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001282"/>
@@ -2740,7 +2803,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:53:00.584732</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:57.794177</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001639"/>
@@ -2969,7 +3032,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:53:00.404696</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:57.630824</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002384"/>
@@ -3283,7 +3346,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:52:59.186157</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:56.652276</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004647"/>
@@ -3458,7 +3521,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:53:00.311502</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:57.555961</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005452"/>
@@ -3547,7 +3610,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:52:59.186155</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:56.652273</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006729"/>
@@ -3646,7 +3709,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:52:59.186154</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:56.652268</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006841"/>
@@ -3658,7 +3721,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:53:00.584713</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:54:57.794160</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006841"/>

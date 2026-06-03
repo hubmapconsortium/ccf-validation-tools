@@ -262,6 +262,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
@@ -328,10 +334,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing a reference to an identical or very similar object in another database.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
         <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</obo:NCIT_P108>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</terms:created>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has cross-reference</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -465,6 +477,23 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://xmlns.com/foaf/0.1/depiction -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -793,7 +822,7 @@ Recent research has also shown that tracheal brush cells not only detect pathoge
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.294845</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.927617</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002207"/>
@@ -1051,7 +1080,7 @@ Changes in the number or function of tracheal goblet cells can engender health c
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.294838</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.927619</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000329"/>
@@ -1168,7 +1197,7 @@ These cells are also implicated in numerous disease pathways. Conditions like ch
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.294840</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.927595</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000348"/>
@@ -1253,8 +1282,14 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023154">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A glial cell that myelinates axonal processes.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-7258-9596"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myelinating glial cells are specialized neuroglia that form an insulating layer (myelin sheath) around neuronal axons. One of the main functions of myelinating glial cells is to enhance the speed of signal transmission across neuronal axons while simultaneously saving the neuron&apos;s energy.
+There are two main subclasses: oligodendrocytes in the central nervous system (CNS) and myelinating Schwann cells in the peripheral nervous system (PNS). While both types produce myelin, they differ in their myelination patterns and support functions.
+Oligodendrocytes, found in the CNS, myelinate multiple axons simultaneously and provide nutritional support to neurons, contributing to nerve cell health. In contrast, Schwann cells in the PNS focus on individual axons and play a crucial role in nerve cell repair and regeneration following injury.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myelinating glial cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_4023154</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myelinating glial cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1262,6 +1297,25 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A glial cell that myelinates axonal processes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1007/3-540-29623-9_3240</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4023154"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myelinating glial cells are specialized neuroglia that form an insulating layer (myelin sheath) around neuronal axons. One of the main functions of myelinating glial cells is to enhance the speed of signal transmission across neuronal axons while simultaneously saving the neuron&apos;s energy.
+There are two main subclasses: oligodendrocytes in the central nervous system (CNS) and myelinating Schwann cells in the peripheral nervous system (PNS). While both types produce myelin, they differ in their myelination patterns and support functions.
+Oligodendrocytes, found in the CNS, myelinate multiple axons simultaneously and provide nutritional support to neurons, contributing to nerve cell health. In contrast, Schwann cells in the PNS focus on individual axons and play a crucial role in nerve cell repair and regeneration following injury.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.conb.2023.102782</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/jnc.14592</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3390/cells9092131</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3390/ijms241612912</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4023154"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_4023154</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myelinating glial cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1528,7 +1582,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.294815</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.927615</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001901"/>
@@ -1620,7 +1674,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:24.292180</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:16.664345</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002009"/>
@@ -1754,7 +1808,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.294842</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.927626</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002202"/>
@@ -1929,6 +1983,24 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003387"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003126"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.927624</dc:date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003387"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of smooth muscle tissue that is part of a trachea [Automatically generated definition].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003387"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C1710458</owl:annotatedTarget>
         <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Trachea_Smooth_Muscle_Tissue</oboInOwl:source>
@@ -1944,24 +2016,6 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tracheal smooth muscle</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001391</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003387"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003126"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.294847</dc:date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003387"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of smooth muscle tissue that is part of a trachea [Automatically generated definition].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBOL:automatic</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1997,7 +2051,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.294833</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.927621</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003571"/>
@@ -2074,7 +2128,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.294844</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.927612</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003604"/>
@@ -2197,7 +2251,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003571"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.036472</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.710492</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003617"/>
@@ -2356,7 +2410,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:24.377904</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:16.721829</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004848"/>
@@ -2629,7 +2683,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003604"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.036467</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.710495</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006679"/>
@@ -2712,7 +2766,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003387"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.036444</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.710497</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006680"/>
@@ -2753,7 +2807,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003571"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.036470</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.710470</dc:date>
     </owl:Axiom>
     
 
@@ -2786,7 +2840,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:24.377883</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:16.721816</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012416"/>
@@ -2855,7 +2909,7 @@ Moreover, these cells play a pivotal role in inflammation and coagulation proces
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:09:23.294836</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:06:15.927622</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600011"/>

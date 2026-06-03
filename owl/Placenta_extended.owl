@@ -328,6 +328,12 @@ WHERE {
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
@@ -400,10 +406,16 @@ WHERE {
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing a reference to an identical or very similar object in another database.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
         <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</obo:NCIT_P108>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</terms:created>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has cross-reference</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -543,6 +555,23 @@ WHERE {
     <!-- https://w3id.org/sssom/mapping_justification -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -1071,6 +1100,11 @@ Furthermore, pericytes have demonstrated functions in regulating immune and infl
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000815">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulatory T cells, or Tregs, represent a vital component of the immune system, functioning to maintain immune tolerance and homeostasis. Tregs prevent excessive immune responses and autoimmunity by suppressing or downregulating proliferation or activation of other immune cells. Originating in the thymus, Tregs belong to a larger group of T cells that express CD4 protein on their surface. They can be identified by their expression of the forkhead/winged-helix transcription factor Foxp3, which is a crucial intracellular marker that controls their development and function.
+Tregs are key players in preventing autoimmune diseases, allergies, and graft-versus-host disease, a potential complication of bone marrow transplantation. By suppressing the immune response, Tregs ensure that the immune system doesn&apos;t mistakenly attack the body&apos;s own healthy tissues, or harmless substances such as pollen, or transplanted tissue. Abnormalities in Treg number or function can result in a profound dysregulation of immune homeostasis, leading to the development of various immune-mediated diseases. However, Tregs also appear to contribute to tumor development.
+Developmentally, while Tregs may emerge directly from the thymus, Tregs may also arise peripherally from conventional T cells. Thymic or &quot;natural&quot; Tregs likely arise from thymocytes that strongly recognize self-antigen and contribute to self-tolerance. Peripherally induced Tregs likely recognize foreign antigen and are likely important in maintaining tolerance to non-host antigens, such as intestinal microbiota or food allergens. Understanding the precise functions and mechanisms of regulatory T cells is a continually evolving field, with potential implications for combating autoimmunity, enhancing cancer therapy, and preventing transplant rejection.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T lymphocyte</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T-cell</oboInOwl:hasBroadSynonym>
@@ -1087,6 +1121,7 @@ Furthermore, pericytes have demonstrated functions in regulating immune and infl
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type may express FoxP3 and CD25 and secretes IL-10 and TGF-beta.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000815</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1095,6 +1130,26 @@ Furthermore, pericytes have demonstrated functions in regulating immune and infl
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:add</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulatory T cells, or Tregs, represent a vital component of the immune system, functioning to maintain immune tolerance and homeostasis. Tregs prevent excessive immune responses and autoimmunity by suppressing or downregulating proliferation or activation of other immune cells. Originating in the thymus, Tregs belong to a larger group of T cells that express CD4 protein on their surface. They can be identified by their expression of the forkhead/winged-helix transcription factor Foxp3, which is a crucial intracellular marker that controls their development and function.
+Tregs are key players in preventing autoimmune diseases, allergies, and graft-versus-host disease, a potential complication of bone marrow transplantation. By suppressing the immune response, Tregs ensure that the immune system doesn&apos;t mistakenly attack the body&apos;s own healthy tissues, or harmless substances such as pollen, or transplanted tissue. Abnormalities in Treg number or function can result in a profound dysregulation of immune homeostasis, leading to the development of various immune-mediated diseases. However, Tregs also appear to contribute to tumor development.
+Developmentally, while Tregs may emerge directly from the thymus, Tregs may also arise peripherally from conventional T cells. Thymic or &quot;natural&quot; Tregs likely arise from thymocytes that strongly recognize self-antigen and contribute to self-tolerance. Peripherally induced Tregs likely recognize foreign antigen and are likely important in maintaining tolerance to non-host antigens, such as intestinal microbiota or food allergens. Understanding the precise functions and mechanisms of regulatory T cells is a continually evolving field, with potential implications for combating autoimmunity, enhancing cancer therapy, and preventing transplant rejection.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nri2343</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/j.1600-065X.2011.01018.x</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-042718-041717</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-100219-020937</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2020.616949</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000815</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1216,7 +1271,7 @@ Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the b
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356203</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693801</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002255"/>
@@ -1353,7 +1408,7 @@ Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the b
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356191</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693800</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002568"/>
@@ -1534,7 +1589,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356188</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693794</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000091"/>
@@ -1963,6 +2018,19 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001310"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The umbilical artery is a paired artery (with one for each half of the body) that is found in the abdominal and pelvic regions. In the fetus, it extends into the umbilical cord. [WP,unvetted].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Umbilical_artery</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/obophenotype/uberon/issues/328</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001310"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0041632</owl:annotatedTarget>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Umbilical_Artery</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001310"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a. umbilicalis</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Umbilical_artery</oboInOwl:hasDbXref>
@@ -1978,7 +2046,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:20.385684</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:05.448995</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001310"/>
@@ -1990,7 +2058,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:20.579943</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:05.598226</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001310"/>
@@ -2002,20 +2070,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.611609</dc:date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001310"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The umbilical artery is a paired artery (with one for each half of the body) that is found in the abdominal and pelvic regions. In the fetus, it extends into the umbilical cord. [WP,unvetted].</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Umbilical_artery</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/obophenotype/uberon/issues/328</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001310"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0041632</owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Umbilical_Artery</oboInOwl:source>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.888158</dc:date>
     </owl:Axiom>
     
 
@@ -2154,7 +2209,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:20.385703</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:05.448980</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002066"/>
@@ -2166,7 +2221,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:20.579965</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:05.598223</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002066"/>
@@ -2178,7 +2233,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.611591</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.888141</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002066"/>
@@ -2260,7 +2315,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:20.130698</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:05.258090</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002331"/>
@@ -2355,7 +2410,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356201</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693807</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002337"/>
@@ -2425,7 +2480,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356179</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693812</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002451"/>
@@ -2437,7 +2492,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:20.579963</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:05.598208</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002451"/>
@@ -2637,7 +2692,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356199</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693803</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003254"/>
@@ -2708,7 +2763,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356146</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693789</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003262"/>
@@ -2789,7 +2844,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356197</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693820</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003422"/>
@@ -2846,7 +2901,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356184</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693805</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004027"/>
@@ -2924,7 +2979,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356175</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693814</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0015172"/>
@@ -2970,7 +3025,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:20.385699</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:05.448999</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022358"/>
@@ -3013,7 +3068,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356193</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693818</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600019"/>
@@ -3075,7 +3130,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356181</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693792</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600020"/>
@@ -3129,7 +3184,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:20.385702</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:05.448993</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600021"/>
@@ -3171,7 +3226,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.958993</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:05.129851</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600026"/>
@@ -3224,7 +3279,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356183</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693822</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600027"/>
@@ -3345,7 +3400,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356195</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693796</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600030"/>
@@ -3393,7 +3448,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356169</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693816</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600031"/>
@@ -3441,7 +3496,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356186</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693808</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600038"/>
@@ -3489,6 +3544,19 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
     <!-- http://purl.obolibrary.org/obo/UBERON_8600040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_8600040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0022358"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -3497,14 +3565,20 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600029"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blood vessel that is part of a chorionic stem villus.</obo:IAO_0000115>
@@ -3528,7 +3602,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356171</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693798</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600040"/>
@@ -3540,19 +3614,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:20.385705</dc:date>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600040"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600029"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:20.307873</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:05.448997</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600040"/>
@@ -3624,7 +3686,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356177</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693738</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600041"/>
@@ -3670,7 +3732,7 @@ While EVTs are commonly associated with healthy pregnancies, abnormalities in th
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:03:19.356173</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:02:04.693810</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_8600042"/>

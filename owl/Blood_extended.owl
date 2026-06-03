@@ -257,6 +257,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
@@ -317,10 +323,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing a reference to an identical or very similar object in another database.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
         <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</obo:NCIT_P108>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</terms:created>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has cross-reference</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -461,6 +473,23 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://w3id.org/sssom/mapping_justification -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -860,7 +889,7 @@ Beyond their role in fighting infections, monocytes play an important role in th
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000094"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951901</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038993</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000767"/>
@@ -916,7 +945,7 @@ Eosinophils are also involved in conditions such as asthma and allergic reaction
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000094"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951911</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038983</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000771"/>
@@ -1037,6 +1066,11 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A memory B cell is a mature B cell that is long-lived, readily activated upon re-encounter of its antigenic determinant, and has been selected for expression of higher affinity immunoglobulin. This cell type has the phenotype CD19-positive, CD20-positive, MHC Class II-positive, and CD138-negative.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Memory B cells are a subtype of B cells that play a significant role in the adaptive immune response. They originate as part of B lymphocytes lineage and differentiate into memory B cells after activation by an antigen. The primary function of memory B cells is to respond rapidly to preexposure of the same antigen which originally activated it. Upon re-encountering the antigen, memory B cells can quickly differentiate into plasmablasts to generate antibodies or seed germinal centers to generate a robust immune response. 
+Memory B cells can derive from mature B cells that undergo the germinal center reaction or those that differentiate in extrafollicular clusters. It is generally thought that memory B cells activated via the extrafollicular pathway are shorter-lived and produce lower-affinity antibodies, while those activated in germinal centers are longer-lived and produce high-affinity antibodies, having undergone somatic hypermutation. 
+Memory B cells have a prolonged lifespan, lasting for years or even decades, enabling them to provide sustained protection against repeated or persistent infections. These cells are therefore a fundamental component of humoral immunological memory. As such, these cells are also important factors in the response to immunization/
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009333</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">memory B lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">memory B-cell</oboInOwl:hasExactSynonym>
@@ -1046,6 +1080,7 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Memory B-cells are also reportedly CD5-negative, CD10-negative, CD21-positive, CD22-positive, CD23-negative, CD24-positive, CD25-positive, CD27-positive, CD34-negative, CD38-negative, CD40-positive, CD43-negative, CD44-positive, CD45-positive, CD53-positive, CD80-negative, CD81-negative, CD86-positive, and CD196/CCR6-positive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">memory B cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000787</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">memory B cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1053,7 +1088,7 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951915</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038989</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000787"/>
@@ -1070,9 +1105,29 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000787"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Memory B cells are a subtype of B cells that play a significant role in the adaptive immune response. They originate as part of B lymphocytes lineage and differentiate into memory B cells after activation by an antigen. The primary function of memory B cells is to respond rapidly to preexposure of the same antigen which originally activated it. Upon re-encountering the antigen, memory B cells can quickly differentiate into plasmablasts to generate antibodies or seed germinal centers to generate a robust immune response. 
+Memory B cells can derive from mature B cells that undergo the germinal center reaction or those that differentiate in extrafollicular clusters. It is generally thought that memory B cells activated via the extrafollicular pathway are shorter-lived and produce lower-affinity antibodies, while those activated in germinal centers are longer-lived and produce high-affinity antibodies, having undergone somatic hypermutation. 
+Memory B cells have a prolonged lifespan, lasting for years or even decades, enabling them to provide sustained protection against repeated or persistent infections. These cells are therefore a fundamental component of humoral immunological memory. As such, these cells are also important factors in the response to immunization/
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/B978-0-12-397933-9.00007-2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/leu.2016.226</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/imr.13016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/sji.12336</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2019.01787/full</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000787"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009333</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000787"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000787</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">memory B cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1083,6 +1138,11 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A naive B cell is a mature B cell that has the phenotype surface IgD-positive, surface IgM-positive, CD20-positive, CD27-negative and that has not yet been activated by antigen in the periphery.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naïve B cells are mature B lymphocytes that have not previously encountered a specific antigen, implying that they are &quot;naïve&quot; or &quot;inexperienced&quot;. They express B-cell receptors (BCRs) on the cell surface that enable them to detect specific foreign antigens. Due to the high variability of BCRs even within the same individual, each naïve B cell is capable of recognizing a unique molecular structure, leading to an immensely diverse repertoire of these cells ready to react against a wide array of pathogenic threats. They are critical for humoral immunity as they are the precursors of antigen-specific B cells, giving rise to effector cells or memory B cells after antigen encounter and activation.
+The primary function of naïve B cells involves recognizing foreign antigens and initiating the immune response. If the B-cell receptor-engaged naïve B cell receives a proper activation signal from a helper T cell, it begins to proliferate and differentiate into plasma cells and memory B cells. Plasma cells secrete antibodies that neutralize the antigen, whereas memory B cells provide long-term immunity by remembering the specific pathogen for quicker attack upon any future invasions by the same entity.
+Furthermore, naïve B cells play a crucial role in the establishment of germinal centers (GCs), which are special zones within secondary lymphoid organs where mature B cells undergo clonal expansion, antibody class switching, and somatic hypermutation for the production of high-affinity antibodies. The maturation and changes within these GCs not only enhance the body&apos;s defense mechanisms against ongoing infections, but also promise a more rapid and effective response during subsequent encounters with the same pathogen. In summary, naïve B cells represent a stage in B cell development and serve as foundations for the adaptive humoral immune response, playing pivotal roles in antigen recognition, initiation of immune response, and long-term immunological memory.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009334</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive B lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive B-cell</oboInOwl:hasExactSynonym>
@@ -1092,6 +1152,7 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;naive B cell&apos;. Per DSD: Naive B cells are also reportedly CD10-negative, CD19-positive, CD20-positive, CD21-positive, CD22-positive, CD25-negative, CD27-negative, CD34-negative, CD40-positive, CD43-negative, CD45-positive, CD48-positive, CD53-positive, CD80-negative, CD81-positive, CD84-positive, CD86-negative, CD95-negative, CD138-negative, CD150-positive, CD184/CXCR4-positive, CD185/CXCR5-positive, CD196/CCR6-positive, CD200-positive, CD229-positive, CD243-positive, CD289-positive, CD290-positive, CD352-positive, MHCII/HLA-DR-positive, cadherin 9-positive, and sIgH-positive, Transcription factors: Pax5-positive, ETS1-positive, FOXO1A-positive, KLF4-positive, KLF9-positive, MiTF-positive, OBF1-positive, PLZF-positive, and SpiB-positive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive B cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000788</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive B cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1099,7 +1160,7 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951920</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038981</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000788"/>
@@ -1118,9 +1179,27 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000788"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naïve B cells are mature B lymphocytes that have not previously encountered a specific antigen, implying that they are &quot;naïve&quot; or &quot;inexperienced&quot;. They express B-cell receptors (BCRs) on the cell surface that enable them to detect specific foreign antigens. Due to the high variability of BCRs even within the same individual, each naïve B cell is capable of recognizing a unique molecular structure, leading to an immensely diverse repertoire of these cells ready to react against a wide array of pathogenic threats. They are critical for humoral immunity as they are the precursors of antigen-specific B cells, giving rise to effector cells or memory B cells after antigen encounter and activation.
+The primary function of naïve B cells involves recognizing foreign antigens and initiating the immune response. If the B-cell receptor-engaged naïve B cell receives a proper activation signal from a helper T cell, it begins to proliferate and differentiate into plasma cells and memory B cells. Plasma cells secrete antibodies that neutralize the antigen, whereas memory B cells provide long-term immunity by remembering the specific pathogen for quicker attack upon any future invasions by the same entity.
+Furthermore, naïve B cells play a crucial role in the establishment of germinal centers (GCs), which are special zones within secondary lymphoid organs where mature B cells undergo clonal expansion, antibody class switching, and somatic hypermutation for the production of high-affinity antibodies. The maturation and changes within these GCs not only enhance the body&apos;s defense mechanisms against ongoing infections, but also promise a more rapid and effective response during subsequent encounters with the same pathogen. In summary, naïve B cells represent a stage in B cell development and serve as foundations for the adaptive humoral immune response, playing pivotal roles in antigen recognition, initiation of immune response, and long-term immunological memory.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1007/978-981-15-3532-1_1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/B978-0-12-397933-9.00007-2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1186/s12967-020-02289-w</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000788"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009334</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000788"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000788</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive B cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1188,6 +1267,11 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulatory T cells, or Tregs, represent a vital component of the immune system, functioning to maintain immune tolerance and homeostasis. Tregs prevent excessive immune responses and autoimmunity by suppressing or downregulating proliferation or activation of other immune cells. Originating in the thymus, Tregs belong to a larger group of T cells that express CD4 protein on their surface. They can be identified by their expression of the forkhead/winged-helix transcription factor Foxp3, which is a crucial intracellular marker that controls their development and function.
+Tregs are key players in preventing autoimmune diseases, allergies, and graft-versus-host disease, a potential complication of bone marrow transplantation. By suppressing the immune response, Tregs ensure that the immune system doesn&apos;t mistakenly attack the body&apos;s own healthy tissues, or harmless substances such as pollen, or transplanted tissue. Abnormalities in Treg number or function can result in a profound dysregulation of immune homeostasis, leading to the development of various immune-mediated diseases. However, Tregs also appear to contribute to tumor development.
+Developmentally, while Tregs may emerge directly from the thymus, Tregs may also arise peripherally from conventional T cells. Thymic or &quot;natural&quot; Tregs likely arise from thymocytes that strongly recognize self-antigen and contribute to self-tolerance. Peripherally induced Tregs likely recognize foreign antigen and are likely important in maintaining tolerance to non-host antigens, such as intestinal microbiota or food allergens. Understanding the precise functions and mechanisms of regulatory T cells is a continually evolving field, with potential implications for combating autoimmunity, enhancing cancer therapy, and preventing transplant rejection.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T lymphocyte</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T-cell</oboInOwl:hasBroadSynonym>
@@ -1204,6 +1288,7 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type may express FoxP3 and CD25 and secretes IL-10 and TGF-beta.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000815</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T regulatory</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1211,7 +1296,7 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951919</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038977</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
@@ -1219,6 +1304,26 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:add</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulatory T cells, or Tregs, represent a vital component of the immune system, functioning to maintain immune tolerance and homeostasis. Tregs prevent excessive immune responses and autoimmunity by suppressing or downregulating proliferation or activation of other immune cells. Originating in the thymus, Tregs belong to a larger group of T cells that express CD4 protein on their surface. They can be identified by their expression of the forkhead/winged-helix transcription factor Foxp3, which is a crucial intracellular marker that controls their development and function.
+Tregs are key players in preventing autoimmune diseases, allergies, and graft-versus-host disease, a potential complication of bone marrow transplantation. By suppressing the immune response, Tregs ensure that the immune system doesn&apos;t mistakenly attack the body&apos;s own healthy tissues, or harmless substances such as pollen, or transplanted tissue. Abnormalities in Treg number or function can result in a profound dysregulation of immune homeostasis, leading to the development of various immune-mediated diseases. However, Tregs also appear to contribute to tumor development.
+Developmentally, while Tregs may emerge directly from the thymus, Tregs may also arise peripherally from conventional T cells. Thymic or &quot;natural&quot; Tregs likely arise from thymocytes that strongly recognize self-antigen and contribute to self-tolerance. Peripherally induced Tregs likely recognize foreign antigen and are likely important in maintaining tolerance to non-host antigens, such as intestinal microbiota or food allergens. Understanding the precise functions and mechanisms of regulatory T cells is a continually evolving field, with potential implications for combating autoimmunity, enhancing cancer therapy, and preventing transplant rejection.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nri2343</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/j.1600-065X.2011.01018.x</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-042718-041717</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-100219-020937</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2020.616949</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000815</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1230,6 +1335,10 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immature B cell is a B cell that has the phenotype surface IgM-positive and surface IgD-negative, and have not undergone class immunoglobulin class switching or peripheral encounter with antigen and activation.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/CL_0000785"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immature B cells, also known as Hardy fraction E, represent an intermediate stage in B cell development.
+By this stage, the B cell precursors have undergone both heavy and light chain rearrangement, resulting in a diverse pool of B cell receptors (BCR). At this stage, the immature B cells undergo a stringent selection process to maintain B cell central tolerance. If an immature B cell is found to express self-reactive BCR, it can undergo receptor editing, in which rearrangement of its light chain genes is reinitiated, in an attempt to create a new, non-self-reactive BCR. If this editing process is unsuccessful and the BCR remains self-reactive, the cell can then be forced to undergo apoptosis, a process termed clonal deletion, thus preventing the production of auto-reactive, potentially harmful B cells. If the BCR recognizes self-antigen with low affinity, it may become anergic or unresponsive. Immature B cells that successfully pass these selection processes are then released from the bone marrow as transitional B cells and will complete their maturation process in secondary lymphoid organs.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009343</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immature B lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immature B-cell</oboInOwl:hasExactSynonym>
@@ -1241,6 +1350,7 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immature B cells are also reportedly CD5-positive, CD10-positive, CD19-positive, CD20-positive, CD21-positive, CD22-positive, CD24-positive, CD25-negative, CD27-negative, CD34-negative, CD38-positive, CD40-positive, CD43-negative, CD45-positive, CD48-positive, CD53-positive, CD79a-positive, CD80-negative, CD81-positive, CD86-negative, CD95-negative, CD127-negative, CD138-negative, CD185-positive, CD196-positive, MHCII/HLA-DR-positive, RAG-positive, TdT-negative, Vpre-B-negative, and preBCR-negative. Transcription factors expressed: Pax5-positive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immature B cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000816</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immature B cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1248,7 +1358,7 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951927</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038946</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000816"/>
@@ -1265,6 +1375,17 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000816"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immature B cells, also known as Hardy fraction E, represent an intermediate stage in B cell development.
+By this stage, the B cell precursors have undergone both heavy and light chain rearrangement, resulting in a diverse pool of B cell receptors (BCR). At this stage, the immature B cells undergo a stringent selection process to maintain B cell central tolerance. If an immature B cell is found to express self-reactive BCR, it can undergo receptor editing, in which rearrangement of its light chain genes is reinitiated, in an attempt to create a new, non-self-reactive BCR. If this editing process is unsuccessful and the BCR remains self-reactive, the cell can then be forced to undergo apoptosis, a process termed clonal deletion, thus preventing the production of auto-reactive, potentially harmful B cells. If the BCR recognizes self-antigen with low affinity, it may become anergic or unresponsive. Immature B cells that successfully pass these selection processes are then released from the bone marrow as transitional B cells and will complete their maturation process in secondary lymphoid organs.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1007/978-981-15-3532-1_1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/80816</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41467-021-27232-5</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000816"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009343</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
@@ -1275,6 +1396,12 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">newly formed B cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:781735149</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000816"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000816</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immature B cell on CELLxGENE CellGuide</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1284,6 +1411,9 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immature B cell of an intermediate stage between the pre-B cell stage and the mature naive stage with the phenotype surface IgM-positive and CD19-positive, and are subject to the process of B cell selection. A transitional B cell migrates from the bone marrow into the peripheral circulation, and then to the spleen.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transitional stage B cells represent an intermediary stage in B cell development between immature B cells, which are produced within the bone marrow, and mature B cells, which circulate in the blood and peripheral lymphoid tissues. Transitional B cells migrate from the bone marrow to secondary lymphoid organs, usually the spleen. Transitional B cells may still undergo negative and positive selection processes to remove self-reactive B cells and to enhance survival and clonal expansion of antigen-specific cells, respectively. Transitional B cells can mature into either follicular B cells in the splenic follicles following tonic or strong B cell receptor (BCR) signaling and BAFF signaling, or marginal zone B cells between the red and white pulp of the spleen following weak BCR signaling and Notch2 signaling. Some transitional B cells themselves also possess regulatory B cell functions.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009345</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transitional B cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transitional stage B lymphocyte</oboInOwl:hasExactSynonym>
@@ -1297,6 +1427,7 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;transitional B cell&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transitional stage B cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000818</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transitional B cell</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1304,7 +1435,7 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000945"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951903</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038969</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000818"/>
@@ -1318,6 +1449,16 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000818"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transitional stage B cells represent an intermediary stage in B cell development between immature B cells, which are produced within the bone marrow, and mature B cells, which circulate in the blood and peripheral lymphoid tissues. Transitional B cells migrate from the bone marrow to secondary lymphoid organs, usually the spleen. Transitional B cells may still undergo negative and positive selection processes to remove self-reactive B cells and to enhance survival and clonal expansion of antigen-specific cells, respectively. Transitional B cells can mature into either follicular B cells in the splenic follicles following tonic or strong B cell receptor (BCR) signaling and BAFF signaling, or marginal zone B cells between the red and white pulp of the spleen following weak BCR signaling and Notch2 signaling. Some transitional B cells themselves also possess regulatory B cell functions.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1007/978-981-15-3532-1_1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.jaci.2013.01.046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1186/s12967-020-02289-w</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000818"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFA:0009345</owl:annotatedTarget>
         <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
@@ -1327,6 +1468,12 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transitional B cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22343568</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000818"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000818</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transitional stage B cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1423,7 +1570,7 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951913</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038986</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000895"/>
@@ -1473,7 +1620,7 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951909</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038971</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000897"/>
@@ -1509,7 +1656,7 @@ In addition to antibody-mediated responses, NK T cells are capable of cytotoxic 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951905</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038966</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000900"/>
@@ -1639,7 +1786,7 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951922</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038979</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001050"/>
@@ -1676,7 +1823,7 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000576"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951907</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038995</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001054"/>
@@ -1727,7 +1874,7 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001056"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plasmacytoid dendritic cell with the phenotype HLA-DRA-positive, CD123-positive, and CD11c-negative.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plasmacytoid dendritic cell with the phenotype HLA-DRA-positive, CD123-positive, CD11c-negative, and CD14-negative.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasmacytoid dendritic cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
@@ -1742,14 +1889,19 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0001056"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951899</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038985</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001058"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plasmacytoid dendritic cell with the phenotype HLA-DRA-positive, CD123-positive, and CD11c-negative.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plasmacytoid dendritic cell with the phenotype HLA-DRA-positive, CD123-positive, CD11c-negative, and CD14-negative.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:add</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22343568</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:34260151</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:36470845</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:37254600</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:38343094</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:40095400</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001058"/>
@@ -1781,7 +1933,7 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951896</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038991</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001062"/>
@@ -1834,10 +1986,16 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001087"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD4-positive TEMRA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17465678</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001087"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951925</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038976</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001087"/>
@@ -1861,12 +2019,6 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD4+ TEMRA</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17465678</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0001087"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD4-positive TEMRA</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17465678</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -1876,12 +2028,18 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A myeloid dendritic cell found in the blood, lymph nodes, tonsil, bone marrow, and spleen that is CD141-positive (BDCA-3), XCR1-positive, and Clec9A-positive. This cell-type can cross-present antigen to CD8-positive T cells and can produce inteferon-beta.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD141-positive myeloid dendritic cells represent one of the conventional myeloid dendritic cell subsets, which have been categorized based upon their expression of the cell surface markers CD1c and CD141. However, these markers have limitations as both may be expressed on multiple cell types. The more commonly accepted nomenclature of these cell types is conventional dendritic cell 1 (cDC1) for CD141+ dendritic cells and conventional dendritic cell 2 (cDC2) for CD1c+ dendritic cells.
+cDC1 cells are defined by high expression of the transcription factor IRF8 in addition to cell surface markers such as CD141, CLEC9A, and XCR1, although the expression levels of different markers can vary across dendritic cells found in different tissues. cDC1 cells are relatively rare compared to cDC2 cells.
+Dendritic cells are responsible for sensing antigens and presenting them to cells of the adaptive immune response to activate them. cDC1 appear to primarily perform antigen cross-presentation, in which antigens derived from the extracellular environment may also be presented in the context of MHC I molecules, while typically intracellular antigens are presented in the context of MHC I molecules. cDC1 can also secrete a range of cytokines, including type III interferons, to further direct the immune response. cDC1s are thus important for antitumor immunity and in viral and bacterial infections.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-04T02:38:58+00:00</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Markers are found in human cells. Normally they represent 3-5% of peripheral blood mDCs (human). These cells express high levels of CD283 (TLR3), are capable of producing IL-12p70 and IFN-beta upon stimulation, and inducing a TH1 response [PMCID:PMC2882828]. They are also Necl2-positive. May be human equivalent of murine CD8-alpha-positive DCs.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD141-positive myeloid dendritic cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002394</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic cell type 1 (DC1)</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1894,6 +2052,24 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMCID:PMC2882837</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17332250</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20628149</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002394"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD141-positive myeloid dendritic cells represent one of the conventional myeloid dendritic cell subsets, which have been categorized based upon their expression of the cell surface markers CD1c and CD141. However, these markers have limitations as both may be expressed on multiple cell types. The more commonly accepted nomenclature of these cell types is conventional dendritic cell 1 (cDC1) for CD141+ dendritic cells and conventional dendritic cell 2 (cDC2) for CD1c+ dendritic cells.
+cDC1 cells are defined by high expression of the transcription factor IRF8 in addition to cell surface markers such as CD141, CLEC9A, and XCR1, although the expression levels of different markers can vary across dendritic cells found in different tissues. cDC1 cells are relatively rare compared to cDC2 cells.
+Dendritic cells are responsible for sensing antigens and presenting them to cells of the adaptive immune response to activate them. cDC1 appear to primarily perform antigen cross-presentation, in which antigens derived from the extracellular environment may also be presented in the context of MHC I molecules, while typically intracellular antigens are presented in the context of MHC I molecules. cDC1 can also secrete a range of cytokines, including type III interferons, to further direct the immune response. cDC1s are thus important for antitumor immunity and in viral and bacterial infections.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/bs.ircmb.2019.07.004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.coi.2013.11.002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/imm.12888</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002394"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002394</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD141-positive myeloid dendritic cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1919,7 +2095,7 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000576"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951869</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038973</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002396"/>
@@ -1937,12 +2113,18 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A myeloid dendritic cell that is CD1c-positive.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1c-positive myeloid dendritic cells represent one of the conventional myeloid dendritic cell subsets, which have been categorized based upon their expression of the cell surface markers CD1c and CD141. However, these markers have limitations as both may be expressed on multiple cell types. The more commonly accepted nomenclature of these cell types is conventional dendritic cell 1 (cDC1) for CD141+ dendritic cells and conventional dendritic cell 2 (cDC2) for CD1c+ dendritic cells.
+cDC2 cells are defined by high expression of the transcription factor IRF4 in addition to cell surface markers such as CD1c, CD11c, CD11b, and SIRPA, although the expression levels of different markers can vary across dendritic cells found in different tissues. cDC2 cells are the predominant population of myeloid or conventional dendritic cells in the body. They can be further subclassified into DC2 and DC3 cells, although the functional differences of these subsets are not well characterized.
+Dendritic cells are responsible for sensing antigens and presenting them to cells of the adaptive immune response to activate them. cDC2 cells can present glycolipid antigens in addition to protein antigens. cDC2 may also perform antigen cross-presentation, in which antigens derived from the extracellular environment may also be presented in the context of MHC I molecules, while typically intracellular antigens are presented in the context of MHC I molecules. cDC2 can also secrete a range of cytokines, such as IL-12, tumor necrosis factor-alpha, and IL-10, to further direct the immune response.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-04T02:39:01+00:00</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Normally represent 10-20% of peripheral blood mDCs (human). They are also CD281-positive (TLR1), CD282-positive (TLR2), CD283-positive (TLR3), CD284-positive (TLR4), CD285-positive (TLR5), CD286-positive (TLR6), CD288-positive (TLR8), and CD290-positive (TLR10) [PMID:20204387]. Upon TLR stimulation, these cells were potent producers of CXCL8 (IL-8), while producing little TNF-alpha.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1c-positive myeloid dendritic cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002399</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic cell type 2 (DC2)</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic cell type 3 (DC3)</skos:prefLabel>
     </owl:Class>
@@ -1954,6 +2136,24 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20204387</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:20628149</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002399"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1c-positive myeloid dendritic cells represent one of the conventional myeloid dendritic cell subsets, which have been categorized based upon their expression of the cell surface markers CD1c and CD141. However, these markers have limitations as both may be expressed on multiple cell types. The more commonly accepted nomenclature of these cell types is conventional dendritic cell 1 (cDC1) for CD141+ dendritic cells and conventional dendritic cell 2 (cDC2) for CD1c+ dendritic cells.
+cDC2 cells are defined by high expression of the transcription factor IRF4 in addition to cell surface markers such as CD1c, CD11c, CD11b, and SIRPA, although the expression levels of different markers can vary across dendritic cells found in different tissues. cDC2 cells are the predominant population of myeloid or conventional dendritic cells in the body. They can be further subclassified into DC2 and DC3 cells, although the functional differences of these subsets are not well characterized.
+Dendritic cells are responsible for sensing antigens and presenting them to cells of the adaptive immune response to activate them. cDC2 cells can present glycolipid antigens in addition to protein antigens. cDC2 may also perform antigen cross-presentation, in which antigens derived from the extracellular environment may also be presented in the context of MHC I molecules, while typically intracellular antigens are presented in the context of MHC I molecules. cDC2 can also secrete a range of cytokines, such as IL-12, tumor necrosis factor-alpha, and IL-10, to further direct the immune response.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/bs.ircmb.2019.07.004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.coi.2013.11.002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/imm.12888</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002399"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002399</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD1c-positive myeloid dendritic cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1978,7 +2178,7 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000084"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T10:45:54.951917</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T11:49:39.038997</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002437"/>
@@ -2048,6 +2248,33 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fluid that is composed of blood plasma and erythrocytes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:9670</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Blood</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/obophenotype/uberon/issues/9</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A complex mixture of cells suspended in a liquid matrix that delivers nutrients to cells and removes wastes. (Source: BioGlossary, www.Biology-Text.com)[TAO]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-08-14</oboInOwl:date_retrieved>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0000007</oboInOwl:external_class>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO</oboInOwl:ontology>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Highly specialized circulating tissue consisting of several types of cells suspended in a fluid medium known as plasma.[AAO]</owl:annotatedTarget>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000046</oboInOwl:external_class>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:LAP</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000002"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relationship loss: subclass specialized connective tissue (AAO:0000571)[AAO]</owl:annotatedTarget>
         <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
@@ -2085,33 +2312,6 @@ Furthermore, these cells have tropism for secondary lymphoid tissues, where they
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole blood</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000089</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fluid that is composed of blood plasma and erythrocytes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:9670</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Blood</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/obophenotype/uberon/issues/9</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A complex mixture of cells suspended in a liquid matrix that delivers nutrients to cells and removes wastes. (Source: BioGlossary, www.Biology-Text.com)[TAO]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-08-14</oboInOwl:date_retrieved>
-        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO:0000007</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAO</oboInOwl:ontology>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Highly specialized circulating tissue consisting of several types of cells suspended in a fluid medium known as plasma.[AAO]</owl:annotatedTarget>
-        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
-        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:0000046</oboInOwl:external_class>
-        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO:LAP</oboInOwl:source>
     </owl:Axiom>
 </rdf:RDF>
 

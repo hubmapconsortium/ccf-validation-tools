@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Blood (2026-05-27)
+ASCT+B Validation Reports for Blood (2026-06-03)
 ================================================
 
 Table of contents
@@ -140,7 +140,7 @@ In the case of the CT-CT relationship, for each couple of terms, we verify for _
 
 |    | row_number                                                                                                       | s                                                       | slabel                                                | user_slabel                       | o                                                       | olabel                | user_olabel              |   deltaIC |
 |----|------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|-------------------------------------------------------|-----------------------------------|---------------------------------------------------------|-----------------------|--------------------------|-----------|
-|  0 | [19](https://docs.google.com/spreadsheets/d/1dlQhZqTwP84U5zuNu8uo_xQ6C-hB9onUQJMWFn25oV8/edit#gid=0&range=19:19) | [CL:0000840](http://purl.obolibrary.org/obo/CL_0000840) | immature conventional dendritic cell                  | transitional Dendritic Cell (tDC) | [CL:0001056](http://purl.obolibrary.org/obo/CL_0001056) | dendritic cell, human | dendritic cell (DC)      |   11.2328 |
+|  0 | [19](https://docs.google.com/spreadsheets/d/1dlQhZqTwP84U5zuNu8uo_xQ6C-hB9onUQJMWFn25oV8/edit#gid=0&range=19:19) | [CL:0000840](http://purl.obolibrary.org/obo/CL_0000840) | immature conventional dendritic cell                  | transitional Dendritic Cell (tDC) | [CL:0001056](http://purl.obolibrary.org/obo/CL_0001056) | dendritic cell, human | dendritic cell (DC)      |   11.2252 |
 |  5 | [15](https://docs.google.com/spreadsheets/d/1dlQhZqTwP84U5zuNu8uo_xQ6C-hB9onUQJMWFn25oV8/edit#gid=0&range=15:15) | [CL:0002394](http://purl.obolibrary.org/obo/CL_0002394) | CD141-positive myeloid dendritic cell                 | dendritic cell type 1 (DC1)       | [CL:0001056](http://purl.obolibrary.org/obo/CL_0001056) | dendritic cell, human | dendritic cell (DC)      |  nan      |
 |  7 | [16](https://docs.google.com/spreadsheets/d/1dlQhZqTwP84U5zuNu8uo_xQ6C-hB9onUQJMWFn25oV8/edit#gid=0&range=16:16) | [CL:0002399](http://purl.obolibrary.org/obo/CL_0002399) | CD1c-positive myeloid dendritic cell                  | dendritic cell type 2 (DC2)       | [CL:0001056](http://purl.obolibrary.org/obo/CL_0001056) | dendritic cell, human | dendritic cell (DC)      |  nan      |
 |  9 | [17](https://docs.google.com/spreadsheets/d/1dlQhZqTwP84U5zuNu8uo_xQ6C-hB9onUQJMWFn25oV8/edit#gid=0&range=17:17) | [CL:0002399](http://purl.obolibrary.org/obo/CL_0002399) | CD1c-positive myeloid dendritic cell                  | dendritic cell type 3 (DC3)       | [CL:0001056](http://purl.obolibrary.org/obo/CL_0001056) | dendritic cell, human | dendritic cell (DC)      |  nan      |

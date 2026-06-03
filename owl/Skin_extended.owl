@@ -292,6 +292,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
@@ -364,10 +370,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) &quot;NCIT:C41009&quot;^^xsd:string</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property representing a reference to an identical or very similar object in another database.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/123"/>
         <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</obo:NCIT_P108>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</terms:created>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has cross-reference</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xRef</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -520,6 +532,23 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://w3id.org/sssom/mapping_justification -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -1093,7 +1122,7 @@ Tissue-resident macrophages are diverse and heterogenous, likely as a result of 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128603</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850789</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000317"/>
@@ -1210,6 +1239,11 @@ VSMCs are also involved in vascular remodeling, a process where blood vessels ad
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000545">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD4-positive, alpha-beta T cell that has the phenotype T-bet-positive, CXCR3-positive, CCR6-negative, and is capable of producing interferon-gamma.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-helper 1 (Th1) cells are a subset of mature T lymphocytes. These cells are integral parts of the adaptive immune system, and their primary function is in cell-mediated immunity. Th1 cells play a pivotal role in the immune response against intracellular pathogens. Activation of naive T lymphocytes produces different effector cell phenotypes based upon the cytokine signals they receive during activation. Th1 differentiation is favored by interleukin-12 (IL-12), IL-18, type 1 interferons, and interferon-gamma (IFN-γ).
+Th1 cells exert their immune function by producing and releasing certain types of cytokines such as IFN-γ and IL-2. IFN-γ activates macrophages and enhances their ability to destroy intracellular pathogens, including viruses and certain bacteria. These cytokines also play a role in activating macrophages, natural killer (NK) cells, CD8+ T cells, and B cells, thus perpetuating the immune response. Release of cytokines by Th1 cells at the site of infection, dependent on the cell’s recognition of the antigen via MHC-II molecules, helps to direct the immune response.
+Some Th1 effector cells appear to develop into memory T cells. This enables them to react more swiftly and robustly if the same pathogen is encountered again. These cells Th1 cells are also involved in the pathogenesis of several types of autoimmune diseases, such as multiple sclerosis and type 1 diabetes.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001678</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:84382</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T helper cells type 1</oboInOwl:hasExactSynonym>
@@ -1226,6 +1260,7 @@ VSMCs are also involved in vascular remodeling, a process where blood vessels ad
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;Th1 CD4+ T cell&apos;, but its logical definition includes additional known characteristics of T-helper 1 T cells.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-helper 1 cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000545</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T helper</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1242,6 +1277,19 @@ VSMCs are also involved in vascular remodeling, a process where blood vessels ad
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000545"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-helper 1 (Th1) cells are a subset of mature T lymphocytes. These cells are integral parts of the adaptive immune system, and their primary function is in cell-mediated immunity. Th1 cells play a pivotal role in the immune response against intracellular pathogens. Activation of naive T lymphocytes produces different effector cell phenotypes based upon the cytokine signals they receive during activation. Th1 differentiation is favored by interleukin-12 (IL-12), IL-18, type 1 interferons, and interferon-gamma (IFN-γ).
+Th1 cells exert their immune function by producing and releasing certain types of cytokines such as IFN-γ and IL-2. IFN-γ activates macrophages and enhances their ability to destroy intracellular pathogens, including viruses and certain bacteria. These cytokines also play a role in activating macrophages, natural killer (NK) cells, CD8+ T cells, and B cells, thus perpetuating the immune response. Release of cytokines by Th1 cells at the site of infection, dependent on the cell’s recognition of the antigen via MHC-II molecules, helps to direct the immune response.
+Some Th1 effector cells appear to develop into memory T cells. This enables them to react more swiftly and robustly if the same pathogen is encountered again. These cells Th1 cells are also involved in the pathogenesis of several types of autoimmune diseases, such as multiple sclerosis and type 1 diabetes.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/B978-0-12-374279-7.08002-4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/B978-0-7020-6896-6.00016-8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1016/j.jaci.2014.11.001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-103019-085803</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000545"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T helper cells type 1</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9419219</oboInOwl:hasDbXref>
@@ -1251,6 +1299,12 @@ VSMCs are also involved in vascular remodeling, a process where blood vessels ad
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Th1 CD4+ T cell</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22343568</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000545"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000545</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-helper 1 cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1348,7 +1402,7 @@ VSMCs are also involved in vascular remodeling, a process where blood vessels ad
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128605</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850804</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000649"/>
@@ -1643,6 +1697,11 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000815">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulatory T cells, or Tregs, represent a vital component of the immune system, functioning to maintain immune tolerance and homeostasis. Tregs prevent excessive immune responses and autoimmunity by suppressing or downregulating proliferation or activation of other immune cells. Originating in the thymus, Tregs belong to a larger group of T cells that express CD4 protein on their surface. They can be identified by their expression of the forkhead/winged-helix transcription factor Foxp3, which is a crucial intracellular marker that controls their development and function.
+Tregs are key players in preventing autoimmune diseases, allergies, and graft-versus-host disease, a potential complication of bone marrow transplantation. By suppressing the immune response, Tregs ensure that the immune system doesn&apos;t mistakenly attack the body&apos;s own healthy tissues, or harmless substances such as pollen, or transplanted tissue. Abnormalities in Treg number or function can result in a profound dysregulation of immune homeostasis, leading to the development of various immune-mediated diseases. However, Tregs also appear to contribute to tumor development.
+Developmentally, while Tregs may emerge directly from the thymus, Tregs may also arise peripherally from conventional T cells. Thymic or &quot;natural&quot; Tregs likely arise from thymocytes that strongly recognize self-antigen and contribute to self-tolerance. Peripherally induced Tregs likely recognize foreign antigen and are likely important in maintaining tolerance to non-host antigens, such as intestinal microbiota or food allergens. Understanding the precise functions and mechanisms of regulatory T cells is a continually evolving field, with potential implications for combating autoimmunity, enhancing cancer therapy, and preventing transplant rejection.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</terms:description>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T lymphocyte</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T-cell</oboInOwl:hasBroadSynonym>
@@ -1659,6 +1718,7 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type may express FoxP3 and CD25 and secretes IL-10 and TGF-beta.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000815</rdfs:seeAlso>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T reg</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
@@ -1667,6 +1727,26 @@ Neutrophils play a crucial role in the immune system by rapidly responding to in
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:add</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000031</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulatory T cells, or Tregs, represent a vital component of the immune system, functioning to maintain immune tolerance and homeostasis. Tregs prevent excessive immune responses and autoimmunity by suppressing or downregulating proliferation or activation of other immune cells. Originating in the thymus, Tregs belong to a larger group of T cells that express CD4 protein on their surface. They can be identified by their expression of the forkhead/winged-helix transcription factor Foxp3, which is a crucial intracellular marker that controls their development and function.
+Tregs are key players in preventing autoimmune diseases, allergies, and graft-versus-host disease, a potential complication of bone marrow transplantation. By suppressing the immune response, Tregs ensure that the immune system doesn&apos;t mistakenly attack the body&apos;s own healthy tissues, or harmless substances such as pollen, or transplanted tissue. Abnormalities in Treg number or function can result in a profound dysregulation of immune homeostasis, leading to the development of various immune-mediated diseases. However, Tregs also appear to contribute to tumor development.
+Developmentally, while Tregs may emerge directly from the thymus, Tregs may also arise peripherally from conventional T cells. Thymic or &quot;natural&quot; Tregs likely arise from thymocytes that strongly recognize self-antigen and contribute to self-tolerance. Peripherally induced Tregs likely recognize foreign antigen and are likely important in maintaining tolerance to non-host antigens, such as intestinal microbiota or food allergens. Understanding the precise functions and mechanisms of regulatory T cells is a continually evolving field, with potential implications for combating autoimmunity, enhancing cancer therapy, and preventing transplant rejection.
+
+(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/nri2343</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/j.1600-065X.2011.01018.x</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-042718-041717</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1146/annurev-immunol-100219-020937</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.3389/fimmu.2020.616949</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000815"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0000815</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory T cell on CELLxGENE CellGuide</rdfs:label>
     </owl:Axiom>
     
 
@@ -1978,7 +2058,7 @@ Furthermore, endothelial cells of lymphatic vessels play a pivotal role in the b
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128578</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850820</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002153"/>
@@ -2165,6 +2245,18 @@ Subcutaneous fat cells have a characteristic shape, being large, spherical, and 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002521"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002072"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850810</dc:date>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002521"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An adipocyte that is part of subcutaneous adipose tissue.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
@@ -2188,18 +2280,6 @@ Subcutaneous fat cells have a characteristic shape, being large, spherical, and 
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cellxgene.cziscience.com/cellguide/CL_0002521</owl:annotatedTarget>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subcutaneous adipocyte on CELLxGENE CellGuide</rdfs:label>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002521"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002072"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128580</dc:date>
     </owl:Axiom>
     
 
@@ -2234,7 +2314,7 @@ Subcutaneous fat cells have a characteristic shape, being large, spherical, and 
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128577</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850803</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002562"/>
@@ -2507,7 +2587,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000312"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:22.841868</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.659596</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033056"/>
@@ -2519,7 +2599,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128606</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850801</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4033056"/>
@@ -2620,7 +2700,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128600</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850795</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000412"/>
@@ -2632,7 +2712,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:24.536897</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:37.813949</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000412"/>
@@ -2749,7 +2829,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001820"/>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:22.841893</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.659572</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000423"/>
@@ -2848,7 +2928,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128575</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850794</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001003"/>
@@ -3155,7 +3235,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128617</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850819</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001992"/>
@@ -3342,7 +3422,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:24.309997</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:37.602711</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002025"/>
@@ -3354,7 +3434,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:24.309982</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:37.602729</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002025"/>
@@ -3366,7 +3446,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:24.310000</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:37.602731</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002025"/>
@@ -3644,7 +3724,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.836758</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:37.292882</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002033"/>
@@ -3789,7 +3869,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128602</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850813</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002067"/>
@@ -3892,7 +3972,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:24.536879</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:37.813967</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002069"/>
@@ -4091,7 +4171,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.448194</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:37.031686</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002073"/>
@@ -4130,8 +4210,20 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002074">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002073"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002170"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002097"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The main part of the hair which is composed of trichocytes and is divided into the cortex and medulla.</obo:IAO_0000115>
@@ -4154,18 +4246,6 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hair shaft</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hair shaft</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002074"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002073"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:24.206176</dc:date>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002074"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -4219,7 +4299,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128598</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850797</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002076"/>
@@ -4268,7 +4348,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128615</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850817</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002077"/>
@@ -4400,7 +4480,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128572</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850815</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002283"/>
@@ -4525,7 +4605,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128595</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850811</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005932"/>
@@ -4598,7 +4678,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128555</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850806</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005941"/>
@@ -4681,7 +4761,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128608</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850808</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005942"/>
@@ -4759,7 +4839,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128612</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850799</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005968"/>
@@ -4825,7 +4905,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128610</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850733</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005975"/>
@@ -5047,7 +5127,7 @@ Beyond pigmentation and UV protection, melanocytes play roles in immune and infl
             </owl:Restriction>
         </owl:annotatedTarget>
         <IN_OBO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</IN_OBO>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-05-27T11:07:23.128613</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-06-03T12:04:36.850792</dc:date>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013487"/>
