@@ -6,9 +6,9 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
+|PCL|2025-07-07|
 |CL|2026-03-26|
 |UBERON|2026-04-01|
-|PCL|2025-07-07|
 
 ### ASCT+b Tables
 
@@ -40,7 +40,7 @@ Release Notes
 |Placenta|v1.3|June 15, 2026|
 |Prostate|v1.2|revise for October 1, 2024|
 |Salivary_Glands|v1.0|Will be added for HRA release availability|
-|Skeleton|v1.3|revise for April 15, 2026|
+|Skeleton|v1.3|June 15, 2026|
 |Skin|v1.7|June 15, 2026|
 |Small_intestine|v1.4|June 15, 2026|
 |Spinal_Cord|v1.2|NA|
