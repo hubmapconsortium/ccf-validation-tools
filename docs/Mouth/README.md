@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Mouth (2026-06-17)
+ASCT+B Validation Reports for Mouth (2026-06-24)
 ================================================
 
 Table of contents
@@ -32,13 +32,7 @@ These are the reports related to issues in the terms found in the ASCT+B table. 
 
 This report provides a list of terms not found neither in UBERON nor in CL. Please remove these terms from the ASCT+B table - disconsider this message if a term was recently added to the ontology.  
   
-1. CL:9900004
-
-1. CL:9900007
-
-1. CL:9900008
-
-1. CL:9900006
+1. CL:9900001
 
 1. CL:9900005
 
@@ -46,7 +40,13 @@ This report provides a list of terms not found neither in UBERON nor in CL. Plea
 
 1. CL:9900003
 
-1. CL:9900001
+1. CL:9900007
+
+1. CL:9900004
+
+1. CL:9900008
+
+1. CL:9900006
 
 
 ## Typos or punctuation mistakes
