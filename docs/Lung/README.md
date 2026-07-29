@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Lung (2026-07-22)
+ASCT+B Validation Reports for Lung (2026-07-29)
 ===============================================
 
 Table of contents
@@ -54,9 +54,9 @@ If the name/label in the ontology contains *obsolete*, please look into OLS, cli
   
 1. The term _[CL:0002332](http://purl.obolibrary.org/obo/CL_0002332)_ has a different name/label in the source ontology in the following 3 rows _[27](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=27:27)_, _[49](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=49:49)_, _[61](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=61:61)_. The name/label in the **ASCT+B table** is _multiciliated cell of the bronchus_ and the one in the **ontology** is _multiciliated epithelial cell of the bronchus_. For reference, the given name/label **by SMEs** is _multiciliated cell of the bronchus_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
-1. The term _[UBERON:8600010](http://purl.obolibrary.org/obo/UBERON_8600010)_ has a different name/label in the source ontology in the following 3 rows _[15](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=15:15)_, _[33](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=33:33)_, _[53](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=53:53)_. The name/label in the **ASCT+B table** is _bronchial submucosal gland multiciliated duct_ and the one in the **ontology** is _bronchial submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _bronchial submucosal gland multiciliated duct_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[CL:1000271](http://purl.obolibrary.org/obo/CL_1000271)_ has a different name/label in the source ontology in the following 3 rows _[70](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=70:70)_, _[75](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=75:75)_, _[81](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=81:81)_. The name/label in the **ASCT+B table** is _lung multiciliated cell_ and the one in the **ontology** is _lung multiciliated epithelial cell_. For reference, the given name/label **by SMEs** is _lung multiciliated cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[UBERON:8600010](http://purl.obolibrary.org/obo/UBERON_8600010)_ has a different name/label in the source ontology in the following 3 rows _[15](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=15:15)_, _[33](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=33:33)_, _[53](https://docs.google.com/spreadsheets/d/1c_RkpIZcd072yTNL49DkehqLp1-r_5uNH1S_dNTPJWA/edit#gid=0&range=53:53)_. The name/label in the **ASCT+B table** is _bronchial submucosal gland multiciliated duct_ and the one in the **ontology** is _bronchial submucosal gland ciliated duct_. For reference, the given name/label **by SMEs** is _bronchial submucosal gland multiciliated duct_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
