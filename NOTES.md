@@ -6,9 +6,9 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
-|UBERON|2026-04-01|
-|CL|2026-03-26|
 |PCL|2025-07-07|
+|UBERON|2026-06-19|
+|CL|2026-06-08|
 
 ### ASCT+b Tables
 
@@ -31,7 +31,7 @@ Release Notes
 |Lymph_vasculature|v1.6|revise for June 16, 2026|
 |Main_Bronchus|v1.4|NA|
 |Mammary_Gland|v1.0|revise for April 1, 2024|
-|Mouth|v1.2|June 15, 2026|
+|Mouth|v1.3|NA|
 |Muscular_System|v1.4|NA|
 |Ovary|v1.4|revise for February 6, 2026|
 |Pancreas|v1.4|December 15, 2025|
