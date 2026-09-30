@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Mouth (2026-09-23)
+ASCT+B Validation Reports for Mouth (2026-09-30)
 ================================================
 
 Table of contents
@@ -34,17 +34,17 @@ This report provides a list of terms not found neither in UBERON nor in CL. Plea
   
 1. CL:9900005
 
-1. CL:9900003
-
 1. CL:9900001
+
+1. CL:9900003
 
 1. CL:9900002
 
 1. CL:9900006
 
-1. CL:9900007
-
 1. CL:9900008
+
+1. CL:9900007
 
 
 ## Typos or punctuation mistakes
@@ -64,9 +64,9 @@ If the term's name/label and the name/label given by SME are too different, plea
 
 If the name/label in the ontology contains *obsolete*, please look into OLS, clicking on the term ID, for its replacement.  
   
-1. The term _[CL:0000057](http://purl.obolibrary.org/obo/CL_0000057)_ has a different name/label in the source ontology in the following 3 rows _[54](https://docs.google.com/spreadsheets/d/1ZkqakhVKIZ-xkM1N-oOu9QNPt5GBDnguLoX9QQSZXEo/edit#gid=0&range=54:54)_, _[73](https://docs.google.com/spreadsheets/d/1ZkqakhVKIZ-xkM1N-oOu9QNPt5GBDnguLoX9QQSZXEo/edit#gid=0&range=73:73)_, _[90](https://docs.google.com/spreadsheets/d/1ZkqakhVKIZ-xkM1N-oOu9QNPt5GBDnguLoX9QQSZXEo/edit#gid=0&range=90:90)_. The name/label in the **ASCT+B table** is _periductal fibroblast of salivary gland_ and the one in the **ontology** is _fibroblast_. For reference, the given name/label **by SMEs** is _periacinar fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
-
 1. The term _[CL:0000798](http://purl.obolibrary.org/obo/CL_0000798)_ has a different name/label in the source ontology in the following 1 row _[43](https://docs.google.com/spreadsheets/d/1ZkqakhVKIZ-xkM1N-oOu9QNPt5GBDnguLoX9QQSZXEo/edit#gid=0&range=43:43)_. The name/label in the **ASCT+B table** is _gamma delta T cell_ and the one in the **ontology** is _gamma-delta T cell_. For reference, the given name/label **by SMEs** is _gamma delta T cell_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
+
+1. The term _[CL:0000057](http://purl.obolibrary.org/obo/CL_0000057)_ has a different name/label in the source ontology in the following 3 rows _[54](https://docs.google.com/spreadsheets/d/1ZkqakhVKIZ-xkM1N-oOu9QNPt5GBDnguLoX9QQSZXEo/edit#gid=0&range=54:54)_, _[73](https://docs.google.com/spreadsheets/d/1ZkqakhVKIZ-xkM1N-oOu9QNPt5GBDnguLoX9QQSZXEo/edit#gid=0&range=73:73)_, _[90](https://docs.google.com/spreadsheets/d/1ZkqakhVKIZ-xkM1N-oOu9QNPt5GBDnguLoX9QQSZXEo/edit#gid=0&range=90:90)_. The name/label in the **ASCT+B table** is _periductal fibroblast of salivary gland_ and the one in the **ontology** is _fibroblast_. For reference, the given name/label **by SMEs** is _periacinar fibroblast_. Please correct it in the columns AS/N/LABEL or CT/N/LABEL in the ASCT+B table.
 
 
 ## Blank ontology ID
