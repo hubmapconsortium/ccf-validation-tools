@@ -6,9 +6,9 @@ Release Notes
 
 |Ontology|Version|
 | :---: | :---: |
+|UBERON|2026-10-01|
 |PCL|2025-07-07|
 |CL|2026-06-08|
-|UBERON|2026-10-01|
 
 ### ASCT+b Tables
 
@@ -18,11 +18,11 @@ Release Notes
 |Blood|v1.5|revise 2025|
 |Bone-Marrow|v1.7|revise for September 30,2026|
 |Brain|v1.10|revise for September 30, 2026|
-|Eye|v1.6|revise for September 30,2026|
-|Fallopian_tube|v1.6|revise for June 16, 2026|
+|Eye|v1.6|revise for October 15,2026|
+|Fallopian_tube|v1.6|revise for October 15, 2026|
 |Gingiva|v1.0|Will be added for HRA release availability|
 |Heart|v1.7|NA|
-|Kidney|v1.8|NA|
+|Kidney|v1.8|Revise for October 15, 2026|
 |Knee|v1.3|NA|
 |Large_intestine|v1.5|December 15, 2025|
 |Liver|v1.5|December 15, 2025|
@@ -44,11 +44,11 @@ Release Notes
 |Skin|v1.8|NA|
 |Small_intestine|v1.4|June 15, 2026|
 |Spinal_Cord|v1.2|NA|
-|Spleen|v1.7|revise for October 2, 2026|
+|Spleen|v1.7|revise for October 15, 2026|
 |Thymus|v1.6|NA|
 |Tongue|v1.0|NA|
 |Trachea|v1.1|June 15, 2026|
 |Ureter|v1.1|revise for April 2023|
 |Urinary_bladder|v1.1|revise for April 2024|
 |Uterus|v1.4|revise for October 2, 2026|
-|Blood_vasculature|v1.11|September 29, 2026|
+|Blood_vasculature|v1.11|Revise for 10/14/2026|
