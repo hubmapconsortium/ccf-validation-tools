@@ -1,5 +1,5 @@
 
-ASCT+B Validation Reports for Liver (2026-10-28)
+ASCT+B Validation Reports for Liver (2026-11-06)
 ================================================
 
 Table of contents
@@ -64,8 +64,6 @@ This report provides a list of blank spreadsheet cells that often mean no ontolo
 
 You can find more information on the [New CL terms](#new-cl-terms) or [New UBERON terms](#new-uberon-terms) reports.  
   
-1. No term id was found for the name/label _Liver immune resident component_ in the following 13 rows _[33](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=33:33)_, _[34](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=34:34)_, _[35](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=35:35)_, _[36](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=36:36)_, _[37](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=37:37)_, _[38](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=38:38)_, _[39](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=39:39)_, _[40](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=40:40)_, _[41](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=41:41)_, _[42](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=42:42)_, _[43](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=43:43)_, _[44](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=44:44)_, _[45](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=45:45)_.
-
 1. No term id was found for the name/label _Eomes low Liver NK cell_ in the following 1 row _[42](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=42:42)_.
 
 1. No term id was found for the name/label _TBet low Liver NK cell_ in the following 1 row _[43](https://docs.google.com/spreadsheets/d/1bjM4AGvuow7uVXCoiX3PLd1QVfMRo8JJaEqKTv36hAk/edit#gid=0&range=43:43)_.
