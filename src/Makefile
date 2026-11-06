@@ -9,6 +9,18 @@ OLD_VERSION = False
 TODAY ?= $(shell date +%Y-%m-%d)
 VERSION = $(TODAY)
 CATALOG = --catalog catalog-v001.xml
+
+### Ubergraph: queried locally (blazegraph-runner on a subset journal built from the
+### Ubergraph N-Quads dump, see build_ubergraph_subset.sh) or remotely
+# UBERGRAPH_BACKEND=remote uses the public endpoint and skips the journal build.
+UBERGRAPH_BACKEND ?= local
+UBERGRAPH_JOURNAL ?= $(abspath ../ubergraph/ubergraph-subset.jnl)
+BLAZEGRAPH_RUNNER_VERSION = 1.7
+BLAZEGRAPH_RUNNER ?= $(abspath tools/blazegraph-runner-$(BLAZEGRAPH_RUNNER_VERSION)/bin/blazegraph-runner)
+export UBERGRAPH_BACKEND UBERGRAPH_JOURNAL BLAZEGRAPH_RUNNER
+ifeq ($(UBERGRAPH_BACKEND),local)
+UBERGRAPH_DEPS = ubergraph-journal blazegraph-runner
+endif
 OWL_CLASS_FILES_OLD = $(patsubst %, ../owl/last_official_ASCTB_release/ccf_%_classes.owl, $(JOBS_OLD))
 OWL_ANNOTATION_FILES_OLD = $(patsubst %, ../owl/%_annotations.owl, $(JOBS_OLD))
 OWL_CLASS_FILES = $(patsubst %, ../owl/ccf_%_classes.owl, $(JOBS))
@@ -23,7 +35,7 @@ all: last_official_release official_release
 ../resources/ASCT-b_tables/%.json:
 	python download_resource.py $* $@ $(OLD_VERSION)
 
-../owl/%_annotations.owl ../owl/%_sec.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv ../logs/%/logs_dict.json: ../resources/ASCT-b_tables/%.json
+../owl/%_annotations.owl ../owl/%_sec.owl ../templates/class_template_%.csv ../templates/temp_ub_%_ASCTB_subset.csv ../templates/temp_cl_%_ASCTB_subset.csv ../templates/%_no-valid.csv ../logs/%/logs_dict.json: ../resources/ASCT-b_tables/%.json | $(UBERGRAPH_DEPS)
 	mkdir -p ../logs/$*
 	python template_runner.py $* $< ../templates/class_template_$*.csv $(OLD_VERSION)
 
@@ -101,7 +113,7 @@ validation_reports_release_%: ../logs/%/logs_dict.json
 		rm $*.json && \
 		rm $*.dot; fi
 
-release_notes:
+release_notes: | $(UBERGRAPH_DEPS)
 	python release_notes_generation.py
 	rm tables_version.txt
 	
@@ -137,6 +149,22 @@ official_release:
 last_official_release:
 	make ../owl/last_official_ASCTB_release/CCF_AS_CT.owl OLD_VERSION=True -B
 .PHONY: last_official_release
+
+# These recipes are idempotent (instead of real file targets) so that `make -B`
+# does not rebuild the journal. Use refresh-ubergraph to rebuild it from the
+# latest Ubergraph release (~4 GB download).
+ubergraph-journal: blazegraph-runner
+	@test -f $(UBERGRAPH_JOURNAL) || ./build_ubergraph_subset.sh $(UBERGRAPH_JOURNAL)
+.PHONY: ubergraph-journal
+
+refresh-ubergraph: blazegraph-runner
+	./build_ubergraph_subset.sh $(UBERGRAPH_JOURNAL)
+.PHONY: refresh-ubergraph
+
+blazegraph-runner:
+	@test -x $(BLAZEGRAPH_RUNNER) || ( mkdir -p tools && \
+		curl -fL --retry 5 https://github.com/balhoff/blazegraph-runner/releases/download/v$(BLAZEGRAPH_RUNNER_VERSION)/blazegraph-runner-$(BLAZEGRAPH_RUNNER_VERSION).tgz | tar -xz -C tools )
+.PHONY: blazegraph-runner
 
 build-docker-v%:
 	docker buildx use ccf-tools-dep-builder

@@ -4,7 +4,7 @@ import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 
 from ccf_tools import add_rows, chunks, split_terms, transform_to_str
-from uberongraph_tools import UberonGraph
+from ubergraph_tools import UbergraphTools
 
 # logger = logging.getLogger('ASCT-b Tables Log')
 
@@ -67,7 +67,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset'}
   seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
   image_report = []
-  ug = UberonGraph()
+  ug = UbergraphTools()
   records = [seed]
   records_ub_sub = [seed_sub]
   records_cl_sub = [seed_sub]
@@ -97,11 +97,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
     terms.add(r['o'])
 
   # ENTITY CHECK
-  if len(terms) > 90:
-    for chunk in chunks(list(terms), 90):
-      no_valid_class = ug.query_uberon(" ".join(chunk), ug.select_class)
-  else:
-    no_valid_class = ug.query_uberon(" ".join(terms), ug.select_class)
+  no_valid_class = set()
+  for chunk in chunks(list(terms), ug.chunk_terms):
+    no_valid_class = no_valid_class.union(ug.query_uberon(" ".join(chunk), ug.select_class))
 
   del_index = []
   for t in no_valid_class:
@@ -151,13 +149,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # LABEL CHECK AND GET IMAGES ATTACHED TO EACH TERM
   terms_labels = set()
   terms_images = set()
-  if len(terms) > 90:
-    for chunk in chunks(list(terms), 90):
-      terms_labels = terms_labels.union(ug.query_uberon(" ".join(chunk), ug.select_label))
-      terms_images = terms_images.union(ug.query_uberon(" ".join(chunk), ug.select_image))
-  else:
-    terms_labels = ug.query_uberon(" ".join(list(terms)), ug.select_label)
-    terms_images = ug.query_uberon(" ".join(list(terms)), ug.select_image)
+  for chunk in chunks(list(terms), ug.chunk_terms):
+    terms_labels = terms_labels.union(ug.query_uberon(" ".join(chunk), ug.select_label))
+    terms_images = terms_images.union(ug.query_uberon(" ".join(chunk), ug.select_image))
 
   for term, label in terms_labels:
     rows = ccf_tools_df[(ccf_tools_df['s'] == term) | (ccf_tools_df['o'] == term)]
@@ -420,7 +414,7 @@ def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
 def generate_vasculature_template(ccf_tools_df):
   seed = {'SUBJECT': 'ID', 'OBJECT': "SC 'connected_to' some %", 'in_subset': 'AI in_subset'} 
   records = [seed]
-  ug = UberonGraph()
+  ug = UbergraphTools()
 
   as_as = ccf_tools_df[ccf_tools_df['s'].str.startswith('UBERON') & ccf_tools_df['o'].str.startswith('UBERON')]
   terms_pairs = set(f"({r['s']} {r['o']})" for _, r in as_as.iterrows())

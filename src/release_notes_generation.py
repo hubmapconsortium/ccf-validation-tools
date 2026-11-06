@@ -1,8 +1,8 @@
 from mdutils.mdutils import MdUtils
-from uberongraph_tools import UberonGraph
+from ubergraph_tools import UbergraphTools
 #from download_resource import JOB_SHEET_GID_MAPPING
 
-ug = UberonGraph()
+ug = UbergraphTools()
 
 ont_version = ug.add_prefix_ont(ug.query_uberon([], ug.select_ontology_version))
 

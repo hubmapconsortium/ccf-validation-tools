@@ -1,10 +1,58 @@
+import json
+import os
+import subprocess
+import tempfile
+
 from SPARQLWrapper import SPARQLWrapper, JSON, RDFXML
-from rdflib.graph import ConjunctiveGraph
+from rdflib.graph import ConjunctiveGraph, Graph
 from ccf_tools import chunks, transform_to_str
 
-class UberonGraph():
+UBERGRAPH_ENDPOINT = 'https://ubergraph.apps.renci.org/sparql'
+_SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_JOURNAL = os.path.join(_SRC_DIR, '..', 'ubergraph', 'ubergraph-subset.jnl')
+DEFAULT_RUNNER = os.path.join(_SRC_DIR, 'tools', 'blazegraph-runner-1.7', 'bin', 'blazegraph-runner')
+
+# Effectively "no chunking" when querying a local journal: chunking only exists
+# to keep HTTP requests to the public endpoint small.
+_NO_CHUNKING = 10 ** 9
+
+
+def _chunked(items, size):
+  """Split items into lists of at most `size` elements."""
+  return list(chunks(list(items), size))
+
+
+class UbergraphTools():
+    """
+    Queries Ubergraph either through the public SPARQL endpoint ("remote") or
+    against a local copy of the Ubergraph Blazegraph journal using
+    blazegraph-runner ("local").
+
+    Environment variables:
+      UBERGRAPH_BACKEND  local | remote (default: local if the journal exists)
+      UBERGRAPH_JOURNAL  path to the journal (default: ../ubergraph/ubergraph-subset.jnl,
+                       built by build_ubergraph_subset.sh)
+      BLAZEGRAPH_RUNNER  path to the blazegraph-runner executable
+    """
     def __init__(self):
-        self.sparql = SPARQLWrapper('https://ubergraph.apps.renci.org/sparql')
+        self.journal = os.path.abspath(os.environ.get('UBERGRAPH_JOURNAL', DEFAULT_JOURNAL))
+        self.runner = os.environ.get('BLAZEGRAPH_RUNNER', DEFAULT_RUNNER)
+        default_backend = 'local' if os.path.exists(self.journal) else 'remote'
+        self.backend = os.environ.get('UBERGRAPH_BACKEND', default_backend)
+        if self.backend not in ('local', 'remote'):
+          raise ValueError(f"UBERGRAPH_BACKEND must be 'local' or 'remote', not {self.backend!r}")
+        if self.backend == 'local' and not os.path.exists(self.journal):
+          raise FileNotFoundError(f"Ubergraph journal not found: {self.journal} (run 'make ubergraph-journal')")
+
+        if self.backend == 'local':
+          self.chunk_pairs = self.chunk_terms = self.chunk_construct = self.chunk_construct_ct = _NO_CHUNKING
+        else:
+          self.chunk_pairs = 90         # VALUES pairs/terms per SELECT
+          self.chunk_terms = 90
+          self.chunk_construct = 30     # subjects/objects per CONSTRUCT
+          self.chunk_construct_ct = 20  # CT subjects in the CT suggestion CONSTRUCT
+
+        self.sparql = SPARQLWrapper(UBERGRAPH_ENDPOINT)
         self.sparql.setMethod('POST')
         self.select_po = """
           PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050> 
@@ -305,6 +353,8 @@ class UberonGraph():
             start = '<'
             end = '>'
         q = q % (start + r['s'] + end, start + r['o'] + end)
+        if self.backend == 'local':
+          raise NotImplementedError("ASK queries are not supported by blazegraph-runner")
         self.sparql.setReturnFormat(JSON)
         self.sparql.setQuery(q)
         results = self.sparql.query().convert()
@@ -312,12 +362,10 @@ class UberonGraph():
 
     def query_uberon(self, terms, query):
       query = query % terms
-      self.sparql.setReturnFormat(JSON)
-      self.sparql.setQuery(query)
 
       print(query)
-      
-      results = self.sparql.query().convert()
+
+      results = self._select(query)
       if results["results"]["bindings"]:
         return self.extract_results(results["results"]["bindings"])
       else:
@@ -366,11 +414,7 @@ class UberonGraph():
             }}
       """.format(subject = subject, objects = objects, relationship = subclass_rel if property == "rdfs:subClassOf" else extential_rel, property = property)
 
-      self.sparql.setQuery(construct_query)
-      self.sparql.setReturnFormat(RDFXML)
-      result = self.sparql.query().convert()
-
-      return result
+      return self._construct(construct_query)
 
     def construct_annotation(self, terms):
         construct_query = """
@@ -402,10 +446,41 @@ class UberonGraph():
                 }}
               }}
             """.format(terms = terms)
-        self.sparql.setQuery(construct_query)
-        self.sparql.setReturnFormat(RDFXML)
-        result = self.sparql.query().convert()
-        return result
+        return self._construct(construct_query)
+
+    def _run_local(self, command, query, outformat, suffix):
+      """Run a blazegraph-runner command against the local journal and return the output file's text."""
+      with tempfile.TemporaryDirectory(prefix='ubergraph-') as tmp:
+        query_file = os.path.join(tmp, 'query.rq')
+        output_file = os.path.join(tmp, 'result' + suffix)
+        with open(query_file, 'w', encoding='utf-8') as f:
+          f.write(query)
+        # Capture Blazegraph's startup banner/log4j noise; show it only on failure.
+        proc = subprocess.run([self.runner, f'--journal={self.journal}', f'--outformat={outformat}',
+                               command, query_file, output_file],
+                              stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+        if proc.returncode != 0:
+          raise RuntimeError(f"blazegraph-runner {command} failed ({proc.returncode}):\n{proc.stdout}")
+        with open(output_file, encoding='utf-8') as f:
+          return f.read()
+
+    def _select(self, query):
+      """Run a SPARQL SELECT; returns SPARQL 1.1 JSON results as a dict."""
+      if self.backend == 'local':
+        return json.loads(self._run_local('select', query, 'json', '.json'))
+      self.sparql.setReturnFormat(JSON)
+      self.sparql.setQuery(query)
+      return self.sparql.query().convert()
+
+    def _construct(self, query):
+      """Run a SPARQL CONSTRUCT; returns an rdflib Graph."""
+      if self.backend == 'local':
+        graph = Graph()
+        graph.parse(data=self._run_local('construct', query, 'rdfxml', '.rdf'), format='xml')
+        return graph
+      self.sparql.setReturnFormat(RDFXML)
+      self.sparql.setQuery(query)
+      return self.sparql.query().convert()
 
     def extract_results(self, list):
       results = set()
@@ -428,78 +503,34 @@ class UberonGraph():
 
     def verify_relationship(self, terms_pairs, relationship):
       valid_relationship = set()
-      if len(terms_pairs) > 90:
-        for chunk in chunks(list(terms_pairs), 90):
-          valid_relationship = valid_relationship.union(self.query_uberon(" ".join(chunk), relationship))
-      else:
-        valid_relationship = self.query_uberon(" ".join(list(terms_pairs)), relationship)
-      
+      for chunk in _chunked(terms_pairs, self.chunk_pairs):
+        valid_relationship = valid_relationship.union(self.query_uberon(" ".join(chunk), relationship))
+
       non_valid_relationship = terms_pairs - transform_to_str(valid_relationship)
 
       return valid_relationship, non_valid_relationship
 
     def get_suggestion_graph(self, all_as, terms_as_d, all_ct, terms_ct, terms_ct_d):
       sec_graph = ConjunctiveGraph()
-      if len(all_as) > 30:
-        for chunk_all in chunks(list(all_as), 30):
-          if len(terms_as_d) > 30:
-            for chunk in chunks(list(terms_as_d), 30):
-              sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="rdfs:subClassOf")
-              sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="part_of:")
-              sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="connected_to:")
-          else:
-            sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(chunk_all), property="rdfs:subClassOf")
-            sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(chunk_all), property="part_of:")
-            sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(chunk_all), property="connected_to:")
+      for chunk_all in _chunked(all_as, self.chunk_construct):
+        objects = "\n".join(chunk_all)
+        for chunk in _chunked(terms_as_d, self.chunk_construct):
+          subjects = "\n".join(chunk)
+          sec_graph += self.construct_relation(subject=subjects, objects=objects, property="rdfs:subClassOf")
+          sec_graph += self.construct_relation(subject=subjects, objects=objects, property="part_of:")
+          sec_graph += self.construct_relation(subject=subjects, objects=objects, property="connected_to:")
+        for chunk in _chunked(terms_ct, self.chunk_construct):
+          sec_graph += self.construct_relation(subject="\n".join(chunk), objects=objects, property="part_of:")
 
-          if len(terms_ct) > 30:
-            for chunk in chunks(list(terms_ct), 30):
-              sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="part_of:")
-          else:
-            sec_graph += self.construct_relation(subject="\n".join(terms_ct), objects="\n".join(chunk_all), property="part_of:")
-      else:
-        if len(terms_as_d) > 30:
-          for chunk in chunks(list(terms_as_d), 30):
-            sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
-            sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
-            sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="connected_to:")
-        else:
-          sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(list(all_as)), property="rdfs:subClassOf")
-          sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(list(all_as)), property="part_of:")
-          sec_graph += self.construct_relation(subject="\n".join(list(terms_as_d)), objects="\n".join(list(all_as)), property="connected_to:")
-        
-        if len(terms_ct) > 30:
-          for chunk in chunks(list(terms_ct), 30):
-            sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_as)), property="part_of:")
-        else:
-          sec_graph += self.construct_relation(subject="\n".join(terms_ct), objects="\n".join(list(all_as)), property="part_of:")
-        
-
-      if len(terms_ct_d) > 20:
-        for chunk in chunks(list(terms_ct_d), 20):
-          if len(all_ct) > 90:
-            for chunck in chunks(list(all_ct), 90):
-              sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(chunck)), property="rdfs:subClassOf")
-          else:
-            sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
-      else:
-        if len(all_ct) > 90:
-            for chunck in chunks(list(all_ct), 90):
-              sec_graph += self.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(chunck)), property="rdfs:subClassOf")
-        else:
-          sec_graph += self.construct_relation(subject="\n".join(terms_ct_d), objects="\n".join(list(all_ct)), property="rdfs:subClassOf")
-        
+      for chunk in _chunked(terms_ct_d, self.chunk_construct_ct):
+        for chunk_all in _chunked(all_ct, self.chunk_pairs):
+          sec_graph += self.construct_relation(subject="\n".join(chunk), objects="\n".join(chunk_all), property="rdfs:subClassOf")
 
       return sec_graph
 
     def get_annotations(self, terms):
       annotations = ConjunctiveGraph()
-      terms = list(terms)
-      if len(terms) > 30:
-        for chunk in chunks(terms, 30):
-          annotations += self.construct_annotation("\n".join(chunk))
-      else:
-        terms = "\n".join(terms)
-        annotations = self.construct_annotation(terms)
+      for chunk in _chunked(terms, self.chunk_construct):
+        annotations += self.construct_annotation("\n".join(chunk))
 
       return annotations

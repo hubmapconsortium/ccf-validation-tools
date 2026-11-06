@@ -29,6 +29,11 @@ RUN curl -L $ROBOT_JAR -o /tools/robot.jar &&\
   
 ENV PATH "/tools/:$PATH"
 
+###### blazegraph-runner (queries the local Ubergraph journal) ######
+ENV BLAZEGRAPH_RUNNER_VERSION 1.7
+RUN curl -L https://github.com/balhoff/blazegraph-runner/releases/download/v$BLAZEGRAPH_RUNNER_VERSION/blazegraph-runner-$BLAZEGRAPH_RUNNER_VERSION.tgz | tar -xz -C /tools
+ENV BLAZEGRAPH_RUNNER /tools/blazegraph-runner-$BLAZEGRAPH_RUNNER_VERSION/bin/blazegraph-runner
+
 ###### Update Node version #####
 # nvm environment variables
 ENV NODE_VERSION 20.9.0

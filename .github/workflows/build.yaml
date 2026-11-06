@@ -23,6 +23,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      # Local copy of the parts of Ubergraph we query (cached between runs)
+      - name: Ubergraph subset journal
+        uses: ./.github/actions/ubergraph-subset
       - name: verify and build
         env:
           DEFAULT_BRANCH: master
