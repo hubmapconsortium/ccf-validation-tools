@@ -17,6 +17,9 @@ runs:
         echo "Ubergraph dump Last-Modified: ${modified:-unknown}"
         echo "version=${modified:-unknown}" >> "$GITHUB_OUTPUT"
 
+    # Key: the subset's build scripts + the Ubergraph release. A new release or a
+    # change to the filter misses the primary key; restore-keys then restores the
+    # newest journal built by the same scripts, as a fallback if the rebuild fails.
     - name: Restore cached subset journal
       id: cache
       uses: actions/cache/restore@v4
@@ -32,9 +35,12 @@ runs:
       shell: bash
       working-directory: src
       run: |
+        # rapidgzip (parallel gunzip) is in requirements.txt but not yet in the
+        # ccf-tools-dep image; drop this once the image is rebuilt.
         python -m pip install rapidgzip
-        make blazegraph-runner
-        if ./build_ubergraph_subset.sh ../ubergraph/ubergraph-subset.jnl; then
+        # The build writes the journal atomically, so a failed rebuild leaves a
+        # journal restored from an older cache entry in place.
+        if make refresh-ubergraph; then
           echo "built=true" >> "$GITHUB_OUTPUT"
         elif [ -f ../ubergraph/ubergraph-subset.jnl ]; then
           echo "::warning::Could not rebuild the Ubergraph subset; using the most recent cached journal."

@@ -1,3 +1,21 @@
+"""
+All Ubergraph SPARQL queries used by the validation pipeline.
+
+Queries go to one of two backends, with the same SPARQL text and result shape:
+
+  local   blazegraph-runner on a local Blazegraph journal (the default when
+          ../ubergraph/ubergraph-subset.jnl exists). Each query starts a JVM and
+          opens the journal, so the per-request batching that exists for the
+          public endpoint is turned off and each check is sent as one large query.
+  remote  the public endpoint, https://ubergraph.apps.renci.org/sparql, with
+          VALUES lists split into small batches as before.
+
+The subset journal is built by build_ubergraph_subset.sh / ubergraph_subset.py
+and holds only the data these queries read. A new query that reads other data
+(another ontology prefix, OWL restriction blank nodes, ...) also needs a change
+to ubergraph_subset.py; compare_ubergraph_backends.py checks that both backends
+still agree.
+"""
 import json
 import os
 import subprocess
@@ -9,6 +27,7 @@ from ccf_tools import chunks, transform_to_str
 
 UBERGRAPH_ENDPOINT = 'https://ubergraph.apps.renci.org/sparql'
 _SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+# Defaults for running outside make; the Makefile sets (and exports) both.
 DEFAULT_JOURNAL = os.path.join(_SRC_DIR, '..', 'ubergraph', 'ubergraph-subset.jnl')
 DEFAULT_RUNNER = os.path.join(_SRC_DIR, 'tools', 'blazegraph-runner-1.7', 'bin', 'blazegraph-runner')
 
@@ -18,7 +37,8 @@ _NO_CHUNKING = 10 ** 9
 
 
 def _chunked(items, size):
-  """Split items into lists of at most `size` elements."""
+  """Split items into lists of at most `size` elements. Returns a list, not a
+  generator, because get_suggestion_graph iterates the inner chunks repeatedly."""
   return list(chunks(list(items), size))
 
 
