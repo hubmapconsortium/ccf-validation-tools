@@ -34,7 +34,7 @@ for attempt in $(seq 1 20); do
   if [ -n "$EXPECTED" ] && [ "$(local_size)" = "$EXPECTED" ]; then
     break  # complete (a resumed request for a finished file returns HTTP 416)
   fi
-  if curl -fL --silent --show-error --retry 10 --retry-all-errors --retry-delay 10 -C - -o "$DUMP" "$UBERGRAPH_NQ_URL" \
+  if curl -fL --silent --show-error --retry 10 --retry-delay 10 -C - -o "$DUMP" "$UBERGRAPH_NQ_URL" \
       && { [ -z "$EXPECTED" ] || [ "$(local_size)" = "$EXPECTED" ]; }; then
     break
   fi

@@ -18,16 +18,18 @@ Triples pointing to blank nodes (OWL restrictions) are dropped; no query uses th
 The dump is written by Blazegraph from its SPOC index, so all lines with the
 same subject are contiguous. Blocks are cut at subject boundaries, which lets
 each block be processed independently in a single pass (decompression with
-rapidgzip, filtering in worker processes over shared memory).
+rapidgzip, filtering in forked worker processes over anonymous shared memory,
+which unlike /dev/shm isn't capped at 64 MB inside Docker containers).
 
 Usage: python ubergraph_subset.py <ubergraph.nq.gz> <out dir> [--workers N] [--threads N]
 """
 import argparse
+import mmap
+import multiprocessing
 import os
 import sys
 import time
 from concurrent.futures import FIRST_COMPLETED, ProcessPoolExecutor, wait
-from multiprocessing import shared_memory
 
 try:
   import rapidgzip
@@ -144,16 +146,13 @@ def filter_block(data):
   return {k: b'\n'.join(v) + b'\n' for k, v in out.items() if v}
 
 
-_BUFFERS = None
-
-
-def _init_worker(names):
-  global _BUFFERS
-  _BUFFERS = [shared_memory.SharedMemory(name=n) for n in names]
+# Anonymous MAP_SHARED buffers, created before the worker pool forks so the
+# workers inherit them.
+_BUFFERS = []
 
 
 def _work(index, length):
-  return filter_block(bytes(_BUFFERS[index].buf[:length]))
+  return filter_block(_BUFFERS[index][:length])
 
 
 def subject_boundary(data):
@@ -188,7 +187,7 @@ def main():
 
   started = time.time()
   n_buffers = args.workers * 2
-  buffers = [shared_memory.SharedMemory(create=True, size=BLOCK + SLACK) for _ in range(n_buffers)]
+  _BUFFERS[:] = [mmap.mmap(-1, BLOCK + SLACK) for _ in range(n_buffers)]
   files = {k: open(os.path.join(args.out_dir, k + '.nt'), 'wb') for k in OUTPUTS}
   counts = dict.fromkeys(OUTPUTS, 0)
   total = 0
@@ -200,8 +199,7 @@ def main():
 
   try:
     with open_dump(args.dump, args.threads) as dump, \
-         ProcessPoolExecutor(args.workers, initializer=_init_worker,
-                             initargs=([b.name for b in buffers],)) as pool:
+         ProcessPoolExecutor(args.workers, mp_context=multiprocessing.get_context('fork')) as pool:
       free = list(range(n_buffers))
       pending = {}
       tail = b''
@@ -219,7 +217,7 @@ def main():
         tail = data[cut:]
         if cut:
           index = free.pop()
-          buffers[index].buf[:cut] = data[:cut]
+          _BUFFERS[index][:cut] = data[:cut]
           pending[pool.submit(_work, index, cut)] = index
           total += cut
         if not chunk:
@@ -229,9 +227,8 @@ def main():
   finally:
     for f in files.values():
       f.close()
-    for b in buffers:
+    for b in _BUFFERS:
       b.close()
-      b.unlink()
 
   elapsed = time.time() - started
   print(f'{total / 1e9:.1f} GB of N-Quads in {elapsed:.0f}s; triples written: {counts}')
