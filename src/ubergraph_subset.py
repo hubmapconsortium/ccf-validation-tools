@@ -1,6 +1,6 @@
 """
 Filter Ubergraph's N-Quads dump (ubergraph.nq.gz) down to the UBERON/CL/PCL
-subset queried by ubergraph_tools.py, writing one N-Triples file per target
+subset queried by uberongraph_tools.py, writing one N-Triples file per target
 named graph:
 
   ontology.nt      -> <http://reasoner.renci.org/ontology>      triples about UBERON/CL/PCL terms

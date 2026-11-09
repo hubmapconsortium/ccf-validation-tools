@@ -4,7 +4,7 @@ import pandas as pd
 from rdflib.graph import ConjunctiveGraph
 
 from ccf_tools import add_rows, chunks, split_terms, transform_to_str
-from ubergraph_tools import UbergraphTools
+from uberongraph_tools import UberonGraph
 
 # logger = logging.getLogger('ASCT-b Tables Log')
 
@@ -67,7 +67,7 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   seed_sub = {'ID': 'ID', 'in_subset': 'AI in_subset'}
   seed_no_valid = {'ID': 'ID', 'ccf_part_of': 'SC ccf_part_of some %', 'ccf_located_in': 'SC ccf_located_in some %'}
   image_report = []
-  ug = UbergraphTools()
+  ug = UberonGraph()
   records = [seed]
   records_ub_sub = [seed_sub]
   records_cl_sub = [seed_sub]
@@ -414,7 +414,7 @@ def generate_ind_graph_template(ccf_tools_df :pd.DataFrame):
 def generate_vasculature_template(ccf_tools_df):
   seed = {'SUBJECT': 'ID', 'OBJECT': "SC 'connected_to' some %", 'in_subset': 'AI in_subset'} 
   records = [seed]
-  ug = UbergraphTools()
+  ug = UberonGraph()
 
   as_as = ccf_tools_df[ccf_tools_df['s'].str.startswith('UBERON') & ccf_tools_df['o'].str.startswith('UBERON')]
   terms_pairs = set(f"({r['s']} {r['o']})" for _, r in as_as.iterrows())

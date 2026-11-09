@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Build ubergraph-subset.jnl: a small Blazegraph journal with just the parts of
-# Ubergraph that the CCF validation queries (ubergraph_tools.py) use.
+# Ubergraph that the CCF validation queries (uberongraph_tools.py) use.
 #
 # Usage: build_ubergraph_subset.sh <output.jnl> [<work dir>]
 #

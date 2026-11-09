@@ -22,7 +22,7 @@ def _chunked(items, size):
   return list(chunks(list(items), size))
 
 
-class UbergraphTools():
+class UberonGraph():
     """
     Queries Ubergraph either through the public SPARQL endpoint ("remote") or
     against a local copy of the Ubergraph Blazegraph journal using
