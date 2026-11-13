@@ -23,6 +23,9 @@ jobs:
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      # Local copy of the parts of Ubergraph we query (cached between runs)
+      - name: Ubergraph subset journal
+        uses: ./.github/actions/ubergraph-subset
       - name: verify and build
         run: mkdir -p resources/ASCT-b_tables && cd src && make official_release
       - name: Define repository's owner

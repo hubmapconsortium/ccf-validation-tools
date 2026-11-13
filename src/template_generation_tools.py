@@ -97,11 +97,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
     terms.add(r['o'])
 
   # ENTITY CHECK
-  if len(terms) > 90:
-    for chunk in chunks(list(terms), 90):
-      no_valid_class = ug.query_uberon(" ".join(chunk), ug.select_class)
-  else:
-    no_valid_class = ug.query_uberon(" ".join(terms), ug.select_class)
+  no_valid_class = set()
+  for chunk in chunks(list(terms), ug.chunk_terms):
+    no_valid_class = no_valid_class.union(ug.query_uberon(" ".join(chunk), ug.select_class))
 
   del_index = []
   for t in no_valid_class:
@@ -151,13 +149,9 @@ def generate_class_graph_template(ccf_tools_df :pd.DataFrame, log_dict: dict):
   # LABEL CHECK AND GET IMAGES ATTACHED TO EACH TERM
   terms_labels = set()
   terms_images = set()
-  if len(terms) > 90:
-    for chunk in chunks(list(terms), 90):
-      terms_labels = terms_labels.union(ug.query_uberon(" ".join(chunk), ug.select_label))
-      terms_images = terms_images.union(ug.query_uberon(" ".join(chunk), ug.select_image))
-  else:
-    terms_labels = ug.query_uberon(" ".join(list(terms)), ug.select_label)
-    terms_images = ug.query_uberon(" ".join(list(terms)), ug.select_image)
+  for chunk in chunks(list(terms), ug.chunk_terms):
+    terms_labels = terms_labels.union(ug.query_uberon(" ".join(chunk), ug.select_label))
+    terms_images = terms_images.union(ug.query_uberon(" ".join(chunk), ug.select_image))
 
   for term, label in terms_labels:
     rows = ccf_tools_df[(ccf_tools_df['s'] == term) | (ccf_tools_df['o'] == term)]
